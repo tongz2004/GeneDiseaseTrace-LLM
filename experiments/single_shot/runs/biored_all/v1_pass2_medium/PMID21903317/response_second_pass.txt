@@ -1,0 +1,3 @@
+P|G1|D8|nf|-||||V1|Death in utero is a feature of RTD only
+P|G2|D5|nf|-||||V4|Prior negative testing only, no association claim
+P|G3|D5|nf|-||||V4|Prior negative testing only, no association claim

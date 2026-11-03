@@ -1,0 +1,17 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only; no full text or attachments.
+E|G1|gene|STAT4|STAT4|r||human||
+E|D1|disease|systemic lupus erythematosus|systemic lupus erythematosus;SLE|r||||
+E|P1|symptom|renal symptoms|renal symptoms|r||||
+E|P2|phenotype|neurologic manifestations|neurologic manifestations|r||||
+E|P3|phenotype|anti-snRNP Ab|anti-snRNP Ab|r||||
+E|P4|phenotype|anti-Scl-70 Ab|anti-Scl-70 Ab|r||||
+X|rs7582694|b0002|variant identifier
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s3+b0002.s4+b0002.s7|ts|res|aff|rr,cmp
+EV|V3|b0002.s5|ts|res|aff|rr,cmp
+EV|V4|b0002.s6|ts|res|aff|rr,cmp
+P|G1|D1|sup|a|both|sup:a:bg:V1;sup:a:ts:V2||||Genotypes and allele associated with increased SLE risk.
+F|F1|association|STAT4 genotypes, C allele; SLE|253 Polish patients; 521 controls|significant|positive|available|V2|
+F|F2|group_comparison|STAT4 genotypes; renal symptoms, neurologic manifestations|SLE patients|significant|positive|available|V3|
+F|F3|group_comparison|STAT4 genotypes; anti-snRNP Ab, anti-Scl-70 Ab|SLE patients|significant|positive|available|V4|

@@ -1,0 +1,35 @@
+META|GPT-6|seen: no
+SCOPE|All supplied text b0001–b0114; figures available only through captions.
+E|G1|gene|angiotensin-converting enzyme 2|angiotensin-converting enzyme 2|r||human||
+E|G2|gene|angiotensin-converting enzyme 2|angiotensin-converting enzyme 2|r||non-human||
+E|G3|gene|parathyroid hormone|parathyroid hormone|r||human||
+E|G4|gene|GLE1|Nucleoporin GLE1 protein|r|||| 
+E|D1|disease|severe acute respiratory syndrome|severe acute respiratory syndrome;SARS|r|||| 
+E|D2|disease|coronavirus disease 2019|coronavirus disease 2019|r|||| 
+E|D3|disease|pneumonia|pneumonia|r|||| 
+E|D4|ambiguous_disease|acute breathing misery syndrome|acute breathing misery syndrome|u|ambiguous_mapping|||
+E|D5|disease|common cold|common cold|r|||| 
+E|D6|disease|flu|flu|r|||| 
+E|S1|symptom|dyspnea|dyspnea|r|||| 
+E|S2|symptom|cough|cough|r|||| 
+E|S3|symptom|chest pain|chest pain|r|||| 
+E|H1|phenotype|diffuse alveolar damage|diffuse alveolar damage|r|||| 
+X|Q6S8D9_SARS|b0001|Protein identifier; no gene mapping supplied.
+X|Q6S8D9|b0010|Protein accession; no gene mapping supplied.
+X|J9TE29|b0022|Secondary protein accession.
+X|Severe acute respiratory syndrome-associated coronavirus|b0002|Virus, not disease.
+X|SARS-CoV|b0001|Virus abbreviation.
+X|severe acute respiratory syndrome (SARS)-associated coronavirus 2|b0004|Virus, not disease.
+X|SARS-CoV-2|b0004|Virus abbreviation.
+X|SARS-CoV_ORF9c superfamily|b0028|Protein domain superfamily, not single gene.
+X|cl38891|b0028|Domain accession identifier.
+X|1FVY A|b0033|Structure template identifier.
+X|b6e5oD|b0033|Structure template identifier.
+X|6b4e.1.A|b0033|Structure template identifier.
+X|RNA polymerase II|b0029|Protein complex, not single gene.
+X|bHLH TF|b0029|Transcription factor class, not single gene.
+X|bHLH transcription factor|b0075|Transcription factor class, not single gene.
+EV|V1|b0004.s6|bg|bgr|aff|ebr
+P|G1|D1|nf|-||||V1|Viral entry mechanism lacks explicit gene–disease attribution.
+P|G2|D1|nf|-||||V1|Bat receptor context lacks explicit gene–disease attribution.
+F|F1|mechanism|angiotensin-converting enzyme 2; viral entry|Human and bat host cells|not_applicable|not_applicable|not_applicable|V1|Virus binding; disease relation not explicitly established.

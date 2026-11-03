@@ -1,0 +1,218 @@
+{
+  "variant": "pubtator3",
+  "run_set": "euadr",
+  "papers_scored": 100,
+  "papers_missing": [],
+  "PA | supported": {
+    "precision": 0.388,
+    "recall": 0.639,
+    "f1": 0.483,
+    "ci95": {
+      "precision": [
+        0.313,
+        0.47
+      ],
+      "recall": [
+        0.536,
+        0.745
+      ],
+      "f1": [
+        0.407,
+        0.557
+      ]
+    },
+    "counts": {
+      "tp_gold": 78,
+      "fn": 44,
+      "fn_symptom": 0,
+      "our_supported": 201,
+      "tp_ours": 78,
+      "tp_ours_many_to_one": 82,
+      "tp_gold_many_to_one": 92,
+      "uncertain_or_negative": 0,
+      "uncertain_or_negative_in_gold": 0
+    }
+  },
+  "PA | supported | scope_adjusted": {
+    "precision": 0.388,
+    "recall": 0.639,
+    "f1": 0.483,
+    "ci95": {
+      "precision": [
+        0.315,
+        0.468
+      ],
+      "recall": [
+        0.541,
+        0.741
+      ],
+      "f1": [
+        0.409,
+        0.555
+      ]
+    }
+  },
+  "PA | supported_or_uncertain": {
+    "precision": 0.388,
+    "recall": 0.639,
+    "f1": 0.483,
+    "ci95": {
+      "precision": [
+        0.315,
+        0.473
+      ],
+      "recall": [
+        0.543,
+        0.739
+      ],
+      "f1": [
+        0.41,
+        0.558
+      ]
+    },
+    "counts": {
+      "tp_gold": 78,
+      "fn": 44,
+      "fn_symptom": 0,
+      "our_supported": 201,
+      "tp_ours": 78,
+      "tp_ours_many_to_one": 82,
+      "tp_gold_many_to_one": 92,
+      "uncertain_or_negative": 0,
+      "uncertain_or_negative_in_gold": 0
+    }
+  },
+  "PA | supported_or_uncertain | scope_adjusted": {
+    "precision": 0.388,
+    "recall": 0.639,
+    "f1": 0.483,
+    "ci95": {
+      "precision": [
+        0.314,
+        0.474
+      ],
+      "recall": [
+        0.541,
+        0.742
+      ],
+      "f1": [
+        0.411,
+        0.56
+      ]
+    }
+  },
+  "PA+SA | supported": {
+    "precision": 0.418,
+    "recall": 0.641,
+    "f1": 0.506,
+    "ci95": {
+      "precision": [
+        0.339,
+        0.505
+      ],
+      "recall": [
+        0.551,
+        0.735
+      ],
+      "f1": [
+        0.433,
+        0.579
+      ]
+    },
+    "counts": {
+      "tp_gold": 84,
+      "fn": 47,
+      "fn_symptom": 0,
+      "our_supported": 201,
+      "tp_ours": 84,
+      "tp_ours_many_to_one": 88,
+      "tp_gold_many_to_one": 101,
+      "uncertain_or_negative": 0,
+      "uncertain_or_negative_in_gold": 0
+    }
+  },
+  "PA+SA | supported | scope_adjusted": {
+    "precision": 0.418,
+    "recall": 0.641,
+    "f1": 0.506,
+    "ci95": {
+      "precision": [
+        0.338,
+        0.508
+      ],
+      "recall": [
+        0.55,
+        0.74
+      ],
+      "f1": [
+        0.43,
+        0.58
+      ]
+    }
+  },
+  "PA+SA | supported_or_uncertain": {
+    "precision": 0.418,
+    "recall": 0.641,
+    "f1": 0.506,
+    "ci95": {
+      "precision": [
+        0.339,
+        0.503
+      ],
+      "recall": [
+        0.551,
+        0.736
+      ],
+      "f1": [
+        0.43,
+        0.582
+      ]
+    },
+    "counts": {
+      "tp_gold": 84,
+      "fn": 47,
+      "fn_symptom": 0,
+      "our_supported": 201,
+      "tp_ours": 84,
+      "tp_ours_many_to_one": 88,
+      "tp_gold_many_to_one": 101,
+      "uncertain_or_negative": 0,
+      "uncertain_or_negative_in_gold": 0
+    }
+  },
+  "PA+SA | supported_or_uncertain | scope_adjusted": {
+    "precision": 0.418,
+    "recall": 0.641,
+    "f1": 0.506,
+    "ci95": {
+      "precision": [
+        0.341,
+        0.508
+      ],
+      "recall": [
+        0.553,
+        0.738
+      ],
+      "f1": [
+        0.435,
+        0.584
+      ]
+    }
+  },
+  "status_by_gold_label": {
+    "NA": {
+      "supported, credited to another gold relation": 1,
+      "not_found": 2
+    },
+    "PA": {
+      "supported": 76,
+      "supported, credited to another gold relation": 16,
+      "entity not recorded": 22,
+      "not_found": 8
+    },
+    "SA": {
+      "supported": 8,
+      "supported, credited to another gold relation": 1
+    }
+  }
+}

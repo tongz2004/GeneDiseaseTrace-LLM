@@ -1,0 +1,27 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text, tables or figures
+E|G1|gene|p38 MAPK|p38 MAPK;P38;P38 mitogen-activated protein kinase|r|||non-human||
+E|G2|gene|BCL-2|BCL-2|r||non-human||
+E|G3|gene|lactate dehydrogenase|lactate dehydrogenase|p|other|non-human||
+E|D1|disease|arrhythmia|arrhythmia|r||||
+E|D2|disease|cardiotoxicity|cardiotoxicity|r||||
+E|D3|disease|aconitine poisoning|aconitine poisoning|r||||
+E|D4|disease|myocardial injury|myocardial injury|r||||
+E|S1|phenotype|apoptosis|apoptosis|r||||
+E|S2|phenotype|Ca2+ overload|Ca2+ overload|r||||
+X|MAPK family members|b0002|gene set, not single gene
+X|voltage-dependent Na(+) channels|b0002|channel family, not single gene
+X|Ca(2+) handling proteins|b0002|protein group, not single gene
+X|terminal deoxynucleotidyl transferase|b0002|assay name (TUNEL)
+EV|V1|b0001.s1|ts|int|q|unc
+EV|V2|b0002.s12|ts|res|aff|rr,do
+EV|V3|b0002.s13|ts|int|hyp|ho
+EV|V4|b0002.s11|ts|res|aff|rr,do
+EV|V5|b0002.s6|ts|co|na|do
+P|G1|D1|unc|-|ts|unc:-:ts:V1+V3|scope,hedged_claim|V2|Title scope unclear; p38 tied to apoptosis
+P|G1|D3|unc|-|ts|unc:-:ts:V2+V3|hedged_claim,scope||Phosphorylation rise in model; link hedged
+P|G2|D3|unc|-|ts|unc:-:ts:V4|scope||Expression change; disease target not explicit
+P|G3|D4|nf|-|ts|||V5|LDH only a measured injury marker
+F|F1|descriptive|P-P38/P38 ratio, MAPK phosphorylation|aconitine-treated rat cardiac tissue|unknown|positive|not_reported|V2|abstract only
+F|F2|descriptive|BCL-2 expression|aconitine-treated myocytes/rats|unknown|negative|not_reported|V4|abstract only; group unspecified
+F|F3|mechanism|p38 phosphorylation and apoptosis|aconitine-treated rats|unknown|positive|not_reported|V3|authors' suggestion

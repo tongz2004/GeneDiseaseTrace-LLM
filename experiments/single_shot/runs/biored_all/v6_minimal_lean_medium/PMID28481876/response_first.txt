@@ -1,0 +1,25 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|MCM8|MCM8;miniature chromosome maintenance 8|r||human||
+E|G2|gene|MCM protein family|MCM;Miniature chromosome maintenance|p|other|human||
+E|G3|gene|CCND1|cyclin D1|r||human||
+E|G4|gene|RB1|Rb|r||human||
+E|G5|gene|CDK4|cyclin-dependent kinase 4|r||human||
+E|D1|disease|Neoplasms|human malignancies;human cancers;human cancer;tumour|r|||||
+E|D2|disease|Prostate cancer|prostate cancer|r|||||
+E|D3|clinical_event|Cancer recurrence|cancer recurrence|r||||D2|
+X|severe combined immunodeficiency|b0002|Mouse xenograft host strain, not a studied disease
+X|PC3|b0002|Prostate cancer cell line, not a gene
+EV|V1|b0002.s2|ts|res|aff|rr
+EV|V2|b0002.s3|ts|res|aff|rr,cmp
+EV|V3|b0002.s4|ts|res|aff|rr,cmp
+EV|V4|b0002.s5|ts|res|aff|mi
+EV|V5|b0002.s8|ts|int|aff|rr
+EV|V6|b0002.s7|ts|res|aff|rr
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V2;unc:c:ts:V5|hedged_claim||Overexpression and copy gain linked to aggressive cancers
+P|G1|D2|sup|c|ts|sup:a:ts:V3;sup:c:ts:V4||| Knockdown reduces prostate xenograft growth; recurrence association
+P|G3|D1|nf|-||||V6|Mechanistic interaction only, no disease association
+F|F1|association|MCM8 gain; aggressive clinical features|several human cancers|unknown|positive|not_reported|V2|abstract only
+F|F2|association|MCM8 expression; recurrence|prostate cancer patients|unknown|positive|not_reported|V3|abstract only
+F|F3|mechanism|MCM8 knockdown; growth, tumour volume|prostate cancer cells, SCID xenografts|unknown|positive|not_reported|V4|abstract only
+F|F4|mechanism|MCM8–cyclin D1; Rb phosphorylation|cancer cells|unknown|positive|not_reported|V6|

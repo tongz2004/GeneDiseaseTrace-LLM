@@ -1,0 +1,31 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|bone morphogenetic proteins|Bone morphogenetic proteins;BMPs;BMP|r|||||
+E|G2|gene|BMP4|BMP4;bone morphogenetic protein 4|r||human||
+E|G3|gene|BMP5|BMP5|r||human||
+E|G4|gene|Bmp5 (mouse)|bmp5;bone morphogenetic protein 5|r||non-human||
+E|G5|gene|BMP2|BMP2|r||human||
+E|D1|disease|axial skeletal malformations|axial skeletal malformations;axial skeletal abnormalities|r|||||
+E|D2|disease|heterotopic ossification|heterotopic ossification|r|||||
+E|D3|disease|fibrodysplasia ossificans progressiva|fibrodysplasia ossificans progressiva;FOP|r|||||
+E|D4|disease|murine short ear syndrome|short ear syndrome|r|||||
+E|D5|disease|malformed ears|small malformed ears;malformed external ears|r|||||
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s3|bg|bgr|aff|ebr,eda
+EV|V3|b0002.s6|ts|res|aff|rr,cmp
+EV|V4|b0001.s1+b0002.s7|ts|int|aff|rr
+EV|V5|b0002.s4|ts|co|na|do
+P|G2|D3|sup|a|bg|sup:a:bg:V1|||Dysregulated BMP4 expression in FOP patient cells
+P|G2|D1|sup|a|ts|sup:a:ts:V3+V4|||Elevated BMP4 in patient with axial malformations
+P|G2|D2|sup|a|ts|sup:a:ts:V3+V4|||Title links BMP4 overexpression with HO
+P|G3|D1|sup|a|ts|sup:a:ts:V3+V4|||Elevated BMP5 in patient with axial malformations
+P|G3|D2|sup|a|ts|sup:a:ts:V3+V4|||Title links BMP5 overexpression with HO
+P|G4|D4|sup|c|bg|sup:c:bg:V2|||Loss-of-function bmp5 mutations cause short ear
+P|G4|D1|sup|c|bg|sup:c:bg:V2|||Short ear includes axial skeletal malformations
+P|G4|D5|sup|c|bg|sup:c:bg:V2|||Short ear characterized by small malformed ears
+P|G2|D5|unc|-|ts|unc:a:ts:V3+V5|scope|V5|Ear malformation co-occurs; not explicitly attributed
+P|G3|D5|unc|-|ts|unc:a:ts:V3+V5|scope|V5|Ear malformation co-occurs; not explicitly attributed
+P|G5|D1|neg|-|ts|neg:a:ts:V3|||BMP2 mRNA unchanged in patient
+P|G5|D2|neg|-|ts|neg:a:ts:V3|||BMP2 mRNA unchanged in patient
+F|F1|group_comparison|BMP4, BMP5 mRNA and protein|patient lymphoblastoid cells vs controls|unknown|positive|not_reported|V3|single patient; no statistics in abstract
+F|F2|group_comparison|BMP2 mRNA|patient lymphoblastoid cells vs controls|unknown|null|not_reported|V3|single patient

@@ -1,0 +1,16 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|PHEX|PHEX;phosphate-regulating gene with homologies to endopeptidase on the X chromosome|r|||human||
+E|G2|gene|FGF23|fibroblast growth factor 23;FGF23|r|||human||
+E|D1|disease|hypophosphatemic rickets|hypophosphatemic rickets|r||||
+E|D2|disease|X-linked hypophosphatemic rickets|X-linked hypophosphatemic rickets;XLH|r|||D1|
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0001.s1+b0002.s5+b0002.s6|ts|res|aff|rr
+EV|V3|b0002.s7|ts|res|aff|cmp
+EV|V4|b0002.s8+b0002.s10|ts|neg|neg|cmp
+P|G1|D2|sup|c|both|sup:c:bg:V1;sup:a:ts:V2+V3|||Inactivating PHEX mutations cause XLH; mutations found
+P|G1|D1|sup|a|ts|sup:a:ts:V2+V3|||PHEX mutations detected in hypophosphatemic rickets patients
+P|G2|D2|neg|-|ts|neg:-:ts:V4|||Serum FGF23 not different from healthy controls
+F|F1|association|PHEX mutations; hypophosphatemic rickets|18 families, 43 patients|not_applicable|positive|partial|V2|abstract only
+F|F2|group_comparison|PHEX mutations; controls|250 healthy controls|not_applicable|null|partial|V3|
+F|F3|group_comparison|serum FGF23 levels|XLH patients vs healthy controls|not_significant|null|not_reported|V4|abstract only

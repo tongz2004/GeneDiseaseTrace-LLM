@@ -1,0 +1,28 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text, tables or figures
+E|G1|gene|S100A7|Psoriasin;S100A7|r|||human||
+E|G2|gene|MMP2|matrix metalloproteinase-2;MMP-2|r|||human||
+E|G3|gene|MMP9|MMP-9|r|||human||
+E|D1|disease|pancreatic cancer|pancreatic cancer;pancreatic cancers;pancreatic tumours;Local invasive pancreatic cancers|r|||||
+E|D2|disease|cancers|cancers|r|||||
+E|D3|disease|psoriasis|psoriatic|p|other||||
+E|D4|clinical_event|distant metastases|distant metastases|r|||||
+E|S1|phenotype|local invasion|local invasion|r|||||
+X|S100 family|b0002.s2|gene family, not single gene
+X|MMPs|b0002.s15|gene group, not single gene
+EV|V1|b0002.s3|bg|bgr|aff|ebr
+EV|V2|b0002.s9+b0002.s14|ts|res|aff|rr,cmp
+EV|V3|b0002.s10|ts|res|aff|rr,cmp
+EV|V4|b0002.s11+b0002.s12+b0002.s13+b0002.s15|ts|res|aff|rr,mi
+EV|V5|b0002.s1|bg|co|na|do
+P|G1|D1|sup|r|ts|sup:r:ts:V2|||Higher expression in locally invasive pancreatic cancers
+P|G1|D4|sup|r|ts|sup:r:ts:V3|||Reduced expression in tumours with distant metastases
+P|G1|D2|sup|a|bg|sup:a:bg:V1|||Background: implicated in cancers, poor prognosis
+P|G1|D3|nf|-||||V5|Protein isolated from psoriatic lesions; no relation
+P|G2|D1|nf|-||||V4|Upregulation in cells only; no disease link
+P|G3|D1|nf|-||||V4|Upregulation in cells only; no disease link
+F|F1|group_comparison|Psoriasin transcripts vs local extension|pancreatic tumours|unknown|positive|unread|V2|abstract gives no statistics
+F|F2|group_comparison|Psoriasin expression vs distant metastasis|pancreatic primary tumours|unknown|negative|unread|V3|abstract gives no statistics
+F|F3|mechanism|Psoriasin overexpression vs growth, migration, invasion|pancreatic cancer cell lines|significant|positive|not_reported|V4|in vitro only
+F|F4|mechanism|Psoriasin overexpression vs MMP-2, MMP-9|pancreatic cancer cell lines|unknown|positive|not_reported|V4|in vitro only
+R|correlation vs within-disease rule|b0002.s9|Gene expression vs disease stage within cancer; rules partly overlap|Treated as gene–disease-variable correlation; supported

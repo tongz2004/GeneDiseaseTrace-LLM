@@ -1,0 +1,17 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; single case report
+E|E1|gene|CYP2D6|CYP2D6|r||human||
+E|E2|disease|delirium|delirium;Delirium|r||||
+E|E3|disease|atrial fibrillation|atrial fibrillation|r||||
+E|E4|clinical_event|flecainide toxicity|toxicity|p|other|||
+E|E5|symptom|confusion|confusion|r||||
+E|E6|symptom|paranoia|paranoia|r||||
+X|Naranjo probability scale|b0002|assessment tool, not disease
+X|Horn Drug Interaction Probability Scale|b0002|assessment tool, not disease
+EV|V1|b0002.s10|bg|bgr|na|do
+EV|V2|b0002.s11|ts|int|hyp|ho
+EV|V3|b0002.s13|ts|int|hyp|ho
+P|E1|E2|unc|-|ts|unc:-:ts:V2+V3|hedged_claim|V1|Possible CYP2D6-mediated drug interaction; no gene finding
+P|E1|E4|unc|-|ts|unc:-:ts:V3|hedged_claim|V1|Toxicity "may occur" with CYP2D6 inhibitors; drug-level
+F|F1|other|flecainide-paroxetine CYP2D6 interaction; delirium|one 69-year-old woman|not_applicable|unknown|not_applicable|V2|single case; probability-scale judgment only
+R|drug-mediated gene link|b0002.s13|Gene role arises only via inhibitor drugs, not gene status|Treated as hedged mechanistic inference, uncertain

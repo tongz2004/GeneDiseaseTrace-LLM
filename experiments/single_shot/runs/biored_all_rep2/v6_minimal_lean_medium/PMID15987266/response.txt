@@ -1,0 +1,14 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|GAP43|GAP43;GAP-43;Growth-associated protein 43|r||non-human||
+E|D1|disease|epilepsy|epilepsy;epileptic|r||||
+E|D2|disease|status epilepticus|status epilepticus|r||||
+E|PH1|phenotype|mossy fiber sprouting|mossy fiber sprouting|r||||
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s6|ts|neg|neg|cmp
+EV|V3|b0002.s7+b0002.s9|ts|res|aff|rr,cmp
+P|G1|D1|sup|a|both|sup:a:bg:V1;sup:a:ts:V3;neg:-:ts:V2|||Band width reduced in epileptic rats; intensity unchanged
+P|G1|D2|sup|a|ts|sup:a:ts:V3;neg:-:ts:V2|||SE-induced (Pilo) rats show thinner GAP43-ir band
+F|F1|group_comparison|GAP43-ir densitometry in IML|Pilo vs CHX+Pilo vs control rats|not_significant|null|not_reported|V2|abstract only
+F|F2|group_comparison|GAP43-ir band width in IML|Pilo vs CHX+Pilo and control rats|significant|negative|partial|V3|p-value only
+C|C1|GAP43-ir change in epileptic rats|b0002.s6+b0002.s7|noncritical|resolved|Different measures: intensity null, width reduced

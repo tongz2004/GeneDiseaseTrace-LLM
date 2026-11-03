@@ -1,0 +1,19 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|IL28B|IL28B;interleukin 28B|r|||human|
+E|G2|gene|APOB|apolipoprotein B-100;apoB-100|r|||human|
+E|D1|disease|chronic hepatitis C|chronic hepatitis C;chronic HCV infection;chronic hepatitis|r||||
+X|aa 70 substitution in the core region|b0002.s4|viral core amino acid variant, not human gene
+X|Arg70|b0002.s5|HCV core residue, not a gene
+X|low-density lipoprotein (LDL) cholesterol|b0002.s4|lipid measure, not gene
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s4|ts|res|aff|rr
+EV|V3|b0002.s6|ts|res|aff|rr,cmp
+EV|V4|b0002.s7|ts|int|aff|eda
+EV|V5|b0002.s8|ts|int|hyp|ho
+EV|V6|b0002.s1|bg|bgr|aff|ebr
+P|G1|D1|sup|a|both|sup:a:bg:V1;sup:a:ts:V2+V3||V5|IL28B SNPs affect treatment response; genotype modifies apoB
+P|G2|D1|sup|a|ts|sup:a:ts:V4;unc:a:ts:V5||V2+V6|apoB-100 proposed marker of HCV lipoprotein impairment
+F|F1|association|rs8099917 TT genotype vs apoB-100 levels|148 chronic HCV G1b patients|significant|positive|partial|V3|abstract only
+F|F2|association|rs8099917 and core aa70 independent apoB-100 determinants|148 chronic HCV G1b patients|significant|unknown|not_reported|V2|abstract only; multivariate details absent
+F|F3|association|Arg70 vs apoB-100 levels|148 chronic HCV G1b patients|significant|positive|partial|b0002.s5|viral variant, not gene

@@ -1,0 +1,15 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|ABCD1|ALD|p|ambiguous_mapping|human||
+E|D1|disease|X-linked adrenoleukodystrophy|X-linked adrenoleukodystrophy;adrenoleukodystrophy;ALD|r||||
+E|D2|disease|adrenomyeloneuropathy|adrenomyeloneuropathy|r||||
+E|D3|disease|Addison disease|Addison|r||||
+E|PH1|phenotype|very long chain fatty acid accumulation|very long chain fatty acids|r||||
+EV|V1|b0002.s1+b0002.s2|ts|res|aff|rr
+EV|V2|b0002.s3|ts|res|aff|cs,cmp
+EV|V3|b0002.s4|ts|int|aff|eda
+P|G1|D1|sup|c|ts|sup:c:ts:V1+V2+V3|||Novel missense mutation co-segregates and is proposed causal
+P|G1|D2|sup|a|ts|sup:a:ts:V2+V3|||AMN sibling carries the familial mutation
+P|G1|D3|sup|a|ts|sup:a:ts:V2+V3|||Addison-only sibling carries the familial mutation
+F|F1|descriptive|ALD gene P484R; affected status|family; 5 unrelated ALD patients; 20 controls|not_applicable|positive|not_reported|V2|small single family
+R|surface ambiguity|b0001.s1|ALD denotes both the gene and the disease|Gene surface is taken from "ALD gene/cDNA"; other uses are treated as disease.

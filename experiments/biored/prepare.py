@@ -2,6 +2,7 @@
 
 Usage: python experiments/biored/prepare.py          (frozen 50-abstract test sample)
        python experiments/biored/prepare.py --all    (every abstract with a gene-disease relation, all splits)
+       python experiments/biored/prepare.py --test-rest   (the other Test abstracts: no gene-disease relation)
 
 Input: data/BioRED/Test.BioC.JSON from BIORED.zip (NCBI FTP, pub/lu/BioRED; public domain, Luo et al. 2022).
 Eligible: test abstracts with at least one gold gene-disease relation (GeneOrGeneProduct x DiseaseOrPhenotypicFeature).
@@ -10,6 +11,10 @@ redrawn (rerunning checks that the frozen sample still matches).
 
 --all: every Train/Dev/Test abstract with at least one gold gene-disease relation (419), no sampling; the list with each
 abstract's split is frozen in sample_all.json and the gold in gold_all.json. Our method never trained or tuned on any split.
+
+--test-rest: the 27 Test abstracts that --all leaves out because they have no gold gene-disease relation (frozen in
+sample_test_rest.json, gold mentions with an empty relation list in gold_test_rest.json). Together with the 73 Test
+abstracts in sample_all.json they make the whole Test split, so a supported pair on these counts as a false positive.
 
 The JATS files (papers/PMID<pmid>.xml: title + one abstract paragraph, article-type research-article) let the frozen
 single-shot pipeline run unchanged: biomed.jats parses them into the same blocks, sentence IDs and validator checks as
@@ -175,5 +180,27 @@ def main_all():
            f"{len(frozen_50 & set(picked))} already in sample_50", gold_out, mismatches, "gold_all.json")
 
 
+def main_test_rest():
+    source = DATA / "BioRED" / "Test.BioC.JSON"
+    parsed = {d["id"]: gold(d) for d in json.loads(source.read_text(encoding="utf-8"))["documents"]}
+    picked = sorted((p for p, g in parsed.items() if not g[3]), key=int)
+    record = {"source": "BIORED.zip (https://ftp.ncbi.nlm.nih.gov/pub/lu/BioRED/), Test.BioC.JSON",
+              "test_sha256": hashlib.sha256(source.read_bytes()).hexdigest(),
+              "criteria": "test abstracts with no gold gene-disease relation (complement of the Test part of sample_all.json)",
+              "test_abstracts": len(parsed), "eligible": len(picked),
+              "papers": [{"paper_id": f"PMID{p}", "pmid": p, "split": "Test", "gold_gene_disease": 0} for p in picked]}
+    path = HERE / "sample_test_rest.json"
+    if path.exists():
+        frozen = json.loads(path.read_text(encoding="utf-8"))
+        if [p["pmid"] for p in frozen["papers"]] != picked or frozen["test_sha256"] != record["test_sha256"]:
+            raise SystemExit("sample_test_rest.json no longer matches the data; refusing to rewrite")
+    else:
+        path.write_text(json.dumps(record, indent=2), encoding="utf-8")
+    gold_out, mismatches = build_gold(parsed, picked)
+    (HERE / "gold_test_rest.json").write_text(json.dumps(gold_out, ensure_ascii=False, indent=1), encoding="utf-8")
+    report(f"BioRED test: {len(parsed)} abstracts, {len(picked)} without gene-disease relations", gold_out, mismatches,
+           "gold_test_rest.json")
+
+
 if __name__ == "__main__":
-    main_all() if "--all" in sys.argv[1:] else main()
+    main_all() if "--all" in sys.argv[1:] else main_test_rest() if "--test-rest" in sys.argv[1:] else main()

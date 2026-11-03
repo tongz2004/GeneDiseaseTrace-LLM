@@ -1,0 +1,19 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only; no full text or attachments.
+E|G1|gene|SSH1|SSH1|r||human||
+E|D1|disease|disseminated superficial actinic porokeratosis|disseminated superficial actinic porokeratosis;Disseminated superficial actinic porokeratosis;DSAP|r||||
+E|H1|phenotype|multiple superficial keratotic lesions|multiple superficial keratotic lesions|r||||
+E|H2|phenotype|slightly raised keratotic border|slightly raised keratotic border|r||||
+E|H3|phenotype|cytoskeleton disorganization|cytoskeleton disorganization|r||||
+X|D12S330|b0002|genetic_marker
+X|D12S354|b0002|genetic_marker
+X|p.Ser63Asn|b0002|variant_identifier
+X|p.Ser19CysfsX24|b0002|variant_identifier
+X|p.Pro27ProfsX54|b0002|variant_identifier
+X|actin|b0002|no_single_gene_identity
+EV|V1|b0001.s1|ts|hyp|hyp|ho
+EV|V2|b0002.s4|ts|co|na|do
+EV|V3|b0002.s6|ts|int|hyp|ho
+P|G1|D1|unc|-|ts|unc:a:ts:V1|hedged_claim|V2|Candidate designation; detected variants lack explicit disease attribution.
+F|F1|descriptive|SSH1 variants|Two families; one non-familial DSAP case|not_applicable|not_applicable|not_applicable|V2|No segregation or comparative results provided.
+F|F2|hypothesis|Cytoskeleton disorganization and DSAP pathogenesis|Epidermal cells|not_applicable|unknown|not_reported|V3|No explicit gene-specific attribution.

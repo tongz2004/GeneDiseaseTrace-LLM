@@ -1,0 +1,18 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|DACH1|DACH1|r|||human||
+E|G2|gene|FGF2|FGF2;bFGF;fibroblast growth factor 2|r|||human||
+E|G3|gene|PROM1|CD133|r|||human||
+E|G4|gene|NES|Nestin|r|||human||
+E|D1|disease|glioblastoma multiforme|glioblastoma multiformes|r|||||
+E|D2|disease|glioma|glioma|r|||||
+EV|V1|b0002.s2|ts|res|aff|rr
+EV|V2|b0001.s1+b0002.s3+b0002.s5+b0002.s7|ts|res|aff|rr,mi
+EV|V3|b0002.s10|ts|int|aff|eda
+EV|V4|b0002.s8+b0002.s9|ts|res|aff|rr,mi
+P|G1|D1|sup|a|ts|sup:a:ts:V1|||Homozygous deletion of DACH1 locus in glioblastomas
+P|G1|D2|sup|c|ts|sup:c:ts:V2+V3|||DACH1 expression suppresses glioma growth and tumorigenicity
+P|G2|D2|sup|c|ts|sup:c:ts:V4|||bFGF rescues tumorigenicity repressed by DACH1
+F|F1|descriptive|DACH1 locus copy number|glioblastoma multiforme samples|not_applicable|negative|not_reported|V1|abstract only
+F|F2|mechanism|DACH1 expression; proliferation, tumorigenicity|glioma cell lines, mouse xenografts|unknown|negative|not_reported|V2|abstract only
+F|F3|mechanism|DACH1 represses bFGF; bFGF rescue|U87TR-Da glioma cells|unknown|positive|not_reported|V4|abstract only

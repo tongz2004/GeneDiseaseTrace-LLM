@@ -1,0 +1,33 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|MEN1|MEN1|r||human||
+E|D1|disease|primary hyperparathyroidism|Primary hyperparathyroidism;pHPT;primary hyperparathyroidism|r||||
+E|D2|disease|sporadic primary hyperparathyroidism|sporadic primary hyperparathyroidism;sporadic pHPT|r|||D1|
+E|D3|disease|sporadic parathyroid tumors|sporadic parathyroid tumors|r||||
+E|D4|disease|benign parathyroid lesion|benign parathyroid lesion|p|other||D3|
+E|D5|disease|parathyroid adenoma|parathyroid adenoma|r||||
+E|D6|disease|parathyroid hyperplasia|hyperplasia|p|other|||
+E|D7|disease|parathyroid carcinoma|carcinoma;carcinomas|p|other|||
+E|D8|disease|multiple endocrine neoplasia|multiple endocrine neoplasia|r||||
+E|D9|disease|multiple endocrine neoplasia type 1|MEN1|p|ambiguous_mapping||D8|
+X|endocrine disease|b0002|generic category, not a specific disease
+X|inherited disorders|b0002|generic category, not a specific disease
+X|R171Q;D418D;222insT;912delTA;835del18;P291A;L89R;Q536X|b0002|variant identifiers
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s6|ts|res|aff|rr
+EV|V3|b0002.s11|ts|res|aff|rr,eda
+EV|V4|b0002.s6|ts|neg|neg|rr
+EV|V5|b0001.s1+b0002.s3|ts|co|na|do
+EV|V6|b0002.s10|ts|neg|neg|rr
+EV|V7|b0002.s12|ts|int|hyp|ho
+P|G1|D3|sup|a|both|sup:a:bg:V1;sup:a:ts:V3||V7|background report plus somatic mutations in tumors
+P|G1|D4|sup|a|ts|sup:a:ts:V2+V3|||somatic mutations in 6/35 benign lesions
+P|G1|D2|sup|a|ts|sup:a:ts:V2+V5|||somatic mutations in sporadic pHPT patients' tumors
+P|G1|D1|nf|-||||||only the child term co-occurs with the gene
+P|G1|D5|unc|-||||scope|V5|mutations reported for pooled benign lesions only
+P|G1|D6|unc|-||||scope|V5|mutations reported for pooled benign lesions only
+P|G1|D7|neg|-||neg:a:ts:V4|||no MEN1 alterations in 4 carcinomas
+F|F1|descriptive|MEN1 somatic mutation frequency|35 benign, 4 carcinoma sporadic pHPT|not_applicable|not_applicable|partial|V2+V4|small carcinoma group (n=4)
+F|F2|descriptive|MEN1 polymorphisms R171Q, D418D|39 sporadic pHPT tumors|not_applicable|not_applicable|partial|V2|abstract only
+F|F3|correlation|MEN1 mutations/polymorphisms vs clinical phenotype|39 sporadic pHPT patients|not_significant|null|not_reported|V6|within-disease; statistics not shown
+R|merging|D9 MEN1|Disease abbreviation MEN1 is identical to the gene symbol MEN1.|Kept a separate provisional disease entity; s1 does not mention the gene.

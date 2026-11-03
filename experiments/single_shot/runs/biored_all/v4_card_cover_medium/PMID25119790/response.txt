@@ -1,0 +1,25 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text, tables or figures
+E|G1|gene|neutrophil gelatinase-associated lipocalin|neutrophil gelatinase-associated lipocalin;NGAL|r||non-human||
+E|G2|gene|N-acetyl b-D-glucosaminidase|N-acetyl b-D-glucosaminidase;NAG|p|ambiguous_mapping|non-human||
+E|G3|gene|kidney injury molecule-1|kidney injury molecule (KIM)-1|r||non-human||
+E|G4|gene|claudin-2|claudin-2|r||non-human||
+E|G5|gene|Nrf2|Nrf2|r||non-human||
+E|G6|ambiguous_gene|aconitase|aconitase|u|ambiguous_mapping|non-human||
+E|D1|disease|nephrotoxicity|nephrotoxicity|r|||||
+E|D2|disease|renal injury|renal injury|r|||||
+E|D3|disease|nephropathy|nephropathy|r|||||
+E|S1|phenotype|tubular proteinuria|Tubular proteinuria|r|||||
+E|S2|phenotype|oxidative stress|oxidative stress|r|||||
+E|S3|phenotype|necrosis|necrosis|r|||||
+E|S4|phenotype|apoptosis|apoptosis|r|||||
+X|complex I|b0002.s8|protein complex, not a single-gene endpoint
+X|respiratory complex I|b0001.s1|protein complex, not a single-gene endpoint
+X|LLC-PK1|b0002.s5|cell line identifier
+EV|V1|b0002.s2+b0002.s3|ts|res|aff|rr,cmp
+P|G1|D2|sup|a|ts|sup:a:ts:V1||V1|Urinary NGAL increased in maleate renal injury (rats)
+P|G2|D2|sup|a|ts|sup:a:ts:V1||V1|Urinary NAG increased in maleate renal injury (rats)
+P|G3|D2|sup|a|ts|sup:a:ts:V1||V1|KIM-1 upregulated in maleate renal injury (rats)
+P|G4|D2|sup|a|ts|sup:a:ts:V1||V1|Claudin-2 expression decreased in maleate renal injury (rats)
+F|F1|group_comparison|NGAL, NAG, KIM-1, claudin-2 levels|maleate-treated vs control rats|unknown|mixed|not_reported|V1|abstract only; no statistics given
+R|marker changes in an induced injury model|b0002.s3|unclear whether marker change in an animal model counts as association|treated as association from this study, non-human

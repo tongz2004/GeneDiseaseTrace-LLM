@@ -1,0 +1,10 @@
+[
+  [
+    "canonicalize: main type/scope recomputed",
+    "P G4-D4: c/bg -> c/both"
+  ],
+  [
+    "canonicalize: type set to -",
+    "P G4-D1: a -> - (unc)"
+  ]
+]

@@ -1,0 +1,37 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|angiotensin II type 1a receptor|angiotensin II type 1a receptor;angiotensin II type 1a (AT1a) receptor;AT1a receptor;AT1a|r||non-human||
+E|G2|gene|human liver-type fatty acid binding protein|human liver-type fatty acid binding protein;L-FABP|r||human||
+E|D1|disease|renal injury|renal injury;renal damage|r|||||
+E|D2|disease|hypertensive renal damage|hypertensive renal damage|r|||D1|
+E|D3|disease|hypertension|hypertension|r|||||
+E|D4|disease|deoxycorticosterone acetate-salt hypertension|deoxycorticosterone acetate-salt hypertension|r|||D3|
+E|D5|disease|glomerular sclerosis|glomerular sclerosis|r|||||
+E|D6|disease|tubulointerstitial damage|tubulointerstitial damage|r|||||
+E|D7|disease|glomerular damage|glomerular damage|r|||||
+E|S1|phenotype|expansion of glomerular area|expansion of glomerular area|r|||||
+EV|V1|b0002.s5|ts|res|aff|rr,cmp,mi
+EV|V2|b0002.s5|ts|neg|neg|rr,cmp,mi
+EV|V3|b0002.s8|ts|int|hyp|ho
+EV|V4|b0002.s2+b0002.s6|ts|int|q|rr,unc
+EV|V5|b0002.s2|bg|bgr|aff|ebr
+EV|V6|b0002.s1+b0002.s2|ts|aim|na|none
+EV|V7|b0002.s4|ts|co|na|do
+EV|V8|b0002.s7|ts|res|na|do
+P|G1|D7|sup|a|ts|sup:a:ts:V1|||AT1a knockout worsened glomerular damage versus wild-type
+P|G1|D3|neg|-|ts|neg:-:ts:V2|||Hypertension similarly induced regardless of AT1a status
+P|G1|D2|unc|-|ts|unc:-:ts:V3|hedged_claim||Conclusion hedged with "may contribute"
+P|G1|D1|unc|-|ts|unc:-:ts:V3|hedged_claim|V6+V8|Only aim and hedged summary for renal damage
+P|G1|D6|unc|-|ts|unc:-:ts:V4|support_basis_unresolved||Inferred via urinary L-FABP indicator only
+P|G1|D5|nf|-|||||V7|Observed only in AT1a+/+ mice, no comparison
+P|G1|D4|nf|-|||||V6|Title aim only
+P|G2|D6|sup|a|bg|sup:a:bg:V5|||L-FABP stated as indicator of tubulointerstitial damage
+P|G2|D3|nf|-|||||V7|Genotype label co-occurrence only
+P|G2|D5|nf|-|||||V7|Genotype label co-occurrence only
+P|G2|D7|nf|-|||||V1|Genotype label co-occurrence only
+P|G2|D1|nf|-|||||V8|Genotype label co-occurrence only
+F|F1|group_comparison|glomerular damage by AT1a genotype|DOCA-salt female mice|significant|positive|not_reported|V1|knockout more severe
+F|F2|group_comparison|urinary L-FABP by AT1a genotype|DOCA-salt female mice|significant|positive|not_reported|V4|higher in AT1a-/-
+F|F3|group_comparison|hypertension induction by AT1a genotype|DOCA-salt female mice|unknown|null|not_reported|V2|"similarly induced", no test shown
+F|F4|group_comparison|hydralazine vs renal damage|AT1a-/- DOCA mice|significant|negative|not_reported|V8|blood pressure also reduced
+R|species|b0002.s2|AT1a gene species implied by knockout mice, not named|Marked non-human, resolved by explicit mouse model context

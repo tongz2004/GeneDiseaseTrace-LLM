@@ -1,0 +1,18 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|sodium/iodide symporter|sodium/iodide symporter;NIS|r||human||
+E|G2|gene|TSH|TSH|p|undefined_abbreviation|human||
+E|D1|disease|iodide transport defect|Iodide transport defect;ITD|r||||
+E|D2|disease|congenital hypothyroidism|Congenital hypothyroidism;congenital hypothyroidism|r||||
+E|D3|disease|hypothyroidism|hypothyroidism|r||||
+E|S1|phenotype|nodular goitre|nodular goitre|r||||
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s8+b0002.s9|ts|res|na|do
+EV|V3|b0002.s11|ts|int|hyp|mi,ho
+EV|V4|b0001.s1+b0002.s12|ts|res|aff|eda
+EV|V5|b0002.s3+b0002.s5|ts|co|na|do
+P|G1|D1|sup|c|bg|sup:c:bg:V1;unc:-:ts:V3+V2|||Background states ITD arises from NIS abnormalities
+P|G1|D2|sup|a|ts|sup:a:ts:V4|||Case authors attribute congenital hypothyroidism to NIS deletion
+P|G1|D3|unc|-|ts|unc:-:ts:V5+V4|scope|V5|Patient's hypothyroidism linked only via congenital subtype
+F|F1|descriptive|NIS indel genotype|patient and consanguineous parents|not_applicable|not_applicable|not_applicable|V2|single family
+F|F2|mechanism|mutant del-(439-443) NIS iodide uptake|transfected COS-7 cells|unknown|negative|not_reported|V3|in vitro only

@@ -1,0 +1,36 @@
+{
+  "paper_id": "PMID21219851",
+  "variant": "v1_card_lean_medium",
+  "model": "GPT-6.1_sol",
+  "cli_model": "gpt-6.1-sol",
+  "effort": "medium",
+  "variant_hashes": {
+    "card.md": "de7857e6a3f667c39d4f914b9688e0db1c3c6862544c68068fd8e60c5607f1da",
+    "format.md": "392cb436fc41c69751174a204919761ca82f1ddd0d57d43c6457b855d6eed989"
+  },
+  "fixed_characters": 11284,
+  "paper_characters": 2427,
+  "calls": [
+    {
+      "seconds": 18.3,
+      "exit_code": 0,
+      "usage": {
+        "input_tokens": 16849,
+        "cache_read_input_tokens": 24832,
+        "output_tokens": 545,
+        "reasoning_output_tokens": 205
+      },
+      "usage_events": [
+        {
+          "input_tokens": 41681,
+          "cached_input_tokens": 24832,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 545,
+          "reasoning_output_tokens": 205
+        }
+      ],
+      "cost_usd": null,
+      "stderr": "2026-10-29T20:46:26.338290Z ERROR codex_core::tools::router: error=exec_command failed: CreateProcess { message: \"Rejected(\\\"`\\\\\\\"C:\\\\\\\\\\\\\\\\Users\\\\\\\\\\\\\\\\tongz\\\\\\\\\\\\\\\\AppData\\\\\\\\\\\\\\\\Local\\\\\\\\\\\\\\\\Programs\\\\\\\\\\\\\\\\PowerShell\\\\\\\\\\\\\\\\7\\\\\\\\\\\\\\\\pwsh.exe\\\\\\\" -Command \\\\\\\"Get-Content -LiteralPath 'C:/Users/tongz/.codex/skills/biomed-gene-disease-evidence/SKILL.md'\\\\\\\"` rejected: blocked by policy\\\")\" }\n"
+    }
+  ]
+}

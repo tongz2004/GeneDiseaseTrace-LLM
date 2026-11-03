@@ -1,0 +1,59 @@
+META|Claude Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|D1|disease|gastroenteropancreatic neuroendocrine tumors|gastroenteropancreatic neuroendocrine tumors;GEP-NETs;GEP-NET|r||||
+E|D2|disease|small intestine NETs|small intestine NETs|p|undefined_abbreviation|||
+E|D3|disease|metastatic GEP-NETs|metastatic GEP-NETs|r|||D1|
+E|G1|gene|TP53|TP53|r||human||
+E|G2|gene|CNBD1|CNBD1|r||human||
+E|G3|gene|RB1|RB1|r||human||
+E|G4|gene|APC|APC|r||human||
+E|G5|gene|BCOR|BCOR|r||human||
+E|G6|gene|BRAF|BRAF|r||human||
+E|G7|gene|CTNNB1|CTNNB1|r||human||
+E|G8|gene|EGFR|EGFR|r||human||
+E|G9|gene|EP300|EP300|r||human||
+E|G10|gene|ERBB3|ERBB3|r||human||
+E|G11|gene|KDM6A|KDM6A|r||human||
+E|G12|gene|KRAS|KRAS|r||human||
+E|G13|gene|MGA|MGA|r||human||
+E|G14|gene|MLL3|MLL3|r||human||
+E|G15|gene|PTEN|PTEN|r||human||
+E|G16|gene|RASA1|RASA1|r||human||
+E|G17|gene|SMARCB1|SMARCB1|r||human||
+E|G18|gene|SPEN|SPEN|r||human||
+E|G19|gene|TBC1D12|TBC1D12|r||human||
+E|G20|gene|VHL|VHL|r||human||
+E|S1|clinical_event|progression after pazopanib treatment|progression|r||||
+X|cancer-related gene|b0002|gene-set descriptor, not a disease endpoint
+EV|V1|b0002.s4|ts|res|na|do
+EV|V2|b0002.s5|ts|res|na|do
+EV|V3|b0002.s6|ts|res|na|do
+EV|V4|b0002.s7|ts|res|na|do
+EV|V5|b0002.s9|ts|int|hyp|ho
+EV|V6|b0001.s1|ts|res|na|do
+P|G1|D1|nf|-|||||V1+V2+V3|mutation detected; response outcome, no disease attribution
+P|G2|D1|nf|-|||||V1+V2|mutation detected only
+P|G3|D1|nf|-|||||V1+V2|mutation detected only
+P|G4|D1|nf|-|||||V1|mutation detected only
+P|G5|D1|nf|-|||||V1|mutation detected only
+P|G6|D1|nf|-|||||V1+V3+V4+V6|mutation detected; drug response, no disease attribution
+P|G6|D3|unc|-|||hedged_claim|V5|actionable mutation stated as possibility
+P|G7|D1|nf|-|||||V1|mutation detected only
+P|G8|D1|nf|-|||||V1|mutation detected only
+P|G9|D1|nf|-|||||V1|mutation detected only
+P|G10|D1|nf|-|||||V1|mutation detected only
+P|G11|D1|nf|-|||||V1|mutation detected only
+P|G12|D1|nf|-|||||V1|mutation detected only
+P|G13|D1|nf|-|||||V1|mutation detected only
+P|G14|D1|nf|-|||||V1|mutation detected only
+P|G15|D1|nf|-|||||V1|mutation detected only
+P|G16|D1|nf|-|||||V1|mutation detected only
+P|G17|D1|nf|-|||||V1|mutation detected only
+P|G18|D1|nf|-|||||V1|mutation detected only
+P|G19|D1|nf|-|||||V1|mutation detected only
+P|G20|D1|nf|-|||||V1|mutation detected only
+F|F1|descriptive|cancer-related gene mutations; TP53, CNBD1, RB1 recurrence|12 GEP-NETs, WES|not_applicable|not_applicable|partial|V1+V2|small sample
+F|F2|descriptive|TP53 mutation and pazopanib durable response|3 GEP-NET patients|not_applicable|not_applicable|not_reported|V3|no statistical test
+F|F3|descriptive|BRAF V600E and progression after pazopanib|1 small intestinal G1 NET patient|not_applicable|not_applicable|not_reported|V3|single case
+F|F4|descriptive|BRAF V600E/G593S frequency 9.1%|independent cohort, 44 GEP-NETs|not_applicable|not_applicable|partial|V4|Sanger sequencing only
+F|F5|hypothesis|BRAF V600E and pazopanib resistance|metastatic GEP-NETs|unknown|positive|not_reported|V5|hedged conclusion

@@ -1,0 +1,24 @@
+META|GPT-6|seen: no
+SCOPE|Supplied title and abstract only; full paper unavailable.
+E|G1|gene|DACH1|DACH1|r||human||
+E|G2|gene|FGF2|fibroblast growth factor 2;FGF2/bFGF;FGF2;bFGF|r||human||
+E|G3|gene|CD133|CD133|r||human||
+E|G4|gene|Nestin|Nestin|r||human||
+E|D1|disease|glioma|glioma|r||||
+E|D2|disease|glioblastoma multiformes|glioblastoma multiformes|r||||
+EV|V1|b0002.s2|ts|co|na|do
+EV|V2|b0002.s3+b0002.s4+b0002.s5+b0002.s7|ts|res|aff|rr,cmp,mi
+EV|V3|b0002.s6|ts|co|na|do
+EV|V4|b0002.s8|ts|res|aff|rr
+EV|V5|b0002.s9|ts|res|aff|rr,mi
+EV|V6|b0002.s9|ts|int|hyp|ho
+EV|V7|b0002.s10|ts|int|aff|eda
+P|G1|D1|sup|c|ts|sup:c:ts:V2+V7;unc:-:ts:V6|hedged_claim||Proliferation and tumor growth suppressed; proposed mechanism remains hedged.
+P|G2|D1|sup|c|ts|sup:c:ts:V5;unc:-:ts:V6|hedged_claim||Exogenous bFGF rescues glioma-cell tumorigenicity; downstream mechanism remains hedged.
+P|G1|D2|nf|-||||V1|Deletion reported without explicit glioblastoma disease attribution.
+P|G3|D1|nf|-||||V3|Spheroid marker expression alone provides no disease relation.
+P|G4|D1|nf|-||||V3|Spheroid marker expression alone provides no disease relation.
+F|F1|group_comparison|DACH1 expression; proliferation; tumor growth; tumorigenicity|Glioma cell lines; mouse xenografts|unknown|negative|not_reported|V2|
+F|F2|descriptive|DACH1; CD133; Nestin; spheroid formation|U87-DACH1-low versus U87-DACH1-high cells|not_applicable|not_applicable|not_reported|V3|
+F|F3|mechanism|DACH1; FGF2 transcription|Especially serum-free cultured cells|unknown|negative|not_reported|V4|
+F|F4|hypothesis|DACH1 loss; bFGF; tumor-initiating cells|Glioma cells|not_applicable|positive|not_applicable|V6|Mechanistic interpretation is explicitly hedged.

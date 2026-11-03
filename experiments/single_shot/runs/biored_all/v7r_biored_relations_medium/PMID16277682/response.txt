@@ -1,0 +1,11 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text
+E|G1|gene|SQSTM1|p62/sequestosome 1;p62/SQSTM1;p62/Sequestosome 1|r||human||
+E|D1|disease|Paget's disease of bone|Paget's disease of bone;PDB|r||||
+X|alkaline phosphatase|b0002|serum marker level, not a gene-disease relation
+X|ubiquitin protein-binding domain|b0002|protein domain, not a separate gene
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0001.s1+b0002.s4+b0002.s6|ts|res|aff|rr,cs
+EV|V3|b0002.s8|ts|int|aff|rr,cs
+P|G1|D1|sup|c|both|sup:c:bg:V1;sup:c:ts:V2+V3|||M404V co-segregates with polyostotic PDB
+F|F1|association|M404V and polyostotic PDB|Italian family, 22 genotyped members|not_applicable|positive|not_reported|V2+V3|single family; six asymptomatic carriers

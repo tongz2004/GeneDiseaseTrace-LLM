@@ -1,0 +1,34 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|CHRNA1|CHRNA1|r||human||
+E|G2|gene|CHRNB1|CHRNB1|r||human||
+E|G3|gene|CHRND|CHRND|r||human||
+E|G4|gene|RAPSN|RAPSN;rapsyn|r||human||
+E|G5|gene|CHRNG|CHRNG;acetylcholine receptor g subunit|r||human||
+E|D1|disease|multiple pterygium syndrome|Multiple pterygium syndromes;MPS;multiple pterygium syndrome;lethal MPS|r||||
+E|D2|disease|Escobar syndrome (nonlethal MPS)|Escobar|p|other|||
+E|D3|disease|fetal akinesia|fetal akinesia;lethal fetal akinesia sequence|r||||
+E|D4|disease|congenital myasthenic syndrome|congenital myasthenia|r||||
+E|D5|phenotype|arthrogryposis|arthrogryposis|r||||
+E|D6|phenotype|pterygia|pterygia|r||||
+EV|V1|b0002.s3|bg|bgr|aff|ebr,eda
+EV|V2|b0002.s5|ts|res|aff|rr,eda
+EV|V3|b0002.s7|ts|int|aff|rr
+EV|V4|b0002.s6|bg|bgr|aff|ebr
+EV|V5|b0002.s5|ts|neg|neg|rr
+EV|V6|b0002.s4|ts|hyp|hyp|ho
+P|G5|D1|sup|c|bg|sup:c:bg:V1|||CHRNG recessive mutations cause lethal/nonlethal MPS
+P|G5|D3|sup|a|bg|sup:a:bg:V1|||CHRNG-related MPS attributed to fetal akinesia
+P|G5|D2|sup|c|bg|sup:c:bg:V1|||nonlethal (Escobar) MPS caused by CHRNG
+P|G4|D3|sup|c|ts|sup:c:ts:V2+V3||V6|Homozygous frameshift in family with lethal fetal akinesia
+P|G4|D4|sup|c|both|sup:c:bg:V4;sup:c:ts:V3|||RAPSN mutations reported in congenital myasthenia
+P|G4|D1|unc|-|ts|unc:a:ts:V2|scope|V6|Family phenotype fetal akinesia; pterygia not stated
+P|G1|D1|neg|-|ts|neg:-:ts:V5|||No mutations in 15 lethal MPS cases
+P|G2|D1|neg|-|ts|neg:-:ts:V5|||No mutations in 15 lethal MPS cases
+P|G3|D1|neg|-|ts|neg:-:ts:V5|||No mutations in 15 lethal MPS cases
+P|G1|D3|neg|-|ts|neg:-:ts:V5|||No mutations in fetal akinesia cases
+P|G2|D3|neg|-|ts|neg:-:ts:V5|||No mutations in fetal akinesia cases
+P|G3|D3|neg|-|ts|neg:-:ts:V5|||No mutations in fetal akinesia cases
+F|F1|descriptive|RAPSN c.1177-1178delAA homozygous|family, three affected children|not_applicable|not_applicable|not_reported|V2|single family
+F|F2|descriptive|CHRNA1, CHRNB1, CHRND mutation screening|15 lethal MPS/fetal akinesia cases|not_applicable|null|not_reported|V5|small cohort, CHRNG-negative only
+F|F3|mechanism|rapsyn loss-of-function severity vs phenotype|functional studies|unknown|not_applicable|unread|V3|abstract-level description only

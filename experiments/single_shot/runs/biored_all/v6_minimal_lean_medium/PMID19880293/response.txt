@@ -1,0 +1,20 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|FOXP3|FOXP3|r||human||
+E|D1|disease|psoriasis|psoriasis;Psoriasis;psoriatic|r||||
+E|D2|disease|autoimmune diseases|autoimmune diseases;autoimmune disorders|r|other|||
+X|CD4(+)CD25(+)|b0002|cell-type marker label for T-regs, not gene-disease claim
+EV|V1|b0002.s10|ts|res|aff|rr,cmp
+EV|V2|b0002.s11|ts|res|aff|rr,cmp
+EV|V3|b0002.s14+b0002.s15|ts|res|aff|rr,cmp
+EV|V4|b0002.s16|ts|int|aff|rr
+EV|V5|b0002.s4|bg|bgr|aff|ebr
+EV|V6|b0002.s13|ts|neg|neg|rr
+EV|V7|b0002.s12|ts|neg|neg|rr,cmp
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V2+V3+V4||V6+V7|-3279 and IVS9+459 genotypes associated with risk
+P|G1|D2|sup|a|bg|sup:a:bg:V5||||Background: FOXP3 SNPs confer autoimmune susceptibility
+F|F1|association|FOXP3 -3279 AC/AC+AA vs CC|Han Chinese cases vs controls|significant|positive|available|V1|
+F|F2|association|FOXP3 IVS9+459 GG vs AA|Han Chinese cases vs controls|significant|positive|available|V2|GA+GG borderline, reported null
+F|F3|association|FOXP3 -6054 del/ATT, -924 A/G|Han Chinese cases vs controls|not_significant|null|partial|V6|
+F|F4|association|-3279 AC+AA; IVS9+459 GA+GG|males; severe psoriasis PASI>20|significant|positive|available|V3|
+C|C1|IVS9+459 GA+GG null claim|b0002.s12|noncritical|resolved|CI lower bound 1.00; borderline, gene-level unaffected

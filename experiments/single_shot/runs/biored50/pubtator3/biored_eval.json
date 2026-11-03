@@ -1,64 +1,73 @@
 {
   "variant": "pubtator3",
   "run_set": "biored50",
+  "scorer": {
+    "protocol": "one-to-one (maximum bipartite matching), since 2026-11-03; before that many-to-one",
+    "evaluate_py_sha256": "cebb3b026cf31d4a0b3145a6ffad4457ec97e461adf93fced6102c8e0a969267"
+  },
   "papers_scored": 50,
   "papers_missing": [],
   "strict": {
-    "precision": 0.827,
-    "recall": 0.647,
-    "f1": 0.726,
+    "precision": 0.765,
+    "recall": 0.63,
+    "f1": 0.691,
     "ci95": {
       "precision": [
-        0.732,
-        0.902
+        0.657,
+        0.855
       ],
       "recall": [
-        0.495,
-        0.804
+        0.478,
+        0.786
       ],
       "f1": [
-        0.609,
-        0.825
+        0.575,
+        0.787
       ]
     }
   },
   "scope_adjusted": {
-    "precision": 0.827,
-    "recall": 0.647,
-    "f1": 0.726,
+    "precision": 0.765,
+    "recall": 0.63,
+    "f1": 0.691,
     "ci95": {
       "precision": [
-        0.728,
-        0.904
+        0.66,
+        0.859
       ],
       "recall": [
-        0.5,
-        0.802
+        0.487,
+        0.785
       ],
       "f1": [
-        0.606,
-        0.824
+        0.577,
+        0.79
       ]
     }
   },
   "supported_or_uncertain": {
-    "precision": 0.827,
-    "recall": 0.647,
-    "f1": 0.726,
+    "precision": 0.765,
+    "recall": 0.63,
+    "f1": 0.691,
     "ci95": {
       "precision": [
-        0.728,
-        0.902
+        0.649,
+        0.858
       ],
       "recall": [
-        0.494,
-        0.795
+        0.479,
+        0.779
       ],
       "f1": [
-        0.609,
-        0.824
+        0.572,
+        0.786
       ]
     }
+  },
+  "strict_many_to_one": {
+    "precision": 0.827,
+    "recall": 0.647,
+    "f1": 0.726
   },
   "per_paper": {
     "PMID15000256": {
@@ -67,6 +76,8 @@
       "fn_symptom": 0,
       "our_supported": 3,
       "tp_ours": 3,
+      "tp_ours_many_to_one": 3,
+      "tp_gold_many_to_one": 3,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -76,6 +87,8 @@
       "fn_symptom": 0,
       "our_supported": 1,
       "tp_ours": 1,
+      "tp_ours_many_to_one": 1,
+      "tp_gold_many_to_one": 1,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -85,6 +98,8 @@
       "fn_symptom": 0,
       "our_supported": 2,
       "tp_ours": 1,
+      "tp_ours_many_to_one": 1,
+      "tp_gold_many_to_one": 1,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -93,7 +108,9 @@
       "fn": 0,
       "fn_symptom": 0,
       "our_supported": 9,
-      "tp_ours": 8,
+      "tp_ours": 4,
+      "tp_ours_many_to_one": 8,
+      "tp_gold_many_to_one": 4,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -102,7 +119,9 @@
       "fn": 0,
       "fn_symptom": 0,
       "our_supported": 6,
-      "tp_ours": 6,
+      "tp_ours": 4,
+      "tp_ours_many_to_one": 6,
+      "tp_gold_many_to_one": 4,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -112,6 +131,8 @@
       "fn_symptom": 0,
       "our_supported": 2,
       "tp_ours": 2,
+      "tp_ours_many_to_one": 2,
+      "tp_gold_many_to_one": 2,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -121,6 +142,8 @@
       "fn_symptom": 0,
       "our_supported": 2,
       "tp_ours": 1,
+      "tp_ours_many_to_one": 1,
+      "tp_gold_many_to_one": 1,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -129,7 +152,9 @@
       "fn": 0,
       "fn_symptom": 0,
       "our_supported": 2,
-      "tp_ours": 2,
+      "tp_ours": 1,
+      "tp_ours_many_to_one": 2,
+      "tp_gold_many_to_one": 1,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -139,6 +164,8 @@
       "fn_symptom": 0,
       "our_supported": 1,
       "tp_ours": 1,
+      "tp_ours_many_to_one": 1,
+      "tp_gold_many_to_one": 1,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -148,6 +175,8 @@
       "fn_symptom": 0,
       "our_supported": 1,
       "tp_ours": 1,
+      "tp_ours_many_to_one": 1,
+      "tp_gold_many_to_one": 1,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -156,7 +185,9 @@
       "fn": 13,
       "fn_symptom": 0,
       "our_supported": 5,
-      "tp_ours": 3,
+      "tp_ours": 2,
+      "tp_ours_many_to_one": 3,
+      "tp_gold_many_to_one": 2,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -166,6 +197,8 @@
       "fn_symptom": 0,
       "our_supported": 2,
       "tp_ours": 2,
+      "tp_ours_many_to_one": 2,
+      "tp_gold_many_to_one": 2,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -175,6 +208,8 @@
       "fn_symptom": 0,
       "our_supported": 3,
       "tp_ours": 2,
+      "tp_ours_many_to_one": 2,
+      "tp_gold_many_to_one": 2,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -183,7 +218,9 @@
       "fn": 0,
       "fn_symptom": 0,
       "our_supported": 2,
-      "tp_ours": 2,
+      "tp_ours": 1,
+      "tp_ours_many_to_one": 2,
+      "tp_gold_many_to_one": 1,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -193,6 +230,8 @@
       "fn_symptom": 0,
       "our_supported": 10,
       "tp_ours": 3,
+      "tp_ours_many_to_one": 3,
+      "tp_gold_many_to_one": 3,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -202,6 +241,8 @@
       "fn_symptom": 0,
       "our_supported": 2,
       "tp_ours": 2,
+      "tp_ours_many_to_one": 2,
+      "tp_gold_many_to_one": 2,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -211,6 +252,8 @@
       "fn_symptom": 0,
       "our_supported": 5,
       "tp_ours": 3,
+      "tp_ours_many_to_one": 3,
+      "tp_gold_many_to_one": 3,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -220,6 +263,8 @@
       "fn_symptom": 0,
       "our_supported": 7,
       "tp_ours": 4,
+      "tp_ours_many_to_one": 4,
+      "tp_gold_many_to_one": 4,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -229,6 +274,8 @@
       "fn_symptom": 0,
       "our_supported": 2,
       "tp_ours": 1,
+      "tp_ours_many_to_one": 1,
+      "tp_gold_many_to_one": 1,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -237,7 +284,9 @@
       "fn": 0,
       "fn_symptom": 0,
       "our_supported": 6,
-      "tp_ours": 6,
+      "tp_ours": 5,
+      "tp_ours_many_to_one": 6,
+      "tp_gold_many_to_one": 5,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -247,6 +296,8 @@
       "fn_symptom": 0,
       "our_supported": 5,
       "tp_ours": 4,
+      "tp_ours_many_to_one": 4,
+      "tp_gold_many_to_one": 4,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -255,7 +306,9 @@
       "fn": 0,
       "fn_symptom": 0,
       "our_supported": 4,
-      "tp_ours": 2,
+      "tp_ours": 1,
+      "tp_ours_many_to_one": 2,
+      "tp_gold_many_to_one": 1,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -265,6 +318,8 @@
       "fn_symptom": 0,
       "our_supported": 4,
       "tp_ours": 4,
+      "tp_ours_many_to_one": 4,
+      "tp_gold_many_to_one": 4,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -274,6 +329,8 @@
       "fn_symptom": 0,
       "our_supported": 4,
       "tp_ours": 4,
+      "tp_ours_many_to_one": 4,
+      "tp_gold_many_to_one": 4,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -283,6 +340,8 @@
       "fn_symptom": 0,
       "our_supported": 1,
       "tp_ours": 1,
+      "tp_ours_many_to_one": 1,
+      "tp_gold_many_to_one": 1,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -292,6 +351,8 @@
       "fn_symptom": 0,
       "our_supported": 2,
       "tp_ours": 2,
+      "tp_ours_many_to_one": 2,
+      "tp_gold_many_to_one": 2,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -301,6 +362,8 @@
       "fn_symptom": 0,
       "our_supported": 4,
       "tp_ours": 3,
+      "tp_ours_many_to_one": 3,
+      "tp_gold_many_to_one": 3,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -310,6 +373,8 @@
       "fn_symptom": 0,
       "our_supported": 1,
       "tp_ours": 1,
+      "tp_ours_many_to_one": 1,
+      "tp_gold_many_to_one": 1,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -319,6 +384,8 @@
       "fn_symptom": 0,
       "our_supported": 7,
       "tp_ours": 7,
+      "tp_ours_many_to_one": 7,
+      "tp_gold_many_to_one": 7,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -328,6 +395,8 @@
       "fn_symptom": 0,
       "our_supported": 2,
       "tp_ours": 2,
+      "tp_ours_many_to_one": 2,
+      "tp_gold_many_to_one": 2,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -337,15 +406,19 @@
       "fn_symptom": 0,
       "our_supported": 5,
       "tp_ours": 4,
+      "tp_ours_many_to_one": 4,
+      "tp_gold_many_to_one": 4,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
     "PMID21879313": {
-      "tp_gold": 4,
-      "fn": 3,
+      "tp_gold": 2,
+      "fn": 5,
       "fn_symptom": 0,
       "our_supported": 2,
       "tp_ours": 2,
+      "tp_ours_many_to_one": 2,
+      "tp_gold_many_to_one": 4,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -355,6 +428,8 @@
       "fn_symptom": 0,
       "our_supported": 1,
       "tp_ours": 1,
+      "tp_ours_many_to_one": 1,
+      "tp_gold_many_to_one": 1,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -364,6 +439,8 @@
       "fn_symptom": 0,
       "our_supported": 7,
       "tp_ours": 7,
+      "tp_ours_many_to_one": 7,
+      "tp_gold_many_to_one": 7,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -373,15 +450,19 @@
       "fn_symptom": 0,
       "our_supported": 2,
       "tp_ours": 2,
+      "tp_ours_many_to_one": 2,
+      "tp_gold_many_to_one": 2,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
     "PMID23069675": {
-      "tp_gold": 3,
-      "fn": 4,
+      "tp_gold": 2,
+      "fn": 5,
       "fn_symptom": 0,
       "our_supported": 2,
       "tp_ours": 2,
+      "tp_ours_many_to_one": 2,
+      "tp_gold_many_to_one": 3,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -391,6 +472,8 @@
       "fn_symptom": 0,
       "our_supported": 3,
       "tp_ours": 3,
+      "tp_ours_many_to_one": 3,
+      "tp_gold_many_to_one": 3,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -400,6 +483,8 @@
       "fn_symptom": 0,
       "our_supported": 3,
       "tp_ours": 1,
+      "tp_ours_many_to_one": 1,
+      "tp_gold_many_to_one": 1,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -409,6 +494,8 @@
       "fn_symptom": 0,
       "our_supported": 0,
       "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -418,6 +505,8 @@
       "fn_symptom": 0,
       "our_supported": 4,
       "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -427,6 +516,8 @@
       "fn_symptom": 0,
       "our_supported": 1,
       "tp_ours": 1,
+      "tp_ours_many_to_one": 1,
+      "tp_gold_many_to_one": 1,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -435,7 +526,9 @@
       "fn": 0,
       "fn_symptom": 0,
       "our_supported": 7,
-      "tp_ours": 6,
+      "tp_ours": 5,
+      "tp_ours_many_to_one": 6,
+      "tp_gold_many_to_one": 5,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -445,6 +538,8 @@
       "fn_symptom": 0,
       "our_supported": 3,
       "tp_ours": 3,
+      "tp_ours_many_to_one": 3,
+      "tp_gold_many_to_one": 3,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -454,6 +549,8 @@
       "fn_symptom": 0,
       "our_supported": 3,
       "tp_ours": 3,
+      "tp_ours_many_to_one": 3,
+      "tp_gold_many_to_one": 3,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -463,6 +560,8 @@
       "fn_symptom": 0,
       "our_supported": 3,
       "tp_ours": 2,
+      "tp_ours_many_to_one": 2,
+      "tp_gold_many_to_one": 2,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -472,6 +571,8 @@
       "fn_symptom": 0,
       "our_supported": 0,
       "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -481,6 +582,8 @@
       "fn_symptom": 0,
       "our_supported": 10,
       "tp_ours": 10,
+      "tp_ours_many_to_one": 10,
+      "tp_gold_many_to_one": 10,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -490,6 +593,8 @@
       "fn_symptom": 0,
       "our_supported": 1,
       "tp_ours": 1,
+      "tp_ours_many_to_one": 1,
+      "tp_gold_many_to_one": 1,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
@@ -499,25 +604,31 @@
       "fn_symptom": 0,
       "our_supported": 2,
       "tp_ours": 1,
+      "tp_ours_many_to_one": 1,
+      "tp_gold_many_to_one": 1,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     },
     "PMID28846666": {
-      "tp_gold": 30,
-      "fn": 9,
+      "tp_gold": 29,
+      "fn": 10,
       "fn_symptom": 0,
       "our_supported": 30,
       "tp_ours": 29,
+      "tp_ours_many_to_one": 29,
+      "tp_gold_many_to_one": 30,
       "uncertain_or_negative": 0,
       "uncertain_or_negative_in_gold": 0
     }
   },
   "counts": {
-    "tp_gold": 154,
-    "fn": 84,
+    "tp_gold": 150,
+    "fn": 88,
     "fn_symptom": 0,
     "our_supported": 196,
-    "tp_ours": 162,
+    "tp_ours": 150,
+    "tp_ours_many_to_one": 162,
+    "tp_gold_many_to_one": 154,
     "uncertain_or_negative": 0,
     "uncertain_or_negative_in_gold": 0
   },
@@ -528,19 +639,22 @@
   "fn_reasons": {
     "gene not recorded by us": 15,
     "our pair: not_found": 67,
-    "disease not recorded by us": 2
+    "disease not recorded by us": 2,
+    "our pair: supported, credited to another gold relation": 4
   },
   "fp_reasons": {
     "gold has both concepts but no relation": 25,
+    "duplicate: its gold relation is credited to another of our pairs": 12,
     "disease not a gold disease concept": 8,
     "gene not a gold gene concept": 1
   },
   "relation_types_on_tp": {
-    "Association -> Association": 136,
+    "Association -> Association": 132,
     "Negative_Correlation -> Association": 4,
     "Association -> Positive_Correlation": 3,
-    "Positive_Correlation -> Association": 7,
+    "Positive_Correlation -> Association": 6,
     "Association -> Negative_Correlation": 3,
-    "Negative_Correlation -> Negative_Correlation": 1
+    "Negative_Correlation -> Negative_Correlation": 1,
+    "Positive_Correlation -> Positive_Correlation": 1
   }
 }

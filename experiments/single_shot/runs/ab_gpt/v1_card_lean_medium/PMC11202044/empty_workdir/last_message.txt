@@ -1,0 +1,171 @@
+META|GPT-6|seen: no
+SCOPE|Provided article and captions; supplementary files and figure images unavailable.
+E|G1|gene|PTEN|PTEN|r||human||
+E|G2|gene|PIK3CA|PIK3CA|r||human||
+E|G3|gene|TP53|TP53;p53|r||human||
+E|G4|gene|miR-34a|miR-34a;MiR-34a|r||human||
+E|G5|gene|GAP43|GAP43|r||human||
+E|G6|gene|NOTCH1|NOTCH1|r||human||
+E|G7|gene|AGTR1|AGTR1|r||human||
+E|G8|gene|RSRC1|RSRC1;RSRC2|p|suspected_typo|human||
+E|G9|gene|NGF|NGF|r||human||
+E|G10|gene|Pik3ca|Pik3ca|r||non-human||
+E|G11|gene|Trp53|Trp53;p53|r||non-human||
+E|G12|gene|Ngf|Ngf|r||non-human||
+E|G13|gene|miR-34a|miR-34a|r||non-human||
+E|G14|gene|BDNF|BDNF|r||human||
+E|G15|gene|GDNF|GDNF|r||human||
+E|G16|gene|Ephrin B1|Ephrin B1|r||human||
+E|G17|gene|PD-L1|PD-L1|r||human||
+E|G18|gene|PD-1|PD-1|r||human||
+E|G19|gene|EGFR|EGFR|r||human||
+E|G20|gene|TOP1|DNA topoisomerase 1;TOP1|r||human||
+E|G21|gene|TOP2A|TOP2A|r||human||
+E|G22|gene|TOP2B|TOP2B|r||human||
+E|G23|gene|MTOR|MTOR|r||human||
+E|G24|gene|MYC|MYC|r||human||
+E|G25|ambiguous_gene|MEK|MEK|u|ambiguous_mapping,undefined_abbreviation|||
+E|D1|disease|cancer|cancer;cancers|r|||| 
+E|D2|disease|head and neck cancer|head and neck cancer;head and neck cancers|r|||D1|
+E|D3|disease|Head and neck squamous cell carcinoma|Head and neck squamous cell carcinoma;head and neck squamous cell carcinoma;Head and Neck Squamous Cell Carcinoma;HNSCC;HNSCCs|r|||D1|
+E|D4|disease|prostate cancer|prostate|r|||D1|
+E|D5|disease|pancreatic cancer|pancreatic|r|||D1|
+E|D6|disease|colon cancer|colon cancer|r|||D1|
+E|D7|disease|melanoma|melanoma|r|||| 
+E|D8|disease|pancreatic ductal adenocarcinomas|pancreatic ductal adenocarcinomas|r|||| 
+E|D9|disease|oral cancer|oral cancer|r|||D1|
+E|D10|disease|human papillomavirus infection|human papillomavirus (HPV) infection|r|||| 
+E|D11|disease|OPSCC|OPSCC;OPSCCs|p|undefined_abbreviation|||
+E|D12|disease|HPV16-positive OPSCC|HPV16-positive OPSCC;HPV16-positive OPSCCs|p|undefined_abbreviation||D11|
+E|D13|disease|HPV16-associated OPSCC|HPV16-associated OPSCC|p|undefined_abbreviation||D11|
+E|D14|disease|CESC|CESC|p|undefined_abbreviation|||
+E|D15|disease|ESCA|ESCA|p|undefined_abbreviation|||
+E|D16|disease|LUSC|LUSC|p|undefined_abbreviation|||
+E|D17|disease|LUAD|LUAD|p|undefined_abbreviation|||
+E|D18|disease|PAAD|PAAD|p|undefined_abbreviation|||
+E|D19|disease|PRAD|PRAD|p|undefined_abbreviation|||
+E|D20|disease|BRCA|BRCA|p|undefined_abbreviation|||
+E|D21|disease|tongue tumors|tongue tumors|r|||| 
+E|D22|disease|nasopharyngeal carcinoma|nasopharyngeal carcinoma|r|||| 
+E|D23|disease|OSCC|OSCC|p|undefined_abbreviation|||
+E|D24|disease|recurrent/metastatic HNSCC|recurrent/metastatic HNSCC|r|||D3|
+E|D25|clinical_event|perineural invasion|perineural invasion;Perineural invasion;PNI|r|||| 
+E|D26|clinical_event|metastasis|metastasis|r|||| 
+E|A1|symptom|cancer pain|cancer pain|r|||| 
+E|A2|symptom|pain|pain|r|||| 
+E|A3|phenotype|peripheral nerve abundance|peripheral nerve abundance|r|||| 
+E|A4|phenotype|neuronal reprogramming|neuronal reprogramming|r|||| 
+E|A5|phenotype|epithelial-mesenchymal transition|epithelial-mesenchymal transition|r|||| 
+E|A6|phenotype|tumor growth|tumor growth|r|||| 
+E|A7|phenotype|SC score|SC score|r|||| 
+X|PI3K|b0001|pathway_or_gene_family
+X|PI3K-MTOR|b0002|pathway
+X|TGF-β|b0002|signaling_or_unspecified_ligand_family
+X|PI3K-AKT-MTOR|b0039|pathway
+X|MTORC1|b0039|complex
+X|E2F|b0039|gene_family_target_set
+X|SC-related 43-gene set|b0031|gene_set
+X|GO_PERIPHERAL_NERVOUS_SYSTEM_MAINTENANCE|b0031|gene_set
+X|CD4|b0031|cell_subset_marker_only
+X|CD8|b0031|cell_subset_marker_only
+EV|V1|b0006.s5|bg|bgr|aff|ebr
+EV|V2|b0006.s7+b0006.s8|bg|bgr|aff|ebr
+EV|V3|b0049.s3|bg|bgr|aff|ebr
+EV|V4|b0049.s4|bg|bgr|aff|ebr
+EV|V5|b0049.s6+b0049.s7|bg|bgr|aff|ebr
+EV|V6|b0049.s8|bg|bgr|aff|ebr
+EV|V7|b0037.s5|ts|res|aff|rr,cmp
+EV|V8|b0037.s6|ts|res|aff|rr,cmp
+EV|V9|b0037.s7|ts|res|aff|rr,cmp
+EV|V10|b0037.s8+b0050.s3|ts|res|aff|rr,cmp
+EV|V11|b0041.s1+b0041.s2+b0041.s3|ts|res|aff|rr,cmp
+EV|V12|b0041.s4+b0050.s11|ts|res|aff|rr
+EV|V13|b0042.s2+b0042.s3|ts|res|aff|rr,cmp
+EV|V14|b0042.s4+b0042.s5|ts|res|aff|rr,cmp
+EV|V15|b0042.s6|ts|res|aff|rr,cmp
+EV|V16|b0043.s1+b0043.s2|ts|res|aff|rr,mi,cmp
+EV|V17|b0043.s3|ts|res|aff|rr,mi,cmp
+EV|V18|b0044.s2+b0044.s4|ts|res|aff|rr
+EV|V19|b0050.s4|bg|bgr|aff|ebr
+EV|V20|b0050.s5|ts|int|hyp|ho
+EV|V21|b0050.s10|bg|bgr|aff|ebr
+EV|V22|b0050.s12|ts|int|hyp|ho
+EV|V23|b0051.s3+b0051.s4|bg|bgr|aff|ebr
+EV|V24|b0052.s3|bg|bgr|aff|ebr
+EV|V25|b0046.s1+b0046.s2+b0052.s9+b0052.s10|ts|int|hyp|ho
+EV|V26|b0052.s8|ts|hyp|hyp|ho
+EV|V27|b0031.s4+b0031.s5+b0031.s7+b0031.s8+b0031.s10+b0031.s11|ts|res|aff|rr
+EV|V28|b0033.s3+b0033.s4+b0033.s5|ts|res|aff|rr,cmp
+EV|V29|b0033.s7+b0033.s8|ts|res|aff|rr,cmp
+EV|V30|b0036.s2+b0036.s3+b0036.s5|ts|res|aff|rr,cmp
+EV|V31|b0037.s1+b0037.s2+b0037.s3|ts|res|aff|rr,cmp
+EV|V32|b0039.s2+b0039.s3+b0039.s4+b0039.s5+b0039.s6+b0039.s7|ts|res|aff|rr,cmp
+EV|V33|b0065.s5|ts|res|aff|rr,cmp
+P|G3|D3|sup|c|bg|sup:c:bg:V3;sup:a:bg:V4|||Explicit tumor-development attribution.
+P|G3|D9|nf|-||||V2|Nerve-density association within oral cancer.
+P|G11|D9|nf|-||||V1|Neuronal reprogramming, not disease induction.
+P|G13|D9|nf|-||||V1|Mechanistic mediator in existing tumors.
+P|G4|D1|sup|a|bg|sup:a:bg:V5|||Reported loss across tumors.
+P|G4|D22|sup|a|bg|sup:a:bg:V6|||Explicit disease-specific inhibitory role.
+P|G4|D26|sup|a|bg|sup:a:bg:V6|||Reported inhibitor in nasopharyngeal carcinoma.
+P|G1|D3|nf|-||||V9+V10+V11|SC-group comparisons; disease occurrence untested.
+P|G2|D3|nf|-||||V10+V11|SC-group comparisons; disease occurrence untested.
+P|G6|D3|nf|-||||V8|Mutation frequency compared across SC groups.
+P|G7|D3|nf|-||||V9|Mutation frequency compared across SC groups.
+P|G8|D3|nf|-||||V9+V33|Mutation frequency compared across SC groups.
+P|G4|D3|nf|-||||V13+V14|Expression comparisons within existing disease.
+P|G4|D16|nf|-||||V13|Expression differences by SC score only.
+P|G4|D15|nf|-||||V13|Expression differences by SC score only.
+P|G4|D14|nf|-||||V13|Expression differences by SC score only.
+P|G4|D18|nf|-||||V13|Expression differences by SC score only.
+P|G5|D3|nf|-||||V28|Peripheral nerve staining marker.
+P|G9|D3|nf|-||||V12|Expression compared within genotype groups.
+P|G10|D21|nf|-||||V16|Chemically induced tumors; SC score outcome.
+P|G11|D21|nf|-||||V16+V17|Tumor nerve phenotypes; disease induction untested.
+P|G12|D21|nf|-||||V17|Expression outcome in existing tongue tumors.
+P|G23|D13|sup|a|bg|sup:a:bg:V19|||Explicit activation in disease context.
+P|G3|D12|nf|-||||V20|Mutation absence informs speculative mechanism.
+P|G9|D1|nf|-||||V21|Cancer-cell expression and neural phenotypes.
+P|G14|D1|nf|-||||V21|Cancer-cell expression and neural phenotypes.
+P|G15|D1|nf|-||||V21|Cancer-cell expression and neural phenotypes.
+P|G16|D1|nf|-||||V21|Release promotes neural phenotypes.
+P|G17|D23|nf|-||||V23|Neural involvement changes expression within OSCC.
+P|G18|D23|sup|a|bg|sup:a:bg:V23|||Reported improved immunotherapy efficacy following denervation.
+P|G20|D1|sup|a|bg|sup:a:bg:V24|||Reported inhibitor therapeutic activity.
+P|G21|D1|sup|a|bg|sup:a:bg:V24|||Reported inhibitor therapeutic activity.
+P|G22|D1|sup|a|bg|sup:a:bg:V24|||Reported inhibitor therapeutic activity.
+P|G20|D3|sup|a|bg|sup:a:bg:V24|||HNSCC explicitly included among treatment targets.
+P|G21|D3|sup|a|bg|sup:a:bg:V24|||HNSCC explicitly included among treatment targets.
+P|G22|D3|sup|a|bg|sup:a:bg:V24|||HNSCC explicitly included among treatment targets.
+P|G19|D3|unc|-||unc:a:ts:V25|hedged_claim||Predicted inhibitor sensitivity awaits validation.
+P|G25|D3|unc|-||unc:a:ts:V25|identity,hedged_claim||Unresolved target identity; predicted therapeutic sensitivity.
+P|G24|D3|unc|-||unc:a:ts:V26|hedged_claim||Proposed combination treatment only.
+F|F1|correlation|SC gene set versus neural signatures|HNSCC and other tumor cohorts|mixed|positive|partial|V27|One exception; sympathetic-parasympathetic distinction absent.
+F|F2|correlation|SC gene set versus immune enrichment|HNSCC and other tumor cohorts|significant|negative|partial|V27|Selected immune subsets.
+F|F3|group_comparison|GAP43-positive areas versus SC groups|HNSCC, 25 tumors per group|unknown|positive|not_reported|V28|Stromal nerve staining.
+F|F4|group_comparison|SC gene-set enrichment across cell types|HNSCC single-cell cohort|significant|positive|partial|V29|Highest in mesenchymal fibroblast-like cells.
+F|F5|association|SC group versus HPV16-positive OPSCC|TCGA-HNSC|significant|negative|available|V30|
+F|F6|association|SC group versus PNI|TCGA-HNSC|significant|positive|available|V30|
+F|F7|group_comparison|SC score by HPV status|HNSCC single-cell cohort|significant|negative|partial|V30|Higher with HPV-negative tumors.
+F|F8|group_comparison|Genomic alterations versus SC groups|TCGA-HNSC|significant|negative|available|V31|
+F|F9|group_comparison|Somatic mutation count versus SC groups|TCGA-HNSC|not_significant|null|partial|V31|
+F|F10|association|TP53 mutation frequency versus SC groups|TCGA-HNSC|significant|positive|available|V7|
+F|F11|association|NOTCH1 mutation frequency versus SC groups|TCGA-HNSC|significant|positive|available|V8|
+F|F12|association|AGTR1 mutation frequency versus SC groups|TCGA-HNSC|significant|negative|available|V9|
+F|F13|association|RSRC1 mutation frequency versus SC groups|TCGA-HNSC|significant|negative|available|V9+V33|Caption instead names RSRC2.
+F|F14|association|PTEN mutation frequency versus SC groups|TCGA-HNSC|significant|negative|available|V9|
+F|F15|group_comparison|PIK3CA copy gain versus SC groups|TCGA-HNSC|unknown|negative|partial|V10|Individual gene significance not supplied.
+F|F16|group_comparison|Hallmark pathway scores versus SC groups|HNSCC, CESC, BRCA|significant|mixed|partial|V32|Pathway scores; no single-gene attribution.
+F|F17|group_comparison|SC scores across composite genotype groups|TCGA-HNSC|mixed|mixed|available|V11|PI3K alteration effect depends on TP53.
+F|F18|group_comparison|NGF expression across composite genotype groups|TCGA-HNSC|unknown|mixed|partial|V12|
+F|F19|group_comparison|miR-34a expression versus SC groups|HNSCC, LUSC, ESCA, CESC, PAAD|significant|negative|partial|V13|
+F|F20|group_comparison|miR-34a expression across composite genotype groups|TCGA-HNSC|significant|mixed|partial|V14|
+F|F21|group_comparison|TGF-β signaling across composite genotype groups|TCGA-HNSC|significant|positive|partial|V15|
+F|F22|group_comparison|SC score across Trp53/Pik3ca genotypes|Mouse chemically induced tongue tumors|significant|mixed|partial|V16|Higher with Trp53 mutation.
+F|F23|group_comparison|Ngf expression across Trp53/Pik3ca genotypes|Mouse chemically induced tongue tumors|significant|positive|partial|V17|Higher with Trp53 mutation.
+F|F24|group_comparison|SC score by TP53 mutation status|GSE117973 HNSCC tumors|unknown|positive|partial|V18|
+F|F25|hypothesis|NGF mediates genotype-dependent peripheral nerve abundance|HNSCC and mouse tongue tumors|not_applicable|unknown|not_applicable|V22|Mechanism requires experimental confirmation.
+F|F26|mechanism|Neural involvement, PD-L1, immunotherapy response|OSCC background animal study|unknown|mixed|not_reported|V23|Denervation intervention; multiple outcomes.
+C|C1|RSRC gene identity|b0037.s7+b0065.s5|undetermined|unresolved|Matching panel suggests RSRC2 spelling discrepancy.
+U|Figures S1-S5|b0058.s1|Images unavailable; validation and drug-screen details unread.
+U|Tables S1-S11|b0058.s1|Resources, gene members, and detailed statistics unavailable.

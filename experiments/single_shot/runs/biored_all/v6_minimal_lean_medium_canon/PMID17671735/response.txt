@@ -1,0 +1,24 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|GJB2|GJB2|r||human||
+E|G2|gene|GJB6|GJB6|r||human||
+E|G3|gene|GJB3|GJB3|r||human||
+E|G4|gene|connexin gene family|connexin|p|ambiguous_mapping|human||
+E|D1|disease|hearing impairment|hearing impairment|r||||
+E|D2|disease|hereditary prelingual sensorineural hearing impairment|hereditary prelingual sensorineural hearing impairment|r||||D1
+X|D13S1830|b0002.s7|genomic marker naming the GJB6 deletion, not a gene
+EV|V1|b0002.s1|bg|bgr|aff|ebr,eda
+EV|V2|b0002.s3|unk|hyp|hyp|ho
+EV|V3|b0002.s5+b0002.s6|ts|res|aff|rr,do
+EV|V4|b0002.s8|ts|int|aff|rr
+EV|V5|b0002.s7|ts|res|q|do,unc
+EV|V6|b0002.s4|ts|aim|na|none
+P|G1|D2|sup|c|bg|sup:c:bg:V1||V6|GJB2 mutations named as most common cause
+P|G1|D1|sup|c|bg|sup:c:bg:V1;sup:a:ts:V3+V4||V6|5'UTR splice mutation frequent in hearing-impaired patients
+P|G2|D1|unc|-|ts|unc:-:ts:V5|hedged_claim,scope|V2|Deletion found; disease-causing scope of the sentence unclear
+P|G3|D1|unc|-|ts|unc:-:ts:V5|hedged_claim|V2|Variants judged unlikely causal; not a gene-level negative
+P|G4|D1|unc|-|unk|unc:-:unk:V2|hedged_claim|V6|Accumulation of connexin mutations only hypothesized
+F|F1|descriptive|GJB2 -3170G>A carriage|47 GJB2-heterozygous Hungarian patients|not_applicable|not_applicable|partial|V3|abstract only; no control group
+F|F2|descriptive|GJB6 deletion, GJB3 substitutions|47 GJB2-heterozygous Hungarian patients|not_applicable|null|partial|V5|pathogenicity judged qualitatively
+F|F3|hypothesis|multiple connexin gene mutations|hearing-impaired patients|not_applicable|not_applicable|not_applicable|V2|
+C|C1|scope of "unlikely disease-causing" for GJB6|b0002.s7|status_critical|unresolved|May apply only to the GJB3 substitutions

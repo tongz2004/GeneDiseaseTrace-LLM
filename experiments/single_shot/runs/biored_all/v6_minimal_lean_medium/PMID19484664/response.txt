@@ -1,0 +1,21 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|ACE|angiotensin converting enzyme;ACE|r||human||
+E|D1|disease|asthma|asthma;Asthma;asthmatic;asthmatics;Asthmatics|r|||||
+E|D2|disease|drug allergy|drug allergies|r|||||
+E|D3|disease|viral infection|viral infections|r|||||
+E|D4|phenotype|atopy|atopism|r|||||
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s7+b0002.s8+b0002.s9|ts|res|aff|rr,cmp
+EV|V3|b0002.s13|ts|int|aff|rr,cmp
+EV|V4|b0002.s10|ts|neg|q|rr
+EV|V5|b0002.s11|ts|neg|q|rr
+EV|V6|b0002.s12+b0002.s13|ts|neg|neg|cmp
+P|G1|D1|sup|a|both|sup:a:bg:V1;sup:a:ts:V2+V3|||DD genotype more frequent in asthmatics
+P|G1|D2|unc|-|ts|unc:-:ts:V4|hedged_claim,scope||ID trend p=0.08, non-significant
+P|G1|D3|unc|-|ts|unc:-:ts:V5|hedged_claim,scope||DD trend viral exacerbations p=0.08
+F|F1|group_comparison|ACE DD genotype frequency|asthmatics vs healthy controls|significant|positive|partial|V2|abstract only
+F|F2|group_comparison|ACE ID genotype; drug allergy|asthmatics|not_significant|positive|partial|V4|
+F|F3|group_comparison|ACE DD genotype; viral exacerbations|asthmatics|not_significant|positive|partial|V5|
+F|F4|group_comparison|ACE genotypes; asthma severity|mild vs moderate-severe asthmatics|not_significant|null|not_reported|V6|
+C|C1|II genotype count in asthmatics|b0002.s7|noncritical|unresolved|n=14.4 likely typo for 14

@@ -1,0 +1,9 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|COL3A1|COL3A1;type III procollagen gene|r||human||
+E|D1|disease|Ehlers-Danlos syndrome, vascular type|Ehlers-Danlos syndrome, vascular type;Ehlers-Danlos Syndrome, vascular type;vEDS|r|||||
+X|rs1800255:G>A|b0002.s9|COL3A1 SNP identifier, not separate gene
+EV|V1|b0002.s1|bg|bgr|aff|ebr,eda
+EV|V2|b0002.s6+b0002.s8|ts|res|aff|rr
+P|G1|D1|sup|c|both|sup:c:bg:V1;sup:a:ts:V2|||Background causal; novel mutations in suspected vEDS patients
+F|F1|descriptive|COL3A1 mutations detected by hrMCA|7 clinically suspected vEDS patients|not_applicable|not_applicable|partial|V2|abstract only; suspected cases

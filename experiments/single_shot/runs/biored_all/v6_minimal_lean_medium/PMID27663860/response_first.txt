@@ -1,0 +1,25 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|angiotensin II type 1a receptor (Agtr1a)|angiotensin II type 1a receptor;angiotensin II type 1a;AT1a receptor;AT1a|r||non-human||
+E|G2|gene|liver-type fatty acid binding protein (FABP1)|liver-type fatty acid binding protein;L-FABP|r||human||
+E|D1|disease|kidney injury|renal injury;renal damage|r|||||
+E|D2|disease|hypertension|hypertension|r|||||
+E|D3|disease|glomerular damage / glomerulosclerosis|glomerular damage;glomerular sclerosis|p|ambiguous_mapping||||
+E|D4|disease|tubulointerstitial damage|tubulointerstitial damage|r|||||
+X|deoxycorticosterone acetate (DOCA)-salt|b0002.s3|chemical model inducer, not disease
+EV|V1|b0002.s5|ts|res|aff|rr,cmp,mi
+EV|V2|b0002.s8|ts|int|hyp|ho
+EV|V3|b0002.s7|ts|res|aff|rr,mi
+EV|V4|b0002.s2+b0002.s6|ts|res|aff|rr,cmp,mi
+EV|V5|b0002.s2|ts|bgr|pre|unc
+EV|V6|b0002.s4|ts|co|na|do
+P|G1|D3|sup|c|ts|sup:c:ts:V1+V2||V6|AT1a knockout worsened glomerular damage
+P|G1|D1|sup|c|ts|sup:c:ts:V3+V2|hedged_claim|V6|KO renal damage; hydralazine attenuated
+P|G1|D4|sup|c|ts|sup:c:ts:V4||V6|KO raised tubular damage marker
+P|G1|D2|neg|-|ts|neg:-:ts:V1|||Hypertension similarly induced regardless of AT1a
+P|G2|D4|sup|a|ts|sup:a:ts:V5+V4|presupposed_only||Urinary L-FABP used as damage indicator
+P|G2|D1|unc|a|ts|unc:a:ts:V4|presupposed_only,scope||Biomarker of renal damage, indirect only
+F|F1|group_comparison|AT1a genotype; glomerular damage|DOCA-salt uninephrectomized female mice|significant|positive|not_reported|V1|abstract only
+F|F2|group_comparison|AT1a genotype; urinary L-FABP|DOCA-salt uninephrectomized female mice|significant|positive|not_reported|V4|abstract only
+F|F3|group_comparison|AT1a genotype; hypertension induction|DOCA-salt uninephrectomized female mice|not_applicable|null|not_reported|V1|qualitative "similarly induced"
+F|F4|other|hydralazine; renal damage in AT1a-/-|L-FABP(+/-) AT1a(-/-)-DOCA mice|significant|negative|not_reported|V3|abstract only

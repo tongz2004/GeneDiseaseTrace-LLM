@@ -1,0 +1,23 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text, figures and statistics unavailable
+E|G1|gene|PRKCA (PKC-alpha)|PKC-alpha;PKCa|r||non-human||
+E|G2|gene|AQP2|AQP2|r||non-human||
+E|G3|gene|SLC14A2 (UT-A1)|UT-A1;urea transporter|r||non-human||
+E|D1|disease|nephrogenic diabetes insipidus|nephrogenic diabetes insipidus;NDI|r||||
+E|D2|symptom|polyuria|polyuria|r||||
+X|PKC|b0002.s3|kinase family label, not a specific gene
+EV|V1|b0001.s1+b0002.s12|ts|res|aff|rr,mi
+EV|V2|b0002.s5|ts|res|aff|rr,cmp,mi
+EV|V3|b0002.s9|ts|res|aff|rr,cmp,mi
+EV|V4|b0002.s2|bg|bgr|aff|ebr
+EV|V5|b0002.s6+b0002.s7|ts|res|aff|rr,cmp
+EV|V6|b0002.s10|ts|res|aff|rr,cmp
+P|G1|D1|sup|c|ts|sup:c:ts:V1+V2||V6|PKCa knockout attenuates lithium-induced NDI in mice
+P|G1|D2|sup|c|ts|sup:c:ts:V1+V3||V2|PKCa ablation prevents severe lithium-induced polyuria
+P|G2|D1|sup|a|both|sup:a:bg:V4;sup:a:ts:V5+V6|||AQP2 expression is reduced in lithium-induced NDI
+P|G3|D1|sup|a|both|sup:a:bg:V4;sup:a:ts:V5+V6|||UT-A1 expression is reduced in lithium-induced NDI
+P|G2|D2|unc|a|ts|unc:a:ts:V6|support_basis_unresolved|V1|Reduction co-occurs with polyuria; no direct link tested
+P|G3|D2|unc|a|ts|unc:a:ts:V6|support_basis_unresolved|V1|Reduction co-occurs with polyuria; no direct link tested
+F|F1|group_comparison|urine output, osmolality; PKCa KO vs WT|lithium-treated mice, 3-5 days|unknown|negative|unread|V2|abstract only
+F|F2|group_comparison|AQP2, UT-A1 expression; KO vs WT|lithium-treated mice, 3-5 days|unknown|positive|unread|V5|abstract only
+F|F3|group_comparison|urine output fold change; KO vs WT|lithium-treated mice, 6 weeks|unknown|negative|unread|V3+V6|abstract only

@@ -1,0 +1,46 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; mouse OVA allergic asthma model
+E|G1|gene|Arg1|Arginase 1;arginase1;ARG1;Arg1|r||non-human||
+E|G2|gene|Arg2|Arg2|r||non-human||
+E|G3|gene|Nos2|Nos2|r||non-human||
+E|G4|gene|Slc7a1|Slc7a1|r||non-human||
+E|G5|gene|Slc7a2|Slc7a2|r||non-human||
+E|G6|gene|Slc7a7|Slc7a7|r||non-human||
+E|G7|gene|Il4|Il4;IL-4|r||non-human||
+E|G8|gene|Il5|Il5;IL-5|r||non-human||
+E|G9|gene|Il13|Il13;IL-13|r||non-human||
+E|G10|gene|Ccl2|Ccl2|r||non-human||
+E|G11|gene|Ccl11|Ccl11|r||non-human||
+E|G12|gene|Ifng|Ifng;IFNgamma|r||non-human||
+E|G13|gene|Clca3|Clca3|r||non-human||
+E|G14|gene|Muc5ac|Muc5ac|r||non-human||
+E|G15|gene|Il10|IL-10|r||non-human||
+E|G16|gene|Tnf|TNFalpha|r||non-human||
+E|D1|disease|allergic asthma|allergic asthma|r||||
+E|D2|disease|airway hyperresponsiveness|airway hyperresponsiveness;AHR|r||||
+E|S1|phenotype|lung inflammation|lung inflammation|r||||
+X|Tie2Cre|b0002.s3|Cre driver transgene construct, not analysed gene
+X|IgE|b0002.s6|immunoglobulin class, not single gene
+EV|V1|b0002.s6|ts|neg|neg|rr,mi
+EV|V2|b0001.s1+b0002.s6|ts|res|aff|rr,mi
+EV|V3|b0002.s2|ts|aim|na|none
+EV|V4|b0002.s11|ts|res|aff|rr,mi
+P|G1|D2|neg|-|ts|neg:-:ts:V1|||Arg1 ablation did not alter OVA-induced AHR (mouse)
+P|G1|D1|sup|a|ts|sup:a:ts:V2+V4||V3|Myeloid Arg1 deletion altered asthma inflammatory response; non-human
+P|G2|D2|nf|-|||||Expression change only; not tested against AHR
+P|G3|D2|nf|-|||||Expression change only; not tested against AHR
+P|G4|D2|nf|-|||||Expression change only; not tested against AHR
+P|G5|D2|nf|-|||||Expression change only; not tested against AHR
+P|G6|D2|nf|-|||||Expression change only; not tested against AHR
+P|G7|D2|nf|-|||||Expression change only; not tested against AHR
+P|G8|D2|nf|-|||||Expression change only; not tested against AHR
+P|G9|D2|nf|-|||||Expression change only; not tested against AHR
+P|G10|D2|nf|-|||||Expression change only; not tested against AHR
+P|G11|D2|nf|-|||||Expression change only; not tested against AHR
+P|G12|D2|nf|-|||||Expression change only; not tested against AHR
+P|G13|D2|nf|-|||||Expression change only; not tested against AHR
+P|G14|D2|nf|-|||||Expression change only; not tested against AHR
+F|F1|group_comparison|Arg1 ablation vs AHR to methacholine|OVA/OVA female mice|not_significant|null|not_reported|V1|abstract only
+F|F2|group_comparison|Arg1 ablation vs OVA-induced gene expression|OVA/OVA female mice|unknown|negative|not_reported|V2|abstract only; significance not stated
+F|F3|group_comparison|Arg1 ablation vs lung cytokine protein|OVA/OVA female mice|mixed|mixed|not_reported|V4|IL-10 up; others unchanged
+F|F4|group_comparison|sex differences in Arg1-deficient responses|OVA/OVA mice by sex|unknown|mixed|not_reported|V4|abstract only

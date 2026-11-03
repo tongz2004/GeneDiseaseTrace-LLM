@@ -1,0 +1,22 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|HBV polymerase (P gene)|polymerase|p|ambiguous_mapping|non-human|||
+E|G2|gene|HBV envelope (S) gene|envelope gene|p|ambiguous_mapping|non-human|||
+E|G3|gene|HBsAg (HBV surface antigen)|HBsAg|p|other|non-human|G2||
+E|D1|disease|Hepatitis B|hepatitis B|r||||
+E|D2|disease|HIV infection|HIV|p|other||||
+E|D3|phenotype|viremia|viremia|r||||
+X|polymerase chain reaction|b0002.s4|lab method, not the HBV polymerase gene
+X|basal core promoter (BCP)|b0002.s5|HBV genomic region, not a separate gene
+X|precore|b0002.s5|HBV genomic region, not a separate gene
+X|rtL180M + rtM204V|b0002.s10|polymerase variants, mapped to G1
+X|sE164D + sI195M|b0002.s12|envelope variants, mapped to G2
+EV|V1|b0002.s10+b0002.s11+b0002.s12|ts|res|aff|rr
+EV|V2|b0002.s12|ts|res|aff|rr
+EV|V3|b0002.s15|ts|int|aff|rr
+EV|V4|b0002.s14+b0002.s16|ts|neg|na|rr
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V3|||LAM-resistance polymerase substitutions in HBV-infected patients
+P|G2|D1|sup|a|ts|sup:a:ts:V2+V3|||Envelope changes with LAM resistance; vaccine escape
+F|F1|descriptive|LAM resistance polymerase substitutions|viremic HIV/HBV co-infected patients|not_applicable|not_applicable|partial|V1|abstract only; small sample
+F|F2|descriptive|envelope sE164D + sI195M|triple-mutation patients (n=3)|not_applicable|not_applicable|partial|V2|abstract only
+F|F3|descriptive|TDF resistance polymerase substitutions|TDF-treated co-infected patients|not_applicable|null|not_reported|V4|abstract only

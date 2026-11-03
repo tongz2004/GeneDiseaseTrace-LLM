@@ -1,0 +1,32 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text, tables or figures
+E|G1|gene|CaSR|Calcium sensing receptor;calcium sensing receptor;CaSR|p|species_unresolved|||
+E|G2|gene|gp78|gp78|p|species_unresolved|||
+E|G3|gene|Mfn1|Mfn1|p|species_unresolved|||
+E|G4|gene|Mfn2|Mfn2|p|species_unresolved|||
+E|G5|gene|Cx43|Cx43|p|species_unresolved|||
+E|G6|gene|beta-catenin|beta-catenin|p|species_unresolved|||
+E|G7|gene|N-cadherin|N-cadherin|p|species_unresolved|||
+E|G8|gene|Fis1|Fis1|p|species_unresolved|||
+E|G9|gene|Drp1|Drp1|p|species_unresolved|||
+E|D1|disease|Diabetic cardiomyopathy|Diabetic cardiomyopathy;DCM|r||||
+E|D2|disease|diabetes|diabetes|r||||
+E|D3|disease|myocardial energy metabolism disorder|energy metabolism disorder;myocardial energy metabolism disorder;abnormal myocardial energy metabolism|p|other|||
+X|gp78-ubiquitin proteasome pathway|b0001|pathway, not single gene
+X|G protein-coupled receptor|b0002|protein family label
+X|HG|b0002|experimental condition (high glucose), not disease
+EV|V1|b0002.s3|bg|res|aff|ebr,rr,cmp
+EV|V2|b0001.s1+b0002.s4|ts|res|aff|rr
+EV|V3|b0002.s10|ts|res|aff|rr,cmp
+EV|V4|b0002.s8|ts|int|hyp|ho
+EV|V5|b0002.s10|ts|hyp|hyp|ho
+EV|V6|b0002.s7|ts|res|aff|rr,cmp
+P|G1|D1|sup|a|bg|sup:a:bg:V1;unc:-:ts:V5||V5|prior study: CaSR decreased in DCM rats
+P|G1|D3|sup|a|ts|sup:a:ts:V2+V3;unc:-:ts:V4||V4|agonist attenuates HG-induced disorder; protective role reported
+P|G2|D3|unc|-|ts|unc:-:ts:V4|hedged_claim|V6|only suggested via gp78 activation
+F|F1|group_comparison|CaSR expression, cardiac function|DCM rats (previous study)|significant|negative|not_reported|V1|background own prior study
+F|F2|group_comparison|HG vs control; CaSR, Mfn1/2, Cx43, catenin, cadherin|HG-treated myocardial cells|unknown|negative|not_reported|V2|abstract only
+F|F3|group_comparison|HG vs control; gp78, Fis1, Drp1, ubiquitination|HG-treated myocardial cells|unknown|positive|not_reported|V6|abstract only
+F|F4|mechanism|CaSR agonist, gp78-siRNA vs HG changes|HG-treated myocardial cells|significant|negative|not_reported|V6+V3|abstract only
+F|F5|hypothesis|CaSR decrease, gp78-UPS activation, energy disorder|HG model|not_applicable|not_applicable|not_applicable|V4|
+R|disease vs phenotype|b0002.s4|Cell-level "energy metabolism disorder" named as disorder; card unclear on disease status|Kept as provisional disease D3; linked only via direct reported intervention result

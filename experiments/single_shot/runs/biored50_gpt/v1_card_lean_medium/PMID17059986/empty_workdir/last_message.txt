@@ -1,0 +1,39 @@
+META|GPT-6|seen: no
+SCOPE|Supplied title and abstract only; no full text or attachments.
+E|G1|gene|SLC12A3|SLC12A3|r||human||
+E|D1|disease|Gitelman syndrome|Gitelman syndrome;GS|r|||| 
+E|D2|disease|idiopathic intracranial hypertension|idiopathic intracranial hypertension;pseudotumor cerebri|r||||
+E|D3|disease|Bartter syndrome|Bartter syndrome|r||||
+E|D4|disease|cerebral cavernous malformations|cerebral cavernous malformations|r||||
+E|D5|disease|familial cavernomatosis|familial cavernomatosis|r||||
+E|D6|disease|secondary aldosteronism|secondary aldosteronism|r||||
+E|A1|phenotype|growth delay|growth delay|r||||
+E|A2|phenotype|metabolic alkalosis|metabolic alkalosis|r||||
+E|A3|phenotype|hypomagnesemia|hypomagnesemia|r||||
+E|A4|phenotype|hypokalemia|hypokalemia|r||||
+E|A5|phenotype|inappropriate kaliuresis|inappropriate kaliuresis|r||||
+E|A6|phenotype|bilateral papilledema|bilateral papilledema|r||||
+E|A7|phenotype|normocalciuria|normocalciuria|r||||
+E|A8|phenotype|electrolyte abnormalities|electrolyte abnormalities|r||||
+E|A9|phenotype|vision remained impaired|vision remained impaired|r||||
+E|A10|phenotype|catch-up growth|catch-up growth|r||||
+X|p.Ser555Leu|b0002|variant identifier
+X|c.2633+1G>C|b0002|variant identifier
+X|r.2521_2634del|b0002|transcript variant identifier
+EV|V1|b0001.s1|ts|res|aff|eda
+EV|V2|b0002.s4+b0002.s5|ts|res|aff|rr,cs
+EV|V3|b0002.s3|ts|co|na|do
+EV|V4|b0002.s2|ts|co|na|do
+EV|V5|b0002.s10|ts|res|na|rr
+EV|V6|b0002.s6|ts|res|na|rr
+EV|V7|b0002.s8|bg|bgr|aff|ebr
+EV|V8|b0002.s8|ts|int|hyp|ho
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V2||||Molecular diagnosis and familial cosegregation.
+P|G1|D2|sup|a|ts|sup:a:ts:V1||||Title explicitly attributes disease association to mutation.
+P|G1|D3|nf|-||||V3|Initial diagnosis superseded by molecular diagnosis.
+P|G1|D4|nf|-||||V4|Familial co-occurrence lacks gene attribution.
+P|G1|D5|nf|-||||V5|Independent disease segregation does not test gene association.
+F|F1|mechanism|SLC12A3 splice change; exon 22 skipping|proband|not_applicable|not_applicable|not_applicable|V6|
+F|F2|association|familial cavernomatosis; GS segregation|family|not_applicable|not_applicable|not_reported|V5|No direct gene association test.
+F|F3|association|Bartter syndrome/GS; pseudotumor cerebri|three literature associations|unknown|positive|not_reported|V7|Disease association; no gene attribution.
+F|F4|hypothesis|electrolyte abnormalities; secondary aldosteronism; intracranial hypertension|reported case and literature|not_applicable|unknown|not_applicable|V8|Proposed mechanism only.

@@ -1,0 +1,33 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text, figures or methods
+E|G1|gene|CASR|calcium sensing receptor;CaSR|r||||
+E|G2|gene|AMFR|gp78|r||||
+E|G3|gene|MFN1|Mfn1|r||||
+E|G4|gene|MFN2|Mfn2|r||||
+E|G5|gene|GJA1|Cx43|r||||
+E|G6|gene|CTNNB1|beta-catenin|r||||
+E|G7|gene|CDH2|N-cadherin|r||||
+E|G8|gene|FIS1|Fis1|r||||
+E|G9|gene|DNM1L|Drp1|r||||
+E|D1|disease|diabetic cardiomyopathy|Diabetic cardiomyopathy;DCM|r||||
+E|D2|disease|diabetes|diabetes|r||||
+E|D3|disease|myocardial energy metabolism disorder|energy metabolism disorder;myocardial energy metabolism disorder|p|other|||
+EV|V1|b0002.s3|bg|res|aff|rr
+EV|V2|b0002.s10|ts|hyp|hyp|ho
+EV|V3|b0002.s4+b0002.s8+b0002.s10|ts|int|aff|rr,mi
+EV|V4|b0002.s7+b0002.s8|ts|res|aff|mi
+EV|V5|b0002.s5+b0002.s6+b0002.s9|ts|res|aff|do
+P|G1|D1|sup|r|bg|sup:r:bg:V1;unc:-:ts:V2|||CaSR decreased in DCM rats; target proposed
+P|G1|D3|sup|c|ts|sup:c:ts:V3+V4|||CaSR agonist attenuates HG-induced disorder
+P|G2|D3|sup|c|ts|sup:c:ts:V4|||gp78-siRNA reverses HG-induced changes
+P|G3|D3|unc|-|ts|unc:-:ts:V5|hedged_claim,scope||HG model change; mechanistic downstream only
+P|G4|D3|unc|-|ts|unc:-:ts:V5|hedged_claim,scope||HG model change; mechanistic downstream only
+P|G5|D3|unc|-|ts|unc:-:ts:V5|hedged_claim,scope||HG model change; mechanistic downstream only
+P|G6|D3|unc|-|ts|unc:-:ts:V5|hedged_claim,scope||HG model expression change only
+P|G7|D3|unc|-|ts|unc:-:ts:V5|hedged_claim,scope||HG model expression change only
+P|G8|D3|unc|-|ts|unc:-:ts:V5|hedged_claim,scope||HG model expression change only
+P|G9|D3|unc|-|ts|unc:-:ts:V5|hedged_claim,scope||HG model expression change only
+F|F1|mechanism|CaSR agonist, gp78-siRNA, HG changes|HG-treated myocardial cells|significant|negative|unread|V4|abstract only; model unspecified
+F|F2|descriptive|CaSR, Mfn1/2, Cx43, gp78, Fis1, Drp1 expression|HG-treated myocardial cells|unknown|mixed|unread|V5|abstract only
+F|F3|group_comparison|CaSR expression, cardiac function|DCM rats vs controls|significant|negative|unread|V1|previous study
+R|disease type|D3|Energy metabolism disorder is an HG-induced model state, not a clinical disease.|Typed as disease, provisional identity, flagged other.

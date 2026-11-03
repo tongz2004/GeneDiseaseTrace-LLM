@@ -1,0 +1,23 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|SOX2|SOX2|r||human||
+E|G2|gene|CHX10|CHX10|r||human||
+E|D1|disease|anophthalmia|anophthalmia;anophthalmic|r||||
+E|D2|disease|microphthalmia|microphthalmia;microphthalmic|r||||
+E|D3|disease|eye malformation|eye malformation|p|other|||
+X|high mobility group (HMG)|b0002|protein domain, not gene endpoint
+X|rs11915160|b0002|variant ID
+X|rs35435463|b0002|variant ID
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s6+b0002.s9+b0002.s11|ts|res|hyp|do,ho
+EV|V3|b0002.s19+b0002.s20|unk|int|aff|eda
+EV|V4|b0002.s21|ts|neg|neg|rr
+EV|V5|b0002.s15+b0002.s16+b0002.s17+b0002.s18|ts|neg|neg|cmp
+P|G1|D1|sup|a|bg|sup:a:bg:V1;unc:-:ts:V2|hedged_claim||Background report of SOX2 mutations in patients
+P|G1|D2|sup|a|bg|sup:a:bg:V1;unc:-:ts:V2|hedged_claim||Background report of SOX2 mutations in patients
+P|G1|D3|sup|c|unk|sup:c:unk:V3|||Loss of SOX2 function stated to cause malformation
+P|G2|D1|sup|a|bg|sup:a:bg:V1;neg:-:ts:V4+V5|||Background supports; not implicated in this cohort
+P|G2|D2|sup|a|bg|sup:a:bg:V1;neg:-:ts:V4+V5|||Background supports; not implicated in this cohort
+F|F1|descriptive|SOX2 novel heterozygous mutations|3 of 34 patients (incl. siblings)|not_applicable|not_applicable|not_applicable|V2|no segregation data in abstract
+F|F2|descriptive|CHX10 p.Asp291Asn in cases and controls|34 patients; 80 healthy controls|not_applicable|null|not_reported|V5|frequencies not given
+R|single status per pair|b0002.s1 vs b0002.s21|CHX10 background positive, this-study cohort negative|main status sup/bg; listed ts neg claim

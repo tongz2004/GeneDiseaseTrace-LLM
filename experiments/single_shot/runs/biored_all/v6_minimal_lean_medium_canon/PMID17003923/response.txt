@@ -1,0 +1,54 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|F5|factor V|r||human||
+E|G2|gene|F7|factor VII|r||human||
+E|G3|gene|F13A1|factor XIII|p|ambiguous_mapping|human||
+E|G4|gene|FGB|beta-fibrinogen|r||human||
+E|G5|gene|F2|prothrombin|r||human||
+E|G6|gene|TFPI|tissue factor pathway inhibitor|r||human||
+E|G7|gene|THBD|thrombomodulin|r||human||
+E|G8|gene|ACE|angiotensin converting enzyme|r||human||
+E|G9|gene|HABP2|factor VII-activating protease;FSAP|r||human||
+E|G10|gene|SERPINE1|plasminogen activator inhibitor 1|r||human||
+E|G11|gene|PLAT|tissue plasminogen activator|r||human||
+E|G12|gene|APOE|apolipoprotein E2|r||human||
+E|G13|gene|ITGA2|glycoprotein Ia|r||human||
+E|G14|gene|MTHFR|methylenetetrahydrofolate reductase|r||human||
+E|D1|disease|thromboembolism|thromboembolism;thromboembolic diseases|r||||
+E|D2|disease|thrombophilia|hereditary thrombophilia;hereditary hypercoagulability|r||||
+E|D3|disease|cardiovascular diseases|cardiovascular diseases|r||||
+X|factor V Leiden|b0002|variant name, not disease
+X|FSAP Marburg I|b0002|variant name of HABP2
+EV|V1|b0001.s1+b0002.s6|bg|bgr|aff|ebr
+EV|V2|b0002.s5+b0002.s6|bg|bgr|aff|ebr
+EV|V3|b0002.s7|ts|res|na|rr
+P|G1|D1|sup|a|bg|sup:a:bg:V1|||Implicated in thromboembolism susceptibility
+P|G2|D1|sup|a|bg|sup:a:bg:V1|||Implicated in thromboembolism susceptibility
+P|G3|D1|sup|a|bg|sup:a:bg:V1|||Implicated in thromboembolism susceptibility
+P|G4|D1|sup|a|bg|sup:a:bg:V1|||Implicated in thromboembolism susceptibility
+P|G5|D1|sup|a|bg|sup:a:bg:V1|||Implicated in thromboembolism susceptibility
+P|G6|D1|sup|a|bg|sup:a:bg:V1|||Implicated in thromboembolism susceptibility
+P|G7|D1|sup|a|bg|sup:a:bg:V1|||Implicated in thromboembolism susceptibility
+P|G8|D1|sup|a|bg|sup:a:bg:V1|||Implicated in thromboembolism susceptibility
+P|G9|D1|sup|a|bg|sup:a:bg:V1|||Implicated in thromboembolism susceptibility
+P|G10|D1|sup|a|bg|sup:a:bg:V1|||Implicated in thromboembolism susceptibility
+P|G11|D1|sup|a|bg|sup:a:bg:V1|||Implicated in thromboembolism susceptibility
+P|G12|D1|sup|a|bg|sup:a:bg:V1|||Implicated in thromboembolic diseases susceptibility
+P|G13|D1|sup|a|bg|sup:a:bg:V1|||Implicated in thromboembolic diseases susceptibility
+P|G14|D1|sup|a|bg|sup:a:bg:V1|||Implicated in thromboembolic diseases susceptibility
+P|G1|D2|sup|a|bg|sup:a:bg:V2|||Listed as hereditary thrombophilia factor
+P|G2|D2|sup|a|bg|sup:a:bg:V2|||Listed as hereditary thrombophilia factor
+P|G3|D2|sup|a|bg|sup:a:bg:V2|||Listed as hereditary thrombophilia factor
+P|G4|D2|sup|a|bg|sup:a:bg:V2|||Listed as hereditary thrombophilia factor
+P|G5|D2|sup|a|bg|sup:a:bg:V2|||Listed as hereditary thrombophilia factor
+P|G6|D2|sup|a|bg|sup:a:bg:V2|||Listed as hereditary thrombophilia factor
+P|G7|D2|sup|a|bg|sup:a:bg:V2|||Listed as hereditary thrombophilia factor
+P|G8|D2|sup|a|bg|sup:a:bg:V2|||Listed as hereditary thrombophilia factor
+P|G9|D2|sup|a|bg|sup:a:bg:V2|||Listed as hereditary thrombophilia factor
+P|G10|D2|sup|a|bg|sup:a:bg:V2|||Listed as hereditary thrombophilia factor
+P|G11|D2|sup|a|bg|sup:a:bg:V2|||Listed as hereditary thrombophilia factor
+P|G12|D2|unc|-|bg||scope||Grouped as other factors, not thrombophilia
+P|G13|D2|unc|-|bg||scope|V3|Grouped as other factors; HWE deviation only
+P|G14|D2|unc|-|bg||scope||Grouped as other factors, not thrombophilia
+F|F1|descriptive|glycoprotein Ia 807C>T genotype distribution|healthy German population n=282|significant|not_applicable|not_reported|V3|deviation from Hardy-Weinberg; no disease
+R|claims|b0002.s6|Hedged "implicated" background claim; no hedged status code for bg|Marked sup association bg; noted hedging in reasons

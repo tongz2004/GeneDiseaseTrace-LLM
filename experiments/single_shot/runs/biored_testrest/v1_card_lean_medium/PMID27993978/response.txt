@@ -1,0 +1,10 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no diseases mentioned
+E|G1|gene|CenpH|CenpH|r||non-human||
+E|G2|gene|cyclin B1|cyclin B1|r||non-human||
+E|G3|gene|Cdh1|Cdh1|p|species_unresolved|||
+E|PH1|phenotype|compromised meiotic resumption|meiotic resumption|r||||
+X|APC/C|b0002.s4|protein complex, not single-gene endpoint
+X|maturation-promoting factor|b0002.s3|protein complex, not single-gene endpoint
+EV|V1|b0002.s3+b0002.s4|ts|res|aff|rr,mi
+F|F1|mechanism|CenpH depletion; cyclin B1 levels; meiotic resumption|mouse oocytes|unknown|negative|not_reported|V1|no disease endpoint; cell phenotype only

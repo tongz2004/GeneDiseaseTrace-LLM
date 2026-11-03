@@ -1,0 +1,17 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|FMR1|FMR1|r||human||
+E|D1|disease|fragile X syndrome|Fragile X syndrome;fragile X syndrome|r||||
+E|D2|disease|autism|autism;autistic|r||||
+E|D3|disease|mental retardation|mental retardation;mentally retarded|r||||
+EV|V1|b0002.s2|bg|bgr|aff|ebr,eda
+EV|V2|b0002.s5+b0002.s6+b0002.s7|ts|res|aff|rr,cmp
+EV|V3|b0002.s8|ts|int|hyp|rr
+EV|V4|b0002.s4|ts|neg|neg|rr
+EV|V5|b0002.s1|bg|bgr|aff|ebr
+P|G1|D1|sup|c|bg|sup:c:bg:V1|||Repeat expansion and point mutations cause FXS
+P|G1|D2|unc|a|ts|unc:a:ts:V2+V3|hedged_claim,scope|V4+V5|Single carrier; her phenotype is unspecified; claim hedged
+P|G1|D3|unc|a|ts|unc:a:ts:V2+V3|hedged_claim,scope|V4+V5|Single carrier; her phenotype is unspecified; claim hedged
+F|F1|descriptive|FMR1 exon mutations|76 male autistic/MR patients|not_applicable|null|not_reported|V4|
+F|F2|group_comparison|FMR1 exon 9 A879C|1 female patient vs 50 controls|unknown|positive|not_reported|V2|Single case
+F|F3|mechanism|A879C aberrant splicing, premature termination|mutant transcripts|not_applicable|not_applicable|not_reported|V2|Abstract only

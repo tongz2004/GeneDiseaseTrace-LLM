@@ -1,0 +1,46 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|glucocorticoid receptor|glucocorticoid receptor;GR|r||human||
+E|G2|gene|FKBP5|FKBP5|r||human||
+E|G3|gene|mineralocorticoid receptor|mineralocorticoid receptor|r||human||
+E|G4|gene|11b-hydroxysteroid dehydrogenase type 2|11b-hydroxysteroid dehydrogenase type 2|r||human||
+E|D1|disease|primary glucocorticoid resistance|Primary glucocorticoid resistance;primary glucocorticoid resistance|r||||
+E|D2|disease|familial glucocorticoid receptor haploinsufficiency|Familial glucocorticoid receptor haploinsufficiency;GR haploinsufficiency|p|other|||
+E|D3|disease|adrenal hyperplasia|adrenal hyperplasia|r||||
+E|D4|disease|bilateral adrenal hyperplasia|bilateral adrenal hyperplasia|r|||D3|
+E|D5|disease|apparent mineralocorticoid excess|apparent mineralocorticoid excess|r||||
+E|D6|disease|adrenal incidentalomas|adrenal incidentalomas|r||||
+E|D7|disease|cortisol resistance|cortisol resistance|r||||
+E|D8|disease|arterial hypertension|arterial hypertension;hypertension|r||||
+E|D9|disease|hypokalemia|hypokalemia|r||||
+E|D10|disease|subclinical hypercortisolism|subclinical hypercortisolism|r||||
+E|D11|disease|mineralocorticoid-independent hypertension|mineralocorticoid-independent hypertension|r|||D8|
+X|OMIM 138040|b0002|identifier
+X|p.R469[R,X]|b0002|variant ID
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s2+b0002.s3|ts|res|aff|rr,cs
+EV|V3|b0002.s4+b0002.s5+b0002.s6+b0002.s8|ts|res|aff|rr,mi
+EV|V4|b0002.s9|ts|int|aff|unc
+EV|V5|b0002.s10|ts|res|aff|rr
+EV|V6|b0002.s11|ts|hyp|hyp|ho
+EV|V7|b0002.s1+b0001.s1|ts|co|na|do
+P|G1|D1|sup|c|bg|sup:c:bg:V1||V4|Disease due to GR genetic alterations
+P|G1|D2|sup|c|ts|sup:c:ts:V3|||Nonsense mutation causes haploinsufficiency via NMD
+P|G1|D3|nf|-|||||V7|Title co-occurrence only
+P|G1|D4|sup|a|ts|sup:a:ts:V2;unc:-:ts:V6|||Cosegregates with GR nonsense mutation
+P|G1|D5|sup|a|ts|sup:a:ts:V5|||AME shown in GR-mutant patients
+P|G1|D6|nf|-|||||V2|Incidentalomas only led to family discovery
+P|G1|D7|sup|a|ts|sup:a:ts:V2|||Cosegregates with GR nonsense mutation
+P|G1|D8|sup|a|ts|sup:a:ts:V2;unc:-:ts:V4|hedged_claim||Cosegregation; mechanistic causal claim interpretive
+P|G1|D9|sup|a|ts|sup:a:ts:V2|||Cosegregates with GR nonsense mutation
+P|G1|D10|unc|-|ts|unc:-:ts:V6|hedged_claim||Only proposed as possible cause
+P|G1|D11|unc|-|ts|unc:-:ts:V6|hedged_claim||Only proposed as possible cause
+P|G3|D8|unc|-|ts|unc:-:ts:V4|hedged_claim||Mechanistic inference of MR occupation
+P|G3|D1|nf|-|||||V4|Co-mention only
+P|G3|D2|nf|-|||||V4|Co-mention only
+P|G4|D5|unc|-|ts|unc:-:ts:V5|hedged_claim||Reduced enzyme activity inferred from ratio
+P|G1|G4|nf|-|||||V5|Gene-gene regulation, not disease
+F|F1|association|GR p.R469X vs phenotype|family, eight affected, three generations|unknown|positive|not_reported|V2|segregation statistics absent
+F|F2|descriptive|wild-type GR mRNA and protein|proband fibroblasts|not_applicable|negative|partial|V3|single patient
+F|F3|group_comparison|FKBP5 glucocorticoid induction|proband fibroblasts vs normal|significant|negative|not_reported|V3|single patient
+F|F4|group_comparison|urinary THE/THF ratio|affected patients|unknown|negative|not_reported|V5|

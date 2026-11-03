@@ -1,0 +1,22 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|NDP|NDP|r||human||
+E|D1|disease|Norrie disease|Norrie disease|r||||
+E|D2|disease|familial exudative vitreoretinopathy|familial exudative vitreoretinopathy;X-linked familial exudative vitreoretinopathy;FEVR|r||||
+E|D3|disease|retinopathy of prematurity|retinopathy of prematurity;ROP|r||||
+E|D4|disease|Coats disease|Coat's disease|r||||
+E|S1|symptom|deafness|deafness|r||||
+E|S2|symptom|mental retardation|mental retardation|r||||
+E|S3|phenotype|retinal detachment|retinal detachment|r||||
+X|Norrie-FEVR|b0002.s2|combined patient grouping label, not separate disease
+EV|V1|b0002.s5|ts|res|aff|rr
+EV|V2|b0002.s9|ts|int|aff|eda
+EV|V3|b0002.s6|ts|res|aff|rr
+EV|V4|b0002.s10|ts|int|aff|eda
+EV|V5|b0002.s7|ts|co|na|do
+P|G1|D1|sup|c|ts|sup:c:ts:V1+V2||| |Novel His43Arg in Norrie twins
+P|G1|D2|sup|c|ts|sup:c:ts:V1+V2|||| Novel Leu103Val in FEVR patient
+P|G1|D3|sup|a|ts|sup:a:ts:V3+V4||V5|5'UTR deletion in regressed ROP; unaffected carrier
+P|G1|D4|nf|-||||||Screened only; no mutation reported
+F|F1|descriptive|NDP coding mutations|Norrie disease and FEVR patients|not_applicable|positive|not_reported|V1+V2|abstract only; segregation unread
+F|F2|descriptive|NDP 14-bp 5'UTR deletion|ROP cases and ex-premature controls|unknown|positive|not_reported|V3+V4+V5|carrier also in unaffected girl

@@ -1,0 +1,6 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|D1|disease|myocardial infarction|myocardial infarction|r|||||
+X|marker enzymes|b0002|unnamed enzyme group, not a specific gene
+X|antioxidant enzymes|b0002|unnamed enzyme group, not a specific gene
+X|isoproterenol|b0001|chemical inducer, not a gene or disease

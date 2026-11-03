@@ -1,0 +1,21 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|PDE4D|phosphodiesterase 4D;PDE4D|r||human||
+E|D1|disease|carotid atherosclerosis|carotid atherosclerosis;subclinical atherosclerosis|r|||||
+E|D2|disease|stroke|stroke|r|||||
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s8|bg|bgr|aff|ebr
+EV|V3|b0002.s15|ts|res|aff|rr,cmp
+EV|V4|b0002.s10|ts|res|aff|rr,cmp
+EV|V5|b0002.s12|ts|res|aff|rr,cmp
+EV|V6|b0002.s13|ts|res|aff|rr,cmp
+EV|V7|b0002.s16|ts|int|aff|rr
+EV|V8|b0002.s11|ts|res|aff|rr,cmp
+EV|V9|b0002.s14|ts|neg|neg|rr
+P|G1|D1|sup|a|ts|sup:a:ts:V4+V5+V6+V8+V7||V9|rs702553 linked to plaque and IMT in men
+P|G1|D2|sup|a|both|sup:a:bg:V1+V2;sup:a:ts:V3+V7|||rs702553 associated with young stroke in men
+F|F1|association|rs702553 TT genotype and plaque index >=4|overall subjects|significant|positive|partial|V4|
+F|F2|group_comparison|rs702553 TT frequency by plaque index|men|significant|positive|partial|V5+V8|
+F|F3|association|rs702553 TT and thicker common carotid IMT|men|significant|positive|partial|V6|
+F|F4|association|rs702553 with IMT and plaque index|women|not_significant|null|partial|V9|
+F|F5|association|rs702553 and young stroke|men vs women|mixed|positive|partial|V3|Significant only in men

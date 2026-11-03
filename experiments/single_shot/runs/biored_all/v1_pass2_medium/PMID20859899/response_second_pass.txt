@@ -1,0 +1,4 @@
+EV|W1|b0001.s1|ts|res|na|do
+EV|W2|b0002.s5|ts|int|na|do
+P|G1|D1|nf|-|||||W1|Syncope attributed to drug therapy, not gene
+P|G1|D7|nf|-|||||W2|Renal disturbance is risk context for drug use

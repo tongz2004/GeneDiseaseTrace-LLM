@@ -1,0 +1,27 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|GUCA1A|GUCA1A|r||human||
+E|G2|gene|GUCA1B|GUCA1B;GCAP2|p|other|human||
+E|D1|disease|cone dystrophy|cone dystrophy|r||||
+E|D2|disease|autosomal dominantly inherited cone dystrophy|autosomal dominantly inherited cone dystrophy|r|||D1|
+E|D3|disease|cone rod dystrophy|cone rod dystrophy|r||||
+E|D4|disease|macular dystrophy|macular dystrophy|r||||
+E|D5|disease|inherited retinal disease|inherited retinal disease|r||||
+E|D6|disease|retinal degenerations|retinal degenerations|r||||
+X|MIM # 600364|b0002|database identifier
+X|EF-hand 4|b0002|protein domain, not gene
+X|c.465G>T|b0002|variant ID
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s2|bg|bgr|q|unc
+EV|V3|b0002.s6+b0002.s8+b0002.s9|ts|neg|neg|rr
+EV|V4|b0002.s9|ts|int|hyp|ho
+EV|V5|b0002.s7|ts|co|na|do
+P|G1|D2|sup|c|bg|sup:c:bg:V1|||explicit background causal statement
+P|G1|D3|sup|c|bg|sup:c:bg:V1|||AD inheritance qualifier applies to list
+P|G1|D4|sup|c|bg|sup:c:bg:V1|||explicit background causal statement
+P|G2|D1|neg|-|ts|neg:-:ts:V3||V5|no pathogenic mutations in 24 AD patients
+P|G2|D3|neg|-|ts|neg:-:ts:V3||V5|no pathogenic mutations in 24 AD patients
+P|G2|D5|unc|-|bg|unc:-:bg:V2|conflict||role described as controversial
+P|G2|D6|unc|-|ts|unc:-:ts:V4|hedged_claim||suggests minor cause; hedged
+F|F1|descriptive|GUCA1B sequence variants|24 AD cone/cone rod dystrophy patients|not_applicable|null|not_applicable|V3+V5|all variants also seen in healthy subjects
+R|merge|b0002.s7|GCAP2 linked to GUCA1B only via variant encoding statement|merged as protein product; provisional, issue other

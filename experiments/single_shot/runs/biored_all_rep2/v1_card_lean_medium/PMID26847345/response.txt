@@ -1,0 +1,25 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text, tables or figures
+E|G1|gene|transgelin|Transgelin;transgelin|r||human||
+E|G2|gene|HOOK1|HOOK1|r||human||
+E|G3|gene|SDCCAG8|SDCCAG8|r||human||
+E|G4|gene|ENAH|ENAH;Mena|r||human||
+E|G5|gene|TNS1|TNS1|r||human||
+E|G6|gene|EMB|EMB|r||human||
+E|G7|gene|BCL11B|BCL11B|r||human||
+E|G8|gene|PTPRD|PTPRD|r||human||
+E|D1|disease|colorectal cancer|colorectal cancer;CRC|r||||
+E|D2|disease|cancer|cancer|r||||
+E|D3|disease|metastasis|metastasis;metastases;lung metastases|p|other|||
+X|RKO|b0002|cell line, not gene
+X|HCT116|b0002|cell line, not gene
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0001.s1+b0002.s7+b0002.s8+b0002.s11|ts|res|aff|rr,mi,cmp
+EV|V3|b0002.s9+b0002.s10+b0002.s12|ts|res|na|rr
+P|G1|D2|sup|r|bg|sup:r:bg:V1||b0002.s2|elevated levels correlate with aggressive tumor behavior
+P|G1|D1|sup|c|ts|sup:c:ts:V2|||manipulation alters CRC metastatic potential in vivo
+P|G1|D3|sup|c|ts|sup:c:ts:V2|||overexpression increases, knockdown decreases metastases
+P|G4|D3|nf|-||||V3|expression change only; labelled metastasis-related
+F|F1|group_comparison|transgelin level vs lung metastases|RKO, HCT116 mouse tail vein|unknown|positive|not_reported|V2|abstract only; statistics not given
+F|F2|descriptive|transgelin overexpression vs transcript levels|RKO cells|unknown|mixed|not_reported|V3|about 250 transcripts altered
+R|disease hierarchy|D3|Lung metastases of CRC cells: unclear if separate from CRC.|Kept metastasis separate; both pairs supported by the same evidence.

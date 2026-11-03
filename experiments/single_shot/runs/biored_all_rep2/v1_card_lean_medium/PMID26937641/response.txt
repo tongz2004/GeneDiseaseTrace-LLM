@@ -1,0 +1,31 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text, tables or figures
+E|G1|gene|serum amyloid A|Serum amyloid A;Serum Amyloid A;SAA|p|species_unresolved|||
+E|G2|gene|SAA1|SAA1|p|species_unresolved|non-human||
+E|G3|gene|SAA3|SAA3|p|species_unresolved|non-human||
+E|G4|gene|c-Jun N-terminal kinase|c-Jun N-terminal kinase;JNK|p|ambiguous_mapping|||
+E|G5|gene|Erk|Erk|p|ambiguous_mapping|||
+E|G6|gene|Akt|Akt|p|ambiguous_mapping|||
+E|G7|gene|MCP-1|MCP-1|r||||
+E|G8|gene|RANTES|RANTES|r||||
+E|G9|gene|MMP9|MMP9|r||||
+E|G10|gene|caspase 3|caspase 3|r||||
+E|G11|gene|PARP|PARP|p|ambiguous_mapping|||
+E|D1|disease|liver injury|liver injury|r||||
+E|D2|disease|hepatic fibrogenesis|hepatic fibrogenesis;fibrogenesis|p|other|||
+E|S1|phenotype|inflammation|inflammation|r||||
+E|S2|phenotype|apoptosis|apoptosis|r||||
+X|NF-kappaB|b0002|complex, not single-gene endpoint
+X|IkappaB kinase|b0002|complex, not single-gene endpoint
+X|MAP kinases|b0002|gene family, not single-gene endpoint
+X|Annexin V|b0002|staining reagent for apoptosis assay
+X|CCl4|b0002|chemical used to induce the model
+EV|V1|b0002.s9|ts|res|aff|rr,cmp
+EV|V2|b0002.s10|ts|int|hyp|ho
+EV|V3|b0002.s2|bg|bgr|q|none
+P|G2|D2|sup|a|ts|sup:a:ts:V1|||mRNA increased in two non-human fibrogenesis models
+P|G3|D2|sup|a|ts|sup:a:ts:V1|||mRNA increased in two non-human fibrogenesis models
+P|G1|D2|unc|-|ts|unc:-:ts:V2|hedged_claim|V3|Only states SAA may modulate fibrogenesis
+P|G1|D1|nf|-||||V3|Role in liver injury stated as unknown
+F|F1|group_comparison|hepatic SAA1, SAA3 mRNA|CCl4 and bile duct ligation models|unknown|positive|not_reported|V1|Abstract only; no comparator stated
+R|disease scope|b0002.s9|Hepatic fibrogenesis is a process; the models imply liver fibrosis|Treated as provisional disease endpoint

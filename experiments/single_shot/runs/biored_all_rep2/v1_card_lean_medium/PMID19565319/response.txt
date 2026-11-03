@@ -1,0 +1,23 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text, tables or statistics
+E|G1|gene|ADORA2A|ADORA2A;Adenosine A(2A) receptor gene;adenosine A(2A) receptor gene;adenosine A(2A) receptor|r||human||
+E|D1|disease|autism spectrum disorder|autism spectrum disorder;Autism spectrum disorders;ASDs;ASD|r|||
+E|D2|disease|panic disorder|panic disorder|r|||
+E|D3|disease|22q11.2 deletion syndrome|22q11.2 deletion syndrome|r|||
+E|D4|disease|anxiety|anxiety|p|other||
+E|S1|phenotype|autistic symptoms|autistic symptoms|r|||
+X|rs2236624|b0002.s5|variant identifier, not gene
+X|22q11.2 deletions and duplications|b0002.s4|chromosomal CNVs, not named disease
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s5|ts|res|aff|rr,cmp
+EV|V3|b0002.s6|ts|res|aff|rr
+EV|V4|b0001.s1+b0002.s7|ts|int|hyp|ho
+EV|V5|b0002.s4|bg|co|na|do
+P|G1|D1|sup|a|ts|sup:a:ts:V2;unc:-:ts:V4|||nominal rs2236624-CC association with ASD
+P|G1|D2|sup|a|bg|sup:a:bg:V1|||background association with panic disorder
+P|G1|D4|sup|a|ts|sup:a:ts:V3;unc:-:ts:V4|||variants associated with anxiety in ASD
+P|G1|D3|nf|-||||V5|chromosomal location only, no link
+F|F1|association|rs2236624-CC vs ASD status|98 ASD vs 234 controls|significant|positive|not_reported|V2|nominal only, uncorrected
+F|F2|association|rs3761422, rs5751876, rs35320474 vs ASD symptoms|98 ASD individuals|unknown|unknown|not_reported|V2|direction not given in abstract
+F|F3|association|ADORA2A variants vs anxiety|ASD individuals|unknown|unknown|not_reported|V3|replication; statistics not shown
+R|anxiety as primary endpoint|b0002.s6|anxiety is analysed outcome but may be a symptom|treated as provisional disease entity

@@ -1,0 +1,16 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|HNF4A|HNF4A;HNF4alpha;Hepatocyte nuclear factor 4alpha|r||human||
+E|D1|disease|type 2 diabetes mellitus|type 2 diabetes mellitus;diabetes|r||||
+E|D2|disease|impaired glucose tolerance|impaired glucose tolerance;IGT|r||||
+X|STOP-NIDDM|b0001|trial name containing disease abbreviation
+EV|V1|b0001.s1|ts|res|aff|rr
+EV|V2|b0002.s6|ts|res|aff|rr,cmp
+EV|V3|b0002.s7|ts|neg|neg|rr
+EV|V4|b0002.s8|ts|res|aff|rr
+EV|V5|b0002.s9|ts|int|aff|rr
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V2+V4+V5|||SNPs predispose to T2DM in women
+P|G1|D2|nf|-|||||IGT is the baseline population, not linked
+F|F1|association|rs4810424 C allele; diabetes conversion|female IGT subjects|significant|positive|available|V2|adjusted model
+F|F2|association|rs4810424; diabetes conversion|male IGT subjects|not_significant|null|not_reported|V3|
+F|F3|association|haplotype risk alleles; diabetes conversion|female IGT subjects|unknown|positive|not_reported|V4|abstract only

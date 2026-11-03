@@ -1,0 +1,28 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|BSCL2|BSCL2|r||human||
+E|D1|disease|congenital generalized lipodystrophy|congenital generalized lipodystrophy;Congenital generalized lipodystrophy;CGL|r||||
+E|D2|disease|CGL2|CGL2|p|undefined_abbreviation||D1|
+E|D3|disease|CGL1|CGL1|p|undefined_abbreviation||D1|
+E|D4|disease|cardiomyopathy|cardiomyopathy|r||||
+E|D5|disease|hypertriglyceridemia|hypertriglyceridemia|r||||
+E|D6|disease|eruptive xanthomas|eruptive xanthomas|r||||
+E|D7|disease|hepatic steatosis|hepatic steatosis|r||||
+E|S1|symptom|intellectual impairment|intellectual impairment|r||||
+E|S2|phenotype|lack of subcutaneous fat|lack of subcutaneous fat|r||||
+E|S3|symptom|Hepatomegaly|Hepatomegaly|r||||
+E|S4|phenotype|periportal necrosis|periportal necrosis|r||||
+E|S5|phenotype|enlargement of kidneys|enlargement of kidneys|r||||
+X|783insG|b0002|variant identifier
+X|Ile262fs|b0001|variant identifier
+EV|V1|b0001.s1|ts|res|aff|eda,rr
+EV|V2|b0002.s8|ts|co|na|do
+EV|V3|b0002.s9|ts|res|aff|rr,eda
+EV|V4|b0002.s2|bg|bgr|aff|ebr
+EV|V5|b0002.s3+b0002.s5+b0002.s6|ts|co|na|do
+P|G1|D1|sup|c|ts|sup:c:ts:V1;sup:c:ts:V3|||Case attributed CGL to homozygous BSCL2 mutation
+P|G1|D2|sup|c|bg|sup:c:bg:V4|||Background: BSCL2 mutations result in CGL2
+P|G1|D4|nf|-|||||V4+V5|Cardiomyopathy only a CGL2 feature; absent in case
+P|G1|D5|nf|-|||||V5|Case phenotype only; no gene attribution
+F|F1|descriptive|BSCL2 genotype in CGL cases|Asian CGL cases from four countries|unknown|positive|not_reported|V3|review details not shown
+R|hierarchy|b0002.s2|CGL1/CGL2 parent inferred from shared CGL stem, not explicit|Parent D1 set; entities kept provisional and separate

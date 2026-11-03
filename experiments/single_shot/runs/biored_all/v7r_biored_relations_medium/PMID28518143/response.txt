@@ -1,0 +1,32 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text
+E|G1|gene|CASR|calcium sensing receptor;CaSR;Calcium sensing receptor|r||non-human||
+E|G2|gene|AMFR|gp78|r||non-human||
+E|G3|gene|MFN1|Mfn1|r||non-human||
+E|G4|gene|MFN2|Mfn2|r||non-human||
+E|G5|gene|GJA1|Cx43|r||non-human||
+E|G6|gene|CTNNB1|beta-catenin|r||non-human||
+E|G7|gene|CDH2|N-cadherin|r||non-human||
+E|G8|gene|FIS1|Fis1|r||non-human||
+E|G9|gene|DNM1L|Drp1|r||non-human||
+E|D1|disease|Diabetic cardiomyopathy|Diabetic cardiomyopathy;DCM|r||||
+E|D2|disease|Diabetes|diabetes|r||||
+E|D3|disease|Myocardial energy metabolism disorder|energy metabolism disorder|p|other|||
+EV|V1|b0002.s3|bg|bgr|aff|ebr
+EV|V2|b0002.s10|ts|int|aff|rr
+EV|V3|b0002.s4+b0002.s8|ts|res|aff|rr,mi
+EV|V4|b0002.s6+b0002.s7+b0002.s8|ts|res|aff|rr,mi
+EV|V5|b0002.s5+b0002.s6+b0002.s9|ts|res|aff|rr
+P|G1|D1|sup|c|ts|sup:c:ts:V2;sup:r:bg:V1|||CaSR protective; proposed DCM therapeutic target
+P|G1|D3|sup|c|ts|sup:c:ts:V3+V2|||CaSR agonist attenuates HG-induced metabolism disorder
+P|G2|D3|sup|c|ts|sup:c:ts:V4|||gp78 siRNA reduces HG-induced changes
+P|G3|D3|sup|a|ts|sup:a:ts:V5|||Decreased and ubiquitinated under HG
+P|G4|D3|sup|a|ts|sup:a:ts:V5|||Decreased and ubiquitinated under HG
+P|G5|D3|sup|a|ts|sup:a:ts:V5|||Decreased and ubiquitinated under HG
+P|G6|D3|sup|a|ts|sup:a:ts:V5|||Decreased under HG
+P|G7|D3|sup|a|ts|sup:a:ts:V5|||Decreased under HG
+P|G8|D3|sup|a|ts|sup:a:ts:V5|||Increased under HG
+P|G9|D3|sup|a|ts|sup:a:ts:V5|||Increased under HG
+P|G2|D1|unc|-|ts||scope|V4|HG model links gp78 only indirectly to DCM
+F|F1|mechanism|HG; CaSR, gp78, Mfn1/2, Cx43 expression|HG-treated cardiomyocytes|unknown|mixed|unread|V3+V4+V5|abstract only
+F|F2|descriptive|CaSR expression|DCM rats|significant|negative|not_reported|V1|previous study

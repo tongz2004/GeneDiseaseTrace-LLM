@@ -1,0 +1,43 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only; no full text or attachments.
+E|G1|gene|neuroserpin|Neuroserpin;NSP|r||human||
+E|G2|gene|neuroserpin|neuroserpin;Neuroserpin;NSP|p|species_unresolved|||
+E|G3|gene|TNF-alpha|TNF-alpha|r||non-human||
+E|G4|gene|ERK1|p-ERK1|r||non-human||
+E|G5|gene|ERK2|p-ERK2|r||non-human||
+E|G6|gene|Akt|Akt;p-AKT|r||non-human||
+E|G7|ambiguous_gene|lactate dehydrogenase|lactate dehydrogenase;LDH|u|ambiguous_mapping|||
+E|G8|gene|Annexin V|Annexin V|p|species_unresolved|||
+E|G9|gene|P65|P65|r||non-human||
+E|D1|disease|cerebral ischemic disease|cerebral ischemic|r|||| 
+X|oxygen-glucose deprivation|b0002|experimental condition
+X|OGD|b0002|experimental condition abbreviation
+X|OGD/R|b0002|experimental condition abbreviation
+X|NF-kappaB|b0002|protein complex and pathway
+X|ERK1/2|b0002|grouped genes
+X|PI3K|b0002|multigene enzyme family
+X|MAPK|b0002|gene family and pathway
+X|p-IKKBalpha/beta|b0002|grouped phosphorylated proteins
+X|sc3060|b0002|pathway inhibitor identifier
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s3+b0002.s8+b0002.s12|ts|res|na|rr
+EV|V3|b0002.s9|ts|res|na|rr
+EV|V4|b0002.s10|ts|res|na|rr
+EV|V5|b0002.s11|ts|res|na|rr
+EV|V6|b0002.s4|ts|co|na|do
+EV|V7|b0002.s13|ts|int|hyp|ho
+P|G1|D1|sup|a|bg|sup:a:bg:V1|||Reported neuroprotection in patients.
+P|G2|D1|sup|a|bg|sup:a:bg:V1|||Reported neuroprotection in cerebral ischemic animal models.
+P|G3|D1|nf|-||||V3+V7|Cellular release findings do not establish disease linkage.
+P|G4|D1|nf|-||||V5|Cellular phosphorylation findings do not establish disease linkage.
+P|G5|D1|nf|-||||V5|Cellular phosphorylation findings do not establish disease linkage.
+P|G6|D1|nf|-||||V5|Cellular phosphorylation findings do not establish disease linkage.
+P|G7|D1|nf|-||||V2|Cell injury assay does not establish disease linkage.
+P|G9|D1|nf|-||||V4|Cellular phosphorylation findings do not establish disease linkage.
+F|F1|group_comparison|NSP; survival; LDH release|OGD/R-treated rat astrocytes|significant|mixed|not_reported|V2|Survival increased; LDH release decreased.
+F|F2|group_comparison|NSP; TNF-alpha release|OGD/R-treated rat astrocytes|unknown|negative|not_reported|V3|
+F|F3|group_comparison|NSP; P65; p-IKKBalpha/beta|OGD/R-treated rat astrocytes|significant|negative|not_reported|V4|OGD/R-induced increases inhibited by NSP.
+F|F4|group_comparison|sc3060; NSP-induced protein inhibition|OGD/R-treated rat astrocytes|significant|positive|not_reported|V5|Reversal reported; individual protein scope unclear.
+F|F5|group_comparison|OGD/R; p-ERK1; p-ERK2; p-AKT|rat astrocytes|unknown|positive|not_reported|V5|
+F|F6|group_comparison|NSP; p-ERK1; p-ERK2; p-AKT|OGD/R-treated rat astrocytes|unknown|null|not_reported|V5|Unchanged levels; statistical significance unspecified.
+F|F7|hypothesis|NSP; TNF-alpha; NF-kappaB; neuroprotection|ischemic rat astrocytes|not_applicable|unknown|not_applicable|V7|Proposed cellular mechanism.

@@ -1,0 +1,24 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|CCR5|C-C chemokine receptor 5;CCR5|r||human||
+E|D1|disease|rheumatoid arthritis|rheumatoid arthritis;RA|r||||
+E|D2|disease|systemic lupus erythematosus|systemic lupus erythematosus;SLE|r||||
+E|D3|disease|lupus nephritis|lupus nephritis;LN|r||||
+E|D4|disease|autoimmune diseases|autoimmune diseases|r||||
+E|D5|phenotype|inflammation|inflammation|r||||
+X|DD32|b0002.s2|CCR5 32-bp deletion variant, not separate gene
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s2+b0002.s3|bg|bgr|aff|ebr
+EV|V3|b0002.s9|ts|neg|neg|rr,cmp
+EV|V4|b0002.s11|ts|neg|neg|rr
+EV|V5|b0002.s12|ts|int|neg|rr
+EV|V6|b0002.s10|ts|res|q|rr,cmp
+EV|V7|b0002.s12+b0002.s13|ts|int|neg|rr
+P|G1|D1|neg|-|ts|neg:-:ts:V3+V4+V5+V7|||No susceptibility or severity association in RA
+P|G1|D2|neg|-|ts|neg:-:ts:V3+V4+V5+V7|||No susceptibility or severity association in SLE
+P|G1|D3|unc|-|ts|neg:-:ts:V3+V4;unc:a:ts:V6+V5|hedged_claim,conflict||Nonsignificant trend; association with LN not excluded
+P|G1|D4|sup|a|bg|sup:a:bg:V2|||Background: deletion protective in autoimmune diseases
+F|F1|group_comparison|CCR5 DD32 genotype frequencies|RA, SLE, LN vs controls|not_significant|null|partial|V3|abstract only
+F|F2|group_comparison|DD32 allele frequency|LN vs controls|not_significant|negative|partial|V6|trend p=0.08
+F|F3|association|CCR5 status vs disease severity|RA, SLE, LN patients|not_significant|null|not_reported|V4+V7|abstract only
+C|C1|CCR5 and LN association|b0002.s10+b0002.s12|status_critical|unresolved|Trend lower allele; authors cannot exclude association

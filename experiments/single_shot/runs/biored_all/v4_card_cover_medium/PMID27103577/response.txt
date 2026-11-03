@@ -1,0 +1,15 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text available
+E|G1|gene|PPARa|PPARa;peroxisome proliferator-activated receptor a|r||non-human||
+E|G2|gene|UCP3|UCP3;mitochondrial uncoupling protein 3|r||non-human||
+E|D1|disease|hypoxic injury|hypoxic injury|p|other|||
+E|S1|phenotype|hypoxia|hypoxia|r||||
+E|S2|phenotype|contractile function decrease|contractile function|r||||
+EV|V1|b0001.s1+b0002.s6+b0002.s8|ts|int|hyp|unc
+EV|V2|b0002.s7|ts|res|na|rr,mi
+P|G1|D1|unc|-|ts|unc:-:ts:V1|scope,hedged_claim|V2|Mouse cardiac phenotype only; injury link is inferred
+F|F1|group_comparison|hypoxia vs PPARa expression, UCP3|normoxic chow-fed mouse hearts|unknown|negative|not_reported|V2|abstract only
+F|F2|group_comparison|high-fat diet vs PPARa, UCP3|mouse hearts|unknown|positive|not_reported|V1|abstract only
+F|F3|group_comparison|hypoxia on ATP, contractile function|high-fat-fed mouse hearts|significant|negative|not_reported|V1|no gene comparator
+F|F4|mechanism|PPARa knockout vs hypoxic function|PPARa(-/-) mouse hearts|unknown|not_applicable|not_reported|V2|descriptive in abstract
+R|named injury scope|b0001.s1|hypoxic injury used only in the title; it is undefined as a disease.|Kept it as a provisional disease; the pair is uncertain (scope).

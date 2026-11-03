@@ -1,0 +1,19 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|GUCA1A|GUCA1A|r||human||
+E|G2|gene|GUCA1B|GUCA1B;GCAP2|r||human||
+E|D1|disease|cone dystrophy|cone dystrophy|r|||||
+E|D2|disease|cone rod dystrophy|cone rod dystrophy|r|||||
+E|D3|disease|macular dystrophy|macular dystrophy|r|||||
+E|D4|disease|retinal degeneration|inherited retinal disease;retinal degenerations|p|ambiguous_mapping||||
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s2|bg|bgr|q|unc
+EV|V3|b0002.s6+b0002.s8|ts|res|neg|rr
+EV|V4|b0002.s9|ts|int|hyp|unc
+P|G1|D1|sup|c|bg|sup:c:bg:V1|||Heterozygous GUCA1A mutations cause adCD
+P|G1|D2|sup|c|bg|sup:c:bg:V1|||Heterozygous GUCA1A mutations cause adCRD
+P|G1|D3|sup|c|bg|sup:c:bg:V1|||GUCA1A mutations cause macular dystrophy
+P|G2|D1|unc|-|ts|unc:-:ts:V3+V4|hedged_claim||No pathogenic mutations; called minor cause
+P|G2|D2|unc|-|ts|unc:-:ts:V3+V4|hedged_claim||No pathogenic mutations; called minor cause
+P|G2|D4|unc|-|both|unc:-:bg:V2;unc:-:ts:V4|hedged_claim||Role controversial; minor cause suggested
+F|F1|descriptive|GUCA1B sequence variants|24 adCD/adCRD patients|not_applicable|null|not_reported|V3+V4|abstract only

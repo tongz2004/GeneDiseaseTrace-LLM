@@ -1,0 +1,30 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text, figures or tables
+E|G1|gene|nrg2a|nrg2a;neuregulin 2a;Neuregulin 2a;Nrg2a|r||non-human||
+E|G2|gene|lgl2|lgl2;Lgl2|r||non-human||
+E|G3|gene|ErbB2|ErbB2|r||non-human||
+E|G4|gene|ErbB receptor family|ErbB|p|ambiguous_mapping|non-human||
+E|G5|gene|AKT|AKT|p|ambiguous_mapping|non-human||
+E|G6|gene|fras1|fras1|r||non-human||
+E|G7|gene|grip1|grip1|r||non-human||
+E|G8|gene|hmcn1|hmcn1|r||non-human||
+E|G9|gene|msxc|msxc|r||non-human||
+E|G10|gene|col4a4|col4a4|r||non-human||
+E|G11|gene|ahnak|ahnak|r||non-human||
+E|G12|gene|capn12|capn12|r||non-human||
+E|G13|gene|arhgef25b|arhgef25b|r||non-human||
+E|G14|gene|fkbp10b|fkbp10b|r||non-human||
+E|G15|gene|megf6a|megf6a|r||non-human||
+E|D1|disease|skin disorders|Skin disorders|p|other|||
+E|P1|phenotype|thickened median fin fold edges|thickened MFF edges|r||||
+X|tumor suppressor|b0002|functional descriptor of lgl2; no tumor studied
+X|GBT|b0002|gene-break transposon, not a gene
+EV|V1|b0002.s7+b0002.s8|ts|res|aff|rr,mi
+EV|V2|b0002.s10|ts|res|aff|rr,mi
+EV|V3|b0002.s6+b0002.s9|ts|int|aff|unc
+EV|V4|b0002.s1+b0002.s5|bg|co|na|do
+P|G1|D1|nf|-|||||V4|Skin development only; no disease link
+F|F1|mechanism|nrg2a mutation; ridge cell polarity; MFF edges|zebrafish nrg2a mutant larvae|unknown|positive|unread|V1|abstract only; phenotype not disease
+F|F2|mechanism|lgl2 knockdown; nrg2a mutant phenotype|zebrafish nrg2a mutant embryos|unknown|negative|unread|V2|abstract only
+F|F3|mechanism|Nrg2a-ErbB2/3-AKT signaling; MFF morphogenesis|zebrafish embryos|unknown|unknown|unread|V3|inhibitor evidence; abstract only
+R|P targets|P records|gene-phenotype evidence cannot form P pairs with phenotype targets|recorded phenotype evidence as F findings only

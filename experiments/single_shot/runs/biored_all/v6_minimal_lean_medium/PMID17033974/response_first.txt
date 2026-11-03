@@ -1,0 +1,15 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|CACNA2D4|CACNA2D4|r||human|||
+E|G2|gene|Cacna2d4|Cacna2d4|r||non-human|G1||
+E|D1|disease|autosomal recessive cone dystrophy|autosomal recessive cone dystrophy;cone dystrophy|r||||
+E|D2|disease|night blindness|night blindness|r||||
+E|P1|phenotype|loss of retinal signaling|loss of retinal signaling|r||||
+EV|V1|b0002.s5+b0002.s6+b0002.s7|ts|res|aff|rr,eda
+EV|V2|b0001.s1+b0002.s8|ts|int|aff|eda
+EV|V3|b0002.s2|bg|bgr|aff|ebr
+EV|V4|b0002.s5|ts|co|na|do
+P|G1|D1|sup|c|ts|sup:c:ts:V1+V2||| Homozygous truncating mutation in affected siblings
+P|G2|P1|sup|c|bg|sup:c:bg:V3|||Prior mouse mutant frameshift report
+P|G1|D2|nf|-|||||V4|Night blindness was only the initial cohort diagnosis
+F|F1|descriptive|CACNA2D4 c.2406C>A homozygous; cone dystrophy|two affected siblings of 34 patients|not_applicable|not_applicable|not_applicable|V1|single family; no segregation details

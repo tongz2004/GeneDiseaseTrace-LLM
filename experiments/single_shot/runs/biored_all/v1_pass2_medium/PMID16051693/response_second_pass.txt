@@ -1,0 +1,2 @@
+P|G1|D2|nf|-|||||V3|Controls lack fatty liver; analysed outcome is NAFLD only
+P|G2|D1|nf|-|||||V1+V2|Mouse fatty liver not stated as NAFLD

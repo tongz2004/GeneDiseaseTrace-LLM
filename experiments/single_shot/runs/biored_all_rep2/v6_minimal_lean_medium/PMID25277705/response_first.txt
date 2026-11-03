@@ -1,0 +1,64 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|LIF|Leukemia inhibitory factor;leukemia inhibitory factor;LIF|r||||
+E|G2|gene|MIF|migration inhibitory factor;MIF|r||||
+E|G3|gene|KITLG|stem cell factor;SCF|r||||
+E|G4|gene|CCL27|CCL27|r||||
+E|G5|gene|CXCL12|CXCL12|r||||
+E|G6|gene|CLEC11A|stem cell growth factor beta;SCGF-b|p|ambiguous_mapping|||
+E|G7|gene|TICAM1|TIR-domain-containing adapter-inducing interferon-b;Trif|r||non-human||
+E|G8|gene|MAVS|mitochondrial antiviral-signaling protein;Mavs|r||non-human||
+E|G9|gene|IL1B|IL-1b|r||non-human||
+E|G10|gene|IL4|IL-4|r||non-human||
+E|G11|gene|IL5|IL-5|r||non-human||
+E|G12|gene|IL6|IL-6|r||non-human||
+E|G13|gene|IL12B|IL-12|r||non-human||
+E|G14|gene|IFNG|IFN-g|r||non-human||
+E|G15|gene|CCL2|CCL2|r||non-human||
+E|G16|gene|CCL5|CCL5|r||non-human||
+E|G17|gene|CCL3|CCL3|r||non-human||
+E|G18|gene|CXCL1|CXCL1|r||non-human||
+E|G19|gene|CXCL10|IP-10;CXCL10|r||non-human||
+E|G20|gene|IL22|IL-22|r||non-human||
+E|G21|gene|CXCL9|MIG;CXCL9|r||non-human||
+E|G22|gene|RIGI|retinoic acid-inducible gene-1;RIG-I|r||human||
+E|G23|gene|IFIH1|melanoma differentiation-associated protein 5;MDA5|r||human||
+E|G24|gene|DHX58|laboratory of genetics and physiology 2;LGP2|r||human||
+E|D1|disease|respiratory syncytial virus infection|respiratory syncytial viral infection;RSV infection|r||||
+E|D2|disease|lung injury|acute lung injury;lung injury|r||||
+E|D3|phenotype|airway hyperresponsiveness|airway hyperresponsiveness|r||||
+EV|V1|b0002.s11+b0002.s13|ts|res|aff|rr,mi
+EV|V2|b0002.s5+b0002.s6|ts|res|aff|rr
+EV|V3|b0002.s8|ts|res|aff|rr,mi
+EV|V4|b0002.s9|ts|res|aff|rr,mi
+EV|V5|b0002.s10+b0002.s12|ts|res|aff|rr,mi
+EV|V6|b0002.s1|ts|int|aff|eda
+P|G1|D1|sup|c|ts|sup:c:ts:V1+V6;sup:a:ts:V2+V4||||LIF neutralization worsened RSV pathology
+P|G1|D2|sup|c|ts|sup:c:ts:V1||||LIF protects lung from injury
+P|G1|D3|sup|c|ts|sup:c:ts:V1||||Anti-LIF increased airway hyperresponsiveness
+P|G2|D1|sup|a|ts|sup:a:ts:V2+V3+V4||||RSV-inducible cytokine
+P|G3|D1|sup|a|ts|sup:a:ts:V2||||RSV-inducible cytokine
+P|G4|D1|sup|a|ts|sup:a:ts:V2||||RSV-inducible cytokine
+P|G5|D1|sup|a|ts|sup:a:ts:V2+V4||||RSV-inducible cytokine
+P|G6|D1|sup|a|ts|sup:a:ts:V2||||RSV-inducible cytokine
+P|G7|D1|sup|a|ts|sup:a:ts:V4||||Trif loss altered RSV cytokine induction
+P|G8|D1|sup|a|ts|sup:a:ts:V3||||Mavs required for RSV cytokine induction
+P|G9|D1|sup|a|ts|sup:a:ts:V3+V4||||Induced in airway during RSV
+P|G10|D1|sup|a|ts|sup:a:ts:V3||||Induced in airway during RSV
+P|G11|D1|sup|a|ts|sup:a:ts:V3+V4||||Induced in airway during RSV
+P|G12|D1|sup|a|ts|sup:a:ts:V3||||Induced in airway during RSV
+P|G13|D1|sup|a|ts|sup:a:ts:V3||||Induced in airway during RSV
+P|G14|D1|sup|a|ts|sup:a:ts:V3+V4||||Induced in airway during RSV
+P|G15|D1|sup|a|ts|sup:a:ts:V3||||Induced in airway during RSV
+P|G16|D1|sup|a|ts|sup:a:ts:V3||||Induced in airway during RSV
+P|G17|D1|sup|a|ts|sup:a:ts:V3||||Induced in airway during RSV
+P|G18|D1|sup|a|ts|sup:a:ts:V3||||Induced in airway during RSV
+P|G19|D1|sup|a|ts|sup:a:ts:V3||||Induced in airway during RSV
+P|G20|D1|sup|a|ts|sup:a:ts:V3||||Induced in airway during RSV
+P|G21|D1|sup|a|ts|sup:a:ts:V3||||Induced in airway during RSV
+P|G22|D1|sup|a|ts|sup:a:ts:V5||||RIG-I mediates RSV cytokine response
+P|G23|D1|unc|a|ts|unc:a:ts:V5|hedged_claim|||Lesser, unquantified impact than RIG-I
+P|G24|D1|unc|a|ts|unc:a:ts:V5|hedged_claim|||Lesser, unquantified impact than RIG-I
+F|F1|mechanism|anti-LIF IgG; RSV pathology|RSV-infected wild-type mice|unknown|positive|not_reported|V1|abstract only
+F|F2|mechanism|Mavs/Trif KO; cytokine induction|RSV-infected KO mice|unknown|negative|not_reported|V3+V4|abstract only
+F|F3|mechanism|RIG-I silencing; cytokine induction|RSV-infected A549 cells|unknown|negative|not_reported|V5|abstract only

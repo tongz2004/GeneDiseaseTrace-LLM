@@ -1,0 +1,16 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|DMD (dystrophin)|DMD;dystrophin|r|||human|
+E|D1|disease|Duchenne muscular dystrophy|Duchenne muscular dystrophy;DMD|r||||
+E|D2|disease|Becker muscular dystrophy|Becker muscular dystrophy;BMD|r||||
+X|DXS269|b0002|genomic probe locus name, not a gene
+X|DXS239|b0002|genomic probe locus name, not a gene
+X|cDNA5b-7|b0002|cDNA probe label, not a gene
+EV|V1|b0002.s1+b0002.s3|ts|res|aff|rr,eda
+EV|V2|b0002.s7+b0002.s8|ts|res|aff|rr,cmp
+EV|V3|b0002.s9|bg|bgr|aff|ebr
+P|G1|D1|sup|c|both|sup:c:ts:V1+V2;sup:c:bg:V3|||Deletions found in DMD patients; frameshift predicts severity
+P|G1|D2|sup|c|both|sup:c:ts:V1+V2;sup:c:bg:V3|||Deletions in BMD patients; mostly in-frame
+F|F1|group_comparison|deletion reading frame vs phenotype severity|38 classifiable DMD/BMD/intermediate patients|unknown|positive|partial|V2|two exceptions; no formal test
+F|F2|descriptive|DMD gene deletion frequency in deletion-rich region|181 DMD/BMD patients|not_applicable|not_applicable|partial|V1|
+C|C1|reading-frame rule consistency across gene|b0002.s9|noncritical|unresolved|Malhotra et al. contrasting 5' findings

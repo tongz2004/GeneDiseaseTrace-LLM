@@ -1,0 +1,23 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or figures
+E|g1|gene|PTPN22|PTPN22|r||human||
+E|g2|gene|Ptpn22|Ptpn22|r||non-human|g1|
+E|g3|gene|Fc gamma receptor|Fcg Receptor;FcgR|p|ambiguous_mapping|non-human||
+E|g4|gene|Lyn|Lyn|r||non-human||
+E|g5|gene|Syk|Syk|r||non-human||
+E|d1|disease|bacterial infection|bacterial and fungal infections|p|other|||
+E|d2|disease|fungal infection|bacterial and fungal infections|p|other|||
+E|d3|disease|inflammation|inflammation|r||||
+E|d4|disease|autoimmune disease|autoimmune disease|r||||
+E|d5|disease|rheumatoid arthritis|rheumatoid arthritis|r||||
+E|d6|disease|arthritis|arthritis|r||||
+E|d7|disease|peritonitis|peritonitis|r||||
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s7|ts|res|aff|rr,mi
+EV|V3|b0002.s8|ts|res|na|do
+P|g1|d4|sup|a|bg|sup:a:bg:V1|||GWAS susceptibility to autoimmune disease
+P|g1|d5|sup|a|bg|sup:a:bg:V1|||GWAS susceptibility, notably rheumatoid arthritis
+P|g2|d6|sup|c|ts|sup:c:ts:V2|||Knockout mice protected from immune complex arthritis
+P|g2|d7|nf|-|||||V3|Peritonitis only recruitment model; no disease effect claimed
+F|F1|group_comparison|Ptpn22 knockout; serum-transfer arthritis|Ptpn22-/- vs wild-type mice|unknown|negative|unread|V2|abstract only; statistics not shown
+F|F2|group_comparison|Ptpn22 knockout; neutrophil recruitment|thioglycollate peritonitis mice|not_significant|null|unread|V3|outcome is recruitment, not disease

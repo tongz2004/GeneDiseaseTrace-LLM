@@ -1,0 +1,20 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text, tables or figures
+E|G1|gene|STAT3|signal transducer and activator of transcription 3;STAT3|r||non-human||
+E|G2|gene|Bcl-2|Bcl-2|r||non-human||
+E|G3|gene|Bax|Bax|r||non-human||
+E|D1|disease|acute myocardial injury|acute myocardial injury|r||||
+E|D2|disease|acute myocardial ischemia|acute myocardial ischemia|r||||
+E|D3|disease|acute myocardial ischemic injury|Acute myocardial ischemic injury|p|other|||
+E|D4|disease|myocardial damage|myocardial damage|p|other|||
+E|S1|phenotype|left ventricular remodeling|left ventricular remodeling|r||||
+EV|V1|b0001.s1|ts|int|hyp|mi,unc
+EV|V2|b0002.s1|ts|aim|na|ho
+EV|V3|b0002.s9|ts|int|hyp|rr,unc
+EV|V4|b0002.s6|ts|res|na|rr,do
+EV|V5|b0002.s7|ts|res|na|rr,do
+P|G1|D1|unc|-|ts|unc:-:ts:V1|support_basis_unresolved|V4|Drug-mechanism claim; no gene-disease link tested
+P|G1|D2|unc|-|ts|unc:-:ts:V3|support_basis_unresolved|V2+V4|Mechanism inferred from drug effect; not gene-tested
+F|F1|mechanism|STAT3 phosphorylation; isoproterenol; betaine|rat myocardium|unknown|positive|unread|V4|Abstract only; no statistics given
+F|F2|group_comparison|Bcl-2, Bax, Bcl-2/Bax ratio; betaine dose|isoproterenol-treated rats|significant|mixed|unread|V5|Abstract only; values not shown
+R|Disease co-reference|b0001.s1;b0002.s3;b0002.s9|Injury, ischemia and ischemic injury may describe one model|Kept as separate entities; strict synonymy not stated

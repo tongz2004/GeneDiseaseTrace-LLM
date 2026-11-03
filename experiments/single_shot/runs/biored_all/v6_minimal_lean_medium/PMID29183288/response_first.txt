@@ -1,0 +1,49 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G0|gene|arginase|arginase|p|ambiguous_mapping|non-human||
+E|G1|gene|Arg1|arginase1;ARG1;Arg1|r||non-human|G0|
+E|G2|gene|Arg2|Arg2|r||non-human|G0|
+E|G3|gene|Nos2|Nos2|r||non-human||
+E|G4|gene|Slc7a1|Slc7a1|r||non-human||
+E|G5|gene|Slc7a2|Slc7a2|r||non-human||
+E|G6|gene|Slc7a7|Slc7a7|r||non-human||
+E|G7|gene|Il4|Il4;IL-4|r||non-human||
+E|G8|gene|Il5|Il5;IL-5|r||non-human||
+E|G9|gene|Il13|Il13;IL-13|r||non-human||
+E|G10|gene|Ccl2|Ccl2|r||non-human||
+E|G11|gene|Ccl11|Ccl11|r||non-human||
+E|G12|gene|Ifng|Ifng;IFNgamma|r||non-human||
+E|G13|gene|Clca3|Clca3|r||non-human||
+E|G14|gene|Muc5ac|Muc5ac|r||non-human||
+E|G15|gene|Il10|IL-10|r||non-human||
+E|G16|gene|Tnf|TNFalpha|r||non-human||
+E|D1|disease|allergic asthma|allergic asthma|r||||
+E|D2|phenotype|airway hyperresponsiveness|airway hyperresponsiveness;AHR|r||||
+E|D3|disease|lung inflammation|lung inflammation;inflammation|r||||
+X|Tie2Cre|b0002.s3|Cre transgene driver, not a studied gene
+X|IgE|b0002.s5|immunoglobulin readout, not a gene entity
+EV|V1|b0001.s1|ts|res|aff|rr
+EV|V2|b0002.s6+b0002.s11|ts|neg|neg|rr,cmp
+EV|V3|b0002.s6|ts|res|aff|rr,mi
+EV|V4|b0002.s7+b0002.s11|ts|neg|neg|rr,cmp
+EV|V5|b0002.s8|ts|res|aff|rr,mi
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V3+V5|||Arg1 ablation alters inflammatory response in asthma
+P|G1|D2|neg|-|ts|neg:-:ts:V2|||Arg1 ablation did not change AHR
+P|G1|D3|unc|a|ts|sup:a:ts:V1;neg:-:ts:V4|conflict||Pro-inflammatory genes changed; histology and cells unchanged
+P|G2|D1|sup|a|ts|sup:a:ts:V3|||OVA-induced expression increase in asthma model
+P|G3|D1|sup|a|ts|sup:a:ts:V3|||OVA-induced expression increase in asthma model
+P|G4|D1|sup|a|ts|sup:a:ts:V3|||OVA-induced expression increase in asthma model
+P|G5|D1|sup|a|ts|sup:a:ts:V3|||OVA-induced expression increase in asthma model
+P|G6|D1|sup|a|ts|sup:a:ts:V3|||OVA-induced expression increase in asthma model
+P|G7|D1|sup|a|ts|sup:a:ts:V3|||OVA-induced expression increase in asthma model
+P|G8|D1|sup|a|ts|sup:a:ts:V3|||OVA-induced expression increase in asthma model
+P|G9|D1|sup|a|ts|sup:a:ts:V3|||OVA-induced expression increase in asthma model
+P|G10|D1|sup|a|ts|sup:a:ts:V3|||OVA-induced expression increase in asthma model
+P|G11|D1|sup|a|ts|sup:a:ts:V3|||OVA-induced expression increase in asthma model
+P|G12|D1|sup|a|ts|sup:a:ts:V3|||OVA-induced expression increase in asthma model
+P|G13|D1|sup|a|ts|sup:a:ts:V3|||OVA-induced expression increase in asthma model
+P|G14|D1|sup|a|ts|sup:a:ts:V3|||OVA-induced expression increase in asthma model
+F|F1|group_comparison|Arg1 ablation vs methacholine AHR|female OVA/OVA mice|not_significant|null|unread|V2|abstract only
+F|F2|group_comparison|Arg1 ablation vs OVA-induced gene expression|female OVA/OVA mice|significant|negative|unread|V3|abstract only
+F|F3|group_comparison|Arg1 ablation vs lung cytokine proteins|female OVA/OVA mice|mixed|mixed|unread|V4|IL-10 up; others unchanged
+F|F4|correlation|lung function vs inflammation correlations|Arg1-deficient OVA/OVA females|unknown|negative|unread|V5|abstract only

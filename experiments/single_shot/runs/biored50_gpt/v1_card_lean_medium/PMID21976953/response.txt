@@ -1,0 +1,10 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only.
+E|G1|gene|FBN1|FBN1;fibrillin-1|r||human||
+E|D1|disease|Marfan syndrome|Marfan syndrome;MFS|r||||
+EV|V1|b0002.s11|ts|res|aff|rr,eda
+EV|V2|b0002.s8+b0002.s9|ts|res|aff|rr,cmp
+EV|V3|b0002.s10|ts|hyp|hyp|ho
+P|G1|D1|sup|c|ts|sup:c:ts:V1;sup:a:ts:V2|||Explicit familial causative attribution and comparative mutation findings.
+F|F1|association|FBN1 mutation and MFS|Family and 170 healthy Chinese individuals|unknown|positive|not_reported|V2|Affected status of two carriers unstated.
+F|F2|hypothesis|FBN1 mutation and domain conformation|Identified mutant residue|not_applicable|unknown|not_applicable|V3|Predicted functional consequence only.

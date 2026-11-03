@@ -1,0 +1,18 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|PDE4D|phosphodiesterase 4D;PDE4D|r||human||
+E|D1|disease|carotid atherosclerosis|carotid atherosclerosis;subclinical atherosclerosis;atherogenesis|r|||||
+E|D2|disease|stroke|stroke;young stroke|r|||||
+E|S1|phenotype|carotid intima-media thickness|IMT|r|||||
+E|S2|phenotype|plaque index|plaque index|r|||||
+X|rs702553|b0002|SNP in PDE4D; variant, not separate gene
+EV|V1|b0002.s1+b0002.s8|bg|bgr|aff|ebr
+EV|V2|b0002.s10+b0002.s11+b0002.s12+b0002.s13+b0002.s16|ts|res|aff|rr,cmp
+EV|V3|b0002.s15+b0002.s16|ts|res|aff|rr,cmp
+EV|V4|b0002.s14|ts|neg|neg|rr
+P|G1|D1|sup|a|ts|sup:a:ts:V2|||rs702553 TT linked to plaque, IMT in men
+P|G1|D2|sup|a|both|sup:a:bg:V1;sup:a:ts:V3|||Prior report plus male young-stroke replication
+F|F1|association|rs702553 TT; plaque index >=4|overall subjects|significant|positive|available|V2|
+F|F2|group_comparison|TT genotype; plaque index, IMT|men|significant|positive|available|V2|
+F|F3|association|rs702553; IMT, plaque index|women|not_significant|null|partial|V4|
+F|F4|association|rs702553; young stroke|young stroke men vs women|mixed|positive|available|V3|significant only in men

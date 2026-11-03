@@ -1,0 +1,20 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|NMDA receptor|N-methyl-D-aspartate receptors;NMDA receptors;NMDA receptor|p|ambiguous_mapping|non-human||
+E|D1|disease|spinal cord ischemia|spinal cord ischemia;Spinal cord ischemia|r||||
+E|D2|disease|motor neuron degeneration|degeneration of spinal motor neurons|r||||
+E|D3|disease|spastic paraparesis|spastic paraparesis|r||||
+E|D4|phenotype|neurotoxicity|neurotoxic|r||||
+X|MK-801|b0002.s5|NMDA antagonist drug, not a gene
+X|glutamate|b0002.s6|neurotransmitter chemical, not a gene
+EV|V1|b0001.s1|ts|hyp|hyp|ho
+EV|V2|b0002.s8|ts|res|aff|rr,mi
+EV|V3|b0002.s9|ts|int|aff|rr
+EV|V4|b0002.s10|ts|hyp|hyp|ho
+P|G1|D2|sup|a|ts|sup:a:ts:V2+V1|hedged_claim||NMDA blockade reduced motoneuron degeneration
+P|G1|D3|sup|a|ts|sup:a:ts:V2+V3|||MK-801 effect after morphine-induced paraparesis
+P|G1|D1|unc|-|ts|unc:a:ts:V4+V1|hedged_claim||Ischemic setting; link only suggested
+P|G1|D4|unc|-|ts|unc:a:ts:V4|hedged_claim||Neurotoxicity via NMDA only suggested
+F|F1|mechanism|IT MK-801 vs saline; dark-stained motoneurons|rats with morphine-induced spastic paraparesis|significant|negative|partial|V2|abstract only; pharmacologic inference
+F|F2|group_comparison|CSF glutamate after IT morphine|group M vs baseline and C|significant|positive|partial|V3|indirect for NMDA receptor
+R|gene inferred via antagonist|b0002.s8|Evidence for receptor rests on MK-801 pharmacology, not genetics|Treated as model intervention support

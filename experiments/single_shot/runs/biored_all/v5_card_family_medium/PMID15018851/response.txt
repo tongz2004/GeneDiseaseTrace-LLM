@@ -1,0 +1,18 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text, tables or figures
+E|G1|gene|UL97|UL97|r||non-human||
+E|G2|gene|DNA polymerase|DNA polymerase|p|other|non-human||
+E|G3|gene|glycoprotein B|glycoprotein B;gB|r||non-human||
+E|G4|gene|UL10-13 (family)|UL10-13|p|other|non-human||
+E|D1|disease|lymphoma|lymphoma|r||||
+E|D2|disease|non-Hodgkin's lymphoma|non-Hodgkin's lymphoma|r|||D1|
+E|S1|phenotype|antiviral drug resistance|resistance to antiviral drugs|r||||
+X|cytomegalovirus|b0002|organism name, not a named disease entity
+X|a-|b0002|viral a-sequence region, not a gene
+EV|V1|b0002.s8|ts|res|na|rr,do
+EV|V2|b0002.s9|ts|res|na|rr,do
+EV|V3|b0002.s11|ts|res|na|rr
+F|F1|mechanism|UL97 changes vs ganciclovir resistance|single NHL patient CMV isolates|not_applicable|positive|not_reported|V1|single patient; drug resistance, not disease
+F|F2|mechanism|DNA polymerase N495K, L501I vs resistance|single NHL patient CMV isolates|not_applicable|positive|not_reported|V2|single patient; drug resistance, not disease
+F|F3|association|resistance genotype vs interstrain variation|single NHL patient CMV isolates|not_applicable|null|not_reported|V3|single patient
+R|primary endpoints|b0002.s6|CMV infection named only via organism; no verbatim disease surface form|No infection disease entity; viral gene-resistance links recorded as findings

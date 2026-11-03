@@ -1,0 +1,14 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|acetylcholinesterase|acetylcholinesterases;AChEs;AChE|p|other||||
+E|G2|gene|butyrylcholinesterase|butyrylcholinesterases;BChEs|p|other||||
+E|G3|gene|A1-adenosine receptor|A(1)-adenosine receptor|p|species_unresolved||||
+E|D1|disease|organophosphate poisoning|intoxication;toxicity;poisoning;acute toxicity|p|ambiguous_mapping||||
+E|D2|disease|convulsions|convulsions|r|||||
+E|D3|disease|neuropathological damages|neuropathological damages|p|other||||
+X|NMDA-receptor|b0002|complex, not single gene
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s1|bg|co|na|do
+P|G1|D1|sup|a|bg|sup:a:bg:V1||V2|OP toxicity attributed to AChE binding
+P|G2|D1|nf|-||||V2|BChE inhibition only; no toxicity attribution
+R|gene vs chemical cause|b0002.s2|Toxicity caused by chemical binding to an enzyme, not by a gene variant|Recorded as association, not causal

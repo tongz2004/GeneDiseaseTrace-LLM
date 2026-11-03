@@ -1,0 +1,31 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only; no full text or attachments.
+E|G1|gene|HTR6|Serotonin 6 receptor gene;serotonin 6 (5-HT6) receptor;5-HT6 gene;HTR6|r||human||
+E|G2|gene|5-HT6 receptor|5-HT6 receptor;5-HT6 receptors|r||non-human||
+E|D1|disease|psychotic disorders|psychotic disorders|r||||
+E|D2|disease|schizophrenia|schizophrenia|r|||D1|
+E|D3|disease|paranoid type schizophrenia|paranoid type schizophrenia|r|||D2|
+E|D4|disease|methamphetamine-induced psychosis|methamphetamine-induced psychosis;methamphetamine (METH)-induced psychosis;METH-induced psychosis|r||||
+E|D5|disease|methamphetamine dependence|methamphetamine dependence|r||||
+E|A1|phenotype|d-amphetamine-induced hyperactivity|d-amphetamine-induced hyperactivity|r||||
+E|A2|phenotype|disrupted prepulse inhibition|disrupted prepulse inhibition|r||||
+E|A3|symptom|positive symptoms|positive symptoms|r||||
+X|rs6693503|b0002|variant identifier
+X|rs1805054|b0002|variant identifier
+X|rs4912138|b0002|variant identifier
+X|rs3790757|b0002|variant identifier
+X|rs9659997|b0002|variant identifier
+EV|V1|b0002.s9+b0002.s10|ts|res|aff|rr,cmp
+EV|V2|b0002.s11|ts|res|aff|rr,cmp
+EV|V3|b0002.s12|ts|int|hyp|ho
+EV|V4|b0002.s2+b0002.s3|bg|bgr|na|ebr,mi
+EV|V5|b0002.s4|bg|int|hyp|ho
+EV|V6|b0002.s5|bg|co|na|do
+EV|V7|b0002.s8|ts|co|na|do
+P|G1|D4|sup|a|ts|sup:a:ts:V1;sup:a:ts:V2;unc:-:ts:V3|||Association supported; proposed pathophysiological role remains speculative.
+P|G2|D1|unc|-|bg|unc:-:bg:V5|hedged_claim||Animal findings motivate a speculative disease link.
+P|G2|D2|nf|-||||V4+V5|Models reflect symptoms; no schizophrenia attribution.
+P|G1|D3|nf|-||||V6|Symptom similarity supplies no gene association.
+P|G1|D5|nf|-||||V7|Demographic comparison supplies no gene association.
+F|F1|association|rs6693503 allele and genotype; METH-induced psychosis|Japanese patients and controls|significant|unknown|not_reported|V1|Association survives Bonferroni correction; effect direction unstated.
+F|F2|association|HTR6 two-marker and three-marker haplotypes; METH-induced psychosis|Japanese patients and controls|unknown|unknown|not_reported|V2|Association reported; significance threshold unstated.

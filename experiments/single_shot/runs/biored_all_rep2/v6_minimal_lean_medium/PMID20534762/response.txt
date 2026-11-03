@@ -1,0 +1,23 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|TSHB|TSH-beta subunit|r||human||
+E|D1|disease|congenital central hypothyroidism|congenital central hypothyroidism;congenital hypothyroidism;central hypothyroidism|r||||
+E|D2|disease|anemia|anemia|r||||
+E|D3|disease|isolated TSH deficiency|isolated TSH deficiency|r||||
+E|D4|disease|isolated pituitary deficiency|isolated pituitary deficiency|p|ambiguous_mapping|||
+X|313delT|b0002.s7|variant of TSHB, not separate gene
+X|C88Y|b0002.s7|variant of TSHB, not separate gene
+X|TSH screening|b0001.s1|hormone assay, not gene entity
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0001.s1+b0002.s2|ts|res|aff|rr,eda
+EV|V3|b0002.s3+b0002.s5+b0002.s6|ts|res|aff|rr
+EV|V4|b0002.s7+b0002.s9+b0002.s10|ts|res|aff|rr
+EV|V5|b0002.s2|ts|co|na|do
+EV|V6|b0002.s11|ts|int|aff|eda
+EV|V7|b0002.s12|ts|int|na|unc
+P|G1|D1|sup|c|both|sup:c:bg:V1;sup:c:ts:V2+V3+V4|||Novel TSHB mutations cause congenital central hypothyroidism
+P|G1|D2|unc|-|ts|unc:-:ts:V5|support_basis_unresolved||V7|Anemia co-occurs; likely secondary to hypothyroidism
+P|G1|D3|sup|a|ts|sup:a:ts:V6|||TSHB defects underlie isolated TSH deficiency
+P|G1|D4|unc|-|ts|unc:-:ts:V6|identity,scope|||Mentioned only as diagnostic category
+F|F1|mechanism|TSHB splice-site mutation; exon 2 skipping|Patient 1, homozygous|not_applicable|not_applicable|not_applicable|V3|single patient; in vitro minigene
+F|F2|mechanism|TSHB C88Y; predicted damaging|Patient 2, compound heterozygous|not_applicable|not_applicable|not_applicable|V4|in silico prediction only

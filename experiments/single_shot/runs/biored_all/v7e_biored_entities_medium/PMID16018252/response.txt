@@ -1,0 +1,13 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|SRY|SRY;sex determining region on Y chromosome;TDF|r|||human||
+E|D1|disease|46,XY sex reversal|sex reversal;XY sex reversal;46,XY sex reversal;46,XY female sex reversal;sex reversal XY females|r||||
+X|HMG-box|b0002.s2|protein motif, not a gene
+X|XES-2|b0002.s6|PCR primer name, gene-like identifier
+X|XES-7|b0002.s6|PCR primer name, gene-like identifier
+X|pUCm-T|b0002.s7|cloning vector, not a gene
+EV|V1|b0002.s3|bg|bgr|aff|ebr
+EV|V2|b0002.s4+b0002.s9+b0002.s10+b0002.s11|ts|res|aff|rr,eda
+EV|V3|b0002.s1+b0002.s14+b0002.s15|ts|int|aff|rr
+P|G1|D1|sup|c|both|sup:c:bg:V1;sup:c:ts:V2+V3|||Known cause; novel de novo SRY mutations in patients
+F|F1|descriptive|SRY ORF mutations; sex reversal|10 Chinese 46,XY sex reversal patients|not_applicable|not_applicable|not_reported|V2|2 of 10; no functional assay

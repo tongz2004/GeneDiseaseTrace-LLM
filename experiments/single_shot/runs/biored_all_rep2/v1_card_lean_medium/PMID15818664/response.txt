@@ -1,0 +1,27 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|ANKH|ANKH|r||human||
+E|G2|gene|type X collagen|type X collagen|p|ambiguous_mapping|human||
+E|D1|disease|chondrocalcinosis|chondrocalcinosis|r||||
+E|D2|disease|sporadic chondrocalcinosis|sporadic chondrocalcinosis;severe sporadic chondrocalcinosis|r|||D1|
+E|D3|disease|familial chondrocalcinosis|autosomal-dominant familial chondrocalcinosis;familial chondrocalcinosis|r|||D1|
+E|D4|disease|heritable chondrocalcinosis|heritable chondrocalcinosis|r|||D1|
+E|D5|disease|pseudogout|pseudogout|r||||
+E|S1|phenotype|chondrocyte hypertrophy|chondrocyte hypertrophy|r||||
+X|inorganic pyrophosphate (PPi)|b0002|metabolite, not gene or disease
+X|CH-8|b0002|cell line identifier
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s6|ts|res|aff|rr,cmp
+EV|V3|b0002.s7|bg|bgr|aff|ebr
+EV|V4|b0002.s9|ts|int|hyp|ho
+EV|V5|b0002.s10|unk|int|aff|ebr
+EV|V6|b0002.s10|ts|hyp|hyp|ho
+EV|V7|b0002.s3|ts|co|na|do
+P|G1|D3|sup|a|bg|sup:a:bg:V1;sup:a:bg:V3|||ANKH mutations linked to familial chondrocalcinosis
+P|G1|D2|sup|a|both|sup:a:ts:V2;sup:a:bg:V3;unc:-:ts:V4|||-4 bp variant associated; prior GAG deletion linked
+P|G1|D4|sup|a|unk|sup:a:unk:V5;unc:-:ts:V6|||ANKH mutations associated; promotion hedged
+P|G1|D5|unc|-|ts|unc:-:ts:V2+V7|scope||Pseudogout pooled with sporadic cases; result names chondrocalcinosis only
+P|G1|D1|nf|-||||V7|Only aim/method; no propagation from subtypes
+F|F1|association|ANKH -4 bp G-to-A genotype vs disease|sporadic chondrocalcinosis/pseudogout patients vs controls|significant|positive|partial|V2|homozygote GRR 6.0 P=0.0006; overall P=0.02
+F|F2|mechanism|ANKH variants vs ANKH transcription/translation|in vitro reticulocyte system|unknown|positive|not_reported|V3|143-bp T-to-C mutation showed no increase
+F|F3|mechanism|ANKH variants vs extracellular PPi, type X collagen|transfected CH-8 chondrocytes|unknown|mixed|not_reported|V3|divergent effects among mutants

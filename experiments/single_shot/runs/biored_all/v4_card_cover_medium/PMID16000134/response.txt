@@ -1,0 +1,14 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; single case report
+E|G1|gene|antithrombin|antithrombin|r|||human||
+E|D1|disease|congenital antithrombin deficiency|congenital antithrombin deficiency|r||||
+E|D2|disease|type I congenital antithrombin deficiency|type I congenital antithrombin deficiency|r|||D1|
+E|D3|disease|superior mesenteric vein thrombosis|superior mesenteric vein thrombosis;SMV thrombosis|r||||
+E|S1|phenotype|decreased plasma antithrombin activity|plasma antithrombin activity|r||||
+EV|V1|b0002.s4+b0002.s5|ts|co|q|unc
+EV|V2|b0002.s1+b0002.s5|ts|co|na|do
+P|G1|D1|unc|-|unk|unc:-:ts:V1|support_basis_unresolved||Novel mutation found; no explicit disease attribution
+P|G1|D2|unc|-|unk|unc:-:ts:V1|support_basis_unresolved||Mutation detected in diagnosed patient; not attributed
+P|G1|D3|nf|-||||V2|Co-occurrence only; treatment context
+F|F1|descriptive|novel heterozygous antithrombin nonsense mutation|single patient with type I deficiency|not_applicable|not_applicable|not_applicable|V1|single case; no segregation data reported
+R|gene name embedded in disease name|b0001.s1;b0002.s4;b0002.s6|Co-mention arises only because disease name contains gene name|Judged pairs on s4-s5 evidence, not on name overlap

@@ -1,0 +1,20 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|PKD1|PKD1;PC1|r||human||
+E|G2|gene|PKD2|PKD2;PC2;polycystin-2|r||human||
+E|D1|disease|autosomal dominant polycystic kidney disease|autosomal dominant polycystic kidney disease;ADPKD|r||||
+E|D2|disease|inherited renal diseases|renal diseases|p|other|||
+EV|V1|b0002.s1|bg|bgr|aff|ebr,eda
+EV|V2|b0002.s3+b0002.s10|ts|res|aff|rr,eda
+EV|V3|b0002.s4|ts|int|aff|cmp
+EV|V4|b0001.s1|ts|hyp|hyp|ho
+EV|V5|b0002.s6+b0002.s7|ts|res|na|rr
+EV|V6|b0002.s9|ts|res|na|rr,cmp
+EV|V7|b0002.s8|ts|res|na|mi
+P|G1|D1|sup|c|bg|sup:c:bg:V1;sup:a:ts:V2||V2|Background causal; de novo PKD1 variant in patient
+P|G2|D1|sup|c|bg|sup:c:bg:V1;sup:a:ts:V2+V3;unc:a:ts:V4|hedged_claim|V5+V6+V7|Background causal; homozygous F482C potential modifier
+F|F1|group_comparison|PKD2 p.F482C presence|280 healthy chromosomes|not_applicable|not_applicable|not_reported|V3|
+F|F2|group_comparison|PKD2 transcript expression|proband vs daughter, healthy subject|unknown|positive|partial|V5|single patient
+F|F3|group_comparison|polycystin-2 channel function|p.F482C homo/heterozygous vs controls|unknown|negative|not_reported|V6|
+F|F4|mechanism|mutant PKD2 subcellular localization|transfected mouse IMCD cells|not_applicable|not_applicable|not_applicable|V7|mouse gene construct
+R|gene species|b0002.s8|mutant PKD2 mouse gene used in transfection|kept G2 as human; treated as model context

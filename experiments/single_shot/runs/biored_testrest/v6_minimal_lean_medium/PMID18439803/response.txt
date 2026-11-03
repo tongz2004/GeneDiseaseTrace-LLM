@@ -1,0 +1,7 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text
+E|D1|disease|seizure|seizure|r||||
+X|GABA|b0002.s1|neurotransmitter chemical, not a gene
+X|glutamate|b0002.s1|amino acid neurotransmitter, not a gene
+X|aspartate|b0002.s1|amino acid neurotransmitter, not a gene
+X|glycine|b0002.s1|amino acid neurotransmitter, not a gene

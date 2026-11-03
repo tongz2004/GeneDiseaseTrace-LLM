@@ -1,0 +1,10 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; review article, no results
+E|E1|gene|cystic fibrosis transmembrane conductance regulator|cystic fibrosis transmembrane conductance regulator|r||human||
+E|E2|disease|cystic fibrosis|Cystic fibrosis;cystic fibrosis;CF|r||||
+E|E3|disease|cystic fibrosis airway disease|cystic fibrosis airway disease|r||||
+X|inherited disorders|b0002|generic disease class, not a specific endpoint
+X|inherited diseases|b0002|generic disease class, not a specific endpoint
+EV|V1|b0002.s2|bg|co|pre|unc
+P|E1|E2|unc|-|bg|unc:-:bg:V1|presupposed_only||Gene cloning tied to CF therapy; link only presupposed
+R|hierarchy|b0001.s1|Parent of CF airway disease is implied only by its name.|Did not assign a parent; kept as a separate entity.

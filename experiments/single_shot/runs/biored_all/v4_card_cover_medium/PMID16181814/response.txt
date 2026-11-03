@@ -1,0 +1,15 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|POLG|POLG;pol gamma|r||human||
+E|D1|disease|Alpers syndrome|Alpers syndrome;Alpers|r|||D2|
+E|D2|disease|mitochondrial DNA depletion disorder|mitochondrial DNA depletion disorder|r||||
+E|S1|phenotype|progressive fatal brain and liver disease|brain and liver disease|r||||
+X|E873stop|b0002|variant ID
+X|A467T|b0002|variant ID
+EV|V1|b0002.s3|bg|bgr|aff|ebr
+EV|V2|b0002.s4|bg|bgr|aff|ebr
+EV|V3|b0002.s6+b0002.s14|ts|res|aff|eda,rr
+EV|V4|b0002.s11+b0002.s12+b0002.s13|ts|res|na|rr
+P|G1|D1|sup|a|both|sup:a:bg:V1;sup:a:bg:V2;sup:a:ts:V3||V4|Background link plus case-specific attribution
+F|F1|descriptive|POLG mRNA allele origin|Alpers patient fibroblasts|not_applicable|not_applicable|partial|V4|single patient
+R|relation type|b0002.s14|Says Alpers was a consequence of the A467T dose|Coded as association per the case-attribution rule

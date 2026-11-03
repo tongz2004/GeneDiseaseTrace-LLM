@@ -1,0 +1,14 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|SRY|SRY|r||human||
+E|G2|gene|TDF|TDF|p|ambiguous_mapping|human|G1|
+E|D1|disease|46,XY sex reversal|XY sex reversal;46,XY sex reversal;46,XY female sex reversal;sex reversal XY females;sex reversal|r||||
+X|HMG-box|b0002.s2|protein motif, not a gene
+X|XES-2|b0002.s6|primer name, gene-like identifier
+X|XES-7|b0002.s6|primer name, gene-like identifier
+EV|V1|b0002.s3|bg|bgr|aff|ebr
+EV|V2|b0002.s4+b0002.s9+b0002.s10+b0002.s11|ts|res|aff|rr
+EV|V3|b0002.s14+b0002.s15|ts|int|hyp|ho
+P|G1|D1|sup|c|bg|sup:c:bg:V1;sup:a:ts:V2||V3|Known causal; novel mutations found in patients
+F|F1|descriptive|SRY mutations; 46,XY sex reversal|10 Chinese 46,XY sex-reversed females|not_applicable|not_applicable|not_applicable|V2|2 of 10 patients; no functional assay
+R|alias gene surface|b0002.s1|TDF is a functional alias of SRY, not separate gene|Listed as provisional child entity of G1; no separate pair

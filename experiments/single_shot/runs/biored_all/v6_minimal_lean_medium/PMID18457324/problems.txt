@@ -1,0 +1,1 @@
+P G1-D1: relation type must be '-' unless sup

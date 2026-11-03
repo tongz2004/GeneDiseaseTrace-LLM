@@ -1,0 +1,15 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; full text unavailable
+E|G1|gene|GAP43|GAP43;GAP-43;Growth-associated protein 43|r||non-human||
+E|D1|disease|epilepsy|epilepsy;epileptic|r||||
+E|D2|disease|status epilepticus|status epilepticus|r||||
+E|PH1|phenotype|mossy fiber sprouting|mossy fiber sprouting|r||||
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s6|ts|neg|neg|rr,cmp
+EV|V3|b0002.s7+b0002.s9|ts|res|aff|rr,cmp
+EV|V4|b0002.s8|ts|int|aff|rr
+P|G1|D1|sup|a|both|sup:a:ts:V3;sup:a:bg:V1;neg:-:ts:V2|||Band width altered in epileptic rats; density unchanged
+P|G1|D2|unc|-|ts|unc:a:ts:V3|scope||SE only the inducing event, not measured outcome
+P|G1|PH1|sup|a|both|sup:a:bg:V1;sup:a:ts:V4|||GAP43 linked to MFS in epilepsy models
+F|F1|group_comparison|GAP43-ir IML densitometry|Pilo, CHX+Pilo, control rats|not_significant|null|partial|V2|
+F|F2|group_comparison|GAP43-ir IML band width|Pilo vs CHX+Pilo and control|significant|negative|partial|V3|Only p-value reported

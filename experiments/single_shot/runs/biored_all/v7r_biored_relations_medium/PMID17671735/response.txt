@@ -1,0 +1,21 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|GJB2|GJB2|r||human||
+E|G2|gene|GJB6|GJB6|r||human||
+E|G3|gene|GJB3|GJB3|r||human||
+E|G4|ambiguous_gene|connexin gene family|connexin|p|ambiguous_mapping|human||
+E|D1|disease|sensorineural hearing impairment|hearing impairment;hereditary prelingual sensorineural hearing impairment|r||||
+X|D13S1830|b0002.s7|deletion breakpoint marker, not a separate gene
+EV|V1|b0002.s1|bg|bgr|aff|ebr,eda
+EV|V2|b0002.s4+b0002.s5+b0002.s6|ts|res|aff|rr
+EV|V3|b0002.s8|ts|int|aff|rr
+EV|V4|b0002.s7|ts|res|aff|rr,do
+EV|V5|b0002.s7|ts|neg|neg|rr
+EV|V6|b0002.s2+b0002.s3|bg|hyp|hyp|ho
+P|G1|D1|sup|c|bg|sup:c:bg:V1;sup:a:ts:V2+V3|||GJB2 mutations cause hearing impairment
+P|G2|D1|sup|a|ts|sup:a:ts:V4|scope|||GJB6 deletion found in hearing-impaired patients
+P|G3|D1|neg|-|ts|neg:-:ts:V5||||GJB3 substitutions judged unlikely disease-causing
+P|G4|D1|unc|-|bg|unc:-:bg:V6|hedged_claim|||Accumulated connexin mutations may cause impairment
+F|F1|descriptive|GJB2 -3170G>A splice mutation carriers|47 GJB2-heterozygous hearing-impaired Hungarians|not_applicable|not_applicable|partial|V2|no controls reported
+F|F2|descriptive|GJB6 deletion; GJB3 substitutions|47 GJB2-heterozygous hearing-impaired Hungarians|not_applicable|not_applicable|partial|V4+V5|abstract only
+C|C1|scope of "unlikely disease-causing" clause|b0002.s7|status_critical|resolved|Read as applying to GJB3 substitutions only

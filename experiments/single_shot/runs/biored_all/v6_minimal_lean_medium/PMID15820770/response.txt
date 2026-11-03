@@ -1,0 +1,17 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|GC (vitamin D-binding protein)|Vitamin D-binding protein;DBP|r||human||
+E|G2|gene|PTPRN (IA-2)|IA-2|r||human||
+E|G3|gene|GAD2 (GAD65)|GAD65|r||human||
+E|D1|disease|type 1 diabetes|type 1 diabetes|r||||
+EV|V1|b0002.s4|bg|bgr|aff|ebr
+EV|V2|b0002.s9|ts|res|aff|rr,cmp
+EV|V3|b0002.s11|ts|int|aff|unc
+EV|V4|b0002.s5|bg|aim|pre|none
+EV|V5|b0002.s10|ts|neg|neg|rr,cmp
+P|G1|D1|sup|r|bg|sup:r:bg:V1;sup:a:ts:V2+V3||V4|Cited DBP allele correlations with T1D
+P|G2|D1|sup|a|bg|sup:a:bg:V4+V2|presupposed_only||IA-2 autoantibodies used as T1D autoimmune marker
+P|G3|D1|sup|a|bg|sup:a:bg:V4|presupposed_only|V5|GAD65 antibodies presupposed as T1D marker
+F|F1|group_comparison|DBP codon 416 Glu genotypes; IA-2 antibodies|type 1 diabetes patients|significant|positive|partial|V2|abstract only, P<0.01
+F|F2|group_comparison|DBP Glu-containing genotype; GAD65 antibodies|type 1 diabetes patients|not_significant|null|not_reported|V5|abstract only
+R|presupposed marker relation|b0002.s5|Autoantigen-disease link presupposed, not tested or cited.|Marked sup:a:bg with presupposed_only flag.

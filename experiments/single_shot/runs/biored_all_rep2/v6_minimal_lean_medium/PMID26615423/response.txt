@@ -1,0 +1,30 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text, tables or figures
+E|G1|gene|CEP55|CEP55;Centrosomal protein 55;centrosomal protein 55|r||human||
+E|D1|disease|epithelial ovarian carcinoma|epithelial ovarian carcinoma;EOC|r|||D2|
+E|D2|disease|ovarian cancer|ovarian cancer|r||||
+E|D3|disease|cancer|cancers|r||||
+E|D4|disease|lymph node metastasis|lymph node metastasis|r||||
+E|D5|disease|intraperitoneal metastasis|intraperitoneal metastasis|r||||
+E|D6|clinical_event|tumor recurrence|tumor recurrence|r||||
+X|CA153|b0002.s8|serum tumor marker, not a gene-disease relation
+X|CA125|b0002.s10|serum marker, null correlation with CEP55
+X|NSE|b0002.s10|serum marker, null correlation with CEP55
+X|CEA|b0002.s10|serum marker, null correlation with CEP55
+X|b-HCG|b0002.s10|serum marker, null correlation with CEP55
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s7|ts|res|aff|rr,cmp
+EV|V3|b0002.s8|ts|res|aff|rr
+EV|V4|b0002.s11+b0002.s12|ts|res|aff|rr,cmp
+EV|V5|b0002.s13|ts|res|aff|mi
+EV|V6|b0002.s14+b0002.s15|ts|int|aff|rr
+P|G1|D1|sup|a|ts|sup:a:ts:V2+V3+V4+V6||V5|Upregulated in EOC; independent prognostic indicator
+P|G1|D2|sup|a|ts|sup:a:ts:V2+V5||V6|Upregulated in ovarian cancer lines and lesions
+P|G1|D3|sup|a|bg|sup:a:bg:V1|||Background: implicated in certain cancers
+P|G1|D4|sup|r|ts|sup:r:ts:V3|||Protein level positively correlated with lymph node metastasis
+P|G1|D5|sup|r|ts|sup:r:ts:V3|||Positively correlated with intraperitoneal metastasis
+P|G1|D6|sup|r|ts|sup:r:ts:V3|||Positively correlated with tumor recurrence
+F|F1|group_comparison|CEP55 expression, tumor vs normal|ovarian cancer cell lines and lesions|significant|positive|not_reported|V2|abstract only
+F|F2|correlation|CEP55 protein, stage, metastasis, recurrence|213 EOC samples|significant|positive|partial|V3|P values only
+F|F3|association|CEP55 expression, OS and DFS|EOC patients|unknown|negative|not_reported|V4|abstract only
+F|F4|mechanism|CEP55 knockdown, motility and invasion|ovarian cancer cells|unknown|positive|not_reported|V5|in vitro only

@@ -1,0 +1,33 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|glucocorticoid receptor (NR3C1)|glucocorticoid receptor;GR|r||human||
+E|G2|gene|FKBP5|FKBP5|r||human||
+E|G3|gene|mineralocorticoid receptor (NR3C2)|mineralocorticoid receptor|r||human||
+E|G4|gene|11beta-hydroxysteroid dehydrogenase type 2 (HSD11B2)|11b-hydroxysteroid dehydrogenase type 2|r||human||
+E|D1|disease|primary glucocorticoid resistance|Primary glucocorticoid resistance;primary glucocorticoid resistance;cortisol resistance|r||||
+E|D2|disease|adrenal incidentaloma|adrenal incidentalomas|r||||
+E|D3|disease|bilateral adrenal hyperplasia|adrenal hyperplasia;bilateral adrenal hyperplasia|r||||
+E|D4|disease|hypertension|arterial hypertension;hypertension;mineralocorticoid-independent hypertension|r||||
+E|D5|disease|hypokalemia|hypokalemia|r||||
+E|D6|disease|apparent mineralocorticoid excess|apparent mineralocorticoid excess|r||||
+E|D7|disease|subclinical hypercortisolism|subclinical hypercortisolism|r||||
+X|GR haploinsufficiency|b0002.s8|genetic mechanism, not a separate disease entity
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s2+b0002.s3|ts|res|aff|cs
+EV|V3|b0002.s9|ts|int|aff|rr
+EV|V4|b0002.s10|ts|res|aff|rr
+EV|V5|b0002.s11|ts|hyp|hyp|ho
+EV|V6|b0002.s1+b0002.s10|ts|res|aff|rr
+P|G1|D1|sup|c|both|sup:c:bg:V1;sup:c:ts:V2||V5|GR mutations cause glucocorticoid resistance; family cosegregation
+P|G1|D3|sup|c|ts|sup:c:ts:V2||V5|Phenotype cosegregates with GR nonsense mutation
+P|G1|D4|sup|c|ts|sup:c:ts:V2+V3||V5|Cosegregation; haploinsufficiency leads to hypertension
+P|G1|D5|sup|c|ts|sup:c:ts:V2|||Hypokalemia cosegregates with GR mutation
+P|G1|D6|sup|c|ts|sup:c:ts:V6|||AME shown in GR-mutant patients
+P|G1|D7|sup|c|ts|sup:c:ts:V3||V5|Elevated cortisol due to GR haploinsufficiency
+P|G1|D2|unc|-|ts|unc:-:ts:V2|scope||Incidentalomas led to family discovery only
+P|G3|D4|sup|c|ts|sup:c:ts:V3|||Cortisol occupying renal MR causes hypertension
+P|G4|D6|sup|a|ts|sup:a:ts:V4|||Reduced 11bHSD2 activity reveals AME
+F|F1|association|GR p.R469X; adrenal hyperplasia, hypertension, hypokalemia|one family, eight affected|unknown|positive|not_reported|V2|abstract only
+F|F2|mechanism|mutant GR mRNA; nonsense-mediated decay|proband fibroblasts|unknown|negative|partial|V3|single proband
+F|F3|group_comparison|FKBP5 induction|proband fibroblasts vs normal|significant|negative|partial|V3|abstract only
+F|F4|group_comparison|urinary THE/THF ratio; 11bHSD2 activity|affected patients|unknown|negative|not_reported|V4|

@@ -1,0 +1,26 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|neuroserpin|Neuroserpin;neuroserpin;NSP|p|species_unresolved||||
+E|G2|gene|TNF-alpha|TNF-alpha|r||non-human||
+E|G3|gene|lactate dehydrogenase|lactate dehydrogenase;LDH|p|species_unresolved,other|non-human||
+E|G4|ambiguous_gene|IKKBalpha/beta|IKKBalpha/beta|u|ambiguous_mapping,species_unresolved|non-human||
+E|G5|gene|P65|P65|p|species_unresolved|non-human||
+E|G6|gene|ERK1|ERK1|p|species_unresolved|non-human||
+E|G7|gene|ERK2|ERK2|p|species_unresolved|non-human||
+E|G8|gene|AKT|Akt;AKT|p|species_unresolved,ambiguous_mapping|non-human||
+E|D1|disease|cerebral ischemia|cerebral ischemic|r|||D2|
+E|D2|disease|ischemia|ischemic|r||||
+X|OGD/R|b0002.s3|experimental cell treatment, not a disease
+X|NF-kappaB|b0002.s6|complex/pathway, not single gene
+X|PI3K/Akt|b0002.s6|pathway label
+X|MAPK|b0002.s14|pathway family
+X|sc3060|b0002.s7|chemical inhibitor identifier
+X|Annexin V|b0002.s4|assay reagent
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s8+b0002.s12|ts|res|aff|rr,cmp
+P|G1|D1|sup|a|bg|sup:a:bg:V1||V2|background reports NSP neuroprotection in cerebral ischemia
+P|G1|D2|unc|-|ts|unc:-:ts:V2|scope||in-vitro OGD/R cell phenotype only
+F|F1|group_comparison|NSP vs survival, LDH release|OGD/R rat astrocytes|significant|positive|not_reported|V2|abstract only
+F|F2|group_comparison|NSP vs NO/TNF-alpha release|OGD/R rat astrocytes|unknown|negative|not_reported||abstract only
+F|F3|mechanism|p-IKK, P65 levels; NSP; sc3060|OGD/R rat astrocytes|significant|negative|not_reported||abstract only
+F|F4|group_comparison|p-ERK1/2, p-AKT levels vs NSP|OGD/R rat astrocytes|unknown|null|not_reported||abstract only

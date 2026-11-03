@@ -1,0 +1,18 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|HTR6|HTR6;5-HT6;5-HT6 receptor;Serotonin 6 receptor|r|||human||
+E|D1|disease|methamphetamine-induced psychosis|methamphetamine-induced psychosis;METH-induced psychosis|r|||||
+E|D2|disease|psychotic disorders|psychotic disorders|r|||||
+E|D3|disease|schizophrenia|schizophrenia|r|||||
+E|D4|disease|paranoid schizophrenia|paranoid type schizophrenia|r|||||
+E|D5|disease|methamphetamine dependence|methamphetamine dependence|r|||||
+EV|V1|b0002.s9+b0002.s10|ts|res|aff|rr
+EV|V2|b0002.s11|ts|res|aff|rr
+EV|V3|b0002.s12|ts|int|hyp|rr
+EV|V4|b0001.s1|ts|int|aff|rr
+EV|V5|b0002.s2+b0002.s3+b0002.s4|bg|hyp|hyp|ho
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V2+V4;unc:a:ts:V3|||Significant SNP and haplotype associations
+P|G1|D2|unc|-|bg|unc:a:bg:V5|hedged_claim||Animal pharmacology suggests involvement only
+P|G1|D3|unc|-|bg|unc:a:bg:V5|hedged_claim||Drug target and animal models only
+F|F1|association|rs6693503 allele/genotype vs METH psychosis|Japanese 197 cases, 337 controls|significant|unknown|not_reported|V1|Survives Bonferroni; effect size not given
+F|F2|association|HTR6 2- and 3-marker haplotypes|Japanese 197 cases, 337 controls|significant|unknown|not_reported|V2|Abstract only

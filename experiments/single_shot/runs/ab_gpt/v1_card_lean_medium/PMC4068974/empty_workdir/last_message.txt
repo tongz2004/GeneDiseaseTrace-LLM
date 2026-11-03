@@ -1,0 +1,140 @@
+META|GPT-6|seen: no
+SCOPE|Provided article, tables, captions, supplementary descriptions; attachment contents unavailable.
+E|G1|gene|LanB1|LamininB1;Laminin B1;LanB1;laminin β;laminin β chain|p|suspected_typo|non-human||
+E|G2|gene|Cg25C|Cg25C;Dcg1;col4a1;collagen IV α1;collagen IV α1 chain|p|suspected_typo|non-human||
+E|G3|gene|viking|viking;vkg;col4a2;Vkg;Col4a2;Viking;collagen IV α2 chain|r||non-human||
+E|G4|gene|LanB2|LanB2|r||non-human||
+E|G5|gene|Laminin A|Laminin A;LanA;laminin α3,5|r||non-human||
+E|G6|gene|wing blister|wing blister;wb;Wb;laminin α1,2|r||non-human||
+E|G7|gene|Ndg|Ndg;nidogen|r||non-human||
+E|G8|gene|terribly reduced optic lobes|terribly reduced optic lobes;trol;perlecan;Perlecan|r||non-human||
+E|G9|gene|pericardin|pericardin;Pericardin;Prc;prc|r||non-human||
+E|G10|gene|DE-cadherin|DE-cadherin|r||non-human||
+E|G11|gene|Slit|Slit|r||non-human||
+E|G12|gene|Robo|Robo|r||non-human||
+E|G13|gene|dystroglycan|dystroglycan;Dystroglycan;Dg|r||non-human||
+E|G14|gene|multiplexin|multiplexin;Mp|r||non-human||
+E|G15|gene|Mef2|Mef2|r||non-human||
+E|G16|gene|tinman|Tinman;Tin;tin;tinman|r||non-human||
+E|G17|gene|Dorsocross|Dorsocross;Doc|r||non-human||
+E|G18|gene|Seven-up|Seven-up;Svp|r||non-human||
+E|G19|gene|Zfh-1|Zfh-1|r||non-human||
+E|G20|gene|odd-skipped|odd-skipped;Odd|r||non-human||
+E|G21|gene|even-skipped|even-skipped;eve|r||non-human||
+E|G22|gene|Hand|Hand|r||non-human||
+E|G23|gene|org-1|org-1;Org-1|r||non-human||
+E|G24|gene|HLH54F|HLH54F|r||non-human||
+E|G25|gene|lonely heart|lonely heart;loh|r||non-human||
+E|G26|gene|syndecan|syndecan;Sdc|r||non-human||
+E|G27|gene|scab|scab;αPS3|r||non-human||
+E|G28|gene|αPS1|αPS1|r||non-human||
+E|G29|gene|αPS2|αPS2|r||non-human||
+E|G30|gene|βPS|βPS|r||non-human||
+E|G31|gene|βν|βν|r||non-human||
+E|G32|gene|emb-9|emb-9|r||non-human||
+E|G33|gene|let-2|let-2|r||non-human||
+E|G34|gene|mouse Lamb1|Lamb1;Laminin β1;LanB1|r||non-human||
+E|G35|gene|mouse Lamb2|Lamb2|r||non-human||
+E|G36|gene|human Lamb1|Lamb1|r||human||
+E|G37|gene|LAMB2|LAMB2;Lamb2|r||human||
+E|G38|gene|COL4A1|COL4A1|r||human||
+E|G39|gene|COL4A2|COL4A2|r||human||
+E|G40|gene|Col1a|Col1a|r||non-human||
+E|G41|gene|Jon25Bi|Jon25Bi|r||non-human||
+E|G42|gene|cn|cn|r||non-human||
+E|G43|gene|Sin3A|Sin3A|r||non-human||
+E|G44|gene|y|y|r||non-human||
+E|G45|gene|w|w|r||non-human||
+E|G46|gene|GFP|GFP;Green Fluorescent Protein|p|species_unresolved|||
+E|G47|gene|RFP|RFP;Red Fluorescent Protein|p|species_unresolved|||
+E|D1|disease|cardiomyopathies|cardiomyopathies|r||||
+E|D2|disease|collagen-related diseases|collagen-related diseases|r||||
+E|D3|disease|vasculature-related diseases|vasculature-related diseases|r||||
+E|D4|disease|hemorrhagic stroke|hemorrhagic stroke|r|||D3|
+E|D5|disease|Pierson syndrome|Pierson syndrome;Pierson Syndrome|r||||
+E|D6|disease|porencephaly|porencephaly|r||||
+E|D7|disease|small vessel disease|small vessel disease|r||||
+E|D8|disease|Hereditary Angiopathy with Nephropathy, Aneurysms, and Muscle Cramps (HANAC) Syndrome|Hereditary Angiopathy with Nephropathy, Aneurysms, and Muscle Cramps (HANAC) Syndrome|r||||
+E|H1|phenotype|alary muscle detachment|alary muscle detachment|r||||
+E|H2|phenotype|cardiac defects|cardiac defects|r||||
+E|H3|phenotype|intracellular accumulation of perlecan|intracellular accumulation of perlecan|r||||
+E|H4|phenotype|body wall muscle detachments|body wall muscle detachments|r||||
+E|H5|phenotype|broken hearted|broken hearted|r||||
+E|H6|phenotype|vascular and cardiac abnormalities|vascular and cardiac abnormalities|r||||
+E|H7|phenotype|ER stress|ER stress|r||||
+X|Col4a1/a2|b0066|multi-gene shorthand with mixed species
+X|αPS1-5|b0076|gene group
+X|bro genes|b0075|phenotypically defined gene group
+X|LamininA|b0011|heterotrimeric complex
+X|LamininW|b0011|heterotrimeric complex
+X|Slit/Robo signaling cascade|b0009|pathway
+X|qsm-RA|b0087|transcript identifier
+X|G552D|b0046|variant identifier
+X|S80R|b0071|variant identifier
+X|LanB1 S0773|b0057|suspected allele typo of LanB1 S0733
+X|Cg25C S00120|b0065|suspected allele typo of Cg25C S0120
+X|tinC*-GFP|b0014|reporter construct
+X|org-1-SM-RFP|b0014|reporter construct
+X|HLH54F-LVM-RFP|b0014|reporter construct
+X|Mhc-tau::GFP|b0015|fusion reporter construct
+X|Hand(HCH)-GFP|b0050|reporter construct
+X|Df(2L)Exel7022|b0025|chromosomal deficiency identifier
+X|Df(2L)ED12527|b0015|chromosomal deficiency identifier
+EV|V1|b0068.s10|bg|bgr|aff|ebr,eda
+EV|V2|b0081.s1|bg|bgr|aff|ebr
+EV|V3|b0066.s2|bg|int|hyp|unc
+EV|V4|b0078.s2+b0084.s3|ts|int|hyp|ho
+EV|V5|b0071.s2|bg|res|aff|rr
+EV|V6|b0021.s5+b0068.s10|bg|co|na|do
+EV|V7|b0017.s1+b0018.s5+b0018.s6+b0018.s8+b0018.s10|ts|res|aff|rr
+EV|V8|b0020.s4+b0020.s5+b0020.s6+b0020.s8+b0023.s1+b0023.s6|ts|res|aff|rr
+EV|V9|b0030.s1+b0031.s1+b0032.s1+b0033.s1+b0034.s1+b0035.s1+b0036.s1+b0037.s1+b0038.s1+b0039.s1+b0040.s1|ts|res|aff|rr,cmp
+EV|V10|b0044.s3+b0044.s4+b0044.s5|ts|res|aff|rr
+EV|V11|b0042.s1+b0042.s2+b0042.s4+b0042.s5|ts|res|aff|rr
+EV|V12|b0050.s8+b0050.s11+b0050.s12+b0050.s13+b0050.s14|ts|res|aff|rr,mi
+EV|V13|b0056.s1+b0056.s2+b0056.s3+b0057.s2+b0057.s3+b0057.s4+b0058.s3+b0059.s2|ts|res|aff|rr
+EV|V14|b0061.s8+b0061.s10+b0061.s11+b0061.s12+b0065.s2+b0065.s3|ts|res|aff|rr
+EV|V15|b0065.s5+b0065.s7+b0065.s8+b0065.s9+b0066.s5+b0066.s6+b0066.s7+b0066.s8|ts|res|aff|rr
+EV|V16|b0079.s3|ts|res|aff|rr
+EV|V17|b0074.s9+b0074.s10|both|res|aff|rr,ebr
+EV|V18|b0079.s5+b0079.s6+b0079.s7+b0079.s8+b0079.s9+b0079.s10|both|res|aff|rr,ebr
+EV|V19|b0080.s3+b0080.s4+b0080.s5|bg|res|aff|rr,ebr
+EV|V20|b0092.s5|ts|int|na|rr
+EV|V21|b0118.s4+b0118.s5+b0118.s6+b0118.s8+b0118.s9+b0118.s10+b0118.s11|ts|res|na|rr
+P|G37|D5|sup|c|bg|sup:c:bg:V1||||Explicit cause stated.
+P|G38|D6|sup|a|bg|sup:a:bg:V2||||Disease-associated variants reported.
+P|G38|D4|sup|a|bg|sup:a:bg:V2||||Disease-associated variants reported.
+P|G38|D7|sup|a|bg|sup:a:bg:V2||||Disease-associated variants reported.
+P|G38|D8|sup|a|bg|sup:a:bg:V2||||Disease-associated variants reported.
+P|G39|D6|sup|a|bg|sup:a:bg:V2||||Disease-associated variants reported.
+P|G39|D4|sup|a|bg|sup:a:bg:V2||||Disease-associated variants reported.
+P|G39|D7|sup|a|bg|sup:a:bg:V2||||Disease-associated variants reported.
+P|G39|D8|sup|a|bg|sup:a:bg:V2||||Disease-associated variants reported.
+P|G38|D3|unc|-|unk|unc:a:bg:V3|scope||Mixed species and genes prevent individual attribution.
+P|G39|D3|unc|-|unk|unc:a:bg:V3|scope||Mixed species and genes prevent individual attribution.
+P|G2|D2|nf|-|unk|||V4|Cross-species analogy lacks disease attribution to Cg25C.
+P|G1|D5|nf|-|unk|||V6|Homolog comparison supplies no fly disease attribution.
+P|G34|D5|nf|-|unk|||V5|Corresponding mutation tested for polymerization, without disease modeling.
+F|F1|group_comparison|laminin gene mutants; tissue defects|Drosophila embryos|unknown|mixed|not_reported|V7|Developmental phenotypes, not diagnosed diseases.
+F|F2|association|LanB1 mutation location; phenotype severity|Drosophila mutant embryos|unknown|mixed|not_reported|V8|Qualitative genotype comparisons.
+F|F3|group_comparison|Cg25C genotype; AM detachment; temperature|Late stage 17 Drosophila embryo half-sides|unknown|mixed|available|V9|Frequencies reported without significance tests.
+F|F4|group_comparison|Cg25C genotype; temperature; viability|Drosophila embryos, larvae, pupae, adults|unknown|mixed|partial|V10|Temperature effects vary by allele.
+F|F5|association|LanB1 and Cg25C trans-heterozygosity; viability|Drosophila trans-heterozygotes|unknown|negative|partial|V11|Detachment rarely accompanies reduced viability.
+F|F6|mechanism|org-1 loss; pericardial cell displacement|LanB1 and Cg25C mutant embryos|not_applicable|negative|partial|V12|Double mutants lack alary muscles.
+F|F7|group_comparison|LanB1 versus Cg25C; cardiac organization|Drosophila mutant embryos|unknown|mixed|not_reported|V13|Cg25C posterior misalignment may involve another mutation.
+F|F8|group_comparison|LanB1 versus Cg25C; basement membrane assembly|Drosophila mutant embryos|unknown|mixed|not_reported|V14|LanB1 antibody may cross-react.
+F|F9|group_comparison|Cg25C mutations; perlecan and Vkg distribution|Drosophila mutant embryos|unknown|mixed|not_reported|V15|Hemocyte localization partly inferred from morphology.
+F|F10|group_comparison|Cg25C G552D; genetic interactions|Drosophila LanB1, vkg, wb allele combinations|unknown|mixed|not_reported|V16|Interactions absent with tested wb alleles.
+F|F11|mechanism|prc and loh; cardiac attachment|Drosophila embryos and postembryonic stages|not_applicable|mixed|not_reported|V17|Embryonic prc AM attachment maintained.
+F|F12|group_comparison|collagen mutations; muscle integrity; temperature|Caenorhabditis and Drosophila mutants|unknown|mixed|not_reported|V18|Species, stages and interventions differ.
+F|F13|mechanism|collagen alterations; collagen secretion and deposition|Drosophila, Caenorhabditis, mouse models|not_applicable|mixed|not_reported|V19|Mouse gene written as Col1a.
+F|F14|descriptive|Cg25C Pro 1523 to Ala|Mutant and unmutagenized reporter lines|not_applicable|not_applicable|not_applicable|V20|Shared sequence difference interpreted as polymorphism.
+F|F15|descriptive|LanB1 and Cg25C RNA expression|Wild-type and gene-deficient Drosophila embryos|not_applicable|not_applicable|not_applicable|V21|
+C|C1|Cg25C temperature-dependent detachment frequencies|b0032.s1+b0036.s1+b0037.s1+b0044.s3|noncritical|unresolved|Some frequencies decrease from 25°C to 29°C.
+U|Additional file 1: Figure S1|b0017.s1+b0106.s1|Caption supplied; image unavailable.
+U|Additional file 2: Figure S2|b0041.s5+b0108.s1|Caption supplied; image unavailable.
+U|Additional file 3: Movie S1|b0050.s5+b0110.s1|Description supplied; recording unavailable.
+U|Additional file 4: Movie S2|b0050.s6+b0112.s1|Description supplied; recording unavailable.
+U|Additional file 5: Movie S3|b0050.s8+b0114.s1|Description supplied; recording unavailable.
+U|Additional file 6: Movie S4|b0050.s13+b0116.s1|Description supplied; recording unavailable.
+U|Additional file 7: Figure S3|b0061.s4+b0118.s1|Caption supplied; image unavailable.

@@ -1,0 +1,20 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; single case report
+E|G1|gene|ACE|angiotensin-converting enzyme;ACE|r||human||
+E|D1|disease|hyperkalemia|hyperkalemia|r|||||
+E|D2|disease|syncope|Syncope|r|||||
+E|D3|disease|bradycardia|bradycardia|r|||||
+E|D4|disease|myocardial infarction|myocardial infarction|r|||||
+E|D5|disease|renal disturbance|renal disturbance|p|other||||
+E|D6|disease|electrolyte imbalance|electrolyte imbalance|r|||||
+E|S1|symptom|loss of consciousness|loss of consciousness|r|||||
+X|ARB|b0002.s5|drug class abbreviation, not a gene mention
+X|aldosterone antagonist|b0002.s3|drug class; aldosterone is a hormone, not a gene
+EV|V1|b0001.s1+b0002.s3|ts|int|aff|eda,do
+EV|V2|b0002.s5|ts|int|aff|do
+EV|V3|b0002.s1|ts|co|na|do
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V2||V3|ACE inhibitor therapy attributed as hyperkalemia cause
+P|G1|D2|unc|a|ts|unc:a:ts:V1|other|V3|Indirect via drug-induced hyperkalemia
+P|G1|D3|unc|a|ts|unc:a:ts:V3|other|V1|Bradycardia secondary to drug-induced hyperkalemia
+F|F1|descriptive|ACE inhibitor plus spironolactone; hyperkalemia|single 76-year-old woman|not_applicable|positive|not_reported|V1+V3|single case; drug-level not gene-level
+R|gene via drug class|b0002.s3|ACE appears only as an inhibitor drug target|Treated as association with hyperkalemia; downstream events kept uncertain

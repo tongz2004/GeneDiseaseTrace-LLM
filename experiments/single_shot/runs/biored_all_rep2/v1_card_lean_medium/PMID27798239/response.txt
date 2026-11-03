@@ -1,0 +1,20 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text, tables or figures
+E|G1|gene|PI4KIIb|PI4KIIb;PI4K2B|r||human||
+E|G2|gene|PI4KIIa|PI4KIIa|r||human||
+E|G3|gene|MT1-MMP|MT1-MMP;membrane type I matrix metalloproteinase|r||human||
+E|G4|gene|Rab5|Rab5|r||human||
+E|G5|gene|Rab7|Rab7|r||human||
+E|G6|gene|Rab8|Rab8|r||human||
+E|D1|disease|human cancers|human cancers|r||||
+E|S1|phenotype|invasive phenotype|invasive phenotype|r||||
+X|PI4KII|b0002|enzyme family, not single gene
+X|type II phosphatidylinositol 4-kinase|b0002|enzyme family, not single gene
+X|HeLa|b0002|cell line, not disease
+X|MCF-7|b0002|cell line, not disease
+EV|V1|b0002.s8|ts|res|aff|rr
+EV|V2|b0002.s9|ts|int|hyp|ho
+P|G1|D1|sup|a|ts|sup:a:ts:V1|||Database mining links PI4K2B loss/underexpression to cancers
+F|F1|association|PI4K2B allele loss, PI4KIIb mRNA underexpression|oncogenomic database cancers|unknown|negative|not_reported|V1|abstract only; database unnamed
+F|F2|mechanism|PI4KIIb depletion vs invasion|HeLa, MCF-7 cells|unknown|positive|not_reported|V2|cell phenotype, not disease
+R|merge gene/protein names|b0002.s8|PI4K2B allele and PI4KIIb mRNA named differently in one sentence|treated as co-reference; merged into G1

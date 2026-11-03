@@ -1,0 +1,21 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text, tables or figures
+E|G1|gene|miR-501|miR-501|r||non-human||
+E|G2|gene|Clcn5|Clcn5;chloride channel, voltage-sensitive 5|r||non-human||
+E|G3|gene|MYH3|MYH3;embryonic myosin heavy chain|r||non-human||
+E|G4|gene|gigaxonin|gigaxonin|p|ambiguous_mapping|non-human||
+E|D1|disease|muscle injury|muscle injury|r||||
+E|D2|ambiguous_disease|mdx dystrophic disease state|mdx|p|other|||
+X|CTX|b0002.s2|cardiotoxin injury agent, not a gene
+X|myosin heavy chain|b0001.s1|protein family, not mapped to a single gene
+EV|V1|b0002.s2|ts|res|aff|rr,do
+EV|V2|b0002.s3|ts|res|aff|rr,mi
+EV|V3|b0002.s5|ts|res|aff|rr,cmp
+EV|V4|b0002.s6|ts|int|aff|unc
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V2|||miR-501 identified in injury, required for regeneration
+P|G1|D2|sup|r|ts|sup:r:ts:V3||V4|induced in mdx muscle; serum tracks disease
+P|G3|D1|unc|-|ts|unc:-:ts:V2|scope|V4|MYH3 induction in regeneration; not tested as disease
+F|F1|correlation|serum miR-501 vs disease state|mdx mice|unknown|positive|unread|V3|abstract only, no statistics
+F|F2|mechanism|miR-501 inhibition, MYH3 induction|CTX-injured regenerating muscle|unknown|negative|unread|V2|abstract only
+F|F3|mechanism|gigaxonin target, MYH3 expression|primary myoblasts|unknown|unknown|unread|V2|abstract only
+R|ambiguous strain label|D2 mdx|mdx is a mouse strain standing in for a disease|typed ambiguous_disease with provisional identity

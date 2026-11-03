@@ -1,0 +1,11 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; review article, no results
+E|G1|gene|CFTR|cystic fibrosis transmembrane conductance regulator|r||human||
+E|D1|disease|cystic fibrosis|Cystic fibrosis;cystic fibrosis;CF|r||||
+E|D2|disease|cystic fibrosis airway disease|cystic fibrosis airway disease|r||||
+E|D3|disease|inherited disorders|inherited disorders;inherited diseases|r||||
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0001.s1+b0002.s5|bg|bgr|pre|do
+P|G1|D1|sup|a|bg|sup:a:bg:V1||V2|CFTR gene cloned as CF gene; gene therapy target
+P|G1|D2|unc|-|bg||presupposed_only|V2|Airway disease link implied only via gene therapy
+R|CF subphenotype linkage|P G1-D2|Unclear whether CF airway disease inherits CFTR link from implied context|Listed as separate disease; marked uncertain, presupposed only

@@ -1,0 +1,24 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; rat model, no full text
+E|G1|gene|lipocalin 2|neutrophil gelatinase-associated lipocalin;NGAL|r||non-human||
+E|G2|gene|N-acetyl-beta-D-glucosaminidase|N-acetyl b-D-glucosaminidase;NAG|p|ambiguous_mapping|non-human||
+E|G3|gene|HAVCR1|kidney injury molecule (KIM)-1|r||non-human||
+E|G4|gene|claudin-2|claudin-2|r||non-human||
+E|G5|gene|NFE2L2|Nrf2|r||non-human||
+E|G6|ambiguous_gene|respiratory complex I|complex I;respiratory complex I|u|ambiguous_mapping|non-human||
+E|G7|gene|aconitase|aconitase|p|ambiguous_mapping|non-human||
+E|D1|disease|kidney injury|nephrotoxicity;renal injury;nephropathy|r|||||
+E|D2|disease|proteinuria|Tubular proteinuria|r|||||
+X|LLC-PK1|b0002.s5|cell line, not gene
+EV|V1|b0002.s3|ts|res|aff|rr,do
+EV|V2|b0002.s4|ts|res|aff|rr,do
+EV|V3|b0002.s7+b0002.s8|ts|res|aff|rr,do
+P|G1|D1|sup|a|ts|sup:a:ts:V1|||NGAL excretion raised in maleate renal injury
+P|G2|D1|sup|a|ts|sup:a:ts:V1|||NAG excretion raised in renal injury
+P|G3|D1|sup|a|ts|sup:a:ts:V1|||KIM-1 upregulated in renal injury
+P|G4|D1|sup|a|ts|sup:a:ts:V1|||claudin-2 decreased in renal injury
+P|G5|D1|unc|a|ts|unc:a:ts:V2|support_basis_unresolved||Nrf2 decrease tied to oxidative stress
+P|G6|D1|unc|a|ts|unc:a:ts:V3|identity||complex I activity reduced; multi-gene complex
+P|G7|D1|sup|a|ts|sup:a:ts:V3|||aconitase activity reduced in maleate kidneys
+F|F1|descriptive|NGAL, NAG, KIM-1, claudin-2 levels|maleate-treated rats|unknown|mixed|unread|V1|abstract only
+F|F2|descriptive|complex I, aconitase activity|kidney mitochondria, maleate rats|unknown|negative|unread|V3|abstract only

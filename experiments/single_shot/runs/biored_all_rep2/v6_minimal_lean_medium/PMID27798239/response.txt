@@ -1,0 +1,16 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|PI4K2B|PI4KIIb;PI4K2B;Phosphatidylinositol 4-kinase IIb|r||human||
+E|G2|gene|PI4K2A|PI4KIIa|r||human||
+E|G3|gene|PI4KII family|PI4KII|p|other|human||
+E|G4|gene|MMP14|MT1-MMP;membrane type I matrix metalloproteinase|r||human||
+E|G5|gene|RAB5|Rab5|p|ambiguous_mapping|human||
+E|G6|gene|RAB7A|Rab7|p|ambiguous_mapping|human||
+E|G7|gene|RAB8A|Rab8|p|ambiguous_mapping|human||
+E|D1|disease|cancer|cancers|r||||
+E|P1|phenotype|invasive phenotype|invasive phenotype|r||||
+X|invadopodia|b0002.s4|cellular structure, not disease
+EV|V1|b0002.s8|ts|res|aff|rr
+EV|V2|b0002.s9|ts|int|aff|rr
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V2|||Allele loss and underexpression associated with cancers
+F|F1|association|PI4K2B loss/underexpression vs cancer|human cancers in oncogenomic databases|unknown|negative|unread|V1|abstract only, database mining

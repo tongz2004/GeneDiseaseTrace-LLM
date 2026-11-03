@@ -1,0 +1,24 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|complement factor I|Complement factor I;CFI|r||human||
+E|D1|disease|Vogt-Koyanagi-Harada syndrome|Vogt-Koyanagi-Harada syndrome;Vogt-Koyanagi-Harada (VKH) syndrome;VKH syndrome|r||||
+E|D2|disease|recurrent VKH syndrome|recurrent VKH syndrome|r|||D1|
+E|D3|disease|complicated cataract|complicated cataract|r||||
+E|D4|disease|uveitis|uveitis|r||||
+E|S1|phenotype|steroid-sensitive status|steroid-sensitive status|r||||
+X|rs7356506|b0002.s5|variant identifier, not a gene
+X|CFI-7356506|b0002.s12|variant label with missing rs prefix; read as CFI-rs7356506
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s8+b0002.s12|ts|neg|neg|rr,cmp
+EV|V3|b0002.s9|ts|res|aff|rr,cmp
+EV|V4|b0002.s10|ts|res|aff|rr,cmp
+EV|V5|b0002.s11|ts|neg|neg|rr,cmp
+P|G1|D4|sup|c|bg|sup:c:bg:V1|||Background: CFI affects uveitis development
+P|G1|D1|neg|-|ts|neg:-:ts:V2||V3+V4|No overall association with VKH syndrome
+P|G1|D2|sup|a|ts|sup:a:ts:V3|||Lower G allele and GG in recurrent VKH
+P|G1|D3|unc|-|ts|unc:-:ts:V4|scope||Comparator is healthy controls, not non-cataract VKH
+F|F1|association|rs7356506 alleles/genotypes vs VKH|100 VKH vs 300 controls|not_significant|null|partial|V2|abstract only
+F|F2|association|rs7356506 G allele, GG vs recurrence|recurrent VKH vs controls|significant|negative|available|V3|
+F|F3|association|rs7356506 G allele, GG vs cataract|VKH with cataract vs controls|significant|negative|available|V4|
+F|F4|association|rs7356506 vs steroid-sensitive status|steroid-sensitive VKH subgroups|not_significant|null|not_reported|V5|
+R|subgroup vs overall result|b0002.s8-s10|Overall negative but significant subgroup associations under the same parent disease|Recurrent subtype kept as child entity; parent stays negative

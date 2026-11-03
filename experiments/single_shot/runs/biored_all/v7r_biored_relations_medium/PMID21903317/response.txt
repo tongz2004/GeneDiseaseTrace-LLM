@@ -1,0 +1,29 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text
+E|G1|gene|REN|renin;REN|r||human||
+E|G2|gene|UMOD|UMOD;uromodulin|r||human||
+E|G3|gene|HNF1B|HNF1B;hepatocyte nuclear factor 1b|r||human||
+E|G4|gene|ACE|angiotensin-converting enzyme|r||human||
+E|G5|gene|AGTR1|angiotensin receptor|p|ambiguous_mapping|human||
+E|D1|disease|renal tubular dysgenesis|renal tubular dysgenesis|r||||
+E|D2|disease|hyperuricemia|hyperuricemia|r||||
+E|D3|disease|anemia|anemia;Anemia|r||||
+E|D4|disease|chronic kidney disease|chronic kidney disease;CKD|r||||
+E|D5|disease|fetopathy|fetopathy|r||||
+E|D6|disease|kidney failure|kidney failure|r||||
+E|D7|disease|pulmonary hypoplasia|pulmonary hypoplasia|r||||
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s3|bg|bgr|aff|ebr
+EV|V3|b0001.s1+b0002.s6+b0002.s8|ts|res|aff|rr,cs
+EV|V4|b0002.s2|bg|bgr|aff|unc
+EV|V5|b0002.s5|ts|co|na|do
+P|G1|D1|sup|c|bg|sup:c:bg:V1||||Recessive REN mutations cause RTD
+P|G1|D2|sup|c|both|sup:c:bg:V2;sup:c:ts:V3||||Heterozygous REN mutation segregates with hyperuricemia
+P|G1|D3|sup|c|both|sup:c:bg:V2;sup:c:ts:V3||||Heterozygous REN mutation segregates with anemia
+P|G1|D4|sup|c|both|sup:c:bg:V2;sup:c:ts:V3||||Heterozygous REN mutation segregates with CKD
+P|G4|D5|unc|-|bg|unc:-:bg:V4|other|||Drug inhibition causes fetopathy, gene link indirect
+P|G5|D5|unc|-|bg|unc:-:bg:V4|other,identity|||Receptor blocker fetopathy, gene link indirect
+P|G2|D4|nf|-|||||V5|Kindreds tested negative for UMOD mutations
+P|G3|D4|nf|-|||||V5|Kindreds tested negative for HNF1B mutations
+F|F1|association|REN p.W10R; anemia, hyperuricemia, CKD|one kindred, 4 generations|unknown|positive|not_reported|V3|single kindred
+F|F2|descriptive|REN mutation frequency|39 kindreds with hyperuricemia and CKD|not_applicable|not_applicable|not_reported|V5|abstract only

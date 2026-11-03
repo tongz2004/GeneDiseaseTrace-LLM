@@ -1,0 +1,1 @@
+P|G1|D1|nf|-||||V5|MEN1 in s1 means syndrome; no propagation from subtype

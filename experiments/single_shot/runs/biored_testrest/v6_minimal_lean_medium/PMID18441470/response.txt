@@ -1,0 +1,7 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text
+E|D1|disease|complete atrioventricular block|Complete atrioventricular block;complete atrioventricular (AV) block|r|||||
+E|D2|disease|sinus node dysfunction|Sinus node dysfunction|r|||||
+E|D3|symptom|syncope|syncopal attacks|r|||||
+E|D4|disease|atrioventricular conduction disturbance|disturbance of AV conduction|p|||||
+R|gene-disease pairs|whole paper|No gene entities mentioned; only drug lithium and diseases|Listed diseases only; no P records

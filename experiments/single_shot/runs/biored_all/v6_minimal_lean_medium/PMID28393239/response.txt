@@ -1,0 +1,28 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|S100A7|Psoriasin;S100A7|r||human||
+E|G2|gene|MMP2|matrix metalloproteinase-2;MMP-2|r||human||
+E|G3|gene|MMP9|MMP-9|r||human||
+E|G4|gene|S100 family|S100|r||human||
+E|G5|gene|matrix metalloproteinases|MMPs|p|other|human||
+E|D1|disease|pancreatic cancer|pancreatic cancer;pancreatic cancers;pancreatic tumours|r|||||
+E|D2|disease|psoriasis|psoriatic|p|other||||
+E|D3|disease|cancer|cancers|r|||||
+E|D4|disease|neoplasm metastasis|distant metastases|r|||||
+EV|V1|b0002.s1|bg|co|aff|do
+EV|V2|b0002.s3|bg|bgr|aff|ebr
+EV|V3|b0002.s9|ts|res|aff|rr,cmp
+EV|V4|b0002.s10|ts|res|aff|rr,cmp
+EV|V5|b0002.s11+b0002.s13|ts|res|aff|rr,mi
+EV|V6|b0002.s14+b0002.s15|ts|int|aff|rr
+EV|V7|b0002.s12|ts|res|aff|rr,mi
+P|G1|D1|sup|c|ts|sup:c:ts:V5+V7;sup:r:ts:V3+V4;sup:a:ts:V6|||Overexpression promotes pancreatic cancer cell malignancy
+P|G1|D2|sup|a|bg|sup:a:bg:V1|||Originally isolated from psoriatic skin lesions
+P|G1|D3|sup|a|bg|sup:a:bg:V2|||Aberrant expression implicated in cancers
+P|G1|D4|sup|r|ts|sup:r:ts:V4|||Reduced expression in tumours with distant metastases
+P|G2|D1|sup|a|ts|sup:a:ts:V7|||Upregulated with Psoriasin-driven invasion
+P|G3|D1|sup|a|ts|sup:a:ts:V7|||Upregulated with Psoriasin-driven invasion
+F|F1|group_comparison|Psoriasin transcripts; local invasion beyond pancreas|126 pancreatic tumours|unknown|positive|unread|V3|abstract only
+F|F2|group_comparison|Psoriasin expression; distant metastasis|primary pancreatic tumours|unknown|negative|unread|V4|abstract only
+F|F3|mechanism|Psoriasin overexpression; growth, migration, invasion|pancreatic cancer cell lines|significant|positive|unread|V5+V7|in vitro only
+C|C1|Psoriasin direction: invasion vs metastasis|b0002.s9+b0002.s10|noncritical|unresolved|higher in local invasion, lower metastatic

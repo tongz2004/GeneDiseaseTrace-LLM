@@ -1,0 +1,13 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|PTEN|PTEN|r||human||
+E|D1|disease|grade IV glioma|grade IV glioma|r||||
+E|D2|disease|cancer|cancer|r||||
+X|U87MG|b0002.s1|cell line identifier, not gene or disease
+X|BFAST|b0002.s4|alignment tool name, not gene
+EV|V1|b0002.s6|ts|co|na|do
+EV|V2|b0002.s1|ts|co|na|do
+P|G1|D1|nf|-|||||V1+V2|Mutation detected in cell line; no disease attribution
+P|G1|D2|nf|-|||||V1|PTEN not linked to cancer in text
+F|F1|descriptive|PTEN homozygous mutation|U87MG cell line|not_applicable|not_applicable|not_applicable|V1|cell line only; no disease outcome
+F|F2|descriptive|cell adhesion genes overrepresented|U87MG mutated gene list|unknown|positive|not_reported|V1|gene set, not single-gene endpoint

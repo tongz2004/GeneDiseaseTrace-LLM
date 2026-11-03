@@ -1,0 +1,26 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|glycine transporter-1|glycine transporter-1;GlyT1|r||||
+E|G2|gene|NMDA receptor|glutamate N-methyl-D-aspartate (NMDA) receptor;NMDA receptor;NMDA|r||human||
+E|G3|gene|NMDA receptor subunit Nr1 (Grin1)|Nr1|r||non-human|G2|
+E|G4|gene|dopamine transporter (Slc6a3)|dopamine transporter;DAT|r||non-human||
+E|D1|disease|schizophrenia|Schizophrenia;schizophrenic|r|||||
+E|D2|disease|hyperactivity|hyperactivity|r|||||
+E|D3|disease|catalepsy|catalepsy|r|||||
+X|SSR103800|b0001|drug compound code, not a gene
+X|MK-801|b0002|NMDA antagonist drug, not a gene
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s6|ts|res|aff|rr,mi
+EV|V3|b0002.s7|ts|res|aff|rr,mi
+EV|V4|b0002.s4+b0002.s10|both|int|aff|rr,mi
+EV|V5|b0002.s9|ts|res|neg|rr
+P|G2|D1|sup|a|bg|sup:a:bg:V1||| |NMDA antagonism yields schizophrenic-like symptoms
+P|G2|D2|sup|c|ts|sup:c:ts:V2|||NMDA antagonist MK-801 induces hyperactivity
+P|G3|D2|sup|c|ts|sup:c:ts:V2|||Nr1 hypomorphic mice show spontaneous hyperactivity
+P|G4|D2|sup|c|ts|sup:c:ts:V3|||DAT knockout mice show hyperactivity
+P|G1|D2|sup|a|ts|sup:a:ts:V2|||GlyT1 inhibition reverses NMDA-related hyperactivity
+P|G1|D1|sup|a|both|sup:a:both:V4|||GlyT1 inhibitor shows antipsychotic-like effects
+P|G1|D3|nf|-||||V5|Inhibitor lacks catalepsy; drug side-effect only
+F|F1|mechanism|GlyT1 inhibitor; MK-801 hyperactivity|mice|unknown|negative|unread|V2|abstract only
+F|F2|mechanism|GlyT1 inhibitor; Nr1 neo-/- hyperactivity|Nr1 neo-/- mice|unknown|negative|unread|V2|partial reversal
+F|F3|mechanism|GlyT1 inhibitor; DAT-/- hyperactivity|DAT-/- mice|unknown|null|unread|V3|abstract only

@@ -1,0 +1,12 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|F5|F5;factor V;FV|r||human||
+E|D1|disease|inherited coagulation factor V deficiency|coagulation factor V deficiency;FV deficiency|r||||
+EV|V1|b0001.s1|ts|res|aff|rr,eda
+EV|V2|b0002.s2+b0002.s5+b0002.s6|ts|res|aff|rr,eda
+EV|V3|b0002.s7+b0002.s8|ts|res|aff|rr,eda
+EV|V4|b0002.s9|ts|res|aff|rr,eda
+P|G1|D1|sup|c|ts|sup:c:ts:V1+V2+V3+V4|||F5 mutations found in deficient probands
+F|F1|descriptive|F5 IVS8 -2A>G homozygous; cryptic splicing|proband 1, Chinese pedigree|not_applicable|not_applicable|not_applicable|V2|single proband; no segregation reported
+F|F2|descriptive|F5 2238-9delAG and G6410T compound heterozygous|proband 2, Chinese pedigree|not_applicable|not_applicable|not_applicable|V3|single proband; no functional test
+C|C1|IVS8 -2A>G called a deletion|b0002.s5|noncritical|resolved|Treated as a substitution at the splice site

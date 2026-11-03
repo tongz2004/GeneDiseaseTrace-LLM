@@ -1,0 +1,12 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|mineralocorticoid receptor|mineralocorticoid receptor;MR;NR3C2|r||human||
+E|D1|disease|hypertension|hypertension;hypertensives;hypertensive;essential hypertension;early-onset hypertension|r|||||
+X|normotensives|b0002.s7|control group label, not disease
+X|clinical phenotypes|b0002.s10|unspecified phenotype, not a named disease
+EV|V1|b0002.s1|bg|bgr|aff|ebr,eda
+EV|V2|b0002.s3+b0002.s4|ts|neg|neg|rr
+EV|V3|b0002.s7+b0002.s9|ts|neg|neg|rr,cmp
+P|G1|D1|sup|c|bg|sup:c:bg:V1;neg:-:ts:V2+V3|||S810L causal in background; study variants null
+F|F1|group_comparison|F826Y frequency vs hypertension status|Japanese general population, n=3,655|not_significant|null|partial|V3|counts only; no test statistic
+F|F2|descriptive|S810L presence|942 Japanese hypertensives|not_applicable|null|not_applicable|V2|

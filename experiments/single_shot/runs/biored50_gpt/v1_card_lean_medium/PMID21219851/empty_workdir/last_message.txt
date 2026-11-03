@@ -1,0 +1,10 @@
+META|GPT-6|seen: no
+SCOPE|Title and abstract only; full text unavailable.
+E|G1|gene|COL3A1|type III procollagen gene;COL3A1|r||human||
+E|D1|disease|Ehlers-Danlos syndrome, vascular type|Ehlers-Danlos Syndrome, vascular type;Ehlers-Danlos syndrome, vascular type;vEDS|r||||
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s6+b0002.s8|ts|co|na|do
+EV|V3|b0002.s7|ts|res|na|rr
+P|G1|D1|sup|c|bg|sup:c:bg:V1||V2|Novel mutation detection alone adds no disease attribution.
+F|F1|descriptive|Eight known COL3A1 mutations detected|Validation samples|not_applicable|not_applicable|available|V3|Screening performance.
+F|F2|descriptive|Five novel COL3A1 mutations identified|Study samples|not_applicable|not_applicable|available|V2|Individual disease attribution absent.

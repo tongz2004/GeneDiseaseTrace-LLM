@@ -1,0 +1,172 @@
+{
+  "euadr": {
+    "documents": 100,
+    "valid": {
+      "minimal": 94,
+      "card": 100,
+      "pubtator3": 100
+    },
+    "minimal - pubtator3": {
+      "documents": 94,
+      "precision": {
+        "diff": 0.046,
+        "ci95": [
+          -0.039,
+          0.131
+        ]
+      },
+      "recall": {
+        "diff": -0.05,
+        "ci95": [
+          -0.155,
+          0.055
+        ]
+      },
+      "f1": {
+        "diff": 0.017,
+        "ci95": [
+          -0.065,
+          0.099
+        ]
+      }
+    },
+    "minimal - card": {
+      "documents": 94,
+      "precision": {
+        "diff": 0.002,
+        "ci95": [
+          -0.059,
+          0.055
+        ]
+      },
+      "recall": {
+        "diff": 0.143,
+        "ci95": [
+          0.078,
+          0.215
+        ]
+      },
+      "f1": {
+        "diff": 0.06,
+        "ci95": [
+          0.007,
+          0.113
+        ]
+      }
+    },
+    "card - pubtator3": {
+      "documents": 100,
+      "precision": {
+        "diff": 0.042,
+        "ci95": [
+          -0.048,
+          0.132
+        ]
+      },
+      "recall": {
+        "diff": -0.189,
+        "ci95": [
+          -0.298,
+          -0.078
+        ]
+      },
+      "f1": {
+        "diff": -0.043,
+        "ci95": [
+          -0.123,
+          0.039
+        ]
+      }
+    },
+    "minimal_deployment": {
+      "precision": 0.429,
+      "recall": 0.574,
+      "f1": 0.491
+    }
+  },
+  "renet2": {
+    "documents": 40,
+    "valid": {
+      "minimal": 33,
+      "card": 40,
+      "pubtator3": 40
+    },
+    "minimal - pubtator3": {
+      "documents": 33,
+      "precision": {
+        "diff": -0.39,
+        "ci95": [
+          -0.534,
+          -0.264
+        ]
+      },
+      "recall": {
+        "diff": 0.158,
+        "ci95": [
+          0.044,
+          0.287
+        ]
+      },
+      "f1": {
+        "diff": -0.067,
+        "ci95": [
+          -0.182,
+          0.054
+        ]
+      }
+    },
+    "minimal - card": {
+      "documents": 33,
+      "precision": {
+        "diff": -0.045,
+        "ci95": [
+          -0.1,
+          0.002
+        ]
+      },
+      "recall": {
+        "diff": 0.05,
+        "ci95": [
+          -0.01,
+          0.138
+        ]
+      },
+      "f1": {
+        "diff": -0.018,
+        "ci95": [
+          -0.061,
+          0.037
+        ]
+      }
+    },
+    "card - pubtator3": {
+      "documents": 40,
+      "precision": {
+        "diff": -0.333,
+        "ci95": [
+          -0.455,
+          -0.212
+        ]
+      },
+      "recall": {
+        "diff": 0.133,
+        "ci95": [
+          0.016,
+          0.222
+        ]
+      },
+      "f1": {
+        "diff": -0.004,
+        "ci95": [
+          -0.124,
+          0.109
+        ]
+      }
+    },
+    "minimal_deployment": {
+      "precision": 0.217,
+      "recall": 0.309,
+      "f1": 0.255
+    }
+  }
+}

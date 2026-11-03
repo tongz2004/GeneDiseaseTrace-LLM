@@ -1,0 +1,7 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no genes mentioned
+E|D1|disease|seizure|seizure|r||||
+E|D2|symptom|postoperative pain|postoperative pain|r||||
+E|D3|disease|CNS toxicity|CNS toxicity|r||||
+E|D4|phenotype|central nervous system excitation|central nervous system excitation|r||||
+X|PCA|b0002.s1|patient-controlled analgesia abbreviation, not a gene

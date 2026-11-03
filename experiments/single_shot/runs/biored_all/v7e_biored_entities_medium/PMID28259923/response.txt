@@ -1,0 +1,22 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|PLAGL2|pleomorphic adenoma gene like-2;Pleomorphic adenoma gene like-2;PLAGL2|r|||human||
+E|G2|gene|N-cadherin|N-cadherin|r|||human||
+E|G3|gene|vimentin|vimentin|r|||human||
+E|G4|gene|E-cadherin|E-cadherin|r|||human||
+E|G5|gene|beta-catenin|b-catenin|r|||human||
+E|G6|gene|Wnt|Wnt;wnt|p|ambiguous_mapping|human||
+E|D1|disease|colorectal adenocarcinoma|colorectal adenocarcinoma;Colorectal adenocarcinoma;CRC|r||||
+E|D2|disease|cancer|cancer|r||||
+E|D3|disease|tumor|tumor|r||||
+E|D4|disease|metastasis|metastasis;metastatic|r||||
+X|Pleomorphic adenoma|b0001|part of the gene name PLAGL2, not a disease mention
+EV|V1|b0002.s3|bg|bgr|aff|ebr
+EV|V2|b0002.s4+b0002.s5|ts|res|aff|rr,cmp
+EV|V3|b0002.s8|ts|res|aff|mi,cmp
+P|G1|D1|sup|a|ts|sup:a:ts:V2+V3||V1|upregulated in CRC tissue; linked to prognosis
+P|G1|D2|sup|a|bg|sup:a:bg:V1|||poor prognosis in cancer, from prior studies
+P|G1|D3|sup|c|bg|sup:c:bg:V1|||prior studies report it induces tumor EMT
+P|G1|D4|sup|c|ts|sup:c:ts:V3|||overexpression increased lung metastasis in rats
+F|F1|group_comparison|PLAGL2 expression|CRC vs borderline/benign tissues|unknown|positive|not_reported|V2|abstract only
+F|F2|group_comparison|PLAGL2 overexpression; lung metastasis|rats injected with SW480 cells|unknown|positive|not_reported|V3|animal model

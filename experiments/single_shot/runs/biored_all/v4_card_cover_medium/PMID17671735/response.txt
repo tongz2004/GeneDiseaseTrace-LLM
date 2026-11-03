@@ -1,0 +1,20 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|GJB2|GJB2|r|||human||
+E|G2|gene|GJB6|GJB6|r|||human||
+E|G3|gene|GJB3|GJB3|r|||human||
+E|D1|disease|hereditary prelingual sensorineural hearing impairment|hereditary prelingual sensorineural hearing impairment|r||||
+E|D2|disease|hearing impairment|hearing impairment|r||||
+X|connexin|b0002|gene family, not single gene
+X|D13S1830|b0002|genomic marker in deletion name, not gene
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s3|ts|hyp|hyp|ho
+EV|V3|b0002.s4+b0002.s5+b0002.s6|ts|res|na|do
+EV|V4|b0002.s7|ts|int|neg|unc
+EV|V5|b0002.s8|ts|int|hyp|unc
+P|G1|D1|sup|c|bg|sup:c:bg:V1|||GJB2 mutations stated most common cause
+P|G1|D2|unc|-||unc:-:ts:V3+V5|hedged_claim,support_basis_unresolved||Mutations detected in patients; relevance only suggested
+P|G2|D2|unc|-||unc:-:ts:V4|scope,hedged_claim|V2+V3|Unclear if 'unlikely disease-causing' covers GJB6 deletion
+P|G3|D2|unc|-||unc:-:ts:V4|hedged_claim|V2+V3|Substitutions judged unlikely disease-causing, hedged
+F|F1|descriptive|GJB2 -3170G>A carrier frequency|47 GJB2-heterozygous hearing-impaired patients|not_applicable|not_applicable|partial|V3|11/47 carriers; one homozygous
+F|F2|descriptive|GJB6 deletion and GJB3 substitutions|47 GJB2-heterozygous hearing-impaired patients|not_applicable|not_applicable|partial|V4|2 GJB6 deletions; 3 GJB3 variants

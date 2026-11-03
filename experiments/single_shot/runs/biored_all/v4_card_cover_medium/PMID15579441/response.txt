@@ -1,0 +1,19 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|vascular endothelial growth factor|vascular endothelial growth factor|p|species_unresolved|||
+E|G2|gene|proliferating cell nuclear antigen|proliferating cell nuclear antigen|p|species_unresolved|non-human||
+E|G3|ambiguous_gene|ED-1|ED-1|u|undefined_abbreviation,species_unresolved|||
+E|D1|disease|renal disease|renal disease|r||||
+E|D2|disease|nephrotic syndrome|nephrotic syndrome|r||||
+E|D3|disease|tubulointerstitial injury|tubulointerstitial injury|r||||
+E|D4|disease|glomerular diseases|glomerular diseases|r||||
+E|S1|symptom|proteinuria|proteinuria|r||||
+E|S2|phenotype|glomerular hypertension|glomerular hypertension|r||||
+E|S3|phenotype|tubulointerstitial hypoxia|tubulointerstitial hypoxia|r||||
+X|remnant kidney model|b0002|animal model name, not a disease entity
+X|hypoxia-responsive transgene|b0002|reporter construct, not a single gene
+EV|V1|b0002.s4+b0002.s5|ts|res|q|rr,do
+P|G1|D2|unc|-|ts|unc:-:ts:V1|coreference,scope||VEGF decrease in PAN model; no comparator stated
+F|F1|descriptive|endogenous VEGF expression over time|PAN and remnant kidney rat models|unknown|negative|not_reported|V1|abstract only; no statistics
+F|F2|descriptive|hypoxia-responsive transgene expression over time|PAN and remnant kidney rat models|unknown|positive|partial|V1|fold changes only
+R|animal species|b0002.s2|VEGF element species unstated in transgenic rat construct|kept gene species empty, provisional

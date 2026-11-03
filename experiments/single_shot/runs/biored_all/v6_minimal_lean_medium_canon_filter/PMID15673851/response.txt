@@ -1,0 +1,17 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|NMDA receptor|N-methyl-D-aspartate receptors;NMDA receptor|p|ambiguous_mapping|non-human||
+E|D1|disease|spinal motor neuron degeneration|degeneration of spinal motor neurons|r||||
+E|D2|disease|spinal cord ischemia|spinal cord ischemia;Spinal cord ischemia|r||||
+E|D3|disease|spastic paraparesis|spastic paraparesis|r||||
+X|MK-801|b0002.s5|NMDA antagonist drug, not a gene
+X|glutamate|b0002.s6|metabolite, not a gene
+EV|V1|b0001.s1|ts|int|hyp|ho
+EV|V2|b0002.s8|ts|res|aff|mi,rr
+EV|V3|b0002.s9|ts|int|aff|unc
+EV|V4|b0002.s10|ts|hyp|hyp|ho
+P|G1|D1|sup|c|ts|sup:c:ts:V2;unc:c:ts:V1|hedged_claim||Antagonist MK-801 reduced motoneuron degeneration in rats
+P|G1|D3|unc|-|ts|unc:a:ts:V3+V2|support_basis_unresolved,hedged_claim||Paraparesis linked via glutamate; no direct test
+P|G1|D2|unc|-|ts|unc:c:ts:V4|hedged_claim||Ischemic neurotoxicity via NMDA only suggested
+F|F1|mechanism|IT MK-801; dark-stained alpha-motoneurons|rats with morphine-induced spastic paraparesis|significant|negative|not_reported|V2|abstract only; rat model
+R|gene family|G1|NMDA receptor is a multi-subunit family; no subunit named|treated as one provisional gene entity, rat species

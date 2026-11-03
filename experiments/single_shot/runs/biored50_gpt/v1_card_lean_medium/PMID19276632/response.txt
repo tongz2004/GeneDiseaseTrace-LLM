@@ -1,0 +1,27 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only.
+E|G1|gene|FOXF2|FOXF2|r||human||
+E|G2|gene|Foxf2|Foxf2|r||non-human||
+E|D1|disease|disorders of sex development|disorders of sex development;DSD|r||||
+E|D2|disease|cleft palate|cleft palate|r||||
+E|D3|disease|disorders of sexual differentiation|disorders of sexual differentiation|r||||
+E|H1|phenotype|hypoplasia of the genital tubercle|hypoplasia of the genital tubercle|r||||
+E|H2|phenotype|disturbances in genital and palate development|disturbances in genital and palate development|r||||
+X|c.97GCC[9]+[10]|b0002|variant identifier
+X|25*G>A|b0002|variant identifier
+X|c.262G>A|b0002|variant identifier
+X|Ala88Thr|b0002|variant identifier
+X|c.1272C>T|b0002|variant identifier
+X|Ser424Ser|b0002|variant identifier
+X|c.1284T>C|b0002|variant identifier
+X|Tyr428Tyr|b0002|variant identifier
+EV|V1|b0002.s3|bg|bgr|aff|ebr,mi
+EV|V2|b0002.s4|ts|hyp|hyp|ho
+EV|V3|b0002.s5+b0002.s6+b0002.s7+b0002.s8+b0002.s9|ts|res|na|rr,do
+EV|V4|b0002.s5+b0002.s11|ts|int|hyp|ho
+EV|V5|b0002.s10|ts|int|na|rr
+P|G2|D2|sup|c|bg|sup:c:bg:V1||||Knockout produces cleft palate in mice.
+P|G1|D1|unc|-|ts|unc:c:ts:V4|hedged_claim|V2+V3|Unique variants' contribution remains speculative.
+P|G1|D2|unc|-|ts|unc:c:ts:V4|hedged_claim|V2+V3|Unique variants' contribution remains speculative.
+F|F1|descriptive|FOXF2 sequence variations|DSD with cleft palate versus normal controls|not_applicable|not_applicable|available|V3|Variant detection alone establishes no disease attribution.
+F|F2|other|FOXF2 alterations' functional relevance|Detected sequence alterations|not_applicable|not_applicable|not_reported|V5|Majority interpreted as polymorphisms without obvious functional relevance.

@@ -1,0 +1,13 @@
+P|G3|D2|nf|-|||||V2+V3|Co-occurrence only; Arg2 not tested against AHR
+P|G4|D2|nf|-|||||V2+V3|Co-occurrence only; Nos2 not tested against AHR
+P|G5|D2|nf|-|||||V2+V3|Co-occurrence only; Slc7a1 not tested against AHR
+P|G6|D2|nf|-|||||V2+V3|Co-occurrence only; Slc7a2 not tested against AHR
+P|G7|D2|nf|-|||||V2+V3|Co-occurrence only; Slc7a7 not tested against AHR
+P|G8|D2|nf|-|||||V2+V3|Co-occurrence only; Il4 not tested against AHR
+P|G9|D2|nf|-|||||V2+V3|Co-occurrence only; Il5 not tested against AHR
+P|G10|D2|nf|-|||||V2+V3|Co-occurrence only; Il13 not tested against AHR
+P|G11|D2|nf|-|||||V2+V3|Co-occurrence only; Ccl2 not tested against AHR
+P|G12|D2|nf|-|||||V2+V3|Co-occurrence only; Ccl11 not tested against AHR
+P|G13|D2|nf|-|||||V2+V3|Co-occurrence only; Ifng not tested against AHR
+P|G14|D2|nf|-|||||V2+V3|Co-occurrence only; Clca3 not tested against AHR
+P|G15|D2|nf|-|||||V2+V3|Co-occurrence only; Muc5ac not tested against AHR

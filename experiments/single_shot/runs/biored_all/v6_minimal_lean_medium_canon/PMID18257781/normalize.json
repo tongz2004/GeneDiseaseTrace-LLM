@@ -1,0 +1,10 @@
+[
+  [
+    "canonicalize: main type/scope recomputed",
+    "P G1-D1: c/both -> c/bg"
+  ],
+  [
+    "canonicalize: main type/scope recomputed",
+    "P G2-D1: c/both -> c/bg"
+  ]
+]

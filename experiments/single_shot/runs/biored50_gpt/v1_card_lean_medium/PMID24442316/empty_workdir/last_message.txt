@@ -1,0 +1,38 @@
+META|GPT-6|seen: no
+SCOPE|Supplied title and abstract only; no full text or attachments.
+E|G1|gene|ICAM-1|intercellular adhesion molecule-1;ICAM-1|r||non-human||
+E|G2|gene|VCAM-1|vascular cell adhesion molecule-1;VCAM-1|r||non-human||
+E|G3|gene|vWF|von Willebrand factor;vWF|r||non-human||
+E|G4|gene|matrix metalloproteinase-2|matrix metalloproteinase-2;MMP-2/9|r||non-human||
+E|G5|gene|matrix metalloproteinase-9|9;MMP-2/9|r||non-human||
+E|D1|disease|liver injury|liver injury|r||||
+E|D2|disease|acute injury liver|acute liver injured;acute injury liver;acute injured liver|r|||D1|
+E|D3|disease|LSEC injury|LSEC injury|r||||
+E|A1|phenotype|hepatic inflammation|hepatic inflammation|r||||
+E|A2|phenotype|hepatocyte apoptosis|hepatocyte apoptosis|r||||
+E|A3|phenotype|hepatic lipid peroxidation|hepatic lipid peroxidation|r||||
+E|A4|phenotype|peroxidative injury|peroxidative injury|r||||
+X|alanine aminotransferase|b0002|unspecified enzyme; no single-gene identity
+X|ALT|b0002|unspecified enzyme; no single-gene identity
+X|aspartate aminotransferase|b0002|unspecified enzyme; no single-gene identity
+X|AST|b0002|unspecified enzyme; no single-gene identity
+X|superoxide dismutase|b0002|enzyme family; not a single gene
+X|SOD|b0002|enzyme family; not a single gene
+X|glutathione S-transferase|b0002|enzyme family; not a single gene
+X|GST|b0002|enzyme family; not a single gene
+EV|V1|b0002.s2+b0002.s11+b0002.s13|ts|res|aff|rr,cmp
+EV|V2|b0002.s12|ts|res|na|rr,cmp
+EV|V3|b0002.s13+b0002.s14|ts|int|hyp|ho
+P|G1|D2|sup|a|ts|sup:a:ts:V1|||Higher expression in injured model versus normal controls.
+P|G2|D2|sup|a|ts|sup:a:ts:V1|||Higher expression in injured model versus normal controls.
+P|G3|D2|sup|a|ts|sup:a:ts:V1|||Higher expression in injured model versus normal controls.
+P|G4|D2|sup|a|ts|sup:a:ts:V1;unc:-:ts:V3|hedged_claim||Higher activity; protective mechanism remains an interpretation.
+P|G5|D2|sup|a|ts|sup:a:ts:V1;unc:-:ts:V3|hedged_claim||Higher activity; protective mechanism remains an interpretation.
+P|G1|D3|nf|-||||V1|Combined injury indicators do not establish an individual association.
+P|G2|D3|nf|-||||V1|Combined injury indicators do not establish an individual association.
+P|G3|D3|nf|-||||V1|Combined injury indicators do not establish an individual association.
+P|G4|D3|nf|-||||V1|Combined injury indicators do not establish an individual association.
+P|G5|D3|nf|-||||V1|Combined injury indicators do not establish an individual association.
+F|F1|group_comparison|ICAM-1, VCAM-1, vWF expression; MMP-2/9 activity|Injured model versus normal mice|unknown|positive|not_reported|V1|No numerical statistics supplied.
+F|F2|group_comparison|ICAM-1, VCAM-1 expression; MMP-2/9 activity|CMCS or 1,10-phenanthroline versus model|unknown|negative|not_reported|V2|Significance explicitly stated only for serum ALT/AST.
+F|F3|hypothesis|MMP-2/9 down-regulation and liver protection|LPS/D-GalN injured mice receiving CMCS|not_applicable|unknown|not_applicable|V3|Mechanistic interpretation; no gene-specific intervention.

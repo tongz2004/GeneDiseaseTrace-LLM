@@ -1,0 +1,15 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text, tables unavailable
+E|G1|gene|CBR3|CBR3;carbonyl reductase 3|r|||human||
+E|G2|gene|NQO1|NQO1;nicotinamide adenine dinucleotide phosphate:quinone oxidoreductase 1|r|||human||
+E|D1|disease|congestive heart failure|congestive heart failure;CHF|r|||||
+E|D2|disease|cancer|cancer;childhood cancer|r|||||
+EV|V1|b0002.s8|ts|neg|neg|rr,cmp
+EV|V2|b0002.s9|ts|res|q|rr,cmp
+EV|V3|b0002.s10|ts|res|na|mi
+EV|V4|b0002.s11|ts|int|hyp|ho
+P|G2|D1|neg|-|ts|neg:-:ts:V1||||NQO1*2 no association with anthracycline-related CHF
+P|G1|D1|unc|-|ts|unc:-:ts:V2+V4|hedged_claim||V3|Non-significant trend; conclusion hedged
+F|F1|association|NQO1*2 genotype vs CHF risk|childhood cancer survivors, anthracycline-treated|not_significant|null|partial|V1|OR 1.04, P=.97
+F|F2|association|CBR3 V244M genotype vs CHF risk|childhood cancer survivors, anthracycline-treated|not_significant|positive|partial|V2|30 cases; P=.056, .092
+F|F3|mechanism|CBR3 V244 vs M244 doxorubicinol synthesis|recombinant enzyme assays|significant|positive|available|V3|in vitro only

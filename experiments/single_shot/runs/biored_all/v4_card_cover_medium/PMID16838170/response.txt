@@ -1,0 +1,21 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text, tables or methods
+E|G1|gene|HNF4A|HNF4alpha;Hepatocyte nuclear factor 4alpha;HNF4A|r|||human||
+E|D1|disease|type 2 diabetes mellitus|type 2 diabetes mellitus;diabetes|r||||
+E|D2|disease|impaired glucose tolerance|impaired glucose tolerance;IGT|r||||
+X|STOP-NIDDM|b0001|trial name, not a disease entity
+X|rs4810424|b0002|variant ID
+X|rs1884614|b0002|variant ID
+X|rs2144908|b0002|variant ID
+X|rs2071197|b0002|variant ID
+X|rs3818247|b0002|variant ID
+EV|V1|b0001.s1|ts|res|aff|rr
+EV|V2|b0002.s6|ts|res|aff|rr,cmp
+EV|V3|b0002.s7|ts|neg|neg|rr,cmp
+EV|V4|b0002.s8|ts|res|aff|rr
+EV|V5|b0002.s9|ts|int|hyp|ho
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V2+V4;neg:-:ts:V3;unc:-:ts:V5||V3|rs4810424 C allele raises conversion risk in women
+P|G1|D2|nf|-||||||IGT is only the study population
+F|F1|association|rs4810424 C allele; conversion to T2DM|female STOP-NIDDM subjects with IGT|significant|positive|available|V2|adjusted model; one SNP tagging three
+F|F2|association|rs4810424; conversion to T2DM|male STOP-NIDDM subjects with IGT|not_significant|null|not_reported|V3|no statistics given
+F|F3|association|risk-allele number in haplotypes; conversion|female STOP-NIDDM subjects|unknown|positive|not_reported|V4|three-SNP haplotype; no statistics given

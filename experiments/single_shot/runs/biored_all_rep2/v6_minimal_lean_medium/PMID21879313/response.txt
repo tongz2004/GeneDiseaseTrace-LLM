@@ -1,0 +1,19 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|IL28B|interleukin 28B;IL28B|r||human||
+E|G2|gene|APOB|apolipoprotein B-100;apoB-100|r||human||
+E|D1|disease|chronic hepatitis C|chronic hepatitis C;chronic HCV infection;chronic hepatitis|r||||
+X|hepatitis C virus|b0002.s1|virus organism, not disease entity
+X|LDL cholesterol|b0002.s4|lipid measure, not gene
+X|interferon|b0002.s2|therapy agent (PEG-IFN), not gene mention
+X|rs8099917|b0002.s4|SNP near IL28B, mapped to G1
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s4+b0002.s6|ts|res|aff|rr,cmp
+EV|V3|b0002.s5|ts|res|aff|rr,cmp
+EV|V4|b0002.s7+b0002.s8|ts|int|hyp|unc
+EV|V5|b0002.s1|bg|bgr|aff|ebr
+P|G1|D1|sup|a|both|sup:a:bg:V1;sup:a:ts:V2||V4|IL28B SNP affects therapy response and apoB in CHC
+P|G2|D1|sup|a|ts|sup:a:ts:V2+V3;unc:a:ts:V4|hedged_claim|V5|apoB-100 levels linked to IL28B genotype, core aa70 in CHC
+F|F1|association|rs8099917 TT genotype; serum apoB-100|chronic HCV G1b patients, n=148|significant|positive|partial|V2|abstract only; P values only
+F|F2|association|core aa70 Arg; serum apoB-100|chronic HCV G1b patients, n=148|significant|positive|partial|V3|abstract only; viral substitution
+F|F3|association|aa70 and rs8099917 independent apoB-100 determinants|chronic HCV G1b patients, n=148|significant|not_applicable|unread|V2|multivariate details not shown

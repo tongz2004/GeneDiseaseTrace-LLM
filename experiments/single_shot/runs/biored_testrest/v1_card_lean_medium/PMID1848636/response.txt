@@ -1,0 +1,11 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and truncated abstract only; full text unavailable
+E|G1|gene|beta-2 adrenoceptor|beta-2 adrenoceptor;beta-2 receptor|r||human||
+E|G2|gene|beta-1 adrenoceptor|beta-1 adrenoceptor|r||human||
+E|D1|disease|hypokalemia|hypokalemia|r||||
+X|debrisoquine/sparteine type|b0002|genetic polymorphism type; underlying gene not named in text
+X|extensive (EM) and poor metabolizers (PM)|b0002|metabolizer phenotypes, not gene or disease entities
+EV|V1|b0002.s3+b0002.s4|ts|aim|pre|unc
+P|G1|D1|unc|-|ts|unc:-:ts:V1|presupposed_only||Beta-2 antagonism measured via hypokalemia; link only implied
+F|F1|group_comparison|racemic metoprolol IC50 by metabolizer phenotype|6 EMs vs 5 PMs|significant|positive|partial|V1|abstract truncated; phenotype not a named gene
+R|unnamed gene|b0002.s1|Genetic polymorphism (debrisoquine/sparteine type) is cited without naming a gene.|No gene entity created; the gene was not inferred from prior knowledge.

@@ -1,0 +1,22 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|HTR6|HTR6;5-HT6;Serotonin 6 receptor gene;serotonin 6|r|||human||
+E|D1|disease|methamphetamine-induced psychosis|methamphetamine-induced psychosis;METH-induced psychosis;methamphetamine (METH)-induced psychosis|r|||||
+E|D2|disease|psychotic disorders|psychotic disorders|r|||||
+E|D3|disease|schizophrenia|schizophrenia|r|||||
+E|D4|disease|paranoid schizophrenia|paranoid type schizophrenia|r||||D3|
+E|D5|disease|methamphetamine dependence|methamphetamine dependence|r|||||
+E|D6|phenotype|amphetamine-induced hyperactivity|hyperactivity|r|||||
+X|rs6693503|b0002.s7|SNP in HTR6, not a separate gene
+X|disrupted prepulse inhibition|b0002.s3|rat model phenotype, not disease
+EV|V1|b0002.s9+b0002.s10|ts|res|aff|rr
+EV|V2|b0002.s11|ts|res|aff|rr
+EV|V3|b0001.s1+b0002.s12|ts|int|aff|rr
+EV|V4|b0002.s2+b0002.s3+b0002.s4|bg|hyp|hyp|ebr,mi,ho
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V2+V3|||SNP and haplotype case-control association
+P|G1|D2|unc|-|bg|unc:-:bg:V4|hedged_claim||Animal pharmacology suggests involvement; hedged
+P|G1|D3|nf|-|||||V4|Antipsychotic target; animal models only
+P|G1|D6|nf|-|||||V4|Rat antagonist study; non-human context
+F|F1|association|rs6693503 allele/genotype vs METH psychosis|197 cases, 337 Japanese controls|significant|unknown|unread|V1|Bonferroni-significant; risk allele not stated
+F|F2|association|rs6693503-rs1805054(-rs4912138) haplotypes|197 cases, 337 Japanese controls|significant|unknown|unread|V2|
+C|C1|case group label|b0002.s7+b0002.s8|noncritical|unresolved|Psychosis cases called dependence patients

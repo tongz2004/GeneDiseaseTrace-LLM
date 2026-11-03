@@ -1,0 +1,14 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; mouse diet and adipocyte study
+E|G1|gene|adiponectin|adiponectin;Adiponectin|p|species_unresolved||||
+E|G2|gene|ALDH1A1|ALDH1A1;aldehyde dehydrogenase A1|p|species_unresolved||||
+E|G3|gene|RARg|RARg|p|species_unresolved,undefined_abbreviation||||
+E|D1|disease|cardiovascular diseases|cardiovascular diseases|r|||||
+E|S1|phenotype|adiposity|adiposity|r|||||
+X|retinoic acid receptor|b0002|receptor family, not single gene
+X|retinoid X receptor|b0002|receptor family, not single gene
+X|RAR|b0002|family abbreviation, not single gene
+EV|V1|b0002.s2|bg|co|na|do
+P|G1|D1|nf|-|||||Co-occurrence with high-fat diet outcomes only
+F|F1|group_comparison|adiponectin, ALDH1A1 expression vs diet|WAT of high-fat-fed mice|unknown|mixed|not_reported|V1|abstract only; no disease outcome
+R|surface form|b0002.s7|RARa written as "(RAR)a"; no verbatim whole-word surface|Did not create an RARa entity; no disease pairs affected

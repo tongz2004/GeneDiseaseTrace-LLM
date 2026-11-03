@@ -1,0 +1,20 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|ADCY5|ADCY5;adenylate cyclase 5;Adenylate cyclase 5|r||human||
+E|G2|gene|Adcy5 (rat ortholog)|Adcy5|r||non-human|G1|
+E|G3|gene|Sec22a (rat)|Sec22a|r||non-human||
+E|D1|disease|type 2 diabetes|type 2 diabetes;Type 2 Diabetes|r||||
+E|D2|phenotype|fasting glucose levels|fasting glucose levels|r||||
+E|D3|phenotype|insulin secretion|insulin secretion|r||||
+X|H3K27ac|b0002|histone modification mark, not a gene
+X|MIN6|b0002|mouse beta-cell line, not a gene
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s4|ts|res|aff|rr
+EV|V3|b0002.s5|ts|res|aff|rr,cmp
+EV|V4|b0002.s6|ts|res|aff|mi
+EV|V5|b0001.s1+b0002.s7|ts|int|aff|eda
+P|G1|D1|sup|a|both|sup:a:bg:V1;sup:a:ts:V2+V3+V5||V4|GWAS variants plus eQTL and enhancer evidence
+P|G3|D1|nf|-||||V4|Sec22a expression unaffected; no disease link
+F|F1|association|T2D risk alleles; ADCY5 expression|human islets|unknown|negative|unread|V2|abstract only
+F|F2|mechanism|rs11708067-A; enhancer activity, protein binding|human islets; rodent beta-cells|unknown|negative|unread|V3|abstract only
+F|F3|mechanism|enhancer deletion; Adcy5 expression, insulin secretion|rat 832/13 cells|unknown|negative|partial|V4|cell line model

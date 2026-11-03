@@ -1,0 +1,25 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text
+E|G1|gene|SLC6A9 (GlyT1)|glycine transporter-1;GlyT1|r||human||
+E|G2|gene|NMDA receptor (GRIN family)|NMDA receptor|p|ambiguous_mapping|human||
+E|G3|gene|Grin1 (Nr1)|Nr1|r||non-human|G2|
+E|G4|gene|Slc6a3 (DAT)|dopamine transporter;DAT|r||non-human||
+E|D1|disease|Schizophrenia|Schizophrenia|r||||
+E|D2|symptom|schizophrenic-like symptoms|schizophrenic-like symptoms|r||||
+E|D3|phenotype|hyperactivity|hyperactivity|r||||
+E|D4|phenotype|catalepsy|catalepsy|r||||
+X|SSR103800|b0001|GlyT1 inhibitor compound code, not a gene
+X|MK-801|b0002|NMDA antagonist drug, not a gene
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s3+b0002.s4|bg|hyp|hyp|ho
+EV|V3|b0002.s6|ts|res|aff|rr,mi
+EV|V4|b0002.s7|ts|res|aff|rr,mi
+EV|V5|b0002.s10|ts|int|aff|rr
+P|G2|D1|sup|a|bg|sup:a:bg:V1||V2|NMDA receptor dysfunction linked to schizophrenia
+P|G2|D2|sup|c|bg|sup:c:bg:V1|||NMDA antagonists produce schizophrenic-like symptoms
+P|G1|D1|unc|-|both|unc:a:both:V2+V5|hedged_claim,support_basis_unresolved||GlyT1 inhibition antipsychotic-like; drug target only
+P|G3|D3|sup|c|ts|sup:c:ts:V3|||Nr1 knockdown mice spontaneously hyperactive
+P|G4|D3|sup|c|ts|sup:c:ts:V4|||DAT knockout mice show hyperactivity
+P|G2|D3|sup|c|ts|sup:c:ts:V3|||NMDA antagonist MK-801 induces hyperactivity
+F|F1|mechanism|SSR103800; hyperactivity|MK-801-treated and Nr1 neo-/- mice|unknown|negative|unread|V3|abstract only, partial reversal
+F|F2|group_comparison|SSR103800; hyperactivity|amphetamine-treated and DAT-/- mice|not_significant|null|unread|V4|abstract only

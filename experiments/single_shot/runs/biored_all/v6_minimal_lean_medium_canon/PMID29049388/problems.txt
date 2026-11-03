@@ -1,0 +1,2 @@
+P G1-D4: endpoints must be a primary gene and a primary target in the same unit
+P G1-D7: endpoints must be a primary gene and a primary target in the same unit

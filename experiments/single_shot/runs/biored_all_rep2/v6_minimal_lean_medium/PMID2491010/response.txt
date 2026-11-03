@@ -1,0 +1,15 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|DMD (dystrophin)|DMD;dystrophin|r|ambiguous_mapping|human||
+E|D1|disease|Duchenne muscular dystrophy|Duchenne muscular dystrophy;DMD|r|ambiguous_mapping|||
+E|D2|disease|Becker muscular dystrophy|Becker muscular dystrophy;BMD|r||||
+X|DXS269|b0002|genomic locus/probe name, not a disease gene
+X|DXS239|b0002|genomic locus/probe name, not a disease gene
+X|GMGX11|b0002|genomic probe identifier
+EV|V1|b0002.s1|ts|res|aff|rr,do
+EV|V2|b0002.s7+b0002.s8|ts|res|aff|rr,cmp
+EV|V3|b0002.s9|bg|bgr|aff|ebr
+P|G1|D1|sup|c|ts|sup:c:ts:V1+V2||V3|Frameshift DMD deletions cause Duchenne phenotype
+P|G1|D2|sup|c|ts|sup:c:ts:V1+V2||V3|In-frame DMD deletions yield Becker phenotype
+F|F1|group_comparison|DMD deletion reading frame vs phenotype severity|38 classifiable deletion patients|unknown|positive|partial|V2|two exceptions; no statistical test
+C|C1|reading-frame rule at DMD 5' end|b0002.s9|noncritical|resolved|Malhotra contrast concerns different gene region

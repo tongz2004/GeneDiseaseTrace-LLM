@@ -1,0 +1,2 @@
+﻿paper_id,result,calls,seconds,cost_usd,input_tokens,cache_read_tokens,output_tokens,thinking_tokens,genes,targets,auxiliary,pairs,supported,uncertain,explicit_negative,failed_checks
+PMC10487392,ok,1,63.9,0,50645,37632,2969,0,2,10,27,20,2,2,0,

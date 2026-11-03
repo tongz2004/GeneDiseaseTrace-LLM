@@ -1,0 +1,29 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only; no full text or attachments.
+E|G1|gene|transgelin|Transgelin;transgelin|r|||| 
+E|G2|gene|HOOK1|HOOK1|r|||| 
+E|G3|gene|SDCCAG8|SDCCAG8|r|||| 
+E|G4|gene|ENAH/Mena|ENAH/Mena|r|||| 
+E|G5|gene|TNS1|TNS1|r|||| 
+E|G6|gene|EMB|EMB|r|||| 
+E|G7|gene|BCL11B|BCL11B|r|||| 
+E|G8|gene|PTPRD|PTPRD|r|||| 
+E|D1|disease|cancer|cancer|r|||| 
+E|D2|disease|colorectal cancer|colorectal cancer;CRC|r|||D1|
+E|D3|clinical_event|metastasis|metastasis;metastases|r|||| 
+E|D4|clinical_event|lung metastases|lung metastases|r|||D3|
+E|A1|phenotype|aggressive tumor behavior|aggressive tumor behavior|r|||| 
+E|A2|phenotype|advanced stage|advanced stage|r|||| 
+E|A3|phenotype|poor prognosis|poor prognosis|r|||| 
+E|A4|phenotype|invasiveness|invasiveness|r|||| 
+E|A5|phenotype|growth at low density|growth at low density|r|||| 
+E|A6|phenotype|growth in soft agar|growth in soft agar|r|||| 
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s3+b0002.s6+b0002.s7+b0002.s8+b0002.s11|ts|res|aff|rr,mi
+EV|V3|b0002.s7|ts|res|aff|rr,mi
+EV|V4|b0002.s9+b0002.s10|ts|res|na|rr
+P|G1|D1|sup|a|bg|sup:a:bg:V1||||Background links elevated expression to aggressive cancer behavior.
+P|G1|D2|sup|c|ts|sup:c:ts:V2||||Manipulation changes colorectal cancer metastatic behavior in mice.
+P|G1|D3|sup|c|ts|sup:c:ts:V2||||Reciprocal interventions alter experimental metastasis.
+P|G1|D4|sup|c|ts|sup:c:ts:V3||||Overexpression increases lung metastasis number and size.
+F|F1|descriptive|transgelin; HOOK1; SDCCAG8; ENAH/Mena; TNS1; EMB; BCL11B; PTPRD|transgelin-overexpressing CRC cells|unknown|mixed|not_reported|V4|Expression changes alone establish no disease attribution.

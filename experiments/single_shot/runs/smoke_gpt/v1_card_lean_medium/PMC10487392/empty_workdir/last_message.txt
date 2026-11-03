@@ -1,0 +1,72 @@
+META|GPT-6|seen: no
+SCOPE|Supplied text, tables, captions; references removed; external materials unread.
+E|G1|gene|VPS13B|VPS13B;vacuolar protein sorting 13 homolog B;13B vacuolar sorting protein|r||human||
+E|G2|gene|SERPINB1|SERPINB1;SerpinB1|r||human||
+E|D1|disease|Cohen syndrome|Cohen syndrome|r|||D9|
+E|D2|disease|neutropenia|neutropenia|r||||
+E|D3|disease|myopia|myopia|r||||
+E|D4|disease|retinal dystrophy|retinal dystrophy|r||||
+E|D5|disease|heart disease|heart disease|r||||
+E|D6|disease|Cerebellar dysplasia|Cerebellar dysplasia|r||||
+E|D7|disease|Autism|Autism|r||||
+E|D8|disease|infection|infection|r||||
+E|D9|disease|neurodevelopmental disease|neurodevelopmental disease|r||||
+E|D10|disease|genetic diseases|genetic diseases|r||||
+E|A1|phenotype|hypermobile joints|hypermobile joints|r||||
+E|A2|phenotype|microcephaly|microcephaly|r||||
+E|A3|phenotype|intellectual disabilities|intellectual disabilities|r||||
+E|A4|phenotype|craniofacial and limb anomalies|craniofacial and limb anomalies|r||||
+E|A5|phenotype|psychomotor retardation|psychomotor retardation|r||||
+E|A6|phenotype|developmental retardation|developmental retardation|r||||
+E|A7|phenotype|short stature|short stature|r||||
+E|A8|phenotype|hypotonia|hypotonia|r||||
+E|A9|phenotype|musculoskeletal abnormalities|musculoskeletal abnormalities|r||||
+E|A10|phenotype|facial abnormalities|facial abnormalities|r||||
+E|A11|phenotype|short philtrum|short philtrum|r||||
+E|A12|phenotype|micrognathia|micrognathia|r||||
+E|A13|phenotype|psychomotor developmental delay|psychomotor developmental delay|r||||
+E|A14|phenotype|speech delay|speech delay|r||||
+E|A15|phenotype|hypertelorism|hypertelorism|r||||
+E|A16|phenotype|thick eyebrows|thick eyebrows|r||||
+E|A17|phenotype|thick bushy hair|thick bushy hair|r||||
+E|A18|phenotype|low hairline|low hairline|r||||
+E|A19|phenotype|A widened brain gap|A widened brain gap|r||||
+E|A20|phenotype|right deviation of electrical axis|right deviation of electrical axis|r||||
+E|A21|phenotype|obesity|obesity|r||||
+E|A22|phenotype|mental deficiency|mental deficiency|r||||
+E|A23|phenotype|facial, oral, ocular and limb anomalies|facial, oral, ocular and limb anomalies|r||||
+E|A24|phenotype|leukopenia|leukopenia|r||||
+E|A25|phenotype|refractive errors|refractive errors|r||||
+E|A26|phenotype|joint hyperactivity|joint hyperactivity|r||||
+E|A27|phenotype|multi-system involvement|multi-system involvement|r||||
+X|NM_017890.4|b0005|transcript_identifier
+X|c.6940+1G > T|b0052|variant_identifier
+X|E3-19 del|b0055|variant_identifier
+X|c10334_10335del|b0019|variant_identifier
+X|c.10334_10335del|b0060|variant_identifier
+X|granulocyte colony-stimulating factor|b0069|therapeutic_protein_not_gene
+EV|V1|b0003.s1+b0009.s3|bg|bgr|aff|ebr
+EV|V2|b0003.s3+b0010.s3+b0066.s2+b0068.s6|bg|bgr|aff|ebr
+EV|V3|b0003.s4+b0011.s1+b0014.s6+b0014.s7+b0014.s8+b0019.s5+b0019.s6|ts|res|aff|rr,eda
+EV|V4|b0066.s2|ts|int|hyp|ho
+EV|V5|b0071.s1|ts|res|aff|rr,eda
+EV|V6|b0067.s3|bg|int|pre|unc
+EV|V7|b0067.s4|bg|bgr|aff|ebr
+EV|V8|b0067.s4|bg|int|hyp|ho
+EV|V9|b0068.s7|bg|neg|neg|ebr
+EV|V10|b0014.s9+b0014.s10+b0016.s1+b0020.s1+b0021.s1|ts|res|na|do
+EV|V11|b0052.s1+b0054.s1|bg|bgr|na|ebr
+EV|V12|b0055.s1+b0060.s1|ts|int|na|unc
+EV|V13|b0067.s5|unk|int|hyp|ho
+EV|V14|b0067.s6|bg|bgr|na|ebr
+P|G1|D1|sup|c|both|sup:c:bg:V1;sup:a:bg:V2;sup:a:ts:V3;unc:-:ts:V4;sup:c:ts:V5;neg:-:bg:V9|||Explicit causal attribution; severity correlation separately negative.
+P|G1|D2|unc|-|bg|unc:-:bg:V6|presupposed_only,hedged_claim||Causal link presupposed within a possible mechanism.
+P|G2|D1|sup|a|bg|sup:a:bg:V7|||Reduced expression explicitly reported in Cohen syndrome neutrophils.
+P|G2|D2|unc|-|bg|unc:-:bg:V8|hedged_claim||Proposed cause of neutropenia remains qualified.
+F|F1|correlation|VPS13B variant; Cohen syndrome severity|previous research reports|not_significant|null|not_reported|V9|Tested relation type: correlation; no numerical statistics.
+F|F2|descriptive|VPS13B variants; parental inheritance|two cases and parents|not_applicable|not_applicable|not_applicable|V10|Inheritance does not establish disease co-segregation.
+F|F3|mechanism|VPS13B splice variant; exon skipping|previous functional studies|not_applicable|not_applicable|not_reported|V11|
+F|F4|mechanism|VPS13B deletions; protein disruption|two reported cases|unknown|not_applicable|not_reported|V12|Predicted consequences; direct functional verification unspecified.
+F|F5|hypothesis|VPS13B; developmental retardation; Golgi protein|unspecified|not_applicable|not_applicable|not_applicable|V13|Probable mechanism only.
+F|F6|mechanism|VPS13B; functional neuronal networks|previous research|unknown|unknown|not_reported|V14|
+C|C1|Shared splice variant novelty|b0005.s3+b0052.s1+b0053.s1+b0066.s2|noncritical|unresolved|Previously reported variant conflicts with blanket novelty.

@@ -1,0 +1,15 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text available
+E|G1|gene|FRMD7|FRMD7|r||human||
+E|G2|gene|androgen receptor|androgen receptor|r||human||
+E|D1|disease|X linked nystagmus|X linked nystagmus;NYS;X linked NYS|r||||
+E|PH1|phenotype|skewed X inactivation|Skewed X inactivation|r||||
+X|Xq26|b0002.s6|chromosomal locus, not a gene
+X|Xp11|b0002.s2|chromosomal locus, not a gene
+EV|V1|b0002.s7+b0002.s8|ts|res|aff|rr
+EV|V2|b0002.s11+b0001.s1|ts|int|aff|eda
+EV|V3|b0002.s4|ts|co|na|do
+P|G1|D1|sup|c|ts|sup:c:ts:V1+V2|||Novel p.R229G mutation causes NYS phenotype
+P|G2|D1|nf|-|||||V3|AR CAG repeat used only as assay
+F|F1|association|FRMD7 p.R229G and NYS|Turkish X linked NYS family|unknown|positive|not_reported|V1+V2|absent in 120 controls
+F|F2|descriptive|skewed X inactivation in carriers|affected heterozygous females|unknown|not_applicable|not_reported|V2|abstract only

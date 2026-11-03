@@ -1,0 +1,31 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|BMP4|BMP4;bone morphogenetic protein 4|r||human||
+E|G2|gene|BMP5|BMP5|r||human||
+E|G3|gene|Bmp5 (mouse)|bmp5;bone morphogenetic protein 5|r||non-human|G2|
+E|G4|gene|BMP2|BMP2|r||human||
+E|D1|disease|fibrodysplasia ossificans progressiva|fibrodysplasia ossificans progressiva;FOP|r||||
+E|D2|disease|heterotopic ossification|heterotopic ossification|r||||
+E|D3|disease|axial skeletal malformations|axial skeletal malformations;axial skeletal abnormalities;malformations of the axial skeleton|r||||
+E|D4|disease|murine short ear syndrome|short ear syndrome|r||||
+E|D5|phenotype|malformed external ears|malformed external ears|r||||
+X|new syndrome|b0001|unnamed proposed syndrome, not a distinct entity
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s3|bg|bgr|aff|ebr
+EV|V3|b0001.s1+b0002.s6|ts|res|aff|rr,cmp
+EV|V4|b0002.s7|ts|int|aff|rr
+EV|V5|b0002.s6|ts|neg|neg|rr,cmp
+EV|V6|b0002.s4|ts|co|na|do
+P|G1|D1|sup|a|bg|sup:a:bg:V1||V6|dysregulated BMP4 expression in FOP cells
+P|G1|D2|sup|a|ts|sup:a:ts:V3+V4||V6|overexpressed in patient with heterotopic ossification
+P|G1|D3|sup|a|ts|sup:a:ts:V3+V4||V6|overexpressed in patient with axial malformations
+P|G2|D2|sup|a|ts|sup:a:ts:V3+V4||V6|overexpressed in patient with heterotopic ossification
+P|G2|D3|sup|a|ts|sup:a:ts:V3+V4||V6|overexpressed in patient with axial malformations
+P|G3|D4|sup|c|bg|sup:c:bg:V2|||loss-of-function mutations cause short ear syndrome
+P|G3|D3|sup|c|bg|sup:c:bg:V2|||mouse mutations cause axial skeletal malformations
+P|G4|D2|neg|-|ts|neg:-:ts:V5|||BMP2 mRNA unchanged in patient
+P|G4|D3|neg|-|ts|neg:-:ts:V5|||BMP2 mRNA unchanged in patient
+P|G2|D1|nf|-|||||V4|FOP cited only as phenotypic similarity
+F|F1|group_comparison|BMP4, BMP5 mRNA and protein levels|patient transformed lymphocytes|unknown|positive|not_reported|V3|single patient; abstract only
+F|F2|group_comparison|BMP2 mRNA level|patient transformed lymphocytes|unknown|null|not_reported|V5|single patient; abstract only
+R|explicit_negative scope|b0002.s6|Unchanged BMP2 expression in one patient; weak basis for negation|marked neg from ts negative result

@@ -1,0 +1,33 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only; no full text or attachments.
+E|G1|ambiguous_gene|Serum amyloid A|Serum Amyloid A;Serum amyloid A;SAA|u|ambiguous_mapping|||
+E|G2|gene|SAA1|SAA1|r|||||
+E|G3|gene|SAA3|SAA3|r|||||
+E|G4|gene|MCP-1|MCP-1|r|||||
+E|G5|gene|RANTES|RANTES|r|||||
+E|G6|gene|MMP9|MMP9|r|||||
+E|G7|gene|caspase 3|caspase 3|r|||||
+E|G8|ambiguous_gene|PARP|PARP|u|undefined_abbreviation,ambiguous_mapping|||
+E|D1|disease|liver injury|liver injury|r|||||
+E|T1|phenotype|fibrogenesis|fibrogenesis|r|||||
+E|T2|phenotype|inflammation|inflammation|r|||||
+E|T3|phenotype|proliferation|proliferation|r|||||
+E|T4|phenotype|cell death|cell death|r|||||
+E|T5|phenotype|apoptosis|apoptosis|r|||||
+X|IkappaB kinase|b0002|complex, no single-gene identity specified
+X|c-Jun N-terminal kinase|b0002|gene family, no individual member specified
+X|JNK|b0002|gene family, no individual member specified
+X|Erk|b0002|gene family, no individual member specified
+X|Akt|b0002|gene family, no individual member specified
+X|NF-kappaB|b0002|complex, no single-gene identity specified
+X|MAP kinases|b0002|gene group
+EV|V1|b0002.s2|unk|aim|q|none
+EV|V2|b0002.s5|ts|res|na|rr
+EV|V3|b0002.s6|ts|res|na|rr
+EV|V4|b0002.s9|ts|res|na|rr
+EV|V5|b0002.s10|ts|int|hyp|ho
+P|G1|D1|nf|-|| | |V1|Unelucidated role supplies no finding or attribution.
+F|F1|mechanism|SAA; MCP-1; RANTES; MMP9 transcription|HSCs|unknown|positive|not_reported|V2|SAA gene identity unresolved.
+F|F2|mechanism|SAA; caspase 3; PARP cleavage|Primary HSCs with NF-kappaB blockade|unknown|positive|not_reported|V3|Cellular effects; no disease attribution.
+F|F3|group_comparison|SAA1; SAA3 hepatic mRNA|CCl4 treatment and bile duct ligation models|unknown|positive|not_reported|V4|Comparator and species unspecified.
+F|F4|hypothesis|SAA; fibrogenic responses|HSCs|not_applicable|mixed|not_applicable|V5|Authors' hedged interpretation.

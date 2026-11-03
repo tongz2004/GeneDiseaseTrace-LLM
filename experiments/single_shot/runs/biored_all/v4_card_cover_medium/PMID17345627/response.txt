@@ -1,0 +1,32 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; single case report, no tables
+E|G1|gene|BMP4|BMP4;bone morphogenetic protein 4|r|||human||
+E|G2|gene|BMP5|BMP5|r|||human||
+E|G3|gene|bmp5 (murine)|bmp5;bone morphogenetic protein 5;BMP5|r|||non-human||
+E|G4|gene|BMP2|BMP2|r|||human||
+E|D1|disease|fibrodysplasia ossificans progressiva|fibrodysplasia ossificans progressiva;FOP|r|||||
+E|D2|disease|murine short ear syndrome|short ear syndrome|r|||||
+E|D3|disease|axial skeletal malformations|axial skeletal malformations|r|||||
+E|D4|disease|axial skeletal abnormalities|axial skeletal abnormalities|r|||||
+E|D5|disease|heterotopic ossification|heterotopic ossification|r|||||
+X|BMPs|b0002|gene family, not single gene
+X|short ear mouse|b0002|mouse model name, not a disease
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s3|bg|bgr|aff|ebr
+EV|V3|b0002.s6|ts|res|na|rr,do
+EV|V4|b0002.s7|ts|int|hyp|ho
+EV|V5|b0001.s1|ts|co|na|do
+P|G1|D1|sup|a|bg|sup:a:bg:V1|||Dysregulated BMP4 expression found in FOP patient cells
+P|G2|D1|nf|-||||||Only similarity to FOP stated
+P|G3|D2|sup|c|bg|sup:c:bg:V2|||Loss-of-function mutations cause murine short ear syndrome
+P|G3|D3|nf|-||||||Malformations are syndrome features; no propagation
+P|G1|D3|unc|-||unc:-:ts:V5+V3|hedged_claim,scope||Overexpression in single case; link only suggested
+P|G2|D3|unc|-||unc:-:ts:V5+V3|hedged_claim,scope||Overexpression in single case; link only suggested
+P|G1|D4|unc|-||unc:-:ts:V4|hedged_claim|V3|Authors say data suggest association
+P|G2|D4|unc|-||unc:-:ts:V4|hedged_claim|V3|Authors say data suggest association
+P|G1|D5|nf|-||||||Descriptive co-occurrence in title only
+P|G2|D5|nf|-||||||Descriptive co-occurrence in title only
+P|G1|D2|nf|-||||||Only similarity to short ear mouse
+P|G2|D2|nf|-||||||Only similarity to short ear mouse
+F|F1|descriptive|BMP4, BMP5, BMP2 mRNA/protein levels|patient transformed lymphocytes|unknown|positive|not_reported|V3|single patient; BMP2 unchanged
+R|entity typing|b0001.s1|Axial skeletal malformations and heterotopic ossification sit between disease and phenotype.|Treated them as primary disease endpoints.

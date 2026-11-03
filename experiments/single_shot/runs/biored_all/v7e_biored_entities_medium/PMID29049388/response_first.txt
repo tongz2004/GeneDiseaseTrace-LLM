@@ -1,0 +1,41 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|NPHS2 (human podocin)|NPHS2;podocin|r||human||
+E|G2|gene|Nphs2 (mouse podocin)|podocin;NPHS2|r||non-human||
+E|G3|gene|miR-21 (mouse)|miRNA21|r||non-human||
+E|G4|gene|miR-193a (mouse)|miRNA-193a|r||non-human||
+E|D1|disease|nephrotic syndrome|nephrotic syndrome;hereditary nephrotic syndrome|r||||
+E|D2|disease|end-stage renal disease|end-stage renal disease|r||||
+E|D3|disease|renal failure|renal failure;lethal renal failure;progressive renal failure|r||||
+E|D4|disease|proteinuria|proteinuria|r||||
+E|D5|disease|foot process effacement|effacement|r||||
+E|D6|disease|glomerulosclerosis|glomerulosclerosis;segmentally sclerosed glomeruli|r||||
+E|D7|disease|tubulointerstitial fibrosis|tubulointerstitial fibrosis|r||||
+E|D8|disease|developmental arrest of podocytes|developmental arrest of podocytes|r||||
+X|Cre recombinase|b0002|Tool transgene, not disease-related
+EV|V1|b0002.s1|bg|bgr|aff|ebr,eda
+EV|V2|b0002.s2|bg|bgr|aff|ebr
+EV|V3|b0002.s3|bg|bgr|aff|ebr,mi
+EV|V4|b0002.s4+b0002.s5|ts|res|aff|rr,mi
+EV|V5|b0002.s6|ts|res|aff|rr,mi
+EV|V6|b0002.s7|ts|res|aff|rr,mi
+EV|V7|b0002.s9|ts|res|aff|rr,mi
+EV|V8|b0002.s10|ts|res|aff|rr,mi
+EV|V9|b0002.s13|ts|int|aff|rr,mi
+EV|V10|b0002.s12|ts|res|na|do
+P|G1|D1|sup|c|bg|sup:c:bg:V1|||NPHS2 mutations cause hereditary nephrotic syndrome
+P|G1|D2|sup|a|bg|sup:a:bg:V2|||R138Q associated with rapid ESRD progression
+P|G2|D1|sup|c|ts|sup:c:ts:V9|||Inducible R140Q model reproduces nephrotic syndrome
+P|G2|D3|sup|c|both|sup:c:bg:V3;sup:c:ts:V5|||Knock-in and induced mutants develop renal failure
+P|G2|D4|sup|c|ts|sup:c:ts:V4|||R140Q induction causes proteinuria
+P|G2|D5|sup|c|ts|sup:c:ts:V6|||Induction causes foot process effacement
+P|G2|D6|sup|c|ts|sup:c:ts:V7|||Progressive segmental sclerosis after induction
+P|G2|D7|sup|c|ts|sup:c:ts:V8|||Fibrosis develops at later disease stage
+P|G2|D8|sup|c|bg|sup:c:bg:V3|||Neonatal knock-in shows podocyte developmental arrest
+P|G3|D1|unc|a|ts|unc:a:ts:V10|support_basis_unresolved|||Expression rises during disease; descriptive only
+P|G4|D1|unc|a|ts|unc:a:ts:V10|support_basis_unresolved|||Expression peaks during disease; descriptive only
+F|F1|descriptive|R140Q podocin mRNA and protein|induced R140Q mice|unknown|mixed|not_reported|V4|mRNA up, protein down
+F|F2|correlation|early proteinuria vs later fibrosis|induced R140Q mice|unknown|positive|not_reported|V8|
+F|F3|descriptive|miRNA21, miRNA-193a expression time course|induced R140Q mice|unknown|positive|not_reported|V10|
+F|F4|descriptive|survival after induction|induced R140Q mice|not_applicable|not_applicable|partial|V5|median 12 weeks only
+R|gene species|b0002.s4|NPHS2 symbol names the mouse model allele|Listed NPHS2 as a surface for mouse G2 too

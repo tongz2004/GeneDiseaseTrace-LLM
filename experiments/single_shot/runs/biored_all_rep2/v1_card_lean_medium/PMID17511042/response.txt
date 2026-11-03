@@ -1,0 +1,15 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|D1|disease|chronic hepatitis C|chronic hepatitis C|r||||
+E|D2|disease|delusional parasitosis|delusional parasitosis|r||||
+E|D3|disease|psychogenic parasitosis|psychogenic parasitosis|p|other|||
+E|D4|disease|depression|depression|r||||
+E|D5|disease|psychosis|psychosis|r||||
+E|S1|symptom|seeing parasites|seeing parasites|r||||
+X|pegylated interferon alpha-2b|b0002|therapeutic drug, not a gene endpoint
+X|interferon|b0002|therapeutic drug class, not a gene endpoint
+X|ribavirin|b0002|chemical drug, not a gene
+EV|V1|b0002.s5+b0002.s8|ts|res|aff|rr,do
+F|F1|descriptive|pegylated interferon alpha-2b exposure; delusional parasitosis|single chronic hepatitis C patient|not_applicable|positive|not_applicable|V1|single case; drug, not gene
+R|drug vs gene|b0002.s5|Interferon alpha-2b is a therapeutic protein drug, not a gene finding.|Excluded as a drug; no gene entities, so no pairs.
+R|merging|b0002.s4|Psychogenic and delusional parasitosis are not stated as synonyms; they are only implied to co-refer.|Kept as separate entities; D3 is marked provisional.

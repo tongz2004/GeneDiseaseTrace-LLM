@@ -1,0 +1,12 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|DRD1|D1|p|species_unresolved,ambiguous_mapping||||
+E|G2|gene|DRD2|D2|p|species_unresolved,ambiguous_mapping||||
+E|D1|disease|amnesia|amnesia|r|||||
+X|SCH 23390|b0002.s6|radioligand drug code, not a gene
+X|DM-9384|b0001.s1|drug code for nefiracetam, not a gene
+EV|V1|b0002.s6|ts|neg|na|rr
+P|G1|D1|nf|-||||V1|Drug binding to receptor only, not disease link
+P|G2|D1|nf|-||||V1|Drug binding to receptor only, not disease link
+F|F1|mechanism|nefiracetam vs D1/D2 radioligand binding|in vitro receptor binding|not_significant|null|not_reported|V1|abstract only; no gene–disease test
+R|nf context listing|b0002.s6|Dopaminergic amnesia model implies receptors but none tested against disease.|Listed as nf with context only.

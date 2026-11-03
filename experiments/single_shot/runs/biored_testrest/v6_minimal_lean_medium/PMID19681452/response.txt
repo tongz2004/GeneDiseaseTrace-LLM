@@ -1,0 +1,9 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no genes mentioned
+E|D1|disease|globus pallidus infarction|haemorrhagic infarction;infarctions;ischemia|r|||||
+E|D2|disease|basal ganglia infarction|basal ganglia infarcts|r|||||
+E|D3|disease|stroke|stroke|r|||||
+E|D4|disease|cardiac arrhythmia|cardiac arrhythmia|r|||||
+E|D5|disease|respiratory dysfunction|respiratory dysfunction|r|||||
+E|D6|disease|cerebral hypoperfusion|cerebral hypoperfusion|r|||||
+E|D7|disease|drug intoxication|intoxication|r|||||

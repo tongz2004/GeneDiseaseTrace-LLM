@@ -1,0 +1,32 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|REL|c-REL|r||human||
+E|G2|gene|BCL2|BCL-2|r||human||
+E|G3|gene|MALT1|MALT1|r||human||
+E|G4|gene|CDKN2A|CDKN2A|r||human||
+E|G5|gene|CDKN2B|CDKN2B|r||human||
+E|G6|gene|NSG-x|NSG-x|p|ambiguous_mapping|human||
+E|D1|disease|primary cutaneous large B-cell lymphoma|primary cutaneous large B-cell lymphoma;PCLBCL|r|||
+E|D2|disease|primary cutaneous follicle center lymphoma|primary cutaneous follicle center lymphoma;PCFCL|r|||D1
+E|D3|disease|primary cutaneous large B-cell lymphoma, leg type|PCLBCL, leg type;lymphoma|r|||D1
+X|2p16.1|b0002|chromosomal locus, not a gene
+X|9p21.3|b0002|chromosomal locus containing genes, not a gene
+X|18q21.31-q21.33|b0002|chromosomal locus, not a gene
+EV|V1|b0002.s3+b0002.s4|ts|res|aff|rr
+EV|V2|b0002.s5|ts|res|aff|rr
+EV|V3|b0002.s5+b0002.s6|ts|res|aff|rr,cmp
+EV|V4|b0002.s7|ts|res|aff|rr,cmp
+EV|V5|b0002.s8|ts|res|aff|rr
+EV|V6|b0002.s10|ts|int|hyp|ho
+P|G1|D2|sup|a|ts|sup:a:ts:V1|||c-REL amplification at 2p16.1 in PCFCL
+P|G2|D3|sup|a|ts|sup:a:ts:V2|||BCL-2 amplification in leg type
+P|G3|D3|sup|a|ts|sup:a:ts:V2|||MALT1 amplification in leg type
+P|G4|D3|sup|a|ts|sup:a:ts:V3+V4+V5|||Deletion/methylation in leg type, fatal outcome
+P|G5|D3|sup|a|ts|sup:a:ts:V3|||Within deleted 9p21.3 region in leg type
+P|G6|D3|sup|a|ts|sup:a:ts:V3|identity||Within deleted 9p21.3 region; gene identity provisional
+P|G4|D2|nf|-|||||V3+V4|No CDKN2A deletion/methylation found in PCFCL
+F|F1|group_comparison|9p21.3 homozygous deletion|leg type vs PCFCL|unknown|positive|partial|V3|abstract only; no test reported
+F|F2|group_comparison|CDKN2A promoter complete methylation|leg type vs PCFCL|unknown|positive|partial|V4|2 cases only
+F|F3|association|CDKN2A inactivation and lymphoma death|PCLBCL, leg type|unknown|positive|partial|V5+V6|7 patients; prognostic role hedged
+F|F4|descriptive|c-REL amplification at 2p16.1|PCFCL|not_applicable|not_applicable|partial|V1|
+F|F5|descriptive|BCL-2/MALT1 amplification 18q21|PCLBCL, leg type|not_applicable|not_applicable|partial|V2|

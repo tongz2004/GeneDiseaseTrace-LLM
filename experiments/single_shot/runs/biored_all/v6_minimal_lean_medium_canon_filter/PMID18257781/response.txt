@@ -1,0 +1,21 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text, tables or figures
+E|G1|gene|PKD1|PKD1;polycystins 1;PC1|r|||human|
+E|G2|gene|PKD2|PKD2;PC2;polycystin-2|r|||human|
+E|G3|gene|Pkd2 (mouse)|PKD2|r|||non-human|G2
+E|D1|disease|autosomal dominant polycystic kidney disease|Autosomal dominant polycystic kidney disease;autosomal dominant polycystic kidney disease;ADPKD|r||||
+X|inherited renal diseases|b0002|generic disease class, not a specific entity
+EV|V1|b0002.s1|bg|bgr|aff|ebr,eda
+EV|V2|b0002.s3+b0002.s10|ts|res|aff|rr,eda
+EV|V3|b0002.s4|ts|res|aff|rr,cmp
+EV|V4|b0002.s6+b0002.s7|ts|res|aff|rr,cmp
+EV|V5|b0002.s9|ts|res|aff|rr,cmp
+EV|V6|b0001.s1|ts|hyp|hyp|ho
+EV|V7|b0002.s8|ts|res|aff|mi
+P|G1|D1|sup|c|bg|sup:c:bg:V1;sup:a:ts:V2|||Known cause; de novo splice variant in patient
+P|G2|D1|sup|c|bg|sup:c:bg:V1;sup:a:ts:V2+V3+V4+V5;unc:c:ts:V6|hedged_claim|V7|Known cause; homozygous variant proposed as modifier
+F|F1|group_comparison|PKD2 p.F482C carrier frequency|healthy subjects, 280 chromosomes|not_applicable|null|not_reported|V3|single-variant control screen
+F|F2|group_comparison|PKD2 expression|proband vs heterozygous daughter, control|unknown|positive|not_reported|V4|single patient
+F|F3|group_comparison|polycystin-2 channel function|p.F482C homo/heterozygotes vs controls|unknown|negative|not_reported|V5|small sample
+F|F4|mechanism|mutant Pkd2 subcellular localization|transfected mouse IMCD cells|not_applicable|not_applicable|not_applicable|V7|mouse cell model
+F|F5|hypothesis|homozygous PKD2 variant as modifier|ADPKD proband with PKD1 variant|not_applicable|not_applicable|not_applicable|V6|untested; single case

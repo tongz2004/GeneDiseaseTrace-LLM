@@ -1,0 +1,19 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|CMV UL97 protein kinase|UL97|r||non-human||
+E|G2|gene|CMV DNA polymerase (UL54)|DNA polymerase|p|ambiguous_mapping|non-human||
+E|G3|gene|CMV glycoprotein B (UL55)|glycoprotein B;gB|r||non-human||
+E|G4|gene|CMV UL10-13 region|UL10-13|p|other|non-human||
+E|D1|disease|non-Hodgkin's lymphoma|non-Hodgkin's lymphoma;lymphoma|r||||
+E|D2|ambiguous_disease|cytomegalovirus infection|infected|p|other|||
+E|P1|phenotype|ganciclovir resistance|resistance to ganciclovir|r||||
+E|P2|phenotype|foscarnet resistance|Decreased sensitivity to foscarnet|r||||
+E|P3|phenotype|ganciclovir/cidofovir cross-resistance|cross-resistance to ganciclovir and cidofovir|r||||
+EV|V1|b0002.s8|ts|res|aff|rr,eda
+EV|V2|b0002.s9|ts|res|aff|rr,eda
+EV|V3|b0002.s5+b0002.s11|ts|res|neg|rr
+P|G1|D2|unc|-|ts||identity,scope|V1|Viral gene in infection; relation is drug resistance
+F|F1|mechanism|UL97 residues 591/592/594; ganciclovir resistance|one NHL patient, seven CMV isolates|not_applicable|positive|not_reported|V1|single patient case
+F|F2|mechanism|DNA polymerase N495K, L501I; antiviral resistance|one NHL patient, seven CMV isolates|not_applicable|positive|not_reported|V2|single patient case
+F|F3|other|gB/UL10-13 variability; resistance genotype changes|one NHL patient|not_applicable|null|not_reported|V3|single patient case
+R|gene-phenotype pairs|b0002.s8-s9|Drug resistance is a phenotype; phenotypes cannot be P targets.|Recorded resistance links as F findings, not P pairs.

@@ -1,0 +1,10 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; case report, no genes identified
+E|D1|disease|delusional parasitosis|delusional parasitosis;psychogenic parasitosis|r||||
+E|D2|disease|chronic hepatitis C|chronic hepatitis C|r||||
+E|D3|disease|depression|depression|r||||
+E|D4|disease|psychosis|psychosis|r||||
+X|pegylated interferon alpha-2b|b0001|therapeutic drug (chemical), not a gene mention
+X|interferon|b0002|drug therapy class, treated as chemical not gene
+X|ribavirin|b0001|antiviral drug, not a gene
+R|drug-protein ambiguity|b0002.s8|Interferon alpha-2b drug-induced parasitosis could read as gene-disease|Treated as chemical; no gene-disease pairs listed

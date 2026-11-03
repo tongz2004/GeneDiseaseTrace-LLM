@@ -1,0 +1,27 @@
+META|GPT-6|seen: no
+SCOPE|Supplied title and abstract only; no full text or attachments.
+E|G1|gene|ADORA2A|ADORA2A;Adenosine A(2A) receptor gene;adenosine A(2A) receptor gene;adenosine A(2A) receptor|r||human||
+E|D1|disease|autism spectrum disorder|autism spectrum disorder;Autism spectrum disorders;ASDs;ASD|r|||| 
+E|D2|disease|panic disorder|panic disorder|r||||
+E|D3|disease|22q11.2 deletion syndrome|22q11.2 deletion syndrome|r||||
+E|S1|symptom|anxiety|anxiety|r||||
+E|S2|phenotype|autistic symptoms|autistic symptoms|r||||
+E|S3|phenotype|ASD symptoms|ASD symptoms|r||||
+E|S4|phenotype|22q11.2 deletions|22q11.2 deletions|r||||
+E|S5|phenotype|duplications|duplications|r||||
+X|rs2236624-CC|b0002|variant_genotype
+X|rs3761422|b0002|variant_identifier
+X|rs5751876|b0002|variant_identifier
+X|rs35320474|b0002|variant_identifier
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s4+b0002.s5|ts|res|aff|rr,cmp
+EV|V3|b0002.s5|ts|res|aff|rr
+EV|V4|b0002.s6|ts|res|aff|rr
+EV|V5|b0002.s7|ts|int|hyp|ho
+EV|V6|b0002.s4|ts|co|na|do
+P|G1|D1|sup|a|ts|sup:a:ts:V2;unc:-:ts:V5|hedged_claim||Nominal disease association; broader phenotypic mediation remains speculative.
+P|G1|D2|sup|a|bg|sup:a:bg:V1||||Explicit background association.
+P|G1|D3|nf|-||||V6|Syndrome motivates genotyping; no gene–syndrome link reported.
+F|F1|association|ADORA2A rs2236624-CC versus ASD status|98 ASD individuals; 234 controls|significant|unknown|not_reported|V2|Nominal significance only; effect direction absent.
+F|F2|association|ADORA2A variants versus ASD symptom variability|ASD individuals|unknown|unknown|not_reported|V3|Three variants named; statistics absent.
+F|F3|association|ADORA2A variants versus anxiety|ASD individuals|unknown|unknown|not_reported|V4|Replication asserted; statistics absent.

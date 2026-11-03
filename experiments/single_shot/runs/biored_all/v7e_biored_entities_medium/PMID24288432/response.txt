@@ -1,0 +1,32 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|FGFR4|FGFR-4;FGF receptor 4|r||human||
+E|G2|gene|MMP9|MMP-9|r||human||
+E|G3|gene|MMP12|MMP-12|r||human||
+E|G4|gene|FGF3|FGF-3|r||human||
+E|G5|gene|FGF7|FGF-7|r||human||
+E|G6|gene|MMP1|MMP-1|r||human||
+E|G7|gene|FGF2|FGF-2|r||human||
+E|G8|gene|SIRPA|SIRPA;Signal-Regulatory Protein a|r||human||
+E|G9|gene|NKX2-1|TTF-1;Thyroid Transcription Factor-1|r||human||
+E|G10|gene|matrix metalloproteinases|matrix metalloproteinases;MMPs|r||human||
+E|G11|gene|fibroblast growth factors|fibroblast growth factors;FGFs|r||human||
+E|G12|gene|FGF receptors|FGFR|r||human||
+E|D1|disease|bronchopulmonary dysplasia|bronchopulmonary dysplasia;Bronchopulmonary dysplasia;BPD|r||||
+E|D2|disease|neonatal respiratory distress syndrome|neonatal respiratory distress syndrome;neonatal respiratory distress;RDS|r||||
+E|D3|disease|inflammation|inflammation|r||||
+X|FGF receptors 2 and 4|b0002.s7|FGFR2, MMP-2/-16, FGF-4/-18 only abbreviated; no verbatim surface
+EV|V1|b0002.s8|ts|res|aff|rr
+EV|V2|b0002.s9|ts|res|aff|rr
+EV|V3|b0001.s1+b0002.s10|ts|int|aff|rr
+EV|V4|b0002.s4|bg|hyp|hyp|ho
+P|G1|D2|sup|a|ts|sup:a:ts:V1+V2+V3|||rs1966265 associated with RDS, P=0.003
+P|G1|D1|sup|a|ts|sup:a:ts:V2+V3|||rs1966265 associated with BPD, P=0.023
+P|G2|D2|sup|a|ts|sup:a:ts:V1|||SNP associated with RDS, P<0.05
+P|G3|D2|sup|a|ts|sup:a:ts:V1|||SNP associated with RDS, P<0.05
+P|G4|D2|sup|a|ts|sup:a:ts:V1|||SNP associated with RDS, P<0.05
+P|G5|D2|sup|a|ts|sup:a:ts:V1|||SNP associated with RDS, P<0.05
+P|G10|D1|nf|-|||||V4|Candidate gene rationale only
+P|G11|D1|nf|-|||||V4|Candidate gene rationale only
+F|F1|association|FGFR4 rs1966265 and RDS, BPD|Caucasian premature neonates|significant|unknown|partial|V1+V2|Abstract only; effect direction unreported
+F|F2|association|MMP9, MMP12, FGF3, FGF7 SNPs and RDS|Caucasian premature neonates|significant|unknown|partial|V1|SNP IDs and effect sizes unreported

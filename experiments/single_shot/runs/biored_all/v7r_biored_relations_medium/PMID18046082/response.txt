@@ -1,0 +1,14 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|APOE|apolipoprotein E;apoE|r||human||
+E|D1|disease|lipoprotein glomerulopathy|Lipoprotein glomerulopathy;lipoprotein glomerulopathy;LPG|r||||
+E|S1|symptom|proteinuria|proteinuria|r||||
+X|apoE Guangzhou|b0002.s9|variant name (Arg150Pro), maps to APOE
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s6+b0002.s7+b0002.s8+b0002.s9|ts|res|aff|rr,cs
+EV|V3|b0002.s1+b0002.s11|ts|int|aff|eda
+EV|V4|b0002.s12|ts|hyp|hyp|ho
+P|G1|D1|sup|c|both|sup:c:bg:V1;sup:c:ts:V2+V3||V4|Novel APOE variant segregates with LPG in family
+F|F1|association|APOE Arg150Pro and LPG|Chinese family, 4 LPG patients|unknown|positive|not_reported|V2|one asymptomatic carrier; single family
+F|F2|mechanism|APOE Arg150Pro lipid binding|predicted|not_applicable|negative|not_applicable|V4|hypothesis, no functional data
+C|C1|APOE mutations in Chinese LPG|b0002.s2;b0002.s6|noncritical|resolved|prior report contrasted; present family finding stands

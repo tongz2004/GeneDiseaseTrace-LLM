@@ -1,0 +1,107 @@
+META|GPT-6|seen: no
+SCOPE|Provided text b0001-b0071; supplementary files and referenced studies unread.
+E|G1|gene|NTRK1|NTRK1;neurotrophic tyrosine kinase receptor type 1 gene;neurotrophic receptor tyrosine kinase 1;TRKA;neurotrophic tyrosine kinase-1 receptor|r||human||
+E|G2|gene|NGF|NGF;nerve growth factor;Nerve growth factor|r||human||
+E|G3|gene|FAAH|FAAH|r||human||
+E|G4|gene|SPTBN2|SPTBN2|r||human||
+E|G5|gene|GRM6|GRM6|r||human||
+E|G6|gene|BDNF|BDNF|r||human||
+E|G7|gene|TRPV1|TRPV1|r||human||
+E|G8|gene|CNR1|CNR1|r||human||
+E|G9|gene|OPRD1|OPRD1;DPRD1|p|suspected_typo|human||
+E|G10|gene|OPRK1|OPRK1|r||human||
+E|G11|gene|OPRM1|OPRM1|r||human||
+E|G12|gene|CNR2|CNR2|r||human||
+E|G13|gene|BDKRB2|BDKRB2|r||human||
+E|G14|gene|BDKRB1|BDKRB1|r||human||
+E|G15|gene|CX3CR1|CX3CR1|r||human||
+E|G16|gene|KCNQ3|KCNQ3|r||human||
+E|G17|gene|KCNQ2|KCNQ2|r||human||
+E|G18|gene|SCN1A|SCN1A|r||human||
+E|G19|gene|SCN11A|SCN11A|r||human||
+E|G20|gene|SCN10A|SCN10A|r||human||
+E|G21|gene|SCN8A|SCN8A|r||human||
+E|G22|gene|SCN9A|SCN9A|r||human||
+E|G23|ambiguous_gene|S100|S100;S100 protein|u|ambiguous_mapping|human||
+E|D1|disease|Congenital insensitivity to pain with anhidrosis|Congenital insensitivity to pain with anhidrosis;congenital insensitivity to pain with anhidrosis;CIPA;hereditary sensory and autonomic neuropathy Type IV;HSAN-IV|r||||
+E|D2|disease|osteochondroma|osteochondroma|r||||
+E|D3|disease|Riga-Fede disease|Riga-Fede disease|r||||
+E|D4|disease|intellectual disability|intellectual disability|r||||
+E|D5|disease|humoral immunodeficiency|humoral immunodeficiency|r||||
+E|D6|disease|palmoplantar keratoderma|palmoplantar keratoderma|r||||
+E|D7|disease|early onset renal disease|early onset renal disease|r||||
+E|D8|disease|pneumonia|pneumonia|r||||
+E|D9|disease|osteomyelitis|osteomyelitis|r||||
+E|D10|disease|bone fractures|bone fractures;fractures|r||||
+E|D11|disease|tibia fracture|tibia fracture|r|||D10|
+E|D12|disease|distal tibial fracture|distal tibial fracture|r|||D10|
+E|D13|disease|subtrochanteric fracture of the right femur|subtrochanteric fracture of the right femur|r|||D10|
+E|D14|disease|bilateral corneal ulcers of traumatic origin|bilateral corneal ulcers of traumatic origin|r||||
+E|D15|disease|heterotopic ossification|heterotopic ossification|r||||
+E|D16|disease|Charcot's joint|Charcot's joint|r||||
+E|A1|symptom|insensitivity to pain|insensitivity to pain|r||||
+E|A2|symptom|anhidrosis|anhidrosis|r||||
+E|A3|symptom|self-mutilation|self-mutilation|r||||
+E|A4|symptom|fever|fever|r||||
+E|A5|phenotype|axonal atrophy|axonal atrophy|r||||
+E|A6|phenotype|altered process of fracture consolidation|altered process of fracture consolidation|r||||
+E|A7|phenotype|ocular manifestations|ocular manifestations|r||||
+E|A8|phenotype|insulin-related difficulties|insulin-related difficulties|r||||
+E|A9|phenotype|callus formation|callus formation|r||||
+E|A10|symptom|generalized hypotonia|generalized hypotonia|r||||
+E|A11|phenotype|incomplete cephalic support|incomplete cephalic support|r||||
+E|A12|phenotype|absence of corneal reflex|absence of corneal reflex|r||||
+E|A13|symptom|dermal ulcer|dermal ulcer|r||||
+E|A14|symptom|ulcerative plaques|ulcerative plaques|r||||
+E|A15|phenotype|tongue deformities|tongue deformities|r||||
+E|A16|phenotype|hyperkeratosis|hyperkeratosis|r||||
+E|A17|phenotype|absence of the NGF-dependent primary afferents|absence of the NGF-dependent primary afferents|r||||
+E|A18|phenotype|lack of the sympathetic postganglionic neurons|lack of the sympathetic postganglionic neurons|r||||
+X|OMIM #256800|b0009|disease_identifier
+X|Na+ and K+ channels|b0010|channel_groups_not_single_genes
+X|Ca2+ channels|b0010|channel_group_not_single_gene
+X|rs763758904|b0005|variant_identifier
+X|Arg602*|b0005|variant_identifier
+X|rs80356677|b0005|variant_identifier
+X|Asp674Tyr|b0005|variant_identifier
+X|rs324420|b0005|variant_identifier
+X|c.1804 C > T|b0033|variant_identifier
+X|c.2020 G > T|b0033|variant_identifier
+X|Staphylococcus aureus|b0018|organism_not_gene_or_disease
+X|pain matrix genes|b0029|gene_group_not_single_gene
+EV|V1|b0003.s2+b0011.s8|bg|bgr|aff|ebr
+EV|V2|b0011.s4+b0011.s14+b0012.s4+b0033.s8|bg|bgr|aff|ebr
+EV|V3|b0005.s3+b0020.s4+b0020.s6+b0025.s3+b0033.s6+b0033.s7+b0033.s9+b0033.s10|ts|res|aff|rr,eda,cs
+EV|V4|b0011.s13|bg|hyp|hyp|ho
+EV|V5|b0005.s4+b0034.s1+b0034.s2+b0035.s1|ts|int|hyp|ho
+EV|V6|b0011.s15+b0034.s2|bg|bgr|aff|ebr
+EV|V7|b0028.s1+b0028.s2+b0028.s3+b0028.s4+b0028.s5+b0028.s6|ts|res|na|rr
+EV|V8|b0011.s5|bg|hyp|hyp|ho
+EV|V9|b0016.s3+b0016.s4|ts|res|na|do
+EV|V10|b0025.s1+b0025.s2+b0025.s4+b0034.s1|ts|res|na|rr
+EV|V11|b0026.s1+b0026.s2+b0026.s3+b0026.s4+b0026.s5+b0035.s3+b0035.s4+b0035.s5+b0035.s6|ts|res|na|rr
+EV|V12|b0012.s2|bg|bgr|aff|ebr
+P|G1|D1|sup|c|bg|sup:c:bg:V1;sup:a:bg:V2;sup:a:ts:V3|||Background causation; case-specific genetic attribution supports association.
+P|G1|D4|unc|-|bg|unc:-:bg:V4|hedged_claim||Tested relation: association; explanation remains speculative.
+P|G3|D1|unc|-|ts|unc:-:ts:V5|hedged_claim|V6|Tested relation: association; possible contribution to phenotypic heterogeneity.
+P|G4|D1|nf|-||||V7|Protein interactions establish no disease-specific relationship.
+P|G5|D1|nf|-||||V7|Protein interactions establish no disease-specific relationship.
+P|G2|D1|nf|-||||V7+V12|Interactions and symptom mechanisms do not establish this pair.
+P|G2|D10|nf|-||||V8|Consolidation hypothesis does not attribute fracture occurrence.
+P|G23|D1|nf|-||||V9|Negative staining concerns innervation; gene identity remains unresolved.
+F|F1|descriptive|NTRK1 variants and parental segregation|Patient and parents|not_applicable|not_applicable|not_applicable|V3|Single family; no comparative association test.
+F|F2|descriptive|Pathogenic variants and VUS across genes|CIPA patient|not_applicable|not_applicable|not_applicable|V10|Variant detection does not establish individual disease associations.
+F|F3|other|GO enrichment across 46 mutated genes|CIPA patient|significant|not_applicable|partial|V11|Enrichment significance does not test gene-disease association.
+F|F4|other|Protein interactions with pain matrix proteins|Patient variants and reference proteins|significant|not_applicable|partial|V7|Network significance does not establish disease attribution.
+F|F5|descriptive|FAAH variant, anandamine concentrations, pain sensitivity|Previously reported Caucasian female patient|unknown|unknown|not_reported|V6|Background phenotype report; no CIPA diagnosis stated.
+F|F6|hypothesis|NGF disruption and fracture consolidation|Previously cited study|not_applicable|unknown|not_reported|V8|Postulated mechanism; no fracture occurrence attribution.
+C|C1|Pathogenic variant totals|b0025.s1+b0025.s3+b0025.s4+b0034.s1|noncritical|unresolved|Whether 69 includes NTRK1 remains inconsistent.
+U|Figure S1|b0018.s11+b0040.s1+b0040.s2|Karyotype image not supplied.
+U|Figure S2|b0020.s3+b0020.s6+b0040.s2+b0040.s3|Protocols and segregation image not supplied.
+U|Figure S3|b0028.s2+b0040.s3+b0040.s4|Pain matrix diagram not supplied.
+U|Table S1|b0020.s2+b0040.s5+b0040.s6|Full studied variant list not supplied.
+U|Table S2|b0021.s6+b0040.s7+b0040.s8|Panel gene list not supplied.
+U|Table S3|b0025.s1+b0034.s1+b0040.s9+b0040.s10|Variant and gene identities not supplied.
+U|Table S4|b0025.s2+b0040.s11+b0040.s12|Full variant consequences not supplied.
+U|Table S5|b0026.s6+b0040.s13+b0040.s14|Gene function details not supplied.
+U|Table S6|b0028.s2+b0040.s15+b0040.s16|Full pain matrix gene list not supplied.

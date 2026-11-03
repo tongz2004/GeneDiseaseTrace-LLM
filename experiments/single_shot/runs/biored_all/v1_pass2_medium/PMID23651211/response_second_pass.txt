@@ -1,0 +1,2 @@
+P|G16|D1|nf|-||||V2|Pathway-name mention only; pathway claims not assigned to members
+P|G17|D1|nf|-||||V2|Pathway-name mention only; pathway claims not assigned to members

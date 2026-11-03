@@ -1,0 +1,1 @@
+{"name": "v4_card_cover_medium", "effort": "medium", "description": "V1 with one change: every gene-target pair co-mentioned in a sentence must get an explicit P line (V1 let the model leave pairs unlisted, which then became nf). Tests whether forcing pair coverage recovers missed relations."}

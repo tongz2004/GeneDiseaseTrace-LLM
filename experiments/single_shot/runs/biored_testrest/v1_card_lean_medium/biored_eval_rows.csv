@@ -1,0 +1,2 @@
+﻿paper_id,outcome,detail,gold_gene,gold_disease,gold_type,gold_novel,our_pair,our_gene,our_disease,our_status,our_relation,our_source,our_reason
+PMID15036754,FP,gold has both concepts but no relation,,,,,G1-D1,acetylcholinesterase,organophosphate poisoning,supported,association,background,OP toxicity attributed to AChE binding

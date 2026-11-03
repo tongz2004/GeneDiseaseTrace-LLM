@@ -1,0 +1,17 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|DGUOK|DGUOK;Deoxyguanosine kinase;dGK|r||human||
+E|D1|disease|hepatocerebral mitochondrial DNA depletion syndrome|hepatocerebral mitochondrial DNA depletion syndrome;mitochondrial DNA depletion|r||||
+E|D2|disease|combined respiratory chain deficiency|combined respiratory chain deficiencies|r||||
+E|D3|phenotype|abnormal myelination|abnormal myelination|r||||
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s3|ts|res|aff|rr,eda
+EV|V3|b0002.s8|ts|res|aff|cs
+EV|V4|b0001.s1+b0002.s9|ts|int|aff|eda
+EV|V5|b0002.s5|ts|co|aff|do
+EV|V6|b0002.s6+b0002.s7|ts|res|aff|rr
+P|G1|D1|sup|c|both|sup:c:bg:V1;sup:c:ts:V2+V3+V4+V6|||Homozygous splice mutation co-segregates with hepatocerebral MDS
+P|G1|D2|sup|a|ts|sup:a:ts:V2|||Mutation carriers show combined respiratory chain deficiencies
+P|G1|D3|sup|a|ts|sup:a:ts:V5|||Myelination abnormality observed in DGUOK mutation patients
+F|F1|association|DGUOK c.444-62C>A; mtDNA depletion|3 patients, 2 North-African consanguineous families|not_applicable|positive|not_reported|V2+V3|small case series
+F|F2|mechanism|DGUOK insertion; protein conformation|in silico|not_applicable|not_applicable|not_applicable|V6|prediction only

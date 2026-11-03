@@ -1,0 +1,10 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no diseases mentioned
+E|G1|gene|CENPH|CenpH|r||non-human||
+E|G2|gene|CCNB1|cyclin B1|r||non-human||
+E|G3|gene|FZR1|Cdh1|p|ambiguous_mapping|non-human||
+E|G4|gene|anaphase-promoting complex/cyclosome|APC/C|r||non-human||
+E|PH1|phenotype|impaired meiotic G2/M transition|Impaired G2/M transition|r||||
+X|maturation-promoting factor|b0002.s3|kinase complex, not a single gene or disease
+X|germinal vesicle breakdown|b0002.s5|oocyte meiotic event, not a disease
+F|F1|mechanism|CenpH depletion; cyclin B1 levels; meiotic resumption|mouse oocytes|unknown|positive|not_reported|b0002.s3+b0002.s4|abstract only; no disease

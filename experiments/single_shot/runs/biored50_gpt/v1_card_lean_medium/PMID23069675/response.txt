@@ -1,0 +1,27 @@
+META|GPT-6|seen: yes, supplied previous analysis
+SCOPE|Provided title and abstract only; no full text or attachments.
+E|G1|gene|neuronal pentraxin 1|neuronal pentraxin 1;NP1|r||non-human||
+E|G2|gene|PTEN|PTEN|r||non-human||
+E|G3|gene|Akt|Akt|r||non-human||
+E|G4|gene|GSK-3b|GSK-3b|r||non-human||
+E|G5|gene|Bad|Bad|r||non-human||
+E|G6|gene|Bax|Bax|r||non-human||
+E|G7|gene|cytochrome C|cytochrome C;Cyt C|r||non-human||
+E|G8|gene|caspase-3|caspase-3|r||non-human||
+E|D1|disease|hypoxic-ischemic injury|hypoxic-ischemic (HI) injury|r||||
+E|D2|disease|hypoxic-ischemic neuronal injury|hypoxic-ischemic neuronal injury;HI neuronal injury|r|||D1|
+E|D3|disease|HI brain injury|HI brain injury|r|||D1|
+E|A1|phenotype|neurological disabilities|neurological disabilities|r||||
+E|A2|phenotype|neuronal death|neuronal death|r||||
+E|A3|phenotype|hippocampal cell death|hippocampal cell death|r||||
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s4+b0002.s5|ts|res|aff|rr,cmp
+EV|V3|b0002.s13|ts|int|hyp|ho
+EV|V4|b0002.s6+b0002.s7+b0002.s8|ts|res|na|do
+EV|V5|b0002.s9+b0002.s10+b0002.s11+b0002.s12|ts|res|aff|rr,mi
+P|G1|D2|sup|a|bg|sup:a:bg:V1|||Prior study reported induction following neuronal injury.
+P|G1|D3|sup|a|ts|sup:a:ts:V2;unc:-:ts:V3|hedged_claim||Post-HI induction supports association; therapeutic inference remains uncertain.
+F|F1|group_comparison|NP1 expression following OGD or HI|Mouse neurons and neonatal hippocampus|unknown|positive|partial|V2|No significance reported for expression comparisons.
+F|F2|mechanism|PTEN, Akt, GSK-3b, Bad, Bax, Cyt C, caspase-3|OGD-exposed mouse hippocampal neurons|unknown|mixed|partial|V4|Cellular changes do not establish disease-specific relations.
+F|F3|group_comparison|NP1 knockout and neuronal death|OGD-exposed mouse hippocampal neurons|significant|negative|partial|V5|Significance explicitly reported only for neuronal death.
+F|F4|mechanism|NP1, Bad, Bax, Cyt C, caspase-3|OGD-exposed mouse hippocampal neurons|unknown|mixed|not_reported|V5|Knockout prevents reported mitochondrial responses.

@@ -1,0 +1,21 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; full text unavailable
+E|G1|gene|COL1A2|COL1A2;collagen type I alpha 2 chain|r|||human||
+E|D1|disease|osteogenesis imperfecta|Osteogenesis imperfecta;OI|r|||||
+E|D2|disease|osteogenesis imperfecta type III|Osteogenesis imperfecta type III;OI type III|r||||D1|
+E|D3|disease|intracranial hemorrhage|intracranial hemorrhage;Intracranial hemorrhage;intracranial bleeding|r|||||
+E|D4|disease|brachydactyly|brachydactyly|r|||||
+E|D5|phenotype|nail hypoplasia|nail hypoplasia|r|||||
+E|D6|phenotype|abnormal limb development|abnormal limb development|r|||||
+EV|V1|b0002.s4|ts|res|aff|rr,eda
+EV|V2|b0001.s1|ts|res|aff|rr
+EV|V3|b0002.s5|ts|int|aff|rr
+EV|V4|b0002.s3|ts|co|na|do
+P|G1|D2|sup|c|ts|sup:c:ts:V1;sup:a:ts:V2|||OI caused by COL1A2 exon 49 glycine mutations
+P|G1|D1|sup|c|ts|sup:c:ts:V1|||OI attributed to COL1A2 mutations
+P|G1|D3|sup|a|ts|sup:a:ts:V2+V3|||Exon 49 mutations linked to intracranial bleeding risk
+P|G1|D4|sup|a|ts|sup:a:ts:V2+V3|||Title associates brachydactyly with exon 49 mutations
+P|G1|D6|sup|a|ts|sup:a:ts:V3|||Suggested high risk of abnormal limb development
+P|G1|D5|unc|-|ts|unc:-:ts:V4|support_basis_unresolved|||Nail hypoplasia only co-occurs in patients
+F|F1|descriptive|COL1A2 exon 49 glycine mutations; OI III phenotypes|three OI type III patients|not_applicable|not_applicable|not_reported|V1+V2+V4|three patients only
+F|F2|hypothesis|COL1A2 exon 49 mutations; ICH, limb anomalies|OI patients|unknown|positive|not_reported|V3|case-series inference

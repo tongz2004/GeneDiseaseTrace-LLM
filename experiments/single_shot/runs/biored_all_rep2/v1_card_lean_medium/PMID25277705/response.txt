@@ -1,0 +1,69 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text, tables or figures
+E|G1|gene|LIF|Leukemia inhibitory factor;LIF|r||human||
+E|G2|gene|MIF|migration inhibitory factor;MIF|r||human||
+E|G3|gene|SCF|stem cell factor;SCF|r||human||
+E|G4|gene|CCL27|CCL27|r||human||
+E|G5|gene|CXCL12|CXCL12|r||human||
+E|G6|gene|SCGF-b|stem cell growth factor beta;SCGF-b|r||human||
+E|G7|gene|RIG-I|retinoic acid-inducible gene-1;RIG-I|r||human||
+E|G8|gene|MDA5|melanoma differentiation-associated protein 5;MDA5|r||human||
+E|G9|gene|LGP2|laboratory of genetics and physiology 2;LGP2|r||human||
+E|G10|gene|Trif|Trif|r||human||
+E|M1|gene|Trif|TIR-domain-containing adapter-inducing interferon-b;Trif|r||non-human||
+E|M2|gene|Mavs|mitochondrial antiviral-signaling protein;Mavs|r||non-human||
+E|M3|gene|LIF|leukemia inhibitory factor;LIF|r||non-human||
+E|M4|gene|IL-1b|IL-1b|r||non-human||
+E|M5|gene|IL-4|IL-4|r||non-human||
+E|M6|gene|IL-5|IL-5|r||non-human||
+E|M7|gene|IL-6|IL-6|r||non-human||
+E|M8|gene|IL-12(p40)|IL-12(p40)|r||non-human||
+E|M9|gene|IFN-g|IFN-g|r||non-human||
+E|M10|gene|CCL2|CCL2|r||non-human||
+E|M11|gene|CCL5|CCL5|r||non-human||
+E|M12|gene|CCL3|CCL3|r||non-human||
+E|M13|gene|CXCL1|CXCL1|r||non-human||
+E|M14|gene|CXCL10|IP-10;CXCL10|r||non-human||
+E|M15|gene|IL-22|IL-22|r||non-human||
+E|M16|gene|CXCL9|MIG;CXCL9|r||non-human||
+E|M17|gene|MIF|MIF|r||non-human||
+E|M18|gene|CXCL12|CXCL12|r||non-human||
+E|D1|disease|respiratory syncytial viral infection|respiratory syncytial viral infection;RSV infection|r||||
+E|D2|disease|acute lung injury|acute lung injury|r||||
+E|D3|disease|lung injury|lung injury|r||||
+E|S1|phenotype|airway hyperresponsiveness|airway hyperresponsiveness|r||||
+E|S2|phenotype|apoptosis|apoptosis|r||||
+X|melanoma differentiation-associated protein 5|b0002|gene name containing disease term; not melanoma
+EV|V1|b0002.s5|ts|res|aff|rr
+EV|V2|b0002.s6+b0002.s8+b0002.s9|ts|res|aff|rr
+EV|V3|b0002.s11+b0002.s13|ts|res|aff|mi,rr
+EV|V4|b0002.s1|bg|bgr|aff|ebr
+EV|V5|b0002.s10+b0002.s12|ts|int|aff|rr
+P|G1|D1|sup|a|ts|sup:a:ts:V1||V4|Induced by RSV in A549/SAE cells
+P|G2|D1|sup|a|ts|sup:a:ts:V1|||RSV-inducible cytokine in human cells
+P|G3|D1|sup|a|ts|sup:a:ts:V1|||RSV-inducible cytokine in human cells
+P|G4|D1|sup|a|ts|sup:a:ts:V1|||RSV-inducible cytokine in human cells
+P|G5|D1|sup|a|ts|sup:a:ts:V1|||RSV-inducible cytokine in human cells
+P|G6|D1|sup|a|ts|sup:a:ts:V1|||RSV-inducible cytokine in human cells
+P|G7|D1|unc|-|ts|unc:-:ts:V5|support_basis_unresolved||Regulates cytokine response, not infection outcome
+P|M3|D1|sup|c|ts|sup:c:ts:V3;sup:a:ts:V2|||Neutralization enhanced RSV pathology in mice
+P|M3|D3|sup|c|ts|sup:c:ts:V3|||Anti-LIF increased lung injury; LIF protective
+P|M4|D1|sup|a|ts|sup:a:ts:V2|||Induced in mouse airway by RSV
+P|M5|D1|sup|a|ts|sup:a:ts:V2|||Induced in mouse airway by RSV
+P|M6|D1|sup|a|ts|sup:a:ts:V2|||Induced in mouse airway by RSV
+P|M7|D1|sup|a|ts|sup:a:ts:V2|||Induced in mouse airway by RSV
+P|M8|D1|sup|a|ts|sup:a:ts:V2|||Induced in mouse airway by RSV
+P|M9|D1|sup|a|ts|sup:a:ts:V2|||Induced in mouse airway by RSV
+P|M10|D1|sup|a|ts|sup:a:ts:V2|||Induced in mouse airway by RSV
+P|M11|D1|sup|a|ts|sup:a:ts:V2|||Induced in mouse airway by RSV
+P|M12|D1|sup|a|ts|sup:a:ts:V2|||Induced in mouse airway by RSV
+P|M13|D1|sup|a|ts|sup:a:ts:V2|||Induced in mouse airway by RSV
+P|M14|D1|sup|a|ts|sup:a:ts:V2|||Induced in mouse airway by RSV
+P|M15|D1|sup|a|ts|sup:a:ts:V2|||Induced in mouse airway by RSV
+P|M16|D1|sup|a|ts|sup:a:ts:V2|||Induced in mouse airway by RSV
+P|M17|D1|sup|a|ts|sup:a:ts:V2|||Induced in mouse airway by RSV
+P|M18|D1|sup|a|ts|sup:a:ts:V2|||Induced in mouse airway by RSV
+F|F1|group_comparison|anti-LIF vs control IgG; lung pathology|RSV-infected wild-type mice|unknown|positive|not_reported|V3|abstract only
+F|F2|mechanism|Mavs/Trif knockout vs cytokine induction|RSV-infected mice|unknown|unknown|not_reported|V2|abstract only
+F|F3|mechanism|RIG-I/MDA5/LGP2/Trif silencing vs cytokines|RSV-infected A549 cells|unknown|unknown|not_reported|V5|abstract only
+R|gene set|b0002.s1|Host cytokines associated with acute lung injury; no members named|Not assigned to any gene; D2 pairs nf

@@ -1,0 +1,16 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|IL-10|IL-10|r||human||
+E|D1|disease|periodontitis|Periodontitis;periodontitis|r||||
+E|D2|disease|aggressive periodontitis|aggressive periodontitis|r||||
+E|D3|disease|generalized aggressive periodontitis|generalized aggressive periodontitis|r|||D2|
+X|cytokine genes|b0002|functional grouping, not a specific gene
+EV|V1|b0002.s3|bg|bgr|hyp|ho
+EV|V2|b0002.s10+b0002.s11|ts|neg|neg|rr,cmp
+EV|V3|b0002.s12|ts|int|neg|rr
+EV|V4|b0002.s5|ts|aim|q|none
+P|G1|D3|neg|-|ts|neg:-:ts:V2+V3|||-1082 genotype and allele not associated
+P|G1|D1|unc|a|bg|unc:a:bg:V1|hedged_claim||background states IL-10 thought to play role
+P|G1|D2|nf|-||||scope|V4|tested only in generalized form
+F|F1|group_comparison|IL-10 -1082 G/A genotype frequency|52 GAgP vs 61 Iranian controls|not_significant|null|partial|V2|chi-squared p=0.585 only
+F|F2|group_comparison|IL-10 -1082 allele frequency|52 GAgP vs 61 Iranian controls|not_significant|null|partial|V2|chi-squared p=0.329 only

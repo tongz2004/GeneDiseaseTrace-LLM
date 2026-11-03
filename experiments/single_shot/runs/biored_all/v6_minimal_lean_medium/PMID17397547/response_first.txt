@@ -1,0 +1,83 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|proteinase-activated receptor family|proteinase-activated receptors;Protease-activated receptors;PAR;PARs|r|||||
+E|G2|gene|F2r (PAR1)|PAR1;PAR-1|r||non-human|G1|
+E|G3|gene|F2rl1 (PAR2)|PAR2|r||non-human|G1|
+E|G4|gene|Tac1 (substance P)|substance P;SP|p|||||
+E|G5|gene|B2m|b2m|r||non-human||
+E|G6|gene|Ccl7|ccl7|r||non-human||
+E|G7|gene|Cd200|cd200|r||non-human||
+E|G8|gene|Cd63|cd63|r||non-human||
+E|G9|ambiguous_gene|cdbpd|cdbpd|u|undefined_abbreviation|non-human||
+E|G10|gene|Cfl1|cfl1|r||non-human||
+E|G11|gene|Dusp1|dusp1|r||non-human||
+E|G12|gene|Fkbp1a|fkbp1a|r||non-human||
+E|G13|gene|Fth1|fth1|r||non-human||
+E|G14|gene|Hspb1|hspb1|r||non-human||
+E|G15|gene|Marcksl1|marcksl1|r||non-human||
+E|G16|gene|Mmp2|mmp2|r||non-human||
+E|G17|gene|Myo5a|myo5a|r||non-human||
+E|G18|gene|Nfkbia|nfkbia|r||non-human||
+E|G19|gene|Pax1|pax1|r||non-human||
+E|G20|gene|Plaur|plaur|r||non-human||
+E|G21|gene|Ppia|ppia|r||non-human||
+E|G22|gene|Ptpn1|ptpn1|r||non-human||
+E|G23|gene|Ptprcap|ptprcap|r||non-human||
+E|G24|gene|S100a10|s100a10|r||non-human||
+E|G25|gene|Sim2|sim2|r||non-human||
+E|G26|gene|Tnfaip2|tnfaip2|r||non-human||
+E|G27|gene|Arf6|arf6|r||non-human||
+E|G28|gene|Dctn1|dcnt1|p|suspected_typo|non-human||
+E|G29|gene|p38 MAPK|p38 MAPK|p|ambiguous_mapping|||
+E|D1|disease|inflammation|inflammation|r|||||
+E|D2|disease|cystitis|cystitis;bladder inflammation|r|||||
+E|D3|phenotype|edema|edema|r|||||
+E|D4|phenotype|granulocyte infiltration|granulocyte infiltration|r|||||
+X|cytokine|b0002.s12|generic protein class, not specific gene
+X|LPS|b0002.s5|bacterial product, not gene
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s4|ts|res|aff|rr,mi
+EV|V3|b0002.s5|ts|res|aff|rr,mi,cmp
+EV|V4|b0002.s14|ts|int|aff|rr
+EV|V5|b0002.s15|ts|hyp|hyp|ho
+EV|V6|b0002.s10|both|res|aff|rr,ebr
+EV|V7|b0002.s12|ts|int|hyp|ho
+EV|V8|b0002.s13|ts|int|hyp|ho
+EV|V9|b0002.s6+b0002.s8|ts|res|aff|rr
+EV|V10|b0002.s5|bg|bgr|aff|ebr
+P|G1|D1|sup|c|both|sup:a:bg:V1;sup:c:ts:V2|||PAR activation induces inflammation; expression altered
+P|G1|D3|sup|c|ts|sup:c:ts:V2|||PAR-activating peptides cause edema
+P|G1|D4|sup|c|ts|sup:c:ts:V2|||PAR-activating peptides cause granulocyte infiltration
+P|G2|D1|sup|c|ts|sup:c:ts:V3|||PAR1 deficiency strongly attenuates inflammation
+P|G2|D2|sup|c|ts|sup:c:ts:V3+V4;unc:c:ts:V5|||PAR1 participates in bladder inflammation
+P|G3|D1|sup|c|ts|sup:c:ts:V3|||PAR2 deficiency attenuates inflammation, lesser extent
+P|G3|D2|sup|c|ts|sup:c:ts:V3|||bladder model attenuation by PAR2 deficiency
+P|G4|D1|sup|c|bg|sup:c:bg:V10|||known pro-inflammatory stimulus
+P|G5|D1|sup|a|both|sup:a:both:V6|||V9|PAR1-dependent transcript implicated in inflammation
+P|G6|D1|sup|a|both|sup:a:both:V6|||V9|PAR1-dependent transcript implicated in inflammation
+P|G7|D1|sup|a|both|sup:a:both:V6|||V9|PAR1-dependent transcript implicated in inflammation
+P|G8|D1|sup|a|both|sup:a:both:V6|||V9|PAR1-dependent transcript implicated in inflammation
+P|G9|D1|unc|a|both|unc:a:both:V6|identity|V9|unresolved gene identity
+P|G10|D1|sup|a|both|sup:a:both:V6|||V9|PAR1-dependent transcript implicated in inflammation
+P|G11|D1|sup|a|both|sup:a:both:V6;unc:a:ts:V7||V9|implicated; hypothesized counter-balancing role
+P|G12|D1|sup|a|both|sup:a:both:V6|||V9|PAR1-dependent transcript implicated in inflammation
+P|G13|D1|sup|a|both|sup:a:both:V6|||V9|PAR1-dependent transcript implicated in inflammation
+P|G14|D1|sup|a|both|sup:a:both:V6|||V9|PAR1-dependent transcript implicated in inflammation
+P|G15|D1|sup|a|both|sup:a:both:V6|||V9|PAR1-dependent transcript implicated in inflammation
+P|G16|D1|sup|a|both|sup:a:both:V6|||V9|PAR1-dependent transcript implicated in inflammation
+P|G17|D1|sup|a|both|sup:a:both:V6|||V9|PAR1-dependent transcript implicated in inflammation
+P|G18|D1|sup|a|both|sup:a:both:V6;unc:a:ts:V7||V9|implicated; hypothesized counter-balancing role
+P|G19|D1|sup|a|both|sup:a:both:V6|||V9|PAR1-dependent transcript implicated in inflammation
+P|G20|D1|sup|a|both|sup:a:both:V6|||V9|PAR1-dependent transcript implicated in inflammation
+P|G21|D1|sup|a|both|sup:a:both:V6|||V9|PAR1-dependent transcript implicated in inflammation
+P|G22|D1|sup|a|both|sup:a:both:V6|||V9|PAR1-dependent transcript implicated in inflammation
+P|G23|D1|sup|a|both|sup:a:both:V6|||V9|PAR1-dependent transcript implicated in inflammation
+P|G24|D1|sup|a|both|sup:a:both:V6|||V9|PAR1-dependent transcript implicated in inflammation
+P|G25|D1|sup|a|both|sup:a:both:V6|||V9|PAR1-dependent transcript implicated in inflammation
+P|G26|D1|sup|a|both|sup:a:both:V6|||V9|PAR1-dependent transcript implicated in inflammation
+P|G27|D1|unc|c|ts|unc:c:ts:V8|hedged_claim||hypothesized perpetuation via PAR re-sensitization
+P|G28|D1|unc|c|ts|unc:c:ts:V8|hedged_claim,identity||hypothesized role; name likely typo
+P|G29|D1|unc|a|ts|unc:a:ts:V7|hedged_claim||speculative role in inflammation limitation
+F|F1|group_comparison|PAR1 deficiency; inflammatory response|PAR1-/- vs wild type mice|unknown|negative|not_reported|V3|abstract only; no statistics
+F|F2|group_comparison|PAR2 deficiency; inflammatory response|PAR2-deficient vs wild type mice|unknown|negative|not_reported|V3|abstract only; no statistics
+F|F3|descriptive|PAR1-dependent transcripts in bladder inflammation|PAR1-/- vs wild type mice|unknown|not_applicable|not_reported|V9+V6|75 transcripts; details unread

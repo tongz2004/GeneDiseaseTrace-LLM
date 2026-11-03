@@ -1,0 +1,43 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|TCF7L2|T-cell factor-4;TCF-4|r|||human||
+E|G1a|gene|TCF7L2 isoform TCF-4J|TCF-4J|p|other|human|G1|
+E|G1b|gene|TCF7L2 isoform TCF-4K|TCF-4K|p|other|human|G1|
+E|G2|gene|CLDN2|CLDN2|r|||human||
+E|G3|gene|STK17B|STK17B|r|||human||
+E|G4|gene|SPP1|SPP1|r|||human||
+E|G5|gene|AXIN2|AXIN2|r|||human||
+E|G6|gene|CCN5|WISP2|r|||human||
+E|G7|gene|MMP7|MMP7|r|||human||
+E|G8|gene|IRS1|IRS1|r|||human||
+E|G9|gene|ANXA1|ANXA1|r|||human||
+E|G10|gene|CAMK2N1|CAMK2N1|r|||human||
+E|G11|gene|ASPH|ASPH|r|||human||
+E|G12|gene|ADGRG1|GPR56|r|||human||
+E|G13|gene|CD24|CD24|r|||human||
+E|G14|gene|JAG1|JAG1|r|||human||
+E|D1|disease|hepatocellular carcinoma|hepatocellular carcinoma;HCC;HCCs|r||||
+X|Wnt/beta-catenin|b0002.s1|signalling pathway name, not a single-gene claim
+X|insulin/IGF-1/IRS1|b0002.s7|pathway name; IRS1 handled separately as a gene
+X|Notch|b0002.s7|pathway name, not a specific gene
+EV|V1|b0002.s8|ts|res|aff|rr,cmp
+EV|V2|b0002.s9+b0002.s10|ts|int|aff|eda
+EV|V3|b0002.s2|bg|bgr|q|none
+P|G2|D1|sup|a|ts|sup:a:ts:V1+V2|||Upregulated in HCC tumours vs peritumour
+P|G3|D1|sup|a|ts|sup:a:ts:V1+V2|||Upregulated in HCC tumours vs peritumour
+P|G4|D1|sup|a|ts|sup:a:ts:V1+V2|||Upregulated in HCC tumours vs peritumour
+P|G5|D1|sup|a|ts|sup:a:ts:V1+V2|||Upregulated in HCC tumours vs peritumour
+P|G6|D1|sup|a|ts|sup:a:ts:V1+V2|||Upregulated in HCC tumours vs peritumour
+P|G7|D1|sup|a|ts|sup:a:ts:V1+V2|||Upregulated in HCC tumours vs peritumour
+P|G8|D1|sup|a|ts|sup:a:ts:V1+V2|||Upregulated in HCC tumours vs peritumour
+P|G9|D1|sup|a|ts|sup:a:ts:V1+V2|||Upregulated in HCC tumours vs peritumour
+P|G10|D1|sup|a|ts|sup:a:ts:V1+V2|||Upregulated in HCC tumours vs peritumour
+P|G11|D1|sup|a|ts|sup:a:ts:V1+V2|||Upregulated in HCC tumours vs peritumour
+P|G12|D1|sup|a|ts|sup:a:ts:V1+V2|||Upregulated in HCC tumours vs peritumour
+P|G13|D1|sup|a|ts|sup:a:ts:V1+V2|||Upregulated in HCC tumours vs peritumour
+P|G14|D1|sup|a|ts|sup:a:ts:V1+V2|||Upregulated in HCC tumours vs peritumour
+P|G1a|D1|sup|a|ts|sup:a:ts:V2|||V1|Conclusion links TCF-4J target activation to HCC pathogenesis
+P|G1|D1|sup|a|ts|sup:a:ts:V2|||V3|Via TCF-4J isoform; background says role unknown
+F|F1|group_comparison|13 TCF-4J target genes expression|47 paired HCC tumour vs peritumour|significant|positive|not_reported|V1|abstract only
+F|F2|correlation|10 target genes vs TCF-4J expression|47 HCC tumours|significant|positive|not_reported|V1|which 10 genes not specified
+F|F3|descriptive|genes differing TCF-4J vs TCF-4K|HCC cell lines|not_applicable|mixed|partial|V2|in vitro microarray, >2-fold

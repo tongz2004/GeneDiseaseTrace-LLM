@@ -1,0 +1,30 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|ceruloplasmin|Ceruloplasmin;ceruloplasmin|r|||human||
+E|G2|gene|hepcidin|hepcidin|r|||human||
+E|G3|gene|transferrin|transferrin|r|||human||
+E|G4|gene|insulin|insulin|r|||human||
+E|D1|disease|aceruloplasminemia|Aceruloplasminemia;aceruloplasminemia|r||||
+E|D2|disease|iron overload|iron overload;iron accumulation|r||||
+E|D3|disease|movement disorders|movement disorders|r||||
+E|D4|disease|diabetes mellitus|diabetes mellitus;diabetes|r||||
+E|D5|disease|retinal degeneration|retinal degeneration|r||||
+E|D6|disease|neurodegenerative disease|neurodegenerative disease|r||||
+EV|V1|b0002.s3|ts|res|aff|rr,eda
+EV|V2|b0002.s11|ts|int|aff|rr
+EV|V3|b0002.s10|ts|int|aff|rr
+EV|V4|b0002.s7|ts|res|aff|rr
+EV|V5|b0002.s3+b0002.s4|ts|res|aff|do
+EV|V6|b0002.s1|bg|bgr|aff|ebr
+EV|V7|b0002.s8|ts|res|na|do
+P|G1|D1|sup|c|ts|sup:c:ts:V1||||Novel CP mutation identified as cause
+P|G1|D2|sup|c|ts|sup:c:ts:V2+V3||||Defective ceruloplasmin iron export causes iron accumulation
+P|G1|D3|sup|a|both|sup:a:ts:V5;sup:a:bg:V6||||Mutation carriers presented with movement disorders
+P|G1|D4|sup|a|both|sup:a:ts:V5;sup:a:bg:V6||||Mutation carriers presented with diabetes
+P|G1|D5|unc|-|bg|unc:-:bg:V6|support_basis_unresolved|||Only via disease feature description
+P|G1|D6|unc|-|bg|unc:-:bg:V6+V1|support_basis_unresolved|||Linked only through aceruloplasminemia description
+P|G2|D2|sup|r|ts|sup:r:ts:V4+V2||||Hepcidin mRNA increased with degree of iron overload
+P|G2|D1|sup|a|ts|sup:a:ts:V4||||Hepcidin increased in aceruloplasminemia liver
+P|G4|D4|nf|-|||||V7|Insulin demand is treatment response only
+F|F1|descriptive|CP c.2554+1G>T; aceruloplasminemia|three affected siblings|not_applicable|not_applicable|not_applicable|V1+V5|abstract only
+F|F2|correlation|hepatic hepcidin mRNA; iron overload|aceruloplasminemia patients|unknown|positive|not_reported|V4|abstract only, small n

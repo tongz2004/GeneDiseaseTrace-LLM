@@ -1,0 +1,27 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text available
+E|G1|gene|S100A7|Psoriasin;S100A7|r||human||
+E|G2|gene|MMP2|matrix metalloproteinase-2;MMP-2|r||human||
+E|G3|gene|MMP9|MMP-9|r||human||
+E|D1|disease|pancreatic cancer|pancreatic cancer;pancreatic tumours;pancreatic cancers;Local invasive pancreatic cancers|r||||
+E|D2|disease|psoriasis|psoriatic skin lesions|p|other|||
+E|D3|disease|cancer|cancers|r||||
+E|D4|disease|metastasis|distant metastases|r|||D1|
+X|S100 family|b0002.s2|Protein family label, not a single gene
+X|MMPs|b0002.s15|Gene group label, not a single gene
+EV|V1|b0002.s9+b0002.s14|ts|res|aff|rr,cmp
+EV|V2|b0002.s11+b0002.s12+b0002.s13+b0002.s15|ts|res|aff|rr,mi
+EV|V3|b0002.s1|bg|bgr|aff|ebr
+EV|V4|b0002.s3|bg|bgr|aff|ebr
+EV|V5|b0002.s10|ts|res|aff|rr,cmp
+EV|V6|b0002.s12|ts|res|aff|rr,mi
+P|G1|D1|sup|r|ts|sup:r:ts:V1+V2||||Higher expression in local invasion; promotes invasion
+P|G1|D2|sup|a|bg|sup:a:bg:V3||||Initially isolated from psoriatic skin lesions
+P|G1|D3|sup|a|bg|sup:a:bg:V4||||Aberrant expression implicated in cancers
+P|G1|D4|sup|r|ts|sup:r:ts:V5||||Reduced expression in tumours with metastases
+P|G2|D1|sup|a|ts|sup:a:ts:V6||||Upregulated with Psoriasin-driven invasion
+P|G3|D1|sup|a|ts|sup:a:ts:V6||||Upregulated with Psoriasin-driven invasion
+F|F1|group_comparison|Psoriasin transcripts; local invasion extent|126 pancreatic tumours|unknown|positive|unread|V1|abstract only
+F|F2|group_comparison|Psoriasin expression; distant metastasis|primary pancreatic tumours|unknown|negative|unread|V5|abstract only
+F|F3|mechanism|Psoriasin overexpression; growth, migration, invasion, MMP-2/9|pancreatic cancer cell lines|significant|positive|unread|V2+V6|in vitro only
+C|C1|Psoriasin direction: local invasion vs metastasis|b0002.s9+b0002.s10|noncritical|resolved|Both directions support a correlation

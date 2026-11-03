@@ -1,0 +1,8 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text unavailable
+E|G1|gene|ARSB|arylsulfatase B;ARSB|r||human||
+E|D1|disease|mucopolysaccharidosis type VI|mucopolysaccharidosis type VI|r||||
+EV|V1|b0001.s1|ts|res|aff|rr,eda
+EV|V2|b0002.s1+b0002.s2+b0002.s4|ts|res|aff|rr,eda
+P|G1|D1|sup|c|ts|sup:c:ts:V1+V2|||ARSB p.R315X and exon 5 deletion cause MPS VI
+F|F1|descriptive|ARSB p.R315X and exon 5 deletion|single MPS VI patient|not_applicable|not_applicable|not_applicable|V1+V2|single case report

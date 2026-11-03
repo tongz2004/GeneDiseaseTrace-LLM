@@ -1,0 +1,14 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|OPRM1|OPRM1;mu opioid receptor|r||human||
+E|D1|disease|drug addiction|drug addiction;addiction|r|||||
+E|S1|symptom|pain|pain|r|||||
+X|A118G|b0002.s2|OPRM1 variant (N40D), not a separate gene
+X|Chinese hamster ovary cells|b0002.s5|cell line, not a disease or gene
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s2|bg|bgr|aff|ebr
+EV|V3|b0002.s8|unk|int|pre|unc
+EV|V4|b0002.s4+b0002.s5+b0002.s7|ts|res|na|rr
+P|G1|D1|sup|a|bg|sup:a:bg:V1+V2||V3+V4|background links OPRM1 variants to addiction predisposition
+P|G1|S1|nf|-|||||V1|role in pain perception, not disease relation
+F|F1|mechanism|A118 vs G118 allelic mRNA expression|8 heterozygous human autopsy brains|unknown|positive|partial|V4|no disease phenotype tested

@@ -1,0 +1,25 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|DLL4|Delta-like 4;Dll4|r|||||
+E|G2|gene|NOTCH1|Notch1|r||non-human||
+E|G3|gene|PECAM1|CD31|r||non-human||
+E|G4|gene|CDH5|VE-Cadherin|r||non-human||
+E|G5|gene|KIT|c-kit|r||non-human||
+E|G6|gene|ENG|CD105|r||non-human||
+E|G7|gene|FLT4|VEGFR3|r||non-human||
+E|G8|gene|IGFBP2|IGFbp2|r||non-human||
+E|G9|gene|IGFBP3|IGFbp3|r||non-human||
+E|G10|gene|ANGPT2|Angpt2|r||non-human||
+E|G11|gene|DHH|DHH|r||non-human||
+E|G12|gene|VEGFA|VEGF-A|r||non-human||
+E|G13|gene|FGF1|FGF1|r||non-human||
+E|G14|gene|CSF2|CSF2|r||non-human||
+E|G15|gene|ITGAM|CD11b|r||non-human||
+E|G16|gene|PTPRC|B220|p|ambiguous_mapping|non-human||
+E|D1|disease|Neoplasms|tumor|r|||||
+X|Notch|b0002.s1|pathway family, not a single gene
+X|SMA|b0002.s4|smooth muscle actin marker, not spinal muscular atrophy
+X|CFU-M|b0002.s8|colony assay label, not gene
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+P|G1|D1|sup|c|bg|sup:c:bg:V1|||Dll4 blockade halts tumor growth, background statement
+F|F1|mechanism|anti-Dll4; angiocrine gene expression|irradiated mice bone marrow|unknown|mixed|unread|V1|abstract only; no disease endpoint

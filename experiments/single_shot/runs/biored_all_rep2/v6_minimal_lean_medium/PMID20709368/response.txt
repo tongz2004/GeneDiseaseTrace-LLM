@@ -1,0 +1,24 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|FGG|FGG;fibrinogen gamma|r|||human||
+E|G2|gene|FGA|FGA;fibrinogen alpha|r|||human||
+E|G3|gene|FGB|FGB;fibrinogen beta|r|||human||
+E|G4|gene|fibrinogen|fibrinogen;Fibrinogen|p|ambiguous_mapping|human||
+E|D1|disease|peripheral arterial disease|Peripheral Arterial Disease;peripheral arterial disease;PAD|r||||
+E|D2|disease|deep venous thrombosis|deep venous thrombosis|r||||
+E|D3|disease|myocardial infarction|myocardial infarction|r||||
+E|D4|disease|diabetes|diabetes|r||||
+E|D5|disease|arterial hypertension|arterial hypertension|r||||
+E|D6|disease|hypercholesterolemia|hypercholesterolemia|r||||
+X|rs2066865|b0002|FGG variant ID, mapped to FGG
+X|thrombophilic|b0002|adjective describing variant, not a disease entity
+EV|V1|b0002.s3|bg|bgr|aff|ebr
+EV|V2|b0001.s1+b0002.s7+b0002.s8+b0002.s10|ts|neg|neg|rr,cmp
+EV|V3|b0002.s9|ts|neg|neg|rr
+P|G1|D1|neg|-|ts|neg:-:ts:V2+V3|||No association of rs2066865 with PAD or onset age
+P|G1|D2|sup|a|bg|sup:a:bg:V1|||Background report of association with DVT
+P|G1|D3|sup|a|bg|sup:a:bg:V1|||Background report of association with MI
+P|G1|D4|nf|-||||||Diabetes is only a regression covariate
+F|F1|group_comparison|FGG 10034C>T genotype frequencies|891 PAD vs 777 controls|not_significant|null|available|V2|
+F|F2|association|FGG 10034 T variant; PAD presence|PAD case-control, multivariate adjusted|not_significant|null|available|V2|
+F|F3|association|FGG 10034C>T; age at PAD onset|PAD patients|not_significant|null|not_reported|V3|abstract only

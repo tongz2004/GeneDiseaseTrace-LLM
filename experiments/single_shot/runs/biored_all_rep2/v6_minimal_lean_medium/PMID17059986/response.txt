@@ -1,0 +1,29 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text
+E|G1|gene|SLC12A3|SLC12A3|r||human||
+E|D1|disease|Gitelman syndrome|Gitelman syndrome;GS|r||||
+E|D2|disease|idiopathic intracranial hypertension|idiopathic intracranial hypertension;pseudotumor cerebri|r||||
+E|D3|disease|Bartter syndrome|Bartter syndrome|r||||
+E|D4|disease|cerebral cavernous malformations|cerebral cavernous malformations;familial cavernomatosis|r||||
+E|D5|disease|hypokalemia|hypokalemia|r||||
+E|D6|disease|hypomagnesemia|hypomagnesemia|r||||
+E|D7|disease|metabolic alkalosis|metabolic alkalosis|r||||
+E|D8|phenotype|growth delay|growth delay|r||||
+E|D9|symptom|papilledema|papilledema|r||||
+E|D10|disease|secondary aldosteronism|secondary aldosteronism|r||||
+EV|V1|b0002.s4+b0002.s5|ts|res|aff|rr,cs,eda
+EV|V2|b0001.s1|ts|co|aff|do
+EV|V3|b0002.s8|ts|hyp|hyp|ho
+EV|V4|b0002.s10|ts|neg|neg|cs
+EV|V5|b0002.s1+b0002.s4|ts|co|aff|do
+EV|V6|b0002.s3|ts|co|na|do
+P|G1|D1|sup|c|ts|sup:c:ts:V1||||Compound heterozygous mutations cosegregate, give GS diagnosis
+P|G1|D2|unc|-|ts|unc:-:ts:V2+V3|hedged_claim||Single case; link proposed via electrolytes only
+P|G1|D4|neg|-|ts|neg:-:ts:V4||||Cavernomatosis segregates independently of GS
+P|G1|D5|sup|a|ts|sup:a:ts:V5||||Hypokalemia in mutation carrier with GS
+P|G1|D6|sup|a|ts|sup:a:ts:V5||||Hypomagnesemia in mutation carrier with GS
+P|G1|D7|sup|a|ts|sup:a:ts:V5||||Metabolic alkalosis in mutation carrier
+P|G1|D3|nf|-|||||V6|Initial misdiagnosis; molecular result reassigned to GS
+F|F1|association|SLC12A3 p.Ser555Leu and c.2633+1G>C; GS|proband and family|not_applicable|positive|not_applicable|V1|single family
+F|F2|mechanism|c.2633+1G>C; exon 22 skipping|proband cDNA|not_applicable|not_applicable|not_applicable|V1|heterozygous transcript analysis
+F|F3|other|SLC12A3 mutations; familial cavernomatosis segregation|family|not_applicable|null|not_applicable|V4|single family

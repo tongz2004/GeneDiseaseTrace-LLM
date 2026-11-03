@@ -1,0 +1,23 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|NDP|NDP|r|||human||
+E|D1|disease|Norrie disease|Norrie disease|r|||||
+E|D2|disease|familial exudative vitreoretinopathy|familial exudative vitreoretinopathy;X-linked familial exudative vitreoretinopathy;FEVR|r|||||
+E|D3|disease|Coats disease|Coat's disease|r|||||
+E|D4|disease|retinopathy of prematurity|retinopathy of prematurity;ROP|r|||||
+E|D5|phenotype|deafness|deafness|r|||||
+E|D6|phenotype|intellectual disability|mental retardation|r|||||
+E|D7|disease|retinal detachment|retinal detachment|r|||||
+X|Norrie-FEVR|b0002|combined patient group label, not a distinct disease
+EV|V1|b0002.s5|ts|res|aff|rr
+EV|V2|b0002.s9|ts|int|aff|rr,eda
+EV|V3|b0002.s6|ts|res|aff|rr,do
+EV|V4|b0002.s10|ts|int|aff|rr
+EV|V5|b0002.s7|ts|res|na|do
+EV|V6|b0002.s1|ts|aim|q|none
+P|G1|D1|sup|c|ts|sup:c:ts:V1+V2||V6|Novel His43Arg in Norrie twins
+P|G1|D2|sup|c|ts|sup:c:ts:V1+V2||V6|Novel Leu103Val in FEVR patient
+P|G1|D4|sup|a|ts|sup:a:ts:V3+V4||V5|14-bp deletion in regressed ROP cases
+P|G1|D3|nf|-||||V6|Aim only; no mutation reported
+F|F1|association|NDP coding mutations; Norrie/FEVR|Norrie-FEVR index cases|not_applicable|positive|not_reported|V1+V2|abstract only
+F|F2|association|NDP 5'UTR 14-bp deletion; ROP|ROP patients and ex-premature controls|unknown|positive|not_reported|V3+V4+V5|deletion also in unaffected girl

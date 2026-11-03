@@ -1,0 +1,20 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|glycine transporter-1|glycine transporter-1;GlyT1|r||||
+E|G2|gene|Nr1|Nr1|p|species_unresolved|||
+E|G3|gene|dopamine transporter|dopamine transporter;DAT|p|species_unresolved|||
+E|D1|disease|Schizophrenia|Schizophrenia|r||||
+E|S1|symptom|schizophrenic-like symptoms|schizophrenic-like symptoms|r||||
+E|S2|phenotype|hyperactivity|hyperactivity|r||||
+E|S3|phenotype|catalepsy|catalepsy|r||||
+X|glutamate N-methyl-D-aspartate (NMDA) receptor|b0002|receptor complex, not single-gene endpoint
+X|SSR103800|b0002|compound identifier, not gene
+X|MK-801|b0002|drug identifier, not gene
+EV|V1|b0002.s4+b0002.s5|ts|aim|na|ho
+EV|V2|b0002.s6|ts|res|aff|rr,mi
+EV|V3|b0002.s7|ts|res|neg|rr,mi
+P|G1|D1|nf|-|||||GlyT1 inhibition aimed as antipsychotic; no disease link
+P|G2|D1|nf|-|||||knockout hyperactivity model; schizophrenia not linked
+P|G3|D1|nf|-|||||knockout hyperactivity model; schizophrenia not linked
+F|F1|other|SSR103800 effect on hyperactivity|NMDA Nr1(neo-/-) mice|unknown|negative|not_reported|V2|partial reversal; abstract only
+F|F2|other|SSR103800 effect on hyperactivity|DAT(-/-) knockout mice|not_significant|null|not_reported|V3|abstract only

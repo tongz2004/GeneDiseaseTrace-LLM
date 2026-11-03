@@ -1,0 +1,8 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|COL3A1|COL3A1;type III procollagen gene|r||human||
+E|D1|disease|Ehlers-Danlos syndrome, vascular type|Ehlers-Danlos syndrome, vascular type;Ehlers-Danlos Syndrome, vascular type;vEDS|r||||
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s6+b0002.s8|ts|co|na|do
+P|G1|D1|sup|c|bg|sup:c:bg:V1|||V2|Abstract states vEDS is caused by COL3A1 mutations
+F|F1|descriptive|COL3A1 mutation detection by hrMCA|8 validation and 7 suspected vEDS samples|not_applicable|not_applicable|partial|V2|abstract only; novel mutations not disease-attributed

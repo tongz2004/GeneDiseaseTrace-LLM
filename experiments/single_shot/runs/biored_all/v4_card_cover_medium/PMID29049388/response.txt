@@ -1,0 +1,37 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text, tables or figures
+E|G1|gene|NPHS2 (human podocin)|NPHS2;podocin|r||human||
+E|G2|gene|mouse podocin (Nphs2)|podocin;NPHS2|r||non-human||
+E|G3|gene|miR-21|miRNA21|p|other|non-human||
+E|G4|gene|miR-193a|miRNA-193a|p|other|non-human||
+E|D1|disease|nephrotic syndrome|nephrotic syndrome|r||||
+E|D2|disease|hereditary nephrotic syndrome|hereditary nephrotic syndrome|r|||D1|
+E|D3|disease|podocin-mutation-related nephrotic syndrome|podocin-mutation-related nephrotic syndrome|r|||D1|
+E|D4|disease|end-stage renal disease|end-stage renal disease|r||||
+E|D5|disease|renal failure|renal failure|r||||
+E|S1|symptom|proteinuria|proteinuria|r||||
+E|S2|phenotype|foot process fusion|Foot process fusion|r||||
+E|S3|phenotype|tubulointerstitial fibrosis|tubulointerstitial fibrosis|r||||
+E|S4|phenotype|glomerulosclerosis|glomerulosclerosis|r||||
+X|R138Q|b0002|variant ID
+X|R140Q|b0002|variant ID
+X|Cre recombinase|b0002|genetic tool, not studied gene
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s2|bg|bgr|aff|ebr
+EV|V3|b0002.s3|bg|bgr|aff|ebr,mi
+EV|V4|b0002.s4+b0002.s6|ts|res|aff|rr,mi
+EV|V5|b0002.s13|ts|int|aff|mi,eda
+EV|V6|b0002.s13+b0002.s2|bg|bgr|aff|ebr
+EV|V7|b0001.s1|ts|res|aff|mi,eda
+EV|V8|b0002.s11|ts|res|na|rr
+EV|V9|b0002.s12|ts|res|na|do
+P|G1|D2|sup|c|bg|sup:c:bg:V1||||NPHS2 mutations stated to cause hereditary NS
+P|G1|D1|sup|c|bg|sup:c:bg:V6||||Podocin mutation called most common genetic cause
+P|G1|D4|sup|a|bg|sup:a:bg:V2||||R138Q associated with rapid progression to ESRD
+P|G1|D3|sup|a|bg|sup:a:bg:V7||||Disease named as podocin-mutation-related
+P|G2|D3|sup|c|ts|sup:c:ts:V7+V4||||Mouse R140Q induction models this disease
+P|G2|D1|sup|c|ts|sup:c:ts:V5+V4||||Induced R140Q mouse model of nephrotic syndrome
+P|G2|D5|sup|c|both|sup:c:bg:V3;sup:c:ts:V4||||R140Q mice develop renal failure, both sources
+F|F1|mechanism|R140Q podocin mRNA vs protein|induced R140Q/- mice|unknown|mixed|not_reported|V8|abstract only
+F|F2|descriptive|miRNA21, miRNA-193a expression over time|induced R140Q/- mice|unknown|positive|not_reported|V9|abstract only
+R|surface sharing|b0002.s4|Human and mouse podocin share surface forms NPHS2/podocin|Assigned by context: human variant vs mouse knock-in

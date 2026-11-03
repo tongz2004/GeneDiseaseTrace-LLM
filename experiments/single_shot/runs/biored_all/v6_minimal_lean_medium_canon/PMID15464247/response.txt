@@ -1,0 +1,18 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|IL12B|IL12B;interleukin 12B|r||human||
+E|G2|gene|interleukin-12|Interleukin-12;IL-12|p|ambiguous_mapping|human||
+E|D1|disease|hepatitis C virus infection|hepatitis C virus infection;HCV infection;HCV-infection|r||||
+E|D2|clinical_event|relapse|relapse|r||||
+X|HCV genotype 1|b0002.s6|viral genotype, not a human gene
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s5|ts|neg|neg|rr,cmp
+EV|V3|b0002.s6|ts|res|aff|rr,cmp
+EV|V4|b0002.s7|ts|int|aff|rr
+EV|V5|b0002.s8|ts|neg|neg|rr
+P|G1|D1|sup|a|ts|sup:a:ts:V3+V4;neg:-:ts:V2+V5|scope||Linked to treatment response; not to spontaneous clearance
+P|G2|D1|sup|a|bg|sup:a:bg:V1|identity||IL-12 influences recovery from HCV
+P|G1|D2|sup|a|ts|sup:a:ts:V3+V4|||1188-C allele linked to lower relapse
+F|F1|group_comparison|IL12B promoter and 3'-UTR genotypes|clearance, chronic HCV, healthy controls|not_significant|null|not_reported|V2+V5|
+F|F2|association|IL12B 1188-C allele and SVR|HCV genotype 1, high viremia|significant|positive|partial|V3+V4|No p-values given in the abstract
+F|F3|association|IL12B 1188-C allele and relapse|HCV genotype 1, high viremia|significant|negative|partial|V3|No p-values given in the abstract

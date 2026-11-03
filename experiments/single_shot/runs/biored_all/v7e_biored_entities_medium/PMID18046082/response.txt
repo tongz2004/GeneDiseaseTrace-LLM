@@ -1,0 +1,17 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|APOE|apolipoprotein E;apoE|r||human||
+E|D1|disease|lipoprotein glomerulopathy|Lipoprotein glomerulopathy;lipoprotein glomerulopathy;LPG|r||||
+E|D2|disease|proteinuria|proteinuria|r||||
+X|apoE Guangzhou|b0002.s9|variant name of APOE, not separate gene
+X|pMD 18-T|b0002.s5|cloning vector, not gene
+X|genetic disorders|b0002.s2|high-level term, not disease
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s2|bg|bgr|aff|ebr
+EV|V3|b0002.s6+b0002.s7+b0002.s9|ts|res|aff|rr,cs
+EV|V4|b0002.s1+b0002.s11+b0002.s12|ts|int|aff|eda
+EV|V5|b0002.s10|ts|co|na|do
+P|G1|D1|sup|c|both|sup:a:bg:V1;sup:c:bg:V2;sup:c:ts:V3+V4|||Variant segregates with LPG; authors infer etiology
+P|G1|D2|nf|-|||||V5|Carrier lacked proteinuria; no relation tested
+F|F1|association|APOE R150P and LPG|Chinese family, 4 LPG patients|not_applicable|positive|not_applicable|V3+V4|single family; one asymptomatic carrier
+C|C1|APOE mutation role in Chinese LPG|b0002.s2+b0002.s11|noncritical|resolved|Background doubt superseded by this study's finding

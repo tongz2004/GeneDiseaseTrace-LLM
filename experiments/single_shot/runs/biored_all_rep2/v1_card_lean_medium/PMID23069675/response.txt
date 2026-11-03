@@ -1,0 +1,23 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or figures
+E|G1|gene|NP1|neuronal pentraxin 1;NP1|r||non-human||
+E|G2|gene|PTEN|PTEN|r||non-human||
+E|G3|gene|Akt|Akt|r||non-human||
+E|G4|gene|GSK-3b|GSK-3b|r||non-human||
+E|G5|gene|Bad|Bad|r||non-human||
+E|G6|gene|Bax|Bax|r||non-human||
+E|G7|gene|Cyt C|Cyt C;cytochrome C|r||non-human||
+E|G8|gene|caspase-3|caspase-3|r||non-human||
+E|D1|disease|hypoxic-ischemic injury|hypoxic-ischemic (HI) injury;hypoxic-ischemic neuronal injury;HI neuronal injury;HI brain injury;HI|r||||
+E|S1|phenotype|neurological disabilities|neurological disabilities|r||||
+E|S2|phenotype|neuronal death|neuronal death|r||||
+X|oxygen glucose deprivation|b0002|in vitro model condition, not disease
+X|long-pentraxin family|b0002|gene family, not single gene
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s5|ts|res|aff|rr,cmp
+EV|V3|b0001.s1+b0002.s13|ts|int|hyp|ho
+EV|V4|b0002.s11|ts|res|aff|mi
+P|G1|D1|sup|a|both|sup:a:bg:V1;sup:a:ts:V2;unc:-:ts:V3|hedged_claim|V4|NP1 induced after HI injury, prior and present
+F|F1|group_comparison|NP1 expression, ipsilateral vs contralateral hippocampus|neonatal mice 24-48 h post-HI|unknown|positive|not_reported|V2|abstract only
+F|F2|group_comparison|neuronal death after OGD, NP1-KO vs WT|primary mouse hippocampal neurons|significant|negative|not_reported|V4|in vitro cell phenotype only
+F|F3|mechanism|NP1 binding Bad/Bax, mitochondrial translocation|OGD-exposed hippocampal neurons|unknown|positive|not_reported|V4|mechanistic, no disease outcome

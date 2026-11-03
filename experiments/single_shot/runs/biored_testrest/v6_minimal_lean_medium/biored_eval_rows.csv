@@ -1,0 +1,10 @@
+﻿paper_id,outcome,detail,gold_gene,gold_disease,gold_type,gold_novel,our_pair,our_gene,our_disease,our_status,our_relation,our_source,our_reason
+PMID15036754,FP,gold has both concepts but no relation,,,,,G1-D1,acetylcholinesterase,organophosphate poisoning,supported,causal,background,AChE inhibition by OPs causes acute toxicity
+PMID27464336,FP,gold has both concepts but no relation,,,,,G1-D1,RPS6KB1 (S6K1),lipodystrophy (alcohol-induced WAT loss),supported,association,this study,S6K1 activation linked to alcohol fat loss
+PMID27464336,FP,gold has both concepts but no relation,,,,,G10-D1,ATG12,lipodystrophy (alcohol-induced WAT loss),supported,association,this study,Autophagy marker increased with fat loss
+PMID27464336,FP,gold has both concepts but no relation,,,,,G11-D1,MAP1LC3B,lipodystrophy (alcohol-induced WAT loss),supported,association,this study,Autophagy marker increased with fat loss
+PMID27464336,FP,gold has both concepts but no relation,,,,,G12-D1,ULK1,lipodystrophy (alcohol-induced WAT loss),supported,association,this study,ULK1 phosphorylation increased; autophagy
+PMID27464336,FP,gold has both concepts but no relation,,,,,G16-D1,PNPLA2 (ATGL),lipodystrophy (alcohol-induced WAT loss),supported,association,this study,Lipolytic enzyme increased in eWAT
+PMID27464336,FP,gold has both concepts but no relation,,,,,G17-D1,LIPE (HSL),lipodystrophy (alcohol-induced WAT loss),supported,association,this study,HSL phosphorylation increased in eWAT
+PMID27464336,FP,gold has both concepts but no relation,,,,,G18-D1,PPARG,lipodystrophy (alcohol-induced WAT loss),supported,association,this study,Lipogenic regulator decreased
+PMID27464336,FP,gold has both concepts but no relation,,,,,G19-D1,CEBPA,lipodystrophy (alcohol-induced WAT loss),supported,association,this study,Lipogenic regulator decreased

@@ -29,3 +29,40 @@ skills/
 
 # Public showcase site: its own git repository (GeneDiseaseTrace-LLM-site), built by scripts/build_site.py
 site/
+# EU-ADR: licence unstated, so the corpus, the generated abstracts and the gold stay local
+experiments/euadr/data/
+experiments/euadr/papers/
+experiments/euadr/gold_euadr.json
+# RENET2: data licence unstated, so the data, generated articles and gold stay local
+experiments/renet2/data/
+experiments/renet2/papers/
+experiments/renet2/gold_renet2.json
+# BioTriplex: data licence not stated separately from the MIT code licence, so the data, articles and gold stay local
+experiments/biotriplex/data/
+experiments/biotriplex/papers/
+experiments/biotriplex/gold_biotriplex.json
+# article paragraphs shown to the annotator
+experiments/biotriplex/precision_check/
+# BioREx: vendored code, downloaded weights, its Python 3.12 environment and working files stay local
+experiments/biorex/vendor/
+experiments/biorex/.venv/
+experiments/biorex/weights_download/
+experiments/biorex/work/
+experiments/biorex/smoke/
+experiments/biotriplex/precision_compare/
+experiments/biotriplex/scope_check/
+# Per-paper model answers and row-level scores on corpora whose licence is unstated stay local; summaries and eval JSON are kept
+experiments/single_shot/runs/renet2/*/*/
+experiments/single_shot/runs/euadr/*/*/
+experiments/single_shot/runs/biotriplex/*/*/
+experiments/single_shot/runs/biotriplex_gpt/*/*/
+experiments/single_shot/runs/biotriplex_tune/*/*/
+experiments/single_shot/runs/renet2/*/*rows*.csv
+experiments/single_shot/runs/euadr/*/*rows*.csv
+experiments/single_shot/runs/biotriplex/*/*rows*.csv
+experiments/single_shot/runs/biotriplex_gpt/*/*rows*.csv
+# Adjudication sheets carry abstract text, the answer key and annotator labels; only the README is kept
+experiments/biored/adjudication/*/*
+!experiments/biored/adjudication/*/README.md
+# Third-party papers kept for reference
+paper/shangao_li_papers/

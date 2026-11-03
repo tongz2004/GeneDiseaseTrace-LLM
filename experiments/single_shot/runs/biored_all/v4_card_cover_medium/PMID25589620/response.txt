@@ -1,0 +1,69 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|GSTP1|GSTP1|r|||||
+E|G2|gene|COX2|COX2|r|||||
+E|G3|gene|IL10|IL10|r|||||
+E|G4|gene|EGFR|EGFR|r|||||
+E|G5|gene|EGF|EGF|r|||||
+E|G6|gene|FGFR4|FGFR4|r|||||
+E|G7|ambiguous_gene|CCDN1|CCDN1|u|suspected_typo,ambiguous_mapping||||
+E|G8|gene|VEGFR2|VEGFR2|r|||||
+E|G9|gene|VEGF|VEGF|r|||||
+E|G10|gene|CXCR2|CXCR2|r|||||
+E|G11|gene|IL8|IL8|r|||||
+E|G12|gene|MMP3|MMP3|r|||||
+E|G13|gene|ICAM1|ICAM1|r|||||
+E|G14|gene|ERCC1|ERCC1|r|||||
+E|G15|gene|RAD51|RAD51|r|||||
+E|G16|gene|XRCC3|XRCC3|r|||||
+E|D1|disease|rectal cancer|rectal cancer;rectal cancers;Rectal Cancer|r|||||
+E|D2|disease|PUGIT mucositis|PUGIT mucositis|r|||||
+E|CE1|clinical_event|toxicity|toxicity;toxicities;Toxicity|r|||||
+X|INT0144|b0002|trial identifier
+X|S9304|b0002|trial identifier
+X|rs1695|b0002|variant ID
+X|rs4073|b0002|variant ID
+X|rs1870377|b0002|variant ID
+EV|V1|b0002.s5+b0002.s6|ts|res|aff|rr,cmp
+EV|V2|b0002.s7|ts|res|aff|rr,cmp
+EV|V3|b0002.s8+b0002.s9|ts|res|aff|rr,cmp
+EV|V4|b0002.s10|ts|int|hyp|ho
+EV|V5|b0002.s1|ts|aim|na|none
+P|G1|D1|sup|r|ts|sup:r:ts:V1;unc:-:ts:V4|||rs1695 genotype significantly associated with DFS/OS
+P|G1|CE1|nf|-|||||V5|toxicity only in study aim
+P|G2|D1|nf|-|||||V5|aim list only
+P|G2|CE1|nf|-|||||V5|aim list only
+P|G3|D1|nf|-|||||V5|aim list only
+P|G3|CE1|nf|-|||||V5|aim list only
+P|G4|D1|nf|-|||||V5|aim list only
+P|G4|CE1|nf|-|||||V5|aim list only
+P|G5|D1|nf|-|||||V5|aim list only
+P|G5|CE1|nf|-|||||V5|aim list only
+P|G6|D1|nf|-|||||V5|aim list only
+P|G6|CE1|nf|-|||||V5|aim list only
+P|G7|D1|nf|-|||||V5|aim list only; identity unresolved
+P|G7|CE1|nf|-|||||V5|aim list only; identity unresolved
+P|G8|D1|nf|-|||||V5|no survival result for this gene
+P|G8|D2|sup|a|ts|sup:a:ts:V3|||Q/Q risk differs by arm, both significant
+P|G8|CE1|unc|-|ts|unc:-:ts:V3+V4|hedged_claim,scope|V5|toxicity link only hedged; result is mucositis
+P|G9|D1|nf|-|||||V5|aim list only
+P|G9|CE1|nf|-|||||V5|aim list only
+P|G10|D1|nf|-|||||V5|aim list only
+P|G10|CE1|nf|-|||||V5|aim list only
+P|G11|D1|nf|-|||||V5|no survival result for this gene
+P|G11|CE1|sup|a|ts|sup:a:ts:V2;unc:-:ts:V4|||A/A lower toxicity risk in arm 2
+P|G12|D1|nf|-|||||V5|aim list only
+P|G12|CE1|nf|-|||||V5|aim list only
+P|G13|D1|nf|-|||||V5|aim list only
+P|G13|CE1|nf|-|||||V5|aim list only
+P|G14|D1|nf|-|||||V5|aim list only
+P|G14|CE1|nf|-|||||V5|aim list only
+P|G15|D1|nf|-|||||V5|aim list only
+P|G15|CE1|nf|-|||||V5|aim list only
+P|G16|D1|nf|-|||||V5|aim list only
+P|G16|CE1|nf|-|||||V5|aim list only
+F|F1|association|GSTP1 rs1695 genotype vs DFS/OS|stage II/III rectal cancer, all arms|significant|mixed|partial|V1|non-linear by genotype; no P values
+F|F2|association|IL8 rs4073 A/A vs toxicities|arm 2|significant|negative|partial|V2|single P value only
+F|F3|association|VEGFR2 rs1870377 Q/Q vs PUGIT mucositis|arm 2|significant|positive|partial|V3|single P value only
+F|F4|association|VEGFR2 rs1870377 Q/Q vs PUGIT mucositis|arm 1|significant|negative|partial|V3|single P value only
+R|CCDN1 spelling|b0002.s1|Likely misspelling with no correctly spelled form in the text|Kept as ambiguous_gene marked suspected_typo; not merged

@@ -1,0 +1,17 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|BRAF|BRAF|r||human||
+E|D1|disease|melanoma|melanoma|r||||
+E|D2|disease|nevus|nevus;nevi|r||||
+X|rs1639679|b0002.s7|variant identifier, not gene
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s2|bg|bgr|neg|ebr
+EV|V3|b0002.s3|bg|bgr|aff|ebr
+EV|V4|b0002.s9+b0002.s10|ts|neg|neg|rr,cmp
+EV|V5|b0002.s11|ts|neg|neg|rr,cmp
+EV|V6|b0002.s4+b0002.s5|ts|hyp|hyp|ho
+P|G1|D1|sup|a|bg|sup:a:bg:V1+V3;neg:-:bg:V2;neg:-:ts:V4|||V6|somatic link in background; study finds no germline association
+P|G1|D2|sup|a|bg|sup:a:bg:V1;neg:-:ts:V5|||V6|somatic mutations in nevi; no genotype-nevus count link
+F|F1|group_comparison|BRAF rs1639679 genotype/allele vs melanoma|incident cases vs female controls; by sex|not_significant|null|not_reported|V4|abstract only
+F|F2|association|BRAF genotype vs nevus counts|melanoma cases and controls|not_significant|null|not_reported|V5|abstract only
+C|C1|BRAF haplotype melanoma risk in men|b0002.s3+b0002.s9|noncritical|resolved|prior positive, current study negative

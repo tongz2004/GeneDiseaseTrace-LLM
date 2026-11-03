@@ -1,0 +1,21 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text available
+E|G1|gene|STAT3|signal transducer and activator of transcription 3;STAT3|r|||non-human||
+E|G2|gene|Bcl-2|Bcl-2|r|||non-human||
+E|G3|gene|Bax|Bax|r|||non-human||
+E|D1|disease|myocardial ischemia|myocardial ischemia;myocardial ischemic injury|r|||||
+E|D2|disease|myocardial injury|myocardial injury;myocardial damage|r|||||
+E|D3|disease|left ventricular remodeling|left ventricular remodeling|r|||||
+EV|V1|b0002.s6|ts|res|aff|rr
+EV|V2|b0002.s7|ts|res|aff|rr,mi
+EV|V3|b0002.s9|ts|int|aff|rr,mi
+EV|V4|b0001.s1|ts|int|aff|rr,mi
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V3|||ISO ischemia raises STAT3 phosphorylation; betaine modulates
+P|G1|D2|sup|a|ts|sup:a:ts:V1+V4|||Title links STAT3 regulation to injury attenuation
+P|G2|D1|sup|a|ts|sup:a:ts:V2+V3|||Bcl-2 changes in ischemic myocardium with protection
+P|G3|D1|sup|a|ts|sup:a:ts:V2+V3|||Bax changes in ischemic myocardium with protection
+P|G2|D2|sup|a|ts|sup:a:ts:V2+V4|||Apoptotic pathway regulation attenuates myocardial injury
+P|G3|D2|sup|a|ts|sup:a:ts:V2+V4|||Apoptotic pathway regulation attenuates myocardial injury
+F|F1|mechanism|STAT3 phosphorylation; isoproterenol; betaine|rat myocardium|unknown|positive|unread|V1|abstract only
+F|F2|group_comparison|Bcl-2, Bax, Bcl-2/Bax ratio; betaine|isoproterenol rats, 200/400 mg/kg|significant|mixed|unread|V2|abstract only
+R|apoptotic pathway named generically|b0002.s9|Bcl-2/Bax attribution relies on s7 linking|Linked Bcl-2/Bax to diseases via s7 plus conclusion

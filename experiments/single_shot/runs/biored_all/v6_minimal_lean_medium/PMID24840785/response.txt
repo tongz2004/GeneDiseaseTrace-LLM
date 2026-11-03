@@ -1,0 +1,21 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|p38 MAPK|p38 MAPK;P38;P-P38;P38 mitogen-activated protein kinase|r|||non-human||
+E|G2|gene|BCL-2|BCL-2|r|||non-human||
+E|G3|gene|lactate dehydrogenase|lactate dehydrogenase|p|ambiguous_mapping|non-human||
+E|D1|disease|aconitine poisoning|aconitine poisoning;cardiotoxicity|r||||
+E|D2|disease|arrhythmia|arrhythmia|r||||
+E|D3|disease|myocardial injury|myocardial injury|r||||
+E|P1|phenotype|apoptosis|apoptosis|r||||
+X|MAPK family members|b0002.s12|gene family label, not a single gene
+X|Ca(2+) handling proteins|b0002.s10|unnamed protein group, not a single gene
+EV|V1|b0002.s12+b0002.s13|ts|res|aff|rr,mi
+EV|V2|b0002.s11|ts|res|aff|rr,mi
+EV|V3|b0002.s6+b0002.s7|ts|res|na|do
+EV|V4|b0001.s1|ts|int|aff|unc
+P|G1|D1|sup|a|ts|sup:a:ts:V1||V4|P38 phosphorylation increased in aconitine-poisoned rat hearts
+P|G2|D1|sup|a|ts|sup:a:ts:V2|||BCL-2 downregulated under aconitine toxicity
+P|G1|D2|nf|-||||V4|p38 is linked to apoptosis, not to arrhythmia
+P|G3|D3|nf|-||||V3|LDH is an assay readout only
+F|F1|mechanism|P-P38/P38 ratio; aconitine|rat cardiac tissue|unknown|positive|unread|V1|abstract only; rat model
+F|F2|mechanism|BCL-2 expression; aconitine|rats/NRVMs|unknown|negative|unread|V2|abstract only; rat model

@@ -1,0 +1,25 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|HAVCR1|TIM-1;T-cell immunoglobulin mucin 1|r||human|G3|
+E|G2|gene|HAVCR2|TIM-3;T-cell immunoglobulin mucin 3|r||human|G3|
+E|G3|gene|TIM gene family|TIM;T-cell immunoglobulin mucin|p|other|human||
+E|D1|disease|asthma|asthma|r|||||
+E|D2|disease|allergic diseases|allergic diseases|r|||||
+X|hepatitis A virus|b0002.s4|Pathogen exposure measured by seropositivity, not a target disease
+X|rs2277025|b0002.s5|TIM-1 variant identifier, attributed to G1
+X|157delMTTTVP|b0002.s5|TIM-1 deletion variant, attributed to G1
+EV|V1|b0002.s5|ts|res|aff|rr,cmp
+EV|V2|b0002.s6|ts|res|aff|rr,cmp
+EV|V3|b0002.s7|ts|res|aff|rr
+EV|V4|b0002.s9|ts|int|aff|rr
+EV|V5|b0002.s8|ts|neg|neg|rr,cmp
+EV|V6|b0001.s1|ts|int|aff|rr
+EV|V7|b0002.s1|bg|bgr|hyp|ebr,ho
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V2+V3+V4+V6|||TIM-1 variants associated with asthma risk
+P|G2|D1|neg|-|ts|neg:-:ts:V5+V6|||No TIM-3 variant association with asthma
+P|G3|D2|unc|-|bg|unc:-:bg:V7|hedged_claim||Role only suggested in prior work
+F|F1|group_comparison|rs2277025 TT and 157delMTTTVP homozygosity vs asthma|African American cases vs controls|significant|positive|available|V1|
+F|F2|association|TIM-1 haplotype vs asthma|African American cases vs controls|significant|positive|available|V2|
+F|F3|association|157delMTTTVP allele and haplotype transmission|African American families|significant|positive|available|V2|
+F|F4|association|TIM-1 variants vs asthma|HAV-seronegative subjects|unknown|positive|not_reported|V3|Stated as "seems to exist"
+F|F5|association|TIM-3 SNPs vs asthma and phenotypes|African American population|not_significant|null|not_reported|V5|

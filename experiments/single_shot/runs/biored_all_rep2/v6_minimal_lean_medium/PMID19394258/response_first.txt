@@ -1,0 +1,19 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|DGUOK|DGUOK;dGK;Deoxyguanosine kinase|r|||human||
+E|D1|disease|hepatocerebral mitochondrial DNA depletion syndrome|hepatocerebral mitochondrial DNA depletion syndrome|r|||||
+E|D2|disease|mitochondrial DNA depletion|mitochondrial DNA depletion|r|||||
+E|D3|disease|combined respiratory chain deficiency|respiratory chain deficiencies|r|||||
+E|P1|phenotype|abnormal myelination|abnormal myelination|r|||||
+EV|V1|b0001.s1|ts|res|aff|rr
+EV|V2|b0002.s1|bg|bgr|aff|ebr
+EV|V3|b0002.s3|ts|res|aff|rr,eda
+EV|V4|b0002.s8|ts|res|aff|cs
+EV|V5|b0002.s9|ts|int|aff|rr
+EV|V6|b0002.s5|ts|co|na|do
+P|G1|D1|sup|c|both|sup:c:ts:V1+V3+V4+V5;sup:c:bg:V2|||Homozygous founder mutation co-segregates with disease
+P|G1|D2|sup|c|both|sup:c:bg:V2;sup:c:ts:V3|||dGK deficiency causes mtDNA depletion
+P|G1|D3|sup|a|ts|sup:a:ts:V3|||Mutation carriers show combined RC deficiencies
+P|G1|P1|unc|-|ts|unc:-:ts:V6|support_basis_unresolved||Observed in mutation patients; descriptive only
+F|F1|descriptive|DGUOK c.444-62C>A homozygous; MDDS|3 patients, 2 North-African families|not_applicable|not_applicable|not_reported|V3|small sample
+F|F2|association|common haplotype at DGUOK locus; disease|2 consanguineous families|unknown|positive|not_reported|V4|10 markers only

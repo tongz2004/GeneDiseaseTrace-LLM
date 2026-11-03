@@ -1,0 +1,8125 @@
+{
+ "PMID1848636": {
+  "blocks": [
+   "b0001",
+   "b0002"
+  ],
+  "mentions": [
+   {
+    "identifier": "D003647",
+    "type": "ChemicalEntity",
+    "text": "Debrisoquine",
+    "offset": 0,
+    "length": 12,
+    "block_id": "b0001",
+    "start": 0,
+    "end": 12
+   },
+   {
+    "identifier": "154",
+    "type": "GeneOrGeneProduct",
+    "text": "beta-2 receptor",
+    "offset": 52,
+    "length": 15,
+    "block_id": "b0001",
+    "start": 52,
+    "end": 67
+   },
+   {
+    "identifier": "D008790",
+    "type": "ChemicalEntity",
+    "text": "metoprolol",
+    "offset": 88,
+    "length": 10,
+    "block_id": "b0001",
+    "start": 88,
+    "end": 98
+   },
+   {
+    "identifier": "D008790",
+    "type": "ChemicalEntity",
+    "text": "metoprolol",
+    "offset": 171,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 51,
+    "end": 61
+   },
+   {
+    "identifier": "D003647",
+    "type": "ChemicalEntity",
+    "text": "debrisoquine",
+    "offset": 214,
+    "length": 12,
+    "block_id": "b0002",
+    "start": 94,
+    "end": 106
+   },
+   {
+    "identifier": "D013034",
+    "type": "ChemicalEntity",
+    "text": "sparteine",
+    "offset": 227,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 107,
+    "end": 116
+   },
+   {
+    "identifier": "153",
+    "type": "GeneOrGeneProduct",
+    "text": "beta-1 adrenoceptor",
+    "offset": 390,
+    "length": 19,
+    "block_id": "b0002",
+    "start": 270,
+    "end": 289
+   },
+   {
+    "identifier": "D008790",
+    "type": "ChemicalEntity",
+    "text": "metoprolol",
+    "offset": 442,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 322,
+    "end": 332
+   },
+   {
+    "identifier": "154",
+    "type": "GeneOrGeneProduct",
+    "text": "beta-2 adrenoceptor",
+    "offset": 511,
+    "length": 19,
+    "block_id": "b0002",
+    "start": 391,
+    "end": 410
+   },
+   {
+    "identifier": "D008790",
+    "type": "ChemicalEntity",
+    "text": "metoprolol",
+    "offset": 545,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 425,
+    "end": 435
+   },
+   {
+    "identifier": "D008790",
+    "type": "ChemicalEntity",
+    "text": "metoprolol",
+    "offset": 603,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 483,
+    "end": 493
+   },
+   {
+    "identifier": "D013726",
+    "type": "ChemicalEntity",
+    "text": "terbutaline",
+    "offset": 617,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 497,
+    "end": 508
+   },
+   {
+    "identifier": "D007008",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "hypokalemia",
+    "offset": 637,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 517,
+    "end": 528
+   },
+   {
+    "identifier": "D008790",
+    "type": "ChemicalEntity",
+    "text": "metoprolol",
+    "offset": 732,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 612,
+    "end": 622
+   },
+   {
+    "identifier": "D008790",
+    "type": "ChemicalEntity",
+    "text": "metoprolol",
+    "offset": 838,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 718,
+    "end": 728
+   },
+   {
+    "identifier": "D013726",
+    "type": "ChemicalEntity",
+    "text": "terbutaline",
+    "offset": 944,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 824,
+    "end": 835
+   },
+   {
+    "identifier": "D008790",
+    "type": "ChemicalEntity",
+    "text": "metoprolol",
+    "offset": 1059,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 939,
+    "end": 949
+   },
+   {
+    "identifier": "D013726",
+    "type": "ChemicalEntity",
+    "text": "terbutaline",
+    "offset": 1149,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 1029,
+    "end": 1040
+   },
+   {
+    "identifier": "D011188",
+    "type": "ChemicalEntity",
+    "text": "potassium",
+    "offset": 1227,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1107,
+    "end": 1116
+   },
+   {
+    "identifier": "D013726",
+    "type": "ChemicalEntity",
+    "text": "terbutaline",
+    "offset": 1238,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 1118,
+    "end": 1129
+   },
+   {
+    "identifier": "D008790",
+    "type": "ChemicalEntity",
+    "text": "metoprolol",
+    "offset": 1251,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 1131,
+    "end": 1141
+   },
+   {
+    "identifier": "C029504",
+    "type": "ChemicalEntity",
+    "text": "alpha-hydroxymetoprolol",
+    "offset": 1294,
+    "length": 23,
+    "block_id": "b0002",
+    "start": 1174,
+    "end": 1197
+   },
+   {
+    "identifier": "D008790",
+    "type": "ChemicalEntity",
+    "text": "metoprolol",
+    "offset": 1389,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 1269,
+    "end": 1279
+   },
+   {
+    "identifier": "D008790",
+    "type": "ChemicalEntity",
+    "text": "metoprolol",
+    "offset": 1409,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 1289,
+    "end": 1299
+   },
+   {
+    "identifier": "D013726",
+    "type": "ChemicalEntity",
+    "text": "terbutaline",
+    "offset": 1434,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 1314,
+    "end": 1325
+   },
+   {
+    "identifier": "D008790",
+    "type": "ChemicalEntity",
+    "text": "metoprolol",
+    "offset": 1512,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 1392,
+    "end": 1402
+   },
+   {
+    "identifier": "C029504",
+    "type": "ChemicalEntity",
+    "text": "alpha-hydroxymetoprolol",
+    "offset": 1523,
+    "length": 23,
+    "block_id": "b0002",
+    "start": 1403,
+    "end": 1426
+   },
+   {
+    "identifier": "D008790",
+    "type": "ChemicalEntity",
+    "text": "metoprolol",
+    "offset": 1652,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 1532,
+    "end": 1542
+   },
+   {
+    "identifier": "D008790",
+    "type": "ChemicalEntity",
+    "text": "metoprolol",
+    "offset": 1691,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 1571,
+    "end": 1581
+   }
+  ],
+  "relations": []
+ },
+ "PMID8829135": {
+  "blocks": [
+   "b0001",
+   "b0002"
+  ],
+  "mentions": [
+   {
+    "identifier": "C058876",
+    "type": "ChemicalEntity",
+    "text": "Nefiracetam",
+    "offset": 0,
+    "length": 11,
+    "block_id": "b0001",
+    "start": 0,
+    "end": 11
+   },
+   {
+    "identifier": "C058876",
+    "type": "ChemicalEntity",
+    "text": "DM-9384",
+    "offset": 13,
+    "length": 7,
+    "block_id": "b0001",
+    "start": 13,
+    "end": 20
+   },
+   {
+    "identifier": "D001058",
+    "type": "ChemicalEntity",
+    "text": "apomorphine",
+    "offset": 31,
+    "length": 11,
+    "block_id": "b0001",
+    "start": 31,
+    "end": 42
+   },
+   {
+    "identifier": "D000647",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "amnesia",
+    "offset": 51,
+    "length": 7,
+    "block_id": "b0001",
+    "start": 51,
+    "end": 58
+   },
+   {
+    "identifier": "C058876",
+    "type": "ChemicalEntity",
+    "text": "Nefiracetam",
+    "offset": 143,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 0,
+    "end": 11
+   },
+   {
+    "identifier": "D011760",
+    "type": "ChemicalEntity",
+    "text": "pyrrolidone",
+    "offset": 166,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 23,
+    "end": 34
+   },
+   {
+    "identifier": "D012601",
+    "type": "ChemicalEntity",
+    "text": "scopolamine",
+    "offset": 206,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 63,
+    "end": 74
+   },
+   {
+    "identifier": "D007859",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "learning and post-training consolidation deficits",
+    "offset": 226,
+    "length": 49,
+    "block_id": "b0002",
+    "start": 83,
+    "end": 132
+   },
+   {
+    "identifier": "D001058",
+    "type": "ChemicalEntity",
+    "text": "apomorphine",
+    "offset": 288,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 145,
+    "end": 156
+   },
+   {
+    "identifier": "C058876",
+    "type": "ChemicalEntity",
+    "text": "nefiracetam",
+    "offset": 437,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 294,
+    "end": 305
+   },
+   {
+    "identifier": "D000647",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "amnesia",
+    "offset": 462,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 319,
+    "end": 326
+   },
+   {
+    "identifier": "D018491",
+    "type": "ChemicalEntity",
+    "text": "dopaminergic agonism",
+    "offset": 481,
+    "length": 20,
+    "block_id": "b0002",
+    "start": 338,
+    "end": 358
+   },
+   {
+    "identifier": "C058876",
+    "type": "ChemicalEntity",
+    "text": "nefiracetam",
+    "offset": 559,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 416,
+    "end": 427
+   },
+   {
+    "identifier": "D001058",
+    "type": "ChemicalEntity",
+    "text": "apomorphine",
+    "offset": 585,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 442,
+    "end": 453
+   },
+   {
+    "identifier": "C058876",
+    "type": "ChemicalEntity",
+    "text": "nefiracetam",
+    "offset": 738,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 595,
+    "end": 606
+   },
+   {
+    "identifier": "D001058",
+    "type": "ChemicalEntity",
+    "text": "apomorphine",
+    "offset": 754,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 611,
+    "end": 622
+   },
+   {
+    "identifier": "D000647",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "amnesic",
+    "offset": 829,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 686,
+    "end": 693
+   },
+   {
+    "identifier": "C058876",
+    "type": "ChemicalEntity",
+    "text": "nefiracetam",
+    "offset": 872,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 729,
+    "end": 740
+   },
+   {
+    "identifier": "D000647",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "amnesia",
+    "offset": 924,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 781,
+    "end": 788
+   },
+   {
+    "identifier": "D001058",
+    "type": "ChemicalEntity",
+    "text": "apomorphine",
+    "offset": 943,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 800,
+    "end": 811
+   },
+   {
+    "identifier": "C058876",
+    "type": "ChemicalEntity",
+    "text": "nefiracetam",
+    "offset": 1080,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 937,
+    "end": 948
+   },
+   {
+    "identifier": "D014316",
+    "type": "ChemicalEntity",
+    "text": "3H",
+    "offset": 1150,
+    "length": 2,
+    "block_id": "b0002",
+    "start": 1007,
+    "end": 1009
+   },
+   {
+    "identifier": "C534628",
+    "type": "ChemicalEntity",
+    "text": "SCH 23390",
+    "offset": 1153,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1010,
+    "end": 1019
+   },
+   {
+    "identifier": "D014316",
+    "type": "ChemicalEntity",
+    "text": "3H",
+    "offset": 1167,
+    "length": 2,
+    "block_id": "b0002",
+    "start": 1024,
+    "end": 1026
+   },
+   {
+    "identifier": "D013134",
+    "type": "ChemicalEntity",
+    "text": "spiperone",
+    "offset": 1170,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1027,
+    "end": 1036
+   },
+   {
+    "identifier": "1812,1813",
+    "type": "GeneOrGeneProduct",
+    "text": "D1 or D2 dopamine receptor",
+    "offset": 1193,
+    "length": 26,
+    "block_id": "b0002",
+    "start": 1050,
+    "end": 1076
+   },
+   {
+    "identifier": "C058876",
+    "type": "ChemicalEntity",
+    "text": "nefiracetam",
+    "offset": 1265,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 1122,
+    "end": 1133
+   }
+  ],
+  "relations": []
+ },
+ "PMID9672936": {
+  "blocks": [
+   "b0001",
+   "b0002"
+  ],
+  "mentions": [
+   {
+    "identifier": "D008614",
+    "type": "ChemicalEntity",
+    "text": "Pethidine",
+    "offset": 0,
+    "length": 9,
+    "block_id": "b0001",
+    "start": 0,
+    "end": 9
+   },
+   {
+    "identifier": "D012640",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "seizure",
+    "offset": 21,
+    "length": 7,
+    "block_id": "b0001",
+    "start": 21,
+    "end": 28
+   },
+   {
+    "identifier": "D008614",
+    "type": "ChemicalEntity",
+    "text": "pethidine",
+    "offset": 63,
+    "length": 9,
+    "block_id": "b0001",
+    "start": 63,
+    "end": 72
+   },
+   {
+    "identifier": "D010149",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "postoperative pain",
+    "offset": 77,
+    "length": 18,
+    "block_id": "b0001",
+    "start": 77,
+    "end": 95
+   },
+   {
+    "identifier": "D008614",
+    "type": "ChemicalEntity",
+    "text": "pethidine",
+    "offset": 172,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 67,
+    "end": 76
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patient",
+    "offset": 188,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 83,
+    "end": 90
+   },
+   {
+    "identifier": "D010149",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "postoperative pain",
+    "offset": 246,
+    "length": 18,
+    "block_id": "b0002",
+    "start": 141,
+    "end": 159
+   },
+   {
+    "identifier": "D012640",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "seizure",
+    "offset": 339,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 234,
+    "end": 241
+   },
+   {
+    "identifier": "D008614",
+    "type": "ChemicalEntity",
+    "text": "pethidine",
+    "offset": 360,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 255,
+    "end": 264
+   },
+   {
+    "identifier": "C002752",
+    "type": "ChemicalEntity",
+    "text": "norpethidine",
+    "offset": 374,
+    "length": 12,
+    "block_id": "b0002",
+    "start": 269,
+    "end": 281
+   },
+   {
+    "identifier": "D064420",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "toxicity",
+    "offset": 522,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 417,
+    "end": 425
+   },
+   {
+    "identifier": "D008614",
+    "type": "ChemicalEntity",
+    "text": "pethidine",
+    "offset": 592,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 487,
+    "end": 496
+   },
+   {
+    "identifier": "D008614",
+    "type": "ChemicalEntity",
+    "text": "pethidine",
+    "offset": 652,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 547,
+    "end": 556
+   },
+   {
+    "identifier": "C002752",
+    "type": "ChemicalEntity",
+    "text": "norpethidine",
+    "offset": 666,
+    "length": 12,
+    "block_id": "b0002",
+    "start": 561,
+    "end": 573
+   },
+   {
+    "identifier": "D008614",
+    "type": "ChemicalEntity",
+    "text": "pethidine",
+    "offset": 699,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 594,
+    "end": 603
+   },
+   {
+    "identifier": "D010149",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "postoperative analgesia",
+    "offset": 734,
+    "length": 23,
+    "block_id": "b0002",
+    "start": 629,
+    "end": 652
+   }
+  ],
+  "relations": []
+ },
+ "PMID15036754": {
+  "blocks": [
+   "b0001",
+   "b0002"
+  ],
+  "mentions": [
+   {
+    "identifier": "D010755",
+    "type": "ChemicalEntity",
+    "text": "Organophosphate",
+    "offset": 0,
+    "length": 15,
+    "block_id": "b0001",
+    "start": 0,
+    "end": 15
+   },
+   {
+    "identifier": "D012640",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "convulsions",
+    "offset": 24,
+    "length": 11,
+    "block_id": "b0001",
+    "start": 24,
+    "end": 35
+   },
+   {
+    "identifier": "D004194",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "neuropathological damages",
+    "offset": 54,
+    "length": 25,
+    "block_id": "b0001",
+    "start": 54,
+    "end": 79
+   },
+   {
+    "identifier": "D010755",
+    "type": "ChemicalEntity",
+    "text": "organophosphorus",
+    "offset": 86,
+    "length": 16,
+    "block_id": "b0002",
+    "start": 5,
+    "end": 21
+   },
+   {
+    "identifier": "D010755",
+    "type": "ChemicalEntity",
+    "text": "OP",
+    "offset": 104,
+    "length": 2,
+    "block_id": "b0002",
+    "start": 23,
+    "end": 25
+   },
+   {
+    "identifier": "D007531",
+    "type": "ChemicalEntity",
+    "text": "diisopropylfluorophosphate",
+    "offset": 121,
+    "length": 26,
+    "block_id": "b0002",
+    "start": 40,
+    "end": 66
+   },
+   {
+    "identifier": "D007531",
+    "type": "ChemicalEntity",
+    "text": "DFP",
+    "offset": 149,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 68,
+    "end": 71
+   },
+   {
+    "identifier": "D012524",
+    "type": "ChemicalEntity",
+    "text": "sarin",
+    "offset": 155,
+    "length": 5,
+    "block_id": "b0002",
+    "start": 74,
+    "end": 79
+   },
+   {
+    "identifier": "D012999",
+    "type": "ChemicalEntity",
+    "text": "soman",
+    "offset": 165,
+    "length": 5,
+    "block_id": "b0002",
+    "start": 84,
+    "end": 89
+   },
+   {
+    "identifier": "83817",
+    "type": "GeneOrGeneProduct",
+    "text": "acetylcholinesterases",
+    "offset": 196,
+    "length": 21,
+    "block_id": "b0002",
+    "start": 115,
+    "end": 136
+   },
+   {
+    "identifier": "83817",
+    "type": "GeneOrGeneProduct",
+    "text": "AChEs",
+    "offset": 219,
+    "length": 5,
+    "block_id": "b0002",
+    "start": 138,
+    "end": 143
+   },
+   {
+    "identifier": "65036",
+    "type": "GeneOrGeneProduct",
+    "text": "butyrylcholinesterases",
+    "offset": 230,
+    "length": 22,
+    "block_id": "b0002",
+    "start": 149,
+    "end": 171
+   },
+   {
+    "identifier": "65036",
+    "type": "GeneOrGeneProduct",
+    "text": "BChEs",
+    "offset": 254,
+    "length": 5,
+    "block_id": "b0002",
+    "start": 173,
+    "end": 178
+   },
+   {
+    "identifier": "D064420",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "toxicity",
+    "offset": 272,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 191,
+    "end": 199
+   },
+   {
+    "identifier": "D010755",
+    "type": "ChemicalEntity",
+    "text": "OPs",
+    "offset": 284,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 203,
+    "end": 206
+   },
+   {
+    "identifier": "83817",
+    "type": "GeneOrGeneProduct",
+    "text": "AChEs",
+    "offset": 337,
+    "length": 5,
+    "block_id": "b0002",
+    "start": 256,
+    "end": 261
+   },
+   {
+    "identifier": "D000109",
+    "type": "ChemicalEntity",
+    "text": "acetylcholine",
+    "offset": 395,
+    "length": 13,
+    "block_id": "b0002",
+    "start": 314,
+    "end": 327
+   },
+   {
+    "identifier": "D000109",
+    "type": "ChemicalEntity",
+    "text": "ACh",
+    "offset": 410,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 329,
+    "end": 332
+   },
+   {
+    "identifier": "D007531",
+    "type": "ChemicalEntity",
+    "text": "DFP",
+    "offset": 516,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 435,
+    "end": 438
+   },
+   {
+    "identifier": "10116",
+    "type": "OrganismTaxon",
+    "text": "rats",
+    "offset": 594,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 513,
+    "end": 517
+   },
+   {
+    "identifier": "10116",
+    "type": "OrganismTaxon",
+    "text": "rats",
+    "offset": 604,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 523,
+    "end": 527
+   },
+   {
+    "identifier": "83817",
+    "type": "GeneOrGeneProduct",
+    "text": "AChE",
+    "offset": 618,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 537,
+    "end": 541
+   },
+   {
+    "identifier": "D011220",
+    "type": "ChemicalEntity",
+    "text": "pralidoxime-2-chloride",
+    "offset": 635,
+    "length": 22,
+    "block_id": "b0002",
+    "start": 554,
+    "end": 576
+   },
+   {
+    "identifier": "D011220",
+    "type": "ChemicalEntity",
+    "text": "2PAM",
+    "offset": 659,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 578,
+    "end": 582
+   },
+   {
+    "identifier": "D003975",
+    "type": "ChemicalEntity",
+    "text": "diazepam",
+    "offset": 697,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 616,
+    "end": 624
+   },
+   {
+    "identifier": "29290",
+    "type": "GeneOrGeneProduct",
+    "text": "A(1)-adenosine receptor",
+    "offset": 722,
+    "length": 23,
+    "block_id": "b0002",
+    "start": 641,
+    "end": 664
+   },
+   {
+    "identifier": "C048599",
+    "type": "ChemicalEntity",
+    "text": "N(6)-cyclopentyl adenosine",
+    "offset": 754,
+    "length": 26,
+    "block_id": "b0002",
+    "start": 673,
+    "end": 699
+   },
+   {
+    "identifier": "C048599",
+    "type": "ChemicalEntity",
+    "text": "CPA",
+    "offset": 782,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 701,
+    "end": 704
+   },
+   {
+    "identifier": "24408",
+    "type": "GeneOrGeneProduct",
+    "text": "NMDA-receptor",
+    "offset": 803,
+    "length": 13,
+    "block_id": "b0002",
+    "start": 722,
+    "end": 735
+   },
+   {
+    "identifier": "D016291",
+    "type": "ChemicalEntity",
+    "text": "dizocilpine maleate",
+    "offset": 828,
+    "length": 19,
+    "block_id": "b0002",
+    "start": 747,
+    "end": 766
+   },
+   {
+    "identifier": "D016291",
+    "type": "ChemicalEntity",
+    "text": "MK801 hydrogen maleate",
+    "offset": 851,
+    "length": 22,
+    "block_id": "b0002",
+    "start": 770,
+    "end": 792
+   },
+   {
+    "identifier": "D001285",
+    "type": "ChemicalEntity",
+    "text": "atropine sulfate",
+    "offset": 935,
+    "length": 16,
+    "block_id": "b0002",
+    "start": 854,
+    "end": 870
+   },
+   {
+    "identifier": "D007531",
+    "type": "ChemicalEntity",
+    "text": "DFP",
+    "offset": 1023,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 942,
+    "end": 945
+   },
+   {
+    "identifier": "10116",
+    "type": "OrganismTaxon",
+    "text": "rats",
+    "offset": 1040,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 959,
+    "end": 963
+   },
+   {
+    "identifier": "D001285",
+    "type": "ChemicalEntity",
+    "text": "atropine sulfate",
+    "offset": 1054,
+    "length": 16,
+    "block_id": "b0002",
+    "start": 973,
+    "end": 989
+   },
+   {
+    "identifier": "D000069463",
+    "type": "ChemicalEntity",
+    "text": "olive oil",
+    "offset": 1092,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1011,
+    "end": 1020
+   },
+   {
+    "identifier": "D007531",
+    "type": "ChemicalEntity",
+    "text": "DFP",
+    "offset": 1133,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 1052,
+    "end": 1055
+   },
+   {
+    "identifier": "10116",
+    "type": "OrganismTaxon",
+    "text": "rats",
+    "offset": 1156,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 1075,
+    "end": 1079
+   },
+   {
+    "identifier": "D007531",
+    "type": "ChemicalEntity",
+    "text": "DFP",
+    "offset": 1210,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 1129,
+    "end": 1132
+   },
+   {
+    "identifier": "10116",
+    "type": "OrganismTaxon",
+    "text": "rats",
+    "offset": 1229,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 1148,
+    "end": 1152
+   },
+   {
+    "identifier": "D007531",
+    "type": "ChemicalEntity",
+    "text": "DFP",
+    "offset": 1247,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 1166,
+    "end": 1169
+   },
+   {
+    "identifier": "D001285",
+    "type": "ChemicalEntity",
+    "text": "atropine",
+    "offset": 1251,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1170,
+    "end": 1178
+   },
+   {
+    "identifier": "D010755",
+    "type": "ChemicalEntity",
+    "text": "OP",
+    "offset": 1282,
+    "length": 2,
+    "block_id": "b0002",
+    "start": 1201,
+    "end": 1203
+   },
+   {
+    "identifier": "D064420",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "toxicity",
+    "offset": 1293,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1212,
+    "end": 1220
+   },
+   {
+    "identifier": "C048599",
+    "type": "ChemicalEntity",
+    "text": "CPA",
+    "offset": 1314,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 1233,
+    "end": 1236
+   },
+   {
+    "identifier": "D003975",
+    "type": "ChemicalEntity",
+    "text": "diazepam",
+    "offset": 1319,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1238,
+    "end": 1246
+   },
+   {
+    "identifier": "D011220",
+    "type": "ChemicalEntity",
+    "text": "2PAM",
+    "offset": 1331,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 1250,
+    "end": 1254
+   },
+   {
+    "identifier": "D007531",
+    "type": "ChemicalEntity",
+    "text": "DFP",
+    "offset": 1364,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 1283,
+    "end": 1286
+   },
+   {
+    "identifier": "D001285",
+    "type": "ChemicalEntity",
+    "text": "atropine",
+    "offset": 1368,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1287,
+    "end": 1295
+   },
+   {
+    "identifier": "D011041",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "poisoning",
+    "offset": 1462,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1381,
+    "end": 1390
+   },
+   {
+    "identifier": "D001285",
+    "type": "ChemicalEntity",
+    "text": "Atropine",
+    "offset": 1473,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1392,
+    "end": 1400
+   },
+   {
+    "identifier": "D016291",
+    "type": "ChemicalEntity",
+    "text": "MK801",
+    "offset": 1482,
+    "length": 5,
+    "block_id": "b0002",
+    "start": 1401,
+    "end": 1406
+   },
+   {
+    "identifier": "D007531",
+    "type": "ChemicalEntity",
+    "text": "DFP",
+    "offset": 1536,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 1455,
+    "end": 1458
+   },
+   {
+    "identifier": "D064420",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "toxicity",
+    "offset": 1540,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1459,
+    "end": 1467
+   },
+   {
+    "identifier": "C048599",
+    "type": "ChemicalEntity",
+    "text": "CPA",
+    "offset": 1565,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 1484,
+    "end": 1487
+   },
+   {
+    "identifier": "D003975",
+    "type": "ChemicalEntity",
+    "text": "diazepam",
+    "offset": 1570,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1489,
+    "end": 1497
+   },
+   {
+    "identifier": "D011220",
+    "type": "ChemicalEntity",
+    "text": "2PAM",
+    "offset": 1583,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 1502,
+    "end": 1506
+   },
+   {
+    "identifier": "D001285",
+    "type": "ChemicalEntity",
+    "text": "atropine",
+    "offset": 1608,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1527,
+    "end": 1535
+   },
+   {
+    "identifier": "D011041",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "poisoning",
+    "offset": 1662,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1581,
+    "end": 1590
+   },
+   {
+    "identifier": "D064420",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "toxicity",
+    "offset": 1693,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1612,
+    "end": 1620
+   },
+   {
+    "identifier": "D007531",
+    "type": "ChemicalEntity",
+    "text": "DFP",
+    "offset": 1705,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 1624,
+    "end": 1627
+   },
+   {
+    "identifier": "10116",
+    "type": "OrganismTaxon",
+    "text": "rat",
+    "offset": 1712,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 1631,
+    "end": 1634
+   }
+  ],
+  "relations": []
+ },
+ "PMID15130900": {
+  "blocks": [
+   "b0001",
+   "b0002"
+  ],
+  "mentions": [
+   {
+    "identifier": "D001749",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "Urinary bladder cancer",
+    "offset": 0,
+    "length": 22,
+    "block_id": "b0001",
+    "start": 0,
+    "end": 22
+   },
+   {
+    "identifier": "D014890",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "Wegener's granulomatosis",
+    "offset": 26,
+    "length": 24,
+    "block_id": "b0001",
+    "start": 26,
+    "end": 50
+   },
+   {
+    "identifier": "D003520",
+    "type": "ChemicalEntity",
+    "text": "cyclophosphamide",
+    "offset": 74,
+    "length": 16,
+    "block_id": "b0001",
+    "start": 74,
+    "end": 90
+   },
+   {
+    "identifier": "D001749",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "bladder cancer",
+    "offset": 142,
+    "length": 14,
+    "block_id": "b0002",
+    "start": 50,
+    "end": 64
+   },
+   {
+    "identifier": "D003520",
+    "type": "ChemicalEntity",
+    "text": "cyclophosphamide",
+    "offset": 178,
+    "length": 16,
+    "block_id": "b0002",
+    "start": 86,
+    "end": 102
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 199,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 107,
+    "end": 115
+   },
+   {
+    "identifier": "D014890",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "Wegener's granulomatosis",
+    "offset": 213,
+    "length": 24,
+    "block_id": "b0002",
+    "start": 121,
+    "end": 145
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "Inpatient",
+    "offset": 292,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 200,
+    "end": 209
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 328,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 236,
+    "end": 244
+   },
+   {
+    "identifier": "D014890",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "Wegener's granulomatosis",
+    "offset": 342,
+    "length": 24,
+    "block_id": "b0002",
+    "start": 250,
+    "end": 274
+   },
+   {
+    "identifier": "D009369",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "Cancer",
+    "offset": 426,
+    "length": 6,
+    "block_id": "b0002",
+    "start": 334,
+    "end": 340
+   },
+   {
+    "identifier": "D001749",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "bladder cancer",
+    "offset": 486,
+    "length": 14,
+    "block_id": "b0002",
+    "start": 394,
+    "end": 408
+   },
+   {
+    "identifier": "D003520",
+    "type": "ChemicalEntity",
+    "text": "cyclophosphamide",
+    "offset": 623,
+    "length": 16,
+    "block_id": "b0002",
+    "start": 531,
+    "end": 547
+   },
+   {
+    "identifier": "D001749",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "bladder cancer",
+    "offset": 644,
+    "length": 14,
+    "block_id": "b0002",
+    "start": 552,
+    "end": 566
+   },
+   {
+    "identifier": "D001749",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "bladder cancer",
+    "offset": 738,
+    "length": 14,
+    "block_id": "b0002",
+    "start": 646,
+    "end": 660
+   },
+   {
+    "identifier": "D014890",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "Wegener's granulomatosis",
+    "offset": 759,
+    "length": 24,
+    "block_id": "b0002",
+    "start": 667,
+    "end": 691
+   },
+   {
+    "identifier": "D001749",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "bladder cancer",
+    "offset": 829,
+    "length": 14,
+    "block_id": "b0002",
+    "start": 737,
+    "end": 751
+   },
+   {
+    "identifier": "D014890",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "Wegener's granulomatosis",
+    "offset": 872,
+    "length": 24,
+    "block_id": "b0002",
+    "start": 780,
+    "end": 804
+   },
+   {
+    "identifier": "D003520",
+    "type": "ChemicalEntity",
+    "text": "cyclophosphamide",
+    "offset": 959,
+    "length": 16,
+    "block_id": "b0002",
+    "start": 867,
+    "end": 883
+   },
+   {
+    "identifier": "D001749",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "bladder cancer",
+    "offset": 1066,
+    "length": 14,
+    "block_id": "b0002",
+    "start": 974,
+    "end": 988
+   },
+   {
+    "identifier": "D003520",
+    "type": "ChemicalEntity",
+    "text": "cyclophosphamide",
+    "offset": 1117,
+    "length": 16,
+    "block_id": "b0002",
+    "start": 1025,
+    "end": 1041
+   },
+   {
+    "identifier": "D001749",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "bladder cancer",
+    "offset": 1325,
+    "length": 14,
+    "block_id": "b0002",
+    "start": 1233,
+    "end": 1247
+   },
+   {
+    "identifier": "D014890",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "Wegener's granulomatosis",
+    "offset": 1394,
+    "length": 24,
+    "block_id": "b0002",
+    "start": 1302,
+    "end": 1326
+   },
+   {
+    "identifier": "D001749",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "bladder cancer",
+    "offset": 1437,
+    "length": 14,
+    "block_id": "b0002",
+    "start": 1345,
+    "end": 1359
+   },
+   {
+    "identifier": "D014890",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "Wegener's granulomatosis",
+    "offset": 1532,
+    "length": 24,
+    "block_id": "b0002",
+    "start": 1440,
+    "end": 1464
+   },
+   {
+    "identifier": "D003520",
+    "type": "ChemicalEntity",
+    "text": "cyclophosphamide",
+    "offset": 1628,
+    "length": 16,
+    "block_id": "b0002",
+    "start": 1536,
+    "end": 1552
+   },
+   {
+    "identifier": "D001749",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "bladder cancer",
+    "offset": 1661,
+    "length": 14,
+    "block_id": "b0002",
+    "start": 1569,
+    "end": 1583
+   },
+   {
+    "identifier": "D014890",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "Wegener's granulomatosis",
+    "offset": 1784,
+    "length": 24,
+    "block_id": "b0002",
+    "start": 1692,
+    "end": 1716
+   }
+  ],
+  "relations": []
+ },
+ "PMID15233872": {
+  "blocks": [
+   "b0001",
+   "b0002"
+  ],
+  "mentions": [
+   {
+    "identifier": "C007145",
+    "type": "ChemicalEntity",
+    "text": "tincture of Crataegus",
+    "offset": 27,
+    "length": 21,
+    "block_id": "b0001",
+    "start": 27,
+    "end": 48
+   },
+   {
+    "identifier": "D007545",
+    "type": "ChemicalEntity",
+    "text": "isoproterenol",
+    "offset": 52,
+    "length": 13,
+    "block_id": "b0001",
+    "start": 52,
+    "end": 65
+   },
+   {
+    "identifier": "D009203",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "myocardial infarction",
+    "offset": 74,
+    "length": 21,
+    "block_id": "b0001",
+    "start": 74,
+    "end": 95
+   },
+   {
+    "identifier": "10116",
+    "type": "OrganismTaxon",
+    "text": "rats",
+    "offset": 99,
+    "length": 4,
+    "block_id": "b0001",
+    "start": 99,
+    "end": 103
+   },
+   {
+    "identifier": "C007145",
+    "type": "ChemicalEntity",
+    "text": "Tincture of Crataegus",
+    "offset": 105,
+    "length": 21,
+    "block_id": "b0002",
+    "start": 0,
+    "end": 21
+   },
+   {
+    "identifier": "C007145",
+    "type": "ChemicalEntity",
+    "text": "TCR",
+    "offset": 128,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 23,
+    "end": 26
+   },
+   {
+    "identifier": "C007145",
+    "type": "ChemicalEntity",
+    "text": "alcoholic extract of the berries of hawthorn",
+    "offset": 137,
+    "length": 44,
+    "block_id": "b0002",
+    "start": 32,
+    "end": 76
+   },
+   {
+    "identifier": "C007145",
+    "type": "ChemicalEntity",
+    "text": "Crataegus oxycantha",
+    "offset": 183,
+    "length": 19,
+    "block_id": "b0002",
+    "start": 78,
+    "end": 97
+   },
+   {
+    "identifier": "C007145",
+    "type": "ChemicalEntity",
+    "text": "TCR",
+    "offset": 316,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 211,
+    "end": 214
+   },
+   {
+    "identifier": "D009203",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "myocardial infarction",
+    "offset": 346,
+    "length": 21,
+    "block_id": "b0002",
+    "start": 241,
+    "end": 262
+   },
+   {
+    "identifier": "10116",
+    "type": "OrganismTaxon",
+    "text": "rats",
+    "offset": 371,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 266,
+    "end": 270
+   },
+   {
+    "identifier": "C007145",
+    "type": "ChemicalEntity",
+    "text": "TCR",
+    "offset": 393,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 288,
+    "end": 291
+   },
+   {
+    "identifier": "D008055",
+    "type": "ChemicalEntity",
+    "text": "lipid",
+    "offset": 490,
+    "length": 5,
+    "block_id": "b0002",
+    "start": 385,
+    "end": 390
+   },
+   {
+    "identifier": "D007545",
+    "type": "ChemicalEntity",
+    "text": "isoproterenol",
+    "offset": 552,
+    "length": 13,
+    "block_id": "b0002",
+    "start": 447,
+    "end": 460
+   },
+   {
+    "identifier": "10116",
+    "type": "OrganismTaxon",
+    "text": "rats",
+    "offset": 574,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 469,
+    "end": 473
+   },
+   {
+    "identifier": "C007145",
+    "type": "ChemicalEntity",
+    "text": "TCR",
+    "offset": 635,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 530,
+    "end": 533
+   },
+   {
+    "identifier": "D007545",
+    "type": "ChemicalEntity",
+    "text": "isoproterenol",
+    "offset": 653,
+    "length": 13,
+    "block_id": "b0002",
+    "start": 548,
+    "end": 561
+   },
+   {
+    "identifier": "D000244",
+    "type": "ChemicalEntity",
+    "text": "ADP",
+    "offset": 746,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 641,
+    "end": 644
+   },
+   {
+    "identifier": "D010100",
+    "type": "ChemicalEntity",
+    "text": "oxygen",
+    "offset": 761,
+    "length": 6,
+    "block_id": "b0002",
+    "start": 656,
+    "end": 662
+   },
+   {
+    "identifier": "C007145",
+    "type": "ChemicalEntity",
+    "text": "TCR",
+    "offset": 807,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 702,
+    "end": 705
+   },
+   {
+    "identifier": "D007545",
+    "type": "ChemicalEntity",
+    "text": "isoproterenol",
+    "offset": 861,
+    "length": 13,
+    "block_id": "b0002",
+    "start": 756,
+    "end": 769
+   },
+   {
+    "identifier": "10116",
+    "type": "OrganismTaxon",
+    "text": "rat",
+    "offset": 878,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 773,
+    "end": 776
+   },
+   {
+    "identifier": "C007145",
+    "type": "ChemicalEntity",
+    "text": "TCR",
+    "offset": 929,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 824,
+    "end": 827
+   },
+   {
+    "identifier": "D007545",
+    "type": "ChemicalEntity",
+    "text": "isoproterenol",
+    "offset": 983,
+    "length": 13,
+    "block_id": "b0002",
+    "start": 878,
+    "end": 891
+   },
+   {
+    "identifier": "10116",
+    "type": "OrganismTaxon",
+    "text": "rat",
+    "offset": 1000,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 895,
+    "end": 898
+   }
+  ],
+  "relations": []
+ },
+ "PMID15811908": {
+  "blocks": [
+   "b0001",
+   "b0002"
+  ],
+  "mentions": [
+   {
+    "identifier": "D010673",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "Pheochromocytoma",
+    "offset": 0,
+    "length": 16,
+    "block_id": "b0001",
+    "start": 0,
+    "end": 16
+   },
+   {
+    "identifier": "D000077582",
+    "type": "ChemicalEntity",
+    "text": "amisulpride",
+    "offset": 29,
+    "length": 11,
+    "block_id": "b0001",
+    "start": 29,
+    "end": 40
+   },
+   {
+    "identifier": "D063325",
+    "type": "ChemicalEntity",
+    "text": "tiapride",
+    "offset": 45,
+    "length": 8,
+    "block_id": "b0001",
+    "start": 45,
+    "end": 53
+   },
+   {
+    "identifier": "D010673",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "pheochromocytoma",
+    "offset": 95,
+    "length": 16,
+    "block_id": "b0002",
+    "start": 40,
+    "end": 56
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patient",
+    "offset": 117,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 62,
+    "end": 69
+   },
+   {
+    "identifier": "D000077582",
+    "type": "ChemicalEntity",
+    "text": "amisulpride",
+    "offset": 138,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 83,
+    "end": 94
+   },
+   {
+    "identifier": "D063325",
+    "type": "ChemicalEntity",
+    "text": "tiapride",
+    "offset": 154,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 99,
+    "end": 107
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "man",
+    "offset": 198,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 143,
+    "end": 146
+   },
+   {
+    "identifier": "D006973",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "hypertension",
+    "offset": 218,
+    "length": 12,
+    "block_id": "b0002",
+    "start": 163,
+    "end": 175
+   },
+   {
+    "identifier": "D006261",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "headache",
+    "offset": 243,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 188,
+    "end": 196
+   },
+   {
+    "identifier": "D014839",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "vomiting",
+    "offset": 256,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 201,
+    "end": 209
+   },
+   {
+    "identifier": "D000077582",
+    "type": "ChemicalEntity",
+    "text": "amisulpride",
+    "offset": 298,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 243,
+    "end": 254
+   },
+   {
+    "identifier": "D063325",
+    "type": "ChemicalEntity",
+    "text": "tiapride",
+    "offset": 321,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 266,
+    "end": 274
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patient",
+    "offset": 388,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 333,
+    "end": 340
+   },
+   {
+    "identifier": "D009529",
+    "type": "ChemicalEntity",
+    "text": "nicardipine",
+    "offset": 423,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 368,
+    "end": 379
+   },
+   {
+    "identifier": "D014700",
+    "type": "ChemicalEntity",
+    "text": "verapamil",
+    "offset": 439,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 384,
+    "end": 393
+   },
+   {
+    "identifier": "D010673",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "pheochromocytoma",
+    "offset": 573,
+    "length": 16,
+    "block_id": "b0002",
+    "start": 518,
+    "end": 534
+   },
+   {
+    "identifier": "D010673",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "pheochromocytoma",
+    "offset": 628,
+    "length": 16,
+    "block_id": "b0002",
+    "start": 573,
+    "end": 589
+   },
+   {
+    "identifier": "D001549",
+    "type": "ChemicalEntity",
+    "text": "benzamide drugs",
+    "offset": 694,
+    "length": 15,
+    "block_id": "b0002",
+    "start": 639,
+    "end": 654
+   },
+   {
+    "identifier": "D006973",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "hypertensive",
+    "offset": 848,
+    "length": 12,
+    "block_id": "b0002",
+    "start": 793,
+    "end": 805
+   },
+   {
+    "identifier": "D000077582",
+    "type": "ChemicalEntity",
+    "text": "amisulpride",
+    "offset": 872,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 817,
+    "end": 828
+   },
+   {
+    "identifier": "D063325",
+    "type": "ChemicalEntity",
+    "text": "tiapride",
+    "offset": 888,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 833,
+    "end": 841
+   },
+   {
+    "identifier": "D000077582",
+    "type": "ChemicalEntity",
+    "text": "amisulpride",
+    "offset": 976,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 921,
+    "end": 932
+   },
+   {
+    "identifier": "D063325",
+    "type": "ChemicalEntity",
+    "text": "tiapride",
+    "offset": 993,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 938,
+    "end": 946
+   },
+   {
+    "identifier": "D006973",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "hypertensive",
+    "offset": 1010,
+    "length": 12,
+    "block_id": "b0002",
+    "start": 955,
+    "end": 967
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patient",
+    "offset": 1035,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 980,
+    "end": 987
+   },
+   {
+    "identifier": "D010673",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "pheochromocytoma",
+    "offset": 1048,
+    "length": 16,
+    "block_id": "b0002",
+    "start": 993,
+    "end": 1009
+   },
+   {
+    "identifier": "D063325",
+    "type": "ChemicalEntity",
+    "text": "tiapride",
+    "offset": 1164,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1109,
+    "end": 1117
+   },
+   {
+    "identifier": "D000077582",
+    "type": "ChemicalEntity",
+    "text": "amisulpride",
+    "offset": 1177,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 1122,
+    "end": 1133
+   }
+  ],
+  "relations": []
+ },
+ "PMID16116131": {
+  "blocks": [
+   "b0001",
+   "b0002"
+  ],
+  "mentions": [
+   {
+    "identifier": "D004409",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "dyskinesias",
+    "offset": 59,
+    "length": 11,
+    "block_id": "b0001",
+    "start": 59,
+    "end": 70
+   },
+   {
+    "identifier": "D010300",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "Parkinson disease",
+    "offset": 74,
+    "length": 17,
+    "block_id": "b0001",
+    "start": 74,
+    "end": 91
+   },
+   {
+    "identifier": "D007980",
+    "type": "ChemicalEntity",
+    "text": "levodopa",
+    "offset": 141,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 48,
+    "end": 56
+   },
+   {
+    "identifier": "D004409",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "dyskinesia",
+    "offset": 158,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 65,
+    "end": 75
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 294,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 201,
+    "end": 209
+   },
+   {
+    "identifier": "D010300",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "Parkinson disease",
+    "offset": 317,
+    "length": 17,
+    "block_id": "b0002",
+    "start": 224,
+    "end": 241
+   },
+   {
+    "identifier": "D004409",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "dyskinetic",
+    "offset": 434,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 341,
+    "end": 351
+   },
+   {
+    "identifier": "D001058",
+    "type": "ChemicalEntity",
+    "text": "apomorphine",
+    "offset": 473,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 380,
+    "end": 391
+   },
+   {
+    "identifier": "D004409",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "drug-induced dyskinesias",
+    "offset": 540,
+    "length": 24,
+    "block_id": "b0002",
+    "start": 447,
+    "end": 471
+   }
+  ],
+  "relations": []
+ },
+ "PMID16820346": {
+  "blocks": [
+   "b0001",
+   "b0002"
+  ],
+  "mentions": [
+   {
+    "identifier": "D000069059",
+    "type": "ChemicalEntity",
+    "text": "Atorvastatin",
+    "offset": 0,
+    "length": 12,
+    "block_id": "b0001",
+    "start": 0,
+    "end": 12
+   },
+   {
+    "identifier": "D003907",
+    "type": "ChemicalEntity",
+    "text": "dexamethasone",
+    "offset": 36,
+    "length": 13,
+    "block_id": "b0001",
+    "start": 36,
+    "end": 49
+   },
+   {
+    "identifier": "D006973",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "hypertension",
+    "offset": 58,
+    "length": 12,
+    "block_id": "b0001",
+    "start": 58,
+    "end": 70
+   },
+   {
+    "identifier": "10116",
+    "type": "OrganismTaxon",
+    "text": "rat",
+    "offset": 78,
+    "length": 3,
+    "block_id": "b0001",
+    "start": 78,
+    "end": 81
+   },
+   {
+    "identifier": "D000975",
+    "type": "ChemicalEntity",
+    "text": "antioxidant",
+    "offset": 97,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 14,
+    "end": 25
+   },
+   {
+    "identifier": "D000069059",
+    "type": "ChemicalEntity",
+    "text": "atorvastatin",
+    "offset": 120,
+    "length": 12,
+    "block_id": "b0002",
+    "start": 37,
+    "end": 49
+   },
+   {
+    "identifier": "D000069059",
+    "type": "ChemicalEntity",
+    "text": "atorva",
+    "offset": 134,
+    "length": 6,
+    "block_id": "b0002",
+    "start": 51,
+    "end": 57
+   },
+   {
+    "identifier": "D003907",
+    "type": "ChemicalEntity",
+    "text": "dexamethasone",
+    "offset": 145,
+    "length": 13,
+    "block_id": "b0002",
+    "start": 62,
+    "end": 75
+   },
+   {
+    "identifier": "D003907",
+    "type": "ChemicalEntity",
+    "text": "dex",
+    "offset": 160,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 77,
+    "end": 80
+   },
+   {
+    "identifier": "D006973",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "hypertension",
+    "offset": 173,
+    "length": 12,
+    "block_id": "b0002",
+    "start": 90,
+    "end": 102
+   },
+   {
+    "identifier": "10116",
+    "type": "OrganismTaxon",
+    "text": "rats",
+    "offset": 210,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 127,
+    "end": 131
+   },
+   {
+    "identifier": "D000069059",
+    "type": "ChemicalEntity",
+    "text": "atorva",
+    "offset": 233,
+    "length": 6,
+    "block_id": "b0002",
+    "start": 150,
+    "end": 156
+   },
+   {
+    "identifier": "D003907",
+    "type": "ChemicalEntity",
+    "text": "Dex",
+    "offset": 279,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 196,
+    "end": 199
+   },
+   {
+    "identifier": "D013481",
+    "type": "ChemicalEntity",
+    "text": "superoxide",
+    "offset": 371,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 288,
+    "end": 298
+   },
+   {
+    "identifier": "D003907",
+    "type": "ChemicalEntity",
+    "text": "dex",
+    "offset": 426,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 343,
+    "end": 346
+   },
+   {
+    "identifier": "D000069059",
+    "type": "ChemicalEntity",
+    "text": "atorva",
+    "offset": 480,
+    "length": 6,
+    "block_id": "b0002",
+    "start": 397,
+    "end": 403
+   },
+   {
+    "identifier": "D003907",
+    "type": "ChemicalEntity",
+    "text": "dex",
+    "offset": 489,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 406,
+    "end": 409
+   },
+   {
+    "identifier": "D003907",
+    "type": "ChemicalEntity",
+    "text": "dex",
+    "offset": 596,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 513,
+    "end": 516
+   },
+   {
+    "identifier": "D000069059",
+    "type": "ChemicalEntity",
+    "text": "Atorva",
+    "offset": 624,
+    "length": 6,
+    "block_id": "b0002",
+    "start": 541,
+    "end": 547
+   },
+   {
+    "identifier": "D003907",
+    "type": "ChemicalEntity",
+    "text": "dex",
+    "offset": 640,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 557,
+    "end": 560
+   },
+   {
+    "identifier": "D006973",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "hypertension",
+    "offset": 652,
+    "length": 12,
+    "block_id": "b0002",
+    "start": 569,
+    "end": 581
+   },
+   {
+    "identifier": "D013481",
+    "type": "ChemicalEntity",
+    "text": "superoxide",
+    "offset": 737,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 654,
+    "end": 664
+   },
+   {
+    "identifier": "D003907",
+    "type": "ChemicalEntity",
+    "text": "dex",
+    "offset": 764,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 681,
+    "end": 684
+   },
+   {
+    "identifier": "D000069059",
+    "type": "ChemicalEntity",
+    "text": "atorva",
+    "offset": 784,
+    "length": 6,
+    "block_id": "b0002",
+    "start": 701,
+    "end": 707
+   },
+   {
+    "identifier": "D003907",
+    "type": "ChemicalEntity",
+    "text": "dex",
+    "offset": 793,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 710,
+    "end": 713
+   },
+   {
+    "identifier": "D009566",
+    "type": "ChemicalEntity",
+    "text": "nitrate",
+    "offset": 818,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 735,
+    "end": 742
+   },
+   {
+    "identifier": "D009573",
+    "type": "ChemicalEntity",
+    "text": "nitrite",
+    "offset": 826,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 743,
+    "end": 750
+   },
+   {
+    "identifier": "D009589",
+    "type": "ChemicalEntity",
+    "text": "NOx",
+    "offset": 835,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 752,
+    "end": 755
+   },
+   {
+    "identifier": "D003907",
+    "type": "ChemicalEntity",
+    "text": "dex",
+    "offset": 857,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 774,
+    "end": 777
+   },
+   {
+    "identifier": "10116",
+    "type": "OrganismTaxon",
+    "text": "rats",
+    "offset": 869,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 786,
+    "end": 790
+   },
+   {
+    "identifier": "10116",
+    "type": "OrganismTaxon",
+    "text": "rats",
+    "offset": 901,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 818,
+    "end": 822
+   },
+   {
+    "identifier": "D000069059",
+    "type": "ChemicalEntity",
+    "text": "Atorva",
+    "offset": 976,
+    "length": 6,
+    "block_id": "b0002",
+    "start": 893,
+    "end": 899
+   },
+   {
+    "identifier": "D009589",
+    "type": "ChemicalEntity",
+    "text": "NOx",
+    "offset": 1007,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 924,
+    "end": 927
+   },
+   {
+    "identifier": "D000069059",
+    "type": "ChemicalEntity",
+    "text": "atorvastatin",
+    "offset": 1036,
+    "length": 12,
+    "block_id": "b0002",
+    "start": 953,
+    "end": 965
+   },
+   {
+    "identifier": "D003907",
+    "type": "ChemicalEntity",
+    "text": "dexamethasone",
+    "offset": 1072,
+    "length": 13,
+    "block_id": "b0002",
+    "start": 989,
+    "end": 1002
+   },
+   {
+    "identifier": "D006973",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "hypertension",
+    "offset": 1094,
+    "length": 12,
+    "block_id": "b0002",
+    "start": 1011,
+    "end": 1023
+   },
+   {
+    "identifier": "10116",
+    "type": "OrganismTaxon",
+    "text": "rat",
+    "offset": 1114,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 1031,
+    "end": 1034
+   }
+  ],
+  "relations": []
+ },
+ "PMID16844102": {
+  "blocks": [
+   "b0001",
+   "b0002"
+  ],
+  "mentions": [
+   {
+    "identifier": "D024502",
+    "type": "ChemicalEntity",
+    "text": "alpha-tocopherol",
+    "offset": 10,
+    "length": 16,
+    "block_id": "b0001",
+    "start": 10,
+    "end": 26
+   },
+   {
+    "identifier": "D003676",
+    "type": "ChemicalEntity",
+    "text": "deferoxamine",
+    "offset": 31,
+    "length": 12,
+    "block_id": "b0001",
+    "start": 31,
+    "end": 43
+   },
+   {
+    "identifier": "D008694",
+    "type": "ChemicalEntity",
+    "text": "methamphetamine",
+    "offset": 47,
+    "length": 15,
+    "block_id": "b0001",
+    "start": 47,
+    "end": 62
+   },
+   {
+    "identifier": "D020258",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "neurotoxicity",
+    "offset": 71,
+    "length": 13,
+    "block_id": "b0001",
+    "start": 71,
+    "end": 84
+   },
+   {
+    "identifier": "D008694",
+    "type": "ChemicalEntity",
+    "text": "Methamphetamine",
+    "offset": 86,
+    "length": 15,
+    "block_id": "b0002",
+    "start": 0,
+    "end": 15
+   },
+   {
+    "identifier": "D008694",
+    "type": "ChemicalEntity",
+    "text": "MA",
+    "offset": 103,
+    "length": 2,
+    "block_id": "b0002",
+    "start": 17,
+    "end": 19
+   },
+   {
+    "identifier": "D004298",
+    "type": "ChemicalEntity",
+    "text": "dopaminergic",
+    "offset": 115,
+    "length": 12,
+    "block_id": "b0002",
+    "start": 29,
+    "end": 41
+   },
+   {
+    "identifier": "D020258",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "neurotoxicity",
+    "offset": 128,
+    "length": 13,
+    "block_id": "b0002",
+    "start": 42,
+    "end": 55
+   },
+   {
+    "identifier": "D024502",
+    "type": "ChemicalEntity",
+    "text": "alpha-tocopherol",
+    "offset": 252,
+    "length": 16,
+    "block_id": "b0002",
+    "start": 166,
+    "end": 182
+   },
+   {
+    "identifier": "D024502",
+    "type": "ChemicalEntity",
+    "text": "alpha-TC",
+    "offset": 270,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 184,
+    "end": 192
+   },
+   {
+    "identifier": "D017382",
+    "type": "ChemicalEntity",
+    "text": "reactive oxygen species",
+    "offset": 296,
+    "length": 23,
+    "block_id": "b0002",
+    "start": 210,
+    "end": 233
+   },
+   {
+    "identifier": "D003676",
+    "type": "ChemicalEntity",
+    "text": "deferoxamine",
+    "offset": 325,
+    "length": 12,
+    "block_id": "b0002",
+    "start": 239,
+    "end": 251
+   },
+   {
+    "identifier": "D003676",
+    "type": "ChemicalEntity",
+    "text": "DFO",
+    "offset": 339,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 253,
+    "end": 256
+   },
+   {
+    "identifier": "D007501",
+    "type": "ChemicalEntity",
+    "text": "iron",
+    "offset": 348,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 262,
+    "end": 266
+   },
+   {
+    "identifier": "D008694",
+    "type": "ChemicalEntity",
+    "text": "MA",
+    "offset": 370,
+    "length": 2,
+    "block_id": "b0002",
+    "start": 284,
+    "end": 286
+   },
+   {
+    "identifier": "D020258",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "neurotoxicity",
+    "offset": 381,
+    "length": 13,
+    "block_id": "b0002",
+    "start": 295,
+    "end": 308
+   },
+   {
+    "identifier": "10116",
+    "type": "OrganismTaxon",
+    "text": "rats",
+    "offset": 401,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 315,
+    "end": 319
+   },
+   {
+    "identifier": "D008694",
+    "type": "ChemicalEntity",
+    "text": "MA",
+    "offset": 424,
+    "length": 2,
+    "block_id": "b0002",
+    "start": 338,
+    "end": 340
+   },
+   {
+    "identifier": "10116",
+    "type": "OrganismTaxon",
+    "text": "rat",
+    "offset": 474,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 388,
+    "end": 391
+   },
+   {
+    "identifier": "D024502",
+    "type": "ChemicalEntity",
+    "text": "alpha-TC",
+    "offset": 494,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 408,
+    "end": 416
+   },
+   {
+    "identifier": "D008694",
+    "type": "ChemicalEntity",
+    "text": "MA",
+    "offset": 563,
+    "length": 2,
+    "block_id": "b0002",
+    "start": 477,
+    "end": 479
+   },
+   {
+    "identifier": "D003676",
+    "type": "ChemicalEntity",
+    "text": "DFO",
+    "offset": 584,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 498,
+    "end": 501
+   },
+   {
+    "identifier": "D008694",
+    "type": "ChemicalEntity",
+    "text": "MA",
+    "offset": 628,
+    "length": 2,
+    "block_id": "b0002",
+    "start": 542,
+    "end": 544
+   },
+   {
+    "identifier": "D004298",
+    "type": "ChemicalEntity",
+    "text": "dopamine",
+    "offset": 669,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 583,
+    "end": 591
+   },
+   {
+    "identifier": "D004298",
+    "type": "ChemicalEntity",
+    "text": "DA",
+    "offset": 679,
+    "length": 2,
+    "block_id": "b0002",
+    "start": 593,
+    "end": 595
+   },
+   {
+    "identifier": "D012701",
+    "type": "ChemicalEntity",
+    "text": "serotonin",
+    "offset": 684,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 598,
+    "end": 607
+   },
+   {
+    "identifier": "D008694",
+    "type": "ChemicalEntity",
+    "text": "MA",
+    "offset": 746,
+    "length": 2,
+    "block_id": "b0002",
+    "start": 660,
+    "end": 662
+   },
+   {
+    "identifier": "D024502",
+    "type": "ChemicalEntity",
+    "text": "alpha-TC",
+    "offset": 792,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 706,
+    "end": 714
+   },
+   {
+    "identifier": "D003676",
+    "type": "ChemicalEntity",
+    "text": "DFO",
+    "offset": 805,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 719,
+    "end": 722
+   },
+   {
+    "identifier": "D024502",
+    "type": "ChemicalEntity",
+    "text": "alpha-TC",
+    "offset": 823,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 737,
+    "end": 745
+   },
+   {
+    "identifier": "D003676",
+    "type": "ChemicalEntity",
+    "text": "DFO",
+    "offset": 836,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 750,
+    "end": 753
+   },
+   {
+    "identifier": "D008694",
+    "type": "ChemicalEntity",
+    "text": "MA",
+    "offset": 855,
+    "length": 2,
+    "block_id": "b0002",
+    "start": 769,
+    "end": 771
+   },
+   {
+    "identifier": "D005334",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "hyperthermia",
+    "offset": 866,
+    "length": 12,
+    "block_id": "b0002",
+    "start": 780,
+    "end": 792
+   },
+   {
+    "identifier": "D008055",
+    "type": "ChemicalEntity",
+    "text": "lipid",
+    "offset": 946,
+    "length": 5,
+    "block_id": "b0002",
+    "start": 860,
+    "end": 865
+   },
+   {
+    "identifier": "D005978",
+    "type": "ChemicalEntity",
+    "text": "glutathione",
+    "offset": 992,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 906,
+    "end": 917
+   },
+   {
+    "identifier": "D008694",
+    "type": "ChemicalEntity",
+    "text": "MA",
+    "offset": 1035,
+    "length": 2,
+    "block_id": "b0002",
+    "start": 949,
+    "end": 951
+   },
+   {
+    "identifier": "10116",
+    "type": "OrganismTaxon",
+    "text": "rats",
+    "offset": 1046,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 960,
+    "end": 964
+   },
+   {
+    "identifier": "D024502",
+    "type": "ChemicalEntity",
+    "text": "alpha-TC",
+    "offset": 1099,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1013,
+    "end": 1021
+   },
+   {
+    "identifier": "D003676",
+    "type": "ChemicalEntity",
+    "text": "DFO",
+    "offset": 1112,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 1026,
+    "end": 1029
+   },
+   {
+    "identifier": "D024502",
+    "type": "ChemicalEntity",
+    "text": "alpha-TC",
+    "offset": 1136,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1050,
+    "end": 1058
+   },
+   {
+    "identifier": "D003676",
+    "type": "ChemicalEntity",
+    "text": "DFO",
+    "offset": 1149,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 1063,
+    "end": 1066
+   },
+   {
+    "identifier": "D008694",
+    "type": "ChemicalEntity",
+    "text": "MA",
+    "offset": 1168,
+    "length": 2,
+    "block_id": "b0002",
+    "start": 1082,
+    "end": 1084
+   },
+   {
+    "identifier": "D009422",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "neuronal damage",
+    "offset": 1179,
+    "length": 15,
+    "block_id": "b0002",
+    "start": 1093,
+    "end": 1108
+   }
+  ],
+  "relations": []
+ },
+ "PMID17491223": {
+  "blocks": [
+   "b0001",
+   "b0002"
+  ],
+  "mentions": [
+   {
+    "identifier": "D004280",
+    "type": "ChemicalEntity",
+    "text": "dobutamine",
+    "offset": 79,
+    "length": 10,
+    "block_id": "b0001",
+    "start": 79,
+    "end": 89
+   },
+   {
+    "identifier": "D017202",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "myocardial ischemia",
+    "offset": 98,
+    "length": 19,
+    "block_id": "b0001",
+    "start": 98,
+    "end": 117
+   },
+   {
+    "identifier": "D004280",
+    "type": "ChemicalEntity",
+    "text": "dobutamine",
+    "offset": 191,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 72,
+    "end": 82
+   },
+   {
+    "identifier": "D017202",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "myocardial ischemia",
+    "offset": 210,
+    "length": 19,
+    "block_id": "b0002",
+    "start": 91,
+    "end": 110
+   },
+   {
+    "identifier": "D004280",
+    "type": "ChemicalEntity",
+    "text": "dobutamine",
+    "offset": 429,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 310,
+    "end": 320
+   },
+   {
+    "identifier": "D017202",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "myocardial ischemia",
+    "offset": 448,
+    "length": 19,
+    "block_id": "b0002",
+    "start": 329,
+    "end": 348
+   },
+   {
+    "identifier": "D007511",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "ischemia",
+    "offset": 606,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 487,
+    "end": 495
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 654,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 535,
+    "end": 543
+   },
+   {
+    "identifier": "D004280",
+    "type": "ChemicalEntity",
+    "text": "dobutamine",
+    "offset": 690,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 571,
+    "end": 581
+   },
+   {
+    "identifier": "D004280",
+    "type": "ChemicalEntity",
+    "text": "dobutamine",
+    "offset": 799,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 680,
+    "end": 690
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 833,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 714,
+    "end": 722
+   },
+   {
+    "identifier": "D007511",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "ischemia",
+    "offset": 876,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 757,
+    "end": 765
+   },
+   {
+    "identifier": "D004280",
+    "type": "ChemicalEntity",
+    "text": "dobutamine",
+    "offset": 953,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 834,
+    "end": 844
+   },
+   {
+    "identifier": "D017202",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "myocardial ischemia",
+    "offset": 1562,
+    "length": 19,
+    "block_id": "b0002",
+    "start": 1443,
+    "end": 1462
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 1597,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1478,
+    "end": 1486
+   }
+  ],
+  "relations": []
+ },
+ "PMID17562951": {
+  "blocks": [
+   "b0001",
+   "b0002"
+  ],
+  "mentions": [
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "Patients",
+    "offset": 40,
+    "length": 8,
+    "block_id": "b0001",
+    "start": 40,
+    "end": 48
+   },
+   {
+    "identifier": "D003287",
+    "type": "ChemicalEntity",
+    "text": "contrast",
+    "offset": 98,
+    "length": 8,
+    "block_id": "b0001",
+    "start": 98,
+    "end": 106
+   },
+   {
+    "identifier": "D007674",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "nephropathy",
+    "offset": 115,
+    "length": 11,
+    "block_id": "b0001",
+    "start": 115,
+    "end": 126
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 130,
+    "length": 8,
+    "block_id": "b0001",
+    "start": 130,
+    "end": 138
+   },
+   {
+    "identifier": "D051436",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "chronic kidney disease",
+    "offset": 144,
+    "length": 22,
+    "block_id": "b0001",
+    "start": 144,
+    "end": 166
+   },
+   {
+    "identifier": "D003287",
+    "type": "ChemicalEntity",
+    "text": "contrast medium",
+    "offset": 256,
+    "length": 15,
+    "block_id": "b0002",
+    "start": 88,
+    "end": 103
+   },
+   {
+    "identifier": "D007479",
+    "type": "ChemicalEntity",
+    "text": "iopamidol",
+    "offset": 272,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 104,
+    "end": 113
+   },
+   {
+    "identifier": "D003287",
+    "type": "ChemicalEntity",
+    "text": "contrast medium",
+    "offset": 314,
+    "length": 15,
+    "block_id": "b0002",
+    "start": 146,
+    "end": 161
+   },
+   {
+    "identifier": "C044834",
+    "type": "ChemicalEntity",
+    "text": "iodixanol",
+    "offset": 330,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 162,
+    "end": 171
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 353,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 185,
+    "end": 193
+   },
+   {
+    "identifier": "D007479",
+    "type": "ChemicalEntity",
+    "text": "iopamidol",
+    "offset": 459,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 291,
+    "end": 300
+   },
+   {
+    "identifier": "C044834",
+    "type": "ChemicalEntity",
+    "text": "iodixanol",
+    "offset": 473,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 305,
+    "end": 314
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 486,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 318,
+    "end": 326
+   },
+   {
+    "identifier": "D051436",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "chronic kidney disease",
+    "offset": 500,
+    "length": 22,
+    "block_id": "b0002",
+    "start": 332,
+    "end": 354
+   },
+   {
+    "identifier": "D003404",
+    "type": "ChemicalEntity",
+    "text": "creatinine",
+    "offset": 659,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 491,
+    "end": 501
+   },
+   {
+    "identifier": "D003404",
+    "type": "ChemicalEntity",
+    "text": "SCr",
+    "offset": 671,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 503,
+    "end": 506
+   },
+   {
+    "identifier": "D003404",
+    "type": "ChemicalEntity",
+    "text": "SCr",
+    "offset": 830,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 662,
+    "end": 665
+   },
+   {
+    "identifier": "D003404",
+    "type": "ChemicalEntity",
+    "text": "SCr",
+    "offset": 928,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 760,
+    "end": 763
+   },
+   {
+    "identifier": "D003404",
+    "type": "ChemicalEntity",
+    "text": "SCr",
+    "offset": 1053,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 885,
+    "end": 888
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 1065,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 897,
+    "end": 905
+   },
+   {
+    "identifier": "D003287",
+    "type": "ChemicalEntity",
+    "text": "contrast",
+    "offset": 1075,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 907,
+    "end": 915
+   },
+   {
+    "identifier": "D003920",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "diabetes mellitus",
+    "offset": 1104,
+    "length": 17,
+    "block_id": "b0002",
+    "start": 936,
+    "end": 953
+   },
+   {
+    "identifier": "D000111",
+    "type": "ChemicalEntity",
+    "text": "N-acetylcysteine",
+    "offset": 1130,
+    "length": 16,
+    "block_id": "b0002",
+    "start": 962,
+    "end": 978
+   },
+   {
+    "identifier": "D003404",
+    "type": "ChemicalEntity",
+    "text": "SCr",
+    "offset": 1162,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 994,
+    "end": 997
+   },
+   {
+    "identifier": "D003404",
+    "type": "ChemicalEntity",
+    "text": "SCr",
+    "offset": 1241,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 1073,
+    "end": 1076
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 1299,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1131,
+    "end": 1139
+   },
+   {
+    "identifier": "D007479",
+    "type": "ChemicalEntity",
+    "text": "iopamidol",
+    "offset": 1315,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1147,
+    "end": 1156
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 1345,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1177,
+    "end": 1185
+   },
+   {
+    "identifier": "C044834",
+    "type": "ChemicalEntity",
+    "text": "iodixanol",
+    "offset": 1361,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1193,
+    "end": 1202
+   },
+   {
+    "identifier": "D003404",
+    "type": "ChemicalEntity",
+    "text": "SCr",
+    "offset": 1398,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 1230,
+    "end": 1233
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 1470,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1302,
+    "end": 1310
+   },
+   {
+    "identifier": "D003920",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "diabetes",
+    "offset": 1484,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1316,
+    "end": 1324
+   },
+   {
+    "identifier": "D003404",
+    "type": "ChemicalEntity",
+    "text": "SCr",
+    "offset": 1494,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 1326,
+    "end": 1329
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 1544,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1376,
+    "end": 1384
+   },
+   {
+    "identifier": "D007479",
+    "type": "ChemicalEntity",
+    "text": "iopamidol",
+    "offset": 1559,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1391,
+    "end": 1400
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 1589,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1421,
+    "end": 1429
+   },
+   {
+    "identifier": "C044834",
+    "type": "ChemicalEntity",
+    "text": "iodixanol",
+    "offset": 1604,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1436,
+    "end": 1445
+   },
+   {
+    "identifier": "D003404",
+    "type": "ChemicalEntity",
+    "text": "SCr",
+    "offset": 1632,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 1464,
+    "end": 1467
+   },
+   {
+    "identifier": "D003404",
+    "type": "ChemicalEntity",
+    "text": "SCr",
+    "offset": 1712,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 1544,
+    "end": 1547
+   },
+   {
+    "identifier": "D007479",
+    "type": "ChemicalEntity",
+    "text": "iopamidol",
+    "offset": 1755,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1587,
+    "end": 1596
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 1770,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1602,
+    "end": 1610
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 1840,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1672,
+    "end": 1680
+   },
+   {
+    "identifier": "D003920",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "diabetes",
+    "offset": 1854,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1686,
+    "end": 1694
+   },
+   {
+    "identifier": "D003287",
+    "type": "ChemicalEntity",
+    "text": "contrast",
+    "offset": 1950,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1782,
+    "end": 1790
+   },
+   {
+    "identifier": "D007674",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "nephropathy",
+    "offset": 1967,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 1799,
+    "end": 1810
+   },
+   {
+    "identifier": "D007479",
+    "type": "ChemicalEntity",
+    "text": "iopamidol",
+    "offset": 2085,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1917,
+    "end": 1926
+   },
+   {
+    "identifier": "C044834",
+    "type": "ChemicalEntity",
+    "text": "iodixanol",
+    "offset": 2098,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1930,
+    "end": 1939
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 2121,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1953,
+    "end": 1961
+   },
+   {
+    "identifier": "D003920",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "diabetes mellitus",
+    "offset": 2147,
+    "length": 17,
+    "block_id": "b0002",
+    "start": 1979,
+    "end": 1996
+   }
+  ],
+  "relations": []
+ },
+ "PMID17879945": {
+  "blocks": [
+   "b0001",
+   "b0002"
+  ],
+  "mentions": [
+   {
+    "identifier": "D004967",
+    "type": "ChemicalEntity",
+    "text": "Estrogen",
+    "offset": 0,
+    "length": 8,
+    "block_id": "b0001",
+    "start": 0,
+    "end": 8
+   },
+   {
+    "identifier": "D002788",
+    "type": "ChemicalEntity",
+    "text": "cholesteryl ester",
+    "offset": 18,
+    "length": 17,
+    "block_id": "b0001",
+    "start": 18,
+    "end": 35
+   },
+   {
+    "identifier": "-",
+    "type": "GeneOrGeneProduct",
+    "text": "HIV protease",
+    "offset": 79,
+    "length": 12,
+    "block_id": "b0001",
+    "start": 79,
+    "end": 91
+   },
+   {
+    "identifier": "D019438",
+    "type": "ChemicalEntity",
+    "text": "ritonavir",
+    "offset": 102,
+    "length": 9,
+    "block_id": "b0001",
+    "start": 102,
+    "end": 111
+   },
+   {
+    "identifier": "11676",
+    "type": "OrganismTaxon",
+    "text": "HIV",
+    "offset": 130,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 17,
+    "end": 20
+   },
+   {
+    "identifier": "D019438",
+    "type": "ChemicalEntity",
+    "text": "ritonavir",
+    "offset": 224,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 111,
+    "end": 120
+   },
+   {
+    "identifier": "D050197",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "premature atherosclerosis",
+    "offset": 307,
+    "length": 25,
+    "block_id": "b0002",
+    "start": 194,
+    "end": 219
+   },
+   {
+    "identifier": "D019438",
+    "type": "ChemicalEntity",
+    "text": "ritonavir",
+    "offset": 371,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 258,
+    "end": 267
+   },
+   {
+    "identifier": "D050197",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "atherosclerotic lesion",
+    "offset": 401,
+    "length": 22,
+    "block_id": "b0002",
+    "start": 288,
+    "end": 310
+   },
+   {
+    "identifier": "10090",
+    "type": "OrganismTaxon",
+    "text": "mice",
+    "offset": 442,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 329,
+    "end": 333
+   },
+   {
+    "identifier": "10090",
+    "type": "OrganismTaxon",
+    "text": "mice",
+    "offset": 482,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 369,
+    "end": 373
+   },
+   {
+    "identifier": "D019438",
+    "type": "ChemicalEntity",
+    "text": "ritonavir",
+    "offset": 542,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 429,
+    "end": 438
+   },
+   {
+    "identifier": "D002788",
+    "type": "ChemicalEntity",
+    "text": "cholesteryl ester",
+    "offset": 577,
+    "length": 17,
+    "block_id": "b0002",
+    "start": 464,
+    "end": 481
+   },
+   {
+    "identifier": "D002784",
+    "type": "ChemicalEntity",
+    "text": "cholesterol",
+    "offset": 712,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 599,
+    "end": 610
+   },
+   {
+    "identifier": "-",
+    "type": "GeneOrGeneProduct",
+    "text": "HIV protease",
+    "offset": 769,
+    "length": 12,
+    "block_id": "b0002",
+    "start": 656,
+    "end": 668
+   },
+   {
+    "identifier": "D019438",
+    "type": "ChemicalEntity",
+    "text": "ritonavir",
+    "offset": 792,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 679,
+    "end": 688
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "human",
+    "offset": 824,
+    "length": 5,
+    "block_id": "b0002",
+    "start": 711,
+    "end": 716
+   },
+   {
+    "identifier": "CVCL_0006",
+    "type": "CellLine",
+    "text": "THP-1",
+    "offset": 850,
+    "length": 5,
+    "block_id": "b0002",
+    "start": 737,
+    "end": 742
+   },
+   {
+    "identifier": "D004958",
+    "type": "ChemicalEntity",
+    "text": "17beta-estradiol",
+    "offset": 1026,
+    "length": 16,
+    "block_id": "b0002",
+    "start": 913,
+    "end": 929
+   },
+   {
+    "identifier": "D004958",
+    "type": "ChemicalEntity",
+    "text": "E2",
+    "offset": 1044,
+    "length": 2,
+    "block_id": "b0002",
+    "start": 931,
+    "end": 933
+   },
+   {
+    "identifier": "D011374",
+    "type": "ChemicalEntity",
+    "text": "progesterone",
+    "offset": 1056,
+    "length": 12,
+    "block_id": "b0002",
+    "start": 943,
+    "end": 955
+   },
+   {
+    "identifier": "D000431",
+    "type": "ChemicalEntity",
+    "text": "ethanol",
+    "offset": 1087,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 974,
+    "end": 981
+   },
+   {
+    "identifier": "D019438",
+    "type": "ChemicalEntity",
+    "text": "ritonavir",
+    "offset": 1135,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1022,
+    "end": 1031
+   },
+   {
+    "identifier": "D008055",
+    "type": "ChemicalEntity",
+    "text": "lipid",
+    "offset": 1234,
+    "length": 5,
+    "block_id": "b0002",
+    "start": 1121,
+    "end": 1126
+   },
+   {
+    "identifier": "D004958",
+    "type": "ChemicalEntity",
+    "text": "E2",
+    "offset": 1267,
+    "length": 2,
+    "block_id": "b0002",
+    "start": 1154,
+    "end": 1156
+   },
+   {
+    "identifier": "D002788",
+    "type": "ChemicalEntity",
+    "text": "cholesteryl esters",
+    "offset": 1300,
+    "length": 18,
+    "block_id": "b0002",
+    "start": 1187,
+    "end": 1205
+   },
+   {
+    "identifier": "D019438",
+    "type": "ChemicalEntity",
+    "text": "ritonavir",
+    "offset": 1344,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1231,
+    "end": 1240
+   },
+   {
+    "identifier": "D019438",
+    "type": "ChemicalEntity",
+    "text": "Ritonavir",
+    "offset": 1365,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1252,
+    "end": 1261
+   },
+   {
+    "identifier": "948",
+    "type": "GeneOrGeneProduct",
+    "text": "CD36",
+    "offset": 1427,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 1314,
+    "end": 1318
+   },
+   {
+    "identifier": "D019438",
+    "type": "ChemicalEntity",
+    "text": "ritonavir",
+    "offset": 1487,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1374,
+    "end": 1383
+   },
+   {
+    "identifier": "5468",
+    "type": "GeneOrGeneProduct",
+    "text": "PPARgamma",
+    "offset": 1552,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1439,
+    "end": 1448
+   },
+   {
+    "identifier": "948",
+    "type": "GeneOrGeneProduct",
+    "text": "CD36",
+    "offset": 1625,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 1512,
+    "end": 1516
+   },
+   {
+    "identifier": "D004958",
+    "type": "ChemicalEntity",
+    "text": "E2",
+    "offset": 1662,
+    "length": 2,
+    "block_id": "b0002",
+    "start": 1549,
+    "end": 1551
+   },
+   {
+    "identifier": "D004958",
+    "type": "ChemicalEntity",
+    "text": "E2",
+    "offset": 1728,
+    "length": 2,
+    "block_id": "b0002",
+    "start": 1615,
+    "end": 1617
+   },
+   {
+    "identifier": "948",
+    "type": "GeneOrGeneProduct",
+    "text": "CD36",
+    "offset": 1768,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 1655,
+    "end": 1659
+   },
+   {
+    "identifier": "D004958",
+    "type": "ChemicalEntity",
+    "text": "E2",
+    "offset": 1860,
+    "length": 2,
+    "block_id": "b0002",
+    "start": 1747,
+    "end": 1749
+   },
+   {
+    "identifier": "948",
+    "type": "GeneOrGeneProduct",
+    "text": "CD36",
+    "offset": 1890,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 1777,
+    "end": 1781
+   },
+   {
+    "identifier": "D002788",
+    "type": "ChemicalEntity",
+    "text": "cholesteryl ester",
+    "offset": 1983,
+    "length": 17,
+    "block_id": "b0002",
+    "start": 1870,
+    "end": 1887
+   },
+   {
+    "identifier": "D019438",
+    "type": "ChemicalEntity",
+    "text": "ritonavir",
+    "offset": 2024,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1911,
+    "end": 1920
+   }
+  ],
+  "relations": []
+ },
+ "PMID18399341": {
+  "blocks": [
+   "b0001",
+   "b0002"
+  ],
+  "mentions": [
+   {
+    "identifier": "D007022",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "hypotension",
+    "offset": 222,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 118,
+    "end": 129
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 544,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 440,
+    "end": 448
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "Patients",
+    "offset": 607,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 503,
+    "end": 511
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 766,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 662,
+    "end": 670
+   },
+   {
+    "identifier": "D002045",
+    "type": "ChemicalEntity",
+    "text": "bupivacaine",
+    "offset": 815,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 711,
+    "end": 722
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "Patients",
+    "offset": 861,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 757,
+    "end": 765
+   },
+   {
+    "identifier": "D010100",
+    "type": "ChemicalEntity",
+    "text": "oxygen",
+    "offset": 1111,
+    "length": 6,
+    "block_id": "b0002",
+    "start": 1007,
+    "end": 1013
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 1172,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1068,
+    "end": 1076
+   },
+   {
+    "identifier": "D007022",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "hypotension",
+    "offset": 1262,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 1158,
+    "end": 1169
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 1297,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1193,
+    "end": 1201
+   },
+   {
+    "identifier": "D004837",
+    "type": "ChemicalEntity",
+    "text": "epinephrine",
+    "offset": 1387,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 1283,
+    "end": 1294
+   },
+   {
+    "identifier": "D007022",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "hypotension",
+    "offset": 1417,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 1313,
+    "end": 1324
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "Patients",
+    "offset": 1430,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1326,
+    "end": 1334
+   },
+   {
+    "identifier": "D010100",
+    "type": "ChemicalEntity",
+    "text": "oxygen",
+    "offset": 1654,
+    "length": 6,
+    "block_id": "b0002",
+    "start": 1550,
+    "end": 1556
+   },
+   {
+    "identifier": "D010100",
+    "type": "ChemicalEntity",
+    "text": "oxygen",
+    "offset": 1945,
+    "length": 6,
+    "block_id": "b0002",
+    "start": 1841,
+    "end": 1847
+   }
+  ],
+  "relations": []
+ },
+ "PMID18439803": {
+  "blocks": [
+   "b0001",
+   "b0002"
+  ],
+  "mentions": [
+   {
+    "identifier": "C108761",
+    "type": "ChemicalEntity",
+    "text": "N-(2-propylpentanoyl)urea",
+    "offset": 17,
+    "length": 25,
+    "block_id": "b0001",
+    "start": 17,
+    "end": 42
+   },
+   {
+    "identifier": "D010862",
+    "type": "ChemicalEntity",
+    "text": "pilocarpine",
+    "offset": 90,
+    "length": 11,
+    "block_id": "b0001",
+    "start": 90,
+    "end": 101
+   },
+   {
+    "identifier": "D012640",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "seizure",
+    "offset": 110,
+    "length": 7,
+    "block_id": "b0001",
+    "start": 110,
+    "end": 117
+   },
+   {
+    "identifier": "10116",
+    "type": "OrganismTaxon",
+    "text": "rats",
+    "offset": 121,
+    "length": 4,
+    "block_id": "b0001",
+    "start": 121,
+    "end": 125
+   },
+   {
+    "identifier": "D018698",
+    "type": "ChemicalEntity",
+    "text": "glutamate",
+    "offset": 275,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 148,
+    "end": 157
+   },
+   {
+    "identifier": "D001224",
+    "type": "ChemicalEntity",
+    "text": "aspartate",
+    "offset": 286,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 159,
+    "end": 168
+   },
+   {
+    "identifier": "D005998",
+    "type": "ChemicalEntity",
+    "text": "glycine",
+    "offset": 297,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 170,
+    "end": 177
+   },
+   {
+    "identifier": "D005680",
+    "type": "ChemicalEntity",
+    "text": "GABA",
+    "offset": 309,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 182,
+    "end": 186
+   },
+   {
+    "identifier": "C108761",
+    "type": "ChemicalEntity",
+    "text": "N-(2-propylpentanoyl)urea",
+    "offset": 318,
+    "length": 25,
+    "block_id": "b0002",
+    "start": 191,
+    "end": 216
+   },
+   {
+    "identifier": "C108761",
+    "type": "ChemicalEntity",
+    "text": "VPU",
+    "offset": 345,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 218,
+    "end": 221
+   },
+   {
+    "identifier": "D014635",
+    "type": "ChemicalEntity",
+    "text": "valproic acid",
+    "offset": 388,
+    "length": 13,
+    "block_id": "b0002",
+    "start": 261,
+    "end": 274
+   },
+   {
+    "identifier": "D014635",
+    "type": "ChemicalEntity",
+    "text": "VPA",
+    "offset": 403,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 276,
+    "end": 279
+   },
+   {
+    "identifier": "C108761",
+    "type": "ChemicalEntity",
+    "text": "VPU",
+    "offset": 409,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 282,
+    "end": 285
+   },
+   {
+    "identifier": "D014635",
+    "type": "ChemicalEntity",
+    "text": "VPA",
+    "offset": 434,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 307,
+    "end": 310
+   },
+   {
+    "identifier": "10116",
+    "type": "OrganismTaxon",
+    "text": "rats",
+    "offset": 511,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 384,
+    "end": 388
+   },
+   {
+    "identifier": "D010862",
+    "type": "ChemicalEntity",
+    "text": "pilocarpine",
+    "offset": 524,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 397,
+    "end": 408
+   },
+   {
+    "identifier": "D012640",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "seizure",
+    "offset": 544,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 417,
+    "end": 424
+   },
+   {
+    "identifier": "D014635",
+    "type": "ChemicalEntity",
+    "text": "VPA",
+    "offset": 588,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 461,
+    "end": 464
+   },
+   {
+    "identifier": "D010862",
+    "type": "ChemicalEntity",
+    "text": "pilocarpine",
+    "offset": 684,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 557,
+    "end": 568
+   },
+   {
+    "identifier": "D018698",
+    "type": "ChemicalEntity",
+    "text": "glutamate",
+    "offset": 742,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 615,
+    "end": 624
+   },
+   {
+    "identifier": "D001224",
+    "type": "ChemicalEntity",
+    "text": "aspartate",
+    "offset": 756,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 629,
+    "end": 638
+   },
+   {
+    "identifier": "D005998",
+    "type": "ChemicalEntity",
+    "text": "glycine",
+    "offset": 825,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 698,
+    "end": 705
+   },
+   {
+    "identifier": "D005680",
+    "type": "ChemicalEntity",
+    "text": "GABA",
+    "offset": 837,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 710,
+    "end": 714
+   },
+   {
+    "identifier": "C108761",
+    "type": "ChemicalEntity",
+    "text": "VPU",
+    "offset": 868,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 741,
+    "end": 744
+   },
+   {
+    "identifier": "D014635",
+    "type": "ChemicalEntity",
+    "text": "VPA",
+    "offset": 894,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 767,
+    "end": 770
+   },
+   {
+    "identifier": "D010862",
+    "type": "ChemicalEntity",
+    "text": "pilocarpine",
+    "offset": 939,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 812,
+    "end": 823
+   },
+   {
+    "identifier": "D018698",
+    "type": "ChemicalEntity",
+    "text": "glutamate",
+    "offset": 985,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 858,
+    "end": 867
+   },
+   {
+    "identifier": "D001224",
+    "type": "ChemicalEntity",
+    "text": "aspartate",
+    "offset": 999,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 872,
+    "end": 881
+   },
+   {
+    "identifier": "D005680",
+    "type": "ChemicalEntity",
+    "text": "GABA",
+    "offset": 1095,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 968,
+    "end": 972
+   },
+   {
+    "identifier": "D005998",
+    "type": "ChemicalEntity",
+    "text": "glycine",
+    "offset": 1104,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 977,
+    "end": 984
+   },
+   {
+    "identifier": "D018698",
+    "type": "ChemicalEntity",
+    "text": "glutamate",
+    "offset": 1149,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1022,
+    "end": 1031
+   },
+   {
+    "identifier": "D001224",
+    "type": "ChemicalEntity",
+    "text": "aspartate",
+    "offset": 1163,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1036,
+    "end": 1045
+   },
+   {
+    "identifier": "C108761",
+    "type": "ChemicalEntity",
+    "text": "VPU",
+    "offset": 1206,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 1079,
+    "end": 1082
+   },
+   {
+    "identifier": "D014635",
+    "type": "ChemicalEntity",
+    "text": "VPA",
+    "offset": 1214,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 1087,
+    "end": 1090
+   },
+   {
+    "identifier": "D010862",
+    "type": "ChemicalEntity",
+    "text": "pilocarpine",
+    "offset": 1252,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 1125,
+    "end": 1136
+   },
+   {
+    "identifier": "D012640",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "seizure",
+    "offset": 1272,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 1145,
+    "end": 1152
+   },
+   {
+    "identifier": "D018698",
+    "type": "ChemicalEntity",
+    "text": "glutamate",
+    "offset": 1422,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1295,
+    "end": 1304
+   },
+   {
+    "identifier": "D001224",
+    "type": "ChemicalEntity",
+    "text": "aspartate",
+    "offset": 1436,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1309,
+    "end": 1318
+   },
+   {
+    "identifier": "D014635",
+    "type": "ChemicalEntity",
+    "text": "VPA",
+    "offset": 1463,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 1336,
+    "end": 1339
+   },
+   {
+    "identifier": "C108761",
+    "type": "ChemicalEntity",
+    "text": "VPU",
+    "offset": 1485,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 1358,
+    "end": 1361
+   },
+   {
+    "identifier": "D010862",
+    "type": "ChemicalEntity",
+    "text": "pilocarpine",
+    "offset": 1514,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 1387,
+    "end": 1398
+   },
+   {
+    "identifier": "D018698",
+    "type": "ChemicalEntity",
+    "text": "glutamate",
+    "offset": 1547,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1420,
+    "end": 1429
+   },
+   {
+    "identifier": "D001224",
+    "type": "ChemicalEntity",
+    "text": "aspartate",
+    "offset": 1561,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1434,
+    "end": 1443
+   },
+   {
+    "identifier": "D010862",
+    "type": "ChemicalEntity",
+    "text": "pilocarpine",
+    "offset": 1648,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 1521,
+    "end": 1532
+   },
+   {
+    "identifier": "D012640",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "seizure",
+    "offset": 1668,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 1541,
+    "end": 1548
+   }
+  ],
+  "relations": []
+ },
+ "PMID18441470": {
+  "blocks": [
+   "b0001",
+   "b0002"
+  ],
+  "mentions": [
+   {
+    "identifier": "D054537",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "Complete atrioventricular block",
+    "offset": 0,
+    "length": 31,
+    "block_id": "b0001",
+    "start": 0,
+    "end": 31
+   },
+   {
+    "identifier": "D008094",
+    "type": "ChemicalEntity",
+    "text": "lithium",
+    "offset": 45,
+    "length": 7,
+    "block_id": "b0001",
+    "start": 45,
+    "end": 52
+   },
+   {
+    "identifier": "D012804",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "Sinus node dysfunction",
+    "offset": 62,
+    "length": 22,
+    "block_id": "b0002",
+    "start": 0,
+    "end": 22
+   },
+   {
+    "identifier": "D018376",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "adverse cardiovascular effects",
+    "offset": 129,
+    "length": 30,
+    "block_id": "b0002",
+    "start": 67,
+    "end": 97
+   },
+   {
+    "identifier": "D008094",
+    "type": "ChemicalEntity",
+    "text": "lithium",
+    "offset": 163,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 101,
+    "end": 108
+   },
+   {
+    "identifier": "D054537",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "complete atrioventricular (AV) block",
+    "offset": 193,
+    "length": 36,
+    "block_id": "b0002",
+    "start": 131,
+    "end": 167
+   },
+   {
+    "identifier": "D013575",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "syncopal attacks",
+    "offset": 235,
+    "length": 16,
+    "block_id": "b0002",
+    "start": 173,
+    "end": 189
+   },
+   {
+    "identifier": "D008094",
+    "type": "ChemicalEntity",
+    "text": "lithium",
+    "offset": 275,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 213,
+    "end": 220
+   },
+   {
+    "identifier": "D008094",
+    "type": "ChemicalEntity",
+    "text": "lithium",
+    "offset": 346,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 284,
+    "end": 291
+   },
+   {
+    "identifier": "D013575",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "syncopal attacks",
+    "offset": 419,
+    "length": 16,
+    "block_id": "b0002",
+    "start": 357,
+    "end": 373
+   },
+   {
+    "identifier": "D008094",
+    "type": "ChemicalEntity",
+    "text": "Lithium",
+    "offset": 437,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 375,
+    "end": 382
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 496,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 434,
+    "end": 442
+   }
+  ],
+  "relations": []
+ },
+ "PMID18503483": {
+  "blocks": [
+   "b0001",
+   "b0002"
+  ],
+  "mentions": [
+   {
+    "identifier": "D016559",
+    "type": "ChemicalEntity",
+    "text": "tacrolimus",
+    "offset": 12,
+    "length": 10,
+    "block_id": "b0001",
+    "start": 12,
+    "end": 22
+   },
+   {
+    "identifier": "D020968",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "brachial neuritis",
+    "offset": 34,
+    "length": 17,
+    "block_id": "b0001",
+    "start": 34,
+    "end": 51
+   },
+   {
+    "identifier": "D000068338",
+    "type": "ChemicalEntity",
+    "text": "everolimus",
+    "offset": 72,
+    "length": 10,
+    "block_id": "b0001",
+    "start": 72,
+    "end": 82
+   },
+   {
+    "identifier": "D016559",
+    "type": "ChemicalEntity",
+    "text": "TAC",
+    "offset": 168,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 0,
+    "end": 3
+   },
+   {
+    "identifier": "D020258",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "Neurotoxicity",
+    "offset": 273,
+    "length": 13,
+    "block_id": "b0002",
+    "start": 105,
+    "end": 118
+   },
+   {
+    "identifier": "D001927",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "encephalopathy",
+    "offset": 349,
+    "length": 14,
+    "block_id": "b0002",
+    "start": 181,
+    "end": 195
+   },
+   {
+    "identifier": "D006261",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "headaches",
+    "offset": 365,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 197,
+    "end": 206
+   },
+   {
+    "identifier": "D012640",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "seizures",
+    "offset": 376,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 208,
+    "end": 216
+   },
+   {
+    "identifier": "D009461",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "neurological deficits",
+    "offset": 389,
+    "length": 21,
+    "block_id": "b0002",
+    "start": 221,
+    "end": 242
+   },
+   {
+    "identifier": "D009187",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "myelitis",
+    "offset": 617,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 449,
+    "end": 457
+   },
+   {
+    "identifier": "D020968",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "brachial plexitis",
+    "offset": 636,
+    "length": 17,
+    "block_id": "b0002",
+    "start": 468,
+    "end": 485
+   },
+   {
+    "identifier": "D016559",
+    "type": "ChemicalEntity",
+    "text": "TAC",
+    "offset": 699,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 531,
+    "end": 534
+   },
+   {
+    "identifier": "D008775",
+    "type": "ChemicalEntity",
+    "text": "methylprednisolone",
+    "offset": 760,
+    "length": 18,
+    "block_id": "b0002",
+    "start": 592,
+    "end": 610
+   },
+   {
+    "identifier": "D016559",
+    "type": "ChemicalEntity",
+    "text": "TAC",
+    "offset": 855,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 687,
+    "end": 690
+   },
+   {
+    "identifier": "D000068338",
+    "type": "ChemicalEntity",
+    "text": "everolimus",
+    "offset": 916,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 748,
+    "end": 758
+   }
+  ],
+  "relations": []
+ },
+ "PMID19531695": {
+  "blocks": [
+   "b0001",
+   "b0002"
+  ],
+  "mentions": [
+   {
+    "identifier": "D003693",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "Delirium",
+    "offset": 0,
+    "length": 8,
+    "block_id": "b0001",
+    "start": 0,
+    "end": 8
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patient",
+    "offset": 14,
+    "length": 7,
+    "block_id": "b0001",
+    "start": 14,
+    "end": 21
+   },
+   {
+    "identifier": "D005424",
+    "type": "ChemicalEntity",
+    "text": "flecainide",
+    "offset": 33,
+    "length": 10,
+    "block_id": "b0001",
+    "start": 33,
+    "end": 43
+   },
+   {
+    "identifier": "D017374",
+    "type": "ChemicalEntity",
+    "text": "paroxetine",
+    "offset": 119,
+    "length": 10,
+    "block_id": "b0001",
+    "start": 119,
+    "end": 129
+   },
+   {
+    "identifier": "D005424",
+    "type": "ChemicalEntity",
+    "text": "flecainide",
+    "offset": 164,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 33,
+    "end": 43
+   },
+   {
+    "identifier": "D003693",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "delirium",
+    "offset": 183,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 52,
+    "end": 60
+   },
+   {
+    "identifier": "D017374",
+    "type": "ChemicalEntity",
+    "text": "paroxetine",
+    "offset": 248,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 117,
+    "end": 127
+   },
+   {
+    "identifier": "D003221",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "confusion",
+    "offset": 357,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 226,
+    "end": 235
+   },
+   {
+    "identifier": "D010259",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "paranoia",
+    "offset": 371,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 240,
+    "end": 248
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patient",
+    "offset": 425,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 294,
+    "end": 301
+   },
+   {
+    "identifier": "C043211",
+    "type": "ChemicalEntity",
+    "text": "carvedilol",
+    "offset": 444,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 313,
+    "end": 323
+   },
+   {
+    "identifier": "D014859",
+    "type": "ChemicalEntity",
+    "text": "warfarin",
+    "offset": 474,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 343,
+    "end": 351
+   },
+   {
+    "identifier": "D005492",
+    "type": "ChemicalEntity",
+    "text": "folic acid",
+    "offset": 493,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 362,
+    "end": 372
+   },
+   {
+    "identifier": "D013974",
+    "type": "ChemicalEntity",
+    "text": "levothyroxine",
+    "offset": 514,
+    "length": 13,
+    "block_id": "b0002",
+    "start": 383,
+    "end": 396
+   },
+   {
+    "identifier": "C064276",
+    "type": "ChemicalEntity",
+    "text": "pantoprazole",
+    "offset": 544,
+    "length": 12,
+    "block_id": "b0002",
+    "start": 413,
+    "end": 425
+   },
+   {
+    "identifier": "D017374",
+    "type": "ChemicalEntity",
+    "text": "paroxetine",
+    "offset": 568,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 437,
+    "end": 447
+   },
+   {
+    "identifier": "D005424",
+    "type": "ChemicalEntity",
+    "text": "flecainide",
+    "offset": 594,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 463,
+    "end": 473
+   },
+   {
+    "identifier": "D005424",
+    "type": "ChemicalEntity",
+    "text": "Flecainide",
+    "offset": 625,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 494,
+    "end": 504
+   },
+   {
+    "identifier": "D001281",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "atrial fibrillation",
+    "offset": 671,
+    "length": 19,
+    "block_id": "b0002",
+    "start": 540,
+    "end": 559
+   },
+   {
+    "identifier": "D005424",
+    "type": "ChemicalEntity",
+    "text": "flecainide",
+    "offset": 754,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 623,
+    "end": 633
+   },
+   {
+    "identifier": "D005424",
+    "type": "ChemicalEntity",
+    "text": "flecainide",
+    "offset": 868,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 737,
+    "end": 747
+   },
+   {
+    "identifier": "D017374",
+    "type": "ChemicalEntity",
+    "text": "paroxetine",
+    "offset": 883,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 752,
+    "end": 762
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patient",
+    "offset": 905,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 774,
+    "end": 781
+   },
+   {
+    "identifier": "D017374",
+    "type": "ChemicalEntity",
+    "text": "Paroxetine",
+    "offset": 968,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 837,
+    "end": 847
+   },
+   {
+    "identifier": "D005424",
+    "type": "ChemicalEntity",
+    "text": "flecainide",
+    "offset": 1012,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 881,
+    "end": 891
+   },
+   {
+    "identifier": "D003693",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "delirium",
+    "offset": 1061,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 930,
+    "end": 938
+   },
+   {
+    "identifier": "D005424",
+    "type": "ChemicalEntity",
+    "text": "Flecainide",
+    "offset": 1105,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 974,
+    "end": 984
+   },
+   {
+    "identifier": "D012964",
+    "type": "ChemicalEntity",
+    "text": "sodium",
+    "offset": 1172,
+    "length": 6,
+    "block_id": "b0002",
+    "start": 1041,
+    "end": 1047
+   },
+   {
+    "identifier": "D003693",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "delirium",
+    "offset": 1198,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1067,
+    "end": 1075
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 1222,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1091,
+    "end": 1099
+   },
+   {
+    "identifier": "D005424",
+    "type": "ChemicalEntity",
+    "text": "flecainide",
+    "offset": 1339,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 1208,
+    "end": 1218
+   },
+   {
+    "identifier": "1565",
+    "type": "GeneOrGeneProduct",
+    "text": "CYP2D6",
+    "offset": 1353,
+    "length": 6,
+    "block_id": "b0002",
+    "start": 1222,
+    "end": 1228
+   },
+   {
+    "identifier": "D017374",
+    "type": "ChemicalEntity",
+    "text": "paroxetine",
+    "offset": 1375,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 1244,
+    "end": 1254
+   },
+   {
+    "identifier": "1565",
+    "type": "GeneOrGeneProduct",
+    "text": "CYP2D6",
+    "offset": 1389,
+    "length": 6,
+    "block_id": "b0002",
+    "start": 1258,
+    "end": 1264
+   },
+   {
+    "identifier": "D005424",
+    "type": "ChemicalEntity",
+    "text": "flecainide",
+    "offset": 1436,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 1305,
+    "end": 1315
+   },
+   {
+    "identifier": "D003693",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "delirium",
+    "offset": 1455,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1324,
+    "end": 1332
+   },
+   {
+    "identifier": "D005424",
+    "type": "ChemicalEntity",
+    "text": "flecainide",
+    "offset": 1509,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 1378,
+    "end": 1388
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patient",
+    "offset": 1550,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 1419,
+    "end": 1426
+   },
+   {
+    "identifier": "D003693",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "delirium",
+    "offset": 1560,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1429,
+    "end": 1437
+   },
+   {
+    "identifier": "D005424",
+    "type": "ChemicalEntity",
+    "text": "flecainide",
+    "offset": 1676,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 1545,
+    "end": 1555
+   },
+   {
+    "identifier": "D017374",
+    "type": "ChemicalEntity",
+    "text": "paroxetine",
+    "offset": 1691,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 1560,
+    "end": 1570
+   },
+   {
+    "identifier": "D005424",
+    "type": "ChemicalEntity",
+    "text": "flecainide",
+    "offset": 1733,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 1602,
+    "end": 1612
+   },
+   {
+    "identifier": "D003693",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "delirium",
+    "offset": 1776,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1645,
+    "end": 1653
+   },
+   {
+    "identifier": "D064420",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "toxicity",
+    "offset": 1794,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1663,
+    "end": 1671
+   },
+   {
+    "identifier": "D005424",
+    "type": "ChemicalEntity",
+    "text": "flecainide",
+    "offset": 1818,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 1687,
+    "end": 1697
+   },
+   {
+    "identifier": "D017374",
+    "type": "ChemicalEntity",
+    "text": "paroxetine",
+    "offset": 1848,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 1717,
+    "end": 1727
+   },
+   {
+    "identifier": "1565",
+    "type": "GeneOrGeneProduct",
+    "text": "CYP2D6",
+    "offset": 1876,
+    "length": 6,
+    "block_id": "b0002",
+    "start": 1745,
+    "end": 1751
+   },
+   {
+    "identifier": "D005424",
+    "type": "ChemicalEntity",
+    "text": "flecainide",
+    "offset": 1895,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 1764,
+    "end": 1774
+   },
+   {
+    "identifier": "1565",
+    "type": "GeneOrGeneProduct",
+    "text": "CYP2D6",
+    "offset": 1977,
+    "length": 6,
+    "block_id": "b0002",
+    "start": 1846,
+    "end": 1852
+   }
+  ],
+  "relations": []
+ },
+ "PMID19681452": {
+  "blocks": [
+   "b0001",
+   "b0002"
+  ],
+  "mentions": [
+   {
+    "identifier": "D002543,D020520",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "haemorrhagic infarction of the globus pallidus",
+    "offset": 10,
+    "length": 46,
+    "block_id": "b0001",
+    "start": 10,
+    "end": 56
+   },
+   {
+    "identifier": "D003042",
+    "type": "ChemicalEntity",
+    "text": "cocaine",
+    "offset": 63,
+    "length": 7,
+    "block_id": "b0001",
+    "start": 63,
+    "end": 70
+   },
+   {
+    "identifier": "D000431",
+    "type": "ChemicalEntity",
+    "text": "alcohol",
+    "offset": 75,
+    "length": 7,
+    "block_id": "b0001",
+    "start": 75,
+    "end": 82
+   },
+   {
+    "identifier": "D003042",
+    "type": "ChemicalEntity",
+    "text": "Cocaine",
+    "offset": 97,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 0,
+    "end": 7
+   },
+   {
+    "identifier": "D002544,D020521",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "ischemic and haemorrhagic stroke",
+    "offset": 131,
+    "length": 32,
+    "block_id": "b0002",
+    "start": 34,
+    "end": 66
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "man",
+    "offset": 202,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 105,
+    "end": 108
+   },
+   {
+    "identifier": "D002545",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "ischemia of the globus pallidus",
+    "offset": 221,
+    "length": 31,
+    "block_id": "b0002",
+    "start": 124,
+    "end": 155
+   },
+   {
+    "identifier": "D000431",
+    "type": "ChemicalEntity",
+    "text": "alcohol",
+    "offset": 269,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 172,
+    "end": 179
+   },
+   {
+    "identifier": "D003042",
+    "type": "ChemicalEntity",
+    "text": "cocaine",
+    "offset": 292,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 195,
+    "end": 202
+   },
+   {
+    "identifier": "D020520",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "globus pallidus infarctions",
+    "offset": 318,
+    "length": 27,
+    "block_id": "b0002",
+    "start": 221,
+    "end": 248
+   },
+   {
+    "identifier": "D003932",
+    "type": "ChemicalEntity",
+    "text": "heroin",
+    "offset": 377,
+    "length": 6,
+    "block_id": "b0002",
+    "start": 280,
+    "end": 286
+   },
+   {
+    "identifier": "D020520",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "basal ganglia infarcts",
+    "offset": 395,
+    "length": 22,
+    "block_id": "b0002",
+    "start": 298,
+    "end": 320
+   },
+   {
+    "identifier": "D003042",
+    "type": "ChemicalEntity",
+    "text": "cocaine",
+    "offset": 435,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 338,
+    "end": 345
+   },
+   {
+    "identifier": "D003932",
+    "type": "ChemicalEntity",
+    "text": "heroin",
+    "offset": 463,
+    "length": 6,
+    "block_id": "b0002",
+    "start": 366,
+    "end": 372
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patient",
+    "offset": 508,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 411,
+    "end": 418
+   },
+   {
+    "identifier": "D001145",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "cardiac arrhythmia",
+    "offset": 527,
+    "length": 18,
+    "block_id": "b0002",
+    "start": 430,
+    "end": 448
+   },
+   {
+    "identifier": "D012131",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "respiratory dysfunction",
+    "offset": 549,
+    "length": 23,
+    "block_id": "b0002",
+    "start": 452,
+    "end": 475
+   },
+   {
+    "identifier": "D003042",
+    "type": "ChemicalEntity",
+    "text": "cocaine",
+    "offset": 584,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 487,
+    "end": 494
+   },
+   {
+    "identifier": "D000431",
+    "type": "ChemicalEntity",
+    "text": "ethanol",
+    "offset": 599,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 502,
+    "end": 509
+   },
+   {
+    "identifier": "D002545",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "cerebral hypoperfusion",
+    "offset": 642,
+    "length": 22,
+    "block_id": "b0002",
+    "start": 545,
+    "end": 567
+   }
+  ],
+  "relations": []
+ },
+ "PMID19957053": {
+  "blocks": [
+   "b0001",
+   "b0002"
+  ],
+  "mentions": [
+   {
+    "identifier": "D010656",
+    "type": "ChemicalEntity",
+    "text": "Phenylephrine",
+    "offset": 0,
+    "length": 13,
+    "block_id": "b0001",
+    "start": 0,
+    "end": 13
+   },
+   {
+    "identifier": "D004809",
+    "type": "ChemicalEntity",
+    "text": "ephedrine",
+    "offset": 22,
+    "length": 9,
+    "block_id": "b0001",
+    "start": 22,
+    "end": 31
+   },
+   {
+    "identifier": "D007022",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "hypotension",
+    "offset": 94,
+    "length": 11,
+    "block_id": "b0001",
+    "start": 94,
+    "end": 105
+   },
+   {
+    "identifier": "D007022",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "hypotension",
+    "offset": 177,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 70,
+    "end": 81
+   },
+   {
+    "identifier": "D010656",
+    "type": "ChemicalEntity",
+    "text": "phenylephrine",
+    "offset": 216,
+    "length": 13,
+    "block_id": "b0002",
+    "start": 109,
+    "end": 122
+   },
+   {
+    "identifier": "D004809",
+    "type": "ChemicalEntity",
+    "text": "ephedrine",
+    "offset": 234,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 127,
+    "end": 136
+   },
+   {
+    "identifier": "D007022",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "hypotension",
+    "offset": 312,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 205,
+    "end": 216
+   },
+   {
+    "identifier": "D005283",
+    "type": "ChemicalEntity",
+    "text": "fentanyl",
+    "offset": 371,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 264,
+    "end": 272
+   },
+   {
+    "identifier": "D015742",
+    "type": "ChemicalEntity",
+    "text": "propofol",
+    "offset": 401,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 294,
+    "end": 302
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 430,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 323,
+    "end": 331
+   },
+   {
+    "identifier": "D010656",
+    "type": "ChemicalEntity",
+    "text": "phenylephrine",
+    "offset": 448,
+    "length": 13,
+    "block_id": "b0002",
+    "start": 341,
+    "end": 354
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 481,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 374,
+    "end": 382
+   },
+   {
+    "identifier": "D004809",
+    "type": "ChemicalEntity",
+    "text": "ephedrine",
+    "offset": 499,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 392,
+    "end": 401
+   },
+   {
+    "identifier": "D020521",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "stroke",
+    "offset": 583,
+    "length": 6,
+    "block_id": "b0002",
+    "start": 476,
+    "end": 482
+   },
+   {
+    "identifier": "D010656",
+    "type": "ChemicalEntity",
+    "text": "phenylephrine",
+    "offset": 831,
+    "length": 13,
+    "block_id": "b0002",
+    "start": 724,
+    "end": 737
+   },
+   {
+    "identifier": "D004809",
+    "type": "ChemicalEntity",
+    "text": "ephedrine",
+    "offset": 1085,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 978,
+    "end": 987
+   },
+   {
+    "identifier": "D010656",
+    "type": "ChemicalEntity",
+    "text": "phenylephrine",
+    "offset": 1276,
+    "length": 13,
+    "block_id": "b0002",
+    "start": 1169,
+    "end": 1182
+   },
+   {
+    "identifier": "D007022",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "hypotension",
+    "offset": 1301,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 1194,
+    "end": 1205
+   },
+   {
+    "identifier": "D004809",
+    "type": "ChemicalEntity",
+    "text": "ephedrine",
+    "offset": 1375,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1268,
+    "end": 1277
+   }
+  ],
+  "relations": []
+ },
+ "PMID24114426": {
+  "blocks": [
+   "b0001",
+   "b0002"
+  ],
+  "mentions": [
+   {
+    "identifier": "D003866",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "Depression",
+    "offset": 0,
+    "length": 10,
+    "block_id": "b0001",
+    "start": 0,
+    "end": 10
+   },
+   {
+    "identifier": "D010554",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "impulsiveness",
+    "offset": 12,
+    "length": 13,
+    "block_id": "b0001",
+    "start": 12,
+    "end": 25
+   },
+   {
+    "identifier": "D018817",
+    "type": "ChemicalEntity",
+    "text": "3,4-methylenedioxymethamphetamine",
+    "offset": 83,
+    "length": 33,
+    "block_id": "b0001",
+    "start": 83,
+    "end": 116
+   },
+   {
+    "identifier": "D018817",
+    "type": "ChemicalEntity",
+    "text": "MDMA",
+    "offset": 118,
+    "length": 4,
+    "block_id": "b0001",
+    "start": 118,
+    "end": 122
+   },
+   {
+    "identifier": "D018817",
+    "type": "ChemicalEntity",
+    "text": "ecstasy",
+    "offset": 124,
+    "length": 7,
+    "block_id": "b0001",
+    "start": 124,
+    "end": 131
+   },
+   {
+    "identifier": "D018817",
+    "type": "ChemicalEntity",
+    "text": "Ecstasy",
+    "offset": 145,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 11,
+    "end": 18
+   },
+   {
+    "identifier": "D018817",
+    "type": "ChemicalEntity",
+    "text": "3,4-methylenedioxymethamphetamine",
+    "offset": 154,
+    "length": 33,
+    "block_id": "b0002",
+    "start": 20,
+    "end": 53
+   },
+   {
+    "identifier": "D018817",
+    "type": "ChemicalEntity",
+    "text": "MDMA",
+    "offset": 189,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 55,
+    "end": 59
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "human",
+    "offset": 270,
+    "length": 5,
+    "block_id": "b0002",
+    "start": 136,
+    "end": 141
+   },
+   {
+    "identifier": "D012701",
+    "type": "ChemicalEntity",
+    "text": "5HT",
+    "offset": 430,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 296,
+    "end": 299
+   },
+   {
+    "identifier": "D018817",
+    "type": "ChemicalEntity",
+    "text": "ecstasy",
+    "offset": 482,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 348,
+    "end": 355
+   },
+   {
+    "identifier": "D000431",
+    "type": "ChemicalEntity",
+    "text": "alcohol",
+    "offset": 731,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 597,
+    "end": 604
+   },
+   {
+    "identifier": "D009538",
+    "type": "ChemicalEntity",
+    "text": "nicotine",
+    "offset": 739,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 605,
+    "end": 613
+   },
+   {
+    "identifier": "D000431,D009538",
+    "type": "ChemicalEntity",
+    "text": "AN",
+    "offset": 749,
+    "length": 2,
+    "block_id": "b0002",
+    "start": 615,
+    "end": 617
+   },
+   {
+    "identifier": "D002188",
+    "type": "ChemicalEntity",
+    "text": "cannabis",
+    "offset": 754,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 620,
+    "end": 628
+   },
+   {
+    "identifier": "D000431",
+    "type": "ChemicalEntity",
+    "text": "alcohol",
+    "offset": 763,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 629,
+    "end": 636
+   },
+   {
+    "identifier": "D009538",
+    "type": "ChemicalEntity",
+    "text": "nicotine",
+    "offset": 771,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 637,
+    "end": 645
+   },
+   {
+    "identifier": "D000431,D002188,D009538",
+    "type": "ChemicalEntity",
+    "text": "CAN",
+    "offset": 781,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 647,
+    "end": 650
+   },
+   {
+    "identifier": "D018817",
+    "type": "ChemicalEntity",
+    "text": "ecstasy",
+    "offset": 791,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 657,
+    "end": 664
+   },
+   {
+    "identifier": "D018817",
+    "type": "ChemicalEntity",
+    "text": "ecstasy",
+    "offset": 823,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 689,
+    "end": 696
+   },
+   {
+    "identifier": "D018817",
+    "type": "ChemicalEntity",
+    "text": "MDMA",
+    "offset": 857,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 723,
+    "end": 727
+   },
+   {
+    "identifier": "D018817",
+    "type": "ChemicalEntity",
+    "text": "MDMA",
+    "offset": 882,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 748,
+    "end": 752
+   },
+   {
+    "identifier": "D000431,D002188,D009538",
+    "type": "ChemicalEntity",
+    "text": "CAN",
+    "offset": 1135,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 1001,
+    "end": 1004
+   },
+   {
+    "identifier": "D018817",
+    "type": "ChemicalEntity",
+    "text": "MDMA",
+    "offset": 1219,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 1085,
+    "end": 1089
+   },
+   {
+    "identifier": "D018817",
+    "type": "ChemicalEntity",
+    "text": "MDMA",
+    "offset": 1231,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 1097,
+    "end": 1101
+   },
+   {
+    "identifier": "D018817",
+    "type": "ChemicalEntity",
+    "text": "ecstasy",
+    "offset": 1415,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 1281,
+    "end": 1288
+   },
+   {
+    "identifier": "D018817",
+    "type": "ChemicalEntity",
+    "text": "ecstasy",
+    "offset": 1481,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 1347,
+    "end": 1354
+   },
+   {
+    "identifier": "D008569",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "impaired memory",
+    "offset": 1656,
+    "length": 15,
+    "block_id": "b0002",
+    "start": 1522,
+    "end": 1537
+   },
+   {
+    "identifier": "D003866",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "depression",
+    "offset": 1709,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 1575,
+    "end": 1585
+   },
+   {
+    "identifier": "D010554",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "impulsiveness",
+    "offset": 1721,
+    "length": 13,
+    "block_id": "b0002",
+    "start": 1587,
+    "end": 1600
+   },
+   {
+    "identifier": "D020920",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "sleep disturbance",
+    "offset": 1740,
+    "length": 17,
+    "block_id": "b0002",
+    "start": 1606,
+    "end": 1623
+   },
+   {
+    "identifier": "D018817",
+    "type": "ChemicalEntity",
+    "text": "ecstasy",
+    "offset": 1803,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 1669,
+    "end": 1676
+   }
+  ],
+  "relations": []
+ },
+ "PMID24671324": {
+  "blocks": [
+   "b0001",
+   "b0002"
+  ],
+  "mentions": [
+   {
+    "identifier": "D019115",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "Necrotising fasciitis",
+    "offset": 0,
+    "length": 21,
+    "block_id": "b0001",
+    "start": 0,
+    "end": 21
+   },
+   {
+    "identifier": "D000069286",
+    "type": "ChemicalEntity",
+    "text": "bortezomib",
+    "offset": 28,
+    "length": 10,
+    "block_id": "b0001",
+    "start": 28,
+    "end": 38
+   },
+   {
+    "identifier": "D003907",
+    "type": "ChemicalEntity",
+    "text": "dexamethasone",
+    "offset": 43,
+    "length": 13,
+    "block_id": "b0001",
+    "start": 43,
+    "end": 56
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patient",
+    "offset": 90,
+    "length": 7,
+    "block_id": "b0001",
+    "start": 90,
+    "end": 97
+   },
+   {
+    "identifier": "D008258",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "Waldenstrom macroglobulinaemia",
+    "offset": 101,
+    "length": 30,
+    "block_id": "b0001",
+    "start": 101,
+    "end": 131
+   },
+   {
+    "identifier": "D000069286",
+    "type": "ChemicalEntity",
+    "text": "Bortezomib",
+    "offset": 133,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 0,
+    "end": 10
+   },
+   {
+    "identifier": "D003907",
+    "type": "ChemicalEntity",
+    "text": "dexamethasone",
+    "offset": 158,
+    "length": 13,
+    "block_id": "b0002",
+    "start": 25,
+    "end": 38
+   },
+   {
+    "identifier": "D001424",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "bacterial infections",
+    "offset": 249,
+    "length": 20,
+    "block_id": "b0002",
+    "start": 116,
+    "end": 136
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 273,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 140,
+    "end": 148
+   },
+   {
+    "identifier": "D009369",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "malignancies",
+    "offset": 294,
+    "length": 12,
+    "block_id": "b0002",
+    "start": 161,
+    "end": 173
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 388,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 255,
+    "end": 263
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "man",
+    "offset": 432,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 299,
+    "end": 302
+   },
+   {
+    "identifier": "D008258",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "Waldenstrom macroglobulinaemia",
+    "offset": 441,
+    "length": 30,
+    "block_id": "b0002",
+    "start": 308,
+    "end": 338
+   },
+   {
+    "identifier": "D019115",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "necrotising fasciitis",
+    "offset": 485,
+    "length": 21,
+    "block_id": "b0002",
+    "start": 352,
+    "end": 373
+   },
+   {
+    "identifier": "D009503",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "neutropenia",
+    "offset": 515,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 382,
+    "end": 393
+   },
+   {
+    "identifier": "D000069286",
+    "type": "ChemicalEntity",
+    "text": "bortezomib",
+    "offset": 564,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 431,
+    "end": 441
+   },
+   {
+    "identifier": "D003907",
+    "type": "ChemicalEntity",
+    "text": "dexamethasone",
+    "offset": 586,
+    "length": 13,
+    "block_id": "b0002",
+    "start": 453,
+    "end": 466
+   },
+   {
+    "identifier": "D000069283",
+    "type": "ChemicalEntity",
+    "text": "rituximab",
+    "offset": 604,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 471,
+    "end": 480
+   },
+   {
+    "identifier": "D001424",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "bacterial infections",
+    "offset": 756,
+    "length": 20,
+    "block_id": "b0002",
+    "start": 623,
+    "end": 643
+   },
+   {
+    "identifier": "D000069286",
+    "type": "ChemicalEntity",
+    "text": "bortezomib",
+    "offset": 788,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 655,
+    "end": 665
+   },
+   {
+    "identifier": "D003907",
+    "type": "ChemicalEntity",
+    "text": "dexamethasone",
+    "offset": 814,
+    "length": 13,
+    "block_id": "b0002",
+    "start": 681,
+    "end": 694
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 839,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 706,
+    "end": 714
+   }
+  ],
+  "relations": []
+ },
+ "PMID24717468": {
+  "blocks": [
+   "b0001",
+   "b0002"
+  ],
+  "mentions": [
+   {
+    "identifier": "D020927",
+    "type": "ChemicalEntity",
+    "text": "dexmedetomidine",
+    "offset": 56,
+    "length": 15,
+    "block_id": "b0001",
+    "start": 56,
+    "end": 71
+   },
+   {
+    "identifier": "D015742",
+    "type": "ChemicalEntity",
+    "text": "propofol",
+    "offset": 76,
+    "length": 8,
+    "block_id": "b0001",
+    "start": 76,
+    "end": 84
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 120,
+    "length": 8,
+    "block_id": "b0001",
+    "start": 120,
+    "end": 128
+   },
+   {
+    "identifier": "D020927",
+    "type": "ChemicalEntity",
+    "text": "Dexmedetomidine",
+    "offset": 141,
+    "length": 15,
+    "block_id": "b0002",
+    "start": 11,
+    "end": 26
+   },
+   {
+    "identifier": "D015742",
+    "type": "ChemicalEntity",
+    "text": "propofol",
+    "offset": 161,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 31,
+    "end": 39
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 468,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 338,
+    "end": 346
+   },
+   {
+    "identifier": "D020927",
+    "type": "ChemicalEntity",
+    "text": "dexmedetomidine",
+    "offset": 487,
+    "length": 15,
+    "block_id": "b0002",
+    "start": 357,
+    "end": 372
+   },
+   {
+    "identifier": "D015742",
+    "type": "ChemicalEntity",
+    "text": "propofol",
+    "offset": 507,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 377,
+    "end": 385
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "PATIENTS",
+    "offset": 731,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 601,
+    "end": 609
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 760,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 630,
+    "end": 638
+   },
+   {
+    "identifier": "D020927",
+    "type": "ChemicalEntity",
+    "text": "dexmedetomidine",
+    "offset": 948,
+    "length": 15,
+    "block_id": "b0002",
+    "start": 818,
+    "end": 833
+   },
+   {
+    "identifier": "D015742",
+    "type": "ChemicalEntity",
+    "text": "propofol",
+    "offset": 967,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 837,
+    "end": 845
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 1023,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 893,
+    "end": 901
+   },
+   {
+    "identifier": "D020927",
+    "type": "ChemicalEntity",
+    "text": "dexmedetomidine",
+    "offset": 1037,
+    "length": 15,
+    "block_id": "b0002",
+    "start": 907,
+    "end": 922
+   },
+   {
+    "identifier": "D015742",
+    "type": "ChemicalEntity",
+    "text": "propofol",
+    "offset": 1061,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 931,
+    "end": 939
+   },
+   {
+    "identifier": "D007022",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "hypotension",
+    "offset": 1219,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 1089,
+    "end": 1100
+   },
+   {
+    "identifier": "D001919",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "bradycardia",
+    "offset": 1271,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 1141,
+    "end": 1152
+   },
+   {
+    "identifier": "D007022",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "hypotension",
+    "offset": 1571,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 1441,
+    "end": 1452
+   },
+   {
+    "identifier": "D001919",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "bradycardia",
+    "offset": 1586,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 1456,
+    "end": 1467
+   },
+   {
+    "identifier": "D007022",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "hypotension",
+    "offset": 1662,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 1532,
+    "end": 1543
+   },
+   {
+    "identifier": "D001919",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "bradycardia",
+    "offset": 1678,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 1548,
+    "end": 1559
+   },
+   {
+    "identifier": "9606",
+    "type": "OrganismTaxon",
+    "text": "patients",
+    "offset": 1740,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1610,
+    "end": 1618
+   },
+   {
+    "identifier": "D020927",
+    "type": "ChemicalEntity",
+    "text": "dexmedetomidine",
+    "offset": 1761,
+    "length": 15,
+    "block_id": "b0002",
+    "start": 1631,
+    "end": 1646
+   },
+   {
+    "identifier": "D015742",
+    "type": "ChemicalEntity",
+    "text": "propofol",
+    "offset": 1780,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1650,
+    "end": 1658
+   },
+   {
+    "identifier": "D007022",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "hypotension",
+    "offset": 1844,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 1714,
+    "end": 1725
+   },
+   {
+    "identifier": "D001919",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "bradycardia",
+    "offset": 1859,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 1729,
+    "end": 1740
+   }
+  ],
+  "relations": []
+ },
+ "PMID24739405": {
+  "blocks": [
+   "b0001",
+   "b0002"
+  ],
+  "mentions": [
+   {
+    "identifier": "D003687",
+    "type": "ChemicalEntity",
+    "text": "dehydroepiandrosterone",
+    "offset": 11,
+    "length": 22,
+    "block_id": "b0001",
+    "start": 11,
+    "end": 33
+   },
+   {
+    "identifier": "D000661",
+    "type": "ChemicalEntity",
+    "text": "amphetamine",
+    "offset": 37,
+    "length": 11,
+    "block_id": "b0001",
+    "start": 37,
+    "end": 48
+   },
+   {
+    "identifier": "D012559",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "schizophrenia",
+    "offset": 57,
+    "length": 13,
+    "block_id": "b0001",
+    "start": 57,
+    "end": 70
+   },
+   {
+    "identifier": "10090",
+    "type": "OrganismTaxon",
+    "text": "mice",
+    "offset": 81,
+    "length": 4,
+    "block_id": "b0001",
+    "start": 81,
+    "end": 85
+   },
+   {
+    "identifier": "D003687",
+    "type": "ChemicalEntity",
+    "text": "dehydroepiandrosterone",
+    "offset": 124,
+    "length": 22,
+    "block_id": "b0002",
+    "start": 37,
+    "end": 59
+   },
+   {
+    "identifier": "D003687",
+    "type": "ChemicalEntity",
+    "text": "DHEA",
+    "offset": 148,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 61,
+    "end": 65
+   },
+   {
+    "identifier": "D012559",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "schizophrenia",
+    "offset": 174,
+    "length": 13,
+    "block_id": "b0002",
+    "start": 87,
+    "end": 100
+   },
+   {
+    "identifier": "10090",
+    "type": "OrganismTaxon",
+    "text": "mice",
+    "offset": 226,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 139,
+    "end": 143
+   },
+   {
+    "identifier": "D000661",
+    "type": "ChemicalEntity",
+    "text": "amphetamine",
+    "offset": 269,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 182,
+    "end": 193
+   },
+   {
+    "identifier": "D000661",
+    "type": "ChemicalEntity",
+    "text": "amphetamine",
+    "offset": 297,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 210,
+    "end": 221
+   },
+   {
+    "identifier": "D003687",
+    "type": "ChemicalEntity",
+    "text": "DHEA",
+    "offset": 328,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 241,
+    "end": 245
+   },
+   {
+    "identifier": "D003687",
+    "type": "ChemicalEntity",
+    "text": "DHEA",
+    "offset": 338,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 251,
+    "end": 255
+   },
+   {
+    "identifier": "D000661",
+    "type": "ChemicalEntity",
+    "text": "Amphetamine",
+    "offset": 395,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 308,
+    "end": 319
+   },
+   {
+    "identifier": "D006948",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "hyper locomotion",
+    "offset": 428,
+    "length": 16,
+    "block_id": "b0002",
+    "start": 341,
+    "end": 357
+   },
+   {
+    "identifier": "D001058",
+    "type": "ChemicalEntity",
+    "text": "apomorphine",
+    "offset": 446,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 359,
+    "end": 370
+   },
+   {
+    "identifier": "D006220",
+    "type": "ChemicalEntity",
+    "text": "haloperidol",
+    "offset": 512,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 425,
+    "end": 436
+   },
+   {
+    "identifier": "D002375",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "catalepsy",
+    "offset": 547,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 460,
+    "end": 469
+   },
+   {
+    "identifier": "D012559",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "schizophrenia",
+    "offset": 593,
+    "length": 13,
+    "block_id": "b0002",
+    "start": 506,
+    "end": 519
+   },
+   {
+    "identifier": "D006948",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "hyper locomotion",
+    "offset": 860,
+    "length": 16,
+    "block_id": "b0002",
+    "start": 773,
+    "end": 789
+   },
+   {
+    "identifier": "D002375",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "catalepsy",
+    "offset": 913,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 826,
+    "end": 835
+   },
+   {
+    "identifier": "D000661",
+    "type": "ChemicalEntity",
+    "text": "amphetamine",
+    "offset": 946,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 859,
+    "end": 870
+   },
+   {
+    "identifier": "D000661",
+    "type": "ChemicalEntity",
+    "text": "amphetamine",
+    "offset": 1051,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 964,
+    "end": 975
+   },
+   {
+    "identifier": "D003687",
+    "type": "ChemicalEntity",
+    "text": "DHEA",
+    "offset": 1080,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 993,
+    "end": 997
+   },
+   {
+    "identifier": "D000661",
+    "type": "ChemicalEntity",
+    "text": "amphetamine",
+    "offset": 1183,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 1096,
+    "end": 1107
+   },
+   {
+    "identifier": "D006220",
+    "type": "ChemicalEntity",
+    "text": "haloperidol",
+    "offset": 1278,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 1191,
+    "end": 1202
+   },
+   {
+    "identifier": "D002375",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "catalepsy",
+    "offset": 1298,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1211,
+    "end": 1220
+   },
+   {
+    "identifier": "D001058",
+    "type": "ChemicalEntity",
+    "text": "apomorphine",
+    "offset": 1413,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 1326,
+    "end": 1337
+   },
+   {
+    "identifier": "D003687",
+    "type": "ChemicalEntity",
+    "text": "DHEA",
+    "offset": 1486,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 1399,
+    "end": 1403
+   },
+   {
+    "identifier": "D002375",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "catalepsy",
+    "offset": 1532,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1445,
+    "end": 1454
+   },
+   {
+    "identifier": "D003687",
+    "type": "ChemicalEntity",
+    "text": "DHEA",
+    "offset": 1618,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 1531,
+    "end": 1535
+   },
+   {
+    "identifier": "D012559",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "schizophrenia",
+    "offset": 1702,
+    "length": 13,
+    "block_id": "b0002",
+    "start": 1615,
+    "end": 1628
+   }
+  ],
+  "relations": []
+ },
+ "PMID26991973": {
+  "blocks": [
+   "b0001",
+   "b0002"
+  ],
+  "mentions": [
+   {
+    "identifier": "835209",
+    "type": "GeneOrGeneProduct",
+    "text": "MOL1",
+    "offset": 0,
+    "length": 4,
+    "block_id": "b0001",
+    "start": 0,
+    "end": 4
+   },
+   {
+    "identifier": "3702",
+    "type": "OrganismTaxon",
+    "text": "Arabidopsis",
+    "offset": 44,
+    "length": 11,
+    "block_id": "b0001",
+    "start": 44,
+    "end": 55
+   },
+   {
+    "identifier": "820713,821957,832170",
+    "type": "GeneOrGeneProduct",
+    "text": "CLE peptide",
+    "offset": 276,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 219,
+    "end": 230
+   },
+   {
+    "identifier": "835209,836269",
+    "type": "GeneOrGeneProduct",
+    "text": "leucine-rich repeat receptor-like kinase",
+    "offset": 292,
+    "length": 40,
+    "block_id": "b0002",
+    "start": 235,
+    "end": 275
+   },
+   {
+    "identifier": "835209,836269",
+    "type": "GeneOrGeneProduct",
+    "text": "LRR-RLK",
+    "offset": 334,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 277,
+    "end": 284
+   },
+   {
+    "identifier": "835209,836269",
+    "type": "GeneOrGeneProduct",
+    "text": "LRR-RLK",
+    "offset": 505,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 448,
+    "end": 455
+   },
+   {
+    "identifier": "835209",
+    "type": "GeneOrGeneProduct",
+    "text": "MOL1",
+    "offset": 513,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 456,
+    "end": 460
+   },
+   {
+    "identifier": "3702",
+    "type": "OrganismTaxon",
+    "text": "Arabidopsis thaliana",
+    "offset": 558,
+    "length": 20,
+    "block_id": "b0002",
+    "start": 501,
+    "end": 521
+   },
+   {
+    "identifier": "835209",
+    "type": "GeneOrGeneProduct",
+    "text": "MOL1",
+    "offset": 633,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 576,
+    "end": 580
+   },
+   {
+    "identifier": "822075",
+    "type": "GeneOrGeneProduct",
+    "text": "CLE41",
+    "offset": 718,
+    "length": 5,
+    "block_id": "b0002",
+    "start": 661,
+    "end": 666
+   },
+   {
+    "identifier": "836269",
+    "type": "GeneOrGeneProduct",
+    "text": "PXY",
+    "offset": 724,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 667,
+    "end": 670
+   },
+   {
+    "identifier": "835209",
+    "type": "GeneOrGeneProduct",
+    "text": "MOL1",
+    "offset": 774,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 717,
+    "end": 721
+   },
+   {
+    "identifier": "822075",
+    "type": "GeneOrGeneProduct",
+    "text": "CLE41",
+    "offset": 813,
+    "length": 5,
+    "block_id": "b0002",
+    "start": 756,
+    "end": 761
+   },
+   {
+    "identifier": "836269",
+    "type": "GeneOrGeneProduct",
+    "text": "PXY",
+    "offset": 819,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 762,
+    "end": 765
+   },
+   {
+    "identifier": "835209",
+    "type": "GeneOrGeneProduct",
+    "text": "MOL1",
+    "offset": 871,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 814,
+    "end": 818
+   },
+   {
+    "identifier": "835209",
+    "type": "GeneOrGeneProduct",
+    "text": "MOL1",
+    "offset": 964,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 907,
+    "end": 911
+   },
+   {
+    "identifier": "836269",
+    "type": "GeneOrGeneProduct",
+    "text": "PXY",
+    "offset": 973,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 916,
+    "end": 919
+   },
+   {
+    "identifier": "835209,836269",
+    "type": "GeneOrGeneProduct",
+    "text": "LRR-RLKs",
+    "offset": 983,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 926,
+    "end": 934
+   },
+   {
+    "identifier": "835209",
+    "type": "GeneOrGeneProduct",
+    "text": "MOL1",
+    "offset": 1088,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 1031,
+    "end": 1035
+   },
+   {
+    "identifier": "836269",
+    "type": "GeneOrGeneProduct",
+    "text": "PXY",
+    "offset": 1101,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 1044,
+    "end": 1047
+   },
+   {
+    "identifier": "843915",
+    "type": "GeneOrGeneProduct",
+    "text": "CLV1",
+    "offset": 1123,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 1066,
+    "end": 1070
+   },
+   {
+    "identifier": "835209",
+    "type": "GeneOrGeneProduct",
+    "text": "mol1",
+    "offset": 1207,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 1150,
+    "end": 1154
+   },
+   {
+    "identifier": "835209",
+    "type": "GeneOrGeneProduct",
+    "text": "MOL1",
+    "offset": 1241,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 1184,
+    "end": 1188
+   },
+   {
+    "identifier": "D005030",
+    "type": "ChemicalEntity",
+    "text": "ethylene",
+    "offset": 1293,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1236,
+    "end": 1244
+   },
+   {
+    "identifier": "C011006",
+    "type": "ChemicalEntity",
+    "text": "jasmonic acid",
+    "offset": 1306,
+    "length": 13,
+    "block_id": "b0002",
+    "start": 1249,
+    "end": 1262
+   },
+   {
+    "identifier": "3702",
+    "type": "OrganismTaxon",
+    "text": "Arabidopsis",
+    "offset": 1408,
+    "length": 11,
+    "block_id": "b0002",
+    "start": 1351,
+    "end": 1362
+   }
+  ],
+  "relations": []
+ },
+ "PMID27464336": {
+  "blocks": [
+   "b0001",
+   "b0002"
+  ],
+  "mentions": [
+   {
+    "identifier": "D000438",
+    "type": "ChemicalEntity",
+    "text": "Alcohol",
+    "offset": 50,
+    "length": 7,
+    "block_id": "b0001",
+    "start": 50,
+    "end": 57
+   },
+   {
+    "identifier": "72508",
+    "type": "GeneOrGeneProduct",
+    "text": "S6K1",
+    "offset": 103,
+    "length": 4,
+    "block_id": "b0001",
+    "start": 103,
+    "end": 107
+   },
+   {
+    "identifier": "D000438",
+    "type": "ChemicalEntity",
+    "text": "alcohol",
+    "offset": 215,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 20,
+    "end": 27
+   },
+   {
+    "identifier": "D008060",
+    "type": "DiseaseOrPhenotypicFeature",
+    "text": "lipodystrophy",
+    "offset": 320,
+    "length": 13,
+    "block_id": "b0002",
+    "start": 125,
+    "end": 138
+   },
+   {
+    "identifier": "D000438",
+    "type": "ChemicalEntity",
+    "text": "alcohol",
+    "offset": 435,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 240,
+    "end": 247
+   },
+   {
+    "identifier": "10090",
+    "type": "OrganismTaxon",
+    "text": "mice",
+    "offset": 447,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 252,
+    "end": 256
+   },
+   {
+    "identifier": "56717",
+    "type": "GeneOrGeneProduct",
+    "text": "mammalian target of rapamycin",
+    "offset": 546,
+    "length": 29,
+    "block_id": "b0002",
+    "start": 351,
+    "end": 380
+   },
+   {
+    "identifier": "56717",
+    "type": "GeneOrGeneProduct",
+    "text": "mTOR",
+    "offset": 577,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 382,
+    "end": 386
+   },
+   {
+    "identifier": "10090",
+    "type": "OrganismTaxon",
+    "text": "mice",
+    "offset": 604,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 409,
+    "end": 413
+   },
+   {
+    "identifier": "D000438",
+    "type": "ChemicalEntity",
+    "text": "alcohol",
+    "offset": 626,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 431,
+    "end": 438
+   },
+   {
+    "identifier": "D000438",
+    "type": "ChemicalEntity",
+    "text": "alcohol",
+    "offset": 944,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 749,
+    "end": 756
+   },
+   {
+    "identifier": "56717",
+    "type": "GeneOrGeneProduct",
+    "text": "mTOR",
+    "offset": 1123,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 928,
+    "end": 932
+   },
+   {
+    "identifier": "13685",
+    "type": "GeneOrGeneProduct",
+    "text": "4E-BP1",
+    "offset": 1129,
+    "length": 6,
+    "block_id": "b0002",
+    "start": 934,
+    "end": 940
+   },
+   {
+    "identifier": "11651",
+    "type": "GeneOrGeneProduct",
+    "text": "Akt",
+    "offset": 1137,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 942,
+    "end": 945
+   },
+   {
+    "identifier": "67605",
+    "type": "GeneOrGeneProduct",
+    "text": "PRAS40",
+    "offset": 1145,
+    "length": 6,
+    "block_id": "b0002",
+    "start": 950,
+    "end": 956
+   },
+   {
+    "identifier": "72508",
+    "type": "GeneOrGeneProduct",
+    "text": "S6K1",
+    "offset": 1221,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 1026,
+    "end": 1030
+   },
+   {
+    "identifier": "20104",
+    "type": "GeneOrGeneProduct",
+    "text": "S6",
+    "offset": 1257,
+    "length": 2,
+    "block_id": "b0002",
+    "start": 1062,
+    "end": 1064
+   },
+   {
+    "identifier": "75705",
+    "type": "GeneOrGeneProduct",
+    "text": "eIF4B",
+    "offset": 1264,
+    "length": 5,
+    "block_id": "b0002",
+    "start": 1069,
+    "end": 1074
+   },
+   {
+    "identifier": "D000438",
+    "type": "ChemicalEntity",
+    "text": "alcohol",
+    "offset": 1286,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 1091,
+    "end": 1098
+   },
+   {
+    "identifier": "10090",
+    "type": "OrganismTaxon",
+    "text": "mice",
+    "offset": 1298,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 1103,
+    "end": 1107
+   },
+   {
+    "identifier": "D000438",
+    "type": "ChemicalEntity",
+    "text": "Alcohol",
+    "offset": 1304,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 1109,
+    "end": 1116
+   },
+   {
+    "identifier": "13631",
+    "type": "GeneOrGeneProduct",
+    "text": "eEF2K",
+    "offset": 1327,
+    "length": 5,
+    "block_id": "b0002",
+    "start": 1132,
+    "end": 1137
+   },
+   {
+    "identifier": "13629",
+    "type": "GeneOrGeneProduct",
+    "text": "eEF2",
+    "offset": 1363,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 1168,
+    "end": 1172
+   },
+   {
+    "identifier": "D000438",
+    "type": "ChemicalEntity",
+    "text": "Alcohol",
+    "offset": 1434,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 1239,
+    "end": 1246
+   },
+   {
+    "identifier": "11793,67526",
+    "type": "GeneOrGeneProduct",
+    "text": "Atg12-5",
+    "offset": 1452,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 1257,
+    "end": 1264
+   },
+   {
+    "identifier": "67443",
+    "type": "GeneOrGeneProduct",
+    "text": "LC3B-I and -II",
+    "offset": 1461,
+    "length": 14,
+    "block_id": "b0002",
+    "start": 1266,
+    "end": 1280
+   },
+   {
+    "identifier": "22241",
+    "type": "GeneOrGeneProduct",
+    "text": "ULK1",
+    "offset": 1481,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 1286,
+    "end": 1290
+   },
+   {
+    "identifier": "p|Allele|S|555",
+    "type": "SequenceVariant",
+    "text": "S555",
+    "offset": 1486,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 1291,
+    "end": 1295
+   },
+   {
+    "identifier": "12367,12371",
+    "type": "GeneOrGeneProduct",
+    "text": "caspase-3 and -9",
+    "offset": 1576,
+    "length": 16,
+    "block_id": "b0002",
+    "start": 1381,
+    "end": 1397
+   },
+   {
+    "identifier": "11545",
+    "type": "GeneOrGeneProduct",
+    "text": "PARP",
+    "offset": 1598,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 1403,
+    "end": 1407
+   },
+   {
+    "identifier": "66853",
+    "type": "GeneOrGeneProduct",
+    "text": "ATGL",
+    "offset": 1639,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 1444,
+    "end": 1448
+   },
+   {
+    "identifier": "16890",
+    "type": "GeneOrGeneProduct",
+    "text": "HSL",
+    "offset": 1648,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 1453,
+    "end": 1456
+   },
+   {
+    "identifier": "19016",
+    "type": "GeneOrGeneProduct",
+    "text": "PPARgamma",
+    "offset": 1710,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1515,
+    "end": 1524
+   },
+   {
+    "identifier": "12606",
+    "type": "GeneOrGeneProduct",
+    "text": "C/EBPalpha",
+    "offset": 1724,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 1529,
+    "end": 1539
+   },
+   {
+    "identifier": "D000438",
+    "type": "ChemicalEntity",
+    "text": "alcohol",
+    "offset": 1762,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 1567,
+    "end": 1574
+   },
+   {
+    "identifier": "D000438",
+    "type": "ChemicalEntity",
+    "text": "alcohol",
+    "offset": 1780,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 1585,
+    "end": 1592
+   },
+   {
+    "identifier": "21926",
+    "type": "GeneOrGeneProduct",
+    "text": "TNF-alpha",
+    "offset": 1798,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1603,
+    "end": 1612
+   },
+   {
+    "identifier": "16193",
+    "type": "GeneOrGeneProduct",
+    "text": "IL-6",
+    "offset": 1809,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 1614,
+    "end": 1618
+   },
+   {
+    "identifier": "16176",
+    "type": "GeneOrGeneProduct",
+    "text": "IL-1beta",
+    "offset": 1819,
+    "length": 8,
+    "block_id": "b0002",
+    "start": 1624,
+    "end": 1632
+   },
+   {
+    "identifier": "216799",
+    "type": "GeneOrGeneProduct",
+    "text": "NLRP3",
+    "offset": 1869,
+    "length": 5,
+    "block_id": "b0002",
+    "start": 1674,
+    "end": 1679
+   },
+   {
+    "identifier": "216799",
+    "type": "GeneOrGeneProduct",
+    "text": "NLRP3",
+    "offset": 1889,
+    "length": 5,
+    "block_id": "b0002",
+    "start": 1694,
+    "end": 1699
+   },
+   {
+    "identifier": "66824",
+    "type": "GeneOrGeneProduct",
+    "text": "ACS",
+    "offset": 1896,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 1701,
+    "end": 1704
+   },
+   {
+    "identifier": "12362",
+    "type": "GeneOrGeneProduct",
+    "text": "caspase-1",
+    "offset": 1913,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 1718,
+    "end": 1727
+   },
+   {
+    "identifier": "D000438",
+    "type": "ChemicalEntity",
+    "text": "alcohol",
+    "offset": 1948,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 1753,
+    "end": 1760
+   },
+   {
+    "identifier": "16334",
+    "type": "GeneOrGeneProduct",
+    "text": "insulin",
+    "offset": 1992,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 1797,
+    "end": 1804
+   },
+   {
+    "identifier": "D000438",
+    "type": "ChemicalEntity",
+    "text": "alcohol",
+    "offset": 2079,
+    "length": 7,
+    "block_id": "b0002",
+    "start": 1884,
+    "end": 1891
+   },
+   {
+    "identifier": "72508",
+    "type": "GeneOrGeneProduct",
+    "text": "S6K1",
+    "offset": 2273,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 2078,
+    "end": 2082
+   }
+  ],
+  "relations": []
+ },
+ "PMID27993978": {
+  "blocks": [
+   "b0001",
+   "b0002"
+  ],
+  "mentions": [
+   {
+    "identifier": "26886",
+    "type": "GeneOrGeneProduct",
+    "text": "CenpH",
+    "offset": 0,
+    "length": 5,
+    "block_id": "b0001",
+    "start": 0,
+    "end": 5
+   },
+   {
+    "identifier": "56371",
+    "type": "GeneOrGeneProduct",
+    "text": "APC/CCdh1",
+    "offset": 58,
+    "length": 9,
+    "block_id": "b0001",
+    "start": 58,
+    "end": 67
+   },
+   {
+    "identifier": "268697",
+    "type": "GeneOrGeneProduct",
+    "text": "cyclin B1",
+    "offset": 68,
+    "length": 9,
+    "block_id": "b0001",
+    "start": 68,
+    "end": 77
+   },
+   {
+    "identifier": "26886",
+    "type": "GeneOrGeneProduct",
+    "text": "CenpH",
+    "offset": 258,
+    "length": 5,
+    "block_id": "b0002",
+    "start": 160,
+    "end": 165
+   },
+   {
+    "identifier": "10090",
+    "type": "OrganismTaxon",
+    "text": "mouse",
+    "offset": 355,
+    "length": 5,
+    "block_id": "b0002",
+    "start": 257,
+    "end": 262
+   },
+   {
+    "identifier": "26886",
+    "type": "GeneOrGeneProduct",
+    "text": "CenpH",
+    "offset": 383,
+    "length": 5,
+    "block_id": "b0002",
+    "start": 285,
+    "end": 290
+   },
+   {
+    "identifier": "D060172",
+    "type": "ChemicalEntity",
+    "text": "morpholino",
+    "offset": 392,
+    "length": 10,
+    "block_id": "b0002",
+    "start": 294,
+    "end": 304
+   },
+   {
+    "identifier": "268697",
+    "type": "GeneOrGeneProduct",
+    "text": "cyclin B1",
+    "offset": 423,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 325,
+    "end": 334
+   },
+   {
+    "identifier": "268697",
+    "type": "GeneOrGeneProduct",
+    "text": "maturation-promoting factor",
+    "offset": 469,
+    "length": 27,
+    "block_id": "b0002",
+    "start": 371,
+    "end": 398
+   },
+   {
+    "identifier": "268697",
+    "type": "GeneOrGeneProduct",
+    "text": "MPF",
+    "offset": 498,
+    "length": 3,
+    "block_id": "b0002",
+    "start": 400,
+    "end": 403
+   },
+   {
+    "identifier": "26886",
+    "type": "GeneOrGeneProduct",
+    "text": "CenpH",
+    "offset": 560,
+    "length": 5,
+    "block_id": "b0002",
+    "start": 462,
+    "end": 467
+   },
+   {
+    "identifier": "268697",
+    "type": "GeneOrGeneProduct",
+    "text": "cyclin B1",
+    "offset": 575,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 477,
+    "end": 486
+   },
+   {
+    "identifier": "56371",
+    "type": "GeneOrGeneProduct",
+    "text": "APC/C",
+    "offset": 634,
+    "length": 5,
+    "block_id": "b0002",
+    "start": 536,
+    "end": 541
+   },
+   {
+    "identifier": "56371",
+    "type": "GeneOrGeneProduct",
+    "text": "Cdh1",
+    "offset": 640,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 542,
+    "end": 546
+   },
+   {
+    "identifier": "26886",
+    "type": "GeneOrGeneProduct",
+    "text": "CenpH",
+    "offset": 677,
+    "length": 5,
+    "block_id": "b0002",
+    "start": 579,
+    "end": 584
+   },
+   {
+    "identifier": "268697",
+    "type": "GeneOrGeneProduct",
+    "text": "cyclin B1",
+    "offset": 737,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 639,
+    "end": 648
+   },
+   {
+    "identifier": "26886",
+    "type": "GeneOrGeneProduct",
+    "text": "CenpH",
+    "offset": 771,
+    "length": 5,
+    "block_id": "b0002",
+    "start": 673,
+    "end": 678
+   },
+   {
+    "identifier": "26886",
+    "type": "GeneOrGeneProduct",
+    "text": "CenpH",
+    "offset": 918,
+    "length": 5,
+    "block_id": "b0002",
+    "start": 820,
+    "end": 825
+   },
+   {
+    "identifier": "56371",
+    "type": "GeneOrGeneProduct",
+    "text": "APC/C",
+    "offset": 980,
+    "length": 5,
+    "block_id": "b0002",
+    "start": 882,
+    "end": 887
+   },
+   {
+    "identifier": "56371",
+    "type": "GeneOrGeneProduct",
+    "text": "Cdh1",
+    "offset": 986,
+    "length": 4,
+    "block_id": "b0002",
+    "start": 888,
+    "end": 892
+   },
+   {
+    "identifier": "268697",
+    "type": "GeneOrGeneProduct",
+    "text": "cyclin B1",
+    "offset": 992,
+    "length": 9,
+    "block_id": "b0002",
+    "start": 894,
+    "end": 903
+   }
+  ],
+  "relations": []
+ }
+}

@@ -1,0 +1,18 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|BRAF|BRAF|r||human||
+E|D1|disease|melanoma|melanoma|r||||
+E|D2|disease|nevus|nevus;nevi|r||||
+X|rs1639679|b0002.s7|variant identifier, not a gene
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s2|bg|neg|neg|ebr
+EV|V3|b0002.s3|bg|bgr|aff|ebr
+EV|V4|b0002.s4+b0002.s5|ts|hyp|hyp|ho
+EV|V5|b0002.s9+b0002.s10|ts|neg|neg|rr,cmp
+EV|V6|b0002.s11|ts|neg|neg|rr,cmp
+P|G1|D1|sup|a|both|sup:a:bg:V1+V3;neg:c:bg:V2;neg:a:ts:V5||V4|Somatic mutations reported; polymorphism not associated here
+P|G1|D2|sup|a|both|sup:a:bg:V1;neg:a:ts:V6||V4|Somatic nevus mutations; genotype unrelated to nevus count
+F|F1|group_comparison|rs1639679 genotype/allele frequency vs melanoma|incident cases vs female controls|not_significant|null|not_reported|V5|abstract only; controls female only
+F|F2|group_comparison|rs1639679 genotype by sex|male vs female melanoma cases|not_significant|null|not_reported|V5|abstract only
+F|F3|association|BRAF genotype vs nevus counts|melanoma cases and controls|not_significant|null|not_reported|V6|abstract only
+C|C1|BRAF polymorphism melanoma risk|b0002.s3;b0002.s9;b0002.s10|noncritical|resolved|prior positive report not replicated here

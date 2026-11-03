@@ -1,0 +1,50 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text, tables or figures
+E|G1|gene|arginase 1|arginase1;ARG1;Arg1;Arginase 1|r|||non-human||
+E|G2|gene|arginase|arginase|r|ambiguous_mapping|||
+E|G3|gene|arginase 2|Arg2|r||non-human||
+E|G4|gene|nitric oxide synthase 2|Nos2|r||non-human||
+E|G5|gene|Slc7a1|Slc7a1|r||non-human||
+E|G6|gene|Slc7a2|Slc7a2|r||non-human||
+E|G7|gene|Slc7a7|Slc7a7|r||non-human||
+E|G8|gene|interleukin 4|Il4;IL-4|r||non-human||
+E|G9|gene|interleukin 5|Il5;IL-5|r||non-human||
+E|G10|gene|interleukin 13|Il13;IL-13|r||non-human||
+E|G11|gene|Ccl2|Ccl2|r||non-human||
+E|G12|gene|Ccl11|Ccl11|r||non-human||
+E|G13|gene|interferon gamma|Ifng;IFNgamma|r||non-human||
+E|G14|gene|Clca3|Clca3|r||non-human||
+E|G15|gene|Muc5ac|Muc5ac|r||non-human||
+E|G16|gene|interleukin 10|IL-10|r||non-human||
+E|G17|gene|tumor necrosis factor alpha|TNFalpha|r||non-human||
+E|D1|disease|allergic asthma|allergic asthma|r|||||
+E|D2|disease|airway hyperresponsiveness|airway hyperresponsiveness;AHR|r|||||
+E|D3|disease|lung inflammation|lung inflammation;inflammation|r|||||
+X|Tie2Cre|b0002.s3|transgenic Cre driver line, not a target gene
+X|ovalbumin|b0002.s2|allergen used for sensitization, not a studied gene
+X|IgE|b0002.s5|antibody readout, not a specific gene
+EV|V1|b0001.s1|ts|res|aff|rr,mi
+EV|V2|b0002.s6|ts|res|aff|rr,mi
+EV|V3|b0002.s6|ts|neg|neg|rr,mi
+EV|V4|b0002.s11|ts|res|aff|rr,mi
+EV|V5|b0002.s2|ts|aim|q|none
+EV|V6|b0002.s8|ts|res|aff|rr,mi
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V2+V4||V5|Ablation altered the asthmatic inflammatory response
+P|G1|D2|neg|-|ts|neg:-:ts:V3+V1||V5|Ablation had no effect on AHR
+P|G1|D3|sup|a|ts|sup:a:ts:V1+V4+V6||V5|Altered pro-inflammatory genes but not inflammatory cell accumulation
+P|G3|D1|sup|a|ts|sup:a:ts:V2|||OVA-induced increase in expression
+P|G4|D1|sup|a|ts|sup:a:ts:V2|||OVA-induced increase in expression
+P|G5|D1|sup|a|ts|sup:a:ts:V2|||OVA-induced increase in expression
+P|G6|D1|sup|a|ts|sup:a:ts:V2|||OVA-induced increase in expression
+P|G7|D1|sup|a|ts|sup:a:ts:V2|||OVA-induced increase in expression
+P|G8|D1|sup|a|ts|sup:a:ts:V2|||OVA-induced increase in expression
+P|G9|D1|sup|a|ts|sup:a:ts:V2|||OVA-induced increase in expression
+P|G10|D1|sup|a|ts|sup:a:ts:V2|||OVA-induced increase in expression
+P|G11|D1|sup|a|ts|sup:a:ts:V2|||OVA-induced increase in expression
+P|G12|D1|sup|a|ts|sup:a:ts:V2|||OVA-induced increase in expression
+P|G13|D1|sup|a|ts|sup:a:ts:V2|||OVA-induced increase in expression
+P|G14|D1|sup|a|ts|sup:a:ts:V2|||OVA-induced increase in expression
+P|G15|D1|sup|a|ts|sup:a:ts:V2|||OVA-induced increase in expression
+F|F1|group_comparison|Arg1 ablation vs AHR|OVA/OVA female mice|not_significant|null|unread|V3|abstract only
+F|F2|group_comparison|Arg1 ablation vs OVA-induced gene expression|OVA/OVA female mice|significant|negative|unread|V2|abstract only
+F|F3|correlation|Arg1 ablation vs lung function-inflammation correlations|OVA/OVA female mice|unknown|negative|unread|V6|abstract only

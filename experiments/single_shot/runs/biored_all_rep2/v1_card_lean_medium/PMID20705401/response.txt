@@ -1,0 +1,22 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|HTR6|HTR6;5-HT6 gene;Serotonin 6 receptor gene;serotonin 6 (5-HT6) receptor;5-HT6 receptor;5-HT6 receptors|r||human||
+E|G2|gene|5-HT6 receptor (rat)|5-HT6 receptor|p|species_unresolved|non-human||
+E|D1|disease|methamphetamine-induced psychosis|methamphetamine (METH)-induced psychosis;METH-induced psychosis|r||||
+E|D2|disease|psychotic disorders|psychotic disorders|r||||
+E|D3|disease|schizophrenia|schizophrenia|r|||D2|
+E|D4|disease|paranoid type schizophrenia|paranoid type schizophrenia|r|||D3|
+E|D5|disease|methamphetamine dependence|methamphetamine dependence|r||||
+E|S1|phenotype|d-amphetamine-induced hyperactivity|hyperactivity|r||||
+E|S2|phenotype|disrupted prepulse inhibition|prepulse inhibition|r||||
+E|S3|symptom|positive symptoms|positive symptoms|r||||
+EV|V1|b0001.s1+b0002.s9+b0002.s10+b0002.s11|ts|res|aff|rr,cmp
+EV|V2|b0002.s12|ts|int|hyp|ho
+EV|V3|b0002.s2+b0002.s3+b0002.s4|bg|int|hyp|ho
+P|G1|D1|sup|a|ts|sup:a:ts:V1;unc:-:ts:V2|||Case-control SNP and haplotype association
+P|G1|D2|unc|-|bg|unc:-:bg:V3|hedged_claim||Authors infer involvement from pharmacology
+P|G1|D3|nf|-||||V3|Drug-target and animal model context only
+P|G2|D3|nf|-||||V3|Pharmacological rat model, no gene alteration
+F|F1|association|rs6693503 allele/genotype vs METH psychosis|197 cases, 337 Japanese controls|significant|unknown|not_reported|V1|Bonferroni-corrected; abstract only
+F|F2|association|rs6693503-rs1805054(-rs4912138) haplotypes|197 cases, 337 Japanese controls|significant|unknown|not_reported|V1|abstract only
+R|species|b0002.s2-s3|Rat receptor in pharmacological studies shares the human surface form|Created a separate provisional non-human node with no disease links

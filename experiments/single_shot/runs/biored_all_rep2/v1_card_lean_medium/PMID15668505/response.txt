@@ -1,0 +1,23 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|BRCA2|BRCA2|r|||human||
+E|G2|gene|BRCA1|BRCA1|r|||human||
+E|D1|disease|breast cancer|breast cancer|r|||||
+E|D2|disease|ovarian cancer|ovarian cancer|r|||||
+X|N372H|b0002|variant identifier, not gene
+X|203G > A|b0002|variant identifier, not gene
+X|cancer|b0002|generic term in b0002.s9, not separate endpoint
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s6|ts|neg|neg|rr,cmp
+EV|V3|b0002.s7|ts|neg|neg|rr,cmp
+EV|V4|b0002.s7|ts|res|aff|rr,cmp
+EV|V5|b0001.s1+b0002.s3|ts|co|pre|do
+EV|V6|b0002.s9|ts|int|hyp|ho
+P|G1|D1|sup|a|bg|sup:a:bg:V1;neg:-:ts:V2|||Background N372H association; no modifier effect in carriers
+P|G1|D2|sup|a|both|sup:a:bg:V1;sup:a:ts:V4;neg:-:ts:V3||V6|Background association; borderline 203A association here
+P|G2|D1|unc|-|unk||presupposed_only|V5|Carrier cohort presupposes link, never stated
+P|G2|D2|unc|-|unk||presupposed_only|V5|Carrier cohort presupposes link, never stated
+F|F1|association|N372H and 203G>A vs breast cancer penetrance|BRCA1 carriers, 778 women|not_significant|null|not_reported|V2|Cox model; no statistics shown
+F|F2|association|N372H vs ovarian cancer risk|BRCA1 carriers, 778 women|not_significant|null|not_reported|V3|
+F|F3|association|5'UTR 203A allele vs ovarian cancer|BRCA1 carriers, 778 women|significant|positive|partial|V4|Borderline; HR 1.43, CI 1.01-2.00
+F|F4|descriptive|N372H Hardy-Weinberg equilibrium|female BRCA1 carriers|not_significant|null|not_reported|b0002.s8|Contrasts with Healey et al.

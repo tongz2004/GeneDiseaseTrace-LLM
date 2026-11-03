@@ -1,0 +1,147 @@
+META|GPT-6|seen: no
+SCOPE|Provided article text, tables, notes and caption; figure image unavailable.
+E|G1|gene|PTPN11|PTPN11;SHP-2|r||human||
+E|G2|gene|SOS1|SOS1;SOS|p|suspected_typo|human||
+E|G3|gene|KRAS|KRAS|r||human||
+E|G4|gene|RAF1|RAF1|r||human||
+E|G5|gene|BRAF|BRAF|r||human||
+E|G6|gene|SHOC2|SHOC2|r||human||
+E|G7|gene|NRAS|NRAS|r||human||
+E|G8|gene|CBL|CBL|r||human||
+E|G9|gene|NF1|NF1|r||human||
+E|G10|gene|CD34|CD34|r||human||
+E|G11|gene|CD45|CD45|r||human||
+E|G12|gene|Annexin V|Annexin V;AnnexinV|r||human||
+E|G13|gene|granulocyte-macrophage colony-stimulating factor|granulocyte-macrophage colony-stimulating factor;GM-CSF;rhGM-CSF|r||human||
+E|G14|gene|IL-3|IL-3;rhIL-3|r||human||
+E|G15|gene|BCR/ABL|BCR/ABL;bcr/abl|r||human||
+E|D1|disease|Noonan syndrome|Noonan syndrome;NS|r||||
+E|D2|disease|myeloproliferative disorder|myeloproliferative disorder;MPD|r||||
+E|D3|disease|myeloproliferative disorder associated with Noonan syndrome|NS/MPD;myeloproliferative disorder associated with Noonan syndrome;polyclonal myeloproliferative disorder;transient myeloproliferative syndrome|r|||D2|
+E|D4|disease|juvenile myelomonocytic leukemia|juvenile myelomonocytic leukemia;JMML;myelomonocytic leukemia|r||||
+E|D5|disease|congenital heart defects|congenital heart defects|r||||
+E|D6|disease|pulmonary valve stenosis|pulmonary valve stenosis;pulmonic stenosis|r||||
+E|D7|disease|hypertrophic cardiomyopathy|hypertrophic cardiomiopathy;hypertrophic cardiomyopathy|p|suspected_typo|||
+E|D8|disease|obstructive hypertrophic cardiomyopathy|obstructive hypertrophic cardiomyopathy|r|||D7|
+E|D9|disease|cryptorchidism|cryptorchidism;bilateral cryptorchidism|r||||
+E|D10|disease|lymphatic dysplasia|lymphatic dysplasia|r||||
+E|D11|disease|intellectual disability|intellectual disability|r||||
+E|D12|disease|acquired aplastic anemia|acquired aplastic anemia|r||||
+E|D13|disease|refractory anemia with blast excess|refractory anemia with blast excess;RAEB|r||||
+E|D14|disease|non-Hodgkin lymphoma|non-Hodgkin lymphoma|r||||
+E|D15|disease|myelofibrosis with myeloid metaplasia|myelofibrosis with myeloid metaplasia|r||||
+E|D16|disease|thoracic duct ectasia|thoracic duct ectasia|r||||
+E|D17|disease|respiratory insufficiency|respiratory insufficiency;progressive severe respiratory insufficiency|r||||
+E|D18|disease|acute cardiopulmonary failure|acute cardiopulmonary failure|r||||
+E|A1|ambiguous_disease|DD/ID|DD/ID|u|ambiguous_mapping|||
+E|S1|phenotype|short stature|short stature|r||||
+E|S2|phenotype|dysmorphisms|dysmorphisms|r||||
+E|S3|phenotype|bleeding diathesis|bleeding diathesis|r||||
+E|S4|phenotype|developmental delay|developmental delay|r||||
+E|S5|phenotype|monocytosis|monocytosis|r||||
+E|S6|phenotype|Hepatosplenomegaly|Hepatosplenomegaly|r||||
+E|S7|phenotype|lymphoadenopathy|lymphoadenopathy|p|suspected_typo|||
+E|S8|phenotype|anemia|anemia|r||||
+E|S9|phenotype|thrombocytopenia|thrombocytopenia|r||||
+E|S10|symptom|fever|fever|r||||
+E|S11|phenotype|Monosomy 7|Monosomy 7|r||||
+E|S12|phenotype|leukocytosis|leukocytosis|r||||
+E|S13|phenotype|splenomegaly|splenomegaly|r||||
+E|S14|phenotype|polyhydramnios|polyhydramnios|r||||
+E|S15|phenotype|hepatomegaly|hepatomegaly|r||||
+E|S16|phenotype|myelodysplasia|myelodysplasia|r||||
+E|S17|phenotype|pleural effusion|pleural effusion|r||||
+X|RAS/MAPK|b0005|pathway
+X|PTP|b0005|enzyme_class
+X|HUMARA|b0036|assay_name
+X|HbF|b0004|laboratory_measurement
+X|Gln79Arg|b0051|variant_identifier
+X|Asn58His|b0052|variant_identifier
+X|Tyr63Cys|b0053|variant_identifier
+X|Gly503Arg|b0054|variant_identifier
+X|Gly503Glu|b0043|variant_identifier
+X|Asn308Ser|b0056|variant_identifier
+X|Leu261His|b0057|variant_identifier
+X|Phe285Ile|b0060|variant_identifier
+X|Glu76Asp|b0035|variant_identifier
+X|Glu139Asp|b0062|variant_identifier
+X|Asp61Asn|b0063|variant_identifier
+X|Ile252Thr|b0064|variant_identifier
+X|Thr266Lys|b0065|variant_identifier
+X|Arg552Gly|b0066|variant_identifier
+X|Glu433Lys|b0067|variant_identifier
+X|Ser257Leu|b0068|variant_identifier
+X|Met269Thr|b0069|variant_identifier
+X|Gln22Arg|b0071|variant_identifier
+X|Leu597Val|b0072|variant_identifier
+X|Pro261Ser|b0073|variant_identifier
+X|Ser2Gly|b0074|variant_identifier
+X|Phe285Ser|b0036|variant_identifier
+X|Glu76Gly|b0079|variant_identifier
+X|Gly503Val|b0080|variant_identifier
+EV|V1|b0005.s2|bg|bgr|aff|ebr
+EV|V2|b0005.s3|bg|bgr|aff|ebr
+EV|V3|b0005.s4|bg|bgr|aff|ebr
+EV|V4|b0005.s8|bg|bgr|aff|ebr
+EV|V5|b0036.s2|ts|res|aff|eda
+EV|V6|b0043.s1+b0043.s3|bg|bgr|aff|ebr
+EV|V7|b0002.s6+b0012.s2+b0064.s1+b0065.s1+b0066.s1+b0067.s1+b0069.s1|ts|co|na|do
+EV|V8|b0075.s1+b0076.s1+b0077.s1|ts|co|na|do
+EV|V9|b0035.s5|ts|co|na|do
+EV|V10|b0036.s1+b0036.s2+b0036.s10|ts|co|na|do
+EV|V11|b0043.s3+b0043.s4|ts|co|na|do
+EV|V12|b0004.s8+b0036.s7+b0036.s8+b0036.s9|ts|co|na|do
+EV|V13|b0029.s2+b0029.s3+b0029.s4+b0029.s5+b0029.s6|ts|res|aff|cmp
+EV|V14|b0030.s1+b0030.s2|ts|res|aff|cmp
+EV|V15|b0032.s1+b0032.s2+b0032.s3+b0032.s4+b0032.s5|ts|res|na|rr
+EV|V16|b0033.s1+b0033.s2+b0033.s3+b0033.s4+b0033.s5|ts|res|aff|cmp
+EV|V17|b0098.s1+b0099.s1+b0100.s1+b0101.s1+b0102.s1+b0103.s1+b0104.s1|ts|res|aff|cmp
+EV|V18|b0027.s2|ts|neg|neg|rr
+EV|V19|b0006.s1+b0006.s2+b0044.s2|bg|bgr|aff|ebr
+EV|V20|b0042.s1+b0042.s2+b0042.s3+b0042.s4+b0042.s5|ts|int|hyp|rr
+EV|V21|b0043.s2|bg|int|hyp|ho
+EV|V22|b0002.s15+b0046.s1|ts|int|hyp|ho
+EV|V23|b0004.s6+b0040.s1|bg|bgr|aff|ebr
+P|G1|D1|sup|a|both|sup:a:bg:V1+V3+V4;sup:a:ts:V5|||Genetic diagnosis confirms NS.
+P|G2|D1|sup|a|bg|sup:a:bg:V1||V7|Panel context resolves SOS as suspected SOS1 typo.
+P|G3|D1|sup|a|bg|sup:a:bg:V1|||
+P|G4|D1|sup|a|bg|sup:a:bg:V1|||
+P|G5|D1|sup|a|bg|sup:a:bg:V1|||
+P|G6|D1|sup|a|bg|sup:a:bg:V1|||
+P|G7|D1|sup|a|bg|sup:a:bg:V1|||
+P|G8|D1|sup|a|bg|sup:a:bg:V1|||
+P|G1|D4|sup|a|bg|sup:a:bg:V2+V3+V4+V6;unc:-:bg:V21|hedged_claim||Predicted functional strength remains uncertain.
+P|G3|D4|sup|a|bg|sup:a:bg:V2|||
+P|G7|D4|sup|a|bg|sup:a:bg:V2|||
+P|G9|D4|sup|a|bg|sup:a:bg:V2|||
+P|G1|D3|sup|a|bg|sup:a:bg:V4||V8|Background spectrum comparison explicitly links mutations.
+P|G1|D6|nf|-||||V9|Mutation and stenosis coexist without attribution.
+P|G1|D9|nf|-||||V9|Mutation and cryptorchidism coexist without attribution.
+P|G1|D8|nf|-||||V10|Molecular confirmation concerns NS, not cardiomyopathy.
+P|G1|D10|nf|-||||V10|Later lymphatic dysplasia lacks genetic attribution.
+P|G1|D18|nf|-||||V10|Death lacks gene-specific attribution.
+P|G1|D14|nf|-||||V11|Mother's lymphoma; maternal genotype unreported.
+P|G15|D4|nf|-||||V12|Diagnostic exclusion, not association testing.
+P|G15|D3|nf|-||||V12|Negative rearrangement test does not establish disease association.
+P|G10|D1|nf|-||||V13+V22|Cell counts are not gene-status measurements.
+P|G10|D3|nf|-||||V13+V22|Cell counts are not gene-status measurements.
+P|G10|D4|nf|-||||V13|Cell counts are not gene-status measurements.
+P|G10|D12|nf|-||||V19|Cell-count monitoring does not establish genetic association.
+P|G10|D13|nf|-||||V19|Cell-count findings do not establish genetic association.
+P|G10|D15|nf|-||||V19|Cell-count findings do not establish genetic association.
+P|G12|D1|nf|-||||V14|Apoptosis staining is not gene-status testing.
+P|G12|D3|nf|-||||V14|Apoptosis staining is not gene-status testing.
+P|G12|D4|nf|-||||V14|Apoptosis staining is not gene-status testing.
+P|G13|D1|nf|-||||V15+V20|Growth-factor response does not test this gene's status.
+P|G13|D3|nf|-||||V15+V16|Growth-factor response does not test this gene's status.
+P|G13|D4|nf|-||||V15+V16+V23|Growth-factor hypersensitivity does not establish genetic association.
+F|F1|group_comparison|circulating CD34+ cell counts|NS, NS/MPD, JMML, controls|mixed|mixed|available|V13|Disease comparisons; not gene-status tests.
+F|F2|group_comparison|CD34+ cell apoptotic rate|NS, NS/MPD, JMML, controls|mixed|negative|available|V14|Reduced versus controls; disease comparisons nonsignificant.
+F|F3|descriptive|GM-CSF hypersensitivity and spontaneous colony growth|NS, NS/MPD, JMML|not_applicable|not_applicable|not_applicable|V15|One JMML patient previously received chemotherapy.
+F|F4|group_comparison|GM-CSF-stimulated colony growth|NS, NS/MPD, JMML, controls|mixed|mixed|available|V16+V17|Control–JMML comparison nonsignificant at 20 ng/ml.
+F|F5|group_comparison|unstimulated colony growth|NS, NS/MPD, JMML, controls|mixed|mixed|available|V16+V17|NS/MPD and JMML exceed NS and controls.
+F|F6|association|disease group and unstimulated colony growth|NS, NS/MPD, JMML, controls|significant|mixed|available|V16|Group-level test, not individual gene association.
+F|F7|correlation|platelet counts versus monocyte counts|NS excluding NS/MPD|not_significant|null|partial|V18|R=0.016; p-value unreported.
+C|C1|NS/MPD apoptotic-rate summary|b0002.s11+b0075.s1+b0076.s1+b0077.s1+b0088.s1|noncritical|unresolved|Reported median 1.4; individual values imply 1.6.
+C|C2|Table II summary statistic|b0002.s10+b0002.s11+b0002.s13+b0095.s1|noncritical|unresolved|Abstract specifies medians; table note specifies means.
+C|C3|NS/MPD1 progression interval|b0002.s12+b0036.s1+b0036.s5+b0042.s2|noncritical|unresolved|Ten-month interval versus twelve months later.

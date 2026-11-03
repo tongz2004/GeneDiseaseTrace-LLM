@@ -1,0 +1,14 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text
+E|G1|gene|STAT3|signal transducer and activator of transcription 3;STAT3|r||non-human||
+E|G2|gene|BCL2|Bcl-2|r||non-human||
+E|G3|gene|BAX|Bax|r||non-human||
+E|D1|disease|myocardial ischemia/injury|acute myocardial injury;acute myocardial ischemia;myocardial ischemia;Acute myocardial ischemic injury;myocardial damage|r||||
+E|D2|phenotype|left ventricular remodeling|left ventricular remodeling|r||||
+EV|V1|b0002.s6+b0002.s9|ts|res|aff|rr,mi
+EV|V2|b0002.s7+b0002.s9|ts|res|aff|rr,mi
+P|G1|D1|sup|a|ts|sup:a:ts:V1|||STAT3 activation linked to betaine protection from ischemia
+P|G2|D1|sup|a|ts|sup:a:ts:V2|||Bcl-2 upregulation accompanies attenuation of ischemic injury
+P|G3|D1|sup|a|ts|sup:a:ts:V2|||Bax reduction accompanies attenuation of ischemic injury
+F|F1|mechanism|betaine; p-STAT3; isoproterenol|rat myocardium|unknown|positive|unread|V1|abstract only
+F|F2|group_comparison|betaine; Bcl-2/Bax ratio|rat ventricle|significant|positive|unread|V2|abstract only

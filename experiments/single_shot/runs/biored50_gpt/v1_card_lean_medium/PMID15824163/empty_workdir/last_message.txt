@@ -1,0 +1,28 @@
+META|GPT-6|seen: yes, provided previous analysis
+SCOPE|Provided title and abstract only; references and full text unavailable.
+E|G1|gene|BRAF|BRAF|r||human||
+E|D1|disease|melanoma|melanoma;melanoma tumors|r||||
+E|D2|disease|nevi|nevi;nevus|r||||
+E|D3|disease|benign nevi|benign nevi|r|||D2|
+E|D4|disease|familial melanoma|familial melanoma|r|||D1|
+E|D5|disease|sporadic melanoma|sporadic melanoma|r|||D1|
+E|D6|disease|banal nevi|banal|r|||D2|
+E|D7|disease|atypical nevi|atypical nevi|r|||D2|
+X|rs1639679|b0002|variant identifier
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s2|bg|neg|neg|ebr
+EV|V3|b0002.s3|bg|bgr|aff|ebr
+EV|V4|b0002.s4+b0002.s5|ts|hyp|hyp|ho
+EV|V5|b0002.s6|ts|co|na|do
+EV|V6|b0002.s7|bg|bgr|aff|ebr
+EV|V7|b0002.s8|ts|aim|q|none
+EV|V8|b0002.s9+b0002.s10|ts|neg|neg|cmp,rr
+EV|V9|b0002.s11|ts|neg|neg|rr
+P|G1|D1|sup|a|bg|sup:a:bg:V1+V6;unc:-:ts:V4;neg:-:ts:V8||V7|Background association; study rejects polymorphism association and promoter causality.
+P|G1|D2|unc|-|ts|unc:-:ts:V4|hedged_claim||Candidate susceptibility role remains hypothetical.
+P|G1|D3|sup|a|bg|sup:a:bg:V1|||Somatic mutations reported in benign nevi.
+P|G1|D4|neg|-|bg|neg:-:bg:V2||V5|Germline causality not identified in predisposed families.
+P|G1|D5|sup|a|bg|sup:a:bg:V3|||Reported haplotype association concerns men.
+P|G1|D6|neg|-|ts|neg:-:ts:V9|||No genotype association with mean counts in cases or controls.
+P|G1|D7|neg|-|ts|neg:-:ts:V9|||No genotype association with mean counts in cases or controls.
+F|F1|group_comparison|BRAF genotype and allele frequencies|Male versus female incident melanoma cases|not_significant|null|not_reported|V8|Case-sex comparison does not test disease susceptibility.

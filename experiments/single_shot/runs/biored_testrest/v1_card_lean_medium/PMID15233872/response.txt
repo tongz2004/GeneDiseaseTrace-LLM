@@ -1,0 +1,6 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no genes mentioned
+E|D1|disease|myocardial infarction|myocardial infarction|r|||||
+E|S1|phenotype|lipid peroxidation|lipid peroxidation|r|||||
+X|marker enzymes|b0002|unnamed enzyme group, not a single gene
+X|antioxidant enzymes|b0002|unnamed enzyme group, not a single gene

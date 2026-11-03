@@ -24,7 +24,17 @@ from run import MODELS, call
 
 MODEL = "Claude_Opus_5.5"
 OUT_ROOT = RUNS / "ab"  # set by --run-set
-LIMIT_HIT = threading.Event()  # set once the CLI reports the subscription limit; later papers are not started
+LIMIT_HIT = threading.Event()  # set once the CLI reports the subscription limit or the cost cap; later papers are not started
+MAX_USD = None  # --max-usd: stop starting papers once this invocation has spent this much
+SPENT = {"usd": 0.0}
+SPENT_LOCK = threading.Lock()
+
+
+def charge(usage):
+    with SPENT_LOCK:
+        SPENT["usd"] += usage.get("cost_usd") or 0
+        if MAX_USD is not None and SPENT["usd"] >= MAX_USD:
+            LIMIT_HIT.set()
 
 
 def variant_files(name):
@@ -49,13 +59,20 @@ def run_paper(variant, paper_id):
             "paper_characters": len(prompt), "calls": []}
     if LIMIT_HIT.is_set():
         shutil.rmtree(run_dir, ignore_errors=True)
-        return paper_id, "not started (usage limit reached)"
+        return paper_id, "not started (usage limit or cost cap reached)"
     text, usage = call(MODEL, config["effort"], prompt, workdir, fixed)
-    if "hit your session limit" in text or "usage limit" in text.lower():
-        # The CLI answers instantly with a limit notice; nothing was judged, so leave the paper for the next run.
-        LIMIT_HIT.set()
+    charge(usage)
+    limit = any(m in (text + usage.get("error", "")).lower() for m in ("hit your session limit", "usage limit", "out of credits"))
+    if limit or usage.get("exit_code") or not text.strip():
+        # A limit notice, a failed CLI call or an empty answer: nothing was judged (an empty answer would otherwise
+        # expand into a valid, empty result). Leave the paper for the next run. Only a limit notice stops later papers;
+        # any other error (e.g. one abstract refused by the API) affects this paper alone.
+        if limit:
+            LIMIT_HIT.set()
         shutil.rmtree(run_dir, ignore_errors=True)
-        return paper_id, f"not started ({text.strip()[:90]})"
+        reason = (text.strip()[:90] or usage.get("error", "")[:90] or (usage.get("stderr") or "").strip()[-90:]
+                  or f"exit code {usage.get('exit_code')}, empty answer")
+        return paper_id, f"not started ({reason})"
     meta["calls"].append(usage)
     (run_dir / "response.txt").write_text(text, encoding="utf-8")
     (run_dir / "run.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -65,6 +82,7 @@ def run_paper(variant, paper_id):
                   "\n".join(problems) + "\n\nFix these problems and output the complete result again "
                   "(all lines, not only the changed ones).")
         text, usage = call(MODEL, config["effort"], repair, workdir, fixed)
+        charge(usage)
         meta["calls"].append(usage)
         (run_dir / "response_first.txt").write_text((run_dir / "response.txt").read_text(encoding="utf-8"), encoding="utf-8")
         (run_dir / "response.txt").write_text(text, encoding="utf-8")
@@ -132,17 +150,22 @@ def summarise(variant, papers):
 
 
 def main():
+    global OUT_ROOT, MODEL, MAX_USD
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--variant", required=True)
     parser.add_argument("--papers", nargs="+")
     parser.add_argument("--parallel", type=int, default=4)
     parser.add_argument("--summary-only", action="store_true")
+    parser.add_argument("--max-usd", type=float, help="stop starting papers once this invocation has spent this much")
     parser.add_argument("--run-set", default="ab", help="results go to runs/<run-set>/<variant>/ (default ab = the benchmark A/B)")
     parser.add_argument("--all", action="store_true", help="every paper in the input inventory instead of the benchmark")
+    parser.add_argument("--model", default=MODEL, choices=sorted(MODELS),
+                        help="extraction model (default Claude_Opus_5.5); use a run set of its own so results don't mix")
     args = parser.parse_args()
     benchmark = json.loads((HERE / "benchmark_12.json").read_text(encoding="utf-8"))
-    global OUT_ROOT
     OUT_ROOT = RUNS / args.run_set
+    MODEL = args.model
+    MAX_USD = args.max_usd
     if args.all:
         with (PROJECT / "outputs" / "inventory.csv").open(encoding="utf-8-sig") as stream:
             papers = [r["paper_id"] for r in csv.DictReader(stream)]

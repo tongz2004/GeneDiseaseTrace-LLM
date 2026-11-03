@@ -1,0 +1,22 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text, tables or figures
+E|G1|gene|TSH-beta subunit gene|TSH-beta subunit gene;TSH-beta subunit|r||human||
+E|D1|disease|congenital central hypothyroidism|congenital central hypothyroidism|r||||
+E|D2|disease|congenital hypothyroidism|congenital hypothyroidism|r||||
+E|D3|disease|central hypothyroidism|central hypothyroidism|r||||
+E|D4|disease|anemia|anemia|r||||
+E|D5|disease|isolated TSH deficiency|isolated TSH deficiency|r||||
+E|D6|disease|isolated pituitary deficiency|isolated pituitary deficiency|r||||
+X|pituitary and placental glycoprotein hormone-beta subunits|b0002|gene family, not single gene
+X|C88Y|b0002|variant ID
+X|313delT (C105Vfs114X)|b0002|variant ID
+EV|V1|b0001.s1|ts|res|aff|eda
+EV|V2|b0002.s2+b0002.s3+b0002.s5+b0002.s7+b0002.s9+b0002.s10|ts|res|aff|rr,do
+EV|V3|b0002.s1|bg|bgr|pre|unc
+EV|V4|b0002.s11+b0002.s12|ts|int|na|none
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V2|||Authors attribute patients' disease to novel mutations
+P|G1|D2|unc|-|bg|unc:-:bg:V3|presupposed_only||Patients with defects presupposed, no explicit link
+P|G1|D4|nf|-||||V2|Anemia co-occurs in patients only
+P|G1|D5|nf|-||||V4|No explicit gene link stated
+F|F1|mechanism|splice-site mutation; exon 2 processing|Patient 1 minigene|not_applicable|not_applicable|not_reported|V2|in vitro only
+F|F2|other|C88Y in silico damaging prediction|Patient 2 variant|not_applicable|not_applicable|not_applicable|V2|computational prediction only

@@ -1,0 +1,7 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no genes mentioned
+E|D1|disease|Wegener's granulomatosis|Wegener's granulomatosis|r||||
+E|D2|disease|urinary bladder cancer|Urinary bladder cancer;bladder cancer|r||||
+F|F1|association|cyclophosphamide cumulative dose; bladder cancer|Wegener's granulomatosis nested case-control|not_significant|positive|available|b0002.s7+b0002.s8+b0002.s10|CIs include 1
+F|F2|descriptive|bladder cancer cumulative risk|Wegener's granulomatosis cohort|not_applicable|not_applicable|partial|b0002.s9|
+F|F3|group_comparison|prior bladder cancer prevalence vs expected|Wegener's granulomatosis at diagnosis|not_significant|positive|partial|b0002.s9|

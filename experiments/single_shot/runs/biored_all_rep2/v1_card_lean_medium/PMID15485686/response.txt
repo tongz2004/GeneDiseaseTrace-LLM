@@ -1,0 +1,25 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text
+E|G1|gene|SCN5A|SCN5A;Na(v)1.5|p|ambiguous_mapping|human||
+E|D1|disease|long QT syndrome|long QT syndrome;Congenital long QT syndrome;LQTS;congenital LQTS|r||||
+E|D2|disease|LQTS-3|LQTS-3|r|||D1|
+E|D3|disease|ventricular tachycardia|ventricular tachycardia|r||||
+E|D4|disease|2:1 atrioventricular block|2:1 atrioventricular block|r||||
+E|D5|disease|arrhythmias|arrhythmias|r||||
+E|S1|symptom|fetal bradycardia|fetal bradycardia|r||||
+E|S2|symptom|tachycardia/bradycardia|tachycardia/bradycardia|r||||
+X|V1763M|b0002|variant identifier
+X|V1764M|b0002|variant identifier
+X|I1762A|b0002|variant identifier
+EV|V1|b0001.s1|ts|res|aff|eda
+EV|V2|b0002.s5+b0002.s6|ts|res|aff|eda,rr
+EV|V3|b0002.s10|ts|int|hyp|ho
+EV|V4|b0002.s2+b0002.s4|ts|co|na|do
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V2;unc:-:ts:V3|||Authors attribute LQTS to novel de novo mutation
+P|G1|D2|sup|a|ts|sup:a:ts:V2|||Mutation identified explicitly as LQTS-3 mutation
+P|G1|D5|unc|-|ts|unc:-:ts:V3|hedged_claim||Conclusion only suggests contribution to arrhythmias
+P|G1|D3|nf|-||||V4|Patient phenotype only, no attribution
+P|G1|D4|nf|-||||V4|Patient phenotype only, no attribution
+F|F1|mechanism|V1763M persistent current, inactivation kinetics|tsA201 cells expressing mutant|unknown|positive|not_reported|V2|abstract only
+F|F2|mechanism|V1764M and I1762A neighboring mutants|tsA201 cells expressing mutants|unknown|mixed|not_reported|V3|abstract only
+R|co-reference|b0002.s5|Na(v)1.5 not explicitly equated with SCN5A in text|Merged via shared mutation linking title and results; provisional

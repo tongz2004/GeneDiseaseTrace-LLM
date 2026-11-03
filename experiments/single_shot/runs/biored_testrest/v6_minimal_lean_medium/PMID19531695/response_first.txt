@@ -1,0 +1,17 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|CYP2D6|CYP2D6|r||human||
+E|D1|disease|Delirium|Delirium;delirium|r||||
+E|D2|disease|Atrial fibrillation|atrial fibrillation|r||||
+E|D3|disease|Drug toxicity|toxicity|p|other|||
+E|S1|symptom|Confusion|confusion|r||||
+E|S2|symptom|Paranoia|paranoia|r||||
+X|Naranjo probability scale|b0002.s11|causality scale, not a disease
+X|Horn Drug Interaction Probability Scale|b0002.s11|interaction scale, not a disease
+EV|V1|b0002.s10|bg|bgr|na|do
+EV|V2|b0002.s11+b0002.s12|ts|int|hyp|ho
+EV|V3|b0002.s13|ts|int|hyp|ho
+P|G1|D1|unc|a|ts|unc:a:ts:V2+V3|hedged_claim,support_basis_unresolved|V1|Paroxetine CYP2D6 inhibition hypothesized to raise flecainide levels
+P|G1|D3|unc|a|ts|unc:a:ts:V3|hedged_claim|V1|Toxicity with CYP2D6 inhibitors stated as possible
+F|F1|mechanism|CYP2D6 inhibition; flecainide concentration; delirium|69-year-old female case|not_applicable|positive|not_applicable|V2+V3|single case; interaction only possible
+R|gene-disease via drug interaction|b0002.s13|Gene affects disease only through inhibition of drug metabolism|Marked uncertain, not supported

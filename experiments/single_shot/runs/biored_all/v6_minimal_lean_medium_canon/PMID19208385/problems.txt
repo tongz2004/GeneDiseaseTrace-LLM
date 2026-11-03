@@ -1,0 +1,4 @@
+E D2: duplicate id, bad type/identity or unknown unit
+P G1-D2: endpoints must be a primary gene and a primary target in the same unit
+P G1-D6: endpoints must be a primary gene and a primary target in the same unit
+P G1-D5: endpoints must be a primary gene and a primary target in the same unit

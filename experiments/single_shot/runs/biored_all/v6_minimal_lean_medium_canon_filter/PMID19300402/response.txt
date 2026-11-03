@@ -1,0 +1,36 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; rat model, no statistics
+E|G1|gene|Nos2|inducible NO synthase|r||non-human||
+E|G2|gene|Nos1|neuronal NO synthase|r||non-human||
+E|G3|gene|Kng1 (bradykinin)|bradykinin|p|other|non-human||
+E|G4|gene|Bdkrb1|B1|p|other|non-human||
+E|G5|gene|Bdkrb2|B2|p|other|non-human||
+E|G6|ambiguous_gene|constitutive NO synthase|constitutive NO synthase|u|ambiguous_mapping|non-human||
+E|D1|disease|diabetic neuropathy|diabetic neuropathy|r||||
+E|D2|disease|hyperalgesia|hyperalgesia|r||||
+E|D3|disease|toxic neuropathy|toxic neuropathy|r||||
+E|D4|disease|neuropathic pain|neuropathic pain|r||||
+EV|V1|b0002.s3|ts|res|aff|rr,mi
+EV|V2|b0002.s5|ts|res|aff|rr,mi
+EV|V3|b0002.s7|ts|int|aff|eda
+EV|V4|b0002.s8|ts|int|aff|rr
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V4|||iNOS inhibition reduces streptozotocin hyperalgesia
+P|G1|D2|sup|a|ts|sup:a:ts:V1+V2+V4|||iNOS involved in both hyperalgesia models
+P|G1|D3|sup|a|ts|sup:a:ts:V2|||iNOS products involved in vincristine hyperalgesia
+P|G2|D1|neg|-|ts|neg:-:ts:V1|||nNOS inhibition does not reduce diabetic hyperalgesia
+P|G2|D2|sup|a|ts|sup:a:ts:V2+V4;neg:-:ts:V1|||Supported in vincristine model, negative in diabetic
+P|G2|D3|sup|a|ts|sup:a:ts:V2+V4|||nNOS pathway activated in vincristine hyperalgesia
+P|G3|D1|sup|a|ts|sup:a:ts:V1+V4|||Bradykinin pronociceptive in streptozotocin hyperalgesia
+P|G3|D2|sup|a|ts|sup:a:ts:V1+V2+V4|||Bradykinin involved in hyperalgesia
+P|G3|D3|sup|a|ts|sup:a:ts:V2+V4|||Bradykinin involved in vincristine hyperalgesia
+P|G4|D1|sup|a|ts|sup:a:ts:V1+V3|||B1 engaged in diabetic neuropathy nociception
+P|G4|D2|sup|a|ts|sup:a:ts:V1|||Receptor inhibition reduces hyperalgesia
+P|G4|D3|sup|a|ts|sup:a:ts:V3|||B1 engaged in toxic neuropathy
+P|G5|D1|sup|a|ts|sup:a:ts:V1+V3|||B2 engaged in diabetic neuropathy nociception
+P|G5|D2|sup|a|ts|sup:a:ts:V1|||Receptor inhibition reduces hyperalgesia
+P|G5|D3|sup|a|ts|sup:a:ts:V3|||B2 engaged in toxic neuropathy
+F|F1|mechanism|iNOS/BK receptor inhibition; hyperalgesia|streptozotocin diabetic rats|significant|negative|not_reported|V1|abstract only
+F|F2|mechanism|nNOS inhibition; hyperalgesia|streptozotocin diabetic rats|not_significant|null|not_reported|V1|abstract only
+F|F3|mechanism|iNOS, nNOS, bradykinin; hyperalgesia|vincristine-treated rats|unknown|positive|not_reported|V2|abstract only
+C|C1|nNOS role differs by model|b0002.s3;b0002.s5|noncritical|resolved|Model-specific; diabetic negative, vincristine positive
+R|gene identity|G3-G5|Bradykinin is a peptide; receptors named only B1/B2|Mapped to rat Kng1/Bdkrb1/Bdkrb2 as provisional

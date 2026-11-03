@@ -1,0 +1,20 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|N-acetyl-beta-D-glucosaminidase|N-acetyl-beta-d-glucosaminidase;NAG|p|ambiguous_mapping|non-human||
+E|G2|gene|superoxide dismutase|superoxide dismutase;SOD|p|ambiguous_mapping|non-human||
+E|G3|gene|catalase|catalase;CAT|r||non-human||
+E|D1|disease|vancomycin-induced nephrotoxicity|nephrotoxicity;renal impairment;kidney damage|r||||
+E|D2|disease|renal tubular injury|renal tubular injury;tubular damage;oxidative tubular damage|r|||D1|
+E|D3|phenotype|tubular necrosis|necrosis|p||||
+X|MDA|b0002.s5|malondialdehyde, a lipid peroxidation metabolite, not gene
+X|ROS|b0002.s1|reactive oxygen species, not gene
+EV|V1|b0002.s5|ts|res|aff|rr,cmp
+EV|V2|b0002.s6|ts|res|aff|rr,cmp,mi
+EV|V3|b0002.s5|bg|bgr|aff|ebr
+EV|V4|b0002.s10|ts|int|aff|rr
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V2|||Urinary NAG rises with VCM, falls with erdosteine
+P|G1|D2|sup|a|bg|sup:a:bg:V3|||NAG described as tubular injury marker
+P|G2|D1|sup|a|ts|sup:a:ts:V1+V2|||SOD decreased by VCM, restored by erdosteine
+P|G3|D1|sup|a|ts|sup:a:ts:V1|||CAT decreased by VCM; not restored by erdosteine
+F|F1|group_comparison|urinary NAG, SOD, CAT activity|VCM vs control rats|significant|mixed|not_reported|V1|abstract only; rat model
+F|F2|group_comparison|NAG, SOD, CAT activity|VCM+erdosteine vs VCM rats|mixed|mixed|not_reported|V2|CAT unchanged; abstract only

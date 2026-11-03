@@ -1,0 +1,134 @@
+{
+  "paper_id": "PMID18457324",
+  "variant": "v6_minimal_lean_medium",
+  "model": "Claude_Opus_5.5",
+  "cli_model": "claude-opus-5-5",
+  "effort": "medium",
+  "variant_hashes": {
+    "card.md": "b43a70b78d2c900463d5ed24240a21dd98eb0ff6a5911cf12dbfdf27f36016db",
+    "format.md": "392cb436fc41c69751174a204919761ca82f1ddd0d57d43c6457b855d6eed989"
+  },
+  "fixed_characters": 4969,
+  "paper_characters": 3055,
+  "calls": [
+    {
+      "seconds": 24.2,
+      "exit_code": 0,
+      "usage": {
+        "input_tokens": 6,
+        "cache_creation_input_tokens": 3311,
+        "cache_read_input_tokens": 6015,
+        "output_tokens": 1332,
+        "output_tokens_details": {
+          "thinking_tokens": 783
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 3311,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 4,
+            "output_tokens": 286,
+            "cache_read_input_tokens": 4105,
+            "cache_creation_input_tokens": 1116,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 1116
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "cost_usd": 0.054355,
+      "turns": 2,
+      "model_usage": {
+        "claude-opus-5-5": {
+          "inputTokens": 6,
+          "outputTokens": 1332,
+          "cacheReadInputTokens": 6015,
+          "cacheCreationInputTokens": 3311,
+          "webSearchRequests": 0,
+          "costUSD": 0.054355,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 783,
+          "canonicalModel": "claude-opus-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "stderr": ""
+    },
+    {
+      "seconds": 20.3,
+      "exit_code": 0,
+      "usage": {
+        "input_tokens": 2,
+        "cache_creation_input_tokens": 2678,
+        "cache_read_input_tokens": 1910,
+        "output_tokens": 1692,
+        "output_tokens_details": {
+          "thinking_tokens": 984
+        },
+        "server_tool_use": {
+          "web_search_requests": 0,
+          "web_fetch_requests": 0
+        },
+        "service_tier": "standard",
+        "cache_creation": {
+          "ephemeral_1h_input_tokens": 2678,
+          "ephemeral_5m_input_tokens": 0
+        },
+        "inference_geo": "global",
+        "iterations": [
+          {
+            "input_tokens": 2,
+            "output_tokens": 1692,
+            "cache_read_input_tokens": 1910,
+            "cache_creation_input_tokens": 2678,
+            "cache_creation": {
+              "ephemeral_5m_input_tokens": 0,
+              "ephemeral_1h_input_tokens": 2678
+            },
+            "type": "message"
+          }
+        ],
+        "speed": "standard",
+        "fallback_credit": null
+      },
+      "cost_usd": 0.055653999999999995,
+      "turns": 1,
+      "model_usage": {
+        "claude-opus-5-5": {
+          "inputTokens": 2,
+          "outputTokens": 1692,
+          "cacheReadInputTokens": 1910,
+          "cacheCreationInputTokens": 2678,
+          "webSearchRequests": 0,
+          "costUSD": 0.055653999999999995,
+          "contextWindow": 1000000,
+          "maxOutputTokens": 128000,
+          "thinkingTokens": 984,
+          "canonicalModel": "claude-opus-5-5",
+          "provider": "firstParty",
+          "costBasis": "list"
+        }
+      },
+      "stderr": ""
+    }
+  ],
+  "first_response_problems": [
+    "line 1: unknown record type \"I can't continue that extraction, so the output above is incomplete and shouldn't be used as a result for PMID18457324.\"",
+    "line 3: unknown record type \"What's there covers the META and SCOPE lines, the four entities (CBR3, NQO1, congestive heart failure, cancer), three excluded names, and one evidence record. The rest is missing: the remaining evidence records, the gene–disease pairs, and the findings. That includes the key calls on NQO1–CHF and CBR3–CHF.\"",
+    "line 5: unknown record type 'You could fill in the missing records manually from sentences b0002.s8 through b0002.s11, or try rerunning this paper. I can help with a different paper or task.'"
+  ]
+}

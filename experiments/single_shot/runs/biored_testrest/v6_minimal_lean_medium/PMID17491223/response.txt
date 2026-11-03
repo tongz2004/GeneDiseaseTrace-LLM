@@ -1,0 +1,5 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no genes mentioned
+E|D1|disease|myocardial ischemia|myocardial ischemia;ischemia|r||||
+X|dP/dtejc|b0002|cardiac performance index, not a gene
+X|Sestamibi|b0002|imaging tracer, not a gene

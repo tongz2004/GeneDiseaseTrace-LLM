@@ -1,0 +1,391 @@
+{
+  "variant": "v1_card_lean_medium",
+  "run_set": "biored_testrest",
+  "scorer": {
+    "protocol": "one-to-one (maximum bipartite matching), since 2026-11-03; before that many-to-one",
+    "evaluate_py_sha256": "cebb3b026cf31d4a0b3145a6ffad4457ec97e461adf93fced6102c8e0a969267"
+  },
+  "papers_scored": 27,
+  "papers_missing": [],
+  "strict": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "ci95": {
+      "precision": [
+        0.0,
+        0.0
+      ],
+      "recall": [
+        0.0,
+        0.0
+      ],
+      "f1": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "scope_adjusted": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "ci95": {
+      "precision": [
+        0.0,
+        0.0
+      ],
+      "recall": [
+        0.0,
+        0.0
+      ],
+      "f1": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "supported_or_uncertain": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "ci95": {
+      "precision": [
+        0.0,
+        0.0
+      ],
+      "recall": [
+        0.0,
+        0.0
+      ],
+      "f1": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "strict_many_to_one": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0
+  },
+  "per_paper": {
+    "PMID1848636": {
+      "tp_gold": 0,
+      "fn": 0,
+      "fn_symptom": 0,
+      "our_supported": 0,
+      "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
+      "uncertain_or_negative": 1,
+      "uncertain_or_negative_in_gold": 0
+    },
+    "PMID8829135": {
+      "tp_gold": 0,
+      "fn": 0,
+      "fn_symptom": 0,
+      "our_supported": 0,
+      "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
+      "uncertain_or_negative": 0,
+      "uncertain_or_negative_in_gold": 0
+    },
+    "PMID9672936": {
+      "tp_gold": 0,
+      "fn": 0,
+      "fn_symptom": 0,
+      "our_supported": 0,
+      "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
+      "uncertain_or_negative": 0,
+      "uncertain_or_negative_in_gold": 0
+    },
+    "PMID15036754": {
+      "tp_gold": 0,
+      "fn": 0,
+      "fn_symptom": 0,
+      "our_supported": 1,
+      "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
+      "uncertain_or_negative": 0,
+      "uncertain_or_negative_in_gold": 0
+    },
+    "PMID15130900": {
+      "tp_gold": 0,
+      "fn": 0,
+      "fn_symptom": 0,
+      "our_supported": 0,
+      "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
+      "uncertain_or_negative": 0,
+      "uncertain_or_negative_in_gold": 0
+    },
+    "PMID15233872": {
+      "tp_gold": 0,
+      "fn": 0,
+      "fn_symptom": 0,
+      "our_supported": 0,
+      "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
+      "uncertain_or_negative": 0,
+      "uncertain_or_negative_in_gold": 0
+    },
+    "PMID15811908": {
+      "tp_gold": 0,
+      "fn": 0,
+      "fn_symptom": 0,
+      "our_supported": 0,
+      "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
+      "uncertain_or_negative": 0,
+      "uncertain_or_negative_in_gold": 0
+    },
+    "PMID16116131": {
+      "tp_gold": 0,
+      "fn": 0,
+      "fn_symptom": 0,
+      "our_supported": 0,
+      "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
+      "uncertain_or_negative": 0,
+      "uncertain_or_negative_in_gold": 0
+    },
+    "PMID16820346": {
+      "tp_gold": 0,
+      "fn": 0,
+      "fn_symptom": 0,
+      "our_supported": 0,
+      "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
+      "uncertain_or_negative": 0,
+      "uncertain_or_negative_in_gold": 0
+    },
+    "PMID16844102": {
+      "tp_gold": 0,
+      "fn": 0,
+      "fn_symptom": 0,
+      "our_supported": 0,
+      "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
+      "uncertain_or_negative": 0,
+      "uncertain_or_negative_in_gold": 0
+    },
+    "PMID17491223": {
+      "tp_gold": 0,
+      "fn": 0,
+      "fn_symptom": 0,
+      "our_supported": 0,
+      "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
+      "uncertain_or_negative": 0,
+      "uncertain_or_negative_in_gold": 0
+    },
+    "PMID17562951": {
+      "tp_gold": 0,
+      "fn": 0,
+      "fn_symptom": 0,
+      "our_supported": 0,
+      "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
+      "uncertain_or_negative": 0,
+      "uncertain_or_negative_in_gold": 0
+    },
+    "PMID17879945": {
+      "tp_gold": 0,
+      "fn": 0,
+      "fn_symptom": 0,
+      "our_supported": 0,
+      "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
+      "uncertain_or_negative": 0,
+      "uncertain_or_negative_in_gold": 0
+    },
+    "PMID18399341": {
+      "tp_gold": 0,
+      "fn": 0,
+      "fn_symptom": 0,
+      "our_supported": 0,
+      "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
+      "uncertain_or_negative": 0,
+      "uncertain_or_negative_in_gold": 0
+    },
+    "PMID18439803": {
+      "tp_gold": 0,
+      "fn": 0,
+      "fn_symptom": 0,
+      "our_supported": 0,
+      "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
+      "uncertain_or_negative": 0,
+      "uncertain_or_negative_in_gold": 0
+    },
+    "PMID18441470": {
+      "tp_gold": 0,
+      "fn": 0,
+      "fn_symptom": 0,
+      "our_supported": 0,
+      "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
+      "uncertain_or_negative": 0,
+      "uncertain_or_negative_in_gold": 0
+    },
+    "PMID18503483": {
+      "tp_gold": 0,
+      "fn": 0,
+      "fn_symptom": 0,
+      "our_supported": 0,
+      "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
+      "uncertain_or_negative": 0,
+      "uncertain_or_negative_in_gold": 0
+    },
+    "PMID19531695": {
+      "tp_gold": 0,
+      "fn": 0,
+      "fn_symptom": 0,
+      "our_supported": 0,
+      "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
+      "uncertain_or_negative": 2,
+      "uncertain_or_negative_in_gold": 0
+    },
+    "PMID19681452": {
+      "tp_gold": 0,
+      "fn": 0,
+      "fn_symptom": 0,
+      "our_supported": 0,
+      "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
+      "uncertain_or_negative": 0,
+      "uncertain_or_negative_in_gold": 0
+    },
+    "PMID19957053": {
+      "tp_gold": 0,
+      "fn": 0,
+      "fn_symptom": 0,
+      "our_supported": 0,
+      "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
+      "uncertain_or_negative": 0,
+      "uncertain_or_negative_in_gold": 0
+    },
+    "PMID24114426": {
+      "tp_gold": 0,
+      "fn": 0,
+      "fn_symptom": 0,
+      "our_supported": 0,
+      "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
+      "uncertain_or_negative": 0,
+      "uncertain_or_negative_in_gold": 0
+    },
+    "PMID24671324": {
+      "tp_gold": 0,
+      "fn": 0,
+      "fn_symptom": 0,
+      "our_supported": 0,
+      "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
+      "uncertain_or_negative": 0,
+      "uncertain_or_negative_in_gold": 0
+    },
+    "PMID24717468": {
+      "tp_gold": 0,
+      "fn": 0,
+      "fn_symptom": 0,
+      "our_supported": 0,
+      "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
+      "uncertain_or_negative": 0,
+      "uncertain_or_negative_in_gold": 0
+    },
+    "PMID24739405": {
+      "tp_gold": 0,
+      "fn": 0,
+      "fn_symptom": 0,
+      "our_supported": 0,
+      "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
+      "uncertain_or_negative": 0,
+      "uncertain_or_negative_in_gold": 0
+    },
+    "PMID26991973": {
+      "tp_gold": 0,
+      "fn": 0,
+      "fn_symptom": 0,
+      "our_supported": 0,
+      "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
+      "uncertain_or_negative": 0,
+      "uncertain_or_negative_in_gold": 0
+    },
+    "PMID27464336": {
+      "tp_gold": 0,
+      "fn": 0,
+      "fn_symptom": 0,
+      "our_supported": 0,
+      "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
+      "uncertain_or_negative": 1,
+      "uncertain_or_negative_in_gold": 0
+    },
+    "PMID27993978": {
+      "tp_gold": 0,
+      "fn": 0,
+      "fn_symptom": 0,
+      "our_supported": 0,
+      "tp_ours": 0,
+      "tp_ours_many_to_one": 0,
+      "tp_gold_many_to_one": 0,
+      "uncertain_or_negative": 0,
+      "uncertain_or_negative_in_gold": 0
+    }
+  },
+  "counts": {
+    "tp_gold": 0,
+    "fn": 0,
+    "fn_symptom": 0,
+    "our_supported": 1,
+    "tp_ours": 0,
+    "tp_ours_many_to_one": 0,
+    "tp_gold_many_to_one": 0,
+    "uncertain_or_negative": 4,
+    "uncertain_or_negative_in_gold": 0
+  },
+  "novelty": {
+    "compared": 0,
+    "agree": 0
+  },
+  "fn_reasons": {},
+  "fp_reasons": {
+    "gold has both concepts but no relation": 1
+  },
+  "relation_types_on_tp": {}
+}

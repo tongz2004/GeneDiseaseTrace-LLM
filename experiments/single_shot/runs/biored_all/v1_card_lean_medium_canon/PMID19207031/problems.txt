@@ -1,0 +1,16 @@
+P G1-D1: uncertain needs valid unresolved reasons
+P G1-D1: unknown context evidence Tested
+P G1-D1: unknown context evidence GH
+P G1-D1: unknown context evidence response
+P G1-D1: unknown context evidence within
+P G1-D1: unknown context evidence GHD
+P G1-D1: unknown context evidence not
+P G1-D1: unknown context evidence disease
+P G2-D1: uncertain needs valid unresolved reasons
+P G2-D1: unknown context evidence Disease
+P G2-D1: unknown context evidence named
+P G2-D1: unknown context evidence from
+P G2-D1: unknown context evidence hormone
+P G2-D1: unknown context evidence no
+P G2-D1: unknown context evidence gene
+P G2-D1: unknown context evidence evidence

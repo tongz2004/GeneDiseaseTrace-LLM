@@ -1,0 +1,20 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|erythropoietin|erythropoietin|p|ambiguous_mapping|human|||
+E|G2|ambiguous_gene|hemoglobin|Hemoglobin|p|ambiguous_mapping|human|||
+E|D1|disease|anemia|anemia;ribavirin-associated anemia|r|||||
+E|D2|disease|hemolytic anemia|hemolytic anemia|r|||||
+E|D3|disease|hepatitis C|HCV infection;chronic hepatitis C;hepatitis C virus|r|||||
+E|D4|disease|liver cirrhosis|cirrhosis|r|||||
+E|D5|disease|hepatocellular carcinoma|hepatocellular carcinoma|r|||||
+E|D6|disease|end-stage liver disease|end-stage liver disease|r|||||
+E|D7|disease|hemolysis|hemolysis|r|||||
+E|D8|disease|renal disorders|renal|p|other||||
+E|D9|disease|cardiovascular disorders|cardiovascular disorders|r|||||
+X|pegylated interferon|b0002.s2|drug, not gene evidence
+X|Viramidine|b0002.s8|drug name, not a gene
+EV|V1|b0002.s7|bg|bgr|na|do
+EV|V2|b0002.s4|bg|co|na|do
+P|G1|D1|unc|-|bg||other||therapeutic use of recombinant protein only
+P|G2|D1|unc|-|bg||identity,other||hemoglobin decrease defines anemia, measure only
+R|gene-product therapy|b0002.s7|recombinant erythropoietin is a drug, not gene evidence|marked unc with therapeutic-use reason

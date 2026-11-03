@@ -1,0 +1,14 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|CRYBA3/A1|CRYBA3/A1|r|||human||
+E|D1|disease|autosomal dominant congenital nuclear cataract|autosomal dominant congenital nuclear cataract;congenital nuclear cataract;congenital nuclear lactescent cataract;autosomal dominant congenital nuclear lactescent cataract|r|||||
+E|D2|disease|zonular cataract with sutural opacities|zonular cataract|r|||||
+X|D17S1857|b0002.s8|DNA marker, not a gene
+EV|V1|b0002.s9+b0002.s10|ts|res|aff|rr,cs,cmp
+EV|V2|b0002.s12|ts|int|aff|eda
+EV|V3|b0002.s13|bg|bgr|aff|ebr
+EV|V4|b0002.s8|ts|res|aff|cs
+P|G1|D1|sup|c|ts|sup:c:ts:V1+V2+V4|||Deletion cosegregates with disease, absent in controls
+P|G1|D2|sup|c|bg|sup:c:bg:V3|||Prior splice mutation reported in zonular cataract
+F|F1|association|chromosome 17 linkage, D17S1857|Swiss five-generation family|significant|positive|available|V4|
+F|F2|association|CRYBA3/A1 279delGAG and cataract|affected vs unaffected; 250 controls|not_applicable|positive|partial|V1+V2|

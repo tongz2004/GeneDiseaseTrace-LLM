@@ -1,0 +1,19 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|CD36|CD36|r||human||
+E|G2|gene|PPARG|PPARgamma|r||human||
+E|D1|disease|HIV infection|HIV|r||||
+E|D2|disease|atherosclerosis|atherosclerosis|r||||
+E|PH1|phenotype|macrophage cholesteryl ester accumulation|cholesteryl ester accumulation|r||||
+X|LDL|b0002.s8|lipoprotein particle, not LDLR gene
+X|scavenger receptor|b0002.s11|protein class label for CD36
+EV|V1|b0002.s11|ts|res|na|rr
+EV|V2|b0002.s12|ts|res|na|rr
+EV|V3|b0002.s14+b0002.s15|ts|int|hyp|rr,ho
+EV|V4|b0002.s2+b0002.s3|both|bgr|na|do
+P|G1|D2|nf|-||||V1+V3+V4|CD36 changes tied to drug, not disease
+P|G2|D2|nf|-||||V2+V4|PPARgamma mRNA change tied to drug, not disease
+F|F1|mechanism|ritonavir; CD36 mRNA|THP-1 macrophages|unknown|positive|not_reported|V1|
+F|F2|mechanism|ritonavir; PPARgamma mRNA|THP-1 macrophages|unknown|positive|not_reported|V2|
+F|F3|mechanism|E2; CD36 protein; CE accumulation|THP-1 macrophages|significant|negative|not_reported|V3|in vitro cell line only
+R|phenotype not a pair target|b0002.s15|CD36 link to cholesteryl ester accumulation cannot be a P pair|recorded as finding F3 only

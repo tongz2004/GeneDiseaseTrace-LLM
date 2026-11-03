@@ -1,0 +1,47 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|PAR1|PAR1;PAR-1|r||non-human||
+E|G2|gene|PAR2|PAR2|r||non-human||
+E|G3|gene|b2m|b2m|r||non-human||
+E|G4|gene|ccl7|ccl7|r||non-human||
+E|G5|gene|cd200|cd200|r||non-human||
+E|G6|gene|cd63|cd63|r||non-human||
+E|G7|ambiguous_gene|cdbpd|cdbpd|u|undefined_abbreviation,ambiguous_mapping|non-human||
+E|G8|gene|cfl1|cfl1|r||non-human||
+E|G9|gene|dusp1|dusp1|r||non-human||
+E|G10|gene|fkbp1a|fkbp1a|r||non-human||
+E|G11|gene|fth1|fth1|r||non-human||
+E|G12|gene|hspb1|hspb1|r||non-human||
+E|G13|gene|marcksl1|marcksl1|r||non-human||
+E|G14|gene|mmp2|mmp2|r||non-human||
+E|G15|gene|myo5a|myo5a|r||non-human||
+E|G16|gene|nfkbia|nfkbia|r||non-human||
+E|G17|gene|pax1|pax1|r||non-human||
+E|G18|gene|plaur|plaur|r||non-human||
+E|G19|gene|ppia|ppia|r||non-human||
+E|G20|gene|ptpn1|ptpn1|r||non-human||
+E|G21|gene|ptprcap|ptprcap|r||non-human||
+E|G22|gene|s100a10|s100a10|r||non-human||
+E|G23|gene|sim2|sim2|r||non-human||
+E|G24|gene|tnfaip2|tnfaip2|r||non-human||
+E|G25|gene|arf6|arf6|r||non-human||
+E|G26|ambiguous_gene|dcnt1|dcnt1|u|undefined_abbreviation,ambiguous_mapping|non-human||
+E|G27|gene|p38 MAPK|p38 MAPK|p|ambiguous_mapping|||
+E|D1|disease|bladder inflammation|bladder inflammation|r||||
+E|D2|disease|cystitis|cystitis|r||||
+E|S1|phenotype|inflammation|inflammation|r||||
+E|S2|symptom|edema|edema|r||||
+E|S3|phenotype|granulocyte infiltration|granulocyte infiltration|r||||
+X|Protease-activated receptors (PAR)|b0002|receptor family, not single gene
+X|G protein|b0002|protein family, not single gene
+X|substance P (SP)|b0002|neuropeptide stimulus, not gene mention
+X|lipopolysaccharide (LPS)|b0002|bacterial stimulus
+EV|V1|b0002.s4+b0002.s5|bg|bgr|aff|ebr,mi
+EV|V2|b0002.s14|ts|res|aff|rr
+EV|V3|b0002.s15|ts|aim|q|none
+EV|V4|b0002.s6+b0002.s7+b0002.s8|ts|res|na|rr
+P|G1|D1|sup|c|bg|sup:c:bg:V1;sup:a:ts:V2||| PAR1 deficiency attenuated induced bladder inflammation in mice
+P|G2|D1|sup|c|bg|sup:c:bg:V1|||PAR2 deficiency partly attenuated bladder inflammatory response
+P|G1|D2|nf|-|||||Open question only; future testing
+F|F1|descriptive|PAR1-dependent transcripts, stimulus-induced expression|WT vs PAR1-/- mouse bladder|unknown|not_applicable|not_reported|V4|abstract only; 75 transcripts
+R|species|b0002.s10|Lowercase gene names in mouse study; species not stated per gene|Assigned non-human from PAR1-/- mice context, not case

@@ -1,0 +1,14 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|CYP4V2|CYP4V2|r||human||
+E|D1|disease|Bietti crystalline dystrophy|Bietti crystalline dystrophy;BCD|r||||
+X|cytochrome P450 genes|b0002|gene family label, not a single gene
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s6+b0002.s7|ts|res|aff|rr
+EV|V3|b0002.s12|ts|int|aff|eda
+EV|V4|b0002.s8|ts|res|aff|rr
+EV|V5|b0002.s10|ts|res|hyp|cmp
+P|G1|D1|sup|c|both|sup:c:bg:V1;sup:c:ts:V2+V3|||Pathogenic CYP4V2 mutations identified as BCD cause
+F|F1|descriptive|CYP4V2 mutations S482X, K386T, 15-bp deletion|Nine Singapore BCD patients, six families|not_applicable|not_applicable|not_applicable|V2|abstract only
+F|F2|association|exon 7 deletion haplotype|BCD patients vs controls|unknown|positive|unread|V4|founder effect; statistics not shown
+F|F3|group_comparison|genotype vs disease severity|compound heterozygous vs homozygous deletion|unknown|positive|not_reported|V5|hedged; small sample

@@ -1,0 +1,22 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|T-cell immunoglobulin mucin family|T-cell immunoglobulin mucin;TIM|r||human||
+E|G2|gene|TIM-1 (HAVCR1)|T-cell immunoglobulin mucin 1;TIM-1|r||human|G1|
+E|G3|gene|TIM-3 (HAVCR2)|T-cell immunoglobulin mucin 3;TIM-3|r||human|G1|
+E|D1|disease|asthma|asthma|r|||||
+E|D2|disease|allergic diseases|allergic diseases|r|||||
+X|hepatitis A virus|b0002.s4|virus exposure or serostatus, not a disease mention
+X|asthma-related phenotypes|b0002.s8|generic phenotype grouping, covered by asthma
+EV|V1|b0002.s1|bg|bgr|hyp|ebr,ho
+EV|V2|b0002.s5+b0002.s6|ts|res|aff|rr,cmp
+EV|V3|b0001.s1+b0002.s9|ts|int|aff|rr
+EV|V4|b0002.s8|ts|neg|neg|rr,cmp
+EV|V5|b0002.s7|ts|res|aff|rr
+P|G2|D1|sup|a|ts|sup:a:ts:V2+V3+V5||||Case-control, haplotype, and family association
+P|G3|D1|neg|-|ts|neg:-:ts:V4+V3||||No significant TIM-3 association
+P|G1|D2|unc|-|bg|unc:-:bg:V1|hedged_claim|||Background suggestion of a role only
+F|F1|association|TIM-1 rs2277025 TT genotype vs asthma|African American cases vs controls|significant|positive|available|V2|
+F|F2|association|TIM-1 157delMTTTVP homozygous deletion vs asthma|African American cases vs controls|significant|positive|available|V2|
+F|F3|association|TIM-1 haplotype and allele vs asthma|cases, controls, families|significant|positive|available|V2|
+F|F4|association|TIM-1 variants vs asthma|HAV-seronegative subjects|unknown|positive|not_reported|V5|hedged as seems to exist
+F|F5|association|TIM-3 SNPs vs asthma|African American cases vs controls|not_significant|null|partial|V4|

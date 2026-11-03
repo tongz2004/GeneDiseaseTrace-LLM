@@ -1,0 +1,31 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; mouse LPS/D-GalN model
+E|G1|gene|alanine aminotransferase|alanine aminotransferase;ALT|p|ambiguous_mapping|non-human||
+E|G2|gene|aspartate aminotransferase|aspartate aminotransferase;AST|p|ambiguous_mapping|non-human||
+E|G3|gene|ICAM-1|intercellular adhesion molecule-1;ICAM-1|r||non-human||
+E|G4|gene|VCAM-1|vascular cell adhesion molecule-1;VCAM-1|r||non-human||
+E|G5|gene|von Willebrand factor|von Willebrand factor;vWF|r||non-human||
+E|G6|gene|superoxide dismutase|superoxide dismutase;SOD|p|ambiguous_mapping|non-human||
+E|G7|gene|glutathione S-transferase|glutathione S-transferase;GST|p|ambiguous_mapping|non-human||
+E|G8|gene|MMP-2|matrix metalloproteinase-2;MMP-2/9|r||non-human||
+E|G9|gene|MMP-9|MMP-2/9|p|other|non-human||
+E|D1|disease|acute liver injury|liver injury;acute liver injured;acute injured liver;injured liver;acute injury liver|r||||
+E|D2|disease|hepatic inflammation|inflammation;liver inflammation;hepatic inflammation|r||||
+X|ASAFR|b0002.s9|lipid peroxidation indicator, not gene
+X|MDA|b0002.s11|metabolite (malondialdehyde), not gene
+X|.OH|b0002.s9|free radical, not gene
+EV|V1|b0002.s10|ts|res|aff|rr,cmp
+EV|V2|b0002.s11|ts|res|aff|rr,cmp
+EV|V3|b0002.s12+b0002.s14|ts|int|aff|rr,mi
+P|G1|D1|sup|a|ts|sup:a:ts:V1|||Serum ALT elevated in injured model mice
+P|G2|D1|sup|a|ts|sup:a:ts:V1|||Serum AST elevated in injured model mice
+P|G3|D1|sup|a|ts|sup:a:ts:V2|||ICAM-1 expression increased in injury model
+P|G4|D1|sup|a|ts|sup:a:ts:V2|||VCAM-1 expression increased in injury model
+P|G5|D1|sup|a|ts|sup:a:ts:V2|||vWF expression increased in injury model
+P|G6|D1|sup|a|ts|sup:a:ts:V2|||SOD decreased in injury model
+P|G7|D1|sup|a|ts|sup:a:ts:V2|||GST decreased in injury model
+P|G8|D1|sup|a|ts|sup:a:ts:V2+V3|||MMP-2 activity increased; reduction linked protection
+P|G9|D1|sup|a|ts|sup:a:ts:V2+V3|||MMP-9 activity increased; reduction linked protection
+F|F1|group_comparison|ALT, AST serum levels|LPS/D-GalN model vs normal mice|unknown|positive|not_reported|V1|abstract only
+F|F2|group_comparison|MMP-2/9, ICAM-1, VCAM-1, vWF, SOD, GST|LPS/D-GalN model vs normal mice|unknown|mixed|not_reported|V2|abstract only
+F|F3|mechanism|MMP-2/9 activity, VCAM-1, ICAM-1|CMCS-treated vs model mice|significant|negative|not_reported|V3|abstract only

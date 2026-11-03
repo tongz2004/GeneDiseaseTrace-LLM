@@ -1,0 +1,42 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only.
+E|G1|gene|CEP55|centrosomal protein 55;Centrosomal protein 55;CEP55|r||human||
+E|D1|disease|cancers|cancers|r|||||
+E|D2|disease|epithelial ovarian carcinoma|epithelial ovarian carcinoma;EOC|r|||D3||
+E|D3|disease|ovarian cancer|ovarian cancer|r|||D1||
+E|T1|clinical_event|lymph node metastasis|lymph node metastasis|r|||||
+E|T2|clinical_event|intraperitoneal metastasis|intraperitoneal metastasis|r|||||
+E|T3|clinical_event|tumor recurrence|tumor recurrence|r|||||
+E|A1|phenotype|clinical stage|clinical stage|r|||||
+E|A2|phenotype|differentiation grade|differentiation grade|r|||||
+E|A3|phenotype|residual tumor size|residual tumor size|r|||||
+E|A4|phenotype|ascites see tumor cells|ascites see tumor cells|r|||||
+E|A5|phenotype|cellular motility|cellular motility|r|||||
+E|A6|phenotype|invasion|invasion|r|||||
+X|CA153|b0002|Serum marker; no gene identity established.
+X|CA125|b0002|Serum marker; no gene identity established.
+X|CA199|b0002|Serum marker; no gene identity established.
+X|CA724|b0002|Serum marker; no gene identity established.
+X|NSE|b0002|Serum marker; no gene identity established.
+X|CEA|b0002|Serum marker; no gene identity established.
+X|b-HCG|b0002|Serum marker; no gene identity established.
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s7|ts|res|aff|rr,cmp
+EV|V3|b0002.s8|ts|res|aff|rr
+EV|V4|b0002.s9|ts|res|aff|rr
+EV|V5|b0002.s10|ts|neg|neg|rr
+EV|V6|b0002.s11+b0002.s12|ts|res|aff|rr,cmp
+EV|V7|b0002.s13|ts|res|na|rr,mi
+EV|V8|b0002.s14+b0002.s15|ts|int|hyp|ho
+P|G1|D1|sup|a|bg|sup:a:bg:V1||||Explicit background cancer involvement.
+P|G1|D2|sup|r|ts|sup:r:ts:V3;sup:a:ts:V6;unc:-:ts:V8|hedged_claim|V4+V5|Disease variables and prognosis linked to expression.
+P|G1|D3|sup|a|ts|sup:a:ts:V2|||V7|Expression elevated versus noncancerous comparators.
+P|G1|T1|sup|r|ts|sup:r:ts:V3||||Positive expression correlation.
+P|G1|T2|sup|r|ts|sup:r:ts:V3||||Positive expression correlation.
+P|G1|T3|sup|r|ts|sup:r:ts:V3||||Positive expression correlation.
+F|F1|group_comparison|CEP55 expression|Ovarian cancer versus normal comparators|significant|positive|not_reported|V2|
+F|F2|correlation|CEP55; stage; metastases; recurrence; grade; size; ascites; CA153|213 EOC samples|significant|positive|available|V3|
+F|F3|association|CEP55; neoadjuvant chemotherapy; cytoreductive surgery|EOC patients|significant|positive|available|V4|
+F|F4|correlation|CEP55; age; histology; six serum markers|EOC patients|not_significant|null|not_reported|V5|
+F|F5|association|CEP55; overall survival; disease-free survival; prognosis|EOC patients|unknown|negative|not_reported|V6|Multivariate effect estimates unavailable.
+F|F6|mechanism|CEP55 downregulation; motility; invasion|Ovarian cancer cells|unknown|negative|not_reported|V7|Cell phenotypes; no disease induction demonstrated.

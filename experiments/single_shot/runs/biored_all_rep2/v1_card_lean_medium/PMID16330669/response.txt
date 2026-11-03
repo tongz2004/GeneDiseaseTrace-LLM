@@ -1,0 +1,36 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|c-REL|c-REL|r||human||
+E|G2|gene|BCL-2|BCL-2|r||human||
+E|G3|gene|MALT1|MALT1|r||human||
+E|G4|gene|CDKN2A|CDKN2A|r||human||
+E|G5|gene|CDKN2B|CDKN2B|r||human||
+E|G6|gene|NSG-x|NSG-x|p|undefined_abbreviation|human||
+E|D1|disease|primary cutaneous large B-cell lymphoma|primary cutaneous large B-cell lymphoma;PCLBCL|r||||
+E|D2|disease|primary cutaneous follicle center lymphoma|primary cutaneous follicle center lymphoma;PCFCL|r|||D1|
+E|D3|disease|PCLBCL, leg type|PCLBCL, leg type|r|||D1|
+E|D4|disease|lymphoma|lymphoma|r||||
+E|CE1|clinical_event|death from lymphoma|died|r||||
+X|2p16.1|b0002|chromosomal locus, not gene
+X|9p21.3|b0002|chromosomal locus, not gene
+X|18q21.31-q21.33|b0002|chromosomal locus, not gene
+EV|V1|b0002.s3+b0002.s4|ts|res|aff|rr
+EV|V2|b0002.s5|ts|res|aff|rr
+EV|V3|b0002.s5+b0002.s6|ts|res|aff|rr,cmp
+EV|V4|b0002.s7|ts|res|aff|rr,cmp
+EV|V5|b0002.s7|ts|neg|neg|rr
+EV|V6|b0002.s8|ts|res|aff|rr,do
+EV|V7|b0002.s10|ts|hyp|hyp|ho
+P|G1|D2|sup|a|ts|sup:a:ts:V1||| c-REL amplification in PCFCL 2p16.1 gains
+P|G2|D3|sup|a|ts|sup:a:ts:V2|||BCL-2 amplification in 67% of leg type
+P|G3|D3|sup|a|ts|sup:a:ts:V2|||MALT1 amplification in 67% of leg type
+P|G4|D3|sup|a|ts|sup:a:ts:V3;sup:a:ts:V4|||Deletion and promoter methylation in leg type only
+P|G5|D3|sup|a|ts|sup:a:ts:V3|||Within deleted 9p21.3 region in leg type
+P|G6|D3|sup|a|ts|sup:a:ts:V3|||Within deleted 9p21.3 region in leg type
+P|G4|D2|neg|-|ts|neg:-:ts:V5|||No CDKN2A methylation in 0/19 PCFCL
+P|G4|CE1|unc|-|ts|unc:-:ts:V6+V7|hedged_claim,scope||7/7 died, no comparator; prognosis hedged
+F|F1|group_comparison|homozygous 9p21.3 deletion|leg type vs PCFCL|unknown|positive|partial|V3|abstract only, no test reported
+F|F2|group_comparison|CDKN2A promoter methylation|leg type vs PCFCL|unknown|positive|partial|V4|two cases only
+F|F3|descriptive|9p21.3 deletion/CDKN2A methylation and death|PCLBCL leg type, n=7|not_applicable|not_applicable|partial|V6|no comparator group
+F|F4|descriptive|18q21 amplification incl. BCL-2, MALT1|PCLBCL leg type, n=12|not_applicable|not_applicable|partial|V2|
+F|F5|descriptive|2p16.1 amplification, c-REL|PCFCL, n=19|not_applicable|not_applicable|partial|V1|

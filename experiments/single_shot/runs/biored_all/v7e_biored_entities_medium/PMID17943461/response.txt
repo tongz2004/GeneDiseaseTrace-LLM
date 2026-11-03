@@ -1,0 +1,33 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text|
+E|G1|gene|Fas ligand|Fas ligand;FasL|r|||non-human||
+E|G2|gene|Fas|Fas|r|||non-human||
+E|G3|gene|caspase 3|caspase 3|r|||non-human||
+E|G4|gene|calpain 1|calpain 1|r|||non-human||
+E|G5|gene|dystrophin|dystrophin|r|||non-human||
+E|G6|gene|cardiac troponin I|cardiac troponin I|r|||non-human||
+E|D1|disease|cardiomyopathy (drug-induced)|cardiomyopathy|r|||||
+E|D2|disease|dilated cardiomyopathy|Dilated cardiomyopathy;DCM|r|||||
+E|D3|disease|myocarditis|myocarditis|r|||||
+E|D4|disease|HIV infection|HIV-infected;HIV-positive|r|||||
+E|D5|disease|heart failure|heart failure|r|||||
+E|D6|disease|AIDS|acquired immunodeficiency syndrome;AIDS|r|||||
+E|D7|disease|cardiac and skeletal myopathies|myopathies|r|||||
+E|D8|disease|cardiac dilation|cardiac dilation|r|||||
+EV|V1|b0001.s1+b0002.s6|ts|res|aff|rr,mi,cmp
+EV|V2|b0002.s3+b0002.s6|ts|res|aff|rr,mi,cmp
+EV|V3|b0002.s6+b0002.s7|ts|res|aff|rr,do
+EV|V4|b0002.s6+b0002.s8|ts|res|aff|rr,do
+EV|V5|b0002.s9|bg|bgr|aff|ebr
+EV|V6|b0002.s9|ts|int|hyp|ho
+P|G1|D1|sup|c|ts|sup:c:ts:V1;unc:c:ts:V6|||FasL Tg mice susceptible to AZT cardiomyopathy
+P|G1|D2|sup|c|ts|sup:c:ts:V2|||FasL Tg plus AZT produced DCM model
+P|G1|D8|sup|c|ts|sup:c:ts:V2|||AZT-treated FasL Tg developed cardiac dilation
+P|G1|D4|sup|a|bg|sup:a:bg:V5|||FasL myocardial expression identified in HIV patients
+P|G2|D1|sup|a|ts|sup:a:ts:V3|||Increased sarcolemmal Fas with cardiomyopathy changes
+P|G3|D1|sup|a|ts|sup:a:ts:V3|||Caspase 3 activation accompanies cardiomyopathy
+P|G4|D1|sup|a|ts|sup:a:ts:V3|||Calpain 1 translocation accompanies cardiomyopathy
+P|G5|D1|sup|a|ts|sup:a:ts:V4|||Dystrophin localization changes with cardiomyopathy
+P|G6|D1|sup|a|ts|sup:a:ts:V4|||Troponin I localization changes with cardiomyopathy
+F|F1|group_comparison|FasL Tg vs NTg; AZT dose; cardiac function|8-week-old mice, 6 weeks AZT|unknown|positive|not_reported|V1+V2|abstract only, mouse model
+F|F2|association|Fas, FasL, caspase 3, calpain 1 changes|AZT-treated FasL Tg mice|unknown|positive|not_reported|V3+V4|abstract only

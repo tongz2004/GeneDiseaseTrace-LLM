@@ -1,0 +1,16 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|IRF6|IRF6;interferon regulatory factor 6|r|||human||
+E|D1|disease|Van der Woude syndrome|Van der Woude syndrome;VWS|r|||||
+E|D2|disease|orofacial cleft|orofacial cleft|r|||||
+E|D3|disease|cleft lip and palate|cleft lip and palate|r|||||
+E|D4|disease|cleft palate|cleft palate|r|||||
+E|D5|disease|hypodontia|hypodontia|r|||||
+E|S1|phenotype|lower lip pits|lower lip pits|r|||||
+X|Smad|b0002|gene family named in protein-domain context; no disease link
+X|Smad-interferon regulatory factor-binding domain|b0002|protein domain, not a gene or disease
+EV|V1|b0002.s3|bg|bgr|aff|ebr
+EV|V2|b0002.s5|bg|bgr|aff|ebr
+EV|V3|b0001.s1+b0002.s6+b0002.s9+b0002.s10|ts|res|aff|rr,eda,cs
+P|G1|D1|sup|c|both|sup:c:bg:V1+V2;sup:c:ts:V3|||Known cause; novel truncating mutation in affected family
+F|F1|descriptive|IRF6 c.201C>A (p.Y67X)|5 affected German VWS family members|not_applicable|not_applicable|not_applicable|V3|5 of 12 affected tested

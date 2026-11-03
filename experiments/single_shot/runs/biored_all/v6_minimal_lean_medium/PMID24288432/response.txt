@@ -1,0 +1,26 @@
+META|Claude Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text, tables or supplements
+E|G1|gene|MMP1|MMP-1|r||human||
+E|G2|gene|MMP9|MMP-9|r||human||
+E|G3|gene|MMP12|MMP-12|r||human||
+E|G4|gene|FGFR4|FGFR-4;FGF receptor 4|r||human||
+E|G5|gene|FGF2|FGF-2|r||human||
+E|G6|gene|FGF3|FGF-3|r||human||
+E|G7|gene|FGF7|FGF-7|r||human||
+E|G8|gene|SIRPA|Signal-Regulatory Protein a;SIRPA|r||human||
+E|G9|gene|NKX2-1|Thyroid Transcription Factor-1;TTF-1|r||human||
+E|D1|disease|bronchopulmonary dysplasia|Bronchopulmonary dysplasia;bronchopulmonary dysplasia;BPD|r||||
+E|D2|disease|neonatal respiratory distress syndrome|neonatal respiratory distress syndrome;neonatal respiratory distress;RDS|r||||
+EV|V1|b0002.s8|ts|res|aff|rr
+EV|V2|b0002.s9|ts|res|aff|rr
+EV|V3|b0002.s10|ts|int|aff|rr
+EV|V4|b0001.s1|ts|res|aff|rr
+P|G2|D2|sup|a|ts|sup:a:ts:V1||||SNP associated with RDS, P<0.05
+P|G3|D2|sup|a|ts|sup:a:ts:V1||||SNP associated with RDS, P<0.05
+P|G4|D2|sup|a|ts|sup:a:ts:V1+V2+V3+V4||||rs1966265 associated with RDS, P=0.003
+P|G6|D2|sup|a|ts|sup:a:ts:V1||||SNP associated with RDS, P<0.05
+P|G7|D2|sup|a|ts|sup:a:ts:V1||||SNP associated with RDS, P<0.05
+P|G4|D1|sup|a|ts|sup:a:ts:V2+V3+V4||||rs1966265 associated with BPD, P=0.023
+F|F1|association|SNPs in MMP-9, MMP-12, FGFR-4, FGF-3, FGF-7 vs RDS|Caucasian premature neonates|significant|unknown|partial|V1|abstract only, threshold P<0.05
+F|F2|association|FGFR4 rs1966265 vs RDS and BPD|Caucasian premature neonates|significant|unknown|partial|V2+V3|abstract only, no effect sizes
+R|verbatim surface rule|b0002.s7|MMP-2, MMP-16, FGFR2, FGF-4, FGF-18 written only in abbreviated lists|Omitted these entities; none had a reported association

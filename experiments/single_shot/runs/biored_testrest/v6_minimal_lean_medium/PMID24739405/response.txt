@@ -1,0 +1,7 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no genes mentioned
+E|D1|disease|schizophrenia|schizophrenia|r||||
+E|D2|phenotype|catalepsy|catalepsy|r||||
+E|D3|phenotype|hyperlocomotion|hyper locomotion|r||||
+X|dehydroepiandrosterone (DHEA)|b0002|steroid compound, not a gene
+X|haloperidol|b0002|drug used to induce catalepsy, not a gene

@@ -1,0 +1,16 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text unavailable
+E|G1|gene|GC vitamin D binding protein|Vitamin D-binding protein;DBP|r||human||
+E|G2|gene|PTPRN (IA-2)|IA-2|r||human||
+E|G3|gene|GAD2 (GAD65)|GAD65|r||human||
+E|D1|disease|type 1 diabetes|type 1 diabetes|r||||
+EV|V1|b0002.s4|bg|bgr|aff|ebr
+EV|V2|b0002.s9|ts|res|aff|rr,cmp
+EV|V3|b0002.s11|ts|int|aff|eda
+EV|V4|b0002.s5|ts|aim|pre|do
+EV|V5|b0002.s10|ts|neg|neg|rr
+P|G1|D1|sup|a|both|sup:r:bg:V1;sup:a:ts:V2+V3|||DBP Glu genotypes linked to IA-2-positive T1D
+P|G2|D1|unc|a|bg|unc:a:bg:V4|presupposed_only|V2|IA-2 antibodies presumed T1D autoimmune marker
+P|G3|D1|unc|a|bg|unc:a:bg:V4|presupposed_only|V5|GAD65 antibodies presumed T1D autoimmune marker
+F|F1|group_comparison|DBP codon 416 genotype; IA-2 antibodies|type 1 diabetes patients|significant|positive|partial|V2|abstract only; frequencies not given
+F|F2|group_comparison|DBP Glu genotype; GAD65 antibodies|type 1 diabetes patients|not_significant|null|not_reported|V5|abstract only

@@ -1,0 +1,24 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|NDP|NDP|r||human||
+E|D1|disease|Norrie disease|Norrie disease|r||||
+E|D2|disease|X-linked familial exudative vitreoretinopathy|X-linked familial exudative vitreoretinopathy;FEVR|r||||
+E|D3|disease|Coat's disease|Coat's disease|r||||
+E|D4|disease|retinopathy of prematurity|retinopathy of prematurity;ROP|r||||
+E|D5|disease|regressed ROP|regressed ROP|r|||D4|
+E|D6|disease|retinal diseases|retinal diseases|r||||
+E|S1|symptom|deafness|deafness|r||||
+E|S2|symptom|mental retardation|mental retardation|r||||
+E|S3|phenotype|retinal detachment|retinal detachment|r||||
+E|S4|phenotype|low birthweight|low birthweight|r||||
+X|Norrie-FEVR|b0002|combined patient group label, not a single disease
+EV|V1|b0002.s5+b0002.s9|ts|res|aff|rr,eda
+EV|V2|b0002.s6+b0002.s10|ts|res|aff|rr,eda
+EV|V3|b0002.s1+b0002.s2|ts|aim|na|none
+P|G1|D1|sup|a|ts|sup:a:ts:V1||V3|His43Arg attributed to Norrie disease phenotype
+P|G1|D2|sup|a|ts|sup:a:ts:V1||V3|Leu103Val associated with FEVR
+P|G1|D5|sup|a|ts|sup:a:ts:V2||V3|5' UTR deletion associated with mild-regressed ROP
+P|G1|D4|unc|-||unc:-:ts:V2|scope|V3|Evidence specific to regressed ROP subtype
+P|G1|D3|nf|-|||||V3|Aim only; no Coat's result reported
+F|F1|descriptive|NDP novel coding mutations|FEVR patient; Norrie twins|not_applicable|not_applicable|not_reported|V1|single cases
+F|F2|descriptive|NDP 14-bp 5' UTR deletion|3 regressed ROP; 1 unaffected control|not_applicable|not_applicable|not_reported|V2|deletion also in unaffected girl

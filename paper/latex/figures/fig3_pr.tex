@@ -1,112 +1,51 @@
-% Figure 3. Precision-recall operating points with 95% bootstrap CIs.
-% Values from experiments/single_shot/runs/*/*/{biored,euadr,renet2}_eval.json
-% (Test hedged/scope point: experiments/single_shot/README.md, optimization round 1; no CI computed).
-\newcommand{\isoFone}{%
-  \foreach \F in {0.3,0.4,0.5,0.6,0.7,0.8} {
-    \addplot[draw=rule, line width=0.5pt, dashed, domain=\F/2+0.02:0.95, samples=60, forget plot] {\F*x/(2*x-\F)};
-  }
-}
-\newcommand{\isoLabels}{%
-  % F1 contour labels, placed on each curve at recall 0.905
-  \node[font=\sffamily\tiny, text=muted, anchor=south west, inner sep=1pt] at (axis cs:0.905,0.717) {F1=.8};
-  \node[font=\sffamily\tiny, text=muted, anchor=south west, inner sep=1pt] at (axis cs:0.905,0.571) {.7};
-  \node[font=\sffamily\tiny, text=muted, anchor=south west, inner sep=1pt] at (axis cs:0.905,0.449) {.6};
-  \node[font=\sffamily\tiny, text=muted, anchor=south west, inner sep=1pt] at (axis cs:0.905,0.345) {.5};
-  \node[font=\sffamily\tiny, text=muted, anchor=south west, inner sep=1pt] at (axis cs:0.905,0.257) {.4};
-  \node[font=\sffamily\tiny, text=muted, anchor=south west, inner sep=1pt] at (axis cs:0.905,0.180) {.3};
-}
-\newcommand{\isoLabelsZoom}{%
-  \node[font=\sffamily\tiny, text=muted, anchor=south west, inner sep=1pt] at (axis cs:0.83,0.772) {F1=.8};
-  \node[font=\sffamily\tiny, text=muted, anchor=south west, inner sep=1pt] at (axis cs:0.83,0.605) {.7};
-}
+% Figure 3. BioTriplex evaluation set: precision-recall points (A) and recall by where the relation is annotated (B).
+% Values: experiments/single_shot/runs/{biotriplex,biotriplex_gpt}/*/biotriplex_eval[_abstract].json, valid articles.
 \begin{tikzpicture}
-\begin{groupplot}[
-  group style={group size=2 by 2, horizontal sep=1.3cm, vertical sep=1.45cm},
-  gdt,
-  width=0.47\linewidth, height=0.40\linewidth,
-  xmin=0.1, xmax=0.95, ymin=0.1, ymax=1.0,
-  xtick={0.2,0.4,0.6,0.8}, ytick={0.2,0.4,0.6,0.8,1.0},
+\begin{axis}[
+  gdt, name=A,
+  title={A. Precision and recall},
+  width=0.47\linewidth, height=0.44\linewidth,
+  xmin=0.2, xmax=0.95, ymin=0.1, ymax=0.6,
+  xtick={0.2,0.4,0.6,0.8}, ytick={0.1,0.2,0.3,0.4,0.5,0.6},
   xlabel={Recall}, ylabel={Precision},
   clip mode=individual,
-  error bars/error bar style={line width=0.5pt},
-  error bars/error mark options={rotate=90, mark size=1.2pt, line width=0.5pt},
-  legend style={font=\sffamily\tiny, draw=rule, fill=white, fill opacity=0.9, text opacity=1, row sep=-1pt, inner sep=2pt},
-  legend cell align=left,
 ]
-% ---------------- A: BioRED, all 419 and held-out Test 73
-\nextgroupplot[title={A. BioRED: all 419 and held-out Test 73}, xmin=0.25, xmax=0.88, ymin=0.5, ymax=1.0, xtick={0.3,0.4,0.5,0.6,0.7,0.8}, ytick={0.5,0.6,0.7,0.8,0.9,1.0}, legend style={at={(0.02,0.03)}, anchor=south west}]
-\isoFone
-\addplot[ours, line width=0.9pt, mark=*, mark size=1.8pt,
-  error bars/.cd, x dir=both, x explicit, y dir=both, y explicit]
-  coordinates {
-    (0.430,0.894) += (0.048,0.037) -= (0.044,0.039)
-    (0.577,0.814) += (0.051,0.037) -= (0.051,0.037)
-  };
-\addlegendentry{All 419: strict $\rightarrow$ +\,uncertain}
-\addplot[ours!55, line width=0.9pt, dashed, mark=square*, mark size=1.7pt,
-  error bars/.cd, x dir=both, x explicit, y dir=both, y explicit]
-  coordinates {
-    (0.397,0.853) += (0.105,0.114) -= (0.096,0.128)
-    (0.498,0.846) += (0,0) -= (0,0)
-    (0.536,0.833) += (0.108,0.078) -= (0.102,0.086)
-  };
-\addlegendentry{Test: strict $\rightarrow$ hedged/scope $\rightarrow$ +\,uncertain}
-\addplot[only marks, mark=o, mark size=2pt, draw=ours, line width=0.8pt] coordinates {(0.468,0.894)};
-\addlegendentry{All 419, scope-adjusted}
-\node[font=\sffamily\tiny, text=ours!60!black, anchor=north east, inner sep=2pt] at (axis cs:0.495,0.835) {Test F1 .627};
-\node[font=\sffamily\tiny, text=ours!60!black, anchor=west, inner sep=2pt] at (axis cs:0.262,0.79) {Test F1 .542};
-\isoLabelsZoom
-% ---------------- B: BioRED 50-abstract Test sample
-\nextgroupplot[title={B. BioRED Test sample (50)}, xmin=0.25, xmax=0.88, ymin=0.5, ymax=1.0, xtick={0.3,0.4,0.5,0.6,0.7,0.8}, ytick={0.5,0.6,0.7,0.8,0.9,1.0}, legend style={at={(0.02,0.03)}, anchor=south west}]
-\isoFone
-\addplot[ours, line width=0.9pt, mark=*, mark size=1.8pt,
-  error bars/.cd, x dir=both, x explicit, y dir=both, y explicit]
-  coordinates {
-    (0.412,0.835) += (0.117,0.132) -= (0.113,0.136)
-    (0.542,0.833) += (0.129,0.096) -= (0.111,0.098)
-  };
-\addlegendentry{Ours (Claude Opus 5.5)}
-\addplot[gpt, line width=0.9pt, mark=diamond*, mark size=2.2pt,
-  error bars/.cd, x dir=both, x explicit, y dir=both, y explicit]
-  coordinates {
-    (0.412,0.853) += (0.083,0.138) -= (0.087,0.135)
-    (0.496,0.853) += (0.097,0.119) -= (0.090,0.123)
-  };
-\addlegendentry{Ours with GPT-6.1 Sol}
-\addplot[only marks, pubtator, mark=triangle*, mark size=2.4pt,
-  error bars/.cd, x dir=both, x explicit, y dir=both, y explicit]
-  coordinates {(0.647,0.827) += (0.157,0.075) -= (0.152,0.095)};
-\addlegendentry{PubTator3 (trained on BioRED)}
-\isoLabelsZoom
-% ---------------- C: EU-ADR, positive associations
-\nextgroupplot[title={C. EU-ADR (100 abstracts, PA)}, legend pos=north east]
-\isoFone
-\addplot[ours, line width=0.9pt, mark=*, mark size=1.8pt,
-  error bars/.cd, x dir=both, x explicit, y dir=both, y explicit]
-  coordinates {
-    (0.549,0.469) += (0.095,0.131) -= (0.102,0.119)
-    (0.680,0.414) += (0.086,0.097) -= (0.095,0.090)
-  };
-\addlegendentry{Ours: strict $\rightarrow$ +\,uncertain}
-\addplot[only marks, pubtator, mark=triangle*, mark size=2.4pt,
-  error bars/.cd, x dir=both, x explicit, y dir=both, y explicit]
-  coordinates {(0.754,0.408) += (0.101,0.090) -= (0.107,0.082)};
-\addlegendentry{PubTator3}
-\isoLabels
-% ---------------- D: RENET2 full text
-\nextgroupplot[title={D. RENET2 full text (40 articles)}, legend pos=north east]
-\isoFone
-\addplot[ours, line width=0.9pt, mark=*, mark size=1.8pt,
-  error bars/.cd, x dir=both, x explicit, y dir=both, y explicit]
-  coordinates {
-    (0.370,0.318) += (0.082,0.152) -= (0.078,0.112)
-    (0.464,0.312) += (0.094,0.140) -= (0.084,0.106)
-  };
-\addlegendentry{Ours: strict $\rightarrow$ +\,uncertain}
-\addplot[only marks, pubtator, mark=triangle*, mark size=2.4pt,
-  error bars/.cd, x dir=both, x explicit, y dir=both, y explicit]
-  coordinates {(0.254,0.623) += (0.130,0.127) -= (0.099,0.112)};
-\addlegendentry{PubTator3 (abstract only)}
-\isoLabels
-\end{groupplot}
+\foreach \F in {0.3,0.4,0.5,0.6} {
+  \addplot[draw=rule, line width=0.5pt, dashed, domain=\F/2+0.02:0.95, samples=30, forget plot] {\F*x/(2*x-\F)};
+}
+\addplot[only marks, mark=*, mark size=2.4pt, color=pubtator] coordinates {(0.305,0.484)};
+\addplot[only marks, mark=square*, mark size=2.2pt, color=stnf] coordinates {(0.291,0.393)};
+\addplot[only marks, mark=square, mark size=2.2pt, line width=0.9pt, color=stnf] coordinates {(0.722,0.184)};
+\addplot[only marks, mark=triangle*, mark size=2.8pt, color=ours] coordinates {(0.340,0.472)};
+\addplot[only marks, mark=triangle, mark size=2.8pt, line width=0.9pt, color=ours] coordinates {(0.813,0.388)};
+\addplot[only marks, mark=diamond, mark size=2.8pt, line width=0.9pt, color=gpt] coordinates {(0.858,0.290)};
+\draw[-{Stealth[length=1.6mm]}, draw=ours, line width=0.6pt] (axis cs:0.355,0.466) -- (axis cs:0.795,0.393);
+\draw[-{Stealth[length=1.6mm]}, draw=stnf, line width=0.6pt] (axis cs:0.305,0.381) -- (axis cs:0.705,0.192);
+\node[font=\sffamily\tiny, text=pubtator, anchor=south] at (axis cs:0.305,0.495) {PubTator3};
+\node[font=\sffamily\tiny, text=ink, anchor=north east] at (axis cs:0.285,0.385) {BioREx abs.};
+\node[font=\sffamily\tiny, text=ink, anchor=north] at (axis cs:0.722,0.170) {BioREx full};
+\node[font=\sffamily\tiny, text=ours, anchor=south west] at (axis cs:0.345,0.478) {Claude abs.};
+\node[font=\sffamily\tiny, text=ours, anchor=south] at (axis cs:0.813,0.402) {Claude full};
+\node[font=\sffamily\tiny, text=gpt, anchor=north] at (axis cs:0.858,0.275) {GPT full};
+\end{axis}
+\begin{axis}[
+  gdt, at={(A.east)}, anchor=west, xshift=1.2cm,
+  title={B. Recall by annotated location},
+  ybar, bar width=6pt,
+  width=0.55\linewidth, height=0.44\linewidth,
+  ymin=0, ymax=1.2, ytick={0,0.2,0.4,0.6,0.8,1.0}, ylabel={Recall},
+  symbolic x coords={pt,ba,ca,bf,cf,gf},
+  xtick=data,
+  xticklabels={PubTator3, BioREx\\abstract, Claude\\abstract, BioREx\\full text, Claude\\full text, GPT\\full text},
+  xticklabel style={font=\sffamily\tiny, text=ink, align=center},
+  xmajorgrids=false,
+  enlarge x limits=0.11,
+  legend style={font=\sffamily\tiny, text=ink, draw=rule, at={(0.5,-0.2)}, anchor=north, legend columns=2, /tikz/every even column/.append style={column sep=4pt}},
+  nodes near coords={\pgfmathprintnumber[fixed, precision=2]{\pgfplotspointmeta}},
+  nodes near coords style={font=\sffamily\tiny, text=ink, rotate=90, anchor=west},
+]
+\addplot[fill=ours!35, draw=none] coordinates {(pt,0.750) (ba,0.750) (ca,0.882) (bf,0.806) (cf,0.879) (gf,0.897)};
+\addplot[fill=ours, draw=none] coordinates {(pt,0.165) (ba,0.148) (ca,0.177) (bf,0.696) (cf,0.792) (gf,0.847)};
+\legend{Linked in the abstract, Linked only outside it}
+\end{axis}
 \end{tikzpicture}

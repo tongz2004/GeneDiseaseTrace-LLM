@@ -1,0 +1,81 @@
+META|GPT-6|seen: no
+SCOPE|Title and abstract only; no full text or attachments supplied.
+E|G1|gene|LIF|LIF|r||human||
+E|G2|gene|MIF|migration inhibitory factor;MIF|r||human||
+E|G3|gene|SCF|stem cell factor;SCF|r||human||
+E|G4|gene|CCL27|CCL27|r||human||
+E|G5|gene|CXCL12|CXCL12|r||human||
+E|G6|gene|SCGF-b|stem cell growth factor beta;SCGF-b|r||human||
+E|G7|gene|RIG-I|retinoic acid-inducible gene-1;RIG-I|r||human||
+E|G8|gene|MDA5|melanoma differentiation-associated protein 5;MDA5|r||human||
+E|G9|gene|LGP2|laboratory of genetics and physiology 2;LGP2|r||human||
+E|G10|gene|Trif|Trif|r||human||
+E|G11|gene|Trif|TIR-domain-containing adapter-inducing interferon-b;Trif|r||non-human||
+E|G12|gene|Mavs|mitochondrial antiviral-signaling protein;Mavs|r||non-human||
+E|G13|gene|LIF|Leukemia inhibitory factor;leukemia inhibitory factor;LIF|r||non-human||
+E|G14|gene|MIF|MIF|r||non-human||
+E|G15|gene|SCF|stem cell factor;SCF|r||non-human||
+E|G16|gene|CCL27|CCL27|r||non-human||
+E|G17|gene|CXCL12|CXCL12|r||non-human||
+E|G18|gene|SCGF-b|stem cell growth factor beta;SCGF-b|r||non-human||
+E|G19|gene|IL-1b|IL-1b|r||non-human||
+E|G20|gene|IL-4|IL-4|r||non-human||
+E|G21|gene|IL-5|IL-5|r||non-human||
+E|G22|gene|IL-6|IL-6|r||non-human||
+E|G23|gene|IL-12(p40)|IL-12(p40)|r||non-human||
+E|G24|gene|IFN-g|IFN-g|r||non-human||
+E|G25|gene|CCL2|CCL2|r||non-human||
+E|G26|gene|CCL5|CCL5|r||non-human||
+E|G27|gene|CCL3|CCL3|r||non-human||
+E|G28|gene|CXCL1|CXCL1|r||non-human||
+E|G29|gene|CXCL10|IP-10;CXCL10|r||non-human||
+E|G30|gene|IL-22|IL-22|r||non-human||
+E|G31|gene|CXCL9|MIG;CXCL9|r||non-human||
+E|D1|disease|RSV infection|respiratory syncytial viral infection;RSV infection|r||||
+E|D2|disease|lung injury|lung injury|r||||
+E|D3|disease|acute lung injury|acute lung injury|r|||D2|
+E|H1|phenotype|apoptosis|apoptosis|r||||
+E|H2|phenotype|airway hyperresponsiveness|airway hyperresponsiveness|r||||
+E|H3|phenotype|increased airspace protein content|increased airspace protein content|r||||
+EV|V1|b0002.s5|ts|res|aff|rr
+EV|V2|b0002.s5+b0002.s6|ts|res|aff|rr
+EV|V3|b0002.s8|ts|res|aff|rr
+EV|V4|b0002.s9|ts|res|aff|rr
+EV|V5|b0002.s10|ts|res|aff|rr,cmp
+EV|V6|b0002.s4+b0002.s11|ts|res|aff|rr,cmp,mi
+EV|V7|b0002.s13|ts|int|aff|rr,eda
+P|G1|D1|sup|a|ts|sup:a:ts:V1||||RSV induces cytokine release in human epithelial cells.
+P|G2|D1|sup|a|ts|sup:a:ts:V1||||RSV induces cytokine release in human epithelial cells.
+P|G3|D1|sup|a|ts|sup:a:ts:V1||||RSV induces cytokine release in human epithelial cells.
+P|G4|D1|sup|a|ts|sup:a:ts:V1||||RSV induces cytokine release in human epithelial cells.
+P|G5|D1|sup|a|ts|sup:a:ts:V1||||RSV induces cytokine release in human epithelial cells.
+P|G6|D1|sup|a|ts|sup:a:ts:V1||||RSV induces cytokine release in human epithelial cells.
+P|G7|D1|nf|-||||V5|Silencing changes cytokine responses; disease outcome untested.
+P|G8|D1|nf|-||||V5|Silencing changes cytokine responses; disease outcome untested.
+P|G9|D1|nf|-||||V5|Silencing changes cytokine responses; disease outcome untested.
+P|G10|D1|nf|-||||V5|Silencing changes cytokine responses; disease outcome untested.
+P|G11|D1|nf|-||||V4|Knockout alters cytokine induction; disease outcome untested.
+P|G12|D1|nf|-||||V3|Knockout alters cytokine induction; disease outcome untested.
+P|G13|D1|sup|c|ts|sup:c:ts:V6;sup:a:ts:V2+V4|||Neutralization worsens pathology during mouse RSV infection.
+P|G13|D2|sup|c|ts|sup:c:ts:V6+V7|||Mouse intervention supports protection against lung injury.
+P|G14|D1|sup|a|ts|sup:a:ts:V2+V3+V4|||RSV induces airway cytokine in mice.
+P|G15|D1|sup|a|ts|sup:a:ts:V2|||RSV induces airway cytokine in mice.
+P|G16|D1|sup|a|ts|sup:a:ts:V2|||RSV induces airway cytokine in mice.
+P|G17|D1|sup|a|ts|sup:a:ts:V2+V4|||RSV induces airway cytokine in mice.
+P|G18|D1|sup|a|ts|sup:a:ts:V2|||RSV induces airway cytokine in mice.
+P|G19|D1|sup|a|ts|sup:a:ts:V3+V4|||RSV induces airway cytokine in mice.
+P|G20|D1|sup|a|ts|sup:a:ts:V3|||RSV induces airway cytokine in mice.
+P|G21|D1|sup|a|ts|sup:a:ts:V3+V4|||RSV induces airway cytokine in mice.
+P|G22|D1|sup|a|ts|sup:a:ts:V3|||RSV induces airway cytokine in mice.
+P|G23|D1|sup|a|ts|sup:a:ts:V3|||RSV induces airway cytokine in mice.
+P|G24|D1|sup|a|ts|sup:a:ts:V3+V4|||RSV induces airway cytokine in mice.
+P|G25|D1|sup|a|ts|sup:a:ts:V3|||RSV induces airway cytokine in mice.
+P|G26|D1|sup|a|ts|sup:a:ts:V3|||RSV induces airway cytokine in mice.
+P|G27|D1|sup|a|ts|sup:a:ts:V3|||RSV induces airway cytokine in mice.
+P|G28|D1|sup|a|ts|sup:a:ts:V3|||RSV induces airway cytokine in mice.
+P|G29|D1|sup|a|ts|sup:a:ts:V3|||RSV induces airway cytokine in mice.
+P|G30|D1|sup|a|ts|sup:a:ts:V3|||RSV induces airway cytokine in mice.
+P|G31|D1|sup|a|ts|sup:a:ts:V3|||RSV induces airway cytokine in mice.
+F|F1|mechanism|Mavs expression; airway cytokine induction|RSV-infected mice|unknown|positive|not_reported|V3|Disease outcome untested.
+F|F2|mechanism|Trif expression; airway cytokine induction|RSV-infected mice|unknown|unknown|not_reported|V4|Direction unspecified.
+F|F3|group_comparison|RIG-I; MDA5; LGP2; Trif silencing effects|RSV-infected A549 cells|unknown|unknown|not_reported|V5|Greater RIG-I impact; direction unspecified.

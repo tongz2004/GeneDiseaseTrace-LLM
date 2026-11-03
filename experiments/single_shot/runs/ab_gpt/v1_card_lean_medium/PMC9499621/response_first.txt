@@ -1,0 +1,142 @@
+META|GPT-6|seen: no
+SCOPE|Supplied text and tables; figure images unavailable; skill file access blocked.
+E|G1|gene|CFTR|CFTR;cystic fibrosis transmembrane conductance regulator;CTFR|p|suspected_typo|human||
+E|D1|disease|cystic fibrosis|cystic fibrosis;Cystic fibrosis;CF|r||||
+E|D2|disease|CFTR-associated disorders|CFTR-associated disorders;CFTR-associated disease;CFTR-associated diseases|r||||
+E|D3|disease|cirrhosis|cirrhosis|r||||D20|
+E|D4|disease|polyorganic failure|polyorganic failure|r||||
+E|D5|disease|meconium ileus|meconium ileus;Meconium ileus|r||||
+E|D6|disease|CF-related diabetes|CF-related diabetes;CFRD|r||||D28|
+E|D7|disease|allergic bronchopulmonary aspergillosis|allergic bronchopulmonary aspergillosis;ABPA|r||||
+E|D8|disease|distal intestinal obstruction syndrome|distal intestinal obstruction syndrome;DIOS|r||||
+E|D9|disease|salt wasting syndrome|salt wasting syndrome;SWS|r||||
+E|D10|disease|pneumothorax|pneumothorax;Pneumothorax|r||||
+E|D11|disease|upper respiratory tract polyposis|upper respiratory tract polyposis;Upper respiratory tract polyposis|r||||
+E|D12|clinical_event|pulmonary hemorrhage|pulmonary hemorrhage|r||||
+E|D13|disease|osteoporosis|osteoporosis;Osteoporosis|r||||
+E|D14|disease|amyloidosis|amyloidosis;Amyloidosis|r||||
+E|D15|disease|malignant tumors|malignant tumors;malignancy|r||||
+E|D16|disease|chronic Pseudomonas aeruginosa infection|chronic Pseudomonas aeruginosa infection|r||||
+E|D17|disease|exercise-induced asthma|exercise-induced asthma|r||||
+E|D18|disease|severe liver disease|severe liver disease|r||||D20|
+E|D19|disease|moderate liver disease|moderate liver disease;cirrhosis without portal hypertension|r||||D20|
+E|D20|disease|liver disease|liver disease;Liver disease|r||||
+E|D21|disease|portal hypertension|portal hypertension|r||||
+E|D22|disease|liver disease without cirrhosis|liver disease without cirrhosis;Liver disease without cirrhosis|r||||D20|
+E|D23|disease|steatosis|steatosis|r||||D22|
+E|D24|disease|viral hepatitis|viral hepatitis|r||||D22|
+E|D25|disease|Pseudo-Bartter syndrome|Pseudo-Bartter syndrome|r||||
+E|D26|clinical_event|Hemoptysis|Hemoptysis|r||||
+E|D27|clinical_event|CF exacerbations|CF exacerbations;exacerbations|r||||
+E|D28|disease|diabetes|diabetes|r||||
+E|D29|disease|cirrhosis with hypertension|cirrhosis with hypertension|r||||D3|
+E|D30|disease|cirrhosis without hypertension|cirrhosis without hypertension|r||||D3|
+E|D31|disease|hypertension|hypertension|r||||
+E|S1|phenotype|lung inflammation|lung inflammation|r||||
+E|S2|symptom|coughing|coughing|r||||
+E|S3|symptom|dyspnea|dyspnea|r||||
+E|S4|symptom|exercise intolerance|exercise intolerance|r||||
+E|S5|phenotype|decrease in pulmonary function values|decrease in pulmonary function values|r||||
+E|S6|phenotype|increase in produced sputum amounts|increase in produced sputum amounts|r||||
+E|S7|phenotype|infiltrates|infiltrates|r||||
+E|S8|phenotype|mucus plugs|mucus plugs|r||||
+X|Diabetes|b0124|table_grouping_label
+X|IgE|b0055|immunoglobulin class; no single gene identified
+X|IgG|b0055|immunoglobulin class; no single gene identified
+X|protein kinase C|b0066|protein family; no single gene identified
+X|MRSA|b0108|microorganism abbreviation
+X|methicillin-resistant Staphylococcus aureus|b0158|microorganism
+X|Nontuberculosis mycobacteria|b0105|microorganism category
+X|F508del|b0002|variant identifier
+X|L467F|b0032|variant identifier
+X|p.Leu467Phe|b0014|variant identifier
+X|p.Phe508del|b0014|variant identifier
+X|c.1399C > T|b0014|variant identifier
+X|c.1521_1523del|b0014|variant identifier
+X|F508C-S1251N|b0029|complex allele identifier
+X|L997F|b0031|variant identifier
+X|R117L|b0031|variant identifier
+X|R117H|b0031|variant identifier
+X|[TG12T5]|b0031|variant identifier
+X|R74W|b0036|variant identifier
+X|V201M|b0036|variant identifier
+X|D1270N|b0036|variant identifier
+X|F87L|b0009|variant identifier
+X|I1027T|b0009|variant identifier
+X|2143delT|b0066|variant identifier
+X|712-1G- > T|b0066|variant identifier
+X|G542X|b0066|variant identifier
+X|R785X|b0066|variant identifier
+X|c.264_268del|b0066|variant identifier
+X|3271 + 1G > T|b0066|variant identifier
+EV|V1|b0004.s1|bg|bgr|aff|ebr
+EV|V2|b0004.s3|bg|bgr|aff|ebr
+EV|V3|b0031.s2|bg|bgr|aff|ebr,eda
+EV|V4|b0031.s2|bg|hyp|hyp|ho
+EV|V5|b0031.s3|bg|bgr|aff|ebr,eda
+EV|V6|b0036.s4|bg|hyp|hyp|ho
+EV|V7|b0036.s5|bg|bgr|aff|ebr,eda
+EV|V8|b0046.s1|ts|co|aff|eda
+EV|V9|b0014.s1+b0014.s2|ts|res|na|rr,do
+EV|V10|b0015.s1+b0035.s1+b0071.s2|ts|neg|neg|rr,cmp
+EV|V11|b0095.s1+b0096.s1|ts|neg|neg|rr,cmp
+EV|V12|b0115.s1|ts|neg|neg|rr,cmp
+EV|V13|b0116.s1|ts|neg|neg|rr,cmp
+EV|V14|b0117.s1|ts|neg|neg|rr,cmp
+EV|V15|b0118.s1|ts|neg|neg|rr,cmp
+EV|V16|b0121.s1|ts|neg|neg|rr,cmp
+EV|V17|b0122.s1|ts|neg|neg|rr,cmp
+EV|V18|b0125.s1+b0126.s1+b0127.s1+b0128.s1|ts|neg|neg|rr,cmp
+EV|V19|b0130.s1+b0131.s1+b0132.s1+b0133.s1|ts|neg|neg|rr,cmp
+EV|V20|b0119.s1+b0120.s1+b0123.s1|ts|co|na|do
+EV|V21|b0019.s1+b0019.s2+b0019.s3+b0161.s1+b0162.s1+b0163.s1+b0164.s1|ts|res|na|rr,cmp
+EV|V22|b0023.s3+b0023.s4+b0023.s5+b0023.s6+b0023.s7+b0023.s8|ts|res|na|rr,cmp
+EV|V23|b0024.s1+b0024.s2+b0024.s3|ts|res|na|rr,cmp
+EV|V24|b0025.s1+b0025.s2+b0025.s3|ts|res|na|rr,cmp
+EV|V25|b0027.s1+b0027.s2|ts|res|na|rr
+EV|V26|b0043.s2|ts|res|na|rr
+EV|V27|b0009.s3+b0038.s1|bg|bgr|aff|ebr
+EV|V28|b0009.s4+b0042.s1+b0042.s3+b0042.s4|bg|bgr|na|ebr
+EV|V29|b0032.s1+b0032.s2+b0038.s2+b0038.s3+b0038.s4|bg|bgr|na|ebr
+EV|V30|b0043.s3+b0043.s4|ts|int|hyp|ho
+P|G1|D1|sup|c|bg|sup:c:bg:V1+V5;sup:a:bg:V3;sup:a:ts:V8;unc:-:bg:V6;neg:-:ts:V10|||Severity comparison concerns complex versus noncomplex alleles.
+P|G1|D2|sup|c|bg|sup:c:bg:V5+V7;unc:-:bg:V4+V6|||Claims concern specified variants and allelic combinations.
+P|G1|D4|sup|c|bg|sup:c:bg:V2|||CFTR channel dysfunction explicitly leads to polyorganic failure.
+P|G1|D5|neg|-|ts|neg:-:ts:V11|||Complex versus noncomplex F508del genotypes; tested association.
+P|G1|D7|neg|-|ts|neg:-:ts:V12|||Complex versus noncomplex F508del genotypes; tested association.
+P|G1|D8|neg|-|ts|neg:-:ts:V13|||Complex versus noncomplex F508del genotypes; tested association.
+P|G1|D25|neg|-|ts|neg:-:ts:V14|||Complex versus noncomplex F508del genotypes; tested association.
+P|G1|D10|neg|-|ts|neg:-:ts:V15|||Complex versus noncomplex F508del genotypes; tested association.
+P|G1|D13|neg|-|ts|neg:-:ts:V16|||Complex versus noncomplex F508del genotypes; tested association.
+P|G1|D11|neg|-|ts|neg:-:ts:V17|||Complex versus noncomplex F508del genotypes; tested association.
+P|G1|D28|neg|-|ts|neg:-:ts:V18|||Diabetes treatment distribution; tested association between CFTR genotypes.
+P|G1|D20|neg|-|ts|neg:-:ts:V19|||Liver disease distribution; tested association between CFTR genotypes.
+P|G1|D26|nf|-||||V20|Both genotype groups zero; no statistical test.
+P|G1|D15|nf|-||||V20|Both genotype groups zero; no statistical test.
+P|G1|D14|nf|-||||V20|Both genotype groups zero; no statistical test.
+F|F1|descriptive|CFTR complex allele frequency|810 Russian F508del homozygous CF patients|not_applicable|not_applicable|available|V9|65 carriers; four complex-allele homozygotes.
+F|F2|group_comparison|CF course, exacerbations, treatment by CFTR genotype|50 complex versus 479 noncomplex CF patients|not_significant|null|available|V10|Within CF; no disease-susceptibility inference.
+F|F3|group_comparison|Meconium ileus by CFTR genotype|Complex versus noncomplex F508del CF groups|not_significant|null|available|V11|
+F|F4|group_comparison|ABPA by CFTR genotype|Complex versus noncomplex F508del CF groups|not_significant|null|available|V12|
+F|F5|group_comparison|DIOS by CFTR genotype|Complex versus noncomplex F508del CF groups|not_significant|null|available|V13|
+F|F6|group_comparison|Pseudo-Bartter syndrome by CFTR genotype|Complex versus noncomplex F508del CF groups|not_significant|null|available|V14|
+F|F7|group_comparison|Pneumothorax by CFTR genotype|Complex versus noncomplex F508del CF groups|not_significant|null|available|V15|
+F|F8|group_comparison|Osteoporosis by CFTR genotype|Complex versus noncomplex F508del CF groups|not_significant|null|available|V16|
+F|F9|group_comparison|Upper respiratory tract polyposis by CFTR genotype|Complex versus noncomplex F508del CF groups|not_significant|null|available|V17|
+F|F10|group_comparison|Diabetes treatment distribution by CFTR genotype|Complex versus noncomplex F508del CF groups|not_significant|null|available|V18|Single distribution test; no treatment-specific inference.
+F|F11|group_comparison|Liver disease distribution by CFTR genotype|Complex versus noncomplex F508del CF groups|not_significant|null|available|V19|Single distribution test; no subtype-specific inference.
+F|F12|descriptive|Hemoptysis, malignancy, amyloidosis by CFTR genotype|Complex versus noncomplex F508del CF groups|not_applicable|not_applicable|available|V20|Zero observations; no tests reported.
+F|F13|group_comparison|Ionic channel function by CFTR genotype|Complex, noncomplex, class I, healthy groups|unknown|mixed|available|V21|Three patients per genotype group.
+F|F14|group_comparison|CFTR rescue with ivacaftor or lumacaftor|Complex organoids versus F508del homozygous control|unknown|negative|available|V22|Functional assay; clinical efficacy untested.
+F|F15|group_comparison|CFTR rescue with two-drug combinations|Three complex organoid cultures versus control|unknown|negative|available|V23|Variable responses; functional assay only.
+F|F16|group_comparison|CFTR rescue with triple combination|Three complex organoid cultures versus control|unknown|positive|available|V24+V26|Threshold claim conflicts with culture-one value.
+F|F17|group_comparison|CFTR rescue at low forskolin concentration|F508del/[L467F;F508del] organoids|mixed|mixed|partial|V25|Insignificance may denote biological response threshold.
+F|F18|association|Complex CFTR allele and treatment nonresponse|Previously reported F508del homozygous CF patients|unknown|negative|not_reported|V27|Background treatment response; no new disease endpoint.
+F|F19|mechanism|CFTR maturation and corrector response|Previously reported HEK293 experiments|unknown|negative|partial|V28|Cell phenotype; no model-induced disease.
+F|F20|mechanism|Complex CFTR allele and modulator response|Previous cellular experiments and two CF patients|unknown|negative|partial|V29|Different contexts from current intestinal organoids.
+F|F21|hypothesis|Triple therapy clinical efficacy by CFTR genotype|Patients carrying F508del/[L467F;F508del]|unknown|positive|not_reported|V30|Clinical efficacy extrapolated from organoids.
+C|C1|Triple therapy AUC in culture one|b0025.s2+b0043.s2|noncritical|unresolved|2757.12 contradicts every culture exceeding 3000.
+C|C2|CFTR channel function absent versus residual|b0020.s1+b0018.s2+b0164.s1|noncritical|unresolved|Absent function described despite nonzero forskolin response.
+U|Figure 1 image|b0017.s1|Only caption and numerical table supplied.
+U|Figure 2 image|b0023.s3|Plotted statistics and individual data unavailable.
+U|Figure 3 image|b0024.s1|Only caption; organoid images unavailable.

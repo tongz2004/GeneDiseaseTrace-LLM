@@ -1,0 +1,29 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|CP|Ceruloplasmin;ceruloplasmin|r||human||
+E|G2|gene|HAMP|hepcidin|r||human||
+E|G3|gene|TF|transferrin|r||human||
+E|G4|gene|INS|insulin|r||human||
+E|D1|disease|aceruloplasminemia|Aceruloplasminemia;aceruloplasminemia|r||||
+E|D2|disease|neurodegenerative disease|neurodegenerative disease|r|||D1|
+E|D3|disease|movement disorders|movement disorders|r||||
+E|D4|disease|retinal degeneration|retinal degeneration|r||||
+E|D5|disease|diabetes mellitus|diabetes mellitus;diabetes|r||||
+E|D6|disease|iron overload|iron overload;iron accumulation|r||||
+EV|V1|b0002.s3|ts|res|aff|rr,eda
+EV|V2|b0002.s1|bg|bgr|aff|ebr
+EV|V3|b0002.s3+b0002.s4|ts|res|aff|rr,do
+EV|V4|b0002.s7+b0002.s11|ts|res|aff|rr,eda
+EV|V5|b0002.s7|ts|res|aff|rr
+EV|V6|b0002.s8|ts|res|na|do
+P|G1|D1|sup|c|ts|sup:c:ts:V1|||Novel homozygous CP mutation causes aceruloplasminemia
+P|G1|D2|sup|c|ts|sup:c:ts:V1|||Disease is a subtype of aceruloplasminemia context
+P|G1|D3|sup|a|ts|sup:a:ts:V3|||Mutation carriers presented with movement disorders
+P|G1|D5|sup|a|ts|sup:a:ts:V3|||Mutation carriers presented with diabetes
+P|G1|D6|sup|a|ts|sup:a:ts:V4|||Defective CP export causes iron accumulation
+P|G2|D6|sup|r|ts|sup:r:ts:V5|||Hepcidin expression tracks degree of iron overload
+P|G2|D1|sup|r|ts|sup:r:ts:V5|||Hepcidin increased in aceruloplasminemia patients
+P|G4|D5|nf|-||||V6|Insulin demand is a treatment marker only
+F|F1|descriptive|CP c.2554+1G>T; exon 14 skipping|three affected siblings|not_applicable|not_applicable|not_applicable|V1+V3|single family
+F|F2|correlation|hepatic hepcidin mRNA; iron overload|affected patients|unknown|positive|unread|V5|abstract only
+R|variant entity|b0002.s3|No entity type exists for the variant c.2554+1G>T|Recorded the variant in F1 under gene G1

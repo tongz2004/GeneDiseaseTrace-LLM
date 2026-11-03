@@ -1,0 +1,10 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no genes are mentioned
+E|D1|disease|depression|Depression;depression|r||||
+E|D2|disease|sleep disturbance|sleep disturbance|r||||
+E|S1|phenotype|impulsiveness|impulsiveness|r||||
+E|S2|phenotype|impaired memory|impaired memory|r||||
+X|5HT|b0002.s3|serotonin-related behaviour label, not a gene
+X|Beck Depression Inventory|b0002.s5|psychometric instrument, not a disease
+F|F1|group_comparison|psychometric deficits incl. depression, sleep, memory|MDMA and EX-MDMA vs control groups|unknown|positive|not_reported|b0002.s6+b0002.s9|no gene; abstract only
+F|F2|group_comparison|psychometric measures past vs present users|EX-MDMA vs MDMA users|unknown|mixed|not_reported|b0002.s7+b0002.s8|no gene; abstract only

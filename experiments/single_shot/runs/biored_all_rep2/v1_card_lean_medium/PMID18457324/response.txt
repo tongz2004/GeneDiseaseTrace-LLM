@@ -1,0 +1,21 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|CBR3|CBR3;carbonyl reductase 3|r||human||
+E|G2|gene|NQO1|NQO1;NAD(P)H:quinone oxidoreductase 1;nicotinamide adenine dinucleotide phosphate:quinone oxidoreductase 1|r||human||
+E|D1|disease|congestive heart failure|congestive heart failure;CHF|r||||
+E|D2|disease|anthracycline-related congestive heart failure|anthracycline-related congestive heart failure;anthracycline-related CHF|r|||D1|
+E|D3|disease|cancer|cancer|r||||
+E|D4|disease|childhood cancer|childhood cancer|r|||D3|
+X|NQO1*2|b0002|variant identifier, not a separate gene
+X|V244M|b0002|variant identifier, not a separate gene
+EV|V1|b0002.s8|ts|neg|neg|rr,cmp
+EV|V2|b0002.s9|ts|res|q|rr,cmp
+EV|V3|b0002.s11|ts|int|hyp|ho
+EV|V4|b0002.s10|ts|res|na|rr
+P|G2|D2|neg|-|ts|neg:-:ts:V1||| NQO1*2 not associated with anthracycline-related CHF
+P|G1|D2|unc|-|ts|unc:-:ts:V2+V3|hedged_claim|V4|Non-significant trend; conclusion hedged with "may"
+P|G2|D1|nf|-|||||V1|Test scoped to anthracycline-related CHF only
+P|G1|D1|nf|-|||||V2|Test scoped to anthracycline-related CHF only
+F|F1|association|NQO1*2 vs CHF risk|anthracycline-treated childhood cancer survivors|not_significant|null|available|V1|small sample: 30 cases
+F|F2|association|CBR3 V244M genotype vs CHF risk|anthracycline-treated childhood cancer survivors|not_significant|positive|available|V2|trend only, P=.056 and .092
+F|F3|mechanism|CBR3 V244 vs M244 doxorubicinol synthesis|recombinant enzyme assay|significant|positive|available|V4|in vitro only

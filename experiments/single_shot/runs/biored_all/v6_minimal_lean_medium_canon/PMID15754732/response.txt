@@ -1,0 +1,25 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|MEN1|MEN1|r||human||
+E|D1|disease|primary hyperparathyroidism|Primary hyperparathyroidism;pHPT|r||||
+E|D2|disease|multiple endocrine neoplasia type 1|MEN1|p|ambiguous_mapping|||
+E|D3|disease|multiple endocrine neoplasia type 2|multiple endocrine neoplasia|p|ambiguous_mapping|||
+E|D4|disease|parathyroid tumors|parathyroid tumors;benign parathyroid lesion|r||||
+E|D5|disease|parathyroid adenoma|parathyroid adenoma|r||||
+E|D6|disease|parathyroid hyperplasia|hyperplasia|r||||
+E|D7|disease|parathyroid carcinoma|carcinoma;carcinomas|r||||
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s6|ts|res|aff|rr
+EV|V3|b0002.s11|ts|int|aff|rr,eda
+EV|V4|b0001.s1|ts|res|aff|rr
+EV|V5|b0002.s6|ts|neg|neg|rr
+EV|V6|b0002.s10+b0002.s12|ts|neg|neg|rr
+EV|V7|b0002.s1|bg|co|na|do
+P|G1|D1|sup|a|both|sup:a:ts:V2+V3+V4;sup:a:bg:V1|||Somatic MEN1 mutations in sporadic pHPT tumors
+P|G1|D4|sup|a|both|sup:a:bg:V1;sup:a:ts:V2+V3|||Mutations in 17.1% of benign parathyroid tumors
+P|G1|D7|neg|-|ts|neg:-:ts:V5|||No MEN1 alterations in four carcinomas
+P|G1|D2|nf|-||||V7|Syndrome named; gene link not stated
+F|F1|descriptive|MEN1 somatic mutation frequency|35 benign sporadic pHPT tumors|not_applicable|not_applicable|available|V2+V3|
+F|F2|group_comparison|MEN1 mutation in carcinoma vs benign|39 sporadic pHPT patients|unknown|null|partial|V5|only 4 carcinomas
+F|F3|correlation|MEN1 genotype vs clinical phenotype|39 sporadic pHPT patients|not_significant|null|unread|V6|abstract only
+R|surface uniqueness|b0002.s1|MEN1 is used for both gene and syndrome|Listed MEN1 under both entities with provisional disease identity

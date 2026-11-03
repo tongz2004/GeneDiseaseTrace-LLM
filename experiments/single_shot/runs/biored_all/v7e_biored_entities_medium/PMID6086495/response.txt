@@ -1,0 +1,14 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|dystrophin (DMD), Becker muscular dystrophy gene locus|BMD gene;Becker muscular dystrophy gene|p|ambiguous_mapping|human|||
+E|D1|disease|Becker muscular dystrophy|Becker muscular dystrophy;BMD;Becker|r||||
+E|D2|disease|Duchenne muscular dystrophy|Duchenne dystrophies|r||||
+X|RFLPs|b0002.s1|polymorphism markers, not genes
+X|DNA probes|b0002.s2|cloned probes, not genes
+EV|V1|b0001.s1+b0002.s1|ts|res|aff|rr,eda
+EV|V2|b0002.s2|ts|int|hyp|ho
+P|G1|D1|sup|c|ts|sup:c:ts:V1||||BMD gene localized to Xp21 by linkage
+P|G1|D2|unc|-|ts|unc:-:ts:V2|identity,hedged_claim|||Duchenne gene closely linked, allelism only hypothesized
+F|F1|association|BMD locus and Xp RFLP markers|30 BMD kindreds|unknown|positive|unread|V1|abstract only; LOD scores not given
+F|F2|hypothesis|BMD and DMD gene allelism|BMD and DMD|not_applicable|not_applicable|not_applicable|V2|
+R|gene named by disease|b0002.s1|Unidentified locus, named only as "BMD gene"|Mapped provisionally to dystrophin (DMD)

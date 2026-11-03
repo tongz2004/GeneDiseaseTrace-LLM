@@ -1,0 +1,13 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text unavailable
+E|G1|gene|SQSTM1|p62/sequestosome 1;p62/SQSTM1;p62/Sequestosome 1|r|||human||
+E|G2|gene|alkaline phosphatase|alkaline phosphatase|p|ambiguous_mapping|human||
+E|D1|disease|Paget's disease of bone|Paget's disease of bone;PDB|r|||||
+X|ubiquitin protein-binding domain|b0002|protein domain label, not a separate gene relation
+EV|V1|b0002.s1|bg|bgr|aff|ebr,eda
+EV|V2|b0002.s4+b0002.s6|ts|res|aff|cs,rr
+EV|V3|b0002.s8|ts|int|aff|cs,rr
+EV|V4|b0002.s7|ts|co|na|do
+P|G1|D1|sup|c|bg|sup:c:bg:V1;sup:r:ts:V2+V3|||Mutations cause PDB; M404V segregates in family
+P|G2|D1|nf|-||||V4|ALP normal in carriers; no gene-disease claim
+F|F1|association|M404V carrier status vs polyostotic PDB|Italian PDB family, 22 genotyped|not_applicable|positive|not_reported|V2+V3|single family; six asymptomatic carriers

@@ -1,0 +1,31 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text
+E|G1|gene|TRAF2|TNFR-associated factor 2;TRAF2;Traf2;TRAF2DN;Traf2DN|r|||non-human||
+E|G2|gene|BCL2|BCL-2|r|||||
+E|G3|gene|TRAF3|TRAF3|r|||non-human||
+E|G4|gene|XIAP|X-linked inhibitor of apoptosis|r|||non-human||
+E|G5|gene|BCL2L1|Bcl-X(L)|r|||non-human||
+E|G6|gene|BIRC2/BIRC3|cellular inhibitors of apoptosis 1 and 2|r|||non-human||
+E|G7|gene|NFKB2|p100 NF-kappaB2|r|||non-human||
+E|G8|gene|JNK|JNK|r|ambiguous_mapping||non-human||
+E|G9|gene|ERK|ERK|r|ambiguous_mapping||non-human||
+E|G10|gene|p38 MAPK|p38 MAPK;p38|r|ambiguous_mapping||non-human||
+E|G11|gene|CD40|CD40|r|||non-human||
+E|G12|gene|TNFSF13B|B cell activating factor|r|||non-human||
+E|D1|disease|chronic lymphocytic leukemia|chronic lymphocytic leukemia|r|||||
+E|D2|disease|small lymphocytic lymphoma|small lymphocytic lymphoma|r|||||
+X|BCR|b0002.s12|B cell receptor complex, not a single gene
+EV|V1|b0002.s1|bg|bgr|aff|ebr,mi
+EV|V2|b0001.s1|ts|res|aff|rr,mi
+EV|V3|b0002.s15|ts|int|aff|rr,mi
+EV|V4|b0002.s10+b0002.s15|ts|hyp|hyp|ho
+P|G1|D1|sup|c|both|sup:c:bg:V1;sup:c:ts:V2+V3||||TRAF2 deficiency mutant predisposes to CLL in mice
+P|G1|D2|sup|c|both|sup:c:bg:V1;sup:c:ts:V2+V3||||TRAF2 deficiency mutant predisposes to SLL in mice
+P|G2|D1|sup|c|both|sup:c:bg:V1;sup:c:ts:V3||||BCL-2 transgene cooperates in CLL development
+P|G2|D2|sup|c|both|sup:c:bg:V1;sup:c:ts:V3||||BCL-2 transgene cooperates in SLL development
+P|G4|D1|unc|-|ts|unc:-:ts:V4|hedged_claim|||XIAP increase proposed as possible mechanism
+P|G4|D2|unc|-|ts|unc:-:ts:V4|hedged_claim|||XIAP increase proposed as possible mechanism
+P|G12|D1|unc|-|ts|unc:-:ts:V3|hedged_claim|||BAFF independence proposed as possible mechanism
+P|G12|D2|unc|-|ts|unc:-:ts:V3|hedged_claim|||BAFF independence proposed as possible mechanism
+F|F1|mechanism|TRAF2 deficiency; XIAP, Bcl-X(L), cIAP levels|Traf2DN-tg mouse B cells|unknown|mixed|not_reported|V4|abstract only
+F|F2|hypothesis|TRAF2 deficiency plus BCL-2; CLL/SLL|tg mice|unknown|positive|not_reported|V1+V3|mechanism hedged

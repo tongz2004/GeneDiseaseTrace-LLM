@@ -1,0 +1,31 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; single case report
+E|G1|gene|SLC12A3|SLC12A3|r||human||
+E|D1|disease|Gitelman syndrome|Gitelman syndrome;GS|r||||
+E|D2|disease|idiopathic intracranial hypertension|idiopathic intracranial hypertension;pseudotumor cerebri|r||||
+E|D3|disease|Bartter syndrome|Bartter syndrome|r||||
+E|D4|disease|cerebral cavernous malformations|cerebral cavernous malformations|r||||
+E|D5|disease|familial cavernomatosis|familial cavernomatosis|r||||
+E|D6|disease|secondary aldosteronism|secondary aldosteronism|r||||
+E|S1|symptom|growth delay|growth delay|r||||
+E|S2|phenotype|metabolic alkalosis|metabolic alkalosis|r||||
+E|S3|phenotype|hypomagnesemia|hypomagnesemia|r||||
+E|S4|phenotype|hypokalemia|hypokalemia|r||||
+E|S5|symptom|bilateral papilledema|bilateral papilledema|r||||
+E|S6|phenotype|normocalciuria|normocalciuria|r||||
+X|p.Ser555Leu|b0002|variant identifier, not a gene
+X|c.2633+1G>C|b0002|variant identifier, not a gene
+EV|V1|b0002.s4|ts|res|aff|rr,eda
+EV|V2|b0002.s5|ts|res|aff|cs,cmp
+EV|V3|b0001.s1|ts|int|aff|eda
+EV|V4|b0002.s8|ts|hyp|hyp|ho
+EV|V5|b0002.s10|ts|res|neg|cs
+EV|V6|b0002.s3+b0002.s4|ts|co|na|do
+EV|V7|b0002.s6|ts|res|na|rr
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V2|||Compound heterozygous mutations, cosegregation, molecular diagnosis
+P|G1|D2|unc|-|ts|unc:-:ts:V3+V4|hedged_claim||Title links; mechanism stated only as possibility
+P|G1|D5|unc|-|ts|unc:-:ts:V5|scope||Independent segregation stated for GS, not gene
+P|G1|D3|nf|-|||||V6|Bartter only initial clinical diagnosis
+F|F1|association|SLC12A3 mutations vs GS in family|proband family|not_applicable|positive|not_reported|V2|single family
+F|F2|descriptive|SLC12A3 mutations in controls|200 normal chromosomes|not_applicable|not_applicable|partial|V2|
+F|F3|mechanism|c.2633+1G>C splicing, exon 22 skipping|proband cDNA|not_applicable|not_applicable|not_applicable|V7|

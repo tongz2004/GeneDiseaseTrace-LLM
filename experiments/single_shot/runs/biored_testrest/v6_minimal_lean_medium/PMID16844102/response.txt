@@ -1,0 +1,7 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no gene entities present
+E|D1|disease|neurotoxicity|neurotoxicity;dopaminergic neurotoxicity|r|||||
+E|D2|disease|hyperthermia|hyperthermia|r|||||
+E|D3|disease|neuronal damage|neuronal damage|p|||||
+X|glutathione|b0002|chemical metabolite, not a gene
+X|dopamine|b0002|neurotransmitter chemical, not a gene

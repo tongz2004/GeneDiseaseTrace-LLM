@@ -1,0 +1,18 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|ANKH|ANKH|r||human||
+E|G2|gene|COL10A1|type X collagen|p|ambiguous_mapping|human||
+E|D1|disease|chondrocalcinosis|chondrocalcinosis|r|||||
+E|D2|disease|pseudogout|pseudogout|r|||||
+E|PH1|phenotype|chondrocyte hypertrophy|chondrocyte hypertrophy|r|||||
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s6|ts|res|aff|rr,cmp
+EV|V3|b0002.s7|both|res|aff|rr,ebr
+EV|V4|b0002.s9+b0002.s10|ts|int|aff|rr,eda
+EV|V5|b0002.s3|ts|co|na|do
+EV|V6|b0001.s1|ts|res|aff|rr
+P|G1|D1|sup|c|ts|sup:c:ts:V3+V4;sup:a:ts:V2+V6;sup:a:bg:V1|||Sporadic genotype association plus functional up-regulation evidence
+P|G1|D2|unc|-|ts||scope|V5|Pseudogout pooled with chondrocalcinosis cohort only
+F|F1|association|ANKH -4bp G>A genotype; chondrocalcinosis|128 sporadic cases vs matched controls|significant|positive|partial|V2|Minor-allele homozygotes; abstract statistics only
+F|F2|mechanism|ANKH variants; ANKH transcription/translation|reticulocyte in vitro system|unknown|positive|not_reported|V3|143-bp T>C variant had no effect
+F|F3|mechanism|ANKH variants; extracellular PPi; type X collagen|transfected CH-8 chondrocytes|unknown|mixed|not_reported|V4|Divergent effects by mutant

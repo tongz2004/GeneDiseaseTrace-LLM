@@ -1,0 +1,43 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; mouse alcohol-feeding study
+E|D1|disease|lipodystrophy|lipodystrophy|r|||||
+E|S1|phenotype|loss of white adipose tissue|loss of white adipose tissue|r||||
+E|S2|phenotype|decrease in whole-body fat mass|Decreased Whole-Body Fat Mass|r||||
+E|G1|gene|S6K1|S6K1|r||non-human||
+E|G2|gene|mTOR|mammalian target of rapamycin;mTOR|r||non-human||
+E|G3|gene|4E-BP1|4E-BP1|r||non-human||
+E|G4|gene|Akt|Akt|r||non-human||
+E|G5|gene|PRAS40|PRAS40|r||non-human||
+E|G6|gene|S6|S6|r||non-human||
+E|G7|gene|eIF4B|eIF4B|r||non-human||
+E|G8|gene|eEF2K|eEF2K|r||non-human||
+E|G9|gene|eEF2|eEF2|r||non-human||
+E|G10|ambiguous_gene|Atg12-5|Atg12-5|u|ambiguous_mapping|non-human||
+E|G11|gene|LC3B|LC3B|r||non-human||
+E|G12|gene|ULK1|ULK1|r||non-human||
+E|G13|gene|caspase-3|caspase-3|r||non-human||
+E|G14|gene|caspase-9|-9|p|other|non-human||
+E|G15|gene|PARP|PARP|r||non-human||
+E|G16|gene|ATGL|ATGL|r||non-human||
+E|G17|gene|HSL|HSL|r||non-human||
+E|G18|gene|PPARgamma|PPARgamma|r||non-human||
+E|G19|gene|C/EBPalpha|C/EBPalpha|r||non-human||
+E|G20|gene|TNF-alpha|TNF-alpha|r||non-human||
+E|G21|gene|IL-6|IL-6|r||non-human||
+E|G22|gene|IL-1beta|IL-1beta|r||non-human||
+E|G23|gene|NLRP3|NLRP3|r||non-human||
+E|G24|ambiguous_gene|ACS|ACS|u|undefined_abbreviation|non-human||
+E|G25|gene|caspase-1|caspase-1|r||non-human||
+E|G26|gene|insulin|insulin|r||non-human||
+X|NLRP3 inflammasome|b0002|complex, not single gene
+X|pyroptosis|b0002|cell death process, not disease
+X|apoptosis|b0002|cell process, not disease
+EV|V1|b0002.s1|bg|bgr|na|do
+EV|V2|b0001.s1+b0002.s7+b0002.s13|ts|int|aff|rr,unc
+EV|V3|b0002.s2+b0002.s6|ts|hyp|q|ho
+P|G1|D1|unc|-|ts|unc:-:ts:V2|scope,hedged_claim|V1|fat mass phenotype link; lipodystrophy only background framing
+P|G2|D1|nf|-|||||V3|hypothesis only; null result concerns protein synthesis
+F|F1|group_comparison|S6K1, S6, eIF4B phosphorylation|alcohol-fed vs control mice eWAT|unknown|positive|not_reported|V2|abstract only
+F|F2|group_comparison|mTOR, 4E-BP1, Akt, PRAS40 phosphorylation|alcohol-fed vs control mice eWAT|not_significant|null|not_reported|V3|abstract only
+R|Suspected typo|b0002.s11|ACS likely ASC; no same-referent evidence in text|Kept as unresolved ambiguous_gene
+R|Surface form|b0002.s9|caspase-9 written only as "-9" after caspase-3|Used "-9" surface; provisional

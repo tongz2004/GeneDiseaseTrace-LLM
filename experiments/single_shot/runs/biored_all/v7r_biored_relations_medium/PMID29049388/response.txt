@@ -1,0 +1,35 @@
+META|Claude Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text, tables or figures
+E|G1|gene|NPHS2|NPHS2;podocin|r|||human||
+E|G2|gene|MIR21|miRNA21|p|ambiguous_mapping|non-human||
+E|G3|gene|MIR193A|miRNA-193a|p|ambiguous_mapping|non-human||
+E|D1|disease|nephrotic syndrome|nephrotic syndrome|r|||||
+E|D2|disease|end-stage renal disease|end-stage renal disease|r|||||
+E|D3|disease|renal failure|renal failure|r|||||
+E|D4|disease|proteinuria|proteinuria|r|||||
+E|D5|disease|glomerulosclerosis|glomerulosclerosis|r|||||
+E|D6|disease|tubulointerstitial fibrosis|tubulointerstitial fibrosis|r|||||
+E|S1|phenotype|foot process effacement|Foot process fusion|r|||||
+X|Cre recombinase|b0002|transgenic tool enzyme, not a studied gene
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s2|bg|bgr|aff|ebr
+EV|V3|b0002.s3|bg|bgr|aff|ebr,mi
+EV|V4|b0002.s4+b0002.s5|ts|res|aff|rr,mi
+EV|V5|b0002.s6|ts|res|aff|rr,mi
+EV|V6|b0002.s9+b0002.s14|ts|res|aff|rr,mi
+EV|V7|b0002.s10|ts|res|aff|rr,mi
+EV|V8|b0002.s13|ts|int|aff|mi
+EV|V9|b0002.s12|ts|res|aff|rr,do
+EV|V10|b0002.s11|ts|res|aff|rr,mi
+P|G1|D1|sup|c|both|sup:c:bg:V1;sup:c:ts:V8||V10|NPHS2 mutations cause nephrotic syndrome; model confirms
+P|G1|D2|sup|a|bg|sup:a:bg:V2|||R138Q associated with progression to ESRD
+P|G1|D3|sup|c|both|sup:c:bg:V3;sup:c:ts:V5|||R140Q knock-in causes renal failure
+P|G1|D4|sup|c|ts|sup:c:ts:V4|||R140Q induction causes proteinuria
+P|G1|D5|sup|c|ts|sup:c:ts:V6|||R140Q induction produces segmental glomerulosclerosis
+P|G1|D6|sup|c|ts|sup:c:ts:V7|||fibrosis develops in R140Q mice
+P|G2|D1|sup|r|ts|sup:r:ts:V9|||miRNA21 rises during disease course
+P|G3|D1|sup|r|ts|sup:r:ts:V9|||miRNA-193a peaks during disease course
+F|F1|mechanism|R140Q podocin mRNA and protein|inducible NPHS2 R140Q/- mice|unknown|mixed|not_reported|V10|abstract only
+F|F2|correlation|early proteinuria vs later tubulointerstitial fibrosis|R140Q mice|unknown|positive|not_reported|V7|abstract only
+F|F3|descriptive|miRNA21 and miRNA-193a expression time course|R140Q mice|unknown|positive|not_reported|V9|abstract only
+R|ortholog merging|b0002.s3-s4|Mouse podocin R140Q results stand for human NPHS2 R138Q|Merged into human NPHS2 entity G1

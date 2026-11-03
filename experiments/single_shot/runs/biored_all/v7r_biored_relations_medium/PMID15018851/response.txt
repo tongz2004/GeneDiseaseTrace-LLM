@@ -1,0 +1,16 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text available
+E|G1|gene|UL97 protein kinase (CMV)|UL97|r||non-human||
+E|G2|gene|DNA polymerase UL54 (CMV)|DNA polymerase|p|ambiguous_mapping|non-human||
+E|G3|gene|glycoprotein B (CMV)|glycoprotein B;gB|r||non-human||
+E|D1|disease|cytomegalovirus infection|cytomegalovirus;CMV|p|other|||
+E|D2|disease|non-Hodgkin lymphoma|non-Hodgkin's lymphoma;lymphoma|r||||
+X|UL10-13|b0002.s5|viral genomic region used for strain typing, not a gene product
+X|a-|b0002.s5|viral a-sequence region, not a gene
+EV|V1|b0002.s8|ts|res|aff|rr
+EV|V2|b0002.s9|ts|res|aff|rr
+P|G1|D1|unc|-|ts||scope|V1|Mutations confer drug resistance, not disease relation
+P|G2|D1|unc|-|ts||scope|V2|Substitutions confer drug resistance, not disease relation
+F|F1|association|UL97 residues 591/592/594; ganciclovir resistance|one CMV-infected NHL patient|unknown|positive|not_reported|V1|single patient case
+F|F2|association|pol N495K/L501I; foscarnet/ganciclovir/cidofovir resistance|one CMV-infected NHL patient|unknown|positive|not_reported|V2|single patient case
+R|pathogen gene with drug resistance|b0002.s8|Viral gene variants relate to drug resistance, not clearly to the infection|Marked unc with scope reason

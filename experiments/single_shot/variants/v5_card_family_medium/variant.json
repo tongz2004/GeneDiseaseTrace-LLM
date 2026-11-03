@@ -1,0 +1,1 @@
+{"name": "v5_card_family_medium", "effort": "medium", "description": "V1 with one change in card.md: gene families, protein complexes and receptor classes named as one unit become gene endpoints marked (family), instead of being excluded. Members still get no relation from the family (gene-set rule unchanged)."}

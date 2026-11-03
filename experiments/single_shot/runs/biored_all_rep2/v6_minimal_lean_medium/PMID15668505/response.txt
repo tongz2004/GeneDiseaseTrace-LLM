@@ -1,0 +1,20 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|BRCA2|BRCA2|r|||human||
+E|G2|gene|BRCA1|BRCA1|r|||human||
+E|D1|disease|breast cancer|breast cancer|r|||||
+E|D2|disease|ovarian cancer|ovarian cancer|r|||||
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s6|ts|neg|neg|rr
+EV|V3|b0002.s7|ts|res|aff|rr,cmp
+EV|V4|b0001.s1+b0002.s2|ts|aim|pre|none
+EV|V5|b0002.s9|ts|int|hyp|ho
+EV|V6|b0002.s8|ts|neg|na|rr
+P|G1|D1|sup|a|bg|sup:a:bg:V1;neg:-:ts:V2|scope||Background association; no modification in BRCA1 carriers
+P|G1|D2|sup|a|both|sup:a:bg:V1;sup:a:ts:V3|hedged_claim|V5|203A allele borderline ovarian risk increase
+P|G2|D1|unc|-|unk|unc:-:unk:V4|presupposed_only||Carrier risk presupposed, not tested
+P|G2|D2|unc|-|unk|unc:-:unk:V4|presupposed_only||Carrier risk presupposed, not tested
+F|F1|association|BRCA2 N372H, 203G>A vs breast cancer|BRCA1 mutation carriers|not_significant|null|partial|V2|
+F|F2|association|BRCA2 203A allele vs ovarian cancer|BRCA1 mutation carriers|significant|positive|available|V3|borderline; HR 1.43, CI 1.01-2.00
+F|F3|association|BRCA2 N372H vs ovarian cancer|BRCA1 mutation carriers|not_significant|null|not_reported|V3|
+F|F4|descriptive|N372H Hardy-Weinberg equilibrium|female BRCA1 carriers|not_significant|null|not_reported|V6|

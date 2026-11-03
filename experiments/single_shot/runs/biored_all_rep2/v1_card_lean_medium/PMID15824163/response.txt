@@ -1,0 +1,24 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|BRAF|BRAF|r|||human||
+E|D1|disease|melanoma|melanoma|r||||
+E|D2|disease|nevus|nevus;nevi;benign nevi;atypical nevi|r||||
+E|D3|disease|familial melanoma|familial melanoma|r|||D1|
+E|D4|disease|sporadic melanoma|sporadic melanoma|r|||D1|
+X|rs1639679|b0002|variant identifier, not a gene
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s2|bg|neg|neg|ebr
+EV|V3|b0002.s3|bg|bgr|aff|ebr
+EV|V4|b0002.s9+b0002.s10|ts|neg|neg|rr,cmp
+EV|V5|b0002.s11|ts|neg|neg|rr,cmp
+EV|V6|b0002.s4+b0002.s5|ts|hyp|hyp|ho
+EV|V7|b0002.s7|ts|res|na|do
+P|G1|D1|sup|a|bg|sup:a:bg:V1;neg:-:ts:V4|||Somatic mutations reported; this study negative for susceptibility
+P|G1|D2|sup|a|bg|sup:a:bg:V1;neg:-:ts:V5|||Somatic mutations in nevi; no genotype-nevus count association
+P|G1|D3|neg|-|bg|neg:-:bg:V2|||Germline mutations not causal in melanoma families
+P|G1|D4|sup|a|bg|sup:a:bg:V3||V6|Cited study: haplotype associated with sporadic melanoma
+F|F1|association|BRAF rs1639679 genotype/allele frequency vs melanoma|incident cases vs female GP controls|not_significant|null|not_reported|V4|abstract only
+F|F2|group_comparison|BRAF genotype/allele frequency by sex|male vs female incident cases|not_significant|null|not_reported|V4|abstract only
+F|F3|association|BRAF genotype vs banal/atypical nevus count|cases and controls|not_significant|null|not_reported|V5|abstract only
+F|F4|descriptive|promoter indel in LD with rs1639679|184 familial melanoma cases|not_applicable|not_applicable|not_reported|V7|
+R|single status per pair|G1-D1, G1-D2|background somatic-mutation support versus this study's negative germline susceptibility result|status sup:a:bg chosen because questions differ; negative recorded as claim

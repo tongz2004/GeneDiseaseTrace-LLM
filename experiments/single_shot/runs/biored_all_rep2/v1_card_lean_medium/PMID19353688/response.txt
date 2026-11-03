@@ -1,0 +1,24 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|PCDH9|PCDH9;protocadherin-9;PCHD9|p|suspected_typo|human||
+E|D1|disease|autosomal dominant auditory neuropathy|autosomal dominant auditory neuropathy;AUNA1|r|||||
+E|D2|disease|deafness|deafness|r|||||
+E|D3|disease|monosomy 13q21.2-q31.1|pure monosomy;monosomy 13q21.2-q31.3|p|other||||
+E|D4|disease|pure trisomy 13q21.2-31.1|pure trisomy;pure partial trisomy|r|||||
+E|D5|disease|contiguous gene deletion syndromes|contiguous gene deletion syndromes|r|||||
+E|S1|phenotype|duodenal stenosis|duodenal stenosis|r|||||
+E|S2|phenotype|vertebral anomalies|vertebral anomalies|r|||||
+E|S3|phenotype|facial dysmorphisms|facial dysmorphisms|r|||||
+E|S4|phenotype|developmental and growth delay|developmental and growth delay|r|||||
+X|Insertional translocations|b0002|structural rearrangement, not a disease endpoint
+X|13q14-21|b0002|chromosomal locus, not a gene
+EV|V1|b0001.s1+b0002.s7+b0002.s8|ts|neg|neg|rr
+EV|V2|b0002.s6|ts|hyp|hyp|ho
+EV|V3|b0002.s9|ts|int|hyp|ho
+EV|V4|b0002.s5|ts|co|na|do
+P|G1|D1|neg|-|ts|neg:-:ts:V1||V2|no mutations; PCDH9 excluded for AUNA1
+P|G1|D2|unc|-|ts|unc:-:ts:V2+V3|hedged_claim|V4|deafness may result from PCDH9 monosomy
+P|G1|D3|nf|-||||V4|gene lies in segment; no attribution
+F|F1|descriptive|PCDH9 coding sequence|AUNA1 family; monosomic patient|not_applicable|null|not_applicable|V1|abstract only
+F|F2|other|AUNA1 breakpoint vs PCDH9|AUNA1 family|not_applicable|not_applicable|not_reported|V1|mapping 35 kb 5' to PCDH9
+C|C1|monosomy segment end q31.1 vs q31.3|b0002.s4+b0002.s9|noncritical|unresolved|band name differs; identity kept as one

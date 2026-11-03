@@ -1,0 +1,20 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|miR-501|miR-501|r||non-human||
+E|G2|gene|Clcn5|chloride channel, voltage-sensitive 5;Clcn5|r||non-human||
+E|G3|gene|MYH3|embryonic myosin heavy chain;MYH3|r||non-human||
+E|G4|gene|gigaxonin|gigaxonin|r||non-human||
+E|G5|gene|myosin heavy chain|myosin heavy chain|p|ambiguous_mapping|non-human||
+E|D1|disease|muscle injury|muscle injury|r||||
+E|D2|disease|mdx muscular dystrophy model|mdx|p|other|||
+X|cardiotoxin|b0002.s2|inducing agent, not a gene
+X|FAPs|b0002.s2|cell population abbreviation, not a gene
+EV|V1|b0002.s2|ts|res|aff|rr
+EV|V2|b0002.s3|ts|res|aff|mi
+EV|V3|b0002.s5|ts|res|aff|rr,cmp
+P|G1|D1|sup|r|ts|sup:r:ts:V1+V2||| miR-501 induced and needed during injury regeneration
+P|G1|D2|sup|r|ts|sup:r:ts:V3||| miR-501 induced; serum levels track disease state
+P|G3|D1|unc|-|ts|unc:a:ts:V2|support_basis_unresolved|| MYH3 induction in regeneration is only implied
+F|F1|mechanism|miR-501 inhibition; MYH3 induction|CTX-injured mouse muscle|unknown|positive|unread|V2|abstract only
+F|F2|correlation|miR-501 serum level; disease state|mdx mice|unknown|positive|unread|V3|abstract only
+R|disease identity|b0002.s5|mdx is a mouse strain; the disease is not named explicitly|Used mdx as a provisional disease entity

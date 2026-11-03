@@ -1,0 +1,25 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text
+E|G1|gene|IRF6|IRF6;interferon regulatory factor 6|r||human||
+E|G2|gene|Smad transcription factors|Smad|p|other|human||
+E|D1|disease|Van der Woude syndrome|Van der Woude syndrome;VWS|r||||
+E|D2|disease|orofacial cleft|orofacial cleft|r||||
+E|D3|disease|cleft lip and palate|cleft lip and palate|r||||
+E|D4|disease|lower lip pits|lower lip pits|r||||
+E|D5|disease|cleft lip|cleft lip|r||||
+E|D6|disease|cleft palate|cleft palate|r||||
+E|D7|disease|hypodontia|hypodontia|r||||
+X|Smad-interferon regulatory factor-binding domain|b0002|protein domain, not a separate gene
+EV|V1|b0002.s3+b0002.s5|bg|bgr|aff|ebr
+EV|V2|b0002.s1+b0002.s6+b0002.s9|ts|res|aff|rr,cs
+EV|V3|b0002.s2|bg|co|na|do
+EV|V4|b0002.s10|ts|int|hyp|ho
+P|G1|D1|sup|c|both|sup:c:bg:V1;sup:c:ts:V2|||Known VWS gene; novel Y67X found in patients
+P|G1|D2|unc|-|bg|unc:-:bg:V1+V3|scope|V3|Linked only through VWS as syndromic cleft
+P|G1|D4|unc|-|bg|unc:-:bg:V3|scope|V3|VWS feature; not tested per patient
+P|G1|D5|unc|-|bg|unc:-:bg:V3|scope|V3|VWS feature; not tested per patient
+P|G1|D6|unc|-|bg|unc:-:bg:V3|scope|V3|VWS feature; not tested per patient
+P|G1|D7|unc|-|bg|unc:-:bg:V3|scope|V3|VWS feature; not tested per patient
+P|G2|D1|nf|-||||V4|Smad interaction only mechanistic speculation
+F|F1|descriptive|IRF6 c.201C>A p.Y67X|5 affected German family members|not_applicable|not_applicable|not_reported|V2|abstract only; 5 of 12 tested
+F|F2|mechanism|Y67X truncation, Smad-IRF domain loss|predicted protein|not_applicable|not_applicable|not_applicable|V4|inferred, not tested experimentally

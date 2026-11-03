@@ -1,0 +1,26 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only; references and full text unavailable.
+E|G1|gene|SLC30A8|SLC30A8|r||human||
+E|G2|gene|HHEX|HHEX|r||human||
+E|G3|ambiguous_gene|CDKN2A/B|CDKN2A/B|u|ambiguous_mapping|human||
+E|G4|gene|IGF2BP2|IGF2BP2|r||human||
+E|G5|gene|FTO|FTO|r||human||
+E|G6|gene|WFS1|WFS1|r||human||
+E|G7|gene|CDKAL1|CDKAL1|r||human||
+E|G8|gene|KCNQ1|KCNQ1|r||human||
+E|D1|disease|type 2 diabetes mellitus|type 2 diabetes;type 2 diabetes mellitus;T2DM|r||||
+E|A1|phenotype|body weight|body weight|r||||
+E|A2|phenotype|body mass index|body mass index|r||||
+E|A3|phenotype|fasting plasma glucose|fasting plasma glucose|r||||
+EV|V1|b0002.s5|ts|res|aff|rr,cmp
+EV|V2|b0002.s6|ts|res|aff|rr,cmp
+EV|V3|b0002.s7|ts|res|aff|rr,cmp
+EV|V4|b0002.s7|ts|neg|neg|rr,cmp
+P|G1|D1|sup|a|ts|sup:a:ts:V3|||Nominal association for rs13266634 in Korean case-control study.
+P|G2|D1|sup|a|ts|sup:a:ts:V2|||Significant association for rs1111875 G allele.
+P|G3|D1|unc|-|ts|unc:a:ts:V2|identity||Combined designation prevents attribution to an individual gene.
+P|G4|D1|neg|-|ts|neg:a:ts:V4|||Tested rs4402960 showed no association in this population.
+P|G5|D1|neg|-|ts|neg:a:ts:V4|||Tested rs8050136 showed no association in this population.
+P|G6|D1|neg|-|ts|neg:a:ts:V4|||Tested rs734312 showed no association in this population.
+P|G7|D1|sup|a|ts|sup:a:ts:V1|||Strongest reported association, involving rs7754840.
+P|G8|D1|sup|a|ts|sup:a:ts:V2|||Significant association for rs2237892 C allele.

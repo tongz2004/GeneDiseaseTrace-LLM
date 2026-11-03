@@ -1,0 +1,17 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|DBP|Vitamin D-binding protein;DBP|r||human||
+E|G2|gene|IA-2|IA-2|p|other|human||
+E|G3|gene|GAD65|GAD65|p|other|human||
+E|D1|disease|type 1 diabetes|type 1 diabetes|r||||
+EV|V1|b0002.s4|bg|bgr|aff|ebr
+EV|V2|b0002.s9|ts|res|aff|rr,cmp
+EV|V3|b0002.s10|ts|neg|neg|rr,cmp
+EV|V4|b0002.s11|ts|int|aff|unc
+EV|V5|b0002.s5|ts|aim|na|none
+P|G1|D1|sup|a|bg|sup:a:bg:V1;unc:-:ts:V4|support_basis_unresolved|V2+V3+V5|Background DBP allele-T1D link; study tests within-T1D markers
+P|G2|D1|nf|-||||V2+V5|Autoantibody marker only, no gene-status link
+P|G3|D1|nf|-||||V3+V5|Autoantibody marker only, no gene-status link
+F|F1|group_comparison|DBP codon 416 Glu genotypes vs IA-2 antibodies|T1D patients|significant|positive|partial|V2|abstract only; P<0.01 reported
+F|F2|group_comparison|DBP Glu genotype vs GAD65 antibodies|T1D patients|not_significant|null|not_reported|V3|abstract only
+R|gene status|G2,G3|IA-2/GAD65 appear only as autoantibody targets, not gene status|Kept as gene entities; no pairs with T1D

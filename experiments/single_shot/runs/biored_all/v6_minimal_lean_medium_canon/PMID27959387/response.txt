@@ -1,0 +1,56 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text, tables or figures
+E|G1|gene|POU5F1|Oct4|r||human||
+E|G2|gene|NANOG|Nanog|r||human||
+E|G3|gene|CEACAM6|Ceacam6|r||human||
+E|G4|gene|metallothionein gene family|metallothionein genes|p|other|human||
+E|G5|gene|MT1X|MT1X|r||human|G4|
+E|G6|gene|STEAP4|STEAP4|r||human||
+E|G7|gene|SERPINA3|SERPINA3|r||human||
+E|G8|gene|SAMD9|SAMD9|r||human||
+E|G9|gene|GDF15|GDF15|r||human||
+E|G10|gene|KRT15|KRT15|r||human||
+E|G11|gene|ITGB6|ITGB6|r||human||
+E|G12|gene|TP63|TP63|r||human||
+E|G13|gene|PGR|PGR|r||human||
+E|G14|gene|CEACAM gene family|CEACAM|p|other|human||
+E|G15|gene|HLA gene family|HLA|p|other|human||
+E|D1|disease|breast cancer|breast cancer|r||||
+E|D2|disease|malignant neoplasm|malignancy|p|ambiguous_mapping|||
+X|epithelial mesenchymal transition (EMT)|b0002|cellular process, not a disease
+X|oncogenic transformation|b0002|cellular process, not a disease entity
+X|interferon related|b0002|vague gene group label; no resolvable gene name
+X|MCF-7|b0001|cell line name, not a gene
+EV|V1|b0002.s6|ts|res|aff|rr
+EV|V2|b0002.s5|ts|res|aff|rr
+EV|V3|b0002.s8|both|res|aff|rr,ebr
+EV|V4|b0002.s7|ts|res|aff|rr
+EV|V5|b0002.s9|ts|res|aff|rr
+EV|V6|b0002.s11+b0002.s13|ts|int|hyp|rr,unc
+P|G1|D1|unc|-|ts|unc:a:ts:V1+V2|support_basis_unresolved|V6|ethanol-induced expression in cancer cell line only
+P|G2|D1|unc|-|ts|unc:a:ts:V1+V2|support_basis_unresolved|V6|ethanol-induced expression in cancer cell line only
+P|G3|D2|sup|a|bg|sup:a:bg:V1|||labeled malignancy marker
+P|G3|D1|unc|-|ts|unc:a:ts:V1|support_basis_unresolved|V6|upregulated by ethanol in MCF-7 cells
+P|G6|D2|sup|a|bg|sup:a:bg:V3|||called malignancy related gene
+P|G7|D2|sup|a|bg|sup:a:bg:V3|||called malignancy related gene
+P|G8|D2|sup|a|bg|sup:a:bg:V3|||called malignancy related gene
+P|G9|D2|sup|a|bg|sup:a:bg:V3|||called malignancy related gene
+P|G10|D2|sup|a|bg|sup:a:bg:V3|||called malignancy related gene
+P|G11|D2|sup|a|bg|sup:a:bg:V3|||called malignancy related gene
+P|G12|D2|sup|a|bg|sup:a:bg:V3|||called malignancy related gene
+P|G13|D2|sup|a|bg|sup:a:bg:V3|||called malignancy related gene
+P|G14|D2|sup|a|bg|sup:a:bg:V3|||called malignancy related family
+P|G15|D2|sup|a|bg|sup:a:bg:V3|||called malignancy related family
+P|G6|D1|unc|-|ts|unc:a:ts:V3|support_basis_unresolved|V5|upregulated by ethanol in MCF-7 cells
+P|G7|D1|unc|-|ts|unc:a:ts:V3|support_basis_unresolved|V5|upregulated by ethanol in MCF-7 cells
+P|G8|D1|unc|-|ts|unc:a:ts:V3|support_basis_unresolved|V5|upregulated by ethanol in MCF-7 cells
+P|G9|D1|unc|-|ts|unc:a:ts:V3|support_basis_unresolved|V5|upregulated by ethanol in MCF-7 cells
+P|G10|D1|unc|-|ts|unc:a:ts:V3|support_basis_unresolved|V5|upregulated by ethanol in MCF-7 cells
+P|G11|D1|unc|-|ts|unc:a:ts:V3|support_basis_unresolved|V5|upregulated by ethanol in MCF-7 cells
+P|G12|D1|unc|-|ts|unc:a:ts:V3|support_basis_unresolved|V5|upregulated by ethanol in MCF-7 cells
+P|G13|D1|unc|-|ts|unc:a:ts:V3|support_basis_unresolved|V5|upregulated by ethanol in MCF-7 cells
+P|G5|D1|nf|-||||V4|ethanol-induced expression only; no disease link stated
+F|F1|group_comparison|ethanol 4-week vs control; Oct4, Nanog, Ceacam6|MCF-7 breast cancer cells|unknown|positive|not_reported|V1|abstract only
+F|F2|group_comparison|ethanol 1-week dose; Oct4, Nanog|MCF-7 breast cancer cells|unknown|mixed|not_reported|V2|up at 1-5 mM, down at 25 mM
+F|F3|group_comparison|ethanol 1-week; metallothionein genes, MT1X|MCF-7 breast cancer cells|unknown|positive|not_reported|V4|microarray only
+F|F4|group_comparison|ethanol 4-week; malignancy related genes|MCF-7 breast cancer cells|unknown|positive|not_reported|V3+V5|partial RT-PCR validation

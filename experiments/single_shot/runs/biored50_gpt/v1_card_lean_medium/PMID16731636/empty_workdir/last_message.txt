@@ -1,0 +1,26 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only; full paper unavailable.
+E|G1|gene|angiotensinogen|angiotensinogen|r||non-human||
+E|G2|gene|beta-AR kinase-1|beta-AR kinase-1|r||non-human||
+E|D1|disease|cardiac hypertrophy|cardiac hypertrophy|r||||
+E|D2|disease|LV hypertrophy|LV hypertrophy|r|||D1|
+E|H1|phenotype|heart rate|heart rate|r||||
+E|H2|phenotype|left ventricular pressure|left ventricular (LV) pressure|r||||
+E|H3|phenotype|maximal contraction|maximal contraction|r||||
+E|H4|phenotype|cardiac inotropic response|cardiac inotropic response|r||||
+E|H5|phenotype|sympathetic outflow|sympathetic outflow|r||||
+X|renin-angiotensin system|b0002|pathway
+X|RAS|b0002|pathway abbreviation
+X|beta-adrenoceptor|b0002|receptor family; no individual gene resolved
+X|beta-AR|b0002|receptor family abbreviation
+EV|V1|b0002.s3+b0002.s5+b0002.s8|ts|res|aff|rr,mi
+EV|V2|b0002.s6|ts|res|aff|rr
+EV|V3|b0002.s3+b0002.s4|ts|res|aff|rr,cmp
+EV|V4|b0002.s3+b0002.s7|ts|res|aff|rr,cmp
+EV|V5|b0002.s8|ts|int|hyp|ho
+P|G1|D1|sup|c|ts|sup:c:ts:V1||||Low brain angiotensinogen enhances induced cardiac hypertrophy.
+P|G1|D2|sup|c|ts|sup:c:ts:V1||||Transgenic reduction enhances isoproterenol-induced LV hypertrophy.
+P|G2|D2|sup|a|ts|sup:a:ts:V2||||Greater hypertrophy explicitly accompanies increased kinase mRNA.
+F|F1|group_comparison|angiotensinogen reduction; ventricular pressure; maximal contraction|Isolated TGR versus SD hearts|significant|positive|partial|V3|Isoproterenol response.
+F|F2|group_comparison|angiotensinogen reduction; heart rate response|Conscious TGR versus SD rats|mixed|mixed|partial|V4|Metoprolol attenuation; similar atropine response.
+F|F3|hypothesis|sympathetic outflow; cardiac response; angiotensinogen reduction|TGR rats|not_applicable|unknown|not_applicable|V5|Proposed mechanism remains hedged.

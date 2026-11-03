@@ -1,0 +1,63 @@
+{
+  "paper_id": "PMID23069675",
+  "variant": "v1_card_lean_medium",
+  "model": "GPT-6.1_sol",
+  "cli_model": "gpt-6.1-sol",
+  "effort": "medium",
+  "variant_hashes": {
+    "card.md": "de7857e6a3f667c39d4f914b9688e0db1c3c6862544c68068fd8e60c5607f1da",
+    "format.md": "392cb436fc41c69751174a204919761ca82f1ddd0d57d43c6457b855d6eed989"
+  },
+  "fixed_characters": 11284,
+  "paper_characters": 3002,
+  "calls": [
+    {
+      "seconds": 71.5,
+      "exit_code": 0,
+      "usage": {
+        "input_tokens": 8449,
+        "cache_read_input_tokens": 12416,
+        "output_tokens": 1576,
+        "reasoning_output_tokens": 820
+      },
+      "usage_events": [
+        {
+          "input_tokens": 20865,
+          "cached_input_tokens": 12416,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1576,
+          "reasoning_output_tokens": 820
+        }
+      ],
+      "cost_usd": null,
+      "stderr": ""
+    },
+    {
+      "seconds": 18.8,
+      "exit_code": 0,
+      "usage": {
+        "input_tokens": 9302,
+        "cache_read_input_tokens": 12416,
+        "output_tokens": 1015,
+        "reasoning_output_tokens": 255
+      },
+      "usage_events": [
+        {
+          "input_tokens": 21718,
+          "cached_input_tokens": 12416,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1015,
+          "reasoning_output_tokens": 255
+        }
+      ],
+      "cost_usd": null,
+      "stderr": ""
+    }
+  ],
+  "first_response_problems": [
+    "E D2: duplicate id, bad type/identity or unknown unit",
+    "E D3: duplicate id, bad type/identity or unknown unit",
+    "P G1-D2: endpoints must be a primary gene and a primary target in the same unit",
+    "P G1-D3: endpoints must be a primary gene and a primary target in the same unit"
+  ]
+}

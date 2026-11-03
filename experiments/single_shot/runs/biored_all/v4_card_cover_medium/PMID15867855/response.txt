@@ -1,0 +1,25 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|TIM-1|T-cell immunoglobulin mucin 1;TIM-1|r||human||
+E|G2|gene|TIM-3|T-cell immunoglobulin mucin 3;TIM-3|r||human||
+E|D1|disease|asthma|asthma|r||||
+E|D2|disease|allergic diseases|allergic diseases|r||||
+E|S1|phenotype|asthma-related phenotypes|asthma-related phenotypes|r||||
+X|TIM|b0002|gene family/protein set, not single-gene endpoint
+X|rs2277025|b0002|variant identifier
+X|157delMTTTVP|b0002|variant identifier
+X|hepatitis A virus|b0002|pathogen exposure/serostatus, not named disease
+EV|V1|b0002.s5|ts|res|aff|rr,cmp
+EV|V2|b0002.s6|ts|res|aff|rr,cmp
+EV|V3|b0001.s1+b0002.s9|ts|int|aff|rr
+EV|V4|b0002.s8|ts|neg|neg|rr,cmp
+EV|V5|b0002.s1|bg|hyp|hyp|ho
+EV|V6|b0002.s7|ts|res|aff|rr,unc
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V2+V3|||Case-control and family-based association reported
+P|G2|D1|neg|-|ts|neg:-:ts:V4+V3|||No significant asthma association for TIM-3 variants
+F|F1|association|rs2277025 TT genotype vs asthma|African American cases vs controls|significant|positive|partial|V1|abstract only
+F|F2|association|157delMTTTVP homozygous deletion vs asthma|African American cases vs controls|significant|positive|partial|V1|abstract only
+F|F3|association|TIM-1 haplotype vs asthma|African American cases vs controls|significant|positive|partial|V2|
+F|F4|association|157delMTTTVP allele/haplotype transmission|African American families|significant|positive|partial|V2|
+F|F5|association|TIM-1 variants vs asthma|HAV-seronegative subjects|unknown|positive|not_reported|V6|hedged; no statistics given
+F|F6|association|TIM-3 SNPs vs asthma and phenotypes|African American population|not_significant|null|not_reported|V4|

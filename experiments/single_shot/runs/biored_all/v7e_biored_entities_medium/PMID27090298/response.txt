@@ -1,0 +1,18 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|FASN|FASN;fatty acid synthase;Fatty Acid Synthase|r||human||
+E|G2|gene|INS|insulin;C-peptide|r||human||
+E|G3|gene|ADIPOQ|HMW-adiponectin|r||human||
+E|D1|disease|hypertension|hypertension|r||||
+E|D2|disease|metabolic dysfunction|metabolic dysfunction|r||||
+X|HbAc1|b0002.s7|glycated hemoglobin lab measure, likely typo of HbA1c
+X|HOMA-IR|b0002.s7|insulin resistance index, not a disease mention
+EV|V1|b0002.s1|bg|bgr|hyp|ebr
+EV|V2|b0002.s7|ts|res|aff|rr
+EV|V3|b0002.s8|ts|res|aff|rr
+P|G1|D1|sup|a|ts|sup:a:ts:V2;unc:a:bg:V1|||Higher circulating FASN associated with lower SBP
+P|G1|D2|sup|a|ts|sup:a:ts:V2;unc:a:bg:V1|||Higher FASN associated with favourable metabolic phenotype
+F|F1|association|circulating FASN vs SBP and glycemic markers|115 healthy pregnant women|significant|negative|partial|V2|abstract only
+F|F2|correlation|placental FASN vs circulating FASN|80 placentas|significant|positive|partial|V3|
+F|F3|correlation|placental FASN vs placental weight|80 placentas|significant|negative|partial|V3|
+R|disease scope|b0002.s7|SBP is a continuous trait in normotensive women, not hypertension itself.|Mapped FASN-hypertension as this-study association; hedged background kept as secondary claim.

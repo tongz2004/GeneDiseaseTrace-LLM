@@ -1,0 +1,29 @@
+P|G1|D2|nf|-||||V5|Only tested in aim; GSTP1 toxicity result not reported
+P|G2|D1|nf|-||||V5|Aim list co-occurrence only
+P|G2|D2|nf|-||||V5|Aim list co-occurrence only
+P|G3|D1|nf|-||||V5|Aim list co-occurrence only
+P|G3|D2|nf|-||||V5|Aim list co-occurrence only
+P|G4|D1|nf|-||||V5|Aim list co-occurrence only
+P|G4|D2|nf|-||||V5|Aim list co-occurrence only
+P|G5|D1|nf|-||||V5|Aim list co-occurrence only
+P|G5|D2|nf|-||||V5|Aim list co-occurrence only
+P|G6|D1|nf|-||||V5|Aim list co-occurrence only
+P|G6|D2|nf|-||||V5|Aim list co-occurrence only
+P|G7|D1|nf|-||||V5|Aim list only; identity also unresolved
+P|G7|D2|nf|-||||V5|Aim list only; identity also unresolved
+P|G8|D1|nf|-||||V4+V5|Mucositis finding is not rectal cancer outcome
+P|G9|D1|nf|-||||V5|Aim list co-occurrence only
+P|G9|D2|nf|-||||V5|Aim list co-occurrence only
+P|G10|D1|nf|-||||V5|Aim list co-occurrence only
+P|G10|D2|nf|-||||V5|Aim list co-occurrence only
+P|G11|D1|nf|-||||V3+V5|Toxicity finding is not rectal cancer outcome
+P|G12|D1|nf|-||||V5|Aim list co-occurrence only
+P|G12|D2|nf|-||||V5|Aim list co-occurrence only
+P|G13|D1|nf|-||||V5|Aim list co-occurrence only
+P|G13|D2|nf|-||||V5|Aim list co-occurrence only
+P|G14|D1|nf|-||||V5|Aim list co-occurrence only
+P|G14|D2|nf|-||||V5|Aim list co-occurrence only
+P|G15|D1|nf|-||||V5|Aim list co-occurrence only
+P|G15|D2|nf|-||||V5|Aim list co-occurrence only
+P|G16|D1|nf|-||||V5|Aim list co-occurrence only
+P|G16|D2|nf|-||||V5|Aim list co-occurrence only

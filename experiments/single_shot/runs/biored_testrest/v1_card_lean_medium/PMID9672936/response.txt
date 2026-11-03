@@ -1,0 +1,6 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no genes mentioned
+E|D1|disease|seizure|seizure|r||||
+E|D2|disease|CNS toxicity|CNS toxicity|r||||
+E|S1|symptom|postoperative pain|postoperative pain|r||||
+E|S2|phenotype|central nervous system excitation|central nervous system excitation|r||||

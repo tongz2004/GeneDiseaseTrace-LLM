@@ -1,0 +1,14 @@
+[
+  [
+    "filter: dropped pair",
+    "P G1-D2 (gene x disease)"
+  ],
+  [
+    "filter: dropped pair",
+    "P G1-D3 (gene x disease)"
+  ],
+  [
+    "filter: dropped pair",
+    "P G1-P1 (gene x phenotype)"
+  ]
+]

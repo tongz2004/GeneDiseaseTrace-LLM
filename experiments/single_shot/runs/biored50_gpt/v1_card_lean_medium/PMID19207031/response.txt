@@ -1,0 +1,17 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only; no full text or attachments.
+E|G1|gene|IGF-1|IGF-1|r||human||
+E|D1|disease|GH-deficiency|growth hormone-deficient;GH-deficient;GH-deficiency;GHD|r||||
+E|H1|phenotype|IGF-1 concentrations|IGF-1 concentrations|r||||
+E|H2|phenotype|IGF-1-standard deviation score|IGF-1-standard deviation score|r||||
+E|H3|phenotype|IGF-1:GH ratio|IGF-1:GH ratio|r||||
+X|GH|b0002|Hormone treatment; no GH gene identified.
+X|rs1019731|b0002|Variant identifier, not a gene.
+EV|V1|b0002.s7+b0002.s8|ts|neg|neg|rr,cmp
+EV|V2|b0002.s7|ts|res|aff|rr,cmp
+EV|V3|b0002.s1|bg|bgr|aff|ebr
+EV|V4|b0002.s2|unk|hyp|hyp|ho
+P|G1|D1|neg|-|ts|neg:-:ts:V1|||Tested association: treatment responsiveness in GHD; adjusted analyses.
+F|F1|group_comparison|IGF-1 rs1019731 genotypes versus IGF-1-SDS|GH-treated German adults with GHD|significant|unknown|partial|V2|p=0.02; genotype-specific direction unavailable
+F|F2|association|IGF-1 polymorphisms versus circulating IGF-1 concentrations|Previously reported populations|unknown|unknown|not_reported|V3|
+F|F3|hypothesis|IGF-1 variation versus required GH dose|GH-deficient patients|not_applicable|unknown|not_applicable|V4|Proposed treatment-response mechanism

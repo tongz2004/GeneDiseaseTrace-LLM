@@ -1,0 +1,8 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no genes mentioned
+E|E1|disease|myocardial ischemia|dobutamine-induced myocardial ischemia;myocardial ischemia;ischemia|r||||
+E|E2|phenotype|perfusion defects|perfusion defects|r||||
+X|Tc99m-Sestamibi|b0002|radiotracer, not gene
+X|dP/dtejc|b0002|cardiac performance index, not gene
+F|F1|group_comparison|dP/dtejc increase during dobutamine|SPECT ischemic vs non-ischemic patients|unknown|negative|not_reported|b0002.s6|no gene; p-value not reported
+F|F2|descriptive|ECG plus dP/dtejc diagnostic accuracy|40 Sestamibi-SPECT/dobutamine patients|not_applicable|positive|partial|b0002.s7|no gene involved

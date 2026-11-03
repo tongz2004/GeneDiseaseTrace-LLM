@@ -1,0 +1,23 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|ADIPOQ (adiponectin)|Adiponectin;adiponectin|r||||
+E|G2|gene|ALDH1A1|ALDH1A1;aldehyde dehydrogenase A1|r|||non-human|
+E|G3|gene|retinoic acid receptor (RAR family)|retinoic acid receptor;RAR|p|ambiguous_mapping|non-human||
+E|G4|gene|retinoid X receptor|retinoid X receptor|p|ambiguous_mapping|non-human||
+E|D1|disease|diabetes mellitus|antidiabetic|p|other|||
+E|D2|disease|inflammation|inflammatory|r||||
+E|D3|disease|atherosclerosis|antiatherogenic|p|other|||
+E|D4|disease|cardiovascular diseases|cardiovascular diseases|r||||
+E|D5|disease|obesity|adiposity|p|other|||
+E|S1|phenotype|weight gain|gain of body weight|r||||
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s2|bg|bgr|aff|ebr
+EV|V3|b0002.s5+b0002.s8|ts|res|aff|rr,cmp
+P|G1|D1|sup|a|bg|sup:a:bg:V1|||Adiponectin described as antidiabetic
+P|G1|D2|sup|a|bg|sup:a:bg:V1|||Adiponectin described as anti-inflammatory
+P|G1|D3|sup|a|bg|sup:a:bg:V1|||Adiponectin described as antiatherogenic
+P|G1|D5|sup|a|both|sup:a:bg:V2;sup:a:ts:V3|||Reduced adiponectin with high-fat diet adiposity
+P|G1|D4|unc|-|bg|unc:a:bg:V2|scope||Co-mention under high-fat diet only
+P|G2|D5|unc|-|ts|unc:a:ts:V3|scope||ALDH1A1 up in WAT on high-fat diet
+F|F1|group_comparison|adiponectin, ALDH1A1 expression in WAT|mice fed high-fat diet|unknown|mixed|unread|V3|abstract only; diet exposure not disease
+R|surface form|b0002.s1|Disease named only via adjectives antidiabetic/antiatherogenic|Used adjective forms as surfaces, identity provisional

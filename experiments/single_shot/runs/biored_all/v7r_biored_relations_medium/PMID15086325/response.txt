@@ -1,0 +1,8 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|F5|F5;FV;factor V|r||human||
+E|D1|disease|factor V deficiency|factor V deficiency;FV deficiency;coagulation factor V deficiency;coagulation FV deficiency|r||||
+EV|V1|b0001.s1+b0002.s9|ts|res|aff|rr,eda
+EV|V2|b0002.s2+b0002.s5+b0002.s7+b0002.s8|ts|res|aff|rr
+P|G1|D1|sup|c|ts|sup:c:ts:V1+V2|||F5 mutations identified in FV-deficient probands
+F|F1|descriptive|F5 mutations; FV deficiency|two Chinese pedigrees, two probands|not_applicable|not_applicable|not_applicable|V1+V2|two probands; no segregation details

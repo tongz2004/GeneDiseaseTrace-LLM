@@ -1,0 +1,34 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|TAGLN|Transgelin;transgelin|r||human||
+E|G2|gene|HOOK1|HOOK1|r||human||
+E|G3|gene|SDCCAG8|SDCCAG8|r||human||
+E|G4|gene|ENAH|ENAH;Mena|r||human||
+E|G5|gene|TNS1|TNS1|r||human||
+E|G6|gene|EMB|EMB|r||human||
+E|G7|gene|BCL11B|BCL11B|r||human||
+E|G8|gene|PTPRD|PTPRD|r||human||
+E|D1|disease|colorectal cancer|colorectal cancer;CRC|r||||
+E|D2|disease|cancer|cancer;tumor|p|other|||
+E|D3|disease|neoplasm metastasis|metastases;metastasis;lung metastases|r||||
+X|RKO|b0002.s6|cell line name, not gene
+X|HCT116|b0002.s8|cell line name, not gene
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s6+b0002.s7+b0002.s8|ts|res|aff|rr,mi
+EV|V3|b0002.s11|ts|int|aff|rr,mi
+EV|V4|b0002.s9+b0002.s10|ts|res|aff|rr,do
+EV|V5|b0002.s12|ts|int|aff|unc
+P|G1|D1|sup|c|ts|sup:c:ts:V2+V3|||Manipulating transgelin changes CRC metastatic behavior in vivo
+P|G1|D3|sup|c|ts|sup:c:ts:V2+V3|||Overexpression increases, knockdown decreases lung metastases
+P|G1|D2|sup|r|bg|sup:r:bg:V1|||Prior studies: elevated levels correlate with aggressive tumors
+P|G2|D1|unc|-|ts|unc:a:ts:V4+V5|support_basis_unresolved||Expression change downstream of transgelin in CRC cells
+P|G3|D1|unc|-|ts|unc:a:ts:V4+V5|support_basis_unresolved||Expression change downstream of transgelin in CRC cells
+P|G4|D1|unc|-|ts|unc:a:ts:V4+V5|support_basis_unresolved||Expression change downstream of transgelin in CRC cells
+P|G5|D1|unc|-|ts|unc:a:ts:V4+V5|support_basis_unresolved||Expression change downstream of transgelin in CRC cells
+P|G6|D1|unc|-|ts|unc:a:ts:V4+V5|support_basis_unresolved||Expression change downstream of transgelin in CRC cells
+P|G7|D1|unc|-|ts|unc:a:ts:V4+V5|support_basis_unresolved||Expression change downstream of transgelin in CRC cells
+P|G8|D1|unc|-|ts|unc:a:ts:V4+V5|support_basis_unresolved||Expression change downstream of transgelin in CRC cells
+F|F1|mechanism|transgelin level vs metastasis count/size|mouse tail vein CRC model|unknown|positive|not_reported|V2|abstract only
+F|F2|mechanism|transgelin overexpression vs invasiveness, soft agar|RKO cells|unknown|positive|not_reported|V2|abstract only
+F|F3|descriptive|transgelin overexpression vs ~250 transcripts|RKO cells|unknown|mixed|not_reported|V4|abstract only
+C|C1|transgelin role in cancer controversial|b0002.s2|noncritical|resolved|bg claim hedged; ts results support

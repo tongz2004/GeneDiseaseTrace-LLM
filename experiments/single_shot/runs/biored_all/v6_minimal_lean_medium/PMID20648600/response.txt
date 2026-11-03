@@ -1,0 +1,24 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|HBV polymerase (reverse transcriptase)|polymerase|p|other|non-human||
+E|G2|gene|HBV envelope (surface) gene|envelope gene;HBsAg|p|other|non-human||
+E|G3|gene|HBV precore/core gene|precore|p|ambiguous_mapping|non-human||
+E|D1|disease|HIV infection|HIV|r||||
+E|D2|disease|hepatitis B|hepatitis B|r||||
+E|D3|phenotype|viremia|viremia|r||||
+E|PH1|phenotype|lamivudine resistance|lamivudine resistance|r||||
+E|PH2|phenotype|vaccine escape phenotype|vaccine escape phenotype|r||||
+X|BCP|b0002.s5|viral promoter region, not a gene entity
+X|rtM204V|b0002.s10|polymerase variant, attributed to G1
+X|sE164D|b0002.s12|envelope variant, attributed to G2
+X|co-infection|b0002.s6|HIV plus HBV state, not separate disease
+EV|V1|b0002.s10+b0002.s11|ts|co|na|do
+EV|V2|b0002.s12+b0002.s15|ts|hyp|hyp|ho
+EV|V3|b0002.s13|ts|co|na|do
+P|G1|D2|nf|-|ts|||V1|resistance mutations detected in HBV carriers only
+P|G2|D2|nf|-|ts|||V2|vaccine escape is hypothesized, not disease link
+P|G3|D2|nf|-|ts|||V3|precore mutations described descriptively only
+F|F1|descriptive|polymerase rtL180M+rtM204V; LAM exposure|HIV-HBV co-infected viremic patients|not_applicable|not_applicable|partial|V1|abstract only; small sample
+F|F2|hypothesis|envelope sE164D+sI195M; vaccine escape|three triple-mutant patients|not_applicable|not_applicable|not_reported|V2|hypothesis only
+F|F3|descriptive|TDF resistance substitutions|TDF-treated patients|not_applicable|null|not_reported|b0002.s14|abstract only
+R|viral gene-host disease pairs|b0002.s10|Rule does not specify how viral pathogen genes relate to infection disease.|Treated mutation detection in infected patients as descriptive, nf.

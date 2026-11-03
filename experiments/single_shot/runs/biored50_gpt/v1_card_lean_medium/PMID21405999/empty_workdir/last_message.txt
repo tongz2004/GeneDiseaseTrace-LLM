@@ -1,0 +1,23 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only; no full text or attachments.
+E|G1|gene|GUCA1A|GUCA1A|r||human||
+E|G2|gene|GUCA1B|GUCA1B;GCAP2|r||human||
+E|D1|disease|cone dystrophy|cone dystrophy|r||||
+E|D2|disease|cone rod dystrophy|cone rod dystrophy|r||||
+E|D3|disease|macular dystrophy|macular dystrophy|r||||
+E|D4|disease|autosomal dominantly inherited cone dystrophy|autosomal dominantly inherited cone dystrophy|r|||D1|
+E|D5|disease|inherited retinal disease|inherited retinal disease|r||||
+E|D6|disease|retinal degenerations|retinal degenerations|r||||
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s2|bg|bgr|q|unc
+EV|V3|b0002.s4+b0002.s6+b0002.s8|ts|co|na|do
+EV|V4|b0002.s9|ts|neg|neg|rr
+EV|V5|b0002.s9|ts|int|hyp|ho
+P|G1|D4|sup|c|bg|sup:c:bg:V1||||Explicit attribution to heterozygous mutations.
+P|G1|D2|sup|c|bg|sup:c:bg:V1||||Explicit attribution to heterozygous mutations.
+P|G1|D3|sup|c|bg|sup:c:bg:V1||||Explicit attribution to heterozygous mutations.
+P|G2|D1|neg|-|ts|neg:c:ts:V4|||V3|No clearly pathogenic mutations in selected inherited cases.
+P|G2|D2|neg|-|ts|neg:c:ts:V4|||V3|No clearly pathogenic mutations in selected inherited cases.
+P|G2|D5|unc|-|bg|unc:a:bg:V2|support_basis_unresolved|||Controversy stated without readable supporting findings.
+P|G2|D6|unc|-|ts|unc:c:ts:V5|hedged_claim|||Minor causal contribution inferred from negative screening.
+F|F1|descriptive|GUCA1B sequence variants|24 unrelated cone or cone rod dystrophy patients|not_applicable|not_applicable|not_applicable|V3|Variants previously reported in healthy subjects.

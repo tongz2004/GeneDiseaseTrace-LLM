@@ -1,0 +1,15 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text, tables or figures
+E|G1|ambiguous_gene|N-methyl-D-aspartate receptors|N-methyl-D-aspartate receptors;N-methyl-d-aspartate (NMDA) receptors;NMDA receptor|p|ambiguous_mapping,species_unresolved||||
+E|D1|disease|spinal cord ischemia|spinal cord ischemia;Spinal cord ischemia|r|||||
+E|D2|disease|spastic paraparesis|spastic paraparesis|r|||||
+E|S1|phenotype|degeneration of spinal motor neurons|degeneration of spinal motor neurons|r|||||
+E|S2|phenotype|neurotoxic|neurotoxic|r|||||
+X|aortic occlusion|b0002.s1|surgical procedure that induces ischemia, not a disease
+EV|V1|b0001.s1|ts|int|hyp|ho
+EV|V2|b0002.s9+b0002.s10|ts|int|hyp|ho
+EV|V3|b0002.s8|ts|res|na|rr,do
+P|G1|D1|unc|-|ts|unc:-:ts:V1+V2|hedged_claim,identity||Authors suggest opioid neurotoxicity via NMDA activation
+P|G1|D2|unc|-|ts|unc:-:ts:V2|hedged_claim,scope,identity|V3|Glutamate-NMDA involvement inferred; cellular outcome only
+F|F1|group_comparison|IT MK-801 vs saline; dark-stained alpha-motoneurons|rats after morphine-induced spastic paraparesis|significant|negative|not_reported|V3|MK-801 target not stated in text
+R|complex as gene|b0002.s1|NMDA receptor is a receptor complex, not a single gene|Kept as ambiguous_gene; no pair supported

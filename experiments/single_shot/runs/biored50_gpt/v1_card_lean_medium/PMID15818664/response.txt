@@ -1,0 +1,28 @@
+META|GPT-6|seen: no
+SCOPE|Supplied title and abstract only; no full text or attachments.
+E|G1|gene|ANKH|ANKH;ANKH protein|r||human||
+E|G2|gene|type X collagen|type X collagen|r||human||
+E|D1|disease|chondrocalcinosis|chondrocalcinosis|r||||
+E|D2|disease|sporadic chondrocalcinosis|sporadic chondrocalcinosis;severe sporadic chondrocalcinosis|r|||D1|
+E|D3|disease|familial chondrocalcinosis|familial chondrocalcinosis;autosomal-dominant familial chondrocalcinosis|r|||D1|
+E|D4|disease|pseudogout|pseudogout|r||||
+E|D5|disease|heritable chondrocalcinosis|heritable chondrocalcinosis|r|||D1|
+E|H1|phenotype|chondrocyte hypertrophy|chondrocyte hypertrophy|r||||
+E|H2|phenotype|increased extracellular PPi|increased extracellular PPi|r||||
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s7|bg|bgr|aff|ebr
+EV|V3|b0002.s6|ts|res|aff|rr,cmp
+EV|V4|b0002.s9|ts|int|hyp|ho
+EV|V5|b0002.s10|unk|bgr|aff|ebr
+EV|V6|b0002.s10|ts|int|hyp|ho
+EV|V7|b0002.s3|ts|aim|q|none
+EV|V8|b0002.s7|ts|res|na|rr
+EV|V9|b0002.s8|ts|res|na|rr
+P|G1|D1|nf|-||| |V7|Screening aim supplies no finding for unqualified disease.
+P|G1|D2|sup|a|both|sup:a:bg:V2;sup:a:ts:V3;unc:c:ts:V4|hedged_claim||Causal interpretation remains tentative.
+P|G1|D3|sup|a|bg|sup:a:bg:V1+V2|||Familial mutation links explicitly reported.
+P|G1|D4|nf|-||||V7|Combined recruitment does not establish pseudogout-specific association.
+P|G1|D5|sup|a|unk|sup:a:unk:V5;unc:c:ts:V6|hedged_claim||Association asserted; proposed disease mechanism remains speculative.
+F|F1|association|ANKH -4-bp transition and sporadic chondrocalcinosis|Patients versus ethnically matched healthy controls|significant|positive|available|V3|Minor-allele homozygote risk and overall genotype association.
+F|F2|group_comparison|ANKH variants and transcription/translation|Reticulocyte in vitro system|unknown|mixed|not_reported|V8|Three variants increased expression; French mutation did not.
+F|F3|mechanism|ANKH constructs, extracellular PPi, type X collagen|Transfected human CH-8 articular chondrocytes|unknown|mixed|not_reported|V9|Variant-specific directions incompletely described.

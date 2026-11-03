@@ -1,0 +1,26 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only.
+E|G1|gene|endoglin|endoglin;Endoglin gene;ENG|r||human||
+E|D1|disease|Systemic sclerosis|Systemic sclerosis;systemic sclerosis;SSc|r|||D2|
+E|D2|disease|connective tissue disorder|connective tissue disorder|r|||| 
+E|D3|disease|pulmonary arterial hypertension|pulmonary arterial hypertension;PAH|r||||
+E|D4|disease|systemic sclerosis-related pulmonary arterial hypertension|systemic sclerosis-related pulmonary arterial hypertension|r|||D3|
+E|D5|disease|osteoarthritis|osteoarthritis|r||||
+E|H1|phenotype|microangiopathy|microangiopathy|r||||
+E|H2|phenotype|disturbed angiogenesis|disturbed angiogenesis|r||||
+E|H3|phenotype|microvascular disturbance|microvascular disturbance|r||||
+X|transforming growth factor-beta|b0002|superfamily, not a single gene
+X|TGF-beta|b0002|superfamily, not a single gene
+X|6bINS|b0002|variant identifier
+EV|V1|b0002.s3|bg|bgr|aff|ebr
+EV|V2|b0002.s5|ts|co|na|do
+EV|V3|b0002.s8|ts|res|aff|rr,cmp
+EV|V4|b0002.s9|ts|res|aff|rr,cmp
+EV|V5|b0002.s10|ts|int|hyp|ho
+P|G1|D1|nf|-|||||V2+V3+V4|Stratified findings do not establish overall SSc association.
+P|G1|D3|nf|-|||||V3+V4+V5|Evidence concerns SSc-associated PAH specifically.
+P|G1|D4|sup|a|ts|sup:a:ts:V3+V4;unc:-:ts:V5|hedged_claim||Comparative association supported; biological implication remains speculative.
+P|G1|D5|nf|-|||||V2+V3+V4|Osteoarthritis identifies controls, not an attributed gene association.
+F|F1|association|ENG 6bINS allele; SSc-associated PAH|SSc-associated PAH versus osteoarthritis controls|significant|negative|available|V3|
+F|F2|association|ENG 6bINS allele; PAH status|SSc patients with versus without PAH|unknown|negative|available|V3|Authors report a trend.
+F|F3|association|ENG 6bINS-carrying genotypes; SSc-associated PAH|SSc-associated PAH versus osteoarthritis controls|significant|negative|available|V4|

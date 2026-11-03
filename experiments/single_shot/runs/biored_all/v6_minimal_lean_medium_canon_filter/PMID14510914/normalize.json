@@ -1,0 +1,10 @@
+[
+  [
+    "filter: dropped pair",
+    "P G1-D2 (gene x disease)"
+  ],
+  [
+    "canonicalize: type set to -",
+    "P G1-D4: a -> - (unc)"
+  ]
+]

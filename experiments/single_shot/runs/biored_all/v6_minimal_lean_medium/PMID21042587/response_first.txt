@@ -1,0 +1,33 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|NR3C1|glucocorticoid receptor;GR|r|||human||
+E|G2|gene|FKBP5|FKBP5|r|||human||
+E|G3|gene|NR3C2|mineralocorticoid receptor|r|||human||
+E|G4|gene|HSD11B2|11b-hydroxysteroid dehydrogenase type 2|r|||human||
+E|D1|disease|Primary glucocorticoid resistance|Primary glucocorticoid resistance;primary glucocorticoid resistance;cortisol resistance|r|||||
+E|D2|disease|Bilateral adrenal hyperplasia|bilateral adrenal hyperplasia;adrenal hyperplasia|r|||||
+E|D3|disease|Hypertension|arterial hypertension;hypertension;mineralocorticoid-independent hypertension|r|||||
+E|D4|disease|Hypokalemia|hypokalemia|r|||||
+E|D5|disease|Apparent mineralocorticoid excess|apparent mineralocorticoid excess|r|||||
+E|D6|disease|Subclinical hypercortisolism|subclinical hypercortisolism|r|||||
+E|D7|clinical_event|Adrenal incidentaloma|adrenal incidentalomas|r|||||
+X|OMIM 138040|b0002|OMIM identifier for disease, not a gene symbol
+X|GR haploinsufficiency|b0002|molecular mechanism label, not a separate disease
+EV|V1|b0002.s1|bg|bgr|aff|ebr,eda
+EV|V2|b0002.s2+b0002.s3|ts|res|aff|cs
+EV|V3|b0002.s9|ts|int|aff|rr
+EV|V4|b0002.s10|ts|res|aff|rr
+EV|V5|b0002.s11|ts|hyp|hyp|ho
+EV|V6|b0001.s1|ts|co|aff|do
+P|G1|D1|sup|c|both|sup:c:bg:V1;sup:c:ts:V2|||GR mutations cause disease; mutation cosegregates
+P|G1|D2|sup|c|ts|sup:c:ts:V2;unc:c:ts:V5||V6|Cosegregates with nonsense mutation
+P|G1|D3|sup|c|ts|sup:c:ts:V2+V3;unc:c:ts:V5|||Cosegregation; haploinsufficiency leads to hypertension
+P|G1|D4|sup|c|ts|sup:c:ts:V2|||Cosegregates with nonsense mutation
+P|G1|D5|sup|c|ts|sup:c:ts:V3+V4||V6|AME shown in mutation carriers
+P|G1|D6|unc|c|ts|unc:c:ts:V5|hedged_claim||Proposed as possible genetic cause
+P|G1|D7|nf|-|ts||||V2|Incidentalomas only led to family discovery
+P|G3|D3|unc|c|ts|unc:c:ts:V3|support_basis_unresolved|||Mechanistic interpretation; receptor not genetically implicated
+P|G4|D5|sup|a|ts|sup:a:ts:V4|||Reduced renal activity reveals AME
+F|F1|association|p.R469X GR mutation; disease phenotype|family, eight affected, three generations|unknown|positive|not_reported|V2|abstract only
+F|F2|mechanism|GR expression; FKBP5 induction|proband fibroblasts|significant|negative|not_reported|V2|single proband; in vitro
+F|F3|group_comparison|THE/THF urinary ratio; HSD11B2 activity|affected patients|unknown|negative|not_reported|V4|abstract only

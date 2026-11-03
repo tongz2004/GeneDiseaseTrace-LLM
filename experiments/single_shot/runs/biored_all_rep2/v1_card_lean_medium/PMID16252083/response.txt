@@ -1,0 +1,17 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|MSH2|HMSH2;hMSH2|r||human||
+E|D1|disease|breast cancer|breast cancer|r||||
+E|D2|disease|colorectal cancer|colorectal cancer|r||||
+E|D3|disease|cancer|cancer|r||||
+X|mismatch repair (MMR) genes|b0002|gene set, not single gene
+X|Gly322Asp|b0002|variant ID
+X|Asn127Ser|b0002|variant ID
+EV|V1|b0002.s4+b0002.s5+b0002.s7|ts|res|aff|rr,cmp
+EV|V2|b0002.s6|ts|neg|neg|rr
+EV|V3|b0002.s8|ts|int|hyp|ho
+EV|V4|b0002.s3|bg|bgr|aff|ebr
+P|G1|D1|sup|a|ts|sup:a:ts:V1;unc:-:ts:V3|||Gly322Asp Gly/Gly associated with breast cancer occurrence
+P|G1|D2|nf|-|||||V4|MMR gene set only, not hMSH2 specifically
+F|F1|association|Gly322Asp Gly/Gly genotype vs occurrence|150 breast cancer cases, 150 controls|significant|positive|partial|V1|OR 8.39, 95% CI 1.44-48.8
+F|F2|correlation|hMSH2 polymorphisms vs progression measures|breast cancer patients|not_significant|null|not_reported|V2|nodes, tumor size, grade

@@ -1,0 +1,20 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text, tables or supplements
+E|G0|gene|PI4KII (type II phosphatidylinositol 4-kinase family)|type II phosphatidylinositol 4-kinase;PI4KII|r||human||
+E|G1|gene|PI4K2A|PI4KIIa|r||human|G0|
+E|G2|gene|PI4K2B|Phosphatidylinositol 4-kinase IIb;PI4KIIb;PI4K2B|r||human|G0|
+E|G3|gene|MMP14|membrane type I matrix metalloproteinase;MT1-MMP|r||human||
+E|G4|gene|RAB5|Rab5|p|ambiguous_mapping|human||
+E|G5|gene|RAB7|Rab7|p|ambiguous_mapping|human||
+E|G6|gene|RAB8|Rab8|p|ambiguous_mapping|human||
+E|D1|disease|cancer|cancers|r||||
+E|PH1|phenotype|invasive cellular phenotype|invasive phenotype|r||||
+X|PI(4)P|b0002.s1|lipid product, not a gene
+X|HeLa|b0002.s7|cell line, not a disease
+X|MCF-7|b0002.s7|cell line, not a disease
+EV|V1|b0002.s8|ts|res|aff|rr
+EV|V2|b0002.s9|ts|int|hyp|ho
+EV|V3|b0002.s7|ts|res|aff|rr,mi
+P|G2|D1|sup|a|ts|sup:a:ts:V1||V2|Database mining links PI4K2B loss/underexpression to cancers
+F|F1|association|PI4K2B allele loss, mRNA underexpression; cancer|human cancers in oncogenomic databases|unknown|negative|unread|V1|abstract only; no statistics given
+F|F2|mechanism|PI4KIIb depletion; invasive phenotype|HeLa and MCF-7 cells|unknown|negative|unread|V3|in vitro cell model

@@ -1,0 +1,25 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|FGG|FGG;fibrinogen gamma|r|||human|
+E|G2|gene|FGA|FGA;fibrinogen alpha|r|||human|
+E|G3|gene|FGB|FGB;fibrinogen beta|r|||human|
+E|D1|disease|peripheral arterial disease|Peripheral Arterial Disease;peripheral arterial disease;PAD|r||||
+E|D2|disease|deep venous thrombosis|deep venous thrombosis|r||||
+E|D3|disease|myocardial infarction|myocardial infarction|r||||
+E|D4|disease|diabetes mellitus|diabetes|p|ambiguous_mapping|||
+E|D5|disease|hypertension|arterial hypertension|r||||
+E|D6|disease|hypercholesterolemia|hypercholesterolemia|r||||
+X|fibrinogen|b0002.s2|protein complex of FGA/FGB/FGG, not a single gene
+X|thrombophilic|b0002.s10|adjective describing variant, not a disease mention
+EV|V1|b0002.s3|bg|bgr|aff|ebr
+EV|V2|b0001.s1|ts|neg|neg|rr
+EV|V3|b0002.s7|ts|neg|neg|rr,cmp
+EV|V4|b0002.s8|ts|neg|neg|rr,cmp
+EV|V5|b0002.s9|ts|neg|neg|rr
+EV|V6|b0002.s10|ts|int|neg|rr
+P|G1|D1|neg|-|ts|neg:-:ts:V2+V3+V4+V5+V6|||rs2066865 not associated with PAD
+P|G1|D2|sup|a|bg|sup:a:bg:V1|||rs2066865 previously associated with DVT
+P|G1|D3|sup|a|bg|sup:a:bg:V1|||rs2066865 previously associated with MI
+F|F1|group_comparison|FGG 10034C>T genotype frequencies|891 PAD vs 777 controls|not_significant|null|available|V3|
+F|F2|association|FGG 10034 T allele and PAD|PAD cases and controls, adjusted|not_significant|null|available|V4|OR 1.07 (0.84-1.37), p=0.60
+F|F3|association|FGG 10034C>T and PAD onset age|PAD patients|not_significant|null|not_reported|V5|no statistics in abstract

@@ -1,0 +1,17 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|erythropoietin|erythropoietin|r||human||
+E|D1|disease|anemia|anemia|r||||
+E|D2|disease|HCV infection|HCV infection|r||||
+E|D3|disease|cirrhosis|cirrhosis|r||||
+E|D4|disease|hepatocellular carcinoma|hepatocellular carcinoma|r||||
+E|D5|disease|end-stage liver disease|end-stage liver disease|r||||
+E|D6|disease|hemolytic anemia|hemolytic anemia|r|||D1|
+E|D7|disease|ribavirin-associated anemia|ribavirin-associated anemia|r|||D1|
+E|D8|disease|renal disorders|renal|p|other|||
+E|D9|disease|cardiovascular disorders|cardiovascular disorders|r||||
+E|D10|disease|chronic hepatitis C|chronic hepatitis C|r||||
+E|S1|phenotype|hemolysis|hemolysis|r||||
+EV|V1|b0002.s7|bg|co|na|do
+P|G1|D7|nf|-|||||V1|Recombinant protein used as treatment, not gene relation
+R|recombinant protein drug|b0002.s7|Erythropoietin appears only as a therapeutic agent, not a gene finding|Collected as gene; pair marked nf with context

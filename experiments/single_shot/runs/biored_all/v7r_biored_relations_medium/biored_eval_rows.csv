@@ -1,0 +1,370 @@
+﻿paper_id,outcome,detail,gold_gene,gold_disease,gold_type,gold_novel,our_pair,our_gene,our_disease,our_status,our_relation,our_source,our_reason
+PMID1671881,TP,,PAH (5053),phenylketonuria (D010661),Association,No,G1-D1,PAH,phenylketonuria,supported,causal,background,PAH deficiency causes PKU; new mutations found
+PMID1671881,FN,"our pair: supported, credited to another gold relation",PAH (5053),deficiency of hepatic phenylalanine hydroxylase (OMIM:261600),Negative_Correlation,No,G1-D1,PAH,phenylketonuria,supported,causal,background,PAH deficiency causes PKU; new mutations found
+PMID6086495,FN,gene not recorded by us,Becker muscular dystrophy gene (1756),Becker muscular dystrophy (D020388),Association,Novel,,,,,,,
+PMID7811247,TP,,ALD (215),Addison (D000224),Association,No,G1-D5,ABCD1,Addison disease,supported,association,this study,Addison-only sibling carries mutation
+PMID7811247,TP,,ALD (215),X-linked adrenoleukodystrophy (D000326),Association,No,G1-D1,ABCD1,X-linked adrenoleukodystrophy,supported,causal,this study,P484R missense mutation proposed to cause ALD
+PMID7811247,FP,duplicate: its gold relation is credited to another of our pairs,,,,,G1-D2,ABCD1,adolescent adrenoleukodystrophy,supported,association,this study,Index adolescent patient carries P484R
+PMID7811247,FP,duplicate: its gold relation is credited to another of our pairs,,,,,G1-D3,ABCD1,cerebral adrenoleukodystrophy,supported,association,this study,Two cerebral ALD siblings carry mutation
+PMID7811247,FP,duplicate: its gold relation is credited to another of our pairs,,,,,G1-D4,ABCD1,adrenomyeloneuropathy,supported,association,this study,AMN sibling carries mutation
+PMID14510914,TP,,sodium/iodide symporter (6528),Iodide transport defect (C564766),Negative_Correlation,No,G1-D1,SLC5A5,iodide transport defect,supported,causal,both,Homozygous NIS deletion causes ITD; functional assay
+PMID14510914,TP,,sodium/iodide symporter (6528),Congenital hypothyroidism (D003409),Association,Novel,G1-D2,SLC5A5,congenital hypothyroidism,supported,causal,this study,Congenital hypothyroidism attributed to NIS deletion
+PMID15018851,FN,our pair: not_found,glycoprotein B (2813),Long-term anti-cytomegalovirus (D003586),Association,No,,,,,,,
+PMID15041272,TP,,von Willebrand factor (7450),type 2B von Willebrand disease (D056728),Association,Novel,G1-D1,VWF,von Willebrand disease type 2B,supported,causal,both,R1306W heterozygous in all affected family members
+PMID15041272,FN,our pair: not_found,glycoprotein Ib (2811),thrombocytopenia (D013921),Association,Novel,,,,,,,
+PMID15041272,TP,,von Willebrand factor (7450),thrombocytopenia (D013921),Association,Novel,G1-D2,VWF,thrombocytopenia,supported,causal,background,R1306W reported to often cause thrombocytopenia
+PMID15069170,TP,,Na-Cl co-transporter (6559),Gitelman's syndrome (D053579),Association,No,G1-D1,SLC12A3,Gitelman syndrome,supported,causal,background,NCCT inactivating mutations cause GS; novel mutations found
+PMID15086325,TP,,F5 (2153),inherited coagulation factor V deficiency (D005166),Association,No,G1-D1,F5,factor V deficiency,supported,causal,this study,F5 mutations identified in FV-deficient probands
+PMID15579441,FN,our pair: uncertain,ED-1 (302424),Hypoxia (D000860),Association,Novel,G3-D5,CD68 (ED-1),hypoxia,uncertain,none,this study,ED-1-positive cells localized in hypoxic area only
+PMID15579441,FN,our pair: uncertain,vascular endothelial growth factor (83785),Hypoxia (D000860),Association,Novel,G1-D5,vascular endothelial growth factor,hypoxia,uncertain,none,both,"Hypoxia-responsive element, but VEGF decreased with hypoxia"
+PMID15579441,FP,gold has both concepts but no relation,,,,,G1-D4,vascular endothelial growth factor,nephrotic syndrome,supported,association,this study,VEGF expression decreased in PAN nephrotic model
+PMID15754732,FN,our pair: explicit_negative,MEN1 (4221),carcinoma (D002277),Association,No,G1-D5,MEN1,parathyroid carcinoma,explicit_negative,none,this study,no alterations in 4 carcinomas
+PMID15754732,FN,disease not recorded by us,MEN1 (4221),tumors (D009369),Association,No,,,,,,,
+PMID15754732,TP,,MEN1 (4221),parathyroid tumors (D010282),Association,Novel,G1-D3,MEN1,parathyroid adenoma,supported,association,this study,mutations in adenoma/hyperplasia group
+PMID15754732,TP,,MEN1 (4221),benign parathyroid lesion (D010279),Association,Novel,G1-D2,MEN1,parathyroid tumor,supported,association,both,mutations in benign parathyroid tumors
+PMID15754732,TP,,MEN1 (4221),primary hyperparathyroidism (D049950),Association,Novel,G1-D1,MEN1,primary hyperparathyroidism,supported,association,this study,somatic mutations in sporadic pHPT tumors
+PMID15867855,FN,our pair: uncertain,T-cell immunoglobulin mucin 3 (84868),allergic diseases (D004342),Association,No,G3-D2,TIM gene family,allergic diseases,uncertain,none,background,Role only suggested in prior work
+PMID15867855,FN,our pair: uncertain,T-cell immunoglobulin mucin 1 (26762),allergic diseases (D004342),Association,No,G3-D2,TIM gene family,allergic diseases,uncertain,none,background,Role only suggested in prior work
+PMID15867855,TP,,T-cell immunoglobulin mucin 1 (26762),asthma (D001249),Association,Novel,G1-D1,HAVCR1,asthma,supported,association,this study,TIM-1 variants associated with asthma risk
+PMID15951966,TP,,MLH1 (4292),HNPCC (D003123),Association,No,G2-D1,MLH1,hereditary nonpolyposis colorectal cancer,supported,association,both,Exonic copy changes detected in HNPCC patients
+PMID15951966,TP,,MSH2 (4436),HNPCC (D003123),Association,No,G1-D1,MSH2,hereditary nonpolyposis colorectal cancer,supported,association,both,Exonic deletions found in HNPCC patients
+PMID16000134,TP,,antithrombin (462),vein thrombosis (D020246),Association,No,G1-D2,SERPINC1 (antithrombin),superior mesenteric vein thrombosis,supported,association,this study,Mutation carrier with low activity had SMV thrombosis
+PMID16000134,TP,,antithrombin (462),type I congenital antithrombin deficiency (D025861),Association,No,G1-D1,SERPINC1 (antithrombin),congenital antithrombin deficiency,supported,causal,this study,Novel heterozygous mutation causes type I deficiency
+PMID16018252,TP,,SRY (6736),sex reversal XY (OMIM:400044),Association,Novel,G1-D1,SRY,"46,XY sex reversal",supported,causal,background,Known causal; novel mutations found in patients
+PMID16051693,TP,,PEMT (18618),fatty livers (D005234),Negative_Correlation,No,G1-D2,PEMT,fatty liver,supported,causal,background,PEMT knockout mice develop fatty livers
+PMID16051693,TP,,PEMT (25511),nonalcoholic fatty liver disease (D065626),Association,Novel,G1-D1,PEMT,nonalcoholic fatty liver disease,supported,association,this study,Met/Met loss-of-function genotype enriched in NAFLD
+PMID16051693,FN,"our pair: supported, credited to another gold relation",PEMT (10400),nonalcoholic fatty liver disease (D065626),Association,Novel,G1-D1,PEMT,nonalcoholic fatty liver disease,supported,association,this study,Met/Met loss-of-function genotype enriched in NAFLD
+PMID16152606,FN,our pair: not_found,NBS1 (4683),cancer (D009369),Association,No,,,,,,,
+PMID16152606,TP,,NBS1 (4683),non-Hodgkin lymphoma (D008228),Association,No,G1-D4,NBN,non-Hodgkin lymphoma,supported,association,both,Increased carrier frequency in NHL
+PMID16152606,TP,,NBS1 (4683),acute lymphoblastic leukemia (D054198),Association,No,G1-D5,NBN,acute lymphoblastic leukemia,supported,association,both,Increased 657del5 carriers in ALL
+PMID16152606,TP,,NBS1 (4683),sporadic lymphoid malignancies (D008223),Association,No,G1-D3,NBN,lymphoid malignancies,supported,association,both,Excess heterozygous carriers; not major risk factor
+PMID16152606,FP,gold has both concepts but no relation,,,,,G1-D1,NBN,Nijmegen breakage syndrome,supported,causal,background,Founder mutation of NBS-named gene
+PMID16152606,FP,gold has both concepts but no relation,,,,,G1-D2,NBN,autosomal recessive disease,supported,causal,background,NBS is the autosomal recessive disease
+PMID16181814,TP,,POLG (5428),Alpers syndrome (D002549),Association,Novel,G1-D1,POLG,Alpers syndrome,supported,causal,both,POLG mutations cause Alpers; patient genotype studied
+PMID16181814,FP,gold has both concepts but no relation,,,,,G1-D2,POLG,mitochondrial DNA depletion disorder,supported,association,background,Alpers is a POLG-linked mtDNA depletion disorder
+PMID16277682,FN,disease not recorded by us,p62 (8878),polyostotic disease (D005357),Association,No,,,,,,,
+PMID16277682,TP,,p62 (8878),Paget's disease of bone (C538098),Association,Novel,G1-D1,SQSTM1,Paget's disease of bone,supported,causal,both,M404V co-segregates with polyostotic PDB
+PMID16419642,TP,,mineralocorticoid receptor (4306),hypertensives (D006973),Association,Novel,G1-D1,NR3C2,hypertension,supported,causal,background,Background causal link; novel variant frequency not different
+PMID16419642,FP,duplicate: its gold relation is credited to another of our pairs,,,,,G1-D2,NR3C2,early-onset hypertension,supported,causal,background,S810L gain-of-function causes early-onset hypertension
+PMID16611040,TP,,cystic fibrosis transmembrane conductance regulator (1080),cystic fibrosis (D003550),Association,No,G1-D1,CFTR,cystic fibrosis,supported,association,background,CFTR gene cloned as CF gene; gene therapy target
+PMID16838170,TP,,HNF4alpha (3172),type 2 diabetes mellitus (D003924),Association,Novel,G1-D1,HNF4A,type 2 diabetes mellitus,supported,association,this study,SNPs predispose to T2DM in women
+PMID16867246,FN,our pair: uncertain,DRD2 (1813),schizophrenic (D012559),Association,Novel,E1-E3,DRD2,schizophrenia,uncertain,none,background,"Background links variants to treatment response, not disease"
+PMID16867246,FN,our pair: explicit_negative,DRD2 (1813),extrapyramidal syndrome (D001480),Association,No,E1-E2,DRD2,extrapyramidal syndrome,explicit_negative,none,both,No allele or haplotype difference for chlorpromazine-induced EPS
+PMID17033974,FN,our pair: uncertain,CACNA2D4 (93589),night blindness (D009755),Association,Novel,G1-D2,CACNA2D4,night blindness,uncertain,none,this study,Initial night blindness diagnosis; final diagnosis cone dystrophy
+PMID17033974,TP,,CACNA2D4 (93589),cone dystrophy (D000077765),Association,Novel,G1-D1,CACNA2D4,autosomal recessive cone dystrophy,supported,causal,this study,Homozygous truncating mutation in affected siblings
+PMID17345627,FN,disease not recorded by us,Bone morphogenetic proteins (650),ectopic cartilage and bone formation (D002357),Association,No,,,,,,,
+PMID17345627,FN,gene not recorded by us,Bone morphogenetic proteins (649),ectopic cartilage and bone formation (D002357),Association,No,,,,,,,
+PMID17345627,FN,disease not recorded by us,BMP5 (653),ectopic cartilage and bone formation (D002357),Association,No,,,,,,,
+PMID17345627,FN,disease not recorded by us,BMP4 (652),ectopic cartilage and bone formation (D002357),Association,No,,,,,,,
+PMID17345627,FN,disease not recorded by us,Bone morphogenetic proteins (650),ectopic cartilage and bone formation (D001847),Association,No,,,,,,,
+PMID17345627,FN,gene not recorded by us,Bone morphogenetic proteins (649),ectopic cartilage and bone formation (D001847),Association,No,,,,,,,
+PMID17345627,FN,disease not recorded by us,BMP5 (653),ectopic cartilage and bone formation (D001847),Association,No,,,,,,,
+PMID17345627,FN,disease not recorded by us,BMP4 (652),ectopic cartilage and bone formation (D001847),Association,No,,,,,,,
+PMID17345627,FN,our pair: not_found,BMP5 (653),fibrodysplasia ossificans progressiva (D009221),Association,Novel,,,,,,,
+PMID17345627,TP,,BMP5 (653),short ear syndrome (D004427),Association,Novel,G3-D2,Bmp5 (mouse),short ear syndrome,supported,causal,background,Loss of function causes short ear syndrome
+PMID17345627,TP,,BMP5 (653),heterotopic ossification (D009999),Association,Novel,G2-D4,BMP5,heterotopic ossification,supported,association,this study,BMP5 overexpressed with heterotopic ossification
+PMID17345627,TP,,BMP4 (652),heterotopic ossification (D009999),Association,Novel,G1-D4,BMP4,heterotopic ossification,supported,association,this study,BMP4 overexpressed with heterotopic ossification
+PMID17345627,TP,,BMP4 (652),fibrodysplasia ossificans progressiva (D009221),Association,Novel,G1-D1,BMP4,fibrodysplasia ossificans progressiva,supported,association,background,BMP4 dysregulated in FOP cells
+PMID17345627,FN,our pair: not_found,BMP4 (652),short ear syndrome (D004427),Association,Novel,,,,,,,
+PMID17345627,TP,,BMP5 (653),axial skeletal malformations (D001848),Association,Novel,G2-D3,BMP5,axial skeletal malformations,supported,association,this study,BMP5 overexpressed in patient
+PMID17345627,TP,,BMP4 (652),axial skeletal malformations (D001848),Association,Novel,G1-D3,BMP4,axial skeletal malformations,supported,association,this study,BMP4 overexpressed in patient
+PMID17345627,FP,duplicate: its gold relation is credited to another of our pairs,,,,,G3-D3,Bmp5 (mouse),axial skeletal malformations,supported,causal,background,Short ear syndrome includes axial malformations
+PMID17395743,FN,our pair: not_found,PVT1 (5820),diabetes (D003920),Association,Novel,,,,,,,
+PMID17395743,FN,our pair: not_found,PVT1 (5820),type 2 diabetes (D003924),Association,Novel,,,,,,,
+PMID17395743,TP,,PVT1 (5820),end-stage renal disease (D007676),Association,Novel,G1-D1,PVT1,end-stage renal disease,supported,association,this study,PVT1 SNPs associated with ESRD in T2D
+PMID17397547,FN,disease recorded by us as symptom/phenotype,proteinase-activated receptors (14063),edema (D004487),Association,No,,,,,,,
+PMID17397547,FN,disease recorded by us as symptom/phenotype,proteinase-activated receptors (14062),edema (D004487),Association,No,,,,,,,
+PMID17397547,TP,,proteinase-activated receptors (14062),bladder inflammation (D003556),Association,Novel,G1-D2,PAR1 (F2r),cystitis,supported,causal,this study,PAR1 participates in bladder inflammation
+PMID17397547,FN,our pair: uncertain,dcnt1 (13426),inflammation (D007249),Association,Novel,G27-D1,Dctn1,inflammation,uncertain,none,this study,would tend to perpetuate inflammation
+PMID17397547,FN,our pair: uncertain,arf6 (11845),inflammation (D007249),Association,Novel,G26-D1,Arf6,inflammation,uncertain,none,this study,would tend to perpetuate inflammation
+PMID17397547,FN,our pair: not_found,p38 MAPK (26416),inflammation (D007249),Association,Novel,,,,,,,
+PMID17397547,TP,,tnfaip2 (21928),inflammation (D007249),Association,Novel,G25-D1,Tnfaip2,inflammation,supported,association,background,implicated in inflammatory process
+PMID17397547,TP,,sim2 (20465),inflammation (D007249),Association,Novel,G24-D1,Sim2,inflammation,supported,association,background,implicated in inflammatory process
+PMID17397547,TP,,s100a10 (20194),inflammation (D007249),Association,Novel,G23-D1,S100a10,inflammation,supported,association,background,implicated in inflammatory process
+PMID17397547,TP,,ptprcap (19265),inflammation (D007249),Association,Novel,G22-D1,Ptprcap,inflammation,supported,association,background,implicated in inflammatory process
+PMID17397547,TP,,ptpn1 (19246),inflammation (D007249),Association,Novel,G21-D1,Ptpn1,inflammation,supported,association,background,implicated in inflammatory process
+PMID17397547,TP,,ppia (268373),inflammation (D007249),Association,Novel,G20-D1,Ppia,inflammation,supported,association,background,implicated in inflammatory process
+PMID17397547,TP,,plaur (18793),inflammation (D007249),Association,Novel,G19-D1,Plaur,inflammation,supported,association,background,implicated in inflammatory process
+PMID17397547,TP,,pax1 (18503),inflammation (D007249),Association,Novel,G18-D1,Pax1,inflammation,supported,association,background,implicated in inflammatory process
+PMID17397547,TP,,nfkbia (18035),inflammation (D007249),Association,Novel,G17-D1,Nfkbia,inflammation,supported,association,both,counter-balances inflammatory response
+PMID17397547,TP,,myo5a (17918),inflammation (D007249),Association,Novel,G16-D1,Myo5a,inflammation,supported,association,background,implicated in inflammatory process
+PMID17397547,TP,,mmp2 (17390),inflammation (D007249),Association,Novel,G15-D1,Mmp2,inflammation,supported,association,background,implicated in inflammatory process
+PMID17397547,TP,,marcksl1 (17357),inflammation (D007249),Association,Novel,G14-D1,Marcksl1,inflammation,supported,association,background,implicated in inflammatory process
+PMID17397547,TP,,hspb1 (15507),inflammation (D007249),Association,Novel,G13-D1,Hspb1,inflammation,supported,association,background,implicated in inflammatory process
+PMID17397547,TP,,fth1 (14319),inflammation (D007249),Association,Novel,G12-D1,Fth1,inflammation,supported,association,background,implicated in inflammatory process
+PMID17397547,TP,,fkbp1a (14225),inflammation (D007249),Association,Novel,G11-D1,Fkbp1a,inflammation,supported,association,background,implicated in inflammatory process
+PMID17397547,TP,,dusp1 (19252),inflammation (D007249),Association,Novel,G10-D1,Dusp1,inflammation,supported,association,both,counter-balances inflammatory response
+PMID17397547,TP,,cfl1 (12631),inflammation (D007249),Association,Novel,G9-D1,Cfl1,inflammation,supported,association,background,implicated in inflammatory process
+PMID17397547,TP,,cd63 (12512),inflammation (D007249),Association,Novel,G7-D1,Cd63,inflammation,supported,association,background,implicated in inflammatory process
+PMID17397547,TP,,cd200 (17470),inflammation (D007249),Association,Novel,G6-D1,Cd200,inflammation,supported,association,background,implicated in inflammatory process
+PMID17397547,TP,,ccl7 (20306),inflammation (D007249),Association,Novel,G5-D1,Ccl7,inflammation,supported,association,background,implicated in inflammatory process
+PMID17397547,TP,,b2m (12010),inflammation (D007249),Association,Novel,G4-D1,B2m,inflammation,supported,association,background,implicated in inflammatory process
+PMID17397547,TP,,proteinase-activated receptors (14063),inflammation (D007249),Association,Novel,G2-D1,PAR2 (F2rl1),inflammation,supported,causal,background,PAR2 deficiency weakly attenuates inflammation
+PMID17397547,TP,,proteinase-activated receptors (14062),inflammation (D007249),Association,Novel,G1-D1,PAR1 (F2r),inflammation,supported,causal,both,PAR1 deficiency attenuates inflammation
+PMID17397547,FP,duplicate: its gold relation is credited to another of our pairs,,,,,G3-D1,proteinase-activated receptor family,inflammation,supported,association,background,PAR activation induces inflammation
+PMID17397547,FP,gene not a gold gene concept,,,,,G8-D1,cdbpd,inflammation,supported,association,background,implicated; identity unclear
+PMID17549393,TP,,IRF6 (3664),Van der Woude syndrome (C536528),Association,No,G1-D1,IRF6,Van der Woude syndrome,supported,causal,both,IRF6 mutations cause VWS; novel Y67X found
+PMID17549393,FP,gold has both concepts but no relation,,,,,G1-D2,IRF6,syndromic orofacial cleft,supported,association,background,VWS is a syndromic orofacial cleft type
+PMID17671735,TP,,GJB2 (2706),sensorineural hearing impairment (D034381),Association,No,G1-D1,GJB2,sensorineural hearing impairment,supported,causal,background,GJB2 mutations cause hearing impairment
+PMID17671735,FP,gold has both concepts but no relation,,,,,G2-D1,GJB6,sensorineural hearing impairment,supported,association,this study,GJB6 deletion found in hearing-impaired patients
+PMID17943461,FN,disease not recorded by us,FasL (14103),depressed cardiac function (D000275),Association,Novel,,,,,,,
+PMID17943461,TP,,FasL (14103),Dilated cardiomyopathy (D002311),Association,Novel,G1-D2,Fas ligand,dilated cardiomyopathy,supported,causal,this study,FasL Tg AZT mice develop dilated cardiomyopathy
+PMID17943461,FN,disease not recorded by us,calpain 1 (12333),depressed cardiac function (D000275),Association,Novel,,,,,,,
+PMID17943461,FN,disease not recorded by us,caspase 3 (12367),depressed cardiac function (D000275),Association,Novel,,,,,,,
+PMID17943461,FN,disease not recorded by us,Fas (355),depressed cardiac function (D000275),Association,Novel,,,,,,,
+PMID17943461,FN,our pair: not_found,calpain 1 (12333),Dilated cardiomyopathy (D002311),Association,Novel,,,,,,,
+PMID17943461,FN,our pair: not_found,caspase 3 (12367),Dilated cardiomyopathy (D002311),Association,Novel,,,,,,,
+PMID17943461,FN,our pair: not_found,Fas (355),Dilated cardiomyopathy (D002311),Association,Novel,,,,,,,
+PMID17943461,FN,disease recorded by us as symptom/phenotype,Fas ligand (356),cardiac dilation and dysfunction (D006331),Association,Novel,,,,,,,
+PMID17943461,FN,"our pair: supported, credited to another gold relation",Fas ligand (356),Dilated cardiomyopathy (D002311),Association,Novel,G1-D2,Fas ligand,dilated cardiomyopathy,supported,causal,this study,FasL Tg AZT mice develop dilated cardiomyopathy
+PMID17943461,TP,,Fas ligand (356),cardiomyopathy (D009202),Association,Novel,G1-D1,Fas ligand,AZT-induced cardiomyopathy,supported,causal,this study,Myocardial FasL transgene increases AZT cardiomyopathy susceptibility
+PMID17943461,FP,gold has both concepts but no relation,,,,,G1-D4,Fas ligand,HIV infection,supported,association,background,Myocardial FasL expression identified in HIV patients
+PMID17943461,FP,gold has both concepts but no relation,,,,,G2-D1,Fas,AZT-induced cardiomyopathy,supported,correlation,this study,Increased sarcolemmal Fas with cardiomyopathy
+PMID17943461,FP,gold has both concepts but no relation,,,,,G3-D1,caspase 3,AZT-induced cardiomyopathy,supported,correlation,this study,Increased caspase 3 activation with cardiomyopathy
+PMID17943461,FP,gold has both concepts but no relation,,,,,G4-D1,calpain 1,AZT-induced cardiomyopathy,supported,correlation,this study,Calpain 1 translocation with cardiomyopathy
+PMID17943461,FP,gold has both concepts but no relation,,,,,G5-D1,dystrophin,AZT-induced cardiomyopathy,supported,correlation,this study,Altered dystrophin localization with cardiomyopathy
+PMID17943461,FP,gold has both concepts but no relation,,,,,G6-D1,cardiac troponin I,AZT-induced cardiomyopathy,supported,correlation,this study,Altered cTnI localization with cardiomyopathy
+PMID17962394,TP,,FRMD7 (90167),X linked nystagmus (C580539),Association,Novel,G1-D1,FRMD7,X linked nystagmus,supported,causal,this study,Novel p.R229G mutation causes NYS phenotype
+PMID17968299,TP,,IL-10 (3586),Periodontitis (D010518),Association,No,G1-D1,IL10,periodontitis,supported,association,background,IL-10 thought to play role in pathogenesis
+PMID18046082,TP,,apolipoprotein E (348),lipoprotein glomerulopathy (C567089),Association,No,G1-D1,APOE,lipoprotein glomerulopathy,supported,causal,both,Novel APOE variant segregates with LPG in family
+PMID18385794,TP,,CHX10 (338917),microphthalmia (D008850),Association,No,G2-D2,CHX10 (VSX2),microphthalmia,supported,association,background,Prior reports; not implicated in this cohort
+PMID18385794,TP,,CHX10 (338917),anophthalmia (D000853),Association,No,G2-D1,CHX10 (VSX2),anophthalmia,supported,association,background,Prior reports; not implicated in this cohort
+PMID18385794,TP,,SOX2 (6657),microphthalmia (D008850),Association,No,G1-D2,SOX2,microphthalmia,supported,association,both,Novel SOX2 mutations in affected patients
+PMID18385794,TP,,SOX2 (6657),anophthalmia (D000853),Association,No,G1-D1,SOX2,anophthalmia,supported,association,both,Novel SOX2 mutations in affected patients
+PMID18385794,TP,,SOX2 (6657),eye malformation (D005124),Negative_Correlation,No,G1-D3,SOX2,severe eye malformation,supported,causal,this study,Loss of SOX2 function causes severe malformation
+PMID19300402,FN,gene not recorded by us,bradykinin (3827),hyperalgesia (D006930),Association,Novel,,,,,,,
+PMID19300402,TP,,B2 and B1 receptors (81509),diabetic hyperalgesia (D003920),Association,Novel,G4-D2,Bdkrb2 (bradykinin B2 receptor),diabetic neuropathy,supported,causal,this study,B2 antagonist antihyperalgesic in diabetic neuropathy
+PMID19300402,TP,,B2 and B1 receptors (25245),diabetic hyperalgesia (D003920),Association,Novel,G3-D2,Bdkrb1 (bradykinin B1 receptor),diabetic neuropathy,supported,causal,this study,B1 antagonist antihyperalgesic in diabetic neuropathy
+PMID19300402,TP,,B2 and B1 receptors (81509),diabetic neuropathy (D003929),Association,Novel,G4-D3,Bdkrb2 (bradykinin B2 receptor),toxic (vincristine-induced) neuropathy,supported,causal,this study,B2 engaged in toxic neuropathy nociception
+PMID19300402,TP,,B2 and B1 receptors (81509),diabetic (streptozotocin-induced) and toxic (vincristine-induced) neuropathy (D010523),Association,Novel,G3-D3,Bdkrb1 (bradykinin B1 receptor),toxic (vincristine-induced) neuropathy,supported,causal,this study,B1 engaged in toxic neuropathy nociception
+PMID19300402,FN,"our pair: supported, credited to another gold relation",B2 and B1 receptors (25245),diabetic neuropathy (D003929),Association,Novel,G3-D2,Bdkrb1 (bradykinin B1 receptor),diabetic neuropathy,supported,causal,this study,B1 antagonist antihyperalgesic in diabetic neuropathy
+PMID19300402,FN,"our pair: supported, credited to another gold relation",B2 and B1 receptors (25245),diabetic (streptozotocin-induced) and toxic (vincristine-induced) neuropathy (D010523),Association,Novel,G3-D3,Bdkrb1 (bradykinin B1 receptor),toxic (vincristine-induced) neuropathy,supported,causal,this study,B1 engaged in toxic neuropathy nociception
+PMID19300402,TP,,neuronal NO synthase (24598),hyperalgesia (D006930),Association,Novel,G2-D1,Nos1 (neuronal nitric oxide synthase),hyperalgesia,supported,causal,this study,nNOS involved in vincristine hyperalgesia
+PMID19300402,TP,,inducible NO synthase (24599),diabetic hyperalgesia (D003920),Association,Novel,G1-D2,Nos2 (inducible nitric oxide synthase),diabetic neuropathy,supported,causal,this study,iNOS inhibition reduces diabetic hyperalgesia
+PMID19300402,TP,,inducible NO synthase (24599),hyperalgesia (D006930),Association,Novel,G1-D1,Nos2 (inducible nitric oxide synthase),hyperalgesia,supported,causal,this study,iNOS inhibition reduces hyperalgesia in both models
+PMID19300402,TP,,B2 and B1 receptors (81509),hyperalgesia (D006930),Association,Novel,G4-D1,Bdkrb2 (bradykinin B2 receptor),hyperalgesia,supported,causal,this study,B2 antagonism reduces hyperalgesia
+PMID19300402,TP,,B2 and B1 receptors (25245),hyperalgesia (D006930),Association,Novel,G3-D1,Bdkrb1 (bradykinin B1 receptor),hyperalgesia,supported,causal,this study,B1 antagonism reduces hyperalgesia
+PMID19300402,FP,gold has both concepts but no relation,,,,,G1-D3,Nos2 (inducible nitric oxide synthase),toxic (vincristine-induced) neuropathy,supported,causal,this study,iNOS products involved in vincristine hyperalgesia
+PMID19300402,FP,gold has both concepts but no relation,,,,,G2-D3,Nos1 (neuronal nitric oxide synthase),toxic (vincristine-induced) neuropathy,supported,causal,this study,nNOS pathway activated in vincristine neuropathy
+PMID19759529,TP,,glutamate N-methyl-D-aspartate (NMDA) receptor (14810),hyperactivity (D006948),Association,Novel,G1-D2,NMDA receptor,hyperactivity,supported,causal,this study,NMDA antagonist MK-801 induces hyperactivity
+PMID19759529,TP,,glutamate N-methyl-D-aspartate (NMDA) receptor (14810),Schizophrenia (D012559),Association,No,G1-D1,NMDA receptor,schizophrenia,supported,association,background,NMDA receptor dysfunction linked to schizophrenia
+PMID19759529,FP,duplicate: its gold relation is credited to another of our pairs,,,,,G2-D2,GRIN1,hyperactivity,supported,causal,this study,Nr1 mutant mice show spontaneous hyperactivity
+PMID19759529,FP,gold has both concepts but no relation,,,,,G3-D1,SLC6A9,schizophrenia,supported,causal,this study,GlyT1 inhibition gives antipsychotic-like effects
+PMID19759529,FP,gold has both concepts but no relation,,,,,G3-D2,SLC6A9,hyperactivity,supported,causal,this study,GlyT1 inhibitor blocks NMDA-related hyperactivity
+PMID19759529,FP,gold has both concepts but no relation,,,,,G4-D2,SLC6A3,hyperactivity,supported,causal,this study,DAT knockout mice show hyperactivity
+PMID19880293,TP,,FOXP3 (50943),psoriasis (D011565),Association,Novel,G1-D1,FOXP3,psoriasis,supported,association,this study,-3279 and IVS9+459 genotypes raise psoriasis risk
+PMID19880293,TP,,FOXP3 (50943),autoimmune diseases (D001327),Association,No,G1-D2,FOXP3,autoimmune diseases,supported,association,background,prior studies link FOXP3 SNPs to autoimmunity
+PMID20126413,FN,our pair: uncertain,PTEN (5728),cancer (D009369),Association,Novel,G1-D2,PTEN,cancer,uncertain,none,this study,generic cancer; only cell-line mutation context
+PMID20126413,FP,gold has both concepts but no relation,,,,,G1-D1,PTEN,glioma,supported,association,both,known PTEN homozygous mutation confirmed in glioma line
+PMID20143913,TP,,arylsulfatase B (411),mucopolysaccharidosis type VI (D009087),Association,No,G1-D1,ARSB,mucopolysaccharidosis type VI,supported,causal,this study,Patient carries p.R315X and exon 5 deletion
+PMID20540798,TP,,phosphodiesterase 4D (5144),atherogenic (D050197),Association,Novel,G1-D1,PDE4D,carotid atherosclerosis,supported,association,this study,"rs702553 TT linked to plaque, IMT in men"
+PMID20540798,TP,,phosphodiesterase 4D (5144),stroke (D020521),Association,No,G1-D2,PDE4D,stroke,supported,association,both,Prior report plus male young-stroke replication
+PMID20540798,FN,"our pair: supported, credited to another gold relation",phosphodiesterase 4D (5144),carotid atherosclerosis (D002340),Association,Novel,G1-D1,PDE4D,carotid atherosclerosis,supported,association,this study,"rs702553 TT linked to plaque, IMT in men"
+PMID20621845,TP,,MMP-9 (81687),thoracic aortic aneurysm (D017545),Association,Novel,G4-D1,MMP9,thoracic aortic aneurysm,supported,correlation,this study,Elevated expression in CaCl2-induced TAA segments
+PMID20621845,TP,,MMP-2 (81686),thoracic aortic aneurysm (D017545),Association,Novel,G3-D1,MMP2,thoracic aortic aneurysm,supported,correlation,this study,Elevated expression in CaCl2-induced TAA segments
+PMID20621845,TP,,ADAM17 (57027),thoracic aortic aneurysm (D017545),Association,Novel,G2-D1,ADAM17,thoracic aortic aneurysm,supported,correlation,this study,Elevated expression in CaCl2-induced TAA segments
+PMID20621845,TP,,ADAM10 (29650),thoracic aortic aneurysm (D017545),Association,Novel,G1-D1,ADAM10,thoracic aortic aneurysm,supported,correlation,this study,Elevated expression in CaCl2-induced TAA segments
+PMID20682662,TP,,C-C chemokine receptor 5 (1234),inflammation (D007249),Association,No,G1-D5,CCR5,inflammation,supported,association,background,CCR5 plays important role in inflammation
+PMID20682662,TP,,C-C chemokine receptor 5 (1234),autoimmune diseases (D001327),Positive_Correlation,No,G1-D4,CCR5,autoimmune diseases,supported,association,background,Deletion reported protective in autoimmune diseases
+PMID20801540,TP,,hepcidin (57817),iron overload (D019190),Negative_Correlation,Novel,G2-D6,HAMP,iron overload,supported,correlation,this study,Hepcidin expression tracks degree of iron overload
+PMID20801540,TP,,Ceruloplasmin (1356),diabetes mellitus (D003920),Association,Novel,G1-D5,CP,diabetes mellitus,supported,association,this study,Mutation carriers presented with diabetes
+PMID20801540,TP,,Ceruloplasmin (1356),movement disorders (D009069),Association,Novel,G1-D3,CP,movement disorders,supported,association,this study,Mutation carriers presented with movement disorders
+PMID20801540,TP,,Ceruloplasmin (1356),aceruloplasminemia (C536004),Association,Novel,G1-D1,CP,aceruloplasminemia,supported,causal,this study,Novel homozygous CP mutation causes aceruloplasminemia
+PMID20801540,TP,,hepcidin (57817),aceruloplasminemia (C536004),Association,Novel,G2-D1,HAMP,aceruloplasminemia,supported,correlation,this study,Hepcidin increased in aceruloplasminemia patients
+PMID20801540,FP,gold has both concepts but no relation,,,,,G1-D2,CP,neurodegenerative disease,supported,causal,this study,Disease is a subtype of aceruloplasminemia context
+PMID20801540,FP,gold has both concepts but no relation,,,,,G1-D6,CP,iron overload,supported,association,this study,Defective CP export causes iron accumulation
+PMID20859899,FN,our pair: not_found,ACE (1636),renal disturbance (D007674),Association,Novel,,,,,,,
+PMID20859899,FN,our pair: uncertain,ACE (1636),hyperkalemia (D006947),Association,Novel,G1-D1,ACE,hyperkalemia,uncertain,none,this study,"ACE inhibitor drug effect, not gene evidence"
+PMID21042587,TP,,mineralocorticoid receptor (4306),hypertension (D006973),Association,Novel,G3-D4,NR3C2 (mineralocorticoid receptor),hypertension,supported,causal,this study,Cortisol occupying renal MR causes hypertension
+PMID21042587,TP,,glucocorticoid receptor (2908),glucocorticoid resistance (C564221),Association,No,G1-D1,NR3C1 (glucocorticoid receptor),primary glucocorticoid resistance,supported,causal,both,Known cause; family cosegregation
+PMID21042587,TP,,glucocorticoid receptor (2908),hypercortisolism (D003480),Association,Novel,G1-D7,NR3C1 (glucocorticoid receptor),subclinical hypercortisolism,supported,causal,this study,Proposed novel genetic cause
+PMID21042587,TP,,glucocorticoid receptor (2908),adrenal hyperplasia (D000312),Association,Novel,G1-D3,NR3C1 (glucocorticoid receptor),bilateral adrenal hyperplasia,supported,causal,this study,Cosegregation and proposed genetic cause
+PMID21042587,TP,,glucocorticoid receptor (2908),adrenal incidentalomas (C538238),Association,Novel,G1-D2,NR3C1 (glucocorticoid receptor),adrenal incidentaloma,supported,association,this study,Mutation cosegregates in family found via incidentalomas
+PMID21042587,FN,"our pair: supported, credited to another gold relation",glucocorticoid receptor (2908),cortisol resistance (C535280),Association,Novel,G1-D1,NR3C1 (glucocorticoid receptor),primary glucocorticoid resistance,supported,causal,both,Known cause; family cosegregation
+PMID21042587,TP,,glucocorticoid receptor (2908),hypokalemia (D007008),Association,Novel,G1-D5,NR3C1 (glucocorticoid receptor),hypokalemia,supported,association,this study,Phenotype cosegregates with nonsense mutation
+PMID21042587,TP,,glucocorticoid receptor (2908),hypertension (D006973),Association,Novel,G1-D4,NR3C1 (glucocorticoid receptor),hypertension,supported,causal,this study,GR haploinsufficiency leads to hypertension
+PMID21042587,TP,,glucocorticoid receptor (2908),apparent mineralocorticoid excess (C537422),Association,Novel,G1-D6,NR3C1 (glucocorticoid receptor),apparent mineralocorticoid excess,supported,causal,this study,Haploinsufficiency produces apparent mineralocorticoid excess
+PMID21042587,FP,gold has both concepts but no relation,,,,,G4-D6,HSD11B2,apparent mineralocorticoid excess,supported,correlation,this study,Reduced HSD11B2 activity reveals mineralocorticoid excess
+PMID21054465,TP,,CYP2C8 (1558),hypertensive (D006973),Association,Novel,G1-D1,CYP2C8,hypertension,supported,association,this study,Genotype frequency difference between patients and controls
+PMID21130517,TP,,EGFR (1956),lung cancer (D008175),Association,No,G1-D1,EGFR,lung cancer,supported,association,both,EGFR mutations found in lung cancer tumors and plasma
+PMID21130517,FN,disease not recorded by us,EGFR (1956),tumor (D009369),Association,No,,,,,,,
+PMID21799811,TP,,MTHFR (4524),male infertility (D007248),Association,Novel,G1-D1,MTHFR,male infertility,supported,association,this study,677C>T variant associated with male infertility risk
+PMID21903317,TP,,renin (5972),renal tubular dysgenesis (C537048),Association,No,G1-D1,REN,renal tubular dysgenesis,supported,causal,background,Recessive REN mutations cause RTD
+PMID21903317,TP,,renin (5972),CKD (D051436),Association,No,G1-D4,REN,chronic kidney disease,supported,causal,both,Heterozygous REN mutation segregates with CKD
+PMID21903317,TP,,renin (5972),anemia (D000740),Association,No,G1-D3,REN,anemia,supported,causal,both,Heterozygous REN mutation segregates with anemia
+PMID21903317,TP,,renin (5972),hyperuricemia (D033461),Association,No,G1-D2,REN,hyperuricemia,supported,causal,both,Heterozygous REN mutation segregates with hyperuricemia
+PMID22711886,TP,,BCL-2 (596),chronic lymphocytic leukemia (D015451),Association,Novel,G2-D1,BCL2,chronic lymphocytic leukemia/small lymphocytic lymphoma,supported,causal,both,BCL-2 transgene cooperates in CLL/SLL development
+PMID22711886,TP,,TNFR-associated factor 2 (22030),chronic lymphocytic leukemia (D015451),Negative_Correlation,Novel,G1-D1,TRAF2,chronic lymphocytic leukemia/small lymphocytic lymphoma,supported,causal,both,TRAF2 deficiency predisposes mice to CLL/SLL
+PMID23285048,TP,,Delta-like 4 (54485),tumor (D009369),Association,No,G1-D1,DLL4,tumor,supported,causal,background,Dll4 blockade halts tumor growth (background)
+PMID23651211,TP,,JAG1 (182),hepatocellular carcinoma (D006528),Association,Novel,G17-D1,JAG1,hepatocellular carcinoma,supported,correlation,this study,upregulated in HCC tumours
+PMID23651211,TP,,CD24 (100133941),hepatocellular carcinoma (D006528),Association,Novel,G16-D1,CD24,hepatocellular carcinoma,supported,correlation,this study,upregulated in HCC tumours
+PMID23651211,TP,,GPR56 (9289),hepatocellular carcinoma (D006528),Association,Novel,G15-D1,ADGRG1,hepatocellular carcinoma,supported,correlation,this study,upregulated in HCC tumours
+PMID23651211,TP,,ASPH (444),hepatocellular carcinoma (D006528),Association,Novel,G14-D1,ASPH,hepatocellular carcinoma,supported,correlation,this study,upregulated in HCC tumours
+PMID23651211,TP,,CAMK2N1 (55450),hepatocellular carcinoma (D006528),Association,Novel,G13-D1,CAMK2N1,hepatocellular carcinoma,supported,correlation,this study,upregulated in HCC tumours
+PMID23651211,TP,,ANXA1 (301),hepatocellular carcinoma (D006528),Association,Novel,G12-D1,ANXA1,hepatocellular carcinoma,supported,correlation,this study,upregulated in HCC tumours
+PMID23651211,TP,,MMP7 (4316),hepatocellular carcinoma (D006528),Association,Novel,G11-D1,MMP7,hepatocellular carcinoma,supported,correlation,this study,upregulated in HCC tumours
+PMID23651211,TP,,WISP2 (8839),hepatocellular carcinoma (D006528),Association,Novel,G10-D1,WISP2,hepatocellular carcinoma,supported,correlation,this study,upregulated in HCC tumours
+PMID23651211,TP,,AXIN2 (8313),hepatocellular carcinoma (D006528),Association,Novel,G9-D1,AXIN2,hepatocellular carcinoma,supported,correlation,this study,upregulated in HCC tumours
+PMID23651211,TP,,SPP1 (6696),hepatocellular carcinoma (D006528),Association,Novel,G8-D1,SPP1,hepatocellular carcinoma,supported,correlation,this study,upregulated in HCC tumours
+PMID23651211,TP,,STK17B (9262),hepatocellular carcinoma (D006528),Association,Novel,G7-D1,STK17B,hepatocellular carcinoma,supported,correlation,this study,upregulated in HCC tumours
+PMID23651211,TP,,CLDN2 (9075),hepatocellular carcinoma (D006528),Association,Novel,G6-D1,CLDN2,hepatocellular carcinoma,supported,correlation,this study,upregulated in HCC tumours
+PMID23651211,FN,disease not recorded by us,T-cell factor-4 (6934),tumour (D009369),Association,Novel,,,,,,,
+PMID23651211,TP,,T-cell factor-4 (6934),hepatocellular carcinoma (D006528),Association,Novel,G1-D1,TCF7L2,hepatocellular carcinoma,supported,association,this study,TCF-4J correlates with targets in HCC tumours
+PMID23651211,FN,gene not recorded by us,Notch (4851),hepatocellular carcinoma (D006528),Association,Novel,,,,,,,
+PMID23651211,TP,,IRS1 (3667),hepatocellular carcinoma (D006528),Association,Novel,G5-D1,IRS1,hepatocellular carcinoma,supported,correlation,this study,upregulated in HCC tumours
+PMID23651211,FN,our pair: uncertain,IGF-1 (3479),hepatocellular carcinoma (D006528),Association,Novel,G4-D1,IGF1,hepatocellular carcinoma,uncertain,none,this study,pathway-level contribution only
+PMID23651211,FN,our pair: uncertain,insulin (3630),hepatocellular carcinoma (D006528),Association,Novel,G3-D1,INS,hepatocellular carcinoma,uncertain,none,this study,pathway-level contribution only
+PMID23651211,FN,our pair: uncertain,beta-catenin (1499),hepatocellular carcinoma (D006528),Association,Novel,G2-D1,CTNNB1,hepatocellular carcinoma,uncertain,none,this study,pathway-level contribution only
+PMID23651211,FN,gene not recorded by us,Wnt (7474),hepatocellular carcinoma (D006528),Association,Novel,,,,,,,
+PMID24014394,FN,disease recorded by us as symptom/phenotype,LYRM7 (90624),respiratory growth defect (D012131),Association,Novel,,,,,,,
+PMID24014394,FN,disease recorded by us as symptom/phenotype,MZM1 (852104),respiratory growth defect (D012131),Association,Novel,,,,,,,
+PMID24014394,FN,gene not recorded by us,cIII (617),reduction of mitochondrial complex III (C565128),Negative_Correlation,No,,,,,,,
+PMID24014394,TP,,LYRM7 (90624),mitochondrial encephalopathy (C538525),Association,Novel,G1-D1,LYRM7,mitochondrial encephalopathy,supported,causal,this study,homozygous segregating variant; authors call causal
+PMID24014394,TP,,LYRM7 (90624),lactic acidosis (D000140),Association,Novel,G1-D2,LYRM7,lactic acidosis,supported,association,this study,homozygous variant in patient with lactic acidosis
+PMID24014394,TP,,LYRM7 (90624),reduction of mitochondrial complex III (C565128),Association,Novel,G1-D3,LYRM7,mitochondrial complex III deficiency,supported,causal,this study,patient cIII deficiency; yeast mutant reduces cIII
+PMID24014394,FN,"our pair: supported, credited to another gold relation",LYRM7 (90624),encephalopathy (D001927),Association,Novel,G1-D1,LYRM7,mitochondrial encephalopathy,supported,causal,this study,homozygous segregating variant; authors call causal
+PMID24014394,FP,gold has both concepts but no relation,,,,,G2-D3,MZM1,mitochondrial complex III deficiency,supported,causal,this study,yeast D25N allele reduces complex III
+PMID24288432,TP,,matrix metalloproteinases (4321),neonatal respiratory distress (D012127),Association,Novel,G2-D2,MMP12,Neonatal respiratory distress syndrome,supported,association,this study,MMP-12 SNP associated with RDS
+PMID24288432,TP,,matrix metalloproteinases (4318),neonatal respiratory distress (D012127),Association,Novel,G1-D2,MMP9,Neonatal respiratory distress syndrome,supported,association,this study,MMP-9 SNP associated with RDS
+PMID24288432,TP,,fibroblast growth factors (2252),neonatal respiratory distress (D012127),Association,Novel,G5-D2,FGF7,Neonatal respiratory distress syndrome,supported,association,this study,FGF-7 SNP associated with RDS
+PMID24288432,TP,,fibroblast growth factors (2248),neonatal respiratory distress (D012127),Association,Novel,G4-D2,FGF3,Neonatal respiratory distress syndrome,supported,association,this study,FGF-3 SNP associated with RDS
+PMID24288432,TP,,FGFR-4 (2264),alveolar diseases (D002282),Association,Novel,G3-D3,FGFR4,alveolar diseases of preterm newborns,supported,association,this study,Possible key variant in alveolar diseases
+PMID24288432,TP,,FGFR-4 (2264),bronchopulmonary dysplasia (D001997),Association,Novel,G3-D1,FGFR4,Bronchopulmonary dysplasia,supported,association,this study,rs1966265 associated with BPD
+PMID24288432,TP,,FGFR-4 (2264),neonatal respiratory distress (D012127),Association,Novel,G3-D2,FGFR4,Neonatal respiratory distress syndrome,supported,association,this study,rs1966265 associated with RDS
+PMID25080425,TP,,signal transducer and activator of transcription 3 (25125),myocardial ischemia (D017202),Association,Novel,G1-D1,STAT3,myocardial ischemia/injury,supported,association,this study,STAT3 activation linked to betaine protection from ischemia
+PMID25080425,FN,"our pair: supported, credited to another gold relation",signal transducer and activator of transcription 3 (25125),myocardial injury (D009202),Association,Novel,G1-D1,STAT3,myocardial ischemia/injury,supported,association,this study,STAT3 activation linked to betaine protection from ischemia
+PMID25080425,FP,gold has both concepts but no relation,,,,,G2-D1,BCL2,myocardial ischemia/injury,supported,association,this study,Bcl-2 upregulation accompanies attenuation of ischemic injury
+PMID25080425,FP,gold has both concepts but no relation,,,,,G3-D1,BAX,myocardial ischemia/injury,supported,association,this study,Bax reduction accompanies attenuation of ischemic injury
+PMID25119790,TP,,kidney injury molecule (KIM)-1 (286934),nephrotoxicity (D007674),Positive_Correlation,Novel,G3-D1,HAVCR1,kidney injury,supported,correlation,this study,KIM-1 upregulated in maleate renal injury
+PMID25119790,TP,,claudin-2 (733684),nephrotoxicity (D007674),Negative_Correlation,Novel,G4-D1,CLDN2,kidney injury,supported,correlation,this study,claudin-2 expression decreased in renal injury
+PMID25119790,TP,,neutrophil gelatinase-associated lipocalin (170496),nephrotoxicity (D007674),Association,Novel,G1-D1,LCN2,kidney injury,supported,correlation,this study,urinary NGAL increased in maleate renal injury
+PMID25119790,FP,gold has both concepts but no relation,,,,,G2-D1,HEXB,kidney injury,supported,correlation,this study,urinary NAG increased in maleate renal injury
+PMID25550469,TP,,androgen receptor (11835),dyslipidemia (D050171),Negative_Correlation,Novel,G1-D3,androgen receptor,dyslipidemia,supported,causal,this study,AR knockout caused atherogenic dyslipidemia
+PMID25550469,TP,,androgen receptor (11835),atherosclerosis (D050197),Negative_Correlation,Novel,G1-D1,androgen receptor,atherosclerosis,supported,causal,this study,AR knockout increased atherosclerosis; protective
+PMID25550469,TP,,androgen receptor (11835),obesity (D009765),Negative_Correlation,Novel,G1-D2,androgen receptor,obesity,supported,causal,this study,AR knockout increased body weight and fat
+PMID25550469,FP,gold has both concepts but no relation,,,,,G2-D1,apolipoprotein E,atherosclerosis,supported,causal,background,apoE deficiency is atherosclerosis-prone background
+PMID25589620,TP,,VEGFR2 (3791),mucositis (D052016),Association,Novel,G8-D3,KDR,mucositis,supported,association,this study,"rs1870377 Q/Q mucositis risk, arm-dependent"
+PMID25589620,FN,our pair: not_found,GSTP1 (2950),Rectal Cancer (D012004),Association,Novel,,,,,,,
+PMID25589620,FP,gold has both concepts but no relation,,,,,G8-D2,KDR,drug toxicity,supported,association,this study,rs1870377 associated with toxicity by schedule
+PMID25589620,FP,gold has both concepts but no relation,,,,,G11-D2,CXCL8,drug toxicity,supported,association,this study,rs4073 A/A lower toxicity risk arm 2
+PMID26684240,TP,,BRAF (673),intestine NETs (D007414),Association,Novel,G1-D2,BRAF,small intestinal neuroendocrine tumor,supported,association,this study,BRAF V600E in small intestinal NET patient
+PMID26684240,FN,disease not recorded by us,VHL (7428),cancer (D009369),Association,No,,,,,,,
+PMID26684240,FN,disease not recorded by us,TBC1D12 (23232),cancer (D009369),Association,No,,,,,,,
+PMID26684240,FN,disease not recorded by us,SPEN (23013),cancer (D009369),Association,No,,,,,,,
+PMID26684240,FN,disease not recorded by us,SMARCB1 (6598),cancer (D009369),Association,No,,,,,,,
+PMID26684240,FN,disease not recorded by us,RASA1 (5921),cancer (D009369),Association,No,,,,,,,
+PMID26684240,FN,disease not recorded by us,PTEN (5728),cancer (D009369),Association,No,,,,,,,
+PMID26684240,FN,disease not recorded by us,MLL3 (58508),cancer (D009369),Association,No,,,,,,,
+PMID26684240,FN,disease not recorded by us,MGA (23269),cancer (D009369),Association,No,,,,,,,
+PMID26684240,FN,disease not recorded by us,KRAS (3845),cancer (D009369),Association,No,,,,,,,
+PMID26684240,FN,disease not recorded by us,KDM6A (7403),cancer (D009369),Association,No,,,,,,,
+PMID26684240,FN,disease not recorded by us,EP300 (2033),cancer (D009369),Association,No,,,,,,,
+PMID26684240,FN,disease not recorded by us,EGFR (1956),cancer (D009369),Association,No,,,,,,,
+PMID26684240,FN,disease not recorded by us,CTNNB1 (1499),cancer (D009369),Association,No,,,,,,,
+PMID26684240,FN,disease not recorded by us,BCOR (54880),cancer (D009369),Association,No,,,,,,,
+PMID26684240,FN,disease not recorded by us,APC (324),cancer (D009369),Association,No,,,,,,,
+PMID26684240,FN,disease not recorded by us,RB1 (5925),cancer (D009369),Association,No,,,,,,,
+PMID26684240,FN,disease not recorded by us,CNBD1 (168975),cancer (D009369),Association,No,,,,,,,
+PMID26684240,FN,disease not recorded by us,ERBB3 (2065),cancer (D009369),Association,No,,,,,,,
+PMID26684240,FN,disease not recorded by us,TP53 (7157),cancer (D009369),Association,No,,,,,,,
+PMID26684240,TP,,VHL (7428),gastroenteropancreatic neuroendocrine tumors (C535650),Association,Novel,G20-D1,VHL,gastroenteropancreatic neuroendocrine tumors,supported,association,this study,somatic mutation in GEP-NETs
+PMID26684240,TP,,TBC1D12 (23232),gastroenteropancreatic neuroendocrine tumors (C535650),Association,Novel,G19-D1,TBC1D12,gastroenteropancreatic neuroendocrine tumors,supported,association,this study,somatic mutation in GEP-NETs
+PMID26684240,TP,,SPEN (23013),gastroenteropancreatic neuroendocrine tumors (C535650),Association,Novel,G18-D1,SPEN,gastroenteropancreatic neuroendocrine tumors,supported,association,this study,somatic mutation in GEP-NETs
+PMID26684240,TP,,SMARCB1 (6598),gastroenteropancreatic neuroendocrine tumors (C535650),Association,Novel,G17-D1,SMARCB1,gastroenteropancreatic neuroendocrine tumors,supported,association,this study,somatic mutation in GEP-NETs
+PMID26684240,TP,,RASA1 (5921),gastroenteropancreatic neuroendocrine tumors (C535650),Association,Novel,G16-D1,RASA1,gastroenteropancreatic neuroendocrine tumors,supported,association,this study,somatic mutation in GEP-NETs
+PMID26684240,TP,,PTEN (5728),gastroenteropancreatic neuroendocrine tumors (C535650),Association,Novel,G15-D1,PTEN,gastroenteropancreatic neuroendocrine tumors,supported,association,this study,somatic mutation in GEP-NETs
+PMID26684240,TP,,MLL3 (58508),gastroenteropancreatic neuroendocrine tumors (C535650),Association,Novel,G14-D1,KMT2C,gastroenteropancreatic neuroendocrine tumors,supported,association,this study,somatic mutation in GEP-NETs
+PMID26684240,TP,,MGA (23269),gastroenteropancreatic neuroendocrine tumors (C535650),Association,Novel,G13-D1,MGA,gastroenteropancreatic neuroendocrine tumors,supported,association,this study,somatic mutation in GEP-NETs
+PMID26684240,TP,,KRAS (3845),gastroenteropancreatic neuroendocrine tumors (C535650),Association,Novel,G12-D1,KRAS,gastroenteropancreatic neuroendocrine tumors,supported,association,this study,somatic mutation in GEP-NETs
+PMID26684240,TP,,KDM6A (7403),gastroenteropancreatic neuroendocrine tumors (C535650),Association,Novel,G11-D1,KDM6A,gastroenteropancreatic neuroendocrine tumors,supported,association,this study,somatic mutation in GEP-NETs
+PMID26684240,TP,,ERBB3 (2065),gastroenteropancreatic neuroendocrine tumors (C535650),Association,Novel,G10-D1,ERBB3,gastroenteropancreatic neuroendocrine tumors,supported,association,this study,somatic mutation in GEP-NETs
+PMID26684240,TP,,EP300 (2033),gastroenteropancreatic neuroendocrine tumors (C535650),Association,Novel,G9-D1,EP300,gastroenteropancreatic neuroendocrine tumors,supported,association,this study,somatic mutation in GEP-NETs
+PMID26684240,TP,,EGFR (1956),gastroenteropancreatic neuroendocrine tumors (C535650),Association,Novel,G8-D1,EGFR,gastroenteropancreatic neuroendocrine tumors,supported,association,this study,somatic mutation in GEP-NETs
+PMID26684240,TP,,CTNNB1 (1499),gastroenteropancreatic neuroendocrine tumors (C535650),Association,Novel,G7-D1,CTNNB1,gastroenteropancreatic neuroendocrine tumors,supported,association,this study,somatic mutation in GEP-NETs
+PMID26684240,TP,,BCOR (54880),gastroenteropancreatic neuroendocrine tumors (C535650),Association,Novel,G6-D1,BCOR,gastroenteropancreatic neuroendocrine tumors,supported,association,this study,somatic mutation in GEP-NETs
+PMID26684240,TP,,APC (324),gastroenteropancreatic neuroendocrine tumors (C535650),Association,Novel,G5-D1,APC,gastroenteropancreatic neuroendocrine tumors,supported,association,this study,somatic mutation in GEP-NETs
+PMID26684240,TP,,RB1 (5925),gastroenteropancreatic neuroendocrine tumors (C535650),Association,Novel,G4-D1,RB1,gastroenteropancreatic neuroendocrine tumors,supported,association,this study,mutated in two GEP-NET cases
+PMID26684240,TP,,CNBD1 (168975),gastroenteropancreatic neuroendocrine tumors (C535650),Association,Novel,G3-D1,CNBD1,gastroenteropancreatic neuroendocrine tumors,supported,association,this study,mutated in two GEP-NET cases
+PMID26684240,TP,,TP53 (7157),gastroenteropancreatic neuroendocrine tumors (C535650),Association,Novel,G2-D1,TP53,gastroenteropancreatic neuroendocrine tumors,supported,association,this study,TP53 recurrently mutated in GEP-NETs
+PMID26684240,FN,disease not recorded by us,BRAF (673),NET (D018358),Association,Novel,,,,,,,
+PMID26684240,FN,disease not recorded by us,BRAF (673),cancer (D009369),Association,No,,,,,,,
+PMID26684240,TP,,BRAF (673),gastroenteropancreatic neuroendocrine tumors (C535650),Association,Novel,G1-D1,BRAF,gastroenteropancreatic neuroendocrine tumors,supported,association,this study,BRAF V600E/G593S mutations found in GEP-NETs
+PMID27090298,TP,,Fatty Acid Synthase (2194),metabolic dysfunction (D008659),Association,No,E1-E5,FASN,metabolic dysfunction,supported,association,this study,Higher FASN linked to favourable metabolic phenotype
+PMID27090298,TP,,Fatty Acid Synthase (2194),hypertension (D006973),Association,No,E1-E4,FASN,hypertension,supported,association,this study,Higher FASN linked to lower SBP
+PMID27103577,TP,,mitochondrial uncoupling protein 3 (22229),hypoxia (D000860),Negative_Correlation,Novel,g2-d1,UCP3,Hypoxia,supported,correlation,this study,Hypoxia decreased cardiac UCP3 levels
+PMID27103577,TP,,PPARa (19013),hypoxia (D000860),Negative_Correlation,Novel,g1-d1,PPARa,Hypoxia,supported,correlation,this study,Hypoxia lowers PPARa; knockout mice keep adaptation
+PMID27103577,FP,duplicate: its gold relation is credited to another of our pairs,,,,,g1-d2,PPARa,Hypoxic injury,supported,association,this study,Sustained PPARa under high fat worsens hypoxic injury
+PMID27663860,TP,,liver-type fatty acid binding protein (2168),renal injury (D007674),Association,No,G2-D5,liver-type fatty acid binding protein (FABP1),tubulointerstitial damage,supported,correlation,both,Urinary L-FABP marks tubulointerstitial damage
+PMID27663860,TP,,angiotensin II type 1a receptor (11607),renal injury (D007674),Association,Novel,G1-D1,angiotensin II type 1a receptor (Agtr1a),renal injury,supported,causal,this study,AT1a knockout worsened hypertensive renal damage
+PMID27663860,FP,duplicate: its gold relation is credited to another of our pairs,,,,,G1-D3,angiotensin II type 1a receptor (Agtr1a),glomerular damage,supported,causal,this study,Knockout increased glomerular damage severity
+PMID27707793,TP,,miR-501 (751560),muscle injury (D009135),Association,No,G1-D1,miR-501,muscle injury,supported,correlation,this study,miR-501 induced and needed during injury regeneration
+PMID27707793,FP,disease not a gold disease concept,,,,,G1-D2,miR-501,mdx muscular dystrophy model,supported,correlation,this study,miR-501 induced; serum levels track disease state
+PMID27729412,TP,,adiponectin (11450),inflammatory (D007249),Negative_Correlation,No,G1-D2,ADIPOQ (adiponectin),inflammation,supported,correlation,background,Adiponectin has anti-inflammatory activity
+PMID27729412,FP,disease not a gold disease concept,,,,,G1-D1,ADIPOQ (adiponectin),diabetes,supported,correlation,background,Adiponectin has antidiabetic activity
+PMID27729412,FP,disease not a gold disease concept,,,,,G1-D3,ADIPOQ (adiponectin),atherosclerosis,supported,correlation,background,Adiponectin has antiatherogenic activity
+PMID27729412,FP,gold has both concepts but no relation,,,,,G1-D5,ADIPOQ (adiponectin),obesity/adiposity,supported,association,background,High-fat diet: adiposity with reduced adiponectin
+PMID27807193,TP,,PTPN22 (19260),rheumatoid arthritis (D001172),Association,No,G1-D2,PTPN22,rheumatoid arthritis,supported,association,background,"GWAS susceptibility, notably rheumatoid arthritis"
+PMID27807193,TP,,PTPN22 (19260),autoimmune disease (D001327),Association,No,G1-D1,PTPN22,autoimmune disease,supported,association,background,GWAS susceptibility for autoimmune disease
+PMID27807193,TP,,PTPN22 (19260),arthritis (D001168),Association,Novel,G2-D3,Ptpn22 (mouse),immune complex-mediated arthritis,supported,causal,this study,Knockout mice protected from serum-transfer arthritis
+PMID27840894,TP,,PHEX (5251),X-linked hypophosphatemic rickets (D053098),Negative_Correlation,Novel,G1-D2,PHEX,X-linked hypophosphatemic rickets,supported,causal,background,Background: inactivating PHEX mutations cause XLH
+PMID27840894,TP,,PHEX (5251),hypophosphatemic rickets (D063730),Association,No,G1-D1,PHEX,hypophosphatemic rickets,supported,association,this study,PHEX mutations detected in hypophosphatemic rickets patients
+PMID27866394,FN,gene not recorded by us,L- and T-type Ca(2+) channels (83810),irritable bowel syndrome (D043183),Association,No,,,,,,,
+PMID27866394,FN,gene not recorded by us,L- and T-type Ca(2+) channels (24239),irritable bowel syndrome (D043183),Association,No,,,,,,,
+PMID27866394,FN,gene not recorded by us,muscarinic and tachykinin receptors (6869),irritable bowel syndrome (D043183),Association,No,,,,,,,
+PMID27866394,FN,gene not recorded by us,muscarinic and tachykinin receptors (1128),irritable bowel syndrome (D043183),Association,No,,,,,,,
+PMID27866394,FP,gold has both concepts but no relation,,,,,G1-D1,substance P,irritable bowel syndrome,supported,association,this study,SP decreased in WRS IBS model
+PMID27866394,FP,gold has both concepts but no relation,,,,,G2-D1,tachykinin receptor 1,irritable bowel syndrome,supported,association,this study,NK1r decreased in WRS IBS model
+PMID27866394,FP,gold has both concepts but no relation,,,,,G3-D1,nitric oxide synthase 1,irritable bowel syndrome,supported,association,this study,nNOS decreased in WRS IBS model
+PMID27866394,FP,gold has both concepts but no relation,,,,,G4-D1,vasoactive intestinal peptide,irritable bowel syndrome,supported,association,this study,VIP decreased in WRS IBS model
+PMID27866394,FP,gold has both concepts but no relation,,,,,G5-D1,S100 calcium binding protein B,irritable bowel syndrome,supported,association,this study,S100b decreased in WRS IBS model
+PMID27866394,FP,gold has both concepts but no relation,,,,,G6-D1,calcitonin gene-related peptide,irritable bowel syndrome,supported,association,this study,CGRP increased in WRS IBS model
+PMID27866394,FP,gold has both concepts but no relation,,,,,G7-D1,corticotropin releasing hormone receptor 1,irritable bowel syndrome,supported,association,this study,CRF1r increased in WRS IBS model
+PMID27866394,FP,gold has both concepts but no relation,,,,,G8-D1,corticotropin releasing hormone receptor 2,irritable bowel syndrome,supported,association,this study,CRF2r neurons increased in WRS model
+PMID28259923,FN,our pair: not_found,b-catenin (1499),colorectal adenocarcinoma (D015179),Association,No,,,,,,,
+PMID28259923,FN,gene not recorded by us,Wnt (7474),colorectal adenocarcinoma (D015179),Association,No,,,,,,,
+PMID28259923,TP,,Pleomorphic adenoma gene like-2 (5326),tumor (D009369),Association,No,G1-D2,PLAGL2,cancer,supported,association,background,Prior studies: induces tumor EMT
+PMID28259923,TP,,Pleomorphic adenoma gene like-2 (5326),colorectal adenocarcinoma (D015179),Association,Novel,G1-D1,PLAGL2,colorectal adenocarcinoma,supported,causal,this study,Promotes CRC EMT and metastasis in vivo
+PMID28259923,FP,gold has both concepts but no relation,,,,,G1-D3,PLAGL2,neoplasm metastasis,supported,causal,this study,Overexpression increased lung metastasis in rats
+PMID28393239,TP,,MMP-9 (4318),pancreatic cancer (D010190),Positive_Correlation,Novel,G3-D1,MMP9,pancreatic cancer,supported,association,this study,Upregulated with Psoriasin-driven invasion
+PMID28393239,TP,,matrix metalloproteinase-2 (4313),pancreatic cancer (D010190),Positive_Correlation,Novel,G2-D1,MMP2,pancreatic cancer,supported,association,this study,Upregulated with Psoriasin-driven invasion
+PMID28393239,TP,,Psoriasin (6278),cancers (D009369),Association,No,G1-D3,S100A7,cancer,supported,association,background,Aberrant expression implicated in cancers
+PMID28393239,TP,,Psoriasin (6278),psoriatic skin lesions (D011565),Association,No,G1-D2,S100A7,psoriasis,supported,association,background,Initially isolated from psoriatic skin lesions
+PMID28393239,TP,,Psoriasin (6278),pancreatic cancer (D010190),Positive_Correlation,Novel,G1-D1,S100A7,pancreatic cancer,supported,correlation,this study,Higher expression in local invasion; promotes invasion
+PMID28393239,FP,gold has both concepts but no relation,,,,,G1-D4,S100A7,metastasis,supported,correlation,this study,Reduced expression in tumours with metastases
+PMID28518143,TP,,gp78 (361367),myocardial energy metabolism disorder (D009202),Association,Novel,G2-D3,AMFR,Myocardial energy metabolism disorder,supported,causal,this study,gp78 siRNA reduces HG-induced changes
+PMID28518143,TP,,Calcium sensing receptor (24247),myocardial energy metabolism disorder (D009202),Association,Novel,G1-D3,CASR,Myocardial energy metabolism disorder,supported,causal,this study,CaSR agonist attenuates HG-induced metabolism disorder
+PMID28518143,TP,,Calcium sensing receptor (24247),DCM (D002311),Negative_Correlation,No,G1-D1,CASR,Diabetic cardiomyopathy,supported,causal,this study,CaSR protective; proposed DCM therapeutic target
+PMID28518143,FN,"our pair: supported, credited to another gold relation",Calcium sensing receptor (24247),metabolism disorder (D008659),Association,Novel,G1-D3,CASR,Myocardial energy metabolism disorder,supported,causal,this study,CaSR agonist attenuates HG-induced metabolism disorder
+PMID28518143,FP,gold has both concepts but no relation,,,,,G3-D3,MFN1,Myocardial energy metabolism disorder,supported,association,this study,Decreased and ubiquitinated under HG
+PMID28518143,FP,gold has both concepts but no relation,,,,,G4-D3,MFN2,Myocardial energy metabolism disorder,supported,association,this study,Decreased and ubiquitinated under HG
+PMID28518143,FP,gold has both concepts but no relation,,,,,G5-D3,GJA1,Myocardial energy metabolism disorder,supported,association,this study,Decreased and ubiquitinated under HG
+PMID28518143,FP,gold has both concepts but no relation,,,,,G6-D3,CTNNB1,Myocardial energy metabolism disorder,supported,association,this study,Decreased under HG
+PMID28518143,FP,gold has both concepts but no relation,,,,,G7-D3,CDH2,Myocardial energy metabolism disorder,supported,association,this study,Decreased under HG
+PMID28518143,FP,gold has both concepts but no relation,,,,,G8-D3,FIS1,Myocardial energy metabolism disorder,supported,association,this study,Increased under HG
+PMID28518143,FP,gold has both concepts but no relation,,,,,G9-D3,DNM1L,Myocardial energy metabolism disorder,supported,association,this study,Increased under HG
+PMID29049388,TP,,NPHS2 (7827),renal disease (D007674),Association,No,G1-D2,NPHS2,end-stage renal disease,supported,association,background,R138Q associated with progression to ESRD
+PMID29049388,TP,,NPHS2 (7827),nephrotic syndrome (D009404),Association,No,G1-D1,NPHS2,nephrotic syndrome,supported,causal,both,NPHS2 mutations cause nephrotic syndrome; model confirms
+PMID29049388,TP,,NPHS2 (7827),proteinuria (D011507),Association,Novel,G1-D4,NPHS2,proteinuria,supported,causal,this study,R140Q induction causes proteinuria
+PMID29049388,TP,,NPHS2 (7827),renal failure (D051437),Association,No,G1-D3,NPHS2,renal failure,supported,causal,both,R140Q knock-in causes renal failure
+PMID29049388,FN,"our pair: supported, credited to another gold relation",podocin (170484),nephrotic syndrome (D009404),Association,No,G1-D1,NPHS2,nephrotic syndrome,supported,causal,both,NPHS2 mutations cause nephrotic syndrome; model confirms
+PMID29049388,FN,"our pair: supported, credited to another gold relation",podocin (170484),proteinuria (D011507),Association,Novel,G1-D4,NPHS2,proteinuria,supported,causal,this study,R140Q induction causes proteinuria
+PMID29049388,FN,"our pair: supported, credited to another gold relation",podocin (170484),renal failure (D051437),Association,No,G1-D3,NPHS2,renal failure,supported,causal,both,R140Q knock-in causes renal failure
+PMID29049388,FP,gold has both concepts but no relation,,,,,G1-D5,NPHS2,glomerulosclerosis,supported,causal,this study,R140Q induction produces segmental glomerulosclerosis
+PMID29049388,FP,duplicate: its gold relation is credited to another of our pairs,,,,,G1-D6,NPHS2,tubulointerstitial fibrosis,supported,causal,this study,fibrosis develops in R140Q mice
+PMID29049388,FP,gold has both concepts but no relation,,,,,G2-D1,MIR21,nephrotic syndrome,supported,correlation,this study,miRNA21 rises during disease course
+PMID29049388,FP,gold has both concepts but no relation,,,,,G3-D1,MIR193A,nephrotic syndrome,supported,correlation,this study,miRNA-193a peaks during disease course
+PMID29183288,TP,,Arginase 1 (11846),asthma (D001249),Association,Novel,G1-D1,Arg1,allergic asthma,supported,causal,this study,Arg1 deletion alters asthma inflammatory response
+PMID29183288,FN,our pair: uncertain,Arginase 1 (11846),inflammatory (D007249),Association,Novel,G1-D3,Arg1,lung inflammation,uncertain,none,this study,Inflammatory genes changed; cell accumulation and histology unchanged
+PMID29183288,FP,gold has both concepts but no relation,,,,,G2-D1,Arg2,allergic asthma,supported,association,this study,OVA-induced expression increase
+PMID29183288,FP,gold has both concepts but no relation,,,,,G3-D1,Nos2,allergic asthma,supported,association,this study,OVA-induced expression increase
+PMID29183288,FP,gold has both concepts but no relation,,,,,G4-D1,Slc7a1,allergic asthma,supported,association,this study,OVA-induced expression increase
+PMID29183288,FP,gold has both concepts but no relation,,,,,G5-D1,Slc7a2,allergic asthma,supported,association,this study,OVA-induced expression increase
+PMID29183288,FP,gold has both concepts but no relation,,,,,G6-D1,Slc7a7,allergic asthma,supported,association,this study,OVA-induced expression increase
+PMID29183288,FP,gold has both concepts but no relation,,,,,G7-D1,Il4,allergic asthma,supported,association,this study,OVA-induced expression increase
+PMID29183288,FP,gold has both concepts but no relation,,,,,G8-D1,Il5,allergic asthma,supported,association,this study,OVA-induced expression increase
+PMID29183288,FP,gold has both concepts but no relation,,,,,G9-D1,Il13,allergic asthma,supported,association,this study,OVA-induced expression increase
+PMID29183288,FP,gold has both concepts but no relation,,,,,G10-D1,Ccl2,allergic asthma,supported,association,this study,OVA-induced expression increase
+PMID29183288,FP,gold has both concepts but no relation,,,,,G11-D1,Ccl11,allergic asthma,supported,association,this study,OVA-induced expression increase
+PMID29183288,FP,gold has both concepts but no relation,,,,,G12-D1,Ifng,allergic asthma,supported,association,this study,OVA-induced expression increase
+PMID29183288,FP,gold has both concepts but no relation,,,,,G13-D1,Clca3,allergic asthma,supported,association,this study,OVA-induced expression increase
+PMID29183288,FP,gold has both concepts but no relation,,,,,G14-D1,Muc5ac,allergic asthma,supported,association,this study,OVA-induced expression increase

@@ -1,0 +1,22 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|FASN|FASN;fatty acid synthase;Fatty Acid Synthase|r|||human||
+E|G2|gene|INS|insulin|p|other|human||
+E|G3|gene|ADIPOQ|adiponectin|p|other|human||
+E|D1|disease|hypertension|hypertension|r|||||
+E|D2|disease|metabolic dysfunction|metabolic dysfunction|p|ambiguous_mapping||||
+E|PH1|phenotype|systolic blood pressure|systolic blood pressure|r|||||
+E|PH2|phenotype|insulin sensitivity|insulin sensitivity|r|||||
+E|PH3|phenotype|birth weight|birth weight|r|||||
+X|C-peptide|b0002|INS-derived peptide measured as a biomarker; not a separate gene
+X|HOMA-IR|b0002|Insulin resistance index, not a disease
+EV|V1|b0002.s1|bg|bgr|hyp|ebr,ho
+EV|V2|b0002.s7|ts|res|aff|rr
+EV|V3|b0002.s8|ts|res|aff|rr
+EV|V4|b0002.s10|ts|hyp|hyp|ho
+P|G1|D1|unc|a|both|unc:a:bg:V1;unc:a:ts:V2|hedged_claim,scope|V4|Hedged background; result concerns SBP, not hypertension
+P|G1|D2|unc|a|bg|unc:a:bg:V1|hedged_claim|V2|Only a hedged background link
+F|F1|association|circulating FASN vs SBP|115 healthy pregnant women|significant|negative|partial|V2|abstract only; observational
+F|F2|association|circulating FASN vs glucose, insulin, HOMA-IR|115 healthy pregnant women|significant|negative|partial|V2|abstract only
+F|F3|association|circulating FASN vs placental/birth weight|115 pregnant women and newborns|significant|negative|partial|V2|abstract only
+F|F4|correlation|placental FASN vs circulating FASN, placental weight|80 placentas|significant|mixed|partial|V3|abstract only

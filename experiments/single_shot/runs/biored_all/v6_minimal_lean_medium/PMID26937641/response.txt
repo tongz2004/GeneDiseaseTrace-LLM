@@ -1,0 +1,31 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text, figures or tables
+E|G1|gene|serum amyloid A|Serum Amyloid A;Serum amyloid A;SAA|p|ambiguous_mapping||||
+E|G2|gene|SAA1|SAA1|p|species_unresolved||G1|
+E|G3|gene|SAA3|SAA3|p|species_unresolved|non-human|G1|
+E|G4|gene|IkappaB kinase|IkappaB kinase|p|ambiguous_mapping||||
+E|G5|gene|JNK|c-Jun N-terminal kinase;JNK|p|ambiguous_mapping||||
+E|G6|gene|ERK|Erk|p|ambiguous_mapping||||
+E|G7|gene|AKT|Akt|p|ambiguous_mapping||||
+E|G8|gene|NF-kappaB|NF-kappaB|p|ambiguous_mapping||||
+E|G9|gene|CCL2|MCP-1|r|||||
+E|G10|gene|CCL5|RANTES|r|||||
+E|G11|gene|MMP9|MMP9|r|||||
+E|G12|gene|CASP3|caspase 3|r|||||
+E|G13|gene|PARP|PARP|p|ambiguous_mapping||||
+E|D1|disease|inflammation|Inflammation;inflammation|r|||||
+E|D2|disease|liver fibrosis|hepatic fibrogenesis;fibrogenesis|r|||||
+E|D3|disease|liver injury|liver injury|r|||||
+E|D4|phenotype|apoptosis|apoptosis|r|||||
+X|Amyloid|b0001|part of gene name serum amyloid A, not amyloidosis
+EV|V1|b0001.s1+b0002.s5|ts|res|aff|rr
+EV|V2|b0002.s10|ts|int|hyp|ho
+EV|V3|b0002.s9|ts|res|aff|rr,do
+EV|V4|b0002.s2|bg|bgr|q|none
+P|G1|D1|sup|a|ts|sup:a:ts:V1||V2|SAA induces inflammatory chemokines in HSCs
+P|G2|D2|sup|r|ts|sup:r:ts:V3|||Hepatic SAA1 mRNA increased in fibrogenesis models
+P|G3|D2|sup|r|ts|sup:r:ts:V3|||Hepatic SAA3 mRNA increased in fibrogenesis models
+P|G1|D2|unc|-|ts|unc:-:ts:V2|hedged_claim||V4|Modulation of fibrogenesis only hypothesized
+P|G1|D3|nf|-|bg|||V4|Role in liver injury stated unknown
+F|F1|association|SAA1, SAA3 hepatic mRNA|CCl4 and bile duct ligation models|unknown|positive|not_reported|V3|abstract only; rodent models
+F|F2|mechanism|SAA, MCP-1, RANTES, MMP9 via NF-kappaB/JNK|primary human and rat HSCs|unknown|positive|not_reported|V1|in vitro only

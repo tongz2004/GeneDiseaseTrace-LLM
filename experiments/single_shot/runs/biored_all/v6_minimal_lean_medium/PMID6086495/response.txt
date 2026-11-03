@@ -1,0 +1,13 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|ambiguous_gene|Becker muscular dystrophy gene (Xp21 locus)|BMD gene;Becker muscular dystrophy gene|u|ambiguous_mapping|human||
+E|D1|disease|Becker muscular dystrophy|Becker muscular dystrophy;BMD;Becker|r||||
+E|D2|disease|Duchenne muscular dystrophy|Duchenne dystrophies;Duchenne|r||||
+X|p21|b0002.s1|chromosomal band Xp21, not the CDKN1A gene
+X|RFLPs|b0002.s1|DNA polymorphism markers, not a disease
+EV|V1|b0001.s1+b0002.s1|ts|res|aff|rr
+EV|V2|b0002.s2|ts|int|aff|unc
+P|G1|D1|unc|-|ts|unc:-:ts:V1|identity,presupposed_only|V2|unnamed linkage locus; gene identity unresolved
+P|G1|D2|unc|-|ts|unc:-:ts:V2|identity,hedged_claim||inferred close linkage or allelism only
+F|F1|association|BMD locus and Xp21 RFLP markers|30 BMD kindreds|unknown|positive|unread|V1|abstract only; LOD scores not given
+R|gene entity|b0002.s1|disease locus mapped without a named gene|listed as an unresolved ambiguous gene

@@ -1,0 +1,19 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|von Willebrand factor|von Willebrand factor;VWF;von Willerand factor|r|suspected_typo|human||
+E|G2|gene|glycoprotein Ib|glycoprotein Ib;GPIb|r||human||
+E|G3|gene|coagulation factor VIII|VIII:C|p|other|human||
+E|D1|disease|von Willebrand disease type 2B|type 2B von Willebrand disease;VWD;type 2B VWD|r||||
+E|D2|disease|mucocutaneous bleeding|mucocutaneous bleedings|r||||
+E|D3|disease|thrombocytopenia|thrombocytopenia|r||||
+EV|V1|b0002.s9+b0002.s11|ts|res|aff|rr,cs,eda
+EV|V2|b0002.s10|bg|bgr|aff|ebr
+EV|V3|b0002.s3+b0002.s9|ts|co|aff|do,cs
+EV|V4|b0002.s4|ts|co|na|do
+P|G1|D1|sup|c|ts|sup:c:ts:V1;sup:c:bg:V2||||R1306W segregates in affected family
+P|G1|D3|sup|c|bg|sup:c:bg:V2||||Mutation reported to cause thrombocytopenia
+P|G1|D2|sup|a|ts|sup:a:ts:V3||||All bleeding members carry R1306W
+P|G2|D1|nf|-||||||V2|GPIb only binding-site location
+P|G3|D1|nf|-||||||V4|Reduced VIII:C descriptive lab value
+F|F1|descriptive|VWF R1306W heterozygosity|proband and three children|not_applicable|not_applicable|not_applicable|V1|single family, no controls
+F|F2|mechanism|R1306W, VWF platelet affinity, HMW multimers|type 2B VWD|unknown|positive|not_reported|V2|background statement

@@ -1,0 +1,29 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|Psoriasin (S100A7)|Psoriasin;S100A7|r||human|G2|
+E|G2|gene|S100 protein family|S100|r||human||
+E|G3|gene|matrix metalloproteinase family|matrix metalloproteinase;MMPs|r||human||
+E|G4|gene|MMP-2|matrix metalloproteinase-2;MMP-2|r||human|G3|
+E|G5|gene|MMP-9|MMP-9|r||human|G3|
+E|D1|disease|pancreatic cancer|pancreatic cancer;pancreatic cancers;pancreatic tumours|r||||
+E|D2|disease|cancer|cancers|r||||
+E|D3|disease|metastasis|metastases|r||||
+E|D4|disease|psoriasis|psoriatic|r||||
+EV|V1|b0002.s9+b0002.s14|ts|res|aff|rr,cmp
+EV|V2|b0002.s11+b0002.s12+b0002.s13|ts|res|aff|rr,mi
+EV|V3|b0002.s3|bg|bgr|aff|ebr
+EV|V4|b0002.s10|ts|res|aff|rr,cmp
+EV|V5|b0002.s1|bg|bgr|aff|do
+EV|V6|b0002.s12+b0002.s15|ts|res|aff|rr,mi
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V2||||Higher expression linked to local invasion; promotes cell functions
+P|G1|D2|sup|a|bg|sup:a:bg:V3||||Aberrant expression is implicated in cancers
+P|G1|D3|sup|r|ts|sup:r:ts:V4||||Expression is reduced in tumours with distant metastases
+P|G1|D4|sup|a|bg|sup:a:bg:V5||||First isolated from psoriatic lesions
+P|G4|D1|sup|a|ts|sup:a:ts:V6||||Upregulated with Psoriasin-driven invasion
+P|G5|D1|sup|a|ts|sup:a:ts:V6||||Upregulated with Psoriasin-driven invasion
+P|G3|D1|sup|a|ts|sup:a:ts:V6||||MMP regulation mediates invasion
+F|F1|group_comparison|Psoriasin transcripts; local invasion|126 pancreatic tumours|unknown|positive|unread|V1|abstract only
+F|F2|group_comparison|Psoriasin expression; distant metastasis|pancreatic tumours|unknown|negative|unread|V4|abstract only
+F|F3|mechanism|Psoriasin overexpression; growth, migration, invasion|pancreatic cancer cell lines|significant|positive|unread|V2|in vitro only
+F|F4|mechanism|Psoriasin overexpression; MMP-2, MMP-9|pancreatic cancer cell lines|unknown|positive|unread|V6|in vitro only
+C|C1|Psoriasin direction: invasion versus metastasis|b0002.s9;b0002.s10|noncritical|unresolved|Opposite directions; both recorded as supported

@@ -1,0 +1,10 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no genes mentioned
+E|D1|disease|Waldenstrom macroglobulinaemia|Waldenstrom macroglobulinaemia|r||||
+E|D2|disease|necrotising fasciitis|Necrotising fasciitis;necrotising fasciitis|r||||
+E|D3|disease|B-cell malignancies|B-cell malignancies|r||||
+E|D4|disease|neutropenia|neutropenia|r||||
+E|D5|disease|bacterial infections|bacterial infections|r||||
+X|bortezomib|b0002|drug, not a gene
+X|rituximab|b0002|anti-CD20 drug; no gene named
+X|dexamethasone|b0002|drug, not a gene

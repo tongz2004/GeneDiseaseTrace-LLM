@@ -1,0 +1,15 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|IGF1|IGF-1|r||human||
+E|G2|gene|GH1|growth hormone;GH|p|ambiguous_mapping|human||
+E|D1|disease|growth hormone deficiency|growth hormone-deficient;GH-deficient;GH-deficiency;GHD|r||||
+X|rs1019731|b0002.s7|IGF1 variant, not separate gene
+X|GH-IGF-axis|b0002.s9|pathway label, not gene or disease
+EV|V1|b0002.s4|bg|co|pre|eda
+EV|V2|b0002.s7|ts|res|aff|rr,cmp
+EV|V3|b0002.s8+b0002.s9|ts|neg|neg|rr
+EV|V4|b0002.s1+b0002.s2|bg|bgr|aff|ebr
+P|G2|D1|sup|a|bg|sup:a:bg:V1||V1|disease defined by GH deficiency
+P|G1|D1|unc|a|ts|unc:a:ts:V2;neg:a:ts:V3|scope|V4|tested GH response in GHD, not disease risk
+F|F1|association|rs1019731 genotype and IGF-1-SDS|133 adults with GHD|significant|unknown|partial|V2|p=0.02 only; direction not reported
+F|F2|association|IGF-1 polymorphisms and GH-dose|133 adults with GHD|not_significant|null|partial|V3|adjusted for gender, age, BMI

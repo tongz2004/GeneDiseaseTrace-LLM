@@ -1,0 +1,20 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|ALD gene|ALD|r|||human||
+E|D1|disease|X-linked adrenoleukodystrophy|X-linked adrenoleukodystrophy;adrenoleukodystrophy;ALD|r|||||
+E|D2|disease|adolescent ALD|adolescent ALD|r||||D1|
+E|D3|disease|cerebral ALD|cerebral ALD|r||||D1|
+E|D4|disease|adrenomyeloneuropathy|adrenomyeloneuropathy|r|||||
+E|D5|disease|Addison only|Addison|p|other||||
+E|S1|phenotype|very long chain fatty acid accumulation|very long chain fatty acids|r|||||
+X|ALD|b0002.s1|same abbreviation used for gene and disease; split by context
+EV|V1|b0002.s2|ts|co|na|do
+EV|V2|b0001.s1+b0002.s3|ts|res|aff|cs,cmp
+EV|V3|b0002.s4|ts|int|hyp|ho
+P|G1|D1|sup|a|ts|sup:a:ts:V2;unc:-:ts:V3|hedged_claim||Mutation co-segregates with ALD; causality only proposed
+P|G1|D2|unc|-|ts|unc:-:ts:V1+V2|scope|V1|Index patient carrier; no subtype-specific attribution
+P|G1|D3|unc|-|ts|unc:-:ts:V2|scope,hedged_claim|V3|Carriers only; phenotypes attributed to other factors
+P|G1|D4|unc|-|ts|unc:-:ts:V2|scope,hedged_claim|V3|Carrier only; phenotype attributed to other factors
+P|G1|D5|unc|-|ts|unc:-:ts:V2|scope,hedged_claim,identity|V3|Carrier only; phenotype attributed to other factors
+F|F1|association|P484R carrier status vs affected status|family; 5 unrelated ALD; 20 controls|unknown|positive|not_reported|V2|small family; no statistics
+F|F2|hypothesis|P484R vs phenotype variability|affected family members|not_applicable|not_applicable|not_applicable|V3|authors' interpretation only

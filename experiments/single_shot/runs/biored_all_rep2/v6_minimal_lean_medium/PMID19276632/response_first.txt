@@ -1,0 +1,17 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|FOXF2|FOXF2|r||human||
+E|G2|gene|Foxf2|Foxf2|r||non-human|G1|
+E|D1|disease|disorders of sex development|disorders of sex development;DSD;disorders of sexual differentiation|r|||||
+E|D2|disease|cleft palate|cleft palate|r|||||
+E|P1|phenotype|hypoplasia of the genital tubercle|hypoplasia of the genital tubercle|r|||||
+EV|V1|b0002.s3|bg|bgr|aff|ebr,mi
+EV|V2|b0002.s4|ts|hyp|hyp|ho
+EV|V3|b0002.s7|ts|res|aff|rr,cmp,do
+EV|V4|b0002.s10+b0002.s11|ts|int|q|unc
+EV|V5|b0002.s8+b0002.s9|ts|neg|neg|cmp
+P|G1|D1|unc|a|ts|unc:a:ts:V2+V3+V4|hedged_claim|V5|Unique variants found; functional relevance unproven
+P|G1|D2|unc|a|ts|unc:a:ts:V2+V3+V4|hedged_claim|V1;V5|Same patient cohort; only mouse evidence firm
+P|G2|D2|sup|c|bg|sup:c:bg:V1|||Knockout mice present cleft palate
+P|G2|P1|sup|c|bg|sup:c:bg:V1|||Knockout mice show genital tubercle hypoplasia
+F|F1|group_comparison|FOXF2 sequence variants|18 DSD with cleft palate vs 20 controls|not_applicable|unknown|not_reported|V3+V5|small sample; no functional testing

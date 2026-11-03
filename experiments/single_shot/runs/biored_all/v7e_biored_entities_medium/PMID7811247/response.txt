@@ -1,0 +1,21 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|ABCD1 (ALD gene)|ALD|r|||human||
+E|D1|disease|X-linked adrenoleukodystrophy|X-linked adrenoleukodystrophy;adrenoleukodystrophy;ALD|r|||||
+E|D2|disease|adolescent adrenoleukodystrophy|adolescent ALD|r|||||
+E|D3|disease|cerebral adrenoleukodystrophy|cerebral ALD|r|||||
+E|D4|disease|adrenomyeloneuropathy|adrenomyeloneuropathy|r|||||
+E|D5|disease|Addison disease|Addison|r|||||
+E|D6|disease|very long chain fatty acid accumulation|very long chain fatty acids|p|other||||
+EV|V1|b0002.s1+b0002.s2|ts|res|aff|rr,eda
+EV|V2|b0002.s3|ts|res|aff|cs,cmp
+EV|V3|b0002.s4|ts|int|aff|cs,eda
+P|G1|D1|sup|c|ts|sup:c:ts:V1+V2+V3|||Novel missense mutation co-segregates and causes ALD
+P|G1|D2|sup|c|ts|sup:c:ts:V1+V3|||Mutation found in index adolescent ALD patient
+P|G1|D3|sup|c|ts|sup:c:ts:V2+V3|||Carriers include two cerebral ALD siblings
+P|G1|D4|sup|c|ts|sup:c:ts:V2+V3|||Adrenomyeloneuropathy sibling carries mutation
+P|G1|D5|sup|c|ts|sup:c:ts:V2+V3|||Addison-only sibling carries mutation
+P|G1|D6|sup|c|ts|sup:c:ts:V2+V3|||Mutation proposed to cause metabolic defect
+F|F1|association|ALD P484R mutation; ALD phenotypes|one family; unrelated patients; controls|not_applicable|positive|not_applicable|V2|single family
+F|F2|hypothesis|ALD mutation; phenotypic variability|family carriers|not_applicable|not_applicable|not_applicable|V3|additional factors unspecified
+R|gene/disease shared name|b0002.s1|ALD denotes both the gene and the disease|Gene reading assigned to G1; patient/disease reading assigned to D1

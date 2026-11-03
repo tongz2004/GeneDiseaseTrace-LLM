@@ -1,0 +1,19 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|LYRM7|LYRM7;MZM1L|r|||human||
+E|G2|gene|MZM1|MZM1;mzm1|r|||non-human||
+E|D1|disease|mitochondrial encephalopathy|encephalopathy;mitochondrial encephalopathy|r|||||
+E|D2|disease|lactic acidosis|lactic acidosis|r|||||
+E|D3|disease|mitochondrial complex III deficiency|cIII deficiency|r|||||
+E|D4|phenotype|respiratory growth defect|respiratory growth defect|r|||||
+EV|V1|b0001.s1|ts|res|aff|rr
+EV|V2|b0002.s3|ts|res|aff|rr,cs,eda
+EV|V3|b0002.s4|ts|res|aff|mi
+EV|V4|b0002.s5|ts|int|aff|eda
+P|G1|D1|sup|c|ts|sup:c:ts:V2+V4;sup:a:ts:V1|||Segregating homozygous mutation; authors call it causal
+P|G1|D2|sup|a|ts|sup:a:ts:V1+V2|||Lactic acidosis in the mutation carrier
+P|G1|D3|sup|c|ts|sup:c:ts:V2+V3+V4|||Isolated cIII deficiency; confirmed in yeast model
+P|G2|D3|sup|c|ts|sup:c:ts:V3|||Yeast mzm1 D25N mutant reduced complex III
+P|G2|D4|sup|c|ts|sup:c:ts:V3|||Mutant allele caused respiratory growth defect
+F|F1|descriptive|LYRM7 c.73G>A homozygous; encephalopathy|single infant patient|not_applicable|positive|not_applicable|V2|single family
+F|F2|mechanism|mzm1 D25N; complex III activity|mzm1D yeast strain|unknown|negative|unread|V3|yeast model; abstract only

@@ -1,0 +1,25 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|ADIPOQ (adiponectin)|adiponectin;Adiponectin|r||non-human||
+E|G2|gene|ALDH1A1|ALDH1A1;aldehyde dehydrogenase A1|r||non-human||
+E|G3|gene|RARA|retinoic acid receptor (RAR)a|p|ambiguous_mapping|non-human||
+E|G4|gene|RARG|RARg|r||non-human||
+E|G5|gene|retinoid X receptor|retinoid X receptor|p|ambiguous_mapping|non-human||
+E|D1|disease|diabetes|antidiabetic|p|other|||
+E|D2|disease|inflammation|anti-inflammatory|p|other|||
+E|D3|disease|atherosclerosis|antiatherogenic|p|other|||
+E|D4|disease|cardiovascular diseases|inflammatory-based cardiovascular diseases|r||||
+E|D5|disease|obesity/adiposity|adiposity|p|ambiguous_mapping|||
+E|S1|phenotype|weight gain|gain of body weight|r||||
+X|retinoic acid response element|b0002.s5|DNA element, not a gene
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s2|bg|co|na|do
+EV|V3|b0002.s5+b0002.s8|ts|res|aff|rr
+P|G1|D1|sup|r|bg|sup:r:bg:V1|||Adiponectin has antidiabetic activity
+P|G1|D2|sup|r|bg|sup:r:bg:V1|||Adiponectin has anti-inflammatory activity
+P|G1|D3|sup|r|bg|sup:r:bg:V1|||Adiponectin has antiatherogenic activity
+P|G1|D5|sup|a|bg|sup:a:bg:V2|||High-fat diet: adiposity with reduced adiponectin
+P|G1|D4|unc|-|bg|unc:-:bg:V1+V2|support_basis_unresolved||Only via antiatherogenic activity and co-occurrence
+P|G2|D5|unc|-|ts|unc:-:ts:V3|scope||ALDH1A1 up in high-fat diet, adiposity unmeasured
+F|F1|group_comparison|adiponectin, ALDH1A1 expression in WAT|mice fed high-fat diet|unknown|mixed|unread|V3|abstract only
+R|enzyme activity adjectives|b0002.s1|Antidiabetic, antiatherogenic describe activity, not named diseases|Mapped to diseases as background negative correlation

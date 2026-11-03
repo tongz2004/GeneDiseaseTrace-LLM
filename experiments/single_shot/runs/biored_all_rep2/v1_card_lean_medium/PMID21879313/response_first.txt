@@ -1,0 +1,20 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|IL28B|IL28B;interleukin 28B|r||human||
+E|G2|gene|apolipoprotein B-100|apolipoprotein B-100;apoB-100|p|other|human||
+E|D1|disease|chronic hepatitis C|chronic hepatitis C;chronic HCV infection|r||||
+E|D2|disease|chronic HCV genotype 1b infection|chronic HCV G1b infection;HCV genotype 1b infection|r|||D1|
+X|hepatitis C virus|b0001|virus organism, not a disease
+X|HCV-associated intracellular lipoprotein metabolism|b0002|cellular process, not a disease
+X|rs8099917|b0001|variant ID
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s4+b0002.s6|ts|res|aff|rr,cmp
+EV|V3|b0002.s7+b0002.s8|ts|int|hyp|ho
+EV|V4|b0002.s4+b0002.s5|ts|res|aff|rr,cmp
+P|G1|D2|nf|-|||V1+V2|Therapy response and apoB levels, not disease link
+P|G2|D1|unc|-|ts|unc:-:ts:V3|hedged_claim||Marker role only suggested by authors
+P|G2|D2|nf|-|||V2+V4|Within-disease lipid level comparisons only
+F|F1|group_comparison|rs8099917 TT vs apoB-100, LDL|chronic HCV G1b subjects, n=148|significant|positive|partial|V2|Abstract only
+F|F2|group_comparison|core aa70 Arg vs apoB-100, LDL|chronic HCV G1b subjects, n=148|significant|positive|partial|V4|Abstract only
+F|F3|association|rs8099917 and aa70 independent apoB determinants|chronic HCV G1b subjects|significant|unknown|not_reported|V2+V4|Multivariate statistics not shown
+R|gene vs protein|b0002.s3|apoB-100 is a protein isoform, not a gene symbol|Kept as gene entity, provisional with other issue

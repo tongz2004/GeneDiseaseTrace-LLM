@@ -1,0 +1,34 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|neuroserpin|Neuroserpin;neuroserpin;NSP|r||non-human|||
+E|G2|gene|TNF-alpha|TNF-alpha|r||non-human|||
+E|G3|gene|NF-kappaB|NF-kappaB|p|ambiguous_mapping|non-human|||
+E|G4|gene|RELA (p65)|P65|r||non-human|G3|
+E|G5|gene|IKK alpha/beta|p-IKKBalpha/beta|p|suspected_typo,ambiguous_mapping|non-human|||
+E|G6|gene|ERK1 (MAPK3)|ERK1;p-ERK1|r||non-human|||
+E|G7|gene|ERK2 (MAPK1)|p-ERK2|r||non-human|||
+E|G8|gene|AKT|Akt;p-AKT|p|ambiguous_mapping|non-human|||
+E|G9|gene|PI3K|PI3K|p|ambiguous_mapping|non-human|||
+E|D1|disease|cerebral ischemia|cerebral ischemic;ischemic|r|||||
+X|LDH|b0002.s4|cytotoxicity assay marker, not studied as gene
+X|OGD/R|b0002.s3|in vitro ischemia model, mapped to D1
+X|sc3060|b0002.s7|inhibitor compound, not a gene
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s8+b0002.s12|ts|res|aff|rr,mi
+EV|V3|b0002.s10|ts|res|aff|rr,cmp
+EV|V4|b0002.s11|ts|res|aff|rr,cmp
+EV|V5|b0002.s9+b0002.s13|ts|int|hyp|rr,unc
+EV|V6|b0002.s7+b0002.s11|ts|res|aff|mi
+P|G1|D1|sup|a|both|sup:a:bg:V1;sup:a:ts:V2|||Neuroprotective in ischemic models and OGD/R astrocytes
+P|G4|D1|sup|a|ts|sup:a:ts:V3|||P65 upregulated by OGD/R
+P|G5|D1|sup|a|ts|sup:a:ts:V3|identity||p-IKK upregulated by OGD/R; name garbled
+P|G3|D1|sup|a|ts|sup:a:ts:V3+V6|||NF-kappaB pathway activated by OGD/R
+P|G6|D1|sup|a|ts|sup:a:ts:V4|||p-ERK1 upregulated by OGD/R
+P|G7|D1|sup|a|ts|sup:a:ts:V4|||p-ERK2 upregulated by OGD/R
+P|G8|D1|sup|a|ts|sup:a:ts:V4|||p-AKT upregulated by OGD/R
+P|G2|D1|unc|-|ts|unc:a:ts:V5|hedged_claim||NSP reduced TNF release; OGD/R increase not stated
+F|F1|group_comparison|NSP; survival, LDH release|OGD/R rat astrocytes|significant|positive|unread|V2|abstract only
+F|F2|mechanism|p-IKK, P65 under OGD/R ± NSP|OGD/R rat astrocytes|significant|mixed|unread|V3|abstract only
+F|F3|mechanism|p-ERK1/2, p-AKT under OGD/R ± NSP|OGD/R rat astrocytes|unknown|mixed|unread|V4|NSP effect null
+F|F4|mechanism|sc3060 reverses NSP inhibition|OGD/R rat astrocytes|significant|negative|unread|V6|abstract only
+R|disease mapping|b0002.s3|In vitro OGD/R is a model, not a disease|Mapped OGD/R results to cerebral ischemia

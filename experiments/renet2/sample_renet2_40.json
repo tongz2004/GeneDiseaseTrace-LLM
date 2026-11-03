@@ -1,0 +1,334 @@
+{
+  "source": "renet2_data_models.tar.gz, data/ft_data (Su et al. 2021)",
+  "data_sha256": {
+    "docs.txt": "0c95f4e371593efcae9cb88f9be889af09b4e9f29fc5f0b1f3cbfeb90de15c1c",
+    "anns.txt": "394a09f6864f270a5894c7f160fa68ed17cab2e12514c1438b053cd8593a6bd6",
+    "labels.txt": "73b4522e64aac82974df03cc2e6f72e4e8b3efd77abc842a11dbd53f5611a74f"
+  },
+  "criteria": ">= 1 associated pair and >= 1000 characters of main text",
+  "seed": 20261028,
+  "articles": 500,
+  "eligible": 187,
+  "papers": [
+    {
+      "paper_id": "RENET10579720",
+      "pmid": "10579720",
+      "characters": 9066,
+      "associated": 7,
+      "ambiguous": 0,
+      "non-associated": 6
+    },
+    {
+      "paper_id": "RENET14710238",
+      "pmid": "14710238",
+      "characters": 5842,
+      "associated": 1,
+      "ambiguous": 0,
+      "non-associated": 0
+    },
+    {
+      "paper_id": "RENET18752632",
+      "pmid": "18752632",
+      "characters": 13924,
+      "associated": 8,
+      "ambiguous": 1,
+      "non-associated": 1
+    },
+    {
+      "paper_id": "RENET18836991",
+      "pmid": "18836991",
+      "characters": 6322,
+      "associated": 6,
+      "ambiguous": 0,
+      "non-associated": 6
+    },
+    {
+      "paper_id": "RENET19168076",
+      "pmid": "19168076",
+      "characters": 7441,
+      "associated": 1,
+      "ambiguous": 0,
+      "non-associated": 0
+    },
+    {
+      "paper_id": "RENET19813621",
+      "pmid": "19813621",
+      "characters": 5727,
+      "associated": 1,
+      "ambiguous": 0,
+      "non-associated": 0
+    },
+    {
+      "paper_id": "RENET21364575",
+      "pmid": "21364575",
+      "characters": 4415,
+      "associated": 2,
+      "ambiguous": 0,
+      "non-associated": 2
+    },
+    {
+      "paper_id": "RENET21396159",
+      "pmid": "21396159",
+      "characters": 15908,
+      "associated": 3,
+      "ambiguous": 0,
+      "non-associated": 10
+    },
+    {
+      "paper_id": "RENET22787480",
+      "pmid": "22787480",
+      "characters": 7550,
+      "associated": 5,
+      "ambiguous": 0,
+      "non-associated": 0
+    },
+    {
+      "paper_id": "RENET23267373",
+      "pmid": "23267373",
+      "characters": 5211,
+      "associated": 1,
+      "ambiguous": 0,
+      "non-associated": 0
+    },
+    {
+      "paper_id": "RENET24003385",
+      "pmid": "24003385",
+      "characters": 3362,
+      "associated": 1,
+      "ambiguous": 0,
+      "non-associated": 1
+    },
+    {
+      "paper_id": "RENET24069431",
+      "pmid": "24069431",
+      "characters": 5449,
+      "associated": 2,
+      "ambiguous": 0,
+      "non-associated": 1
+    },
+    {
+      "paper_id": "RENET24080184",
+      "pmid": "24080184",
+      "characters": 21582,
+      "associated": 24,
+      "ambiguous": 0,
+      "non-associated": 7
+    },
+    {
+      "paper_id": "RENET24117827",
+      "pmid": "24117827",
+      "characters": 32316,
+      "associated": 1,
+      "ambiguous": 0,
+      "non-associated": 0
+    },
+    {
+      "paper_id": "RENET24143102",
+      "pmid": "24143102",
+      "characters": 6619,
+      "associated": 2,
+      "ambiguous": 0,
+      "non-associated": 0
+    },
+    {
+      "paper_id": "RENET24373684",
+      "pmid": "24373684",
+      "characters": 13223,
+      "associated": 5,
+      "ambiguous": 0,
+      "non-associated": 17
+    },
+    {
+      "paper_id": "RENET25273894",
+      "pmid": "25273894",
+      "characters": 7439,
+      "associated": 3,
+      "ambiguous": 0,
+      "non-associated": 2
+    },
+    {
+      "paper_id": "RENET27069490",
+      "pmid": "27069490",
+      "characters": 5139,
+      "associated": 2,
+      "ambiguous": 0,
+      "non-associated": 0
+    },
+    {
+      "paper_id": "RENET27078154",
+      "pmid": "27078154",
+      "characters": 6006,
+      "associated": 13,
+      "ambiguous": 0,
+      "non-associated": 0
+    },
+    {
+      "paper_id": "RENET28277979",
+      "pmid": "28277979",
+      "characters": 19084,
+      "associated": 10,
+      "ambiguous": 0,
+      "non-associated": 7
+    },
+    {
+      "paper_id": "RENET29568308",
+      "pmid": "29568308",
+      "characters": 16241,
+      "associated": 1,
+      "ambiguous": 0,
+      "non-associated": 0
+    },
+    {
+      "paper_id": "RENET29662784",
+      "pmid": "29662784",
+      "characters": 1257,
+      "associated": 2,
+      "ambiguous": 0,
+      "non-associated": 1
+    },
+    {
+      "paper_id": "RENET29938207",
+      "pmid": "29938207",
+      "characters": 6254,
+      "associated": 2,
+      "ambiguous": 0,
+      "non-associated": 0
+    },
+    {
+      "paper_id": "RENET29979707",
+      "pmid": "29979707",
+      "characters": 10952,
+      "associated": 4,
+      "ambiguous": 0,
+      "non-associated": 1
+    },
+    {
+      "paper_id": "RENET30468149",
+      "pmid": "30468149",
+      "characters": 4758,
+      "associated": 2,
+      "ambiguous": 0,
+      "non-associated": 1
+    },
+    {
+      "paper_id": "RENET30643658",
+      "pmid": "30643658",
+      "characters": 4743,
+      "associated": 1,
+      "ambiguous": 0,
+      "non-associated": 0
+    },
+    {
+      "paper_id": "RENET30906313",
+      "pmid": "30906313",
+      "characters": 18346,
+      "associated": 2,
+      "ambiguous": 0,
+      "non-associated": 0
+    },
+    {
+      "paper_id": "RENET31143309",
+      "pmid": "31143309",
+      "characters": 12718,
+      "associated": 13,
+      "ambiguous": 0,
+      "non-associated": 4
+    },
+    {
+      "paper_id": "RENET31221168",
+      "pmid": "31221168",
+      "characters": 20010,
+      "associated": 2,
+      "ambiguous": 0,
+      "non-associated": 5
+    },
+    {
+      "paper_id": "RENET31430968",
+      "pmid": "31430968",
+      "characters": 7623,
+      "associated": 1,
+      "ambiguous": 0,
+      "non-associated": 0
+    },
+    {
+      "paper_id": "RENET31832083",
+      "pmid": "31832083",
+      "characters": 10456,
+      "associated": 5,
+      "ambiguous": 0,
+      "non-associated": 0
+    },
+    {
+      "paper_id": "RENET31890722",
+      "pmid": "31890722",
+      "characters": 14563,
+      "associated": 2,
+      "ambiguous": 0,
+      "non-associated": 2
+    },
+    {
+      "paper_id": "RENET32211513",
+      "pmid": "32211513",
+      "characters": 19949,
+      "associated": 6,
+      "ambiguous": 0,
+      "non-associated": 1
+    },
+    {
+      "paper_id": "RENET32234467",
+      "pmid": "32234467",
+      "characters": 10408,
+      "associated": 2,
+      "ambiguous": 0,
+      "non-associated": 2
+    },
+    {
+      "paper_id": "RENET32264922",
+      "pmid": "32264922",
+      "characters": 5656,
+      "associated": 2,
+      "ambiguous": 0,
+      "non-associated": 0
+    },
+    {
+      "paper_id": "RENET32291137",
+      "pmid": "32291137",
+      "characters": 17301,
+      "associated": 2,
+      "ambiguous": 0,
+      "non-associated": 0
+    },
+    {
+      "paper_id": "RENET32313880",
+      "pmid": "32313880",
+      "characters": 19108,
+      "associated": 6,
+      "ambiguous": 0,
+      "non-associated": 1
+    },
+    {
+      "paper_id": "RENET32321856",
+      "pmid": "32321856",
+      "characters": 2757,
+      "associated": 1,
+      "ambiguous": 0,
+      "non-associated": 0
+    },
+    {
+      "paper_id": "RENET32327200",
+      "pmid": "32327200",
+      "characters": 1543,
+      "associated": 3,
+      "ambiguous": 0,
+      "non-associated": 0
+    },
+    {
+      "paper_id": "RENET32341442",
+      "pmid": "32341442",
+      "characters": 14990,
+      "associated": 24,
+      "ambiguous": 0,
+      "non-associated": 5
+    }
+  ]
+}

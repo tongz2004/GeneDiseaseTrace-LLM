@@ -1,0 +1,18 @@
+META|GPT-6|seen: yes, previous output
+SCOPE|Provided title and abstract only.
+E|G1|gene|RPGR|RPGR|r||human||
+E|D1|disease|X-linked retinitis pigmentosa|X-linked retinitis pigmentosa;XLRP|r||||
+E|D3|disease|RP|RP|p|undefined_abbreviation|||
+E|H1|phenotype|mosaicism|mosaicism|r||||
+E|H2|phenotype|gonadal mosaicism|gonadal mosaicism|r||||
+E|H3|phenotype|somatic-gonadal mosaicism|somatic-gonadal mosaicism|r||||
+X|g.ORF15 + 652-653delAG|b0002|variant identifier
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s8+b0002.s10|ts|res|aff|rr,eda
+EV|V3|b0002.s3+b0002.s5|ts|co|na|do
+EV|V4|b0002.s9|ts|res|na|rr
+EV|V5|b0002.s11|ts|hyp|hyp|ho
+P|G1|D1|sup|a|both|sup:a:bg:V1;sup:a:ts:V2|||
+P|G1|D3|nf|-||||V3|Family recruitment and screening alone establish no relation.
+F|F1|descriptive|RPGR mutation across tissues|First-generation female|not_applicable|not_applicable|not_reported|V4|Blood negative; hair and buccal DNA positive.
+F|F2|hypothesis|Gonadal mosaicism and RP families|Multiplex or simplex RP families|unknown|unknown|not_reported|V5|Gene-specific attribution absent.

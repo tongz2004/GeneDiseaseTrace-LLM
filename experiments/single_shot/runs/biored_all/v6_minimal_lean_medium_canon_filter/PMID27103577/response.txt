@@ -1,0 +1,13 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text unavailable
+E|G1|gene|PPARa|PPARa;peroxisome proliferator-activated receptor a|r||non-human||
+E|G2|gene|UCP3|UCP3;mitochondrial uncoupling protein 3|r||non-human||
+E|D1|disease|hypoxia|hypoxia;hypoxic injury|r||||
+EV|V1|b0002.s4|ts|res|aff|rr,cmp
+EV|V2|b0002.s6+b0002.s7+b0002.s8|ts|res|aff|rr,mi,cmp
+EV|V3|b0001.s1|ts|int|aff|unc
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V2|||Hypoxia lowers PPARa; knockout mice sustain hypoxic function
+P|G2|D1|sup|a|ts|sup:a:ts:V1|||Hypoxia decreased cardiac UCP3 levels in mice
+F|F1|group_comparison|PPARa, UCP3 expression vs hypoxia|chow-fed mouse hearts|unknown|negative|unread|V1|abstract only
+F|F2|mechanism|PPARa deficiency, hypoxic cardiac function|PPARa-/- mice|unknown|not_applicable|unread|V2|abstract only
+F|F3|group_comparison|high-fat diet PPARa, hypoxic ATP and function|high-fat-fed mice|significant|negative|unread|V2|

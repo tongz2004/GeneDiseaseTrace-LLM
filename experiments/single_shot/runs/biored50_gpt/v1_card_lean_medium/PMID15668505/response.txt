@@ -1,0 +1,23 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only; no full text or attachments.
+E|G1|gene|BRCA2|BRCA2|r||human||
+E|G2|gene|BRCA1|BRCA1|r||human||
+E|D1|disease|breast cancer|breast cancer|r||||
+E|D2|disease|ovarian cancer|ovarian cancer|r||||
+E|D3|disease|cancer|cancer|r||||
+E|D4|disease|sporadic cancer|sporadic cancer|r|||D3|
+X|N372H|b0002|variant identifier
+X|203G > A|b0002|variant identifier
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s6|ts|neg|neg|rr,cmp
+EV|V3|b0002.s7|ts|neg|neg|rr,cmp
+EV|V4|b0002.s7|ts|res|aff|rr,cmp
+EV|V5|b0002.s2+b0002.s3|ts|aim|q|none
+EV|V6|b0002.s8|ts|neg|neg|rr
+EV|V7|b0002.s9|ts|int|na|unc
+P|G1|D1|sup|a|bg|sup:a:bg:V1;neg:-:ts:V2|||Background HH association; neither tested variant modifies carrier penetrance.
+P|G1|D2|sup|a|both|sup:a:bg:V1;neg:-:ts:V3;sup:a:ts:V4|||Carrier results: N372H null; 203A borderline increased risk.
+P|G2|D1|nf|-||||V5|Carrier population defines study scope; no BRCA1 attribution.
+P|G2|D2|nf|-||||V5|Carrier population defines study scope; no BRCA1 attribution.
+P|G1|D3|nf|-||||V7|Conditional conclusion bounds effect magnitude without establishing modification.
+F|F1|other|BRCA2 N372H Hardy-Weinberg equilibrium|female BRCA1 carriers|not_significant|null|not_reported|V6|No disease association tested here.

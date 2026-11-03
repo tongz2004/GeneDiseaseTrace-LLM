@@ -1,0 +1,22 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text unavailable
+E|G1|gene|LCN2|neutrophil gelatinase-associated lipocalin;NGAL|r|||non-human||
+E|G2|gene|HEXB|N-acetyl b-D-glucosaminidase;NAG|p|ambiguous_mapping|non-human||
+E|G3|gene|HAVCR1|KIM|r||non-human||
+E|G4|gene|CLDN2|claudin-2|r||non-human||
+E|G5|gene|NFE2L2|Nrf2|r||non-human||
+E|G6|ambiguous_gene|ACO2|aconitase|p|ambiguous_mapping|non-human||
+E|D1|disease|kidney injury|nephrotoxicity;renal injury;nephropathy|r||||
+E|D2|disease|proteinuria|proteinuria|r||||
+X|complex I|b0002.s8|multi-subunit respiratory complex, not a single gene
+EV|V1|b0002.s3|ts|res|aff|rr
+EV|V2|b0002.s4|ts|res|aff|rr,unc
+EV|V3|b0002.s8|ts|res|aff|rr,unc
+P|G1|D1|sup|r|ts|sup:r:ts:V1||| urinary NGAL increased in maleate renal injury
+P|G2|D1|sup|r|ts|sup:r:ts:V1||| urinary NAG increased in maleate renal injury
+P|G3|D1|sup|r|ts|sup:r:ts:V1||| KIM-1 upregulated in maleate renal injury
+P|G4|D1|sup|r|ts|sup:r:ts:V1||| claudin-2 expression decreased in renal injury
+P|G5|D1|unc|-|ts|unc:r:ts:V2|support_basis_unresolved||Nrf2 decrease tied to oxidative stress only
+P|G6|D1|unc|-|ts|unc:r:ts:V3|identity,support_basis_unresolved||aconitase activity reduced; gene unclear
+F|F1|descriptive|NGAL, NAG, KIM-1, claudin-2 levels|maleate-treated rats|unknown|mixed|unread|V1|abstract only; no statistics
+F|F2|descriptive|renal Nrf2 levels|maleate-treated rats|unknown|negative|unread|V2|abstract only

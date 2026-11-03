@@ -1,0 +1,14 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|IL10|IL-10|r||human||
+E|D1|disease|periodontitis|Periodontitis;periodontitis|r||||
+E|D2|disease|aggressive periodontitis|aggressive periodontitis|r|||D1|
+E|D3|disease|generalized aggressive periodontitis|generalized aggressive periodontitis|r|||D2|
+EV|V1|b0002.s3|bg|bgr|hyp|ho
+EV|V2|b0002.s2|bg|bgr|aff|ebr
+EV|V3|b0002.s10+b0002.s11+b0002.s12|ts|neg|neg|rr,cmp
+EV|V4|b0002.s5|ts|aim|q|none
+P|G1|D3|neg|-|ts|neg:-:ts:V3|||V4|No genotype or allele frequency difference
+P|G1|D1|unc|a|bg|unc:a:bg:V1|hedged_claim||V2|Background says only "thought to play a role"
+F|F1|group_comparison|IL-10 -1082 genotype frequencies|52 GAgP vs 61 controls, Iranian|not_significant|null|partial|V3|chi-square p only; no counts shown
+F|F2|group_comparison|IL-10 -1082 allele frequencies|52 GAgP vs 61 controls, Iranian|not_significant|null|partial|V3|chi-square p only; no counts shown

@@ -1,0 +1,23 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; rat transgenic model study
+E|G1|gene|angiotensinogen|angiotensinogen|r||non-human||
+E|G2|gene|beta-AR kinase-1|beta-AR kinase-1|r||non-human||
+E|G3|ambiguous_gene|beta-adrenoceptor|beta-adrenoceptor;beta-AR|u|ambiguous_mapping|non-human||
+E|D1|disease|cardiac hypertrophy|cardiac hypertrophy;hypertrophy|r||||
+E|D2|disease|left ventricular hypertrophy|LV hypertrophy|p|other|||
+E|S1|phenotype|heart rate|heart rate|r||||
+X|renin-angiotensin system|b0002.s1|pathway, not single gene
+X|RAS|b0002.s1|pathway abbreviation, not a gene
+X|TGR|b0002.s3|rat strain label, not a gene
+EV|V1|b0001.s1+b0002.s3+b0002.s5|ts|res|aff|rr,cmp,mi
+EV|V2|b0002.s8|ts|int|aff|rr,mi
+EV|V3|b0002.s6|ts|res|aff|rr,cmp
+EV|V4|b0002.s8|ts|hyp|hyp|ho
+P|G1|D1|sup|c|ts|sup:c:ts:V1+V2|||Low brain angiotensinogen enhances induced hypertrophy
+P|G1|D2|sup|c|ts|sup:c:ts:V1|||Transgenic model shows greater Iso-induced LV hypertrophy
+P|G2|D2|unc|-|ts|unc:-:ts:V3|scope||Strain-level expression difference, not gene-disease test
+P|G3|D2|unc|-|ts|unc:-:ts:V3|identity,scope||Receptor family unresolved; strain-level comparison only
+F|F1|group_comparison|LV weight/body weight after Iso|TGR vs SD rats|significant|positive|available|V1|
+F|F2|group_comparison|beta-AR and beta-AR kinase-1 levels|TGR vs SD rats|unknown|mixed|not_reported|V3|direction differs per gene
+F|F3|group_comparison|metoprolol-induced HR decrease|TGR vs SD conscious rats|significant|negative|available|V4|mechanism hedged
+R|animal model|b0002.s3|Gene alteration modifies drug-induced disease rather than inducing it|Treated as model-intervention causal, non-human, this study

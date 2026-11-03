@@ -1,0 +1,15 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text
+E|G1|gene|choline acetyltransferase|choline acetyltransferase;ChAT|r||||
+E|D1|disease|Alzheimer's disease|Alzheimer's disease;AD|r||||
+E|D2|disease|amnesia|amnesia|r||||
+E|D3|phenotype|learning and memory impairment|impairments of learning and memory|r||||
+X|MC-IXC|b0001|cell line name, not a gene
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s8|ts|int|hyp|ho
+EV|V3|b0002.s5+b0002.s6+b0002.s7|ts|res|na|rr,cmp
+EV|V4|b0002.s2|ts|res|na|rr
+P|G1|D1|sup|a|bg|sup:a:bg:V1||V2|ChAT activators described as important for AD treatment
+P|G1|D2|unc|-|ts|unc:-:ts:V2|hedged_claim|V3|ChAT-amnesia link inferred via daidzein, not tested
+F|F1|group_comparison|daidzein; scopolamine-induced amnesia; Y-maze alternation|mice|significant|negative|partial|V3|abstract only
+F|F2|descriptive|Pueraria extract; ChAT activity|in vitro|unknown|positive|partial|V4|no significance test reported

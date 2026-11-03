@@ -1,0 +1,137 @@
+{
+  "variant": "v6_minimal_lean_medium",
+  "run_set": "biotriplex",
+  "input": "full text",
+  "scorer": {
+    "protocol": "one-to-one (maximum bipartite matching), since 2026-11-03; before that many-to-one",
+    "evaluate_py_sha256": "cebb3b026cf31d4a0b3145a6ffad4457ec97e461adf93fced6102c8e0a969267"
+  },
+  "papers": 30,
+  "papers_scored": 25,
+  "papers_missing": [
+    "BTX3320601",
+    "BTX4302655",
+    "BTX4550874",
+    "BTX5444857",
+    "BTX9489697"
+  ],
+  "gold_relations": 151,
+  "supported": {
+    "valid_only": {
+      "precision": 0.388,
+      "recall": 0.813,
+      "f1": 0.525,
+      "ci95": {
+        "precision": [
+          0.283,
+          0.494
+        ],
+        "recall": [
+          0.73,
+          0.889
+        ],
+        "f1": [
+          0.415,
+          0.62
+        ]
+      }
+    },
+    "deployment": {
+      "precision": 0.388,
+      "recall": 0.722,
+      "f1": 0.505,
+      "ci95": {
+        "precision": [
+          0.281,
+          0.496
+        ],
+        "recall": [
+          0.541,
+          0.853
+        ],
+        "f1": [
+          0.386,
+          0.605
+        ]
+      }
+    },
+    "counts": {
+      "tp_gold": 109,
+      "fn": 25,
+      "fn_symptom": 3,
+      "our_supported": 281,
+      "tp_ours": 109,
+      "tp_ours_many_to_one": 120,
+      "tp_gold_many_to_one": 116,
+      "uncertain_or_negative": 59,
+      "uncertain_or_negative_in_gold": 7
+    }
+  },
+  "supported_or_uncertain": {
+    "valid_only": {
+      "precision": 0.346,
+      "recall": 0.858,
+      "f1": 0.494,
+      "ci95": {
+        "precision": [
+          0.252,
+          0.444
+        ],
+        "recall": [
+          0.778,
+          0.925
+        ],
+        "f1": [
+          0.386,
+          0.587
+        ]
+      }
+    },
+    "deployment": {
+      "precision": 0.346,
+      "recall": 0.762,
+      "f1": 0.476,
+      "ci95": {
+        "precision": [
+          0.247,
+          0.446
+        ],
+        "recall": [
+          0.572,
+          0.89
+        ],
+        "f1": [
+          0.36,
+          0.574
+        ]
+      }
+    },
+    "counts": {
+      "tp_gold": 115,
+      "fn": 19,
+      "fn_symptom": 3,
+      "our_supported": 332,
+      "tp_ours": 115,
+      "tp_ours_many_to_one": 126,
+      "tp_gold_many_to_one": 122,
+      "uncertain_or_negative": 8,
+      "uncertain_or_negative_in_gold": 1
+    }
+  },
+  "recall | relations in the abstract": {
+    "gold": 33,
+    "found": 29,
+    "recall": 0.879
+  },
+  "recall | relations only outside the abstract": {
+    "gold": 101,
+    "found": 80,
+    "recall": 0.792
+  },
+  "source_agreement_on_true_positives": {
+    "same": 81,
+    "overlapping": 20,
+    "different": 8
+  },
+  "note": "valid_only scores articles with a valid result; deployment counts the missing ones (5) as empty answers. Recall by place and source agreement use valid articles."
+}

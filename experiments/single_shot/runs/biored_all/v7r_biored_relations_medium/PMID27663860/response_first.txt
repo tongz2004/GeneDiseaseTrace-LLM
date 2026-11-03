@@ -1,0 +1,24 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|angiotensin II type 1a receptor (Agtr1a)|angiotensin II type 1a receptor;AT1a receptor;AT1a|r||non-human||
+E|G2|gene|liver-type fatty acid binding protein (FABP1)|liver-type fatty acid binding protein;L-FABP|r||human||
+E|D1|disease|renal injury|renal injury;renal damage|r||||
+E|D2|disease|hypertension|hypertension|r||||
+E|D3|disease|glomerular damage|glomerular damage|r|||D1|
+E|D4|disease|glomerular sclerosis|glomerular sclerosis|r|||D1|
+E|D5|disease|tubulointerstitial damage|tubulointerstitial damage|r|||D1|
+EV|V1|b0002.s5|ts|res|aff|rr,mi,cmp
+EV|V2|b0002.s8|ts|int|hyp|rr
+EV|V3|b0002.s2+b0002.s6|ts|res|aff|rr,mi,cmp
+EV|V4|b0002.s2|bg|bgr|pre|ebr
+EV|V5|b0002.s4+b0002.s5|ts|res|neg|cmp
+EV|V6|b0002.s1+b0002.s2|ts|aim|na|none
+P|G1|D1|sup|c|ts|sup:c:ts:V1+V2|||AT1a knockout worsened hypertensive renal damage
+P|G1|D3|sup|c|ts|sup:c:ts:V1+V2|||Knockout increased glomerular damage severity
+P|G1|D5|unc|c|ts|unc:c:ts:V3|support_basis_unresolved||Only marker L-FABP higher in knockout
+P|G1|D2|nf|-|||||V5|Hypertension similarly induced regardless of genotype
+P|G2|D5|sup|r|both|sup:r:bg:V4;sup:r:ts:V3|||Urinary L-FABP marks tubulointerstitial damage
+P|G1|D4|unc|c|ts|unc:c:ts:V1|scope||Abstract groups sclerosis within glomerular damage
+F|F1|group_comparison|glomerular damage; AT1a genotype|DOCA-salt female mice|significant|positive|unread|V1|abstract only
+F|F2|group_comparison|urinary L-FABP; AT1a genotype|DOCA-salt female mice|significant|positive|unread|V3|abstract only
+F|F3|group_comparison|blood pressure; AT1a genotype|DOCA-salt female mice|unknown|null|unread|V5|abstract only

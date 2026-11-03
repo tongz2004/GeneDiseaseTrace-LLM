@@ -1,0 +1,33 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; full text unavailable
+E|G1|gene|NPTX1|neuronal pentraxin 1;NP1|r||non-human||
+E|G2|gene|PTEN|PTEN|r||non-human||
+E|G3|gene|AKT1|Akt|p|ambiguous_mapping|non-human||
+E|G4|gene|GSK3B|GSK-3b|r||non-human||
+E|G5|gene|BAD|Bad|r||non-human||
+E|G6|gene|BAX|Bax|r||non-human||
+E|G7|gene|CYCS|cytochrome C;Cyt C|r||non-human||
+E|G8|gene|CASP3|caspase-3|r||non-human||
+E|D1|disease|hypoxic-ischemic brain injury|hypoxic-ischemic;HI|r||||
+E|D2|disease|neurological disabilities|neurological disabilities|r||||
+E|D3|phenotype|neuronal death|neuronal death|r||||
+X|OGD|b0002.s4|oxygen glucose deprivation; experimental HI model, not a disease
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s5|ts|res|aff|rr
+EV|V3|b0002.s11|ts|res|aff|mi,cmp
+EV|V4|b0002.s13|ts|int|aff|rr
+EV|V5|b0002.s6|ts|res|aff|rr
+EV|V6|b0002.s7+b0002.s8|ts|res|aff|rr
+EV|V7|b0002.s12|ts|int|aff|rr
+P|G1|D1|sup|c|both|sup:a:bg:V1;sup:a:ts:V2;sup:c:ts:V3+V4|||NP1 induced post-HI; KO reduces neuronal death
+P|G2|D1|sup|a|ts|sup:a:ts:V5|||PTEN activity increased after OGD
+P|G3|D1|sup|a|ts|sup:a:ts:V5|||Akt dephosphorylated after OGD
+P|G4|D1|sup|a|ts|sup:a:ts:V5|||GSK-3b dephosphorylated after OGD
+P|G5|D1|sup|a|ts|sup:a:ts:V6+V7|||Bad mitochondrial translocation after OGD
+P|G6|D1|sup|a|ts|sup:a:ts:V6+V7|||Bax mitochondrial translocation after OGD
+P|G7|D1|sup|a|ts|sup:a:ts:V6+V7|||Cyt C release after OGD
+P|G8|D1|sup|a|ts|sup:a:ts:V6+V7|||caspase-3 activation after OGD
+F|F1|group_comparison|NP1 expression ipsilateral vs contralateral|neonatal mice post-HI|unknown|positive|unread|V2|abstract only
+F|F2|mechanism|NP1 knockout; neuronal death after OGD|NP1-KO vs WT hippocampal neurons|significant|negative|unread|V3|in vitro OGD model
+F|F3|mechanism|PTEN, Akt, GSK-3b phosphorylation|WT neurons after OGD|unknown|mixed|unread|V5|in vitro OGD model
+F|F4|mechanism|Bad, Bax, Cyt C, caspase-3|WT neurons after OGD|unknown|positive|unread|V6|in vitro OGD model

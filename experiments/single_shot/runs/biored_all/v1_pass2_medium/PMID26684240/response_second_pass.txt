@@ -1,0 +1,22 @@
+All are descriptive detections; nf. G6/D2: BRAF V600E in G1 NET patient progression — descriptive; nf with context.
+
+P|G1|D2|nf|-||||V4|TP53 mutation detected; response co-occurrence only
+P|G2|D1|nf|-||||V3|Mutation detected only; no disease attribution
+P|G3|D1|nf|-||||V3|Mutation detected only; no disease attribution
+P|G4|D1|nf|-||||V3|Mutation detected only; no disease attribution
+P|G5|D1|nf|-||||V3|Mutation detected only; no disease attribution
+P|G6|D2|nf|-||||V1+V4|V600E detected in NETs; descriptive only
+P|G7|D1|nf|-||||V3|Mutation detected only; no disease attribution
+P|G8|D1|nf|-||||V3|Mutation detected only; no disease attribution
+P|G9|D1|nf|-||||V3|Mutation detected only; no disease attribution
+P|G10|D1|nf|-||||V3|Mutation detected only; no disease attribution
+P|G11|D1|nf|-||||V3|Mutation detected only; no disease attribution
+P|G12|D1|nf|-||||V3|Mutation detected only; no disease attribution
+P|G13|D1|nf|-||||V3|Mutation detected only; no disease attribution
+P|G14|D1|nf|-||||V3|Mutation detected only; no disease attribution
+P|G15|D1|nf|-||||V3|Mutation detected only; no disease attribution
+P|G16|D1|nf|-||||V3|Mutation detected only; no disease attribution
+P|G17|D1|nf|-||||V3|Mutation detected only; no disease attribution
+P|G18|D1|nf|-||||V3|Mutation detected only; no disease attribution
+P|G19|D1|nf|-||||V3|Mutation detected only; no disease attribution
+P|G20|D1|nf|-||||V3|Mutation detected only; no disease attribution

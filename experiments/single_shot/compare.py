@@ -1,12 +1,14 @@
 """A/B comparison of two variants on the frozen benchmark.
 
 Usage: python experiments/single_shot/compare.py v1_card_lean_medium v3_card_lean_low
+       python experiments/single_shot/compare.py v1_card_lean_medium ab_gpt/v1_card_lean_medium   (another run set, e.g. another model)
 
 Entity IDs differ between runs, so entities are matched by shared written forms (original_names); pairs are then
 compared through that mapping. Reports, per paper and in total: cost, time, calls, entity counts, how many
 entities match, supported-edge overlap (Jaccard) and status agreement on pairs both variants generated.
 Agreement between variants is not accuracy; accuracy needs the human-adjudicated reference set.
-Writes runs/ab/compare_<A>_vs_<B>.csv.
+A side given as <run set>/<variant> is read from runs/<run set>/; a bare variant from runs/ab/.
+Writes runs/ab/compare_<A>_vs_<B>.csv (slashes in the names become underscores).
 """
 import csv
 import json
@@ -23,7 +25,8 @@ def read(path):
 
 
 def load_run(variant, paper_id):
-    run = RUNS / "ab" / variant / paper_id
+    run_set, _, name = variant.rpartition("/")
+    run = RUNS / (run_set or "ab") / name / paper_id
     out = run / "outputs"
     if not (out / "validation.json").exists():
         return None
@@ -81,8 +84,8 @@ def main(variant_a, variant_b):
             "supported_jaccard": round(len(sup_a & sup_b) / len(union), 2) if union else 1.0,
             "pairs_compared": len(common), "status_agreement": round(agree / len(common), 3) if common else "",
         })
-    out = RUNS / "ab" / f"compare_{variant_a}_vs_{variant_b}.csv"
-    fields = list(max(rows, key=len))
+    out = RUNS / "ab" / f"compare_{variant_a}_vs_{variant_b}.csv".replace("/", "_")
+    fields = list(dict.fromkeys(k for r in sorted(rows, key=len, reverse=True) for k in r))  # incl. 'note' rows
     with out.open("w", encoding="utf-8-sig", newline="") as stream:
         writer = csv.DictWriter(stream, fieldnames=fields)
         writer.writeheader()

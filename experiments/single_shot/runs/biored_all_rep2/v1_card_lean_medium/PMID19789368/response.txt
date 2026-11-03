@@ -1,0 +1,42 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|VDR|vitamin D receptor;VDR;Vitamin D receptor|r||human||
+E|G2|gene|PIK3CA|PIK3CA|r||human||
+E|G3|gene|KRAS|KRAS|r||human||
+E|G4|gene|CACNA1G|CACNA1G|r||human||
+E|G5|gene|CDKN2A|CDKN2A;p16|r||human||
+E|G6|gene|CRABP1|CRABP1|r||human||
+E|G7|gene|IGF2|IGF2|r||human||
+E|G8|gene|MLH1|MLH1|r||human||
+E|G9|gene|NEUROG1|NEUROG1|r||human||
+E|G10|gene|RUNX3|RUNX3|r||human||
+E|G11|gene|SOCS1|SOCS1|r||human||
+E|G12|gene|BRAF|BRAF|r||human||
+E|G13|gene|p53|p53|r||human||
+E|G14|gene|p21|p21|r||human||
+E|G15|gene|beta-catenin|beta-catenin|r||human||
+E|G16|gene|cyclooxygenase-2|cyclooxygenase-2|r||human||
+E|D1|disease|colorectal cancer|colorectal cancer;colorectal cancers|r||||
+E|D2|disease|colon cancer|colon cancer|r|||D3|
+E|D3|disease|cancers|cancers|r||||
+E|CE1|clinical_event|patient survival|patient survival|r||||
+E|S1|phenotype|microsatellite instability|microsatellite instability|r||||
+E|S2|phenotype|CpG island methylator phenotype|CpG island methylator phenotype|r||||
+X|LINE-1|b0002|retrotransposon methylation marker, not single gene
+X|PI3K|b0002|pathway name, not single-gene endpoint
+X|RAS-mitogen-activated protein kinase (MAPK)|b0002|pathway name, not single-gene endpoint
+EV|V1|b0002.s5|ts|co|na|do
+EV|V2|b0002.s7+b0002.s10|ts|res|aff|rr,cmp
+EV|V3|b0002.s8|ts|neg|neg|rr
+EV|V4|b0002.s9|ts|neg|neg|rr
+EV|V5|b0002.s11|ts|int|hyp|ho
+P|G1|D1|nf|-||||V1|VDR overexpression frequency only, no comparator
+P|G1|CE1|neg|-|ts|neg:-:ts:V4|||VDR expression not related to survival
+P|G2|D1|nf|-|||||V2|mutation tested only versus VDR, within CRC
+P|G3|D1|nf|-|||||V2|mutation tested only versus VDR, within CRC
+F|F1|association|VDR overexpression vs KRAS mutation|colorectal cancers, two cohorts|significant|positive|available|V2|persisted in multivariate analysis
+F|F2|association|VDR overexpression vs PIK3CA mutation|colorectal cancers, two cohorts|significant|positive|available|V2|persisted in multivariate analysis
+F|F3|association|VDR vs BRAF, p53, p21, beta-catenin, COX-2|colorectal cancers|not_significant|null|not_reported|V3|not independently associated
+F|F4|association|VDR vs CIMP, MSI, LINE-1|colorectal cancers|not_significant|null|not_reported|V3|
+F|F5|group_comparison|VDR expression vs patient survival|colorectal cancers|not_significant|null|not_reported|V4|
+F|F6|descriptive|VDR overexpression frequency|619 colorectal cancers|not_applicable|not_applicable|available|V1|

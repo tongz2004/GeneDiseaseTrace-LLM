@@ -1,0 +1,25 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text, tables or methods
+E|G1|gene|PTPN22|PTPN22;protein tyrosine phosphatase nonreceptor 22|r||human||
+E|G2|gene|Ptpn22|Ptpn22|p|species_unresolved|non-human||
+E|G3|gene|Lyn|Lyn|p|species_unresolved|non-human||
+E|G4|gene|Syk|Syk|p|species_unresolved|non-human||
+E|G5|gene|Fcg receptor|Fcg Receptor;FcgR|p|ambiguous_mapping|||
+E|D1|disease|autoimmune disease|autoimmune disease|r||||
+E|D2|disease|rheumatoid arthritis|rheumatoid arthritis|r|||D1|
+E|D3|disease|immune complex-mediated arthritis|immune complex-mediated arthritis|r||||
+E|D4|disease|peritonitis|peritonitis|r||||
+E|D5|disease|bacterial and fungal infections|bacterial and fungal infections|r||||
+E|S1|phenotype|inflammation|inflammation|r||||
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s7|ts|res|aff|rr,mi
+EV|V3|b0002.s8|ts|neg|neg|rr,cmp
+EV|V4|b0002.s4+b0002.s5+b0002.s6|ts|res|na|rr
+P|G1|D1|sup|a|bg|sup:a:bg:V1|||GWAS susceptibility stated as established
+P|G1|D2|sup|a|bg|sup:a:bg:V1|||GWAS susceptibility, notably rheumatoid arthritis
+P|G2|D3|sup|c|ts|sup:c:ts:V2|||Knockout mice protected from induced arthritis
+P|G2|D4|neg|-|ts|neg:c:ts:V3|||Recruitment in peritonitis unaffected by knockout
+F|F1|group_comparison|Ptpn22 knockout vs arthritis severity|serum-transfer arthritis mice|unknown|negative|not_reported|V2|abstract only
+F|F2|group_comparison|Ptpn22 knockout vs neutrophil recruitment|thioglycollate peritonitis mice|not_significant|null|not_reported|V3|abstract only
+F|F3|mechanism|Ptpn22 knockout vs neutrophil effector functions|mouse neutrophils|unknown|negative|not_reported|V4|cell phenotype; no disease link
+R|species|b0002.s8|Uppercase PTPN22 in s8 refers to the knockout mouse gene.|Assigned s8 evidence to G2 per context, not letter case.

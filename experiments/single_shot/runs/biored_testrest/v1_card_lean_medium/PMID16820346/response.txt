@@ -1,0 +1,6 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no gene mentioned
+E|D1|disease|dexamethasone-induced hypertension|dexamethasone-induced hypertension;dex-induced hypertension|r||||
+E|S1|phenotype|systolic blood pressure|systolic blood pressure|r||||
+X|NOx|b0002|chemical (plasma nitrate/nitrite), not a gene
+X|superoxide|b0002|chemical measurement, not a gene

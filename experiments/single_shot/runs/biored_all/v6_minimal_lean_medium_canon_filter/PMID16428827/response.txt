@@ -1,0 +1,14 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|CHAT|choline acetyltransferase;ChAT|p|other|human||
+E|D1|disease|Alzheimer disease|Alzheimer's disease;AD|r||||
+E|D2|disease|amnesia|amnesia;drug-induced amnesia;scopolamine-induced amnesia|r||||
+E|D3|phenotype|learning and memory impairment|impairments of learning and memory|r||||
+X|MC-IXC|b0001|cell line name, not a gene
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s8|ts|int|hyp|ho
+EV|V3|b0002.s5|ts|res|na|mi
+P|G1|D1|sup|a|bg|sup:a:bg:V1||V3|ChAT activation framed as AD treatment factor
+P|G1|D2|unc|-|ts|unc:-:ts:V2|hedged_claim,support_basis_unresolved|V3|ChAT role in amnesia rescue inferred, not tested
+F|F1|mechanism|daidzein; ChAT activity; amnesia|mice; MC-IXC cells|significant|positive|not_reported|V2+V3|ChAT not measured in vivo
+R|gene species|b0001|ChAT measured in a cell line; amnesia tested in mice|Marked gene human and identity provisional

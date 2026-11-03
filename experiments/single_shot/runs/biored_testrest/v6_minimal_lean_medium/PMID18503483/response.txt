@@ -1,0 +1,15 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; single case report
+E|D1|disease|brachial neuritis|brachial neuritis;BN|p|undefined_abbreviation||||
+E|D2|disease|neurotoxicity|Neurotoxicity|r|||||
+E|D3|disease|encephalopathy|encephalopathy|r|||||
+E|S1|symptom|headache|headaches|r|||||
+E|D4|disease|seizures|seizures|r|||||
+E|S2|phenotype|neurological deficits|neurological deficits|r|||||
+E|D5|disease|myelitis|myelitis|r|||||
+E|D6|disease|brachial plexitis|brachial plexitis|p|||D1||
+E|CE1|clinical_event|renal transplantation|renal transplant|r|||||
+X|TAC|b0002.s1|drug abbreviation for tacrolimus, not a gene
+X|IVIG|b0002.s6|immunoglobulin therapy, not a gene product
+X|everolimus|b0002.s7|drug, not a gene
+R|gene-disease extraction|whole paper|No gene entities mentioned; only drugs and diseases|Listed no P records; all pairs nf

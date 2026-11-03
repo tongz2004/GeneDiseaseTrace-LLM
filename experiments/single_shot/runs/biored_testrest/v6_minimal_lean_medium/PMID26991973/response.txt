@@ -1,0 +1,12 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; plant study, no human disease
+E|g1|gene|MOL1|MOL1;mol1|r||non-human||
+E|g2|gene|PXY|PXY|r||non-human||
+E|g3|gene|CLE41|CLE41|r||non-human||
+E|g4|gene|CLV1|CLV1|r||non-human||
+E|g5|gene|LRR-RLK family|LRR-RLK;LRR-RLKs|r|other|non-human||
+E|g6|gene|CLE peptide family|CLE peptide|r|other|non-human||
+E|ph1|phenotype|disturbed cambium organization|disturbed cambium organization|r||||
+X|CLV1 deficiency|b0002|loss of gene function in plant meristem, not a disease
+X|stress-related|b0002|plant stress signaling, not a disease
+R|gene-disease pairs|b0002|Arabidopsis developmental study with no disease entities|Listed genes and phenotype only; no pairs output

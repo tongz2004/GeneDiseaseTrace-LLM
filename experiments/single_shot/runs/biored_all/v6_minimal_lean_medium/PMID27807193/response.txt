@@ -1,0 +1,21 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text, figures or tables
+E|G1|gene|PTPN22|PTPN22|r||human|||
+E|G2|gene|Ptpn22|Ptpn22|r||non-human|G1||
+E|G3|gene|LYN|Lyn|p|species_unresolved|non-human|||
+E|G4|gene|SYK|Syk|p|species_unresolved|non-human|||
+E|D1|disease|autoimmune disease|autoimmune disease|r|||||
+E|D2|disease|rheumatoid arthritis|rheumatoid arthritis|r|||||
+E|D3|disease|immune complex-mediated arthritis|arthritis|r|||||
+E|D4|disease|peritonitis|peritonitis|r|||||
+E|D5|disease|infections|infections|r|||||
+E|D6|disease|inflammation|inflammation|r|||||
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s7|ts|res|aff|mi
+EV|V3|b0002.s8|ts|neg|na|rr
+P|G1|D1|sup|a|bg|sup:a:bg:V1|||GWAS susceptibility contribution
+P|G1|D2|sup|a|bg|sup:a:bg:V1|||GWAS susceptibility, notably RA
+P|G2|D3|sup|c|ts|sup:c:ts:V2|||Knockout mice protected from serum-transfer arthritis
+P|G2|D4|nf|-||||V3|Recruitment unaffected; not a disease relation
+F|F1|group_comparison|Ptpn22 knockout; arthritis severity|Ptpn22-/- mice, serum transfer|unknown|negative|not_reported|V2|abstract only
+F|F2|group_comparison|Ptpn22 knockout; neutrophil recruitment|thioglycollate peritonitis mice|unknown|null|not_reported|V3|abstract only

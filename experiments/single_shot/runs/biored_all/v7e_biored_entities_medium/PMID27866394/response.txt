@@ -1,0 +1,36 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|substance P|SP|p|undefined_abbreviation|non-human||
+E|G2|gene|tachykinin receptor 1|NK1r|r||non-human||
+E|G3|gene|nitric oxide synthase 1|nNOS|r||non-human||
+E|G4|gene|vasoactive intestinal peptide|VIP|r||non-human||
+E|G5|gene|S100 calcium binding protein B|S100b|r||non-human||
+E|G6|gene|calcitonin gene-related peptide|CGRP|r||non-human||
+E|G7|gene|corticotropin releasing hormone receptor 1|CRF1r|r||non-human||
+E|G8|gene|corticotropin releasing hormone receptor 2|CRF2r|r||non-human||
+E|G9|gene|muscarinic receptor 2|Mr2|r||non-human||
+E|G10|gene|choline acetyltransferase|ChAT|r||non-human||
+E|G11|gene|L-type calcium channels|L-type Ca(2+) channels|r||||
+E|G12|gene|T-type calcium channels|T-type Ca(2+) channels|r||||
+E|G13|gene|tachykinin receptors|tachykinin receptors|r||||
+E|G14|gene|muscarinic receptors|muscarinic|p|other|||
+E|D1|disease|irritable bowel syndrome|irritable bowel syndrome;IBS|r|||||
+E|D2|disease|inflammation|mucosal inflammation|r|||||
+X|wrap restrain stress|b0002|stress model procedure, not a disease
+X|WRS|b0002|abbreviation of stress model
+EV|V1|b0002.s4+b0002.s6+b0002.s7|ts|res|aff|rr,cmp
+EV|V2|b0002.s4+b0002.s8|ts|res|aff|rr,cmp
+EV|V3|b0002.s1+b0002.s2|bg|bgr|na|do
+EV|V4|b0002.s9|ts|res|na|rr
+P|G1|D1|sup|a|ts|sup:a:ts:V1|||SP decreased in WRS IBS model
+P|G2|D1|sup|a|ts|sup:a:ts:V1|||NK1r decreased in WRS IBS model
+P|G3|D1|sup|a|ts|sup:a:ts:V1|||nNOS decreased in WRS IBS model
+P|G4|D1|sup|a|ts|sup:a:ts:V1|||VIP decreased in WRS IBS model
+P|G5|D1|sup|a|ts|sup:a:ts:V1|||S100b decreased in WRS IBS model
+P|G6|D1|sup|a|ts|sup:a:ts:V1|||CGRP increased in WRS IBS model
+P|G7|D1|sup|a|ts|sup:a:ts:V1|||CRF1r increased in WRS IBS model
+P|G8|D1|sup|a|ts|sup:a:ts:V2|||CRF2r increased in WRS IBS model
+P|G11|D1|nf|-||||V3|drug target only, no disease relation
+P|G9|D1|nf|-||||V4|changed by OB alone, not WRS
+F|F1|group_comparison|neurotransmitter IR vs WRS|WRS vs control rats|unknown|mixed|unread|V1+V2|abstract only; animal model
+R|disease model|b0002.s4|WRS stress model stands in for IBS; gene changes not in patients|Treated WRS-induced changes as association with IBS

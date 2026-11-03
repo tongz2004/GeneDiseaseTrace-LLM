@@ -1,0 +1,23 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|CCR5|C-C chemokine receptor 5;CCR5|r||human||
+E|D1|disease|rheumatoid arthritis|rheumatoid arthritis;RA|r||||
+E|D2|disease|systemic lupus erythematosus|systemic lupus erythematosus;SLE|r||||
+E|D3|disease|lupus nephritis|lupus nephritis;LN|r||||
+E|D4|disease|autoimmune diseases|autoimmune diseases|r||||
+E|D5|disease|inflammation|inflammation|r||||
+X|disease severity|b0002.s4|outcome measure, not a disease entity
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s2+b0002.s3|bg|bgr|aff|ebr
+EV|V3|b0001.s1+b0002.s9+b0002.s12|ts|neg|neg|cmp,rr
+EV|V4|b0002.s10+b0002.s12|ts|res|q|cmp,unc
+EV|V5|b0002.s11+b0002.s13|ts|neg|neg|rr
+P|G1|D1|neg|-|ts|neg:-:ts:V3+V5|||No susceptibility or severity association in RA
+P|G1|D2|neg|-|ts|neg:-:ts:V3+V5|||No susceptibility or severity association in SLE
+P|G1|D3|unc|-|ts|neg:-:ts:V3;unc:a:ts:V4|hedged_claim,conflict||Nonsignificant trend; authors cannot exclude association
+P|G1|D4|sup|a|bg|sup:a:bg:V2||||Deletion reported protective in autoimmune diseases
+P|G1|D5|sup|a|bg|sup:a:bg:V1||||CCR5 plays important role in inflammation
+F|F1|group_comparison|CCR5 DD32 genotype frequencies|RA, SLE, LN patients vs controls|not_significant|null|available|V3|
+F|F2|group_comparison|DD32 allele frequency|LN patients vs controls|not_significant|negative|available|V4|trend only, p = 0.08
+F|F3|association|CCR5 status and disease severity|RA, SLE, LN patients|not_significant|null|not_reported|V5|
+C|C1|CCR5 and lupus nephritis|b0001.s1;b0002.s10;b0002.s12|status_critical|unresolved|Title says no association; conclusion leaves possibility open

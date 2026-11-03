@@ -1,0 +1,17 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|N-acetyl-beta-d-glucosaminidase|N-acetyl-beta-d-glucosaminidase;NAG|p|ambiguous_mapping|non-human||
+E|G2|gene|superoxide dismutase|superoxide dismutase;SOD|p|ambiguous_mapping|non-human||
+E|G3|gene|catalase|catalase;CAT|r||non-human||
+E|D1|disease|nephrotoxicity|nephrotoxicity;renal impairment;kidney damage|r||||
+E|D2|disease|renal tubular injury|renal tubular injury;tubular damage|r||||
+X|MDA|b0002.s5|lipid peroxidation product, not gene
+EV|V1|b0002.s5|ts|res|aff|rr,cmp
+EV|V2|b0002.s6|ts|res|aff|rr,cmp
+EV|V3|b0002.s5|bg|bgr|aff|ebr
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V2|||urinary NAG rises with VCM nephrotoxicity
+P|G1|D2|sup|a|both|sup:a:bg:V3;sup:a:ts:V1|||NAG is a stated tubular injury marker
+P|G2|D1|sup|a|ts|sup:a:ts:V1+V2|||SOD falls with VCM, restored by erdosteine
+P|G3|D1|sup|a|ts|sup:a:ts:V1|||CAT activity decreased in VCM nephrotoxicity
+F|F1|group_comparison|NAG, SOD, CAT vs VCM treatment|rats VCM vs sham|significant|mixed|not_reported|V1|abstract only; rat model
+F|F2|group_comparison|NAG, SOD, CAT with erdosteine|rats VCM+erdosteine vs VCM|mixed|mixed|not_reported|V2|CAT not changed

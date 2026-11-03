@@ -1,0 +1,27 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|E1|gene|ADAM10|ADAM10;ADAM-10|r||non-human||
+E|E2|gene|ADAM17|ADAM17;ADAM-17|r||non-human||
+E|E3|gene|MMP-2|MMP-2|r||non-human||
+E|E4|gene|MMP-9|MMP-9|r||non-human||
+E|E5|disease|thoracic aortic aneurysm|thoracic aortic aneurysm;TAA|r||||
+E|E6|disease|arterial injury|arterial injury|r||||
+E|E7|phenotype|media degeneration|media degeneration|r||||
+E|E8|phenotype|vascular remodeling|vascular remodeling|r||||
+X|a disintegrin and metalloproteinase (ADAM)|b0002|gene family, not single-gene endpoint
+X|matrix metalloproteinases (MMPs)|b0002|gene family, not single-gene endpoint
+X|TIMPs|b0002|gene family, not single-gene endpoint
+EV|V0|b0002.s1|ts|aim|q|ho
+EV|V1|b0001.s1|ts|res|aff|rr
+EV|V2|b0002.s6|ts|res|aff|rr,cmp
+EV|V3|b0002.s7|ts|res|aff|rr,cmp
+EV|V4|b0002.s9|ts|int|aff|rr
+P|E1|E5|unc|-|ts|unc:-:ts:V1+V2+V3+V4|scope|V0|comparator is CaCl2 exposure, not TAA status
+P|E2|E5|unc|-|ts|unc:-:ts:V1+V2+V3+V4|scope|V0|comparator is CaCl2 exposure, not TAA status
+P|E3|E5|unc|-|ts|unc:-:ts:V1+V2+V3+V4|scope|V0|comparator is CaCl2 exposure, not TAA status
+P|E4|E5|unc|-|ts|unc:-:ts:V1+V2+V3+V4|scope|V0|comparator is CaCl2 exposure, not TAA status
+F|F1|group_comparison|MMP-2, MMP-9, ADAM10, ADAM17 mRNA|CaCl2-treated vs NaCl-treated rat aortas|significant|positive|partial|V2|only half of treated segments aneurysmal
+F|F2|group_comparison|MMP-2, MMP-9, ADAM10, ADAM17 protein (IHC)|CaCl2-treated vs NaCl-treated rat aortas|significant|positive|partial|V3|intima and media only
+F|F3|group_comparison|same four genes mRNA|CaCl2-untreated vs NaCl-treated segments|unknown|positive|not_reported|V2|reported only as trends
+F|F4|group_comparison|TIMP mRNA and tissue levels|three aortic segment groups|not_significant|null|not_reported|b0002.s8|gene family, not assigned to members
+R|animal model expression comparison|b0002.s6|Comparison is exposure group, not disease outcome; card silent on model-group expression|Marked uncertain, scope; recorded group comparisons as findings

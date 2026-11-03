@@ -1,0 +1,25 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text, figures or statistics
+E|G1|gene|angiotensin II type 1a receptor|angiotensin II type 1a receptor;AT1a receptor;AT1a|r||non-human||
+E|G2|gene|liver-type fatty acid binding protein (FABP1)|liver-type fatty acid binding protein;L-FABP|r||human||
+E|D1|disease|renal injury|renal injury;renal damage;hypertensive renal damage|r||||
+E|D2|disease|hypertension|hypertension|r||||
+E|D3|disease|glomerular damage|glomerular damage|r||||
+E|D4|disease|tubulointerstitial damage|tubulointerstitial damage|r||||
+E|D5|disease|glomerular sclerosis|glomerular sclerosis|r||||
+X|deoxycorticosterone acetate|b0002.s3|Chemical used to induce the model, not a gene
+X|Hydralazine|b0002.s7|Drug, not a gene
+EV|V1|b0002.s5|ts|res|aff|rr,cmp,mi
+EV|V2|b0002.s7+b0002.s8|ts|int|aff|rr,mi
+EV|V3|b0002.s2+b0002.s6|ts|res|aff|rr,cmp,mi
+EV|V4|b0002.s5|ts|neg|neg|cmp,mi
+EV|V5|b0002.s2|bg|bgr|aff|ebr
+EV|V6|b0002.s4+b0002.s6|ts|res|aff|rr,cmp
+P|G1|D3|sup|c|ts|sup:c:ts:V1||||AT1a knockout worsened glomerular damage
+P|G1|D1|sup|c|ts|sup:c:ts:V2|hedged_claim|||AT1a may protect against hypertensive renal damage
+P|G1|D4|sup|a|ts|sup:a:ts:V3||||Knockout raised the marker of tubulointerstitial damage
+P|G1|D2|neg|-|ts|neg:-:ts:V4||||Hypertension was induced similarly regardless of genotype
+P|G2|D4|sup|a|both|sup:a:bg:V5;sup:a:ts:V6||||Urinary L-FABP is a tubulointerstitial damage indicator
+F|F1|group_comparison|AT1a genotype; glomerular damage|DOCA-salt uninephrectomized female mice|significant|negative|unread|V1|Abstract only
+F|F2|group_comparison|AT1a genotype; urinary L-FABP|DOCA-salt uninephrectomized female mice|significant|negative|unread|V3|Abstract only
+F|F3|group_comparison|AT1a genotype; hypertension induction|DOCA-salt uninephrectomized female mice|unknown|null|unread|V4|Abstract only

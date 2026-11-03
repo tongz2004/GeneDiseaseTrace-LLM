@@ -1,0 +1,46 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; rat model study
+E|G1|gene|bradykinin|bradykinin|r||non-human||
+E|G2|gene|bradykinin receptor B2|B2|r||non-human|G4|
+E|G3|gene|bradykinin receptor B1|B1|r||non-human|G4|
+E|G4|gene|bradykinin receptors|bradykinin receptors;bradykinin receptor|r||non-human||
+E|G5|gene|inducible nitric oxide synthase (NOS2)|inducible NO synthase|r||non-human|G7|
+E|G6|gene|neuronal nitric oxide synthase (NOS1)|neuronal NO synthase|r||non-human|G7|
+E|G7|gene|nitric oxide synthase|NO synthase;nitric oxide synthase|r||non-human||
+E|G8|gene|constitutive nitric oxide synthase|constitutive NO synthase|p|ambiguous_mapping|non-human|G7|
+E|D1|disease|hyperalgesia|hyperalgesia;diabetic hyperalgesia|r||||
+E|D2|disease|diabetic neuropathy|diabetic neuropathy|r||||
+E|D3|disease|toxic neuropathy|toxic neuropathy|r||||
+E|D4|disease|neuropathic pain|neuropathic pain|r||||
+X|D-Arg-[Hyp3,Thi5,D-Tic7,Oic8] bradykinin|b0002|drug name (HOE 140), not gene
+X|HOE 140|b0002|B2 antagonist drug
+X|des Arg10 HOE 140|b0002|B1 antagonist drug
+EV|V1|b0002.s3|ts|res|aff|rr,mi
+EV|V2|b0002.s5|ts|res|aff|rr,mi
+EV|V3|b0002.s7|ts|int|aff|rr,mi
+EV|V4|b0002.s8|ts|int|aff|rr,mi
+EV|V5|b0002.s9|ts|hyp|hyp|ho
+EV|V6|b0002.s4|ts|res|aff|mi
+EV|V7|b0002.s6|ts|res|aff|mi
+P|G1|D1|sup|c|ts|sup:c:ts:V2+V4|||Bradykinin involved in vincristine hyperalgesia
+P|G1|D3|sup|c|ts|sup:c:ts:V2|||Bradykinin involved in toxic neuropathy hyperalgesia
+P|G1|D2|sup|c|ts|sup:c:ts:V4|||Pronociceptive bradykinin in streptozotocin hyperalgesia
+P|G2|D1|sup|c|ts|sup:c:ts:V6+V7|||B2 antagonist antihyperalgesic
+P|G2|D2|sup|c|ts|sup:c:ts:V3|||B2 engaged in diabetic neuropathy nociception
+P|G2|D3|sup|c|ts|sup:c:ts:V3|||B2 engaged in toxic neuropathy nociception
+P|G3|D1|sup|c|ts|sup:c:ts:V6+V7|||B1 antagonist antihyperalgesic
+P|G3|D2|sup|c|ts|sup:c:ts:V3|||B1 engaged in diabetic neuropathy nociception
+P|G3|D3|sup|c|ts|sup:c:ts:V3|||B1 engaged in toxic neuropathy nociception
+P|G4|D1|sup|c|ts|sup:c:ts:V1|||Receptor inhibition reduces diabetic hyperalgesia
+P|G4|D2|sup|c|ts|sup:c:ts:V1|||Receptor inhibition reduces diabetic hyperalgesia
+P|G4|D4|unc|-|ts|unc:-:ts:V5|hedged_claim||Therapeutic suggestion only
+P|G5|D1|sup|c|ts|sup:c:ts:V1+V2|||iNOS inhibition reduces hyperalgesia
+P|G5|D2|sup|c|ts|sup:c:ts:V1+V4|||iNOS mediates diabetic hyperalgesia
+P|G5|D3|sup|c|ts|sup:c:ts:V2|||iNOS products involved in vincristine hyperalgesia
+P|G6|D1|sup|c|ts|sup:c:ts:V2+V4;neg:-:ts:V1|||Involved in vincristine, not diabetic hyperalgesia
+P|G6|D2|neg|-|ts|neg:-:ts:V1|||nNOS inhibition did not reduce diabetic hyperalgesia
+P|G6|D3|sup|c|ts|sup:c:ts:V2+V4+V7|||nNOS pathway in vincristine neuropathy
+P|G7|D4|unc|-|ts|unc:-:ts:V5|hedged_claim||Therapeutic suggestion only
+F|F1|mechanism|BK receptor, iNOS, nNOS inhibition; hyperalgesia|streptozotocin diabetic rats|unknown|negative|not_reported|V1+V6|abstract only
+F|F2|mechanism|iNOS, nNOS, bradykinin; hyperalgesia|vincristine-treated rats|unknown|positive|not_reported|V2+V7|abstract only
+R|disease scope|b0002.s3|Diabetic vs vincristine hyperalgesia merged under one entity|Mixed nNOS claims recorded within single P line

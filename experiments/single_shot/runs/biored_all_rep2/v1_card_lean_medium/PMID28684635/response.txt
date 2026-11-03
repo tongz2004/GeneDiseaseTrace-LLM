@@ -1,0 +1,24 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text, tables or figures
+E|G1|gene|ADCY5|ADCY5;adenylate cyclase 5;Adenylate cyclase 5|r||human||
+E|G2|gene|Adcy5|Adcy5|p|species_unresolved|non-human||
+E|G3|gene|Sec22a|Sec22a|p|species_unresolved|non-human||
+E|G4|gene|insulin|insulin|p|species_unresolved|||
+E|D1|disease|type 2 diabetes|type 2 diabetes;Type 2 Diabetes|r||||
+E|S1|phenotype|fasting glucose levels|fasting glucose levels|r||||
+E|S2|phenotype|impaired insulin secretion|impaired insulin secretion|r||||
+X|rs11708067|b0002.s4|variant identifier, not a gene
+X|H3K27ac|b0002.s5|histone mark, not a gene
+X|832/13|b0002.s5|rat beta-cell line identifier
+X|MIN6|b0002.s5|mouse beta-cell line identifier
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0001.s1+b0002.s4|ts|res|aff|rr,cmp
+EV|V3|b0002.s7|ts|int|hyp|ho
+EV|V4|b0002.s6|ts|res|aff|mi
+P|G1|D1|sup|a|both|sup:a:bg:V1;sup:a:ts:V2;unc:-:ts:V3|||T2D risk variants at ADCY5; causal claim only hedged
+P|G2|D1|nf|-||||V4|cell-line deletion; no disease link stated
+P|G3|D1|nf|-||||V4|expression unchanged in cells; no disease link
+P|G4|D1|nf|-||||V4|insulin secretion is a cell phenotype only
+F|F1|association|T2D risk alleles vs ADCY5 expression|human islets|unknown|negative|not_reported|V2|abstract only; statistics not given
+F|F2|group_comparison|rs11708067-A vs G enhancer activity|human islets; 832/13 and MIN6 cells|unknown|negative|not_reported|V2|abstract only
+F|F3|mechanism|enhancer deletion vs Adcy5, Sec22a, insulin secretion|rat 832/13 cells|unknown|negative|partial|V4|Sec22a not reduced; p-values absent

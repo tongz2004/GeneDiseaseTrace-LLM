@@ -1,0 +1,19 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|SSH1|SSH1|r||human||
+E|D1|disease|disseminated superficial actinic porokeratosis|Disseminated superficial actinic porokeratosis;disseminated superficial actinic porokeratosis;DSAP|r||||
+E|D2|disease|chronic keratinization disorder|chronic keratinization disorder|r||||
+E|S1|phenotype|cytoskeleton disorganization|cytoskeleton disorganization|r||||
+X|D12S330|b0002|marker identifier, not a gene
+X|D12S354|b0002|marker identifier, not a gene
+X|p.Ser63Asn|b0002|variant identifier
+X|p.Ser19CysfsX24|b0002|variant identifier
+X|p.Pro27ProfsX54|b0002|variant identifier
+EV|V1|b0001.s1+b0002.s3+b0002.s4|ts|res|aff|rr,eda
+EV|V2|b0002.s6|ts|hyp|hyp|ho
+EV|V3|b0002.s1|bg|bgr|na|ebr
+P|G1|D1|sup|a|ts|sup:a:ts:V1|||SSH1 mutations found in linkage-mapped DSAP families
+P|G1|D2|nf|-||||V3|DSAP is a child; relations do not propagate
+F|F1|association|DSAP locus linkage, chromosome 12 interval|three Chinese affected families|unknown|positive|not_reported|V1|locus-level; no LOD score readable
+F|F2|descriptive|SSH1 missense and frameshift mutations|two families and one sporadic case|not_applicable|not_applicable|not_applicable|V1|segregation details not readable
+F|F3|hypothesis|cytoskeleton disorganization and DSAP pathogenesis|DSAP|not_applicable|unknown|not_applicable|V2|hedged; SSH1 not named in sentence

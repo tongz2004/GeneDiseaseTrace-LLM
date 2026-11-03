@@ -1,0 +1,19 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|STAT4|STAT4|r||human||
+E|D1|disease|systemic lupus erythematosus|systemic lupus erythematosus;SLE|r||||
+E|S1|symptom|renal symptoms in SLE|renal symptoms|p|other|||
+E|S2|symptom|neurologic manifestations in SLE|neurologic manifestations|p|other|||
+X|rs7582694|b0002.s2|STAT4 variant identifier, not separate gene
+X|anti-Scl-70 Ab|b0002.s6|autoantibody; Scl-70 antigen is not mapped as gene
+X|anti-snRNP Ab|b0002.s6|autoantibody marker, not gene or disease
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s3+b0002.s4|ts|res|aff|rr,cmp
+EV|V3|b0002.s7|ts|int|aff|rr
+EV|V4|b0002.s5|ts|res|aff|rr,cmp
+EV|V5|b0002.s6|ts|res|aff|rr,cmp
+P|G1|D1|sup|a|both|sup:a:bg:V1;sup:a:ts:V2+V3||V4+V5|rs7582694 C confers SLE risk
+F|F1|group_comparison|STAT4 CC/CG genotypes vs SLE|253 SLE vs 521 Polish controls|significant|positive|available|V2|
+F|F2|association|STAT4 C allele vs SLE|253 SLE vs 521 Polish controls|significant|positive|available|V2|
+F|F3|association|STAT4 CC/CG vs renal, neurologic manifestations|SLE patients|significant|positive|available|V4|symptoms are not pair targets
+F|F4|association|STAT4 CC/CG vs anti-snRNP, anti-Scl-70|SLE patients|significant|positive|available|V5|antibodies are not disease entities

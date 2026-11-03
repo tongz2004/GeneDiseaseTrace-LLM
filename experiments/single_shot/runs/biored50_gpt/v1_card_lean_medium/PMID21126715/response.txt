@@ -1,0 +1,31 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only; no full text or attachments.
+E|G1|gene|BSCL2|BSCL2|r||human||
+E|D1|disease|Congenital generalized lipodystrophy|Congenital generalized lipodystrophy;congenital generalized lipodystrophy;CGL|r||||
+E|D2|disease|CGL2|CGL2|r||||
+E|D3|disease|CGL1|CGL1|r||||
+E|D4|disease|cardiomyopathy|cardiomyopathy|r||||
+E|D5|disease|hepatic steatosis|hepatic steatosis|r||||
+E|A1|phenotype|absence of adipose tissue|absence of adipose tissue|r||||
+E|A2|phenotype|fat loss|fat loss|r||||
+E|A3|symptom|intellectual impairment|intellectual impairment|r||||
+E|A4|phenotype|lack of subcutaneous fat|lack of subcutaneous fat|r||||
+E|A5|phenotype|prominent musculature|prominent musculature|r||||
+E|A6|symptom|generalized eruptive xanthomas|generalized eruptive xanthomas|r||||
+E|A7|phenotype|hypertriglyceridemia|hypertriglyceridemia|r||||
+E|A8|phenotype|Absence of mechanical adipose tissue|Absence of mechanical adipose tissue|r||||
+E|A9|symptom|Hepatomegaly|Hepatomegaly|r||||
+E|A10|phenotype|periportal necrosis|periportal necrosis|r||||
+E|A11|phenotype|enlargement of kidneys|enlargement of kidneys|r||||
+EV|V1|b0001.s1|ts|res|aff|eda
+EV|V2|b0002.s2|bg|bgr|aff|ebr
+EV|V3|b0002.s8|ts|co|na|do
+EV|V4|b0002.s9|ts|res|aff|rr,eda
+EV|V5|b0002.s5|ts|co|na|do
+EV|V6|b0002.s6|ts|co|na|do
+P|G1|D1|sup|c|ts|sup:c:ts:V1;sup:c:ts:V4||V3|Explicit causal attribution and genotype review.
+P|G1|D2|sup|c|bg|sup:c:bg:V2|||| 
+P|G1|D3|nf|-||||V2|Severity comparison does not attribute CGL1 to BSCL2.
+P|G1|D4|nf|-||||V2+V6|Subtype phenotype and individual absence provide no pairwise finding.
+P|G1|D5|nf|-||||V3+V5|Case co-occurrence without gene-specific disease attribution.
+F|F1|descriptive|homozygous BSCL2 783insG, Ile262fs mutation|Taiwanese boy with CGL|not_applicable|not_applicable|not_applicable|V3|Single case.

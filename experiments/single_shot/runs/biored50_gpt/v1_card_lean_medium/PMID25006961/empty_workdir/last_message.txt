@@ -1,0 +1,26 @@
+META|GPT-6|seen: no
+SCOPE|Title and abstract only; no full text or attachments supplied.
+E|G1|gene|PKC-alpha|PKC-alpha;PKCa|r||non-human||
+E|G2|gene|UT-A1|urea transporter;UT-A1|r||human||
+E|G3|gene|AQP2|water channel;AQP2|r||human||
+E|G4|gene|UT-A1|UT-A1|r||non-human||
+E|G5|gene|AQP2|AQP2|r||non-human||
+E|D1|disease|nephrogenic diabetes insipidus|nephrogenic diabetes insipidus;NDI|r||||
+E|D2|disease|lithium-induced nephrogenic diabetes insipidus|lithium-induced nephrogenic diabetes insipidus;lithium-induced NDI|r|||D1|
+E|S1|symptom|polyuria|polyuria|r||||
+E|H1|phenotype|decreased capacity to concentrate urine|decreased capacity to concentrate urine|r||||
+E|H2|phenotype|increased urine output|increased urine output|r||||
+E|H3|phenotype|lowered urine osmolality|lowered urine osmolality|r||||
+X|PKC|b0002|gene family, not a single gene
+EV|V1|b0002.s1+b0002.s2|bg|int|hyp|ho
+EV|V2|b0001.s1+b0002.s4+b0002.s5+b0002.s9+b0002.s12|ts|res|aff|rr,mi
+EV|V3|b0002.s6+b0002.s7+b0002.s10+b0002.s12|ts|res|na|do
+EV|V4|b0002.s11|ts|res|na|do
+P|G1|D2|sup|c|ts|sup:c:ts:V2|||Ablation attenuates lithium-induced disease in mice.
+P|G2|D1|unc|-|bg|unc:c:bg:V1|hedged_claim||Proposed expression-mediated mechanism is hedged.
+P|G3|D1|unc|-|bg|unc:c:bg:V1|hedged_claim||Proposed expression-mediated mechanism is hedged.
+P|G4|D2|nf|-||||V3|Expression preservation does not establish disease attribution.
+P|G5|D2|nf|-||||V3|Expression preservation does not establish disease attribution.
+F|F1|group_comparison|Urine output and concentration by PKCa genotype|Lithium-treated knockout and wild type mice|unknown|mixed|partial|V2|Significance not stated.
+F|F2|group_comparison|AQP2 and UT-A1 expression by PKCa genotype|Lithium-treated knockout and wild type mice|unknown|mixed|partial|V3|Significance not stated.
+F|F3|group_comparison|Urinary sodium, potassium, calcium by PKCa genotype|Lithium-fed knockout and wild type mice|unknown|mixed|not_reported|V4|Significance not stated.

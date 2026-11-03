@@ -1,0 +1,32 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text, tables or figures
+E|G1|gene|Oct4|Oct4|r||human||
+E|G2|gene|Nanog|Nanog|r||human||
+E|G3|gene|Ceacam6|Ceacam6|r||human||
+E|G4|gene|MT1X|MT1X|r||human||
+E|G5|gene|STEAP4|STEAP4|r||human||
+E|G6|gene|SERPINA3|SERPINA3|r||human||
+E|G7|gene|SAMD9|SAMD9|r||human||
+E|G8|gene|GDF15|GDF15|r||human||
+E|G9|gene|KRT15|KRT15|r||human||
+E|G10|gene|ITGB6|ITGB6|r||human||
+E|G11|gene|TP63|TP63|r||human||
+E|G12|gene|PGR|PGR|r||human||
+E|D1|disease|breast cancer|breast cancer|r||||
+X|CEACAM|b0002|gene family, not single gene
+X|HLA gene families|b0002|gene family, not single gene
+X|metallothionein genes|b0002|gene set, not single gene
+X|interferon related|b0002|gene set label, not single gene
+X|MCF-7|b0001|cell line identifier
+X|MCF-12A|b0002|cell line identifier
+EV|V1|b0002.s5|ts|res|na|rr,do
+EV|V2|b0002.s6|ts|res|na|rr,do
+EV|V3|b0002.s7|ts|res|na|rr,do
+EV|V4|b0002.s8|ts|res|na|rr,do
+P|G3|D1|nf|-||||V2|ethanol-induced expression in cell line; generic malignancy marker
+P|G1|D1|nf|-||||V1+V2|ethanol-induced expression only; no disease link
+P|G2|D1|nf|-||||V1+V2|ethanol-induced expression only; no disease link
+F|F1|descriptive|ethanol 1-5 mM vs Oct4, Nanog protein|MCF-7 cells, 1 week|unknown|positive|not_reported|V1|reduced at 25 mM
+F|F2|descriptive|ethanol 25 mM vs Oct4, Nanog, Ceacam6|MCF-7 cells, 4 weeks|unknown|positive|not_reported|V2|
+F|F3|descriptive|ethanol vs metallothionein genes, MT1X|MCF-7 cells, 1 week microarray|unknown|positive|not_reported|V3|
+F|F4|descriptive|long-term ethanol vs malignancy-related gene expression|MCF-7 cells, 4 weeks|unknown|positive|not_reported|V4|partly validated by RT-PCR

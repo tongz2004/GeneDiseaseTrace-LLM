@@ -1,0 +1,26 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|MAPK14 (p38 MAPK)|p38 MAPK;P38;P38 mitogen-activated protein kinase|r||non-human||
+E|G2|gene|BCL2|BCL-2|r||non-human||
+E|G3|gene|MAPK family|MAPK|p|other|non-human||
+E|G4|gene|Voltage-dependent Na+ channels|voltage-dependent Na(+) channels|p|ambiguous_mapping|||
+E|G5|gene|Lactate dehydrogenase|lactate dehydrogenase|p|ambiguous_mapping|non-human||
+E|D1|disease|Aconitine cardiotoxicity|cardiotoxicity;aconitine poisoning|r||||
+E|D2|disease|Arrhythmia|arrhythmia|r||||
+E|D3|disease|Myocardial injury|myocardial injury|r||||
+E|D4|phenotype|Calcium overload|Ca2+ overload|p|other|||
+X|terminal deoxynucleotidyl transferase|b0002|assay name (TUNEL), not gene studied
+X|cardiac enzymes|b0002|generic enzyme markers, unspecified genes
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s12|ts|res|aff|rr
+EV|V3|b0002.s11|ts|res|aff|rr
+EV|V4|b0001.s1+b0002.s13|ts|int|aff|rr,unc
+EV|V5|b0002.s6|ts|co|na|do
+P|G1|D1|sup|c|ts|sup:c:ts:V4;sup:a:ts:V2|||Aconitine toxicity acts via P38 phosphorylation
+P|G1|D2|unc|-|ts|unc:-:ts:V4|support_basis_unresolved||P38 linked mainly to apoptosis, arrhythmia via Ca2+
+P|G2|D1|sup|a|ts|sup:a:ts:V3|||BCL-2 downregulated under aconitine
+P|G3|D1|sup|a|ts|sup:a:ts:V2|||MAPK phosphorylation increased in cardiac tissue
+P|G4|D1|sup|a|bg|sup:a:bg:V1|||Na+ channels pivotal in aconitine cardiotoxicity
+P|G5|D3|nf|-|ts||||V5|LDH measured as injury marker; no specific result
+F|F1|mechanism|P-P38/P38 ratio; MAPK phosphorylation|aconitine-treated rat cardiac tissue|unknown|positive|unread|V2|abstract only
+F|F2|mechanism|BCL-2 expression|aconitine-treated rats/NRVMs|unknown|negative|unread|V3|abstract only

@@ -1,0 +1,71 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; mouse study; no full text
+E|G1|gene|RPS6KB1 (S6K1)|S6K1|r||non-human||
+E|G2|gene|MTOR|mammalian target of rapamycin;mTOR|r||non-human||
+E|G3|gene|EIF4EBP1|4E-BP1|r||non-human||
+E|G4|gene|AKT|Akt|p|ambiguous_mapping|non-human||
+E|G5|gene|AKT1S1 (PRAS40)|PRAS40|r||non-human||
+E|G6|gene|RPS6|S6|p|ambiguous_mapping|non-human||
+E|G7|gene|EIF4B|eIF4B|r||non-human||
+E|G8|gene|EEF2K|eEF2K|r||non-human||
+E|G9|gene|EEF2|eEF2|r||non-human||
+E|G10|gene|ATG12|Atg12-5|p|ambiguous_mapping|non-human||
+E|G11|gene|MAP1LC3B|LC3B-I|r||non-human||
+E|G12|gene|ULK1|ULK1|r||non-human||
+E|G13|gene|CASP3|caspase-3|r||non-human||
+E|G14|gene|CASP9|-9|p|other|non-human||
+E|G15|gene|PARP1|PARP|p|ambiguous_mapping|non-human||
+E|G16|gene|PNPLA2 (ATGL)|ATGL|r||non-human||
+E|G17|gene|LIPE (HSL)|HSL|r||non-human||
+E|G18|gene|PPARG|PPARgamma|r||non-human||
+E|G19|gene|CEBPA|C/EBPalpha|r||non-human||
+E|G20|gene|TNF|TNF-alpha|r||non-human||
+E|G21|gene|IL6|IL-6|r||non-human||
+E|G22|gene|IL1B|IL-1beta|r||non-human||
+E|G23|gene|NLRP3|NLRP3|r||non-human||
+E|G24|gene|PYCARD (ASC)|ACS|p|suspected_typo|non-human||
+E|G25|gene|CASP1|caspase-1|r||non-human||
+E|G26|gene|insulin|insulin|p|ambiguous_mapping|non-human||
+E|D1|disease|lipodystrophy (alcohol-induced WAT loss)|lipodystrophy|p|other|||
+EV|V1|b0001.s1+b0002.s13|ts|int|aff|rr
+EV|V2|b0002.s7|ts|res|aff|rr,cmp
+EV|V3|b0002.s8|ts|res|aff|rr,cmp
+EV|V4|b0002.s9|ts|res|aff|rr,cmp
+EV|V5|b0002.s10|ts|res|aff|rr,cmp
+EV|V6|b0002.s11|ts|res|aff|rr,cmp
+EV|V7|b0002.s6|ts|neg|neg|rr,cmp
+EV|V8|b0002.s2|ts|hyp|hyp|ho
+EV|V9|b0002.s12|ts|neg|neg|rr,cmp
+EV|V10|b0002.s11|ts|neg|neg|rr,cmp
+EV|V11|b0002.s9|ts|neg|neg|rr,cmp
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V2|||S6K1 activation linked to alcohol fat loss
+P|G10|D1|sup|a|ts|sup:a:ts:V4+V1|||Autophagy marker increased with fat loss
+P|G11|D1|sup|a|ts|sup:a:ts:V4+V1|||Autophagy marker increased with fat loss
+P|G12|D1|sup|a|ts|sup:a:ts:V4+V1|||ULK1 phosphorylation increased; autophagy
+P|G16|D1|sup|a|ts|sup:a:ts:V5|||Lipolytic enzyme increased in eWAT
+P|G17|D1|sup|a|ts|sup:a:ts:V5|||HSL phosphorylation increased in eWAT
+P|G18|D1|sup|a|ts|sup:a:ts:V5|||Lipogenic regulator decreased
+P|G19|D1|sup|a|ts|sup:a:ts:V5|||Lipogenic regulator decreased
+P|G6|D1|unc|-|ts|unc:-:ts:V2|support_basis_unresolved||S6K1 substrate change; descriptive
+P|G7|D1|unc|-|ts|unc:-:ts:V2|support_basis_unresolved||S6K1 substrate change; descriptive
+P|G8|D1|unc|-|ts|unc:-:ts:V3|support_basis_unresolved||Elongation marker change; descriptive
+P|G9|D1|unc|-|ts|unc:-:ts:V3|support_basis_unresolved||Elongation marker change; descriptive
+P|G20|D1|unc|-|ts|unc:-:ts:V6|support_basis_unresolved||mRNA increased; link to fat loss unstated
+P|G21|D1|unc|-|ts|unc:-:ts:V6|support_basis_unresolved||mRNA increased; link to fat loss unstated
+P|G22|D1|unc|-|ts|unc:-:ts:V6|support_basis_unresolved||mRNA increased; link to fat loss unstated
+P|G2|D1|neg|-|ts|neg:-:ts:V7||V8|Hypothesized mTOR role; phosphorylation unchanged
+P|G3|D1|neg|-|ts|neg:-:ts:V7|||Phosphorylation unchanged
+P|G4|D1|neg|-|ts|neg:-:ts:V7|||Phosphorylation unchanged
+P|G5|D1|neg|-|ts|neg:-:ts:V7|||Phosphorylation unchanged
+P|G13|D1|neg|-|ts|neg:-:ts:V11|||Cleaved caspase unchanged
+P|G14|D1|neg|-|ts|neg:-:ts:V11|||Cleaved caspase unchanged
+P|G15|D1|neg|-|ts|neg:-:ts:V11|||PARP unchanged
+P|G23|D1|neg|-|ts|neg:-:ts:V10|||Inflammasome component unchanged
+P|G24|D1|neg|-|ts|neg:-:ts:V10|||Inflammasome component unchanged
+P|G25|D1|neg|-|ts|neg:-:ts:V10|||Cleaved caspase-1 unchanged
+P|G26|D1|neg|-|ts|neg:-:ts:V9|||Plasma insulin unchanged
+F|F1|group_comparison|S6K1, S6, eIF4B phosphorylation|alcohol-fed vs control mice eWAT|unknown|positive|not_reported|V2|abstract only
+F|F2|group_comparison|autophagy markers Atg12-5, LC3B, ULK1|alcohol-fed vs control mice eWAT|unknown|positive|not_reported|V4|abstract only
+F|F3|group_comparison|mTOR, 4E-BP1, Akt, PRAS40 phosphorylation|alcohol-fed vs control mice eWAT|not_significant|null|not_reported|V7|abstract only
+F|F4|group_comparison|lipolytic and lipogenic regulators|alcohol-fed vs control mice eWAT|unknown|mixed|not_reported|V5|abstract only
+R|disease scope|b0002.s1|Disease is an alcohol-induced fat loss phenotype, not a named disease.|Mapped to lipodystrophy as a provisional disease entity.

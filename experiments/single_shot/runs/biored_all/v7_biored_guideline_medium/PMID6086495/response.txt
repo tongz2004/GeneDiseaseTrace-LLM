@@ -1,0 +1,11 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text
+E|G1|gene|DMD (dystrophin; BMD gene)|BMD|p|ambiguous_mapping|human||
+E|D1|disease|Becker muscular dystrophy|Becker muscular dystrophy;BMD;Becker|r||||
+E|D2|disease|Duchenne muscular dystrophy|Duchenne dystrophies|r||||
+EV|V1|b0001.s1+b0002.s1|ts|res|aff|rr
+EV|V2|b0002.s2|ts|int|hyp|ho
+P|G1|D1|sup|a|ts|sup:a:ts:V1|||Linkage localises the BMD gene to Xp21
+P|G1|D2|unc|-|ts|unc:-:ts:V2|hedged_claim,identity||Genes are only possibly allelic with Duchenne
+F|F1|association|RFLP markers and BMD locus|30 BMD kindreds|unknown|positive|not_reported|V1|abstract only
+R|gene-disease shared name|b0002.s1|The gene is called only "BMD gene"; dystrophin is not named.|Gene entity mapped provisionally to DMD.

@@ -1,0 +1,17 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only.
+E|G1|gene|FMR1|FMR1|r||human||
+E|D1|disease|fragile X syndrome|Fragile X syndrome;fragile X syndrome|r||||
+E|D2|disease|mental retardation|mental retardation;mentally retarded|r||||
+E|D3|disease|autism|autism;autistic|r||||
+EV|V1|b0002.s1+b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s3+b0002.s4|ts|res|na|do
+EV|V3|b0002.s5+b0002.s6|ts|co|na|do
+EV|V4|b0002.s7|ts|res|na|rr
+EV|V5|b0002.s8|ts|int|hyp|ho
+P|G1|D1|sup|c|bg|sup:c:bg:V1||||Explicit repeat-expansion causation.
+P|G1|D2|unc|-|ts|unc:-:ts:V5|hedged_claim|V2+V3+V4|Authors propose possible causation.
+P|G1|D3|unc|-|ts|unc:-:ts:V5|hedged_claim|V2+V3+V4|Authors propose possible causation.
+F|F1|descriptive|FMR1 exon mutations|76 male patients|not_applicable|null|not_applicable|V2|Absence of mutations does not test association.
+F|F2|descriptive|FMR1 nucleotide 879 substitution|One female patient; 50 controls|unknown|unknown|not_reported|V3|Patient's specific diagnosis unstated.
+F|F3|mechanism|Mutant FMR1 transcripts; protein synthesis|Mutation carrier|not_applicable|not_applicable|not_applicable|V4|Disease causation not demonstrated.

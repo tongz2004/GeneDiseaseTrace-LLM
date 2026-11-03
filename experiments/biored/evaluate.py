@@ -4,13 +4,17 @@ Usage: python experiments/biored/evaluate.py [variant] [run_set]
   variant  default v1_card_lean_medium (or pubtator3)
   run_set  biored50 (default: frozen 50-abstract test sample, gold_50.json)
            biored_all (all 419 abstracts with a gene-disease relation, gold_all.json; also scored per split)
+           biored_testrest (the 27 Test abstracts with no gene-disease relation, gold_test_rest.json; precision only)
 
 Unit: one (gene concept, disease concept) pair per abstract. Our entities are matched to gold concepts by mention
 overlap (same block, overlapping characters), with types checked: our gene <-> GeneOrGeneProduct, our disease-side
 targets (disease / clinical_event / ambiguous) <-> DiseaseOrPhenotypicFeature.
 - A gold relation is found when one of our supported pairs joins an entity matching its gene with one matching its
   disease. Recall is over gold relations.
-- One of our supported pairs is correct when it matches at least one gold relation that way. Precision is over our pairs.
+- Matching is one-to-one (maximum bipartite matching): each gold relation credits at most one of our supported pairs
+  and each pair at most one gold relation, so a second pair for the same gold relation (e.g. 'PKU' and 'classical PKU'
+  kept apart) is a false positive. Precision is over our pairs. The earlier many-to-one counts are kept in the per-paper
+  counts as tp_ours_many_to_one / tp_gold_many_to_one.
 - Strict: every gold relation counts. Scope-adjusted: gold relations whose disease our rules record only as a
   symptom/phenotype (auxiliary table, outside the gene x disease matrix) are set aside and listed.
 - Only 'supported' is a positive prediction; uncertain / explicit_negative pairs are reported separately, and a
@@ -19,6 +23,7 @@ Bootstrap 95% intervals resample abstracts (2,000 draws, fixed seed).
 Writes runs/<run_set>/<variant>/biored_eval.json and biored_eval_rows.csv.
 """
 import csv
+import hashlib
 import json
 import random
 import sys
@@ -26,7 +31,9 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 RUNS = HERE.parent / "single_shot" / "runs"
-GOLD = {"biored50": "gold_50.json", "biored_all": "gold_all.json"}
+SCORER = {"protocol": "one-to-one (maximum bipartite matching), since 2026-11-03; before that many-to-one",
+          "evaluate_py_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest()}
+GOLD = {"biored50": "gold_50.json", "biored_all": "gold_all.json", "biored_testrest": "gold_test_rest.json"}
 TARGET_TYPES = {"disease", "clinical_event", "ambiguous"}
 AUX_TYPES = {"symptom", "phenotype"}
 NOVEL = {"this study": "Novel", "both": "Novel", "background": "No"}  # our source scope -> BioRED novelty
@@ -46,6 +53,24 @@ def read(path):
 
 def overlap(a, b):
     return any(x[0] == y[0] and x[1] < y[2] and y[1] < x[2] for x in a for y in b)
+
+
+def one_to_one(hits):
+    """Maximum bipartite matching between gold relations (list index) and our pairs: {gold index: our pair}."""
+    owner = {}
+
+    def augment(i, seen):
+        for k in hits[i]:
+            if k not in seen:
+                seen.add(k)
+                if k not in owner or augment(owner[k], seen):
+                    owner[k] = i
+                    return True
+        return False
+
+    for i in range(len(hits)):
+        augment(i, set())
+    return {i: k for k, i in owner.items()}
 
 
 def score_paper(paper_id, gold, out, positive=("supported",)):
@@ -73,15 +98,22 @@ def score_paper(paper_id, gold, out, positive=("supported",)):
     pairs = read(out / "pairs.csv")
     supported = {(p["gene_id"], p["disease_id"]): p for p in pairs if p["status"] in positive}
     other = {(p["gene_id"], p["disease_id"]): p for p in pairs if p["status"] in {"supported", "uncertain", "explicit_negative"} - set(positive)}
-    rows, gold_hit_pairs = [], set()
+    hits = []
     for r in gold["relations"]:
+        candidates = sorted((a, b) for a in genes_of.get(r["gene"], ()) for b in targets_of.get(r["disease"], ()))  # sorted: deterministic pick
+        hits.append([k for k in candidates if k in supported])
+    gold_hit_pairs = {k for h in hits for k in h}
+    matched = one_to_one(hits)  # gold index -> our pair; each gold relation credits at most one pair and vice versa
+    rows = []
+    for i, r in enumerate(gold["relations"]):
         g, d = r["gene"], r["disease"]
-        candidates = sorted((a, b) for a in genes_of.get(g, ()) for b in targets_of.get(d, ()))  # sorted: deterministic pick
-        hit = [k for k in candidates if k in supported]
+        candidates = sorted((a, b) for a in genes_of.get(g, ()) for b in targets_of.get(d, ()))
+        hit = [matched[i]] if i in matched else []
         held = [k for k in candidates if k in other]
-        gold_hit_pairs |= set(hit)
         if hit:
             outcome, why = "TP", ""
+        elif hits[i]:
+            outcome, why = "FN", "our pair: supported, credited to another gold relation"
         elif held:
             outcome, why = "FN", "our pair: " + other[held[0]]["status"]
         elif not genes_of.get(g):
@@ -90,7 +122,7 @@ def score_paper(paper_id, gold, out, positive=("supported",)):
             outcome, why = ("FN", "disease recorded by us as symptom/phenotype") if aux_of.get(d) else ("FN", "disease not recorded by us")
         else:
             outcome, why = "FN", "our pair: not_found"
-        best = supported[hit[0]] if hit else other[held[0]] if held else None
+        best = supported[hit[0]] if hit else supported[hits[i][0]] if hits[i] else other[held[0]] if held else None
         rows.append({"paper_id": paper_id, "outcome": outcome, "detail": why,
                      "gold_gene": f"{gold_name.get(g, g)} ({g})", "gold_disease": f"{gold_name.get(d, d)} ({d})",
                      "gold_type": r["type"], "gold_novel": r["novel"],
@@ -98,12 +130,14 @@ def score_paper(paper_id, gold, out, positive=("supported",)):
                      "our_relation": best["relation_type"] if best else "",
                      "our_source": SOURCE_EN.get(best["source_scope"], best["source_scope"]) if best else "",
                      "our_reason": best["reason"] if best else ""})
+    credited = set(matched.values())
     for key, p in supported.items():
-        if key in gold_hit_pairs:
+        if key in credited:
             continue
         gene_concepts = [c for c in genes_of if key[0] in genes_of[c] and gold_type[c] == "GeneOrGeneProduct"]
         disease_concepts = [c for c in targets_of if key[1] in targets_of[c] and gold_type[c] == "DiseaseOrPhenotypicFeature"]
-        why = ("gold has both concepts but no relation" if gene_concepts and disease_concepts
+        why = ("duplicate: its gold relation is credited to another of our pairs" if key in gold_hit_pairs
+               else "gold has both concepts but no relation" if gene_concepts and disease_concepts
                else "gene not a gold gene concept" if not gene_concepts and disease_concepts
                else "disease not a gold disease concept" if gene_concepts else "neither entity is a gold concept")
         rows.append({"paper_id": paper_id, "outcome": "FP", "detail": why, "gold_gene": "", "gold_disease": "",
@@ -119,7 +153,9 @@ def score_paper(paper_id, gold, out, positive=("supported",)):
               "fn": sum(r["outcome"] == "FN" for r in rows),
               "fn_symptom": sum(r["detail"] == "disease recorded by us as symptom/phenotype" for r in rows),
               "our_supported": len(supported),
-              "tp_ours": len(gold_hit_pairs),
+              "tp_ours": len(matched),
+              "tp_ours_many_to_one": len(gold_hit_pairs),  # earlier protocol: a pair is correct if it matches any gold relation
+              "tp_gold_many_to_one": sum(bool(h) for h in hits),
               "uncertain_or_negative": len(other),
               "uncertain_or_negative_in_gold": sum(r["detail"].startswith("our pair: uncertain") or r["detail"].startswith("our pair: explicit") for r in rows)}
     return counts, rows
@@ -148,7 +184,8 @@ def with_ci(counts, papers, adjusted, rng):
 
 
 def main(variant="v1_card_lean_medium", run_set="biored50"):
-    gold = json.loads((HERE / GOLD[run_set]).read_text(encoding="utf-8"))
+    # Run sets for other models extend these names (e.g. biored50_gpt); the gold file follows the prefix.
+    gold = json.loads((HERE / GOLD[next(k for k in GOLD if run_set.startswith(k))]).read_text(encoding="utf-8"))
     base = RUNS / run_set / variant
     per_paper, rows, missing = {}, [], []
     for paper_id, g in gold.items():
@@ -160,13 +197,13 @@ def main(variant="v1_card_lean_medium", run_set="biored50"):
         rows += paper_rows
     papers = sorted(per_paper)
     rng = random.Random(20261028)
-    result = {"variant": variant, "run_set": run_set, "papers_scored": len(papers), "papers_missing": missing}
+    result = {"variant": variant, "run_set": run_set, "scorer": SCORER, "papers_scored": len(papers), "papers_missing": missing}
     # Second operating point: count 'uncertain' as a positive too (no rerun; same outputs).
     per_paper_loose = {p: score_paper(p, gold[p], base / p / "outputs", ("supported", "uncertain"))[0] for p in papers}
     for label, counts, adjusted in (("strict", per_paper, False), ("scope_adjusted", per_paper, True),
                                     ("supported_or_uncertain", per_paper_loose, False)):
         result[label] = with_ci(counts, papers, adjusted, rng)
-    if run_set == "biored_all":
+    if run_set.startswith("biored_all"):
         # Same scores per BioRED split; our method never trained on any of them, so they should agree.
         split = {p["paper_id"]: p["split"] for p in json.loads((HERE / "sample_all.json").read_text(encoding="utf-8"))["papers"]}
         result["by_split"] = {}
@@ -177,6 +214,9 @@ def main(variant="v1_card_lean_medium", run_set="biored50"):
                                             "strict": with_ci(per_paper, subset, False, rng),
                                             "supported_or_uncertain": with_ci(per_paper_loose, subset, False, rng)}
     t = total([per_paper[p] for p in papers])
+    # The earlier many-to-one protocol, recomputed from the same rows so numbers reported before 2026-11-03 stay traceable.
+    old = dict(t, tp_ours=t["tp_ours_many_to_one"], tp_gold=t["tp_gold_many_to_one"], fn=t["tp_gold"] + t["fn"] - t["tp_gold_many_to_one"])
+    result["strict_many_to_one"] = dict(zip(("precision", "recall", "f1"), (round(x, 3) for x in prf(old))))
     result["per_paper"] = per_paper
     tp_rows = [r for r in rows if r["outcome"] == "TP" and r["our_source"] in NOVEL]
     novelty_agree = sum(NOVEL[r["our_source"]] == r["gold_novel"] for r in tp_rows)

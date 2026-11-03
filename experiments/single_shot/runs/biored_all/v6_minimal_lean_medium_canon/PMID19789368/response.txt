@@ -1,0 +1,42 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; full text unavailable
+E|G1|gene|VDR|Vitamin D receptor;vitamin D receptor;VDR|r|||human|
+E|G2|gene|PIK3CA|PIK3CA|r|||human|
+E|G3|gene|KRAS|KRAS|r|||human|
+E|G4|gene|BRAF|BRAF|r|||human|
+E|G5|gene|TP53|p53|r|||human|
+E|G6|gene|CDKN1A|p21|r|||human|
+E|G7|gene|CTNNB1|beta-catenin|r|||human|
+E|G8|gene|PTGS2|cyclooxygenase-2|r|||human|
+E|G9|gene|CACNA1G|CACNA1G|r|||human|
+E|G10|gene|CDKN2A|CDKN2A;p16|r|||human|
+E|G11|gene|CRABP1|CRABP1|r|||human|
+E|G12|gene|IGF2|IGF2|r|||human|
+E|G13|gene|MLH1|MLH1|r|||human|
+E|G14|gene|NEUROG1|NEUROG1|r|||human|
+E|G15|gene|RUNX3|RUNX3|r|||human|
+E|G16|gene|SOCS1|SOCS1|r|||human|
+E|G17|gene|RAS family|RAS|p|ambiguous_mapping|human||
+E|G18|gene|MAPK family|mitogen-activated protein kinase;MAPK|p|ambiguous_mapping|human||
+E|G19|gene|PI3K family|phosphatidylinositol 3-kinase;PI3K|p|ambiguous_mapping|human||
+E|G20|gene|AKT family|AKT|p|ambiguous_mapping|human||
+E|D1|disease|colorectal cancer|colorectal cancer;colorectal cancers|r||||
+E|D2|disease|colon cancer|colon cancer|r||||
+E|D3|disease|cancer|cancers|r||||
+E|PH1|phenotype|microsatellite instability|microsatellite instability|r||||
+E|PH2|phenotype|CpG island methylator phenotype|CpG island methylator phenotype|r||||
+X|LINE-1|b0002.s6|repetitive element methylation marker, not a gene
+X|Vitamin D|b0002.s1|nutrient, not the VDR gene
+EV|V1|b0002.s5|ts|co|na|do
+EV|V2|b0002.s7+b0002.s10|ts|res|aff|rr
+EV|V3|b0002.s9|ts|neg|neg|rr
+EV|V4|b0002.s1|bg|bgr|aff|ebr
+EV|V5|b0002.s11|ts|int|hyp|ho
+P|G1|D1|unc|-|ts||support_basis_unresolved|V1+V3|VDR overexpression descriptive; no prognostic association
+P|G2|D1|unc|-|ts||presupposed_only|V2+V5|mutations studied in CRC; no frequency comparison
+P|G3|D1|unc|-|ts||presupposed_only|V2+V5|mutations studied in CRC; no frequency comparison
+P|G1|D2|nf|-||||V4|vitamin D, not VDR, linked to colon cancer
+F|F1|association|VDR overexpression; KRAS mutation|619 colorectal cancers|significant|positive|available|V2|
+F|F2|association|VDR overexpression; PIK3CA mutation|619 colorectal cancers|significant|positive|available|V2|
+F|F3|association|VDR; BRAF, p53, p21, beta-catenin, COX-2|619 colorectal cancers|not_significant|null|not_reported|V3|abstract only
+F|F4|association|VDR expression; patient survival|619 colorectal cancers|not_significant|null|not_reported|V3|abstract only

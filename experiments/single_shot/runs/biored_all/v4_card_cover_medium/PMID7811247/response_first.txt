@@ -1,0 +1,24 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|E1|gene|ALD gene|ALD|r||human||
+E2|disease|X-linked adrenoleukodystrophy|X-linked adrenoleukodystrophy;adrenoleukodystrophy;ALD|r||||
+E|E3|disease|adolescent ALD|adolescent ALD|r|||E2|
+E|E4|disease|cerebral ALD|cerebral ALD|r|||E2|
+E|E5|disease|adrenomyeloneuropathy|adrenomyeloneuropathy|r||||
+E|E6|disease|Addison only|Addison|p|other|||
+E|E7|phenotype|very long chain fatty acid accumulation|very long chain fatty acids|r||||
+EV|V1|b0002.s1+b0002.s2|ts|res|na|rr,do
+EV|V2|b0002.s3|ts|res|aff|cs,cmp
+EV|V3|b0002.s4|ts|int|hyp|ho
+EV|V4|b0001.s1|ts|co|na|do
+P|E1|E2|sup|a|ts|sup:a:ts:V2;unc:-:ts:V3|hedged_claim|V4|Mutation co-segregates with affected members; causality only proposed
+P|E1|E3|sup|a|ts|sup:a:ts:V1+V2;unc:-:ts:V3|hedged_claim||Proband carries co-segregating mutation
+P|E1|E4|sup|a|ts|sup:a:ts:V2;unc:-:ts:V3|hedged_claim||Cerebral ALD siblings carry co-segregating mutation
+P|E1|E5|sup|a|ts|sup:a:ts:V2;unc:-:ts:V3|hedged_claim||AMN sibling carries co-segregating mutation
+P|E1|E6|sup|a|ts|sup:a:ts:V2;unc:-:ts:V3|hedged_claim||Addison-only sibling carries co-segregating mutation
+F|F1|association|P484R carrier status vs affected status|ALD family, 6 affected members|not_applicable|positive|not_reported|V2|Single family; no statistics
+F|F2|descriptive|P484R presence|5 unrelated ALD patients; 20 controls|not_applicable|null|not_reported|V2|Mutation-specific, not gene-level negative
+R|surface form sharing|b0002.s1|"ALD" names both the gene and the disease|Listed as a surface form of both; context assigns the referent
+
+The E2 line above is malformed (missing the leading `E|`). Corrected line:
+E|E2|disease|X-linked adrenoleukodystrophy|X-linked adrenoleukodystrophy;adrenoleukodystrophy;ALD|r||||

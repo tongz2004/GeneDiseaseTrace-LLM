@@ -1,0 +1,15 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|E1|gene|DRD2|DRD2;D2 receptor|r||human||
+E|E2|disease|extrapyramidal syndrome|Extrapyramidal syndrome;extrapyramidal syndrome;EPS|r||||
+E|E3|disease|schizophrenia|schizophrenia;schizophrenic|r||||
+X|TaqIA|b0002.s4|DRD2 variant marker, not a separate gene
+X|Ser311Cys|b0002.s4|DRD2 variant, not a separate gene
+EV|V1|b0002.s4+b0002.s7|ts|neg|neg|rr,cmp
+EV|V2|b0002.s8+b0002.s9|both|int|neg|rr,ebr
+EV|V3|b0002.s1|bg|bgr|q|unc
+EV|V4|b0002.s2|bg|bgr|q|ebr
+P|E1|E2|neg|-|both|neg:-:ts:V1;neg:-:both:V2;unc:a:bg:V3|hedged_claim||No allele or haplotype difference for chlorpromazine-induced EPS
+P|E1|E3|unc|a|bg|unc:a:bg:V4|scope||Background links variants to treatment response, not disease
+F|F1|group_comparison|DRD2 alleles and haplotypes vs EPS|146 chlorpromazine-treated Chinese schizophrenics|not_significant|null|partial|V1|abstract only; 3 SNPs monomorphic
+R|explicit_negative|b0002.s8|Conclusion hedged ("no strong support for a major role"), but result is null|Scored as neg, uncertainty recorded

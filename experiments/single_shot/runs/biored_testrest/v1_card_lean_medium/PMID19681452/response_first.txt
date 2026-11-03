@@ -1,0 +1,12 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no genes mentioned
+E|D1|disease|haemorrhagic infarction of the globus pallidus|haemorrhagic infarction of the globus pallidus|r||||
+E|D2|disease|ischemic stroke|ischemic and haemorrhagic stroke|p|other|||
+E|D3|disease|haemorrhagic stroke|haemorrhagic stroke|r||||
+E|D4|disease|ischemia of the globus pallidus|ischemia of the globus pallidus|r||||
+E|D5|disease|globus pallidus infarction|globus pallidus infarctions|r||||
+E|D6|disease|basal ganglia infarct|basal ganglia infarcts|r||||
+E|D7|disease|cardiac arrhythmia|cardiac arrhythmia|r||||
+E|D8|disease|cocaine and alcohol intoxication|cocaine and alcohol intoxication|r||||
+E|S1|symptom|respiratory dysfunction|respiratory dysfunction|r||||
+E|S2|phenotype|cerebral hypoperfusion|cerebral hypoperfusion|r||||

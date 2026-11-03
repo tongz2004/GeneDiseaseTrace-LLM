@@ -1,0 +1,83 @@
+META|GPT-6|seen: yes, previous output
+SCOPE|Texto proporcionado completo; sin referencias ni materiales externos.
+E|G1|gene|RAG1|RAG1|r||human||
+E|G2|gene|RAG2|RAG2|r||human||
+E|G3|gene|Artemis|Artemis|r||human||
+E|G4|gene|RPMRP RNA|RPMRP RNA|r||human||
+E|G5|gene|IL7RA|IL7RA|r||human||
+E|G6|gene|interleuquina 7|interleuquina 7;IL-7|r||human||
+E|D1|disease|síndrome de Omenn|síndrome de Omenn;inmunodeficiencia combinada con hipereosinofilia|r||||
+E|D2|disease|ictiosis|ictiosis|r||||
+E|D3|disease|eritrodermia|eritrodermia;eritrodermias;eritodermia|p|suspected_typo|||
+E|D4|disease|eritrodermia congénita|eritrodermia congénita;eritrodermias neonatales congénitas|r|||D3|
+E|D5|disease|eritrodermia neonatal|eritrodermia neonatal|r|||D3|
+E|D6|disease|desórdenes de la cornificación|desórdenes de la cornificación|r||||
+E|D7|disease|desórdenes inflamatorios|desórdenes inflamatorios|r||||
+E|D8|disease|dermatitis atópica|dermatitis atópica|r||||
+E|D9|disease|psoriasis|psoriasis|r||||
+E|D10|disease|dermatitis seborreica|dermatitis seborreica|r||||
+E|D11|disease|trastornos metabólicos|trastornos metabólicos|r||||
+E|D12|disease|deficiencia de biotinidasa|deficiencia de biotinidasa|r||||
+E|D13|disease|deficiencia de zinc|de zinc|r||||
+E|D14|disease|inmunodeficiencia combinada grave|inmunodeficiencia combinada grave|r||||
+E|D15|disease|enteritis|enteritis|r||||
+E|D16|disease|pneumonitis|pneumonitis|r||||
+E|D17|disease|hepatitis|hepatitis|r||||
+E|D18|disease|infección de piel|infección de piel|r||||
+E|D19|disease|choque séptico|choque séptico|r||||
+E|D20|disease|taquipnea transitoria del recién nacido|taquipnea transitoria del recién nacido|r||||
+E|D21|disease|ictiosis laminar|ictiosis laminar|r|||D2|
+E|D22|disease|falla multiorgánica|falla multiorgánica|r||||
+E|D23|disease|insuficiencia renal aguda|insuficiencia renal aguda|r||||
+E|D24|disease|coagulación intravascular diseminada|coagulación intravascular diseminada|r||||
+E|D25|disease|trombocitopenia severa secundaria|trombocitopenia severa secundaria|r||||
+E|D26|disease|anemia severa multifactorial|anemia severa multifactorial|r||||
+E|D27|disease|hemorragia intraventricular|hemorragia intraventricular|r||||
+E|D28|disease|ictiosis congénita|ictiosis congénita|r|||D2|
+E|D29|disease|inmunodeficiencia primaria|inmunodeficiencia primaria|r||||
+E|A1|phenotype|eritema persistente|eritema persistente|r||||
+E|A2|phenotype|alopecia|alopecia|r||||
+E|A3|phenotype|linfadenopatía|linfadenopatía|r||||
+E|A4|phenotype|hepatoesplenomegalia|hepatoesplenomegalia|r||||
+E|A5|phenotype|linfocitosis T|linfocitosis T|r||||
+E|A6|phenotype|ausencia de linfocitos B|ausencia de linfocitos B|r||||
+E|A7|phenotype|ausencia de marcadores de timopoyesis|ausencia de marcadores de timopoyesis|r||||
+E|A8|phenotype|estado proinflamatorio sistémico persistente|estado proinflamatorio sistémico persistente|r||||
+E|A9|phenotype|edema significativo del cuero cabelludo|edema significativo del cuero cabelludo|r||||
+E|A10|phenotype|líquido amniótico ecogénico|líquido amniótico ecogénico|r||||
+E|A11|phenotype|descamación de la piel abdominal|descamación de la piel abdominal|r||||
+E|A12|phenotype|edema de piel en extremidades|edema de piel en extremidades|r||||
+E|A13|phenotype|Polihidramnios|Polihidramnios|r||||
+E|A14|phenotype|facies dismórficas|facies dismórficas|r||||
+E|A15|phenotype|disfunción ventilatoria|disfunción ventilatoria|r||||
+E|A16|phenotype|piel escaldada|piel escaldada|r||||
+E|A17|phenotype|esfacelación|esfacelación|r||||
+E|A18|phenotype|hipogranulosis|hipogranulosis|r||||
+E|A19|phenotype|necrosis|necrosis|r||||
+E|A20|phenotype|descenso de la población linfoide|descenso de la población linfoide|r||||
+E|A21|phenotype|detritos intraabdominales|detritos intraabdominales|r||||
+E|A22|phenotype|edema de los labios|edema de los labios|r||||
+E|A23|phenotype|boca grande|boca grande|r||||
+E|A24|phenotype|hipoplasia nasal|hipoplasia nasal|r||||
+E|A25|phenotype|perfil facial plano|perfil facial plano|r||||
+E|A26|phenotype|malformaciones auriculares|malformaciones auriculares|r||||
+E|A27|phenotype|flexión fija de manos y pies|flexión fija de manos y pies|r||||
+X|c.829dupT|b0018|variant_identifier
+X|TREC|b0024|DNA_excision_circles_not_gene
+EV|V1|b0010.s1+b0010.s3|bg|bgr|aff|ebr
+EV|V2|b0010.s4|bg|bgr|aff|ebr
+EV|V3|b0018.s5|ts|co|na|do
+EV|V4|b0019.s1|ts|res|aff|eda
+EV|V5|b0026.s1+b0026.s2+b0026.s4|ts|int|q|unc
+EV|V6|b0024.s2|ts|hyp|hyp|ho
+EV|V7|b0017.s5+b0018.s5|ts|co|na|do
+EV|V8|b0026.s2|bg|bgr|aff|ebr
+P|G1|D1|sup|a|bg|sup:a:bg:V1|||
+P|G2|D1|sup|a|bg|sup:a:bg:V1;unc:a:ts:V4+V5|support_basis_unresolved|V3|Antecedente explícito; diagnóstico genético del caso no confirmado.
+P|G3|D1|sup|a|bg|sup:a:bg:V2|||
+P|G4|D1|sup|a|bg|sup:a:bg:V2|||
+P|G5|D1|sup|a|bg|sup:a:bg:V2|||
+P|G6|D29|nf|-||||V6|Propuesta de ensayo diagnóstico; sin relación genética demostrada.
+P|G2|D21|nf|-||||V7|Diagnóstico provisional y variante sin atribución a ictiosis.
+F|F1|descriptive|variante heterocigota RAG2 c.829dupT|recién nacida con sospecha de Omenn|not_applicable|not_applicable|not_applicable|V3|Diagnóstico genético definitivo no confirmado.
+F|F2|mechanism|RAG2 frameshift; pérdida de función|antecedentes de patogenicidad genética|not_applicable|not_applicable|not_applicable|V8|Sin atribución causal definitiva al caso.

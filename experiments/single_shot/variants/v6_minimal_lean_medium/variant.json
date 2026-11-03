@@ -1,0 +1,1 @@
+{"name": "v6_minimal_lean_medium", "effort": "medium", "description": "Minimal-prompt ablation: V1 with the decision card replaced by a short task description (no entity-scope, evidence or boundary-case rules); same lean format, packer, expander and validator. Separates the card's contribution from format, validator and base model."}

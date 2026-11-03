@@ -1,0 +1,25 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|ceruloplasmin|Ceruloplasmin;ceruloplasmin|r|||human||
+E|G2|gene|hepcidin|hepcidin|r|||human||
+E|G3|gene|transferrin|transferrin|r|||human||
+E|D1|disease|aceruloplasminemia|Aceruloplasminemia;aceruloplasminemia|r||||
+E|D2|disease|neurodegenerative disease|neurodegenerative disease|r||||
+E|D3|disease|movement disorders|movement disorders|r||||
+E|D4|disease|retinal degeneration|retinal degeneration|r||||
+E|D5|disease|diabetes mellitus|diabetes mellitus;diabetes|p|other|||
+E|D6|disease|iron overload|iron overload|r||||
+E|S1|phenotype|iron accumulation|iron accumulation|r||||
+X|c.2554+1G>T|b0002|variant identifier
+EV|V1|b0002.s3|ts|res|aff|rr,eda
+EV|V2|b0002.s5+b0002.s6|ts|res|aff|rr
+EV|V3|b0002.s11|ts|int|aff|unc
+EV|V4|b0002.s7|ts|res|aff|rr
+EV|V5|b0002.s2|bg|bgr|na|do
+EV|V6|b0002.s1|bg|bgr|na|do
+P|G1|D1|sup|c|ts|sup:c:ts:V1||V2+V3+V5|novel homozygous mutation identified as cause in siblings
+P|G2|D6|sup|r|ts|sup:r:ts:V4||V3|hepcidin mRNA increases with degree of iron overload
+P|G2|D1|unc|-||unc:-:ts:V4+V3|scope||hepcidin raised but no comparator against disease status
+F|F1|correlation|hepatic hepcidin mRNA vs iron overload degree|aceruloplasminemia patients|unknown|positive|not_reported|V4|abstract only; no statistics given
+F|F2|mechanism|c.2554+1G>T splicing; protein retention|affected siblings|not_applicable|not_applicable|not_applicable|V2|
+R|E-merge|b0002.s4|"diabetes" vs "diabetes mellitus": same referent is likely, but this is not explicitly stated|Merged as one entity and set to provisional

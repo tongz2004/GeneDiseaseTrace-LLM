@@ -1,0 +1,29 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|SLC30A8|SLC30A8|r||human||
+E|G2|gene|HHEX|HHEX|r||human||
+E|G3|gene|CDKN2A/B|CDKN2A/B|p|ambiguous_mapping|human||
+E|G4|gene|IGF2BP2|IGF2BP2|r||human||
+E|G5|gene|FTO|FTO|r||human||
+E|G6|gene|WFS1|WFS1|r||human||
+E|G7|gene|CDKAL1|CDKAL1|r||human||
+E|G8|gene|KCNQ1|KCNQ1|r||human||
+E|D1|disease|type 2 diabetes mellitus|type 2 diabetes;type 2 diabetes mellitus;T2DM|r||||
+EV|V1|b0002.s5|ts|res|aff|rr,cmp
+EV|V2|b0002.s6|ts|res|aff|rr,cmp
+EV|V3|b0002.s7|ts|res|aff|rr,cmp
+EV|V4|b0002.s7|ts|neg|neg|rr,cmp
+EV|V5|b0002.s8|ts|int|aff|rr
+P|G7|D1|sup|a|ts|sup:a:ts:V1+V5|||Strongest association, rs7754840
+P|G2|D1|sup|a|ts|sup:a:ts:V2+V5|||rs1111875 G allele associated
+P|G3|D1|sup|a|ts|sup:a:ts:V2+V5|||rs10811661 T allele associated
+P|G8|D1|sup|a|ts|sup:a:ts:V2+V5|||rs2237892 C allele associated
+P|G1|D1|sup|a|ts|sup:a:ts:V3+V5|||Nominal association, conclusion confers risk
+P|G4|D1|neg|-|ts|neg:-:ts:V4|||SNP not associated
+P|G5|D1|neg|-|ts|neg:-:ts:V4|||SNP not associated
+P|G6|D1|neg|-|ts|neg:-:ts:V4|||SNP not associated
+F|F1|association|CDKAL1 rs7754840 vs T2DM|Korean 908 cases, 502 controls|significant|positive|available|V1|
+F|F2|association|HHEX, CDKN2A/B, KCNQ1 SNPs vs T2DM|Korean 908 cases, 502 controls|significant|positive|available|V2|
+F|F3|association|SLC30A8 rs13266634 vs T2DM|Korean 908 cases, 502 controls|significant|positive|available|V3|nominal p=0.045 only
+F|F4|association|IGF2BP2, FTO, WFS1 SNPs vs T2DM|Korean 908 cases, 502 controls|not_significant|null|not_reported|V4|
+C|C1|SLC30A8 nominal vs conclusion of risk|b0002.s7+b0002.s8|noncritical|resolved|Both affirm association; strength differs

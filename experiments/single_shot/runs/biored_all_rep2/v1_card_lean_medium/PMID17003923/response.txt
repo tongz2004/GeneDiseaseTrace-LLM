@@ -1,0 +1,46 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|factor V|factor V|r||human||
+E|G2|gene|factor VII|factor VII|r||human||
+E|G3|gene|factor XIII|factor XIII|r||human||
+E|G4|gene|beta-fibrinogen|beta-fibrinogen|r||human||
+E|G5|gene|prothrombin|prothrombin|r||human||
+E|G6|gene|tissue factor pathway inhibitor|tissue factor pathway inhibitor|r||human||
+E|G7|gene|thrombomodulin|thrombomodulin|r||human||
+E|G8|gene|angiotensin converting enzyme|angiotensin converting enzyme|r||human||
+E|G9|gene|factor VII-activating protease|factor VII-activating protease;FSAP|r||human||
+E|G10|gene|plasminogen activator inhibitor 1|plasminogen activator inhibitor 1|r||human||
+E|G11|gene|tissue plasminogen activator|tissue plasminogen activator|r||human||
+E|G12|gene|apolipoprotein E|apolipoprotein E2/E3/E4|r||human||
+E|G13|gene|glycoprotein Ia|glycoprotein Ia|r||human||
+E|G14|gene|methylenetetrahydrofolate reductase|methylenetetrahydrofolate reductase|r||human||
+E|D1|disease|thromboembolism|thromboembolism|r||||
+E|D2|disease|thromboembolic diseases|thromboembolic diseases|r||||
+E|D3|disease|cardiovascular diseases|cardiovascular diseases|r||||
+E|D4|disease|hereditary thrombophilia|hereditary thrombophilia|r||||
+E|D5|disease|hereditary hypercoagulability|hereditary hypercoagulability|r||||
+X|factor V Leiden|b0002|variant name, not separate gene or disease
+X|factor V HR2 haplotype|b0002|variant haplotype name
+X|FSAP Marburg I|b0002|variant name
+EV|V1|b0001.s1|bg|bgr|hyp|ho
+EV|V2|b0002.s6|bg|bgr|hyp|ho
+EV|V3|b0002.s5+b0002.s6|bg|bgr|hyp|unc
+P|G1|D1|unc|-|bg|unc:-:bg:V1|hedged_claim,scope|V3|implicated only; gene-set framing
+P|G2|D1|unc|-|bg|unc:-:bg:V1|hedged_claim,scope||implicated only; gene-set framing
+P|G3|D1|unc|-|bg|unc:-:bg:V1|hedged_claim,scope||implicated only; gene-set framing
+P|G4|D1|unc|-|bg|unc:-:bg:V1|hedged_claim,scope||implicated only; gene-set framing
+P|G5|D1|unc|-|bg|unc:-:bg:V1|hedged_claim,scope||implicated only; gene-set framing
+P|G6|D1|unc|-|bg|unc:-:bg:V1|hedged_claim,scope||implicated only; gene-set framing
+P|G7|D1|unc|-|bg|unc:-:bg:V1|hedged_claim,scope||implicated only; gene-set framing
+P|G8|D1|unc|-|bg|unc:-:bg:V1|hedged_claim,scope||implicated only; gene-set framing
+P|G9|D1|unc|-|bg|unc:-:bg:V1|hedged_claim,scope||implicated only; gene-set framing
+P|G10|D1|unc|-|bg|unc:-:bg:V1|hedged_claim,scope||implicated only; gene-set framing
+P|G11|D1|unc|-|bg|unc:-:bg:V1|hedged_claim,scope||implicated only; gene-set framing
+P|G12|D1|unc|-|bg|unc:-:bg:V1|hedged_claim,scope||implicated only; gene-set framing
+P|G13|D1|unc|-|bg|unc:-:bg:V1|hedged_claim,scope||implicated only; gene-set framing
+P|G14|D1|unc|-|bg|unc:-:bg:V1|hedged_claim,scope||implicated only; gene-set framing
+P|G12|D2|unc|-|bg|unc:-:bg:V2|hedged_claim,scope||implicated in susceptibility, listed group
+P|G13|D2|unc|-|bg|unc:-:bg:V2|hedged_claim,scope||implicated in susceptibility, listed group
+P|G14|D2|unc|-|bg|unc:-:bg:V2|hedged_claim,scope||implicated in susceptibility, listed group
+F|F1|descriptive|glycoprotein Ia 807C>T Hardy-Weinberg deviation|healthy German population n=282|significant|not_applicable|not_reported|V2|no disease outcome; abstract only
+F|F2|descriptive|genotype distributions vs other regions|healthy German population|unknown|not_applicable|not_reported|V2|unspecified factors; no disease outcome

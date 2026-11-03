@@ -1,0 +1,13 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|PIK3CA|PIK3CA|r||human||
+E|D1|disease|esophageal squamous cell carcinoma|esophageal squamous cell carcinoma;ESCC|r||||
+X|E542K|b0002.s3|variant name, not a separate gene
+X|H1047R|b0002.s3|variant name, not a separate gene
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s5|ts|res|aff|rr,do
+EV|V3|b0002.s7+b0002.s9|ts|res|aff|rr
+P|G1|D1|sup|a|both|sup:a:bg:V1;sup:a:ts:V2+V3|||PIK3CA mutations detected in ESCC; proposed therapeutic target
+F|F1|descriptive|PIK3CA mutation frequency|181 resected ESCC patients|not_applicable|not_applicable|available|V2|single cohort; no controls
+F|F2|other|PIK3CA status concordance, biopsy vs resection|181 ESCC patients|not_applicable|positive|available|V3|five hotspots only
+C|C1|PIK3CA discordant cases between specimens|b0002.s8|noncritical|resolved|attributed to intratumoral heterogeneity

@@ -1,0 +1,9 @@
+P|G1|D2|neg|-|ts|neg:-:ts:V2|||DOCA-salt hypertension induced similarly regardless of AT1a status
+P|G1|D4|unc|-|ts|unc:-:ts:W1;unc:-:ts:V3|scope,hedged_claim||Renal damage in knockouts lacks wild-type comparison; conclusion hedged
+P|G1|D5|nf|-|||||W2|Sclerosis reported only in wild-type DOCA mice
+P|G2|D3|nf|-|||||V5|L-FABP is a transgenic indicator only
+P|G2|D4|nf|-|||||W1|L-FABP appears only in strain names
+P|G2|D5|nf|-|||||W2|L-FABP appears only in strain names
+P|G2|D7|nf|-|||||V1|L-FABP appears only in strain names
+EV|W1|b0002.s7|ts|res|na|rr,do
+EV|W2|b0002.s4|ts|co|na|do

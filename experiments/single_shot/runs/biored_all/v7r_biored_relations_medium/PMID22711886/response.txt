@@ -1,0 +1,19 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|TRAF2|TNFR-associated factor 2;TRAF2;Traf2;TRAF2DN;Traf2DN|r||non-human||
+E|G2|gene|BCL2|BCL-2|r||non-human||
+E|G3|gene|TRAF3|TRAF3|r||non-human||
+E|G4|gene|XIAP|X-linked inhibitor of apoptosis|r||non-human||
+E|G5|gene|BCL2L1|Bcl-X(L)|r||non-human||
+E|G6|gene|TNFSF13B|B cell activating factor|r||non-human||
+E|G7|gene|CD40|CD40|r||non-human||
+E|G8|gene|NFKB2|NF-kappaB2|r||non-human||
+E|G9|gene|p38 MAPK|p38 MAPK;p38|p|ambiguous_mapping|non-human||
+E|D1|disease|chronic lymphocytic leukemia/small lymphocytic lymphoma|chronic lymphocytic leukemia;small lymphocytic lymphoma|r||||
+EV|V1|b0002.s1|bg|bgr|aff|ebr,mi
+EV|V2|b0001.s1+b0002.s8|ts|res|aff|rr,mi
+EV|V3|b0002.s15|ts|int|aff|rr,mi
+P|G1|D1|sup|c|both|sup:c:bg:V1;sup:c:ts:V2+V3|||TRAF2 deficiency predisposes mice to CLL/SLL
+P|G2|D1|sup|c|both|sup:c:bg:V1;sup:c:ts:V3|||BCL-2 transgene cooperates in CLL/SLL development
+P|G4|D1|unc|-|ts|unc:-:ts:V3|hedged_claim||XIAP increase proposed as possible mechanism
+F|F1|mechanism|TRAF2 deficiency; CLL/SLL predisposition|BCL-2/TRAF2DN transgenic mice|unknown|positive|unread|V2+V3|abstract only; mouse model

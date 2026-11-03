@@ -1,0 +1,33 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only.
+E|G1|gene|angiotensin converting enzyme|Angiotensin converting enzyme;angiotensin converting enzyme;ACE|r||human||
+E|D1|disease|asthma|Asthma;asthma|r||||
+E|D2|disease|drug allergies|drug allergies|r||||
+E|D3|disease|viral infections|viral infections|r||||
+E|D4|disease|mild asthma|mild|r|||D1|
+E|D5|disease|moderate-severe asthma|moderate-severe asthma|r|||D1|
+E|T1|clinical_event|asthmatic episode exacerbations|asthmatic episode exacerbations|r||||
+E|H1|phenotype|atopism|atopism|r||||
+X|I|b0002|variant identifier
+X|D|b0002|variant identifier
+X|DD|b0002|genotype identifier
+X|ID|b0002|genotype identifier
+X|II|b0002|genotype identifier
+EV|V1|b0002.s2|bg|hyp|hyp|ho
+EV|V2|b0002.s7+b0002.s8+b0002.s9|ts|res|aff|rr,cmp
+EV|V3|b0002.s10|ts|neg|neg|rr
+EV|V4|b0002.s11|ts|neg|neg|rr
+EV|V5|b0002.s12|ts|neg|neg|rr
+EV|V6|b0002.s13|ts|int|hyp|ho
+EV|V7|b0002.s13|ts|neg|neg|rr
+P|G1|D1|sup|a|ts|unc:a:bg:V1;sup:a:ts:V2;unc:a:ts:V6;neg:a:ts:V7|hedged_claim||Association supported; risk interpretation hedged; severity increase explicitly rejected.
+P|G1|D2|nf|-||||V3|Genotype comparison lacks explicit comparator.
+P|G1|T1|nf|-||||V4|Genotype comparison lacks explicit comparator.
+P|G1|D3|nf|-||||V4|Infections describe exacerbation triggers, not gene-associated infection risk.
+P|G1|D4|nf|-||||V5|Pooled genotype comparison addresses severity groups.
+P|G1|D5|nf|-||||V5|Pooled genotype comparison addresses severity groups.
+F|F1|association|ACE DD genotype; asthma|Asthmatics versus healthy controls|significant|positive|available|V2|
+F|F2|group_comparison|ACE ID genotype; drug allergies|Asthmatic patients|not_significant|positive|partial|V3|Comparator unspecified.
+F|F3|group_comparison|ACE DD genotype; infection-triggered exacerbations|Asthmatic patients|not_significant|positive|partial|V4|Comparator unspecified.
+F|F4|group_comparison|ACE genotypes; asthma severity|Mild versus moderate-severe asthma|not_significant|null|not_reported|V5+V7|
+C|C1|Asthmatic II genotype count|b0002.s4+b0002.s7|noncritical|unresolved|Reported count 14.4 is incompatible with participant counts.

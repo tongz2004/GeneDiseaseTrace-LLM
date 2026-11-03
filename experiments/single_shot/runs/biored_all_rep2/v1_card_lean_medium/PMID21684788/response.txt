@@ -1,0 +1,20 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|E1|gene|ALDH3A2|ALDH3A2;fatty aldehyde dehydrogenase|r||human||
+E|E2|gene|ALDH3A1|ALDH3A1|r||human||
+E|E3|disease|Sjogren-Larsson syndrome|Sjogren-Larsson syndrome;SLS|r||||
+E|E4|disease|corneal disease|corneal disease|r||||
+E|E5|disease|inborn errors of metabolism|inborn errors of metabolism|r||||
+E|E6|symptom|ichthyosis|ichthyosis|r||||
+E|E7|phenotype|mental retardation|mental retardation|r||||
+E|E8|symptom|spasticity|spasticity|r||||
+X|17p11.2|b0002|chromosomal locus, not gene
+X|c.407C>T|b0002|variant identifier
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s3|ts|res|aff|rr,eda
+EV|V3|b0002.s7|ts|res|aff|rr,eda
+EV|V4|b0002.s5+b0002.s6|ts|co|na|do
+P|E1|E3|sup|c|ts|sup:a:bg:V1;sup:c:ts:V2;sup:a:ts:V3|||Disease explicitly caused by ALDH3A2 deletions
+P|E2|E3|nf|-|||||V4|Co-deleted gene only; no attribution
+P|E2|E4|nf|-|||||V4|Patient lacked corneal disease; descriptive only
+F|F1|descriptive|large deletions; mutant ALDH3A2 alleles|SLS patients|not_applicable|not_applicable|not_reported|V2|Hedged estimate, two patients

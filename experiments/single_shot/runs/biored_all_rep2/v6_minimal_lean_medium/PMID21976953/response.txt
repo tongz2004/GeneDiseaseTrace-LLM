@@ -1,0 +1,9 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|FBN1|FBN1;fibrillin-1|r||human||
+E|D1|disease|Marfan syndrome|Marfan syndrome;MFS|r||||
+EV|V1|b0002.s8+b0002.s9|ts|res|aff|rr,cs
+EV|V2|b0002.s11|ts|int|aff|eda
+EV|V3|b0001.s1+b0002.s12|ts|int|aff|eda
+P|G1|D1|sup|c|ts|sup:c:ts:V1+V2+V3|||Novel S1235P co-segregates; called causative
+F|F1|association|FBN1 p.S1235P; MFS status|Chinese MFS family; 170 controls|not_applicable|positive|not_applicable|V1+V2|single family; abstract only

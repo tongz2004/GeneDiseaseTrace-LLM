@@ -1,0 +1,9 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; single case report; no genes mentioned
+E|D1|disease|pheochromocytoma|Pheochromocytoma;pheochromocytoma|r||||
+E|D2|disease|hypertension|hypertension|r||||
+E|D3|clinical_event|hypertensive crisis|hypertensive crisis|r||||
+E|S1|symptom|headache|headache|r||||
+E|S2|symptom|vomiting|vomiting|r||||
+E|S3|phenotype|adrenal mass|adrenal mass|r||||
+R|no gene entities|b0001-b0002|No gene mentioned, so no gene-disease pairs can be formed|Recorded diseases and events only; no P records output

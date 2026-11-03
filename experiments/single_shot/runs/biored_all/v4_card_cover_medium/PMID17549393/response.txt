@@ -1,0 +1,16 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|IRF6|IRF6;interferon regulatory factor 6|r||human||
+E|D1|disease|Van der Woude syndrome|Van der Woude syndrome;VWS|r|||D2|
+E|D2|disease|syndromic orofacial cleft|syndromic orofacial cleft|r|||||
+E|D3|disease|cleft lip and palate|cleft lip and palate|r|||||
+E|S1|symptom|lower lip pits|lower lip pits|r|||||
+E|S2|phenotype|cleft lip|cleft lip|r|||||
+E|S3|phenotype|cleft palate|cleft palate|r|||||
+E|S4|phenotype|hypodontia|hypodontia|r|||||
+X|Smad transcription factors|b0002|gene family, not single-gene endpoint
+EV|V1|b0002.s3|bg|bgr|aff|ebr
+EV|V2|b0002.s5|bg|bgr|aff|ebr
+EV|V3|b0001.s1+b0002.s6+b0002.s9|ts|res|aff|rr,cs
+P|G1|D1|sup|c|bg|sup:c:bg:V1;sup:a:bg:V2;sup:a:ts:V3||V3|VWS stated to arise from IRF6 mutations
+F|F1|descriptive|IRF6 c.201C>A p.Y67X heterozygosity|5 affected German family members|not_applicable|not_applicable|not_applicable|V3|5 of 12 affected tested

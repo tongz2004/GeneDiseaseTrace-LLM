@@ -1,0 +1,55 @@
+META|GPT-6|seen: no
+SCOPE|Supplied title and abstract only; no full text or attachments.
+E|G1|gene|IL-6|Interleukin 6;IL-6;IL-65-72C/G|p|suspected_typo|human||
+E|G2|gene|TNF-alpha|Tumor Necrosis Factor alpha;TNF-alpha|r||human||
+E|G3|gene|hs-CRP|hs-CRP|r||human||
+E|G4|gene|IL-8|IL-8|r||human||
+E|G5|gene|IL-10|IL-10|r||human||
+E|G6|gene|IL-1b|IL-1b|r||human||
+E|G7|gene|IRS-1|IRS-1|r||human||
+E|G8|gene|IRS-2|IRS-2|r||human||
+E|G9|gene|leptin|leptin|r||human||
+E|G10|gene|adiponectin|adiponectin|r||human||
+E|G11|gene|visfatin|visfatin|r||human||
+E|G12|gene|RBP-4|RBP-4|r||human||
+E|G13|gene|chemerin|chemerin|r||human||
+E|G14|gene|nesfatin-1|nesfatin-1|r||human||
+E|G15|gene|FATP-4|FATP-4|r||human||
+E|G16|gene|EL|EL|p|undefined_abbreviation|human||
+E|G17|gene|LPL|LPL|p|undefined_abbreviation|human||
+E|G18|gene|FABP-1|FABP-1|r||human||
+E|G19|gene|FABP-3|FABP-3|r||human||
+E|G20|gene|FABP-4|FABP-4|r||human||
+E|G21|gene|FABP-5|FABP-5|r||human||
+E|D1|disease|Gestational diabetes mellitus|Gestational Diabetes Mellitus;Gestational diabetes mellitus;GDM|r|||| 
+E|D2|disease|T2DM|T2DM|p|undefined_abbreviation|||
+X|NF-kappaB|b0002|complex_not_single_gene
+EV|V1|b0002.s8|ts|res|aff|rr,cmp
+EV|V2|b0002.s5+b0002.s10|ts|res|aff|rr,cmp
+EV|V3|b0002.s5+b0002.s10+b0002.s11|ts|res|aff|rr,cmp
+EV|V4|b0002.s12|ts|int|aff|eda
+EV|V5|b0002.s4+b0002.s6|ts|aim|q|none
+P|G1|D1|sup|a|ts|sup:a:ts:V2+V4|||Biomarker association; SNP aim provides no genotype result.
+P|G2|D1|sup|a|ts|sup:a:ts:V1+V2+V4|||| 
+P|G3|D1|sup|a|ts|sup:a:ts:V2+V4||||
+P|G4|D1|sup|a|ts|sup:a:ts:V2+V4||||
+P|G5|D1|nf|-||||V2+V4|Ratio findings do not establish individual IL-10 association.
+P|G6|D1|sup|a|ts|sup:a:ts:V2||||
+P|G7|D1|sup|a|ts|sup:a:ts:V3||||
+P|G8|D1|sup|a|ts|sup:a:ts:V3||||
+P|G9|D1|sup|a|ts|sup:a:ts:V3||||
+P|G10|D1|sup|a|ts|sup:a:ts:V3||||
+P|G11|D1|sup|a|ts|sup:a:ts:V3||||
+P|G12|D1|sup|a|ts|sup:a:ts:V3||||
+P|G13|D1|sup|a|ts|sup:a:ts:V3||||
+P|G14|D1|sup|a|ts|sup:a:ts:V3||||
+P|G15|D1|sup|a|ts|sup:a:ts:V3||||
+P|G16|D1|unc|-|ts|unc:a:ts:V3|identity||Undefined abbreviation prevents confident gene identification.
+P|G17|D1|unc|-|ts|unc:a:ts:V3|identity||Undefined abbreviation prevents confident gene identification.
+P|G18|D1|sup|a|ts|sup:a:ts:V3||||
+P|G19|D1|sup|a|ts|sup:a:ts:V3||||
+P|G20|D1|sup|a|ts|sup:a:ts:V3||||
+P|G21|D1|sup|a|ts|sup:a:ts:V3||||
+F|F1|association|TNF-alpha -857CT frequency; GDM|140 GDM; 140 healthy pregnancies|significant|positive|available|V1|OR 3.316; CI 1.092–8.304; p=0.025
+F|F2|group_comparison|Inflammatory biomarkers; IL-6/IL-10 ratio|GDM versus healthy pregnancies|significant|unknown|partial|V2|Serum and placenta; individual directions unreported.
+F|F3|group_comparison|Placental metabolic proteins; serum metabolic indexes|GDM versus healthy pregnancies|unknown|unknown|not_reported|V3|Differences reported without significance or direction.

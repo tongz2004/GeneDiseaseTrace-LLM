@@ -1,0 +1,30 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|Tac1 (substance P)|SP|p|ambiguous_mapping|non-human|||
+E|G2|gene|Tacr1|NK1r|r||non-human|||
+E|G3|gene|Nos1|nNOS|r||non-human|||
+E|G4|gene|Vip|VIP|r||non-human|||
+E|G5|gene|S100b|S100b|r||non-human|||
+E|G6|gene|Calca (CGRP)|CGRP|p|ambiguous_mapping|non-human|||
+E|G7|gene|Crhr1|CRF1r|r||non-human|||
+E|G8|gene|Crhr2|CRF2r|r||non-human|||
+E|G9|gene|Chrm2|Mr2|p|ambiguous_mapping|non-human|||
+E|G10|gene|Chat|ChAT|r||non-human|||
+E|D1|disease|irritable bowel syndrome|irritable bowel syndrome;IBS|r|||||
+E|D2|disease|colitis (mucosal inflammation)|mucosal inflammation|r|||||
+X|L- and T-type Ca(2+) channels|b0002|channel family; no specific gene named
+X|muscarinic and tachykinin receptors|b0002|receptor families; no specific gene named
+X|WRS|b0002|stress model, not a disease
+EV|V1|b0002.s4+b0002.s7|ts|res|q|mi,unc
+EV|V2|b0002.s4+b0002.s8|ts|res|q|mi,unc
+P|G1|D1|unc|-|ts||scope||WRS model change only; IBS proxy
+P|G2|D1|unc|-|ts||scope||WRS model change only; IBS proxy
+P|G3|D1|unc|-|ts||scope||WRS model change only; IBS proxy
+P|G4|D1|unc|-|ts||scope||WRS model change only; IBS proxy
+P|G5|D1|unc|-|ts||scope||WRS model change only; IBS proxy
+P|G6|D1|unc|-|ts||scope||WRS model change only; IBS proxy
+P|G7|D1|unc|-|ts||scope||WRS model change only; IBS proxy
+P|G8|D1|unc|-|ts||scope||WRS model change only; IBS proxy
+F|F1|group_comparison|SP,NK1r,nNOS,VIP,S100b immunoreactivity|WRS vs control rat colon|unknown|negative|not_reported|V1|abstract only
+F|F2|group_comparison|CGRP,CRF1r,CRF2r immunoreactivity|WRS vs control rat colon|unknown|positive|not_reported|V1+V2|abstract only
+R|model proxy|b0002.s4|Gene changes shown in WRS stress model, not in IBS patients|Rated gene–IBS pairs uncertain with scope reason

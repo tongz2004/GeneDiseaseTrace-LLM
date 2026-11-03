@@ -1,0 +1,13 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; single case report
+E|G1|gene|SERPINC1 (antithrombin)|antithrombin|r||human||
+E|D1|disease|congenital antithrombin deficiency|congenital antithrombin deficiency|r||||
+E|D2|disease|superior mesenteric vein thrombosis|superior mesenteric vein thrombosis;SMV thrombosis|r||||
+X|argatroban|b0002.s3|drug (direct thrombin inhibitor), not gene
+EV|EV1|b0002.s4+b0002.s5|ts|res|aff|rr,eda
+EV|EV2|b0002.s1+b0002.s2|ts|res|aff|rr,do
+EV|EV3|b0002.s6|ts|int|aff|eda
+P|G1|D1|sup|c|ts|sup:c:ts:EV1|||Novel heterozygous nonsense mutation underlies type I deficiency
+P|G1|D2|sup|a|ts|sup:a:ts:EV2+EV3|||Decreased antithrombin activity in patient with SMV thrombosis
+F|F1|descriptive|antithrombin Glu272stop insertion mutation|38-year-old woman, family|not_applicable|not_applicable|not_applicable|EV1|single case
+F|F2|descriptive|plasma antithrombin activity, SMV thrombosis|index patient|not_applicable|negative|not_reported|EV2|single case

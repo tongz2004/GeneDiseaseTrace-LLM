@@ -1,0 +1,17 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; single case report
+E|G1|gene|ACE|angiotensin-converting enzyme;ACE|r|||human||
+E|D1|disease|syncope|Syncope|r|||||
+E|D2|disease|hyperkalemia|hyperkalemia|r|||||
+E|D3|disease|myocardial infarction|myocardial infarction|r|||||
+E|D4|disease|loss of consciousness|loss of consciousness|r|||||
+E|D5|disease|bradycardia|bradycardia|r|||||
+E|D6|disease|electrolyte imbalance|electrolyte imbalance|r|||||
+E|D7|disease|cardiac events|cardiac events|r|||||
+E|D8|disease|renal disturbance|renal disturbance|r|||||
+X|ARB|b0002.s5|drug class (angiotensin receptor blocker), not gene
+X|aldosterone antagonist|b0002.s3|drug class; aldosterone is a hormone, not gene
+EV|V1|b0001.s1+b0002.s3|ts|int|na|unc
+P|G1|D2|nf|-||||V1|Drug (ACE inhibitor) effect, not gene relation
+P|G1|D1|nf|-||||V1|Drug-mediated syncope, not gene relation
+R|gene name inside drug class|b0001.s1|ACE inhibitor causes disease; gene-disease link unclear|Treated as chemical-disease; gene pairs nf

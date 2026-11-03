@@ -1,0 +1,25 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|LYRM7|LYRM7;MZM1L|r||human||
+E|G2|gene|MZM1|MZM1;mzm1|r||non-human||
+E|G3|gene|Rieske Fe-S protein|Rieske Fe-S protein|p|other|non-human||
+E|D1|disease|encephalopathy|encephalopathy|r||||
+E|D2|disease|mitochondrial encephalopathy|mitochondrial encephalopathy|r|||D1|
+E|D3|disease|lactic acidosis|lactic acidosis|r||||
+E|D4|disease|complex III deficiency|cIII deficiency;defective complex III;cIII-defective|p|other|||
+E|S1|phenotype|respiratory growth defect|respiratory growth defect|r||||
+X|mzm1D|b0002.s4|yeast strain identifier, not a gene
+X|c.73G>A|b0002.s3|variant ID
+X|p.Asp25Asn|b0002.s3|variant ID
+X|D25N|b0002.s4|variant ID
+EV|V1|b0001.s1|ts|res|aff|rr,eda
+EV|V2|b0002.s3|ts|res|aff|cs,rr
+EV|V3|b0002.s4|ts|res|aff|mi
+EV|V4|b0002.s5|ts|res|aff|eda
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V2||V4|segregating homozygous mutation in encephalopathy patient
+P|G1|D2|sup|c|ts|sup:c:ts:V4|||explicit causal attribution by authors
+P|G1|D3|sup|a|ts|sup:a:ts:V1+V2|||segregating mutation in patient with lactic acidosis
+P|G1|D4|sup|c|ts|sup:c:ts:V4+V3;sup:a:ts:V1+V2|||causal attribution supported by yeast model
+F|F1|mechanism|mzm1(D25N) allele; respiration, cIII activity|mzm1D yeast strain|unknown|negative|not_reported|V3|yeast cell phenotype only
+F|F2|descriptive|LYRM7 c.73G>A segregation|single family, one patient|not_applicable|not_applicable|not_applicable|V2|single family
+R|disease vs phenotype|b0001.s1|reduced complex III activity is borderline between disease and phenotype|merged with cIII deficiency as provisional disease entity

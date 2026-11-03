@@ -1,0 +1,9 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no genes mentioned
+E|D1|disease|Parkinson disease|Parkinson disease|r|||||
+E|D2|disease|levodopa-induced dyskinesia|levodopa-induced dyskinesia|r|||||
+E|D3|disease|drug-induced dyskinesias|drug-induced dyskinesias;therapy-induced dyskinesias|p|other||||
+E|S1|phenotype|dyskinetic state|dyskinetic state|r|||||
+X|repetitive transcranial magnetic stimulation (rTMS)|b0002|intervention, not gene or disease
+X|supplementary motor area (SMA)|b0002|anatomical site, gene-like abbreviation
+R|no gene entities|whole paper|No gene present, so no gene-disease pairs can be formed|Output entities only, no P records

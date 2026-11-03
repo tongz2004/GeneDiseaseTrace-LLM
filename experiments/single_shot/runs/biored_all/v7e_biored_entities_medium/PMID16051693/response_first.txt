@@ -1,0 +1,17 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|PEMT|PEMT;Phosphatidylethanolamine N-methyltransferase|r||human||
+E|D1|disease|nonalcoholic fatty liver disease|nonalcoholic fatty liver disease;NAFLD|r||||
+E|D2|disease|fatty liver|fatty liver;fatty livers|r||||
+X|McArdle-RH7777|b0002|cell line, not gene or disease
+X|V175M|b0002|PEMT variant, folded into G1
+EV|V1|b0002.s2|bg|bgr|aff|ebr,mi
+EV|V2|b0002.s2|bg|hyp|hyp|ho
+EV|V3|b0002.s5|ts|res|aff|rr,cmp
+EV|V4|b0002.s6|ts|int|aff|rr
+EV|V5|b0002.s4|ts|res|na|mi
+P|G1|D1|sup|a|both|sup:a:ts:V3+V4;unc:a:bg:V2||V5|Met/Met genotype enriched in NAFLD
+P|G1|D2|sup|c|bg|sup:c:bg:V1|||Knockout mice develop fatty livers
+F|F1|group_comparison|PEMT V175M Met/Met genotype; NAFLD|28 NAFLD vs 59 controls|significant|positive|partial|V3|small sample; abstract only
+F|F2|mechanism|V175M; PEMT activity|transfected McArdle-RH7777 cells|unknown|negative|not_reported|V5|
+R|gene species|b0002.s2|Mouse knockout and human PEMT share one name|Kept one human gene entity; mouse evidence cited bg

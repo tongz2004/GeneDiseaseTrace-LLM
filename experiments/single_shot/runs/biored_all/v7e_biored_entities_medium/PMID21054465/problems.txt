@@ -1,0 +1,6 @@
+line 1: unknown record type "API Error: Opus 5.5's safeguards flagged this session (https://www.anthropic.com/legal/aup). You may be seeing this for the first time: Opus 5.5 is more capable and has stronger safeguards as a result, which can sometimes flag biology-research-adjacent work. We're improving these safeguards to reduce the amount of incorrectly flagged messages. Claude Code can't respond to your last message with Opus 5.5."
+line 3: unknown record type 'Try rephrasing the request in a new session or change your model.'
+line 5: unknown record type 'Learn more: https://support.claude.com/en/articles/8106465'
+line 7: unknown record type 'Details: `[bio]`'
+line 9: unknown record type 'Request ID: req_011CgfgRpVhZR61VNybfLcyE'
+line 11: unknown record type 'Message ID: msg_011CgfgRpdtLMDMMH2DMGM1j'

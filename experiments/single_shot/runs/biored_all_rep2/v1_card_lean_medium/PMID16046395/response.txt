@@ -1,0 +1,18 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|OPRM1|OPRM1;mu opioid receptor|r||human||
+E|D1|disease|drug addiction|drug addiction|r||||
+E|D2|disease|addiction|addiction|r||||
+E|S1|phenotype|pain perception|pain perception|r||||
+X|A118G|b0002|variant ID, not gene
+X|N40D|b0002|variant ID, not gene
+X|Chinese hamster ovary cells|b0002|cell line; human construct expressed
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s8|bg|bgr|aff|ebr
+EV|V3|b0002.s1|bg|bgr|aff|ebr
+EV|V4|b0002.s3+b0002.s4|ts|res|na|rr,do
+EV|V5|b0002.s5+b0002.s6+b0002.s7|ts|res|na|rr,mi
+P|G1|D1|sup|a|bg|sup:a:bg:V1;sup:a:bg:V2|||OPRM1 variants implicated in drug addiction predisposition
+P|G1|D2|sup|a|bg|sup:a:bg:V3|||OPRM1 stated to play key role in addiction
+F|F1|group_comparison|A118 vs G118 allelic mRNA expression|8 heterozygous autopsy brain samples|unknown|positive|partial|V4|no statistical test reported
+F|F2|mechanism|G118 effect on mRNA, protein, stability|transfected CHO cells|unknown|negative|partial|V5|in vitro only; no disease outcome

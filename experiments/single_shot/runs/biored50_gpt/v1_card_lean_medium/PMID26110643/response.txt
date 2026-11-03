@@ -1,0 +1,29 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only; full paper unavailable.
+E|G1|gene|fras1|fras1|r||non-human||
+E|G2|gene|grip1|grip1|r||non-human||
+E|G3|gene|hmcn1|hmcn1|r||non-human||
+E|G4|gene|msxc|msxc|r||non-human||
+E|G5|gene|col4a4|col4a4|r||non-human||
+E|G6|gene|ahnak|ahnak|r||non-human||
+E|G7|gene|capn12|capn12|r||non-human||
+E|G8|gene|nrg2a|Neuregulin 2a;neuregulin 2a;nrg2a;Nrg2a|r||non-human||
+E|G9|gene|arhgef25b|arhgef25b|r||non-human||
+E|G10|gene|fkbp10b|fkbp10b|r||non-human||
+E|G11|gene|megf6a|megf6a|r||non-human||
+E|G12|gene|lgl2|lgl2;Lgl2|r||non-human||
+E|D1|disease|Skin disorders|Skin disorders|r||||
+E|H1|phenotype|reduced pAKT levels|reduced pAKT levels|r||||
+E|H2|phenotype|reduced apical domains|reduced apical domains|r||||
+E|H3|phenotype|exaggerated basolateral domains|exaggerated basolateral domains|r||||
+E|H4|phenotype|thickened MFF edges|thickened MFF edges|r||||
+X|ErbB2/3|b0002|combined receptor designation; not a single-gene endpoint
+X|AKT|b0002|gene-family designation; individual gene unspecified
+X|pAKT|b0002|phosphorylated protein-family readout; individual gene unspecified
+X|ErbB|b0002|receptor family; not a single-gene endpoint
+EV|V1|b0002.s6+b0002.s7+b0002.s8|ts|res|na|rr,mi
+EV|V2|b0002.s9|ts|res|na|rr,mi
+EV|V3|b0002.s10+b0002.s11|ts|res|na|rr,mi
+F|F1|mechanism|nrg2a alteration; ridge cell organization; MFF morphology|nrg2a mutant zebrafish embryos and larvae|unknown|not_applicable|not_reported|V1|Cellular and developmental phenotypes; no disease attribution
+F|F2|mechanism|Nrg2a signaling through ErbB receptors|pharmacological inhibition experiments|unknown|not_applicable|not_reported|V2|
+F|F3|mechanism|lgl2 knockdown; nrg2a mutant phenotype|nrg2a mutant zebrafish|unknown|negative|not_reported|V3|Amelioration; statistical significance unspecified

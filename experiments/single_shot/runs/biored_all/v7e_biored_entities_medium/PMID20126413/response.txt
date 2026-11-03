@@ -1,0 +1,9 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|PTEN|PTEN|r|||human||
+E|D1|disease|glioma|glioma|r|||||
+E|D2|disease|cancer|cancer|r|||||
+EV|V1|b0002.s1+b0002.s6|ts|res|aff|rr,do
+P|G1|D1|sup|a|ts|sup:a:ts:V1|||Known homozygous PTEN mutation confirmed in glioma line
+P|G1|D2|nf|-||||V1|Cancer mentioned generically, not linked to PTEN
+F|F1|descriptive|PTEN homozygous mutation|U87MG grade IV glioma cell line|not_applicable|not_applicable|not_reported|V1|single cell line, abstract only

@@ -1,0 +1,62 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|SLURP1|SLURP-1;secreted mammalian Ly-6/urokinase plasminogen activator receptor related protein-1|r||human||
+E|G2|gene|nicotinic acetylcholine receptors|nicotinic acetylcholine receptors|p|ambiguous_mapping|human||
+E|G3|gene|MYB|MYB|r||human||
+E|G4|gene|PIK3CA|PIK3CA|r||human||
+E|G5|gene|ETS1|ETS1|r||human||
+E|G6|gene|NRAS|NRAS|r||human||
+E|G7|gene|SRC|SRC|r||human||
+E|G8|gene|AKT1|AKT1|r||human||
+E|G9|gene|KIT|KIT|r||human||
+E|G10|gene|RB1|RB1|r||human||
+E|G11|gene|EGF|EGF|r||human||
+E|G12|gene|HGF|HGF|r||human||
+E|G13|gene|CDKN2A|CDKN2A|r||human||
+E|G14|gene|STAT3|STAT3|r||human||
+E|G15|gene|BCL2|BCL2|r||human||
+E|G16|gene|TNF|TNF|r||human||
+E|G17|gene|BAX|BAX|r||human||
+E|G18|gene|CASP8|CASP8|r||human||
+E|G19|gene|CTNNB1|CTNNB1;beta-catenin|r||human||
+E|G20|gene|CDKN3|CDKN3|r||human||
+E|G21|gene|FOXD3|FOXD3|r||human||
+E|G22|gene|SERPINB5|SERPINB5|r||human||
+E|G23|gene|RUNX3|RUNX3|r||human||
+E|D1|disease|neoplasm (carcinogenic transformation)|tumorigenesis;cancer|p|other|||
+X|NNK|b0002.s1|tobacco nitrosamine carcinogen, chemical not gene
+X|BEP2D|b0002.s2|cell line name, gene-like identifier
+X|Het-1A|b0002.s2|cell line name, gene-like identifier
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s1|ts|aim|pre|ho
+EV|V3|b0002.s3|ts|co|na|do
+EV|V4|b0002.s4|ts|co|na|do
+EV|V5|b0002.s5+b0002.s7|ts|co|na|do
+EV|V6|b0002.s6+b0002.s7|ts|co|na|do
+EV|V7|b0002.s8|ts|int|aff|unc
+P|G1|D1|sup|a|bg|sup:a:bg:V1;unc:a:ts:V6+V7|||SLURP-1 abolishes NNK-dependent transformation
+P|G2|D1|unc|a|ts|unc:a:ts:V2|presupposed_only|||Aim presupposes nAChR role in transformation
+P|G3|D1|unc|a|ts|unc:a:ts:V3|support_basis_unresolved|||Oncogene upregulated by NNK; no disease test
+P|G4|D1|unc|a|ts|unc:a:ts:V3|support_basis_unresolved|||Oncogene upregulated by NNK; no disease test
+P|G5|D1|unc|a|ts|unc:a:ts:V3|support_basis_unresolved|||Oncogene upregulated by NNK; no disease test
+P|G6|D1|unc|a|ts|unc:a:ts:V3|support_basis_unresolved|||Oncogene upregulated by NNK; no disease test
+P|G7|D1|unc|a|ts|unc:a:ts:V3|support_basis_unresolved|||Oncogene upregulated by NNK; no disease test
+P|G8|D1|unc|a|ts|unc:a:ts:V3|support_basis_unresolved|||Oncogene upregulated by NNK; no disease test
+P|G9|D1|unc|a|ts|unc:a:ts:V3|support_basis_unresolved|||Oncogene upregulated by NNK; no disease test
+P|G10|D1|unc|a|ts|unc:a:ts:V3|support_basis_unresolved|||Upregulated by NNK; no disease test
+P|G11|D1|unc|a|ts|unc:a:ts:V4|support_basis_unresolved|||Cancer-related gene upregulated by NNK
+P|G12|D1|unc|a|ts|unc:a:ts:V4|support_basis_unresolved|||Cancer-related gene upregulated by NNK
+P|G13|D1|unc|a|ts|unc:a:ts:V4|support_basis_unresolved|||Cancer-related gene upregulated by NNK
+P|G14|D1|unc|a|ts|unc:a:ts:V4|support_basis_unresolved|||Cancer-related gene upregulated by NNK
+P|G15|D1|unc|a|ts|unc:a:ts:V5|support_basis_unresolved,coreference|||Apoptosis gene; disease link only inferred
+P|G16|D1|unc|a|ts|unc:a:ts:V5|support_basis_unresolved,coreference|||Apoptosis gene; disease link only inferred
+P|G17|D1|unc|a|ts|unc:a:ts:V5|support_basis_unresolved,coreference|||Apoptosis gene; disease link only inferred
+P|G18|D1|unc|a|ts|unc:a:ts:V5|support_basis_unresolved,coreference|||Apoptosis gene; disease link only inferred
+P|G19|D1|unc|a|ts|unc:a:ts:V6|support_basis_unresolved|||Downregulated by NNK; pro-oncogenic interpretation
+P|G20|D1|unc|a|ts|unc:a:ts:V6|support_basis_unresolved|||Tumor suppressor downregulated by NNK
+P|G21|D1|unc|a|ts|unc:a:ts:V6|support_basis_unresolved|||Tumor suppressor downregulated by NNK
+P|G22|D1|unc|a|ts|unc:a:ts:V6|support_basis_unresolved|||Tumor suppressor downregulated by NNK
+P|G23|D1|nf|-|||||V6|Upregulated by SLURP-1; no disease link
+F|F1|mechanism|NNK-induced oncogene expression; rSLURP-1|BEP2D and Het-1A cell lines|unknown|positive|unread|V3+V4|abstract only; no statistics
+F|F2|mechanism|NNK-reduced tumor suppressor expression; rSLURP-1|BEP2D and Het-1A cell lines|unknown|negative|unread|V6|abstract only; no statistics
+R|disease entity|b0002.s2|Only process terms (tumorigenesis, transformation) name the disease|Mapped to a single provisional neoplasm entity

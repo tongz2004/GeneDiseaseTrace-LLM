@@ -1,0 +1,272 @@
+﻿paper_id,outcome,detail,gold_gene,gold_disease,gold_type,gold_novel,our_pair,our_gene,our_disease,our_status,our_relation,our_source,our_reason
+PMID15000256,FN,our pair: uncertain,FMR1 (2332),autistic (D001321),Association,Novel,G1-D3,FMR1,autism,uncertain,none,this study,Authors propose possible causation.
+PMID15000256,FN,our pair: uncertain,FMR1 (2332),mentally retarded (D008607),Association,Novel,G1-D2,FMR1,mental retardation,uncertain,none,this study,Authors propose possible causation.
+PMID15000256,TP,,FMR1 (2332),Fragile X syndrome (D005600),Association,No,G1-D1,FMR1,fragile X syndrome,supported,causal,background,Explicit repeat-expansion causation.
+PMID15459975,FN,our pair: uncertain,SSH1 (54434),disseminated superficial actinic porokeratosis (D017499),Association,Novel,G1-D1,SSH1,disseminated superficial actinic porokeratosis,uncertain,none,this study,Candidate designation; detected variants lack explicit disease attribution.
+PMID15464247,FN,disease recorded by us as symptom/phenotype,interleukin 12B (3593),viremia (D014766),Association,Novel,,,,,,,
+PMID15464247,FP,gold has both concepts but no relation,,,,,G1-D1,IL12B,hepatitis C virus infection,supported,association,this study,Treatment response association; cohort genotype comparison negative
+PMID15464247,FP,gold has both concepts but no relation,,,,,G1-D4,IL12B,HCV genotype 1 infection,supported,association,this study,High baseline viremia; antiviral combination therapy response
+PMID15464247,FP,disease not a gold disease concept,,,,,G1-T2,IL12B,sustained virologic response,supported,association,this study,"Genotype 1, high viremia; C-allele carriers responded better"
+PMID15464247,FP,disease not a gold disease concept,,,,,G1-T3,IL12B,relapse,supported,association,this study,"Genotype 1, high viremia; C-allele carriers relapsed less"
+PMID15485686,FN,our pair: not_found,SCN5A (6331),bradycardia (D001919),Association,Novel,,,,,,,
+PMID15485686,FN,our pair: not_found,SCN5A (6331),tachycardia (D013610),Association,Novel,,,,,,,
+PMID15485686,FN,our pair: uncertain,SCN5A (6331),arrhythmias (D001145),Association,Novel,G1-D8,SCN5A,arrhythmias,uncertain,none,this study,Clinical contribution is hedged.
+PMID15485686,TP,,SCN5A (6331),long QT syndrome (D008133),Association,Novel,G1-D1,SCN5A,long QT syndrome,supported,causal,this study,
+PMID15485686,FP,duplicate: its gold relation is credited to another of our pairs,,,,,G1-D3,SCN5A,LQTS-3,supported,association,this study,
+PMID15668505,FN,our pair: not_found,BRCA1 (672),breast and ovarian cancer (D010051),Association,No,,,,,,,
+PMID15668505,FN,our pair: not_found,BRCA1 (672),breast and ovarian cancer (D001943),Association,No,,,,,,,
+PMID15668505,TP,,BRCA2 (675),breast and ovarian cancer (D010051),Association,No,G1-D2,BRCA2,ovarian cancer,supported,association,both,Carrier results: N372H null; 203A borderline increased risk.
+PMID15668505,TP,,BRCA2 (675),breast and ovarian cancer (D001943),Association,No,G1-D1,BRCA2,breast cancer,supported,association,background,Background HH association; neither tested variant modifies carrier penetrance.
+PMID15818664,FN,disease recorded by us as symptom/phenotype,ANKH (56172),hypertrophy (D006984),Association,Novel,,,,,,,
+PMID15818664,TP,,ANKH (56172),sporadic chondrocalcinosis (D002805),Association,Novel,G1-D2,ANKH,sporadic chondrocalcinosis,supported,association,both,Causal interpretation remains tentative.
+PMID15818664,FP,duplicate: its gold relation is credited to another of our pairs,,,,,G1-D3,ANKH,familial chondrocalcinosis,supported,association,background,Familial mutation links explicitly reported.
+PMID15818664,FP,duplicate: its gold relation is credited to another of our pairs,,,,,G1-D5,ANKH,heritable chondrocalcinosis,supported,association,unclear,Association asserted; proposed disease mechanism remains speculative.
+PMID15824163,TP,,BRAF (673),melanoma (D008545),Association,No,G1-D1,BRAF,melanoma,supported,association,background,Background association; study rejects polymorphism association and promoter causality.
+PMID15824163,FP,gold has both concepts but no relation,,,,,G1-D3,BRAF,benign nevi,supported,association,background,Somatic mutations reported in benign nevi.
+PMID15824163,FP,duplicate: its gold relation is credited to another of our pairs,,,,,G1-D5,BRAF,sporadic melanoma,supported,association,background,Reported haplotype association concerns men.
+PMID16112787,TP,,N-acetyl-beta-d-glucosaminidase (154968),nephrotoxicity (D007674),Association,No,G1-D2,N-acetyl-beta-d-glucosaminidase,renal tubular injury,supported,association,background,Explicitly identified as renal tubular injury marker.
+PMID16186368,TP,,CYP4V2 (285440),Bietti crystalline dystrophy (C535440),Association,No,G1-D1,CYP4V2,Bietti crystalline dystrophy,supported,causal,this study,Causal attribution supported; genotype severity comparison remains tentative.
+PMID16731636,FN,gene not recorded by us,beta-adrenoceptor (24925),hypertrophy (D006984),Association,Novel,,,,,,,
+PMID16731636,FN,disease not recorded by us,angiotensinogen (24179),hypertrophy (D006984),Association,Novel,,,,,,,
+PMID16731636,TP,,angiotensinogen (24179),cardiac hypertrophy (D006332),Association,No,G1-D1,angiotensinogen,cardiac hypertrophy,supported,causal,this study,Low brain angiotensinogen enhances induced cardiac hypertrophy.
+PMID16731636,TP,,beta-AR kinase-1 (25238),cardiac hypertrophy (D006332),Association,Novel,G2-D2,beta-AR kinase-1,LV hypertrophy,supported,association,this study,Greater hypertrophy explicitly accompanies increased kinase mRNA.
+PMID16731636,FN,gene not recorded by us,beta-adrenoceptor (24925),cardiac hypertrophy (D006332),Association,Novel,,,,,,,
+PMID16731636,FP,duplicate: its gold relation is credited to another of our pairs,,,,,G1-D2,angiotensinogen,LV hypertrophy,supported,causal,this study,Transgenic reduction enhances isoproterenol-induced LV hypertrophy.
+PMID17003923,FN,our pair: not_found,tissue plasminogen activator (5327),venous and arterial thromboembolism (D054556),Association,Novel,,,,,,,
+PMID17003923,FN,our pair: not_found,angiotensin converting enzyme (1636),venous and arterial thromboembolism (D054556),Association,Novel,,,,,,,
+PMID17003923,FN,our pair: not_found,factor V (2153),venous and arterial thromboembolism (D054556),Association,Novel,,,,,,,
+PMID17003923,FN,our pair: not_found,plasminogen activator inhibitor 1 (5054),venous and arterial thromboembolism (D054556),Association,Novel,,,,,,,
+PMID17003923,FN,our pair: not_found,factor VII-activating protease (3026),venous and arterial thromboembolism (D054556),Association,Novel,,,,,,,
+PMID17003923,FN,our pair: not_found,thrombomodulin (7056),venous and arterial thromboembolism (D054556),Association,Novel,,,,,,,
+PMID17003923,FN,our pair: not_found,tissue factor pathway inhibitor (7035),venous and arterial thromboembolism (D054556),Association,Novel,,,,,,,
+PMID17003923,FN,our pair: not_found,prothrombin (2147),venous and arterial thromboembolism (D054556),Association,Novel,,,,,,,
+PMID17003923,FN,our pair: not_found,beta-fibrinogen (2244),venous and arterial thromboembolism (D054556),Association,Novel,,,,,,,
+PMID17003923,FN,our pair: not_found,factor XIII (2162),venous and arterial thromboembolism (D054556),Association,Novel,,,,,,,
+PMID17003923,FN,our pair: not_found,factor VII (2155),venous and arterial thromboembolism (D054556),Association,Novel,,,,,,,
+PMID17003923,FN,our pair: not_found,methylenetetrahydrofolate reductase (4524),venous and arterial thromboembolism (D054556),Association,Novel,,,,,,,
+PMID17003923,FN,our pair: not_found,"apolipoprotein E2/E3/E4, glycoprotein Ia (22915)",venous and arterial thromboembolism (D054556),Association,Novel,,,,,,,
+PMID17003923,TP,,methylenetetrahydrofolate reductase (4524),thromboembolic diseases (D013923),Association,No,G14-D4,methylenetetrahydrofolate reductase,thromboembolic diseases,supported,association,background,Explicit susceptibility attribution in the other-factors group.
+PMID17003923,TP,,"apolipoprotein E2/E3/E4, glycoprotein Ia (22915)",thromboembolic diseases (D013923),Association,No,G12-D4,apolipoprotein E,thromboembolic diseases,supported,association,background,Explicit susceptibility attribution in the other-factors group.
+PMID17003923,FP,duplicate: its gold relation is credited to another of our pairs,,,,,G13-D4,glycoprotein Ia,thromboembolic diseases,supported,association,background,Explicit susceptibility attribution in the other-factors group.
+PMID17059986,TP,,SLC12A3 (6559),idiopathic intracranial hypertension (D011559),Association,Novel,G1-D2,SLC12A3,idiopathic intracranial hypertension,supported,association,this study,Title explicitly attributes disease association to mutation.
+PMID17059986,TP,,SLC12A3 (6559),Gitelman syndrome (D053579),Association,Novel,G1-D1,SLC12A3,Gitelman syndrome,supported,association,this study,Molecular diagnosis and familial cosegregation.
+PMID17166870,TP,,endoglin (2022),pulmonary arterial hypertension (D000081029),Association,Novel,G1-D4,endoglin,systemic sclerosis-related pulmonary arterial hypertension,supported,association,this study,Comparative association supported; biological implication remains speculative.
+PMID17166870,FN,"our pair: supported, credited to another gold relation",endoglin (2022),systemic sclerosis (D012595),Association,Novel,G1-D4,endoglin,systemic sclerosis-related pulmonary arterial hypertension,supported,association,this study,Comparative association supported; biological implication remains speculative.
+PMID17166870,FN,disease not recorded by us,endoglin (2022),vascular complication (D014652),Association,Novel,,,,,,,
+PMID17935240,TP,,RPGR (6103),X-linked retinitis pigmentosa (D012174),Association,No,G1-D1,RPGR,X-linked retinitis pigmentosa,supported,association,both,
+PMID18179903,TP,,RAPSN (5913),congenital myasthenia (D020294),Negative_Correlation,Novel,G4-D5,RAPSN,congenital myasthenia,supported,association,background,
+PMID18179903,FN,our pair: uncertain,RAPSN (5913),fetal akinesia (C536647),Negative_Correlation,Novel,G4-D4,RAPSN,lethal fetal akinesia sequence,uncertain,none,this study,Functional interpretation remains hypothetical.
+PMID18179903,TP,,embryonal acetylcholine receptor g subunit (1146),multiple pterygium syndrome (C537377),Association,No,G5-D2,CHRNG,lethal MPS,supported,causal,background,
+PMID18179903,FP,duplicate: its gold relation is credited to another of our pairs,,,,,G5-D3,CHRNG,nonlethal MPS,supported,causal,background,
+PMID18457324,FN,disease not recorded by us,carbonyl reductase 3 (874),cardiotoxic (D066126),Association,Novel,,,,,,,
+PMID18457324,FN,our pair: uncertain,carbonyl reductase 3 (874),congestive heart failure (D006333),Association,Novel,G1-D3,CBR3,congestive heart failure,uncertain,none,this study,Reported trend does not establish association.
+PMID18507837,TP,,C6ofr49 (29964),breast cancer (D001943),Association,Novel,G17-D1,C6orf49,breast cancer,supported,correlation,this study,Expression associated with breast cancer survival.
+PMID18507837,FN,our pair: uncertain,CCND3 (896),breast cancer (D001943),Association,Novel,G3-D1,CCND3,breast cancer,uncertain,none,this study,Pending association; authors explicitly hedge gene-specific attribution.
+PMID18507837,FN,our pair: uncertain,CCND3 (896),death (D003643),Association,Novel,G3-D3,CCND3,death,uncertain,none,this study,Pending association; variant mortality finding lacks definite gene attribution.
+PMID18991055,TP,,SLC30A8 (169026),type 2 diabetes (D003924),Association,Novel,G1-D1,SLC30A8,type 2 diabetes mellitus,supported,association,this study,Nominal association for rs13266634 in Korean case-control study.
+PMID18991055,TP,,KCNQ1 (3784),type 2 diabetes (D003924),Association,Novel,G8-D1,KCNQ1,type 2 diabetes mellitus,supported,association,this study,Significant association for rs2237892 C allele.
+PMID18991055,TP,,CDKAL1 (54901),type 2 diabetes (D003924),Association,Novel,G7-D1,CDKAL1,type 2 diabetes mellitus,supported,association,this study,"Strongest reported association, involving rs7754840."
+PMID18991055,FN,gene not recorded by us,CDKN2A/B (1030),type 2 diabetes (D003924),Association,Novel,,,,,,,
+PMID18991055,FN,gene not recorded by us,CDKN2A/B (1029),type 2 diabetes (D003924),Association,Novel,,,,,,,
+PMID18991055,TP,,HHEX (3087),type 2 diabetes (D003924),Association,Novel,G2-D1,HHEX,type 2 diabetes mellitus,supported,association,this study,Significant association for rs1111875 G allele.
+PMID19207031,FN,gene not recorded by us,Growth hormone (2688),growth hormone-deficient (D004393),Negative_Correlation,No,,,,,,,
+PMID19208385,FN,disease recorded by us as symptom/phenotype,COL1A2 (1278),abnormal limb development (D009140),Association,Novel,,,,,,,
+PMID19208385,FN,our pair: uncertain,COL1A2 (1278),intracranial hemorrhage (D020300),Association,Novel,G1-D3,COL1A2,intracranial hemorrhage,uncertain,none,this study,Bleeding risk inferred; title's association scope remains unclear.
+PMID19208385,TP,,COL1A2 (1278),Osteogenesis imperfecta (D010013),Association,Novel,G1-D1,COL1A2,Osteogenesis imperfecta,supported,causal,this study,Explicitly attributes patients' OI to COL1A2 mutations.
+PMID19208385,TP,,COL1A2 (1278),Osteogenesis imperfecta type III (C536044),Association,Novel,G1-D2,COL1A2,Osteogenesis imperfecta type III,supported,causal,this study,Adjacent sentences identify patients' OI subtype.
+PMID19208385,FN,disease recorded by us as symptom/phenotype,COL1A2 (1278),brachydactyly (D059327),Association,Novel,,,,,,,
+PMID19276632,FN,our pair: uncertain,FOXF2 (2295),disorders of sex development (D012734),Association,No,G1-D1,FOXF2,disorders of sex development,uncertain,none,this study,Unique variants' contribution remains speculative.
+PMID19276632,FN,our pair: uncertain,FOXF2 (2295),cleft palate (D002972),Association,No,G1-D2,FOXF2,cleft palate,uncertain,none,this study,Unique variants' contribution remains speculative.
+PMID19276632,FN,disease recorded by us as symptom/phenotype,Foxf2 (14238),hypoplasia of the genital tubercle (C537540),Association,No,,,,,,,
+PMID19276632,TP,,Foxf2 (14238),cleft palate (D002972),Association,No,G2-D2,Foxf2,cleft palate,supported,causal,background,Knockout produces cleft palate in mice.
+PMID19484664,TP,,Angiotensin converting enzyme (1636),asthmatic (D001249),Association,No,G1-D1,angiotensin converting enzyme,asthma,supported,association,this study,Association supported; risk interpretation hedged; severity increase explicitly rejected.
+PMID19565319,TP,,Adenosine A(2A) receptor (135),panic disorder (D016584),Association,No,G1-D2,ADORA2A,panic disorder,supported,association,background,Explicit background association.
+PMID19565319,TP,,Adenosine A(2A) receptor (135),autism spectrum disorder (D000067877),Association,Novel,G1-D1,ADORA2A,autism spectrum disorder,supported,association,this study,Nominal disease association; broader phenotypic mediation remains speculative.
+PMID19565319,FN,disease recorded by us as symptom/phenotype,Adenosine A(2A) receptor (135),anxiety (D001008),Association,Novel,,,,,,,
+PMID19565319,FN,disease recorded by us as symptom/phenotype,Adenosine A(2A) receptor (135),autistic symptoms (D001321),Association,Novel,,,,,,,
+PMID19789368,FN,our pair: not_found,Vitamin D receptor (7421),cancers (D009369),Positive_Correlation,Novel,,,,,,,
+PMID19789368,FN,our pair: uncertain,KRAS (3845),colorectal cancer (D015179),Association,Novel,G3-D1,KRAS,colorectal cancer,uncertain,none,this study,Possible influence on VDR-targeted therapy or chemoprevention.
+PMID19789368,FN,our pair: uncertain,PIK3CA (5290),colorectal cancer (D015179),Association,Novel,G2-D1,PIK3CA,colorectal cancer,uncertain,none,this study,Possible influence on VDR-targeted therapy or chemoprevention.
+PMID19789368,FN,our pair: explicit_negative,Vitamin D receptor (7421),colorectal cancer (D015179),Positive_Correlation,Novel,G1-D1,vitamin D receptor,colorectal cancer,explicit_negative,none,this study,"Tested association: patient survival, prognosis, clinical outcome."
+PMID20705401,FN,disease recorded by us as symptom/phenotype,Serotonin 6 receptor (3362),hyperactivity (D006948),Association,No,,,,,,,
+PMID20705401,TP,,Serotonin 6 receptor (3362),psychosis (D011605),Association,Novel,G1-D4,HTR6,methamphetamine-induced psychosis,supported,association,this study,Association supported; proposed pathophysiological role remains speculative.
+PMID20709368,TP,,fibrinogen gamma (2266),myocardial infarction (D009203),Association,No,G3-D3,FGG,myocardial infarction,supported,association,background,Explicit background variant association.
+PMID20709368,TP,,fibrinogen gamma (2266),deep venous thrombosis (D020246),Association,No,G3-D2,FGG,deep venous thrombosis,supported,association,background,Explicit background variant association.
+PMID21126715,FN,disease recorded by us as symptom/phenotype,BSCL2 (26580),enlargement of kidneys (D007674),Association,Novel,,,,,,,
+PMID21126715,FN,disease recorded by us as symptom/phenotype,BSCL2 (26580),intellectual impairment (D008607),Association,No,,,,,,,
+PMID21126715,FN,our pair: not_found,BSCL2 (26580),cardiomyopathy (D009202),Association,No,,,,,,,
+PMID21126715,TP,,BSCL2 (26580),congenital generalized lipodystrophy (D052497),Association,Novel,G1-D1,BSCL2,Congenital generalized lipodystrophy,supported,causal,this study,Explicit causal attribution and genotype review.
+PMID21126715,FP,duplicate: its gold relation is credited to another of our pairs,,,,,G1-D2,BSCL2,CGL2,supported,causal,background,
+PMID21219851,TP,,type III procollagen (1281),"Ehlers-Danlos Syndrome, vascular type (D004535)",Association,No,G1-D1,COL3A1,"Ehlers-Danlos syndrome, vascular type",supported,causal,background,Novel mutation detection alone adds no disease attribution.
+PMID21405999,TP,,GUCA1A (2978),macular dystrophy (D008268),Association,No,G1-D3,GUCA1A,macular dystrophy,supported,causal,background,Explicit attribution to heterozygous mutations.
+PMID21405999,TP,,GUCA1A (2978),cone and cone rod dystrophy (D000077765),Association,No,G1-D4,GUCA1A,autosomal dominantly inherited cone dystrophy,supported,causal,background,Explicit attribution to heterozygous mutations.
+PMID21405999,TP,,GUCA1A (2978),cone and cone rod dystrophy (D000071700),Association,No,G1-D2,GUCA1A,cone rod dystrophy,supported,causal,background,Explicit attribution to heterozygous mutations.
+PMID21405999,FN,our pair: uncertain,GUCA1B (2979),retinal disease (D012164),Association,No,G2-D5,GUCA1B,inherited retinal disease,uncertain,none,background,Controversy stated without readable supporting findings.
+PMID21405999,FN,our pair: uncertain,GUCA1B (2979),retinal degenerations (D012162),Association,Novel,G2-D6,GUCA1B,retinal degenerations,uncertain,none,this study,Minor causal contribution inferred from negative screening.
+PMID21405999,FN,our pair: explicit_negative,GUCA1B (2979),cone and cone rod dystrophy (D000077765),Association,Novel,G2-D1,GUCA1B,cone dystrophy,explicit_negative,none,this study,No clearly pathogenic mutations in selected inherited cases.
+PMID21405999,FN,our pair: explicit_negative,GUCA1B (2979),cone and cone rod dystrophy (D000071700),Association,Novel,G2-D2,GUCA1B,cone rod dystrophy,explicit_negative,none,this study,No clearly pathogenic mutations in selected inherited cases.
+PMID21684788,FN,our pair: not_found,ALDH3A1 (218),Sjogren-Larsson syndrome (D016111),Association,Novel,,,,,,,
+PMID21684788,TP,,ALDH3A2 (224),Sjogren-Larsson syndrome (D016111),Association,Novel,G1-D1,ALDH3A2,Sjogren-Larsson syndrome,supported,causal,this study,Disease explicitly attributed to ALDH3A2 locus deletions.
+PMID21750150,TP,,fibroblast growth factor 2 (2247),glioma (D005910),Association,No,G2-D1,FGF2,glioma,supported,causal,this study,Exogenous bFGF rescues glioma-cell tumorigenicity; downstream mechanism remains hedged.
+PMID21750150,FN,disease not recorded by us,fibroblast growth factor 2 (2247),tumor (D009369),Association,No,,,,,,,
+PMID21750150,TP,,DACH1 (1602),glioma (D005910),Association,Novel,G1-D1,DACH1,glioma,supported,causal,this study,Proliferation and tumor growth suppressed; proposed mechanism remains hedged.
+PMID21750150,FN,disease not recorded by us,DACH1 (1602),tumor (D009369),Association,Novel,,,,,,,
+PMID21879313,FN,our pair: uncertain,apolipoprotein B-100 (338),HCV genotype 1b infection (D006526),Association,Novel,G2-D5,apolipoprotein B-100,chronic HCV infection,uncertain,none,this study,Proposed marker of altered metabolism during infection.
+PMID21879313,TP,,IL28B (282617),HCV genotype 1b infection (D006526),Association,Novel,G1-D3,IL28B,HCV genotype 1b infection,supported,association,background,Treatment efficacy association in chronic hepatitis.
+PMID21879313,FN,gene not recorded by us,pegylated interferon (3439),HCV genotype 1b infection (D006526),Negative_Correlation,No,,,,,,,
+PMID21879313,FN,gene not recorded by us,pegylated interferon (3439),chronic hepatitis (D006521),Negative_Correlation,No,,,,,,,
+PMID21879313,TP,,IL28B (282617),chronic hepatitis (D006521),Association,No,G1-D2,IL28B,chronic hepatitis,supported,association,background,Treatment efficacy association restricted to genotype 1b infection.
+PMID21879313,FN,our pair: not_found,apolipoprotein B-100 (338),chronic hepatitis C (D019698),Association,Novel,,,,,,,
+PMID21879313,FN,our pair: not_found,IL28B (282617),chronic hepatitis C (D019698),Association,No,,,,,,,
+PMID21976953,TP,,FBN1 (2200),Marfan syndrome (D008382),Association,Novel,G1-D1,FBN1,Marfan syndrome,supported,causal,this study,Explicit familial causative attribution and comparative mutation findings.
+PMID22369755,FN,our pair: not_found,SERPINB5 (5268),carcinogenic (D009369),Association,Novel,,,,,,,
+PMID22369755,FN,our pair: not_found,FOXD3 (27022),carcinogenic (D009369),Association,Novel,,,,,,,
+PMID22369755,FN,our pair: not_found,CDKN3 (1033),carcinogenic (D009369),Association,Novel,,,,,,,
+PMID22369755,TP,,STAT3 (6774),carcinogenic (D009369),Association,Novel,G13-D1,STAT3,cancer,supported,association,background,Explicitly classified as cancer-related.
+PMID22369755,TP,,CDKN2A (1029),carcinogenic (D009369),Association,Novel,G12-D1,CDKN2A,cancer,supported,association,background,Explicitly classified as cancer-related.
+PMID22369755,TP,,HGF (3082),carcinogenic (D009369),Association,Novel,G11-D1,HGF,cancer,supported,association,background,Explicitly classified as cancer-related.
+PMID22369755,TP,,EGF (1950),carcinogenic (D009369),Association,Novel,G10-D1,EGF,cancer,supported,association,background,Explicitly classified as cancer-related.
+PMID22369755,FN,our pair: not_found,SLURP-1 (57152),carcinogenic (D009369),Association,Novel,,,,,,,
+PMID22729903,FN,disease recorded by us as symptom/phenotype,STAT4 (6775),renal symptoms (D007674),Association,Novel,,,,,,,
+PMID22729903,TP,,STAT4 (6775),systemic lupus erythematosus (D008180),Association,No,G1-D1,STAT4,systemic lupus erythematosus,supported,association,both,Genotypes and allele associated with increased SLE risk.
+PMID23069675,TP,,neuronal pentraxin 1 (266777),hypoxic-ischemic neuronal injury (D020925),Association,Novel,G1-D3,neuronal pentraxin 1,HI brain injury,supported,association,this study,Post-HI induction supports association; therapeutic inference remains uncertain.
+PMID23069675,FN,disease recorded by us as symptom/phenotype,caspase-3 (12367),neuronal death (D009410),Association,Novel,,,,,,,
+PMID23069675,FN,disease recorded by us as symptom/phenotype,Cyt C (13063),neuronal death (D009410),Association,Novel,,,,,,,
+PMID23069675,FN,disease recorded by us as symptom/phenotype,Bax (12028),neuronal death (D009410),Association,Novel,,,,,,,
+PMID23069675,FN,disease recorded by us as symptom/phenotype,Bad (12015),neuronal death (D009410),Association,Novel,,,,,,,
+PMID23069675,FN,disease recorded by us as symptom/phenotype,neuronal pentraxin 1 (18164),neuronal death (D009410),Association,Novel,,,,,,,
+PMID23069675,TP,,neuronal pentraxin 1 (18164),hypoxic-ischemic neuronal injury (D020925),Association,Novel,G1-D2,neuronal pentraxin 1,hypoxic-ischemic neuronal injury,supported,association,background,Prior study reported induction following neuronal injury.
+PMID24442316,FN,gene not recorded by us,aspartate aminotransferase (14718),liver injured (D008107),Association,Novel,,,,,,,
+PMID24442316,FN,gene not recorded by us,alanine aminotransferase (76282),liver injured (D008107),Association,Novel,,,,,,,
+PMID24442316,TP,,von Willebrand factor (22371),liver injured (D008107),Association,Novel,G3-D2,vWF,acute injury liver,supported,association,this study,Higher expression in injured model versus normal controls.
+PMID24442316,TP,,intercellular adhesion molecule-1 (15894),liver injured (D008107),Association,Novel,G1-D2,ICAM-1,acute injury liver,supported,association,this study,Higher expression in injured model versus normal controls.
+PMID24442316,TP,,vascular cell adhesion molecule-1 (22329),liver injured (D008107),Association,Novel,G2-D2,VCAM-1,acute injury liver,supported,association,this study,Higher expression in injured model versus normal controls.
+PMID24442316,TP,,matrix metalloproteinase-2 and 9 (17395),liver injured (D008107),Association,Novel,G5-D2,matrix metalloproteinase-9,acute injury liver,supported,association,this study,Higher activity; protective mechanism remains an interpretation.
+PMID24442316,TP,,matrix metalloproteinase-2 and 9 (17390),liver injured (D008107),Association,Novel,G4-D2,matrix metalloproteinase-2,acute injury liver,supported,association,this study,Higher activity; protective mechanism remains an interpretation.
+PMID24442316,FN,gene not recorded by us,glutathione S-transferase (54486),liver injured (D008107),Association,Novel,,,,,,,
+PMID24442316,FN,gene not recorded by us,superoxide dismutase (20655),liver injured (D008107),Association,Novel,,,,,,,
+PMID25006961,FN,disease recorded by us as symptom/phenotype,PKC-alpha (18750),polyuria (D011141),Association,Novel,,,,,,,
+PMID25006961,TP,,PKC-alpha (18750),nephrogenic diabetes insipidus (D018500),Positive_Correlation,Novel,G1-D2,PKC-alpha,lithium-induced nephrogenic diabetes insipidus,supported,causal,this study,Ablation attenuates lithium-induced disease in mice.
+PMID25277705,FN,disease not recorded by us,stem cell growth factor beta (6320),infection (D007239),Association,Novel,,,,,,,
+PMID25277705,FN,disease not recorded by us,CXCL12 (6387),infection (D007239),Association,Novel,,,,,,,
+PMID25277705,FN,disease not recorded by us,CCL27 (10850),infection (D007239),Association,Novel,,,,,,,
+PMID25277705,FN,disease not recorded by us,stem cell factor (4254),infection (D007239),Association,Novel,,,,,,,
+PMID25277705,FN,disease not recorded by us,migration inhibitory factor (4282),infection (D007239),Association,Novel,,,,,,,
+PMID25277705,FN,disease not recorded by us,retinoic acid-inducible gene-1 (23586),infection (D007239),Association,Novel,,,,,,,
+PMID25277705,TP,,Leukemia inhibitory factor (3976),lung injury (D055370),Negative_Correlation,Novel,G13-D2,LIF,lung injury,supported,causal,this study,Mouse intervention supports protection against lung injury.
+PMID25277705,FN,disease not recorded by us,Leukemia inhibitory factor (3976),infection (D007239),Association,Novel,,,,,,,
+PMID25277705,TP,,Leukemia inhibitory factor (3976),respiratory syncytial viral infection (D018357),Positive_Correlation,Novel,G13-D1,LIF,RSV infection,supported,causal,this study,Neutralization worsens pathology during mouse RSV infection.
+PMID25277705,FN,our pair: not_found,TIR-domain-containing adapter-inducing interferon-b (106759),respiratory syncytial viral infection (D018357),Positive_Correlation,Novel,,,,,,,
+PMID25277705,FN,our pair: not_found,mitochondrial antiviral-signaling protein (228607),respiratory syncytial viral infection (D018357),Positive_Correlation,No,,,,,,,
+PMID25277705,TP,,stem cell growth factor beta (6320),respiratory syncytial viral infection (D018357),Positive_Correlation,Novel,G18-D1,SCGF-b,RSV infection,supported,association,this study,RSV induces airway cytokine in mice.
+PMID25277705,TP,,CXCL12 (6387),respiratory syncytial viral infection (D018357),Positive_Correlation,Novel,G17-D1,CXCL12,RSV infection,supported,association,this study,RSV induces airway cytokine in mice.
+PMID25277705,TP,,CCL27 (10850),respiratory syncytial viral infection (D018357),Positive_Correlation,Novel,G16-D1,CCL27,RSV infection,supported,association,this study,RSV induces airway cytokine in mice.
+PMID25277705,TP,,stem cell factor (4254),respiratory syncytial viral infection (D018357),Positive_Correlation,Novel,G15-D1,SCF,RSV infection,supported,association,this study,RSV induces airway cytokine in mice.
+PMID25277705,TP,,migration inhibitory factor (4282),respiratory syncytial viral infection (D018357),Positive_Correlation,Novel,G14-D1,MIF,RSV infection,supported,association,this study,RSV induces airway cytokine in mice.
+PMID25277705,FN,our pair: not_found,retinoic acid-inducible gene-1 (23586),respiratory syncytial viral infection (D018357),Association,Novel,,,,,,,
+PMID25277705,FN,"our pair: supported, credited to another gold relation",Leukemia inhibitory factor (16878),lung injury (D055370),Negative_Correlation,Novel,G13-D2,LIF,lung injury,supported,causal,this study,Mouse intervention supports protection against lung injury.
+PMID25277705,TP,,Leukemia inhibitory factor (16878),respiratory syncytial viral infection (D018357),Association,Novel,G1-D1,LIF,RSV infection,supported,association,this study,RSV induces cytokine release in human epithelial cells.
+PMID25277705,FP,duplicate: its gold relation is credited to another of our pairs,,,,,G2-D1,MIF,RSV infection,supported,association,this study,RSV induces cytokine release in human epithelial cells.
+PMID25277705,FP,duplicate: its gold relation is credited to another of our pairs,,,,,G3-D1,SCF,RSV infection,supported,association,this study,RSV induces cytokine release in human epithelial cells.
+PMID25277705,FP,duplicate: its gold relation is credited to another of our pairs,,,,,G4-D1,CCL27,RSV infection,supported,association,this study,RSV induces cytokine release in human epithelial cells.
+PMID25277705,FP,duplicate: its gold relation is credited to another of our pairs,,,,,G5-D1,CXCL12,RSV infection,supported,association,this study,RSV induces cytokine release in human epithelial cells.
+PMID25277705,FP,duplicate: its gold relation is credited to another of our pairs,,,,,G6-D1,SCGF-b,RSV infection,supported,association,this study,RSV induces cytokine release in human epithelial cells.
+PMID25277705,FP,gold has both concepts but no relation,,,,,G19-D1,IL-1b,RSV infection,supported,association,this study,RSV induces airway cytokine in mice.
+PMID25277705,FP,gold has both concepts but no relation,,,,,G20-D1,IL-4,RSV infection,supported,association,this study,RSV induces airway cytokine in mice.
+PMID25277705,FP,gold has both concepts but no relation,,,,,G21-D1,IL-5,RSV infection,supported,association,this study,RSV induces airway cytokine in mice.
+PMID25277705,FP,gold has both concepts but no relation,,,,,G22-D1,IL-6,RSV infection,supported,association,this study,RSV induces airway cytokine in mice.
+PMID25277705,FP,gold has both concepts but no relation,,,,,G23-D1,IL-12(p40),RSV infection,supported,association,this study,RSV induces airway cytokine in mice.
+PMID25277705,FP,gold has both concepts but no relation,,,,,G24-D1,IFN-g,RSV infection,supported,association,this study,RSV induces airway cytokine in mice.
+PMID25277705,FP,gold has both concepts but no relation,,,,,G25-D1,CCL2,RSV infection,supported,association,this study,RSV induces airway cytokine in mice.
+PMID25277705,FP,gold has both concepts but no relation,,,,,G26-D1,CCL5,RSV infection,supported,association,this study,RSV induces airway cytokine in mice.
+PMID25277705,FP,gold has both concepts but no relation,,,,,G27-D1,CCL3,RSV infection,supported,association,this study,RSV induces airway cytokine in mice.
+PMID25277705,FP,gold has both concepts but no relation,,,,,G28-D1,CXCL1,RSV infection,supported,association,this study,RSV induces airway cytokine in mice.
+PMID25277705,FP,gold has both concepts but no relation,,,,,G29-D1,CXCL10,RSV infection,supported,association,this study,RSV induces airway cytokine in mice.
+PMID25277705,FP,gold has both concepts but no relation,,,,,G30-D1,IL-22,RSV infection,supported,association,this study,RSV induces airway cytokine in mice.
+PMID25277705,FP,gold has both concepts but no relation,,,,,G31-D1,CXCL9,RSV infection,supported,association,this study,RSV induces airway cytokine in mice.
+PMID25874935,TP,,Neuroserpin (5274),cerebral ischemic (D002545),Negative_Correlation,No,G2-D1,neuroserpin,cerebral ischemic disease,supported,association,background,Reported neuroprotection in cerebral ischemic animal models.
+PMID25874935,TP,,neuroserpin (116459),cerebral ischemic (D002545),Negative_Correlation,No,G1-D1,neuroserpin,cerebral ischemic disease,supported,association,background,Reported neuroprotection in patients.
+PMID25874935,FN,disease not recorded by us,neuroserpin (116459),ischemic (D007511),Negative_Correlation,Novel,,,,,,,
+PMID26110643,FN,disease not recorded by us,lgl2 (795670),tumor (D009369),Negative_Correlation,No,,,,,,,
+PMID26110643,FN,our pair: not_found,grip1 (558006),Skin disorders (D012871),Association,No,,,,,,,
+PMID26110643,FN,our pair: not_found,fras1 (563428),Skin disorders (D012871),Association,No,,,,,,,
+PMID26110643,FN,our pair: not_found,megf6a (565108),Skin disorders (D012871),Association,Novel,,,,,,,
+PMID26110643,FN,our pair: not_found,fkbp10b (324381),Skin disorders (D012871),Association,Novel,,,,,,,
+PMID26110643,FN,our pair: not_found,arhgef25b (569561),Skin disorders (D012871),Association,Novel,,,,,,,
+PMID26110643,FN,our pair: not_found,capn12 (799247),Skin disorders (D012871),Association,No,,,,,,,
+PMID26110643,FN,our pair: not_found,ahnak (559276),Skin disorders (D012871),Association,No,,,,,,,
+PMID26110643,FN,our pair: not_found,col4a4 (554270),Skin disorders (D012871),Association,No,,,,,,,
+PMID26110643,FN,our pair: not_found,msxc (30526),Skin disorders (D012871),Association,No,,,,,,,
+PMID26110643,FN,our pair: not_found,hmcn1 (559150),Skin disorders (D012871),Association,No,,,,,,,
+PMID26110643,FN,our pair: not_found,Neuregulin 2a (100006951),Skin disorders (D012871),Association,No,,,,,,,
+PMID26615423,TP,,centrosomal protein 55 (55165),epithelial ovarian carcinoma (D000077216),Association,Novel,G1-D2,CEP55,epithelial ovarian carcinoma,supported,correlation,this study,Disease variables and prognosis linked to expression.
+PMID26615423,TP,,centrosomal protein 55 (55165),intraperitoneal metastasis (D009362),Positive_Correlation,Novel,G1-T2,CEP55,intraperitoneal metastasis,supported,correlation,this study,Positive expression correlation.
+PMID26615423,TP,,centrosomal protein 55 (55165),lymph node metastasis (D008207),Positive_Correlation,Novel,G1-T1,CEP55,lymph node metastasis,supported,correlation,this study,Positive expression correlation.
+PMID26615423,TP,,centrosomal protein 55 (55165),tumor (D009369),Positive_Correlation,No,G1-D1,CEP55,cancers,supported,association,background,Explicit background cancer involvement.
+PMID26615423,TP,,centrosomal protein 55 (55165),metastasis of ovarian (D010051),Positive_Correlation,Novel,G1-D3,CEP55,ovarian cancer,supported,association,this study,Expression elevated versus noncancerous comparators.
+PMID26615423,FP,duplicate: its gold relation is credited to another of our pairs,,,,,G1-T3,CEP55,tumor recurrence,supported,correlation,this study,Positive expression correlation.
+PMID26847345,TP,,Transgelin (6876),cancer (D009369),Association,Novel,G1-D1,transgelin,cancer,supported,association,background,Background links elevated expression to aggressive cancer behavior.
+PMID26847345,TP,,Transgelin (6876),lung metastases (D008175),Association,Novel,G1-D4,transgelin,lung metastases,supported,causal,this study,Overexpression increases lung metastasis number and size.
+PMID26847345,TP,,Transgelin (6876),colorectal cancer (D015179),Association,Novel,G1-D2,transgelin,colorectal cancer,supported,causal,this study,Manipulation changes colorectal cancer metastatic behavior in mice.
+PMID26847345,FP,gold has both concepts but no relation,,,,,G1-D3,transgelin,metastasis,supported,causal,this study,Reciprocal interventions alter experimental metastasis.
+PMID26900322,TP,,CFI (3426),uveitis (D014605),Association,No,G1-D1,CFI,uveitis,supported,association,background,Explicit background attribution.
+PMID26900322,TP,,CFI (3426),cataract (D002386),Association,Novel,G1-D5,CFI,VKH syndrome with complicated cataract,supported,association,this study,Combined disease subgroup compared with healthy controls.
+PMID26900322,TP,,CFI (3426),Vogt-Koyanagi-Harada syndrome (D014607),Association,Novel,G1-D3,CFI,recurrent VKH syndrome,supported,association,this study,Recurrent subgroup compared with healthy controls.
+PMID26937641,FN,gene not recorded by us,CCl4 (6351),liver injury and fibrogenesis (D008107),Association,Novel,,,,,,,
+PMID26937641,FN,our pair: not_found,Serum Amyloid A (20210),liver injury and fibrogenesis (D008107),Association,Novel,,,,,,,
+PMID26937641,FN,our pair: not_found,Serum Amyloid A (20208),liver injury and fibrogenesis (D008107),Association,Novel,,,,,,,
+PMID27384305,FN,disease recorded by us as symptom/phenotype,11b-HSD1 (15483),hepatic inflammation (D008107),Association,Novel,,,,,,,
+PMID27384305,FN,our pair: explicit_negative,11b-HSD1 (15483),Nonalcoholic Fatty Liver Disease (D065626),Positive_Correlation,Novel,G1-D2,11b-HSD1,Nonalcoholic fatty liver disease,explicit_negative,none,this study,No protection; proposed inhibition benefit remains hypothetical.
+PMID27959387,FN,gene not recorded by us,HLA (3123),malignancy (D009369),Association,No,,,,,,,
+PMID27959387,FN,gene not recorded by us,interferon (282617),malignancy (D009369),Association,No,,,,,,,
+PMID27959387,FN,disease not recorded by us,PGR (5241),malignancy (D009369),Association,No,,,,,,,
+PMID27959387,FN,disease not recorded by us,TP63 (8626),malignancy (D009369),Association,No,,,,,,,
+PMID27959387,FN,disease not recorded by us,ITGB6 (3694),malignancy (D009369),Association,No,,,,,,,
+PMID27959387,FN,disease not recorded by us,KRT15 (3866),malignancy (D009369),Association,No,,,,,,,
+PMID27959387,FN,disease not recorded by us,GDF15 (9518),malignancy (D009369),Association,No,,,,,,,
+PMID27959387,FN,disease not recorded by us,SAMD9 (54809),malignancy (D009369),Association,No,,,,,,,
+PMID27959387,FN,disease not recorded by us,SERPINA3 (12),malignancy (D009369),Association,No,,,,,,,
+PMID27959387,FN,disease not recorded by us,STEAP4 (79689),malignancy (D009369),Association,No,,,,,,,
+PMID27959387,FN,disease not recorded by us,Ceacam6 (4680),malignancy (D009369),Association,No,,,,,,,
+PMID28068934,FN,our pair: uncertain,PIK3CA (5290),esophageal squamous cell carcinoma (D000077277),Association,No,G1-D1,PIK3CA,esophageal squamous cell carcinoma,uncertain,none,background,Therapeutic targeting is speculative; mutation detection lacks disease attribution.
+PMID28684635,FN,disease recorded by us as symptom/phenotype,ADCY5 (111),impaired insulin secretion (D003920),Association,Novel,,,,,,,
+PMID28684635,TP,,ADCY5 (111),Type 2 Diabetes (D003924),Negative_Correlation,Novel,G1-D1,ADCY5,type 2 diabetes,supported,association,both,Causal mechanism remains an interpretation.
+PMID28846666,FN,gene not recorded by us,NF-kappaB (4790),Gestational Diabetes Mellitus (D016640),Association,Novel,,,,,,,
+PMID28846666,FN,disease not recorded by us,IL-10 (3586),disordered lipid and glucose metabolisms (D052439),Association,Novel,,,,,,,
+PMID28846666,FN,disease not recorded by us,IL-10 (3586),disordered lipid and glucose metabolisms (D044882),Association,Novel,,,,,,,
+PMID28846666,FN,our pair: not_found,IL-10 (3586),Gestational Diabetes Mellitus (D016640),Association,Novel,,,,,,,
+PMID28846666,FN,disease not recorded by us,IL-8 (3576),disordered lipid and glucose metabolisms (D052439),Association,Novel,,,,,,,
+PMID28846666,FN,disease not recorded by us,IL-8 (3576),disordered lipid and glucose metabolisms (D044882),Association,Novel,,,,,,,
+PMID28846666,TP,,IL-8 (3576),Gestational Diabetes Mellitus (D016640),Association,Novel,G4-D1,IL-8,Gestational diabetes mellitus,supported,association,this study,
+PMID28846666,FN,disease not recorded by us,Interleukin 6 (3569),disordered lipid and glucose metabolisms (D052439),Association,Novel,,,,,,,
+PMID28846666,FN,disease not recorded by us,Interleukin 6 (3569),disordered lipid and glucose metabolisms (D044882),Association,Novel,,,,,,,
+PMID28846666,TP,,Interleukin 6 (3569),Gestational Diabetes Mellitus (D016640),Association,Novel,G1-D1,IL-6,Gestational diabetes mellitus,supported,association,this study,Biomarker association; SNP aim provides no genotype result.
+PMID28846666,FN,disease not recorded by us,CRP (1401),disordered lipid and glucose metabolisms (D052439),Association,Novel,,,,,,,
+PMID28846666,FN,disease not recorded by us,CRP (1401),disordered lipid and glucose metabolisms (D044882),Association,Novel,,,,,,,
+PMID28846666,TP,,CRP (1401),Gestational Diabetes Mellitus (D016640),Association,Novel,G3-D1,hs-CRP,Gestational diabetes mellitus,supported,association,this study,
+PMID28846666,FN,disease not recorded by us,IL-1b (3553),Inflammation (D007249),Association,Novel,,,,,,,
+PMID28846666,FN,gene not recorded by us,NF-kappaB (4790),Inflammation (D007249),Association,Novel,,,,,,,
+PMID28846666,FN,disease not recorded by us,IL-10 (3586),Inflammation (D007249),Association,Novel,,,,,,,
+PMID28846666,FN,disease not recorded by us,IL-8 (3576),Inflammation (D007249),Association,Novel,,,,,,,
+PMID28846666,FN,disease not recorded by us,Interleukin 6 (3569),Inflammation (D007249),Association,Novel,,,,,,,
+PMID28846666,FN,disease not recorded by us,CRP (1401),Inflammation (D007249),Association,Novel,,,,,,,
+PMID28846666,FN,disease not recorded by us,Tumor Necrosis Factor alpha (7124),Inflammation (D007249),Association,Novel,,,,,,,
+PMID28846666,FN,disease not recorded by us,Tumor Necrosis Factor alpha (7124),disordered lipid and glucose metabolisms (D052439),Association,Novel,,,,,,,
+PMID28846666,FN,disease not recorded by us,Tumor Necrosis Factor alpha (7124),disordered lipid and glucose metabolisms (D044882),Association,Novel,,,,,,,
+PMID28846666,TP,,Tumor Necrosis Factor alpha (7124),Gestational Diabetes Mellitus (D016640),Association,Novel,G2-D1,TNF-alpha,Gestational diabetes mellitus,supported,association,this study,
+PMID28846666,TP,,chemerin (5919),Gestational Diabetes Mellitus (D016640),Association,Novel,G13-D1,chemerin,Gestational diabetes mellitus,supported,association,this study,
+PMID28846666,TP,,RBP-4 (5950),Gestational Diabetes Mellitus (D016640),Association,Novel,G12-D1,RBP-4,Gestational diabetes mellitus,supported,association,this study,
+PMID28846666,TP,,visfatin (10135),Gestational Diabetes Mellitus (D016640),Association,Novel,G11-D1,visfatin,Gestational diabetes mellitus,supported,association,this study,
+PMID28846666,TP,,adipokines (9370),Gestational Diabetes Mellitus (D016640),Association,Novel,G10-D1,adiponectin,Gestational diabetes mellitus,supported,association,this study,
+PMID28846666,TP,,adipokines (3952),Gestational Diabetes Mellitus (D016640),Association,Novel,G9-D1,leptin,Gestational diabetes mellitus,supported,association,this study,
+PMID28846666,TP,,IRS-2 (8660),Gestational Diabetes Mellitus (D016640),Association,Novel,G8-D1,IRS-2,Gestational diabetes mellitus,supported,association,this study,
+PMID28846666,TP,,IRS-1 (3667),Gestational Diabetes Mellitus (D016640),Association,Novel,G7-D1,IRS-1,Gestational diabetes mellitus,supported,association,this study,
+PMID28846666,TP,,IL-1b (3553),Gestational Diabetes Mellitus (D016640),Association,Novel,G6-D1,IL-1b,Gestational diabetes mellitus,supported,association,this study,
+PMID28846666,TP,,FABP-5 (2171),Gestational Diabetes Mellitus (D016640),Association,Novel,G21-D1,FABP-5,Gestational diabetes mellitus,supported,association,this study,
+PMID28846666,TP,,FABP-4 (2167),Gestational Diabetes Mellitus (D016640),Association,Novel,G20-D1,FABP-4,Gestational diabetes mellitus,supported,association,this study,
+PMID28846666,TP,,FABP-3 (2170),Gestational Diabetes Mellitus (D016640),Association,Novel,G19-D1,FABP-3,Gestational diabetes mellitus,supported,association,this study,
+PMID28846666,TP,,FABP-1 (2168),Gestational Diabetes Mellitus (D016640),Association,Novel,G18-D1,FABP-1,Gestational diabetes mellitus,supported,association,this study,
+PMID28846666,FN,our pair: uncertain,LPL (4023),Gestational Diabetes Mellitus (D016640),Association,Novel,G17-D1,LPL,Gestational diabetes mellitus,uncertain,none,this study,Undefined abbreviation prevents confident gene identification.
+PMID28846666,FN,our pair: uncertain,EL (9388),Gestational Diabetes Mellitus (D016640),Association,Novel,G16-D1,EL,Gestational diabetes mellitus,uncertain,none,this study,Undefined abbreviation prevents confident gene identification.
+PMID28846666,TP,,FATP-4 (10999),Gestational Diabetes Mellitus (D016640),Association,Novel,G15-D1,FATP-4,Gestational diabetes mellitus,supported,association,this study,
+PMID28846666,TP,,nesfatin-1 (4925),Gestational Diabetes Mellitus (D016640),Association,Novel,G14-D1,nesfatin-1,Gestational diabetes mellitus,supported,association,this study,

@@ -1,0 +1,5 @@
+P|g1|d3|nf|-|||||V4|HIV infection mentioned only for patients; no mouse link
+P|g1|d8|unc|-|ts|unc:-:ts:V4|hedged_claim||Extrapolation from AZT to HAART hedged with "might"
+P|g2|d1|nf|-|||||V2|Sentence concerns murine transgene model, not human FasL
+P|g2|d7|nf|-|||||V1|Title finding refers to murine transgenic model
+P|g3|d1|nf|-|||||V2|Aim mentions Fas-dependent pathway only, no finding

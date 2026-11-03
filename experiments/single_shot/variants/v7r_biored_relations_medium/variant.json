@@ -1,0 +1,1 @@
+{"name": "v7r_biored_relations_medium", "effort": "medium", "description": "Single-factor test: V6's task description plus only the gene-disease relation and novelty rules of the official BioRED annotation guideline (ftp.ncbi.nlm.nih.gov/pub/lu/BioRED/BioRED_Annotation_Guideline.pdf), mapped onto our codes; same lean format. Development-set diagnostic."}

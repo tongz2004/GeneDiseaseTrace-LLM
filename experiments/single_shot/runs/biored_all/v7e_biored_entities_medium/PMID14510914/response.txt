@@ -1,0 +1,17 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|SLC5A5 (sodium/iodide symporter)|sodium/iodide symporter;NIS|r|||human||
+E|G2|gene|TSH|TSH|r|||human||
+E|D1|disease|congenital hypothyroidism|Congenital hypothyroidism;congenital hypothyroidism;hypothyroidism|r|||||
+E|D2|disease|iodide transport defect|Iodide transport defect;ITD|r|||||
+E|D3|disease|nodular goitre|nodular goitre|r|||||
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s8+b0002.s9+b0002.s10|ts|res|aff|rr,cs
+EV|V3|b0002.s11|ts|int|aff|mi,eda
+EV|V4|b0001.s1+b0002.s12|ts|int|aff|eda
+EV|V5|b0002.s3+b0002.s4|ts|co|aff|do
+P|G1|D1|sup|c|ts|sup:c:ts:V2+V3+V4||||Homozygous NIS deletion causes patient's congenital hypothyroidism
+P|G1|D2|sup|c|both|sup:c:bg:V1;sup:c:ts:V2+V3||||NIS defects cause ITD; mutant nonfunctional in vitro
+P|G1|D3|sup|a|ts|sup:a:ts:V2+V5||||Goitre present in NIS-mutant patient
+F|F1|mechanism|del-(439-443) NIS; iodide uptake|COS-7 transfected cells|unknown|negative|not_reported|V3|in vitro, single patient
+F|F2|descriptive|NIS deletion genotype; family segregation|patient and consanguineous parents|not_applicable|not_applicable|not_applicable|V2|single family

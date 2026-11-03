@@ -1,0 +1,17 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|DMD|DMD;dystrophin|r|||human||
+E|D1|disease|Duchenne muscular dystrophy|Duchenne muscular dystrophy;DMD|r|||||
+E|D2|disease|Becker muscular dystrophy|Becker muscular dystrophy;BMD|r|||||
+E|S1|phenotype|intermediate phenotype|intermediate phenotype|r|||||
+X|DXS269|b0002|locus identifier for genomic probe p20, not a gene
+X|DXS239|b0002|locus identifier for genomic probe GMGX11, not a gene
+X|cDNA5b-7|b0002|cDNA probe name, not a gene
+EV|V1|b0002.s1+b0002.s3|ts|res|aff|rr,eda
+EV|V2|b0002.s6+b0002.s7+b0002.s8|ts|res|aff|rr,cmp
+EV|V3|b0002.s9|bg|bgr|aff|ebr
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V2||V3|Gene deletions found in DMD patients; frameshift deletions linked to severity
+P|G1|D2|sup|a|ts|sup:a:ts:V1+V2||V3|Gene deletions found in BMD patients; mostly in-frame
+F|F1|group_comparison|reading frame effect vs phenotype severity|38 classifiable DMD/BMD/intermediate patients|unknown|positive|not_reported|V2|two exceptions; no statistical test
+C|C1|reading-frame rule at 5' end|b0002.s9|noncritical|unresolved|Malhotra et al. findings contrast with this study
+R|entity naming|b0001.s1|The abbreviation DMD names both the gene and the disease.|Placed the DMD surface on both G1 and D1 according to context.

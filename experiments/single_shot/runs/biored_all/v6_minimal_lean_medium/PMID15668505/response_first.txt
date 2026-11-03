@@ -1,0 +1,19 @@
+META|Claude Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|BRCA2|BRCA2|r|||human||
+E|G2|gene|BRCA1|BRCA1|r|||human||
+E|D1|disease|breast cancer|breast cancer;breast and ovarian cancer;breast or ovarian cancer|r|||||
+E|D2|disease|ovarian cancer|ovarian cancer;breast and ovarian cancer;breast or ovarian cancer|r|||||
+X|N372H|b0002.s1|BRCA2 variant, not a separate gene
+X|203G > A|b0002.s2|BRCA2 5'-UTR variant, not a separate gene
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s6|ts|neg|neg|rr
+EV|V3|b0002.s7|ts|res|aff|rr,cmp
+EV|V4|b0001.s1+b0002.s3|ts|co|pre|do
+EV|V5|b0002.s9|ts|int|hyp|ho
+P|G1|D1|sup|a|both|sup:a:bg:V1;neg:-:ts:V2|||Background association; no modification in BRCA1 carriers
+P|G1|D2|sup|a|both|sup:a:bg:V1;sup:a:ts:V3||V5|Background association; borderline 203A association
+P|G2|D1|unc|-|ts||presupposed_only|V4|Only defines the BRCA1 carrier population
+P|G2|D2|unc|-|ts||presupposed_only|V4|Only defines the BRCA1 carrier population
+F|F1|group_comparison|BRCA2 N372H, 203G>A vs breast cancer|BRCA1 mutation carriers|not_significant|null|partial|V2|
+F|F2|association|BRCA2 203A allele vs ovarian cancer|BRCA1 mutation carriers|significant|positive|available|V3|Borderline; N372H showed no effect

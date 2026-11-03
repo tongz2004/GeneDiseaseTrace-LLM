@@ -28,6 +28,12 @@ def sha256(path):
 def paper_path(paper_id):
     if paper_id.startswith("PMID"):  # BioRED abstracts written as JATS by experiments/biored/prepare.py
         return PROJECT / "experiments" / "biored" / "papers" / f"{paper_id}.xml"
+    if paper_id.startswith("EUADR"):  # EU-ADR abstracts written as JATS by experiments/euadr/prepare.py
+        return PROJECT / "experiments" / "euadr" / "papers" / f"{paper_id}.xml"
+    if paper_id.startswith("RENET"):  # RENET2 full-text articles written as JATS by experiments/renet2/prepare.py
+        return PROJECT / "experiments" / "renet2" / "papers" / f"{paper_id}.xml"
+    if paper_id.startswith("BTX"):  # BioTriplex articles (BTXA: abstract only) written by experiments/biotriplex/prepare.py
+        return PROJECT / "experiments" / "biotriplex" / "papers" / f"{paper_id}.xml"
     return PROJECT / ".Input" / "100papers" / f"{paper_id}.xml"
 
 

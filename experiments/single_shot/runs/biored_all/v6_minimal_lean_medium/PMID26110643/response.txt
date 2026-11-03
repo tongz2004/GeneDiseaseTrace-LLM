@@ -1,0 +1,28 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; zebrafish study, no human disease genetics
+E|G1|gene|nrg2a|nrg2a;Nrg2a;neuregulin 2a;Neuregulin 2a|r||non-human||
+E|G2|gene|lgl2|lgl2;Lgl2|r||non-human||
+E|G3|gene|erbb2|ErbB2/3|p|ambiguous_mapping|non-human||
+E|G4|gene|AKT|AKT|p|ambiguous_mapping|non-human||
+E|G5|gene|fras1|fras1|r||non-human||
+E|G6|gene|grip1|grip1|r||non-human||
+E|G7|gene|hmcn1|hmcn1|r||non-human||
+E|G8|gene|msxc|msxc|r||non-human||
+E|G9|gene|col4a4|col4a4|r||non-human||
+E|G10|gene|ahnak|ahnak|r||non-human||
+E|G11|gene|capn12|capn12|r||non-human||
+E|G12|gene|arhgef25b|arhgef25b|r||non-human||
+E|G13|gene|fkbp10b|fkbp10b|r||non-human||
+E|G14|gene|megf6a|megf6a|r||non-human||
+E|D1|disease|skin disease|Skin disorders|p|other|||
+E|P1|phenotype|thickened median fin fold edges|thickened MFF edges|r||||
+X|tumor suppressor|b0002|gene function label, not a disease mention
+X|GBT|b0002|transposon construct, not a gene
+EV|V1|b0002.s6+b0002.s7+b0002.s8|ts|res|aff|rr,mi
+EV|V2|b0002.s10|ts|res|aff|rr,mi
+EV|V3|b0002.s1|bg|co|na|do
+P|G1|D1|nf|-||||V3|skin disorders mentioned generically; no gene link
+F|F1|mechanism|nrg2a mutation; pAKT; ridge cell polarity|nrg2a mutant zebrafish larvae|unknown|negative|not_reported|V1|abstract only
+F|F2|mechanism|ErbB inhibition; Nrg2a signaling|zebrafish embryos|unknown|unknown|not_reported|V1|abstract only
+F|F3|other|lgl2 knockdown; nrg2a mutant phenotype|nrg2a mutant zebrafish|unknown|negative|not_reported|V2|abstract only
+R|phenotype not primary target|b0002.s8|nrg2a-thickened MFF edge link cannot be a P record|recorded as findings F1 and F3 only

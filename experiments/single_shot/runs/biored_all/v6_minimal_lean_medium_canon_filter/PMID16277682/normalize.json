@@ -1,0 +1,10 @@
+[
+  [
+    "canonicalize: main type/scope recomputed",
+    "P G1-D1: c/both -> c/bg"
+  ],
+  [
+    "filter: dropped pair",
+    "P G1-D2 (gene x phenotype)"
+  ]
+]

@@ -1,0 +1,22 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; rat vancomycin nephrotoxicity model
+E|G1|gene|superoxide dismutase|superoxide dismutase;SOD|p|species_unresolved,ambiguous_mapping||||
+E|G2|gene|catalase|catalase;CAT|p|species_unresolved||||
+E|G3|gene|N-acetyl-beta-d-glucosaminidase|N-acetyl-beta-d-glucosaminidase;NAG|p|species_unresolved,ambiguous_mapping||||
+E|D1|disease|vancomycin-induced nephrotoxicity|vancomycin-induced nephrotoxicity;VCM-induced nephrotoxicity;nephrotoxicity|r||||
+E|D2|disease|renal tubular injury|renal tubular injury;tubular damage|p|other|||
+E|D3|disease|kidney damage|kidney damage|r||||
+E|D4|disease|renal impairment|renal impairment|r||||
+E|S1|phenotype|necrosis|necrosis|r||||
+X|MDA|b0002.s5|lipid peroxidation product, not a gene
+X|ROS|b0002.s1|reactive oxygen species, not a gene
+EV|V1|b0002.s5|bg|bgr|aff|ebr
+EV|V2|b0002.s5|ts|res|aff|rr,cmp
+EV|V3|b0002.s6|ts|res|aff|rr,cmp
+P|G3|D2|sup|a|bg|sup:a:bg:V1||V2|NAG stated as marker of tubular injury
+P|G3|D1|unc|-|ts|unc:-:ts:V2+V3|support_basis_unresolved||NAG excretion rises in model; marker only
+P|G1|D1|unc|-|ts|unc:-:ts:V2+V3|support_basis_unresolved||Model alters SOD activity; not gene-to-disease test
+P|G2|D1|unc|-|ts|unc:-:ts:V2|support_basis_unresolved||Model lowers CAT activity; not gene-to-disease test
+F|F1|group_comparison|SOD, CAT activity; NAG excretion|VCM vs control rats|significant|mixed|not_reported|V2|abstract only; rats
+F|F2|group_comparison|SOD, CAT activity; NAG excretion|VCM+erdosteine vs VCM rats|mixed|mixed|not_reported|V3|CAT change not significant
+R|disease-as-exposure|b0002.s5|Disease model alters enzyme activity; card covers gene as exposure only|Marked uncertain, support_basis_unresolved

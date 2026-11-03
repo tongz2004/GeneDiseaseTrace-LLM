@@ -1,0 +1,53 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|BRAF|BRAF|r||human||
+E|G2|gene|TP53|TP53|r||human||
+E|G3|gene|CNBD1|CNBD1|r||human||
+E|G4|gene|RB1|RB1|r||human||
+E|G5|gene|APC|APC|r||human||
+E|G6|gene|BCOR|BCOR|r||human||
+E|G7|gene|CTNNB1|CTNNB1|r||human||
+E|G8|gene|EGFR|EGFR|r||human||
+E|G9|gene|EP300|EP300|r||human||
+E|G10|gene|ERBB3|ERBB3|r||human||
+E|G11|gene|KDM6A|KDM6A|r||human||
+E|G12|gene|KRAS|KRAS|r||human||
+E|G13|gene|MGA|MGA|r||human||
+E|G14|gene|KMT2C|MLL3|r||human||
+E|G15|gene|PTEN|PTEN|r||human||
+E|G16|gene|RASA1|RASA1|r||human||
+E|G17|gene|SMARCB1|SMARCB1|r||human||
+E|G18|gene|SPEN|SPEN|r||human||
+E|G19|gene|TBC1D12|TBC1D12|r||human||
+E|G20|gene|VHL|VHL|r||human||
+E|D1|disease|gastroenteropancreatic neuroendocrine tumors|gastroenteropancreatic neuroendocrine tumors;GEP-NETs;GEP-NET|r||||
+E|D2|disease|small intestinal neuroendocrine tumor|small intestine NETs|r|||D1|
+X|cancer-related gene|b0002.s4|generic label, not a specific disease
+EV|V1|b0002.s4+b0002.s5|ts|res|aff|rr
+EV|V2|b0002.s6|ts|res|aff|rr
+EV|V3|b0002.s7|ts|res|aff|rr
+EV|V4|b0001.s1+b0002.s9|ts|int|aff|rr
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V3+V4|||BRAF V600E/G593S mutations found in GEP-NETs
+P|G1|D2|sup|a|ts|sup:a:ts:V2|||BRAF V600E in small intestinal NET patient
+P|G2|D1|sup|a|ts|sup:a:ts:V1+V2|||TP53 recurrently mutated in GEP-NETs
+P|G3|D1|sup|a|ts|sup:a:ts:V1|||mutated in two GEP-NET cases
+P|G4|D1|sup|a|ts|sup:a:ts:V1|||mutated in two GEP-NET cases
+P|G5|D1|sup|a|ts|sup:a:ts:V1|||somatic mutation in GEP-NETs
+P|G6|D1|sup|a|ts|sup:a:ts:V1|||somatic mutation in GEP-NETs
+P|G7|D1|sup|a|ts|sup:a:ts:V1|||somatic mutation in GEP-NETs
+P|G8|D1|sup|a|ts|sup:a:ts:V1|||somatic mutation in GEP-NETs
+P|G9|D1|sup|a|ts|sup:a:ts:V1|||somatic mutation in GEP-NETs
+P|G10|D1|sup|a|ts|sup:a:ts:V1|||somatic mutation in GEP-NETs
+P|G11|D1|sup|a|ts|sup:a:ts:V1|||somatic mutation in GEP-NETs
+P|G12|D1|sup|a|ts|sup:a:ts:V1|||somatic mutation in GEP-NETs
+P|G13|D1|sup|a|ts|sup:a:ts:V1|||somatic mutation in GEP-NETs
+P|G14|D1|sup|a|ts|sup:a:ts:V1|||somatic mutation in GEP-NETs
+P|G15|D1|sup|a|ts|sup:a:ts:V1|||somatic mutation in GEP-NETs
+P|G16|D1|sup|a|ts|sup:a:ts:V1|||somatic mutation in GEP-NETs
+P|G17|D1|sup|a|ts|sup:a:ts:V1|||somatic mutation in GEP-NETs
+P|G18|D1|sup|a|ts|sup:a:ts:V1|||somatic mutation in GEP-NETs
+P|G19|D1|sup|a|ts|sup:a:ts:V1|||somatic mutation in GEP-NETs
+P|G20|D1|sup|a|ts|sup:a:ts:V1|||somatic mutation in GEP-NETs
+F|F1|descriptive|BRAF mutation frequency|44 GEP-NETs, Sanger cohort|not_applicable|not_applicable|partial|V3|abstract only
+F|F2|association|TP53 mutation; pazopanib response|3 GEP-NET patients|unknown|positive|not_reported|V2|small sample, abstract only
+F|F3|hypothesis|BRAF V600E; pazopanib resistance|GEP-NET patients|unknown|positive|not_reported|V2+V4|single patient basis

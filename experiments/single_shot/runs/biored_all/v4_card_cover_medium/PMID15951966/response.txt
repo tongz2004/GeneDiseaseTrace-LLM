@@ -1,0 +1,15 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|MSH2|MSH2|r||human||
+E|G2|gene|MLH1|MLH1|r||human||
+E|D1|disease|HNPCC|HNPCC|p|undefined_abbreviation|||
+X|Alu elements|b0002|repetitive DNA element, not a gene
+X|MAPH|b0002|assay method, not a gene
+X|MLPA|b0002|assay method, not a gene
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s4+b0002.s6|ts|res|na|do
+EV|V3|b0002.s5|ts|res|na|do
+P|G1|D1|sup|a|bg|sup:a:bg:V1|||Background: exonic deletions contribute to HNPCC mutation spectrum
+P|G2|D1|sup|a|bg|sup:a:bg:V1|||Background: exonic deletions contribute to HNPCC mutation spectrum
+F|F1|descriptive|exonic copy number changes in MSH2/MLH1|50 HNPCC patients without point mutations|not_applicable|not_applicable|partial|V2|Changes not broken down by gene
+F|F2|mechanism|MSH2 exon 3 deletion via Alu recombination|HNPCC patient sample|not_applicable|not_applicable|not_applicable|V3|No disease attribution stated

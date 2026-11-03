@@ -1,0 +1,25 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only.
+E|G1|gene|IL12B|interleukin 12B;IL12B|r||human||
+E|D1|disease|hepatitis C virus infection|hepatitis C virus infection;HCV-infection;HCV infection|r||||
+E|D2|disease|chronic HCV infection|chronically HCV infected|r|||D1|
+E|D3|disease|self-limited HCV infection|self-limited HCV infection|r|||D1|
+E|D4|disease|HCV genotype 1 infection|HCV genotype 1-infected|r|||D1|
+E|T1|clinical_event|spontaneous HCV clearance|spontaneous HCV clearance|r||||
+E|T2|clinical_event|sustained virologic response|sustained virologic response;SVR|r||||
+E|T3|clinical_event|relapse|relapse|r||||
+E|A1|phenotype|high baseline viremia|high baseline viremia|r||||
+X|Interleukin-12|b0002|Cytokine complex, not a single gene
+X|IL-12|b0002|Cytokine complex, not a single gene
+EV|V1|b0002.s2|bg|bgr|na|ebr
+EV|V2|b0002.s3+b0002.s5|ts|neg|neg|cmp
+EV|V3|b0002.s6|ts|res|aff|rr,cmp
+EV|V4|b0002.s8|ts|neg|neg|rr
+P|G1|D1|sup|a|ts|sup:a:ts:V3;neg:-:ts:V2|||Treatment response association; cohort genotype comparison negative
+P|G1|D2|neg|-|ts|neg:-:ts:V2|||tested_relation_type=a; cohort genotype frequencies did not differ
+P|G1|D3|neg|-|ts|neg:-:ts:V4|||tested_relation_type=a; no association demonstrated
+P|G1|D4|sup|a|ts|sup:a:ts:V3|||High baseline viremia; antiviral combination therapy response
+P|G1|T1|neg|-|ts|neg:-:ts:V2|||tested_relation_type=a; clearance cohort genotype frequencies did not differ
+P|G1|T2|sup|a|ts|sup:a:ts:V3|||Genotype 1, high viremia; C-allele carriers responded better
+P|G1|T3|sup|a|ts|sup:a:ts:V3|||Genotype 1, high viremia; C-allele carriers relapsed less
+F|F1|group_comparison|IL12B promoter and 3'-UTR genotype frequencies|Clearance, chronic infection, healthy controls|not_significant|null|not_reported|V2|Omnibus cohort comparison; no pairwise statistics supplied

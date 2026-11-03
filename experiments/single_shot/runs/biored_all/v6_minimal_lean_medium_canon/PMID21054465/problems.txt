@@ -1,0 +1,1 @@
+line 1: unknown record type "The previous extraction was blocked by a safety classifier, so I won't resend it or any reworded version, and the rest of the output (including the second finding line) won't be completed. You could run the extraction again in a new request, or let me know if you'd like something else for this paper."

@@ -1,0 +1,29 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text, tables or figures
+E|G1|gene|DACH1|DACH1|r||human||
+E|G2|gene|FGF2|fibroblast growth factor 2;FGF2;bFGF|r||human||
+E|G3|gene|CD133|CD133|r||human||
+E|G4|gene|Nestin|Nestin|r||human||
+E|D1|disease|glioblastoma multiforme|glioblastoma multiformes|r||||
+E|D2|disease|glioma|glioma|r||||
+E|D3|disease|tumor|tumor;tumors|p|other|||
+X|U87TR-Da|b0002.s4|cell line name, not a gene
+X|chromosome 13q21|b0002.s2|locus, not a single gene
+EV|V1|b0001.s1+b0002.s2|ts|res|aff|rr
+EV|V2|b0002.s3+b0002.s5+b0002.s7|ts|res|aff|rr,mi
+EV|V3|b0002.s10|ts|int|aff|rr
+EV|V4|b0002.s9|ts|res|aff|rr,mi
+EV|V5|b0002.s9|ts|hyp|hyp|ho
+EV|V6|b0002.s8|ts|res|na|rr
+EV|V7|b0002.s6|ts|co|na|do
+P|G1|D1|sup|a|ts|sup:a:ts:V1||V6|Homozygous deletion at DACH1 locus in GBM
+P|G1|D2|sup|a|ts|sup:a:ts:V2+V3||V5|DACH1 expression reduces glioma growth and tumorigenicity
+P|G1|D3|sup|a|ts|sup:a:ts:V2+V3|||DACH1 reduces xenograft tumor growth; tumor suppressor
+P|G2|D2|sup|a|ts|sup:a:ts:V4+V3||V5+V6|bFGF rescues tumorigenicity of glioma cells
+P|G3|D2|nf|-||||V7|Stem marker expression only
+P|G4|D2|nf|-||||V7|Stem marker expression only
+F|F1|descriptive|homozygous deletion at 13q21 (DACH1)|glioblastoma multiforme samples|unknown|not_applicable|not_reported|V1|abstract only
+F|F2|group_comparison|DACH1 expression vs proliferation, xenograft growth|U87TR-Da glioma cells, mice|unknown|negative|not_reported|V2|abstract only
+F|F3|mechanism|DACH1 represses FGF2 transcription|glioma cells, serum-free medium|unknown|negative|not_reported|V6|
+F|F4|group_comparison|exogenous bFGF vs spheroid formation, tumorigenicity|U87-DACH1-high cells|unknown|positive|not_reported|V4|
+R|relation type for xenograft intervention|b0002.s5|cell xenograft growth: disease-level causality unclear|assigned association, not causal

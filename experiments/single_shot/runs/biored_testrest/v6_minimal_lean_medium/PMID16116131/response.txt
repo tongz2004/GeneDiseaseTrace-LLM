@@ -1,0 +1,6 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no gene entities mentioned
+E|D1|disease|Parkinson disease|Parkinson disease|r||||
+E|D2|disease|Drug-induced dyskinesia|levodopa-induced dyskinesia;drug-induced dyskinesias;therapy-induced dyskinesias;dyskinesias;dyskinesia|r||||
+X|SMA|b0002|abbreviation for supplementary motor area, not spinal muscular atrophy
+R|no genes|whole paper|No gene entities, so there are no gene–disease pairs|Listed diseases only; no P records

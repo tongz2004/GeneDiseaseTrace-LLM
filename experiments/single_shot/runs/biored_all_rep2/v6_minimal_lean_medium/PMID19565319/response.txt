@@ -1,0 +1,21 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|ADORA2A|ADORA2A;Adenosine A(2A) receptor gene;adenosine A(2A) receptor gene;adenosine A(2A) receptor|r||human||
+E|D1|disease|autism spectrum disorder|autism spectrum disorder;Autism spectrum disorders;ASDs;ASD|r||||
+E|D2|disease|anxiety|anxiety|r||||
+E|D3|disease|panic disorder|panic disorder|r||||
+E|D4|disease|22q11.2 deletion syndrome|22q11.2 deletion syndrome|r||||
+E|D5|phenotype|autistic symptoms|autistic symptoms|r||||
+X|22q11.23|b0002.s2|chromosomal locus, not a gene
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s5|ts|res|aff|rr,cmp
+EV|V3|b0002.s6|ts|res|aff|rr
+EV|V4|b0001.s1+b0002.s7|ts|int|hyp|unc
+EV|V5|b0002.s4|bg|co|na|do
+P|G1|D1|sup|a|ts|sup:a:ts:V2|hedged_claim|V4|nominal case-control association; symptom variability
+P|G1|D2|sup|a|ts|sup:a:ts:V3||V4|anxiety association replicated within ASD
+P|G1|D3|sup|a|bg|sup:a:bg:V1|||background association with panic disorder
+P|G1|D4|nf|-|||||V5|only chromosomal proximity, no gene evidence
+F|F1|association|rs2236624-CC; ASD status|98 ASD vs 234 controls|significant|unknown|unread|V2|nominal only; small sample
+F|F2|association|rs3761422, rs5751876, rs35320474; ASD symptoms|98 ASD individuals|significant|unknown|unread|V2|abstract only
+F|F3|association|ADORA2A variants; anxiety|ASD individuals|significant|unknown|unread|V3|abstract only

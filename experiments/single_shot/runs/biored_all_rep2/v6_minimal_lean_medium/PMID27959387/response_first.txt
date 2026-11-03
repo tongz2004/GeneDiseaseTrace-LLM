@@ -1,0 +1,56 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text, tables or figures
+E|G1|gene|POU5F1|Oct4|r||human||
+E|G2|gene|NANOG|Nanog|r||human||
+E|G3|gene|CEACAM6|Ceacam6|r||human|G13|
+E|G4|gene|MT1X|MT1X|r||human|G15|
+E|G5|gene|STEAP4|STEAP4|r||human||
+E|G6|gene|SERPINA3|SERPINA3|r||human||
+E|G7|gene|SAMD9|SAMD9|r||human||
+E|G8|gene|GDF15|GDF15|r||human||
+E|G9|gene|KRT15|KRT15|r||human||
+E|G10|gene|ITGB6|ITGB6|r||human||
+E|G11|gene|TP63|TP63|r||human||
+E|G12|gene|PGR|PGR|r||human||
+E|G13|gene|CEACAM gene family|CEACAM|p|other|human||
+E|G14|gene|HLA gene family|HLA|p|other|human||
+E|G15|gene|metallothionein gene family|metallothionein|p|other|human||
+E|D1|disease|breast cancer|breast cancer|r||||
+E|D2|disease|malignancy|malignancy|p|ambiguous_mapping|||
+X|interferon related|b0002.s8|gene group label, no specific gene identity
+X|epithelial mesenchymal transition|b0002.s3|biological process, not a disease
+X|oncogenesis|b0002.s10|process term, no gene linked to it
+EV|V1|b0002.s6|ts|res|aff|rr,do
+EV|V2|b0002.s6|bg|bgr|aff|eda
+EV|V3|b0002.s8|ts|res|aff|rr,do
+EV|V4|b0002.s8|bg|bgr|aff|eda
+EV|V5|b0002.s5|ts|res|aff|rr,do
+EV|V6|b0002.s7|ts|res|aff|rr,do
+EV|V7|b0002.s13|ts|int|hyp|ho
+P|G3|D2|sup|a|bg|sup:a:bg:V2||V1|described as a malignancy marker
+P|G5|D2|sup|a|bg|sup:a:bg:V4||V3|listed as malignancy related gene
+P|G6|D2|sup|a|bg|sup:a:bg:V4||V3|listed as malignancy related gene
+P|G7|D2|sup|a|bg|sup:a:bg:V4||V3|listed as malignancy related gene
+P|G8|D2|sup|a|bg|sup:a:bg:V4||V3|listed as malignancy related gene
+P|G9|D2|sup|a|bg|sup:a:bg:V4||V3|listed as malignancy related gene
+P|G10|D2|sup|a|bg|sup:a:bg:V4||V3|listed as malignancy related gene
+P|G11|D2|sup|a|bg|sup:a:bg:V4||V3|listed as malignancy related gene
+P|G12|D2|sup|a|bg|sup:a:bg:V4||V3|listed as malignancy related gene
+P|G13|D2|sup|a|bg|sup:a:bg:V4||V3|family listed as malignancy related
+P|G14|D2|sup|a|bg|sup:a:bg:V4||V3|family listed as malignancy related
+P|G1|D1|unc|a|ts|unc:a:ts:V1+V5+V7|scope,hedged_claim||ethanol-induced in cell line, progression hedged
+P|G2|D1|unc|a|ts|unc:a:ts:V1+V5+V7|scope,hedged_claim||ethanol-induced in cell line, progression hedged
+P|G3|D1|unc|a|ts|unc:a:ts:V1+V7|scope,hedged_claim||ethanol-induced in cell line, progression hedged
+P|G4|D1|unc|a|ts|unc:a:ts:V6+V7|scope,hedged_claim||ethanol-induced expression only
+P|G5|D1|unc|a|ts|unc:a:ts:V3+V7|scope,hedged_claim||ethanol-induced expression only
+P|G6|D1|unc|a|ts|unc:a:ts:V3+V7|scope,hedged_claim||ethanol-induced expression only
+P|G7|D1|unc|a|ts|unc:a:ts:V3+V7|scope,hedged_claim||ethanol-induced expression only
+P|G8|D1|unc|a|ts|unc:a:ts:V3+V7|scope,hedged_claim||ethanol-induced expression only
+P|G9|D1|unc|a|ts|unc:a:ts:V3+V7|scope,hedged_claim||ethanol-induced expression only
+P|G10|D1|unc|a|ts|unc:a:ts:V3+V7|scope,hedged_claim||ethanol-induced expression only
+P|G11|D1|unc|a|ts|unc:a:ts:V3+V7|scope,hedged_claim||ethanol-induced expression only
+P|G12|D1|unc|a|ts|unc:a:ts:V3+V7|scope,hedged_claim||ethanol-induced expression only
+F|F1|descriptive|ethanol dose; Oct4, Nanog protein|MCF-7 cells, 1-week exposure|unknown|mixed|unread|V5|abstract only; up at 1-5 mM, down 25 mM
+F|F2|descriptive|ethanol; Oct4, Nanog, Ceacam6 protein|MCF-7 cells, 4-week 25 mM|unknown|positive|unread|V1|abstract only
+F|F3|descriptive|ethanol; metallothionein genes, MT1X expression|MCF-7 cells, 1-week exposure|unknown|positive|unread|V6|microarray; validation partial
+F|F4|descriptive|ethanol; malignancy related gene expression|MCF-7 cells, long-term exposure|unknown|positive|unread|V3|only some RT-PCR validated

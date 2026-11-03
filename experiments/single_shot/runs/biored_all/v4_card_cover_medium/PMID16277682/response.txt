@@ -1,0 +1,16 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|p62/SQSTM1|p62/sequestosome 1;p62/SQSTM1;p62/Sequestosome 1|r||human||
+E|D1|disease|Paget's disease of bone|Paget's disease of bone;PDB|r||||
+E|D2|disease|polyostotic Paget's disease of bone|polyostotic Paget's disease of bone;polyostotic PDB;polyostotic form of PDB|r|||D1|
+E|D3|disease|familial Paget's disease of bone|familial form of PDB|r|||D1|
+X|M404V|b0002|variant ID
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s2|ts|co|na|do
+EV|V3|b0002.s4+b0002.s6+b0002.s8|ts|res|aff|cs,rr
+EV|V4|b0002.s1+b0002.s3|both|bgr|aff|ebr
+P|G1|D1|sup|c|bg|sup:c:bg:V1|||Mutations explicitly stated to account for PDB
+P|G1|D2|sup|a|ts|sup:a:ts:V3|||M404V co-segregates with polyostotic PDB in family
+P|G1|D3|sup|c|bg|sup:c:bg:V4|||Mutations stated to account for familial PDB forms
+F|F1|association|M404V carrier status vs polyostotic PDB|Italian family, 22 genotyped members|unknown|positive|not_reported|V3|no statistical test, single family
+F|F2|descriptive|M404V carriers among unaffected relatives|six asymptomatic carriers|not_applicable|not_applicable|not_applicable|V3|alkaline phosphatase normal; follow-up pending

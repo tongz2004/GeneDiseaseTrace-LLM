@@ -1,0 +1,30 @@
+META|Claude Opus 5.5|seen: no
+SCOPE|Title and abstract only; full text unavailable
+E|G1|gene|REL|c-REL|r||human||
+E|G2|gene|BCL2|BCL-2|r||human||
+E|G3|gene|MALT1|MALT1|r||human||
+E|G4|gene|CDKN2A|CDKN2A|r||human||
+E|G5|gene|CDKN2B|CDKN2B|r||human||
+E|G6|gene|NSG-x|NSG-x|p|other|human||
+E|D1|disease|primary cutaneous large B-cell lymphoma|primary cutaneous large B-cell lymphoma;PCLBCL|r||||
+E|D2|disease|primary cutaneous follicle center lymphoma|primary cutaneous follicle center lymphoma;PCFCL|r|||D1|
+E|D3|disease|primary cutaneous large B-cell lymphoma, leg type|PCLBCL, leg type|r|||D1|
+X|2p16.1|b0002.s3|chromosomal band, not a gene
+X|9p21.3|b0002.s5|chromosomal band containing CDKN2A, CDKN2B and NSG-x
+EV|V1|b0002.s3+b0002.s4|ts|res|aff|rr
+EV|V2|b0002.s5|ts|res|aff|rr
+EV|V3|b0002.s5+b0002.s6|ts|res|aff|rr,cmp
+EV|V4|b0002.s7+b0002.s8|ts|res|aff|rr,cmp
+EV|V5|b0002.s10|ts|int|hyp|ho
+P|G1|D2|sup|a|ts|sup:a:ts:V1|||c-REL amplification in PCFCL 2p16.1 gains
+P|G2|D3|sup|a|ts|sup:a:ts:V2|||BCL-2 amplified, FISH-confirmed
+P|G3|D3|sup|a|ts|sup:a:ts:V2|||MALT1 amplified, FISH-confirmed
+P|G4|D3|sup|a|ts|sup:a:ts:V3+V4;unc:a:ts:V5|||Deletion/methylation; linked to lymphoma death
+P|G5|D3|sup|a|ts|sup:a:ts:V3|||Within recurrently deleted 9p21.3 region
+P|G6|D3|sup|a|ts|sup:a:ts:V3|||Within recurrently deleted 9p21.3 region
+P|G4|D2|nf|-||||V3+V4|Absence in PCFCL is comparison only
+F|F1|descriptive|2p16.1 amplification; c-REL|PCFCL patients, n=19|not_applicable|positive|partial|V1|abstract only
+F|F2|descriptive|18q21.31-q21.33 amplification; BCL-2, MALT1|PCLBCL leg type, n=12|not_applicable|positive|partial|V2|abstract only
+F|F3|group_comparison|homozygous 9p21.3 deletion; CDKN2A|leg type vs PCFCL|unknown|positive|partial|V3|no test reported
+F|F4|group_comparison|CDKN2A promoter methylation|leg type vs PCFCL|unknown|positive|partial|V4|only two methylated cases
+F|F5|association|CDKN2A inactivation; lymphoma death|PCLBCL leg type, n=7|unknown|positive|partial|V4+V5|small n, no survival statistics

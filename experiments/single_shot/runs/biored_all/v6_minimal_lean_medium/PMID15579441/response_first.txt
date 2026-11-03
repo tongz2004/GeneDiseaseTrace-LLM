@@ -1,0 +1,22 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|vascular endothelial growth factor|vascular endothelial growth factor|r||non-human||
+E|G2|gene|proliferating cell nuclear antigen|proliferating cell nuclear antigen|r||non-human||
+E|G3|gene|CD68 (ED-1)|ED-1|p|ambiguous_mapping|non-human||
+E|D1|disease|renal disease|renal disease|r|||||
+E|D2|disease|nephrotic syndrome|nephrotic syndrome|r|||||
+E|D3|disease|proteinuria|proteinuria|r|||||
+E|D4|disease|glomerular hypertension|glomerular hypertension|r|||||
+E|D5|disease|tubulointerstitial injury|tubulointerstitial injury|r|||||
+E|D6|disease|glomerular diseases|glomerular diseases|r|||||
+E|D7|phenotype|hypoxia|hypoxia|r|||||
+X|remnant kidney model|b0002.s4|experimental renal disease model; mapped to D1
+X|hypoxia-responsive transgene|b0002.s5|reporter construct, not an endogenous gene
+EV|V1|b0002.s4+b0002.s5|ts|res|aff|rr,cmp
+EV|V2|b0002.s7|ts|co|aff|do
+P|G1|D2|sup|a|ts|sup:a:ts:V1||||VEGF mildly decreased in PAN nephrosis model
+P|G1|D1|sup|a|ts|sup:a:ts:V1||||VEGF mildly decreased in remnant kidney model
+P|G2|D1|unc|a|ts|unc:a:ts:V2|support_basis_unresolved|||PCNA+ cells localized only in hypoxic areas
+P|G3|D1|unc|a|ts|unc:a:ts:V2|identity,support_basis_unresolved|||ED-1+ cells localized only in hypoxic areas
+F|F1|group_comparison|VEGF expression over time|PAN and remnant kidney rats|unknown|negative|unread|V1|abstract only; magnitude not given
+F|F2|descriptive|PCNA, ED-1, TUNEL cell localization|remnant kidney model rats|not_applicable|not_applicable|not_reported|V2|localization only

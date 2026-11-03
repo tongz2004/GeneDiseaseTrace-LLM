@@ -1,0 +1,27 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only; no full text or attachments.
+E|G1|gene|CFI|Complement factor I;CFI|r||human||
+E|D1|disease|uveitis|uveitis|r|||| 
+E|D2|disease|Vogt-Koyanagi-Harada syndrome|Vogt-Koyanagi-Harada syndrome;Vogt-Koyanagi-Harada (VKH) syndrome;VKH syndrome|r||||
+E|D3|disease|recurrent VKH syndrome|recurrent VKH syndrome|r|||D2|
+E|D4|disease|complicated cataract|complicated cataract|r||||
+E|D5|disease|VKH syndrome with complicated cataract|VKH syndrome with complicated cataract|r|||D2|
+E|H1|phenotype|steroid-sensitive status|steroid-sensitive status|r||||
+X|CFI-rs7356506|b0001|variant identifier
+X|CFI-7356506|b0002|variant identifier; suspected typo
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s8+b0002.s12|ts|neg|neg|cmp
+EV|V3|b0002.s9|ts|res|aff|cmp
+EV|V4|b0002.s10|ts|res|aff|cmp
+EV|V5|b0002.s11|ts|neg|neg|cmp
+EV|V6|b0001.s1|ts|res|aff|unc
+P|G1|D1|sup|a|bg|sup:a:bg:V1||||Explicit background attribution.
+P|G1|D2|neg|-|ts|neg:-:ts:V2;neg:-:ts:V5|||Tested association; overall and steroid-sensitive analyses nonsignificant.
+P|G1|D3|sup|a|ts|sup:a:ts:V3||||Recurrent subgroup compared with healthy controls.
+P|G1|D5|sup|a|ts|sup:a:ts:V4||||Combined disease subgroup compared with healthy controls.
+P|G1|D4|nf|-||||V4|Combined subgroup comparison does not isolate cataract.
+F|F1|association|CFI-rs7356506 and VKH syndrome|100 patients; 300 healthy controls|not_significant|null|not_reported|V2|
+F|F2|association|G allele; GG homozygosity; recurrent VKH syndrome|Recurrent VKH patients versus healthy controls|significant|negative|available|V3|Does not directly test recurrence among patients.
+F|F3|association|G allele; GG homozygosity; VKH with cataract|VKH with cataract versus healthy controls|significant|negative|available|V4|Does not isolate cataract susceptibility.
+F|F4|association|CFI-rs7356506 and VKH syndrome|Steroid-sensitive status strata|not_significant|null|not_reported|V5|
+C|C1|Title versus overall association|b0001.s1+b0002.s8+b0002.s9+b0002.s10|noncritical|resolved|Association confined to reported disease subgroups.

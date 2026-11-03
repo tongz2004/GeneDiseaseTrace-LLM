@@ -1,0 +1,26 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|11b-HSD1|11b-HSD1;11b-hydroxysteroid dehydrogenase type 1|r||non-human||
+E|D1|disease|nonalcoholic fatty liver disease|Nonalcoholic fatty liver disease;NAFLD;Nonalcoholic Fatty Liver Disease|r||||
+E|D2|disease|steatosis|steatosis;hepatosteatosis|p|other|||
+E|D3|disease|nonalcoholic steatohepatitis|nonalcoholic steatohepatitis;NASH|r||||
+E|D4|disease|cirrhosis|cirrhosis|r||||
+E|D5|disease|metabolic syndrome|metabolic syndrome;Metabolic Syndrome|r||||
+E|D6|disease|metabolic disease|metabolic disease|r||||
+E|S1|phenotype|hepatic inflammation|hepatic inflammation|r||||
+X|American Lifestyle Induced Obesity Syndrome|b0002|diet name, not a disease
+EV|V1|b0002.s4|bg|hyp|hyp|ho
+EV|V2|b0001.s1+b0002.s7+b0002.s10|ts|neg|neg|mi,cmp
+EV|V3|b0001.s1|ts|neg|neg|mi
+EV|V4|b0002.s6+b0002.s10|ts|neg|neg|mi,cmp
+EV|V5|b0002.s8+b0002.s9+b0002.s11|ts|int|hyp|mi,rr
+EV|V6|b0002.s7+b0002.s10|ts|neg|neg|mi,cmp
+P|G1|D1|neg|-|ts|neg:-:ts:V2|||KO not protected from NAFLD on ALIOS diet
+P|G1|D5|neg|-|ts|neg:-:ts:V3|||KO not protected from metabolic syndrome
+P|G1|D6|neg|-|ts|neg:-:ts:V4|||KO and LKO not protected from metabolic disease
+P|G1|D2|neg|-|ts|neg:-:ts:V6|||Steatosis similar between KO, LKO, controls
+P|G1|D3|unc|-|ts|unc:-:ts:V5|hedged_claim||Immune foci only suggestive of NASH transition
+F|F1|group_comparison|steatosis, hepatic triglyceride, NAS score|11b-HSD1KO, LKO vs control mice|not_significant|null|not_reported|V6|abstract only
+F|F2|group_comparison|hepatic immune foci|11b-HSD1KO vs LKO and control|significant|positive|not_reported|V5|abstract only
+F|F3|group_comparison|immune and inflammatory marker expression|11b-HSD1KO mice livers|unknown|positive|not_reported|V5|significance not stated
+F|F4|group_comparison|body weight, glucose homeostasis|11b-HSD1KO, LKO vs control mice|not_significant|null|not_reported|V4|abstract only

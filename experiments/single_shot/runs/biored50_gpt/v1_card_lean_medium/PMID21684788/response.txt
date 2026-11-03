@@ -1,0 +1,22 @@
+META|GPT-6|seen: no
+SCOPE|Provided abstract and title only; no full text or attachments.
+E|G1|gene|ALDH3A2|ALDH3A2|r||human||
+E|G2|gene|ALDH3A1|ALDH3A1|r||human||
+E|D1|disease|Sjogren-Larsson syndrome|Sjogren-Larsson syndrome;SLS|r||||
+E|D2|disease|corneal disease|corneal disease|r||||
+E|D3|disease|inborn errors of metabolism|inborn errors of metabolism|r||||
+E|S1|symptom|ichthyosis|ichthyosis|r||||
+E|S2|symptom|mental retardation|mental retardation|r||||
+E|S3|symptom|spasticity|spasticity|r||||
+E|S4|symptom|deterioration in oral motor function|deterioration in oral motor function|r||||
+E|S5|symptom|loss of ambulation|loss of ambulation|r||||
+EV|V1|b0002.s1+b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s3+b0002.s5+b0002.s7|ts|res|aff|rr,eda
+EV|V3|b0002.s5+b0002.s6|ts|co|na|do
+EV|V4|b0002.s8|ts|hyp|hyp|ho
+EV|V5|b0002.s9|ts|int|q|none
+P|G1|D1|sup|c|ts|sup:a:bg:V1;sup:c:ts:V2|||Disease explicitly attributed to ALDH3A2 locus deletions.
+P|G2|D1|nf|-||||V3|Contiguous deletion observation lacks individual gene attribution.
+P|G2|D2|nf|-||||V3|Disease absence in one carrier lacks comparative testing.
+F|F1|hypothesis|Large deletions among SLS mutant alleles|SLS|not_applicable|unknown|not_reported|V4|Suggested frequency up to 5%.
+F|F2|other|Compound heterozygosity for large deletions|SLS and other inborn errors of metabolism|not_applicable|not_applicable|not_applicable|V5|Diagnostic recommendation only.

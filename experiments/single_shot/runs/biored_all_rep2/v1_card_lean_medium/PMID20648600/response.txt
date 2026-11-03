@@ -1,0 +1,19 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|D1|disease|hepatitis B|hepatitis B;hepatitis B virus;HBV|r||||
+E|D2|disease|HIV infection|HIV|p|other|||
+E|G1|gene|HBV polymerase|polymerase|p|species_unresolved,other|non-human||
+E|G2|gene|HBV envelope gene|envelope gene|p|species_unresolved,other|non-human||
+E|S1|phenotype|viremia|viremia|r||||
+E|S2|phenotype|vaccine escape phenotype|vaccine escape phenotype|r||||
+X|HBsAg|b0002|antigen marker, not a gene endpoint
+X|basal core promoter|b0002|viral genomic region, not a single gene
+X|precore|b0002|viral genomic region, not a single gene
+EV|V1|b0002.s10+b0002.s11+b0002.s12|ts|co|na|do
+EV|V2|b0002.s15|ts|int|hyp|ho
+P|G1|D1|nf|-||||V1+V2|resistance mutations detected descriptively; no disease attribution
+P|G2|D1|nf|-||||V1+V2|envelope changes descriptive; vaccine escape hedged
+F|F1|descriptive|LAM resistance substitutions rtL180M+rtM204V|viremic co-infected patients (n=20)|not_applicable|not_applicable|partial|V1|abstract only; small sample
+F|F2|association|prolonged LAM use vs HBV genome changes|HIV-HBV co-infected patients|unknown|positive|not_reported|V2|hedged; no statistics given
+F|F3|descriptive|TDF resistance substitutions|TDF-exposed co-infected patients|not_applicable|null|not_reported|V1|abstract only
+R|non-human genes|b0002.s12|Genes are viral (HBV), not animal; the species rule targets animal models|Marked non-human; kept as gene nodes, all pairs not_found

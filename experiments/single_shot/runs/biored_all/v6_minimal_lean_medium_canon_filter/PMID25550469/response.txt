@@ -1,0 +1,24 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|androgen receptor|androgen receptor;AR|r||non-human||
+E|G2|gene|apolipoprotein E|apolipoprotein E;apoE|r||non-human||
+E|D1|disease|atherosclerosis|atherosclerosis;atherogenesis|r||||
+E|D2|disease|obesity|obesity|r||||
+E|D3|disease|dyslipidemia|dyslipidemia|r||||
+E|D4|phenotype|reduced insulin sensitivity|insulin sensitivity|r||||
+E|D5|phenotype|hepatic lipid accumulation|hepatocyte lipid accumulation|r||||
+X|ARKO|b0002.s2|AR-knockout mouse model label, not a separate gene
+EV|V1|b0002.s3|ts|res|aff|rr,cmp
+EV|V2|b0002.s4|ts|res|aff|rr,cmp
+EV|V3|b0002.s5|ts|int|aff|rr,cmp
+EV|V4|b0002.s6|ts|res|aff|mi
+EV|V5|b0001.s1+b0002.s7|ts|int|aff|rr
+EV|V6|b0002.s2|bg|co|pre|do
+P|G1|D1|sup|c|ts|sup:c:ts:V1+V3+V4+V5|||AR knockout increases atherosclerosis; DHT reduces it
+P|G1|D2|sup|c|ts|sup:c:ts:V2+V3+V4+V5|||ARKO increased body weight and fat
+P|G1|D3|sup|c|ts|sup:c:ts:V2+V3+V4+V5|||ARKO atherogenic dyslipidemia; DHT lowers cholesterol
+P|G2|D1|unc|-|bg|unc:c:bg:V6|presupposed_only||apoE deficiency described only as atherosclerosis-prone background
+F|F1|group_comparison|AR knockout; aortic atherosclerosis|female apoE-deficient mice, high-fat diet|unknown|positive|partial|V1|abstract only; not on chow diet
+F|F2|group_comparison|AR knockout; body weight, fat, cholesterol|female apoE-deficient mice, high-fat diet|unknown|positive|partial|V2|abstract only
+F|F3|group_comparison|AR knockout effects after ovariectomy|prepubertally ovariectomized females|unknown|null|not_reported|V3|
+F|F4|mechanism|DHT; atherosclerosis, fat mass, cholesterol|ovariectomized female mice|unknown|negative|partial|V4|agonist pharmacology, not genetic

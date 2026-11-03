@@ -1,0 +1,14 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|DRD2|DRD2;D2 receptor|r||human||
+E|D1|disease|extrapyramidal syndrome|extrapyramidal syndrome;Extrapyramidal syndrome;EPS|r||||
+E|D2|disease|schizophrenia|schizophrenic;schizophrenia|r||||
+X|TaqIA|b0002.s4|DRD2 polymorphism name, not a gene
+X|Ser311Cys|b0002.s4|DRD2 variant, not a gene
+EV|V1|b0002.s7|ts|neg|neg|rr,cmp
+EV|V2|b0002.s8|ts|int|neg|rr
+EV|V3|b0002.s9|both|int|neg|rr,ebr
+EV|V4|b0002.s2|bg|bgr|aff|ebr
+P|G1|D1|neg|-|both|neg:-:ts:V1+V2;neg:-:both:V3|||No allele or haplotype difference between EPS groups
+P|G1|D2|unc|-|bg|unc:-:bg:V4|scope||Background links DRD2 to treatment response only
+F|F1|group_comparison|DRD2 SNP alleles and haplotypes vs EPS|chlorpromazine-treated Chinese schizophrenic inpatients|not_significant|null|unread|V1|abstract only; 146 patients

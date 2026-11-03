@@ -1,0 +1,19 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|LYRM7|LYRM7;MZM1L|r|||human||
+E|G2|gene|MZM1|MZM1;mzm1|r||non-human||
+E|G3|gene|Rieske Fe-S protein|Rieske Fe-S protein|p|ambiguous_mapping|non-human||
+E|D1|disease|mitochondrial encephalopathy|encephalopathy;mitochondrial encephalopathy|r|||||
+E|D2|disease|lactic acidosis|lactic acidosis|r|||||
+E|D3|disease|mitochondrial complex III deficiency|cIII deficiency;defective complex III;cIII-defective|r|||||
+EV|V1|b0002.s3|ts|res|aff|rr,cs,eda
+EV|V2|b0002.s5|ts|int|aff|eda
+EV|V3|b0001.s1|ts|res|aff|rr,eda
+EV|V4|b0002.s4|ts|res|aff|mi
+P|G1|D1|sup|c|ts|sup:c:ts:V1+V2+V3|||Segregating homozygous mutation; declared disease gene
+P|G1|D3|sup|c|ts|sup:c:ts:V1+V2+V3+V4|||Patient cIII deficiency; yeast model confirms
+P|G1|D2|sup|a|ts|sup:a:ts:V1+V3|||Lactic acidosis in mutation carrier
+P|G2|D3|sup|c|ts|sup:c:ts:V4|||Yeast mutant allele reduces complex III activity
+F|F1|association|LYRM7 c.73G>A; encephalopathy, cIII deficiency|single infant patient, family|not_applicable|positive|not_applicable|V1+V3|single family
+F|F2|mechanism|mzm1(D25N); complex III activity|mzm1D yeast strain|unknown|negative|unread|V4|yeast model
+F|F3|association|LYRM7 c.73G>A; lactic acidosis|single infant patient, family|not_applicable|positive|not_applicable|V1+V3|single family

@@ -1,0 +1,109 @@
+META|GPT-6|seen: yes, supplied previous analysis
+SCOPE|Supplied paper text and captions; attachments unread.
+E|G1|gene|D2HGDH|D2HGDH;D-2-hydroxyglutarate (D-2HG) dehydrogenase;D-2-hydroxyglutarate dehydrogenase|r||human||
+E|G2|gene|dhgd-1|dhgd-1;DHGD-1;Dhgd-1;F54D5.12;D2HGDH;D-2-hydroxyglutarate dehydrogenase;D-2HG dehydrogenase|r||non-human||
+E|G3|gene|hphd-1|hphd-1;HPHD-1;hpdh-1|p|suspected_typo|non-human||
+E|G4|gene|mitochondrial citrate transporter|mitochondrial citrate transporter|r||human||
+E|G5|gene|IDH1|IDH1|r||||
+E|G6|gene|IDH2|IDH2|r||||
+E|G7|gene|ADHFE1|ADHFE1;hydroxyacid-oxoacid transhydrogenase|r||human||
+E|G8|gene|PHGDH|PHGDH;phosphoglycerate dehydrogenase|r||||
+E|G9|gene|aass-1|aass-1;L-lysine-alpha-ketoglutarate reductase|r||non-human||
+E|G10|gene|mccc-1|mccc-1|r||non-human||
+E|G11|gene|acdh-1|acdh-1|r||non-human||
+E|G12|gene|IMMT-1|IMMT-1|r||non-human||
+E|G13|gene|emb-27|emb-27|r||non-human||
+E|G14|gene|nhr-68|nhr-68|r||non-human||
+E|G15|gene|myo-3|Pmyo-3|r||non-human||
+E|G16|gene|GFP|GFP|p|species_unresolved|||
+E|G17|gene|lacZ|lacZ|p|species_unresolved|||
+E|G18|gene|methionine synthase|methionine synthase;MS;B12-dependent methionine synthase|r||non-human||
+E|G19|gene|methylmalonyl-coA mutase|methylmalonyl-coA mutase|r||non-human||
+E|D1|disease|D-2-hydroxyglutaric aciduria|L- and D-2-hydroxyglutaric aciduria|r|||D3|
+E|D2|disease|L-2-hydroxyglutaric aciduria|L- and D-2-hydroxyglutaric aciduria|r|||D3|
+E|D3|disease|inborn errors of human metabolism|inborn errors of human metabolism|r||||
+E|D4|disease|2HG-associated diseases|2HG-associated diseases|r||||
+E|D5|disease|propionic acidemia|propionic acidemia|r||||
+E|D6|disease|diabetes|diabetic|r||||
+E|A1|symptom|delayed development|delayed development|r||||
+E|A2|symptom|seizures|seizures|r||||
+E|A3|symptom|ataxia|ataxia|r||||
+E|A4|symptom|neurological and muscle dysfunction|neurological and muscle dysfunction|r||||
+E|A5|phenotype|early death|early death|r||||
+E|A6|phenotype|embryonic lethality|embryonic lethality|r||||
+E|A7|phenotype|mitochondrial defects|mitochondrial defects|r||||
+E|A8|phenotype|hypoxia|hypoxia|r||||
+E|A9|phenotype|oncogenic transformation|oncogenic transformation|r||||
+E|A10|phenotype|D-2HG accumulation|D-2HG accumulation|r||||
+X|malate and lactate dehydrogenases|b0007|enzyme families; individual genes unspecified
+X|BCAT transaminases|b0007|enzyme family; individual genes unspecified
+X|BCAT|b0036|enzyme family; individual genes unspecified
+X|αKG dehydrogenase|b0007|enzyme complex
+X|ATP synthase|b0007|enzyme complex
+X|alpha-ketoglutarate (αKG)-dependent dioxygenases|b0007|enzyme family
+X|propionyl-CoA carboxylase subunits|b0008|unnamed subunits; individual identities unspecified
+X|methylcrotonyl-CoA carboxylase|b0108|enzyme complex; distinct from named subunit
+X|dhgd-1(tm6671)|b0014|variant-bearing designation
+X|Δdhgd-1|b0014|mutant designation
+X|F54D5.12(tm6671)|b0043|variant-bearing designation
+X|emb-27(g48)|b0074|variant-bearing designation
+X|acdh-1(ok1489)|b0075|variant-bearing designation
+X|nhr-68(gk708)|b0076|variant-bearing designation
+X|DNase I|b0104|extraction reagent; no gene endpoint
+EV|V1|b0007.s1+b0007.s2+b0011.s2+b0014.s6|bg|bgr|aff|ebr
+EV|V2|b0002.s1+b0003.s1|bg|bgr|aff|ebr
+EV|V3|b0011.s2+b0014.s2+b0014.s8|ts|res|na|rr
+EV|V4|b0008.s5|bg|bgr|aff|ebr
+EV|V5|b0007.s6|bg|bgr|na|do
+EV|V6|b0007.s7|bg|bgr|aff|ebr
+EV|V7|b0014.s5+b0014.s8|ts|res|na|rr
+EV|V8|b0016.s1+b0016.s2+b0035.s2|ts|res|aff|rr,mi
+EV|V9|b0018.s1+b0018.s3+b0018.s4|ts|res|na|rr,cmp
+EV|V10|b0019.s4+b0020.s1+b0020.s2|ts|res|na|rr
+EV|V11|b0020.s7+b0020.s8+b0019.s10|ts|res|na|rr
+EV|V12|b0022.s4+b0022.s5+b0022.s6+b0022.s8+b0117.s2|ts|res|aff|rr,mi
+EV|V13|b0024.s2+b0024.s3+b0024.s5+b0024.s7|ts|res|na|rr
+EV|V14|b0024.s6+b0126.s1|ts|res|na|rr
+EV|V15|b0026.s2+b0026.s4+b0026.s6|ts|res|na|rr,cmp
+EV|V16|b0028.s1+b0028.s2+b0028.s3+b0132.s3+b0132.s7|ts|res|na|rr
+EV|V17|b0029.s6+b0029.s7+b0029.s11|ts|res|na|rr
+EV|V18|b0030.s2+b0030.s4+b0030.s5+b0030.s6|ts|res|na|rr
+EV|V19|b0033.s7+b0033.s8|ts|res|na|rr
+EV|V20|b0035.s4|bg|bgr|aff|ebr
+EV|V21|b0026.s7+b0026.s9+b0035.s5+b0036.s8|ts|hyp|hyp|ho
+P|G1|D1|sup|c|bg|sup:c:bg:V1||||Explicit dehydrogenase attribution resolves through D2HGDH identity.
+P|G2|D1|nf|-||||V3|Orthology does not establish the worm gene–disease relationship.
+F|F1|mechanism|D2HGDH mutation; development; neurological symptoms|humans|not_applicable|not_applicable|not_applicable|V2|Symptoms are auxiliary endpoints.
+F|F2|association|carboxylase subunit mutations; propionic acidemia|patients with propionic acidemia|unknown|positive|not_reported|V4|Individual subunit identities absent.
+F|F3|descriptive|citrate transporter mutation; both 2HG enantiomers|humans|not_applicable|positive|not_applicable|V5|Disorder unnamed.
+F|F4|mechanism|IDH1; IDH2; D-2HG; oncogenic transformation|cells with neomorphic mutations|not_applicable|not_applicable|not_applicable|V6|Transformation is a phenotype.
+F|F5|group_comparison|dhgd-1 deletion; 2HG accumulation|mutants versus wild type|unknown|positive|partial|V7|Approximately fivefold; exact statistics absent.
+F|F6|mechanism|dhgd-1 deletion; lethality; mitochondrial defects|C. elegans mutants|unknown|positive|partial|V8|Approximately two-thirds fail hatching.
+F|F7|group_comparison|dhgd-1 deletion; metabolite abundance|adults; embryos; L4 larvae|unknown|mixed|partial|V9|Individual adjusted P-values absent.
+F|F8|correlation|dhgd-1 expression; propionate shunt genes|expression compendium|significant|positive|available|V10|Pathway enrichment FDR 0.042.
+F|F9|mechanism|HPHD-1; propionate-derived D-2HG production|C. elegans isotope tracing|unknown|positive|not_reported|V11|Reaction attribution uses pathway context.
+F|F10|mechanism|hphd-1 RNAi; lethality; mitochondrial defects|dhgd-1 mutants; wild-type controls|unknown|mixed|partial|V12|Rescues lethality; mitochondrial defects persist.
+F|F11|group_comparison|vitamin B12; lethality; defects; metabolites|dhgd-1 mutants|unknown|mixed|partial|V13|Effects depend on bacterial diet.
+F|F12|correlation|3HP levels; 2HG levels|vitamin B12-supplemented dhgd-1 mutants|unknown|positive|not_reported|V14|Gene status is not correlation endpoint.
+F|F13|group_comparison|dhgd-1 deletion; metabolic gene expression|mutants; wild type; vitamin B12 conditions|unknown|mixed|partial|V15|315 induced; 183 repressed.
+F|F14|group_comparison|ketone supplementation; lethality; mitochondrial defects|dhgd-1 mutants; other mutant controls|unknown|mixed|partial|V16|Other-mutant effects not individually readable.
+F|F15|mechanism|dhgd-1; aass-1; mccc-1; energy production|FBA; normal and low vitamin B12|not_applicable|mixed|not_applicable|V17|Sequential combined constraints; computational predictions.
+F|F16|group_comparison|dhgd-1; hphd-1; lysine metabolism|mutants; wild type; rescue conditions|unknown|mixed|partial|V18|Direct lysine-derived 3HB labeling unavailable.
+F|F17|descriptive|acdh-1 expression; tissue distribution|C. elegans tissue RNA-seq|not_applicable|not_applicable|not_reported|V19|Absent muscle; enriched intestine.
+F|F18|mechanism|3HP; IMMT-1; mitochondrial morphology|dhgd-1 mutants|not_applicable|not_applicable|not_applicable|V20|Background mechanism; phenotype endpoint.
+F|F19|hypothesis|dhgd-1; ketogenesis; embryonic lethality|C. elegans mutants|not_applicable|not_applicable|not_applicable|V21|Specific metabolic mechanism remains inferred.
+C|C1|S7C/D metabolite identity|b0028.s3+b0132.s5|noncritical|unresolved|Main text says 2HG; caption says 3HB.
+U|S1 Fig|b0014.s2+b0020.s9|Caption supplied; figure attachment unread.
+U|S2 Fig|b0016.s2+b0024.s2|Caption supplied; figure attachment unread.
+U|S3 Fig|b0018.s4+b0024.s7|Caption supplied; figure attachment unread.
+U|S4 Fig|b0020.s7|Caption supplied; figure attachment unread.
+U|S5 Fig|b0024.s6|Caption supplied; coefficients and statistics unread.
+U|S6 Fig|b0129.s1|Caption supplied; figure attachment unread.
+U|S7 Fig|b0028.s1+b0028.s2+b0028.s3|Caption supplied; individual comparator results unread.
+U|S8 Fig|b0030.s2+b0030.s4|Caption supplied; figure attachment unread.
+U|S9 Fig|b0033.s3+b0033.s7|Caption supplied; figure attachment unread.
+U|S1 Table|b0014.s2|Referenced spreadsheet not supplied.
+U|S2 Table|b0019.s4+b0020.s2|Referenced spreadsheet not supplied.
+U|S3 Table|b0026.s2|Referenced spreadsheet not supplied.
+U|S4 Table|b0026.s4|Referenced spreadsheet not supplied.
+U|S1 Data|b0015.s11+b0019.s11+b0023.s14+b0027.s14|Underlying numerical data not supplied.

@@ -1,0 +1,5 @@
+I can't continue that extraction, so the output above is incomplete and shouldn't be used as a result for PMID18457324.
+
+What's there covers the META and SCOPE lines, the four entities (CBR3, NQO1, congestive heart failure, cancer), three excluded names, and one evidence record. The rest is missing: the remaining evidence records, the gene–disease pairs, and the findings. That includes the key calls on NQO1–CHF and CBR3–CHF.
+
+You could fill in the missing records manually from sentences b0002.s8 through b0002.s11, or try rerunning this paper. I can help with a different paper or task.

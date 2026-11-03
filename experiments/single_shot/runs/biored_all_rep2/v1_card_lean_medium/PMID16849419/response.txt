@@ -1,0 +1,20 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|SLC34A3|SLC34A3;sodium-phosphate cotransporter type IIc|r||human||
+E|D1|disease|hereditary hypophosphatemic rickets with hypercalciuria|Hereditary hypophosphatemic rickets with hypercalciuria;hereditary hypophosphatemic rickets with hypercalciuria;HHRH|r||||
+E|D2|disease|rickets|rickets|r||||
+E|D3|disease|osteomalacia|osteomalacia|r||||
+E|S1|phenotype|hypophosphatemia|hypophosphatemia|r||||
+E|S2|phenotype|hypercalciuria|hypercalciuria|r||||
+X|metabolic disorder|b0002|generic category describing HHRH, not distinct entity
+EV|V1|b0001.s1+b0002.s10|ts|res|aff|rr,eda
+EV|V2|b0002.s5+b0002.s7|ts|res|aff|rr,eda
+EV|V3|b0002.s8|ts|res|aff|rr,mi
+EV|V4|b0002.s2|ts|aim|na|none
+EV|V5|b0002.s1|bg|bgr|na|do
+P|G1|D1|sup|c|ts|sup:c:ts:V1;sup:a:ts:V2|||Biallelic SLC34A3 mutations stated to cause HHRH
+P|G1|D2|nf|-||||V5|Rickets is HHRH feature; no direct gene link
+P|G1|D3|nf|-||||V5|Osteomalacia is HHRH feature; no direct gene link
+F|F1|descriptive|SLC34A3 intronic deletions and exon 7 substitution|two HHRH families|not_applicable|not_applicable|not_applicable|V2|three affected individuals only
+F|F2|mechanism|intron 9 deletion and RNA splicing|HHRH patient|unknown|positive|not_reported|V3|other two mutations only hedged
+F|F3|descriptive|haplotype of intron 9 deletions|HHRH family|not_applicable|not_applicable|not_reported|b0002.s6|independent origin only suggested

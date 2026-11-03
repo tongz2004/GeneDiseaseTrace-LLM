@@ -1,0 +1,37 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|SLURP1|SLURP-1;rSLURP-1|r|||human||
+E|G2|gene|nicotinic acetylcholine receptors (CHRN family)|nicotinic acetylcholine receptors|p|ambiguous_mapping|human||
+E|G3|gene|MYB|MYB|r|||human||
+E|G4|gene|PIK3CA|PIK3CA|r|||human||
+E|G5|gene|ETS1|ETS1|r|||human||
+E|G6|gene|NRAS|NRAS|r|||human||
+E|G7|gene|SRC|SRC|r|||human||
+E|G8|gene|AKT1|AKT1|r|||human||
+E|G9|gene|KIT|KIT|r|||human||
+E|G10|gene|RB1|RB1|r|||human||
+E|G11|gene|EGF|EGF|r|||human||
+E|G12|gene|HGF|HGF|r|||human||
+E|G13|gene|CDKN2A|CDKN2A|r|||human||
+E|G14|gene|STAT3|STAT3|r|||human||
+E|G15|gene|BCL2|BCL2|r|||human||
+E|G16|gene|TNF|TNF|r|||human||
+E|G17|gene|BAX|BAX|r|||human||
+E|G18|gene|CASP8|CASP8|r|||human||
+E|G19|gene|CTNNB1|CTNNB1;beta-catenin|r|||human||
+E|G20|gene|CDKN3|CDKN3|r|||human||
+E|G21|gene|FOXD3|FOXD3|r|||human||
+E|G22|gene|SERPINB5|SERPINB5|r|||human||
+E|G23|gene|RUNX3|RUNX3|r|||human||
+E|D1|disease|Neoplasms (cancer / tumorigenic transformation)|cancer;tumorigenesis|p|other|||
+X|urokinase plasminogen activator receptor|b0002|part of SLURP-1 full name
+X|BEP2D|b0002|cell line name
+X|Het-1A|b0002|cell line name
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s1|ts|aim|pre|none
+EV|V3|b0002.s7+b0002.s8|ts|int|aff|rr
+EV|V4|b0002.s3+b0002.s4+b0002.s6|ts|res|na|do
+P|G1|D1|sup|a|both|sup:a:bg:V1;sup:a:ts:V3|||SLURP-1 abolishes NNK-dependent transformation
+P|G2|D1|unc|-|ts|unc:-:ts:V2|presupposed_only|||Aim presupposes nAChR role in carcinogenesis
+P|G4|D1|nf|-|ts||||V4|Oncogene label only; expression change, no disease
+F|F1|mechanism|NNK; rSLURP-1; oncogene expression|BEP2D and Het-1A cell lines|unknown|mixed|not_reported|V4+V3|abstract only; in vitro

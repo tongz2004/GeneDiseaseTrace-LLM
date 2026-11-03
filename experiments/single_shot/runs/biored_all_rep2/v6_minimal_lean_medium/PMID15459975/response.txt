@@ -1,0 +1,12 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|SSH1|SSH1|r||human||
+E|D1|disease|disseminated superficial actinic porokeratosis|disseminated superficial actinic porokeratosis;Disseminated superficial actinic porokeratosis;DSAP|r||||
+X|D12S330|b0002|microsatellite marker, not gene
+X|D12S354|b0002|microsatellite marker, not gene
+X|keratinization disorder|b0002|disease class describing DSAP
+EV|V1|b0002.s3+b0002.s4|ts|res|aff|rr,cs
+EV|V2|b0001.s1|ts|int|aff|eda
+EV|V3|b0002.s6|ts|int|aff|unc
+P|G1|D1|sup|c|ts|sup:c:ts:V1+V2||V3|Linkage interval plus SSH1 mutations in affected cases
+F|F1|association|SSH1 mutations; DSAP linkage chr12|three Chinese families, one sporadic case|unknown|positive|unread|V1|Abstract only; candidate gene

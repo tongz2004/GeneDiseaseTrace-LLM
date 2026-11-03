@@ -1,0 +1,18 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|PVT1|PVT1;plasmacytoma variant translocation gene PVT1|r||human||
+E|D1|disease|end-stage renal disease|end-stage renal disease;ESRD|r||||
+E|D2|disease|type 2 diabetes|type 2 diabetes;diabetes|p|other|||
+E|S1|phenotype|macroalbuminuria|macroalbuminuria|r||||
+X|plasmacytoma|b0002.s3|part of gene name, not a disease mention
+X|rs2720709|b0002.s3|variant ID
+X|rs2648875|b0002.s6|variant ID
+X|8q24|b0002.s2|chromosomal region, not a gene
+EV|V1|b0002.s3|ts|res|aff|rr,cmp
+EV|V2|b0002.s5+b0002.s6|ts|res|aff|rr,cmp
+EV|V3|b0002.s7+b0001.s1|ts|int|hyp|ho
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V2;unc:c:ts:V3|hedged_claim||Case-control association of PVT1 SNPs with ESRD
+P|G1|D2|nf|-||||||T2D is the background population, not an outcome
+F|F1|group_comparison|allele frequency of 8q24 SNPs|ESRD vs non-ESRD T2D pools|unknown|unknown|not_reported||Pooled screen; individual P values not given
+F|F2|association|rs2720709 genotype vs ESRD|105 cases, 102 T2D controls|significant|positive|available|V1|
+F|F3|association|PVT1-region markers vs ESRD|same case-control set|significant|positive|partial|V2|Only 23 of 98 markers reported

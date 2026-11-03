@@ -1,0 +1,20 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|STAT4|STAT4|r||human||
+E|D1|disease|systemic lupus erythematosus|systemic lupus erythematosus;SLE|r||||
+E|S1|phenotype|renal involvement in SLE|renal symptoms|r|||D1|
+E|S2|phenotype|neurologic involvement in SLE|neurologic manifestations|r|||D1|
+X|anti-snRNP Ab|b0002|autoantibody marker, not a gene or disease
+X|anti-Scl-70 Ab|b0002|autoantibody marker, not a gene or disease
+X|rs7582694|b0002|STAT4 variant identifier, mapped to G1
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s3+b0002.s4|ts|res|aff|rr,cmp
+EV|V3|b0002.s7|ts|int|aff|rr
+EV|V4|b0002.s5|ts|res|aff|rr,cmp
+EV|V5|b0002.s6|ts|res|aff|rr,cmp
+P|G1|D1|sup|a|both|sup:a:bg:V1;sup:a:ts:V2+V3|||rs7582694 C allele raises SLE risk
+F|F1|group_comparison|STAT4 rs7582694 genotypes vs SLE|253 SLE vs 521 Polish controls|significant|positive|available|V2|
+F|F2|group_comparison|STAT4 C allele frequency vs SLE|253 SLE vs 521 Polish controls|significant|positive|available|V2|
+F|F3|association|STAT4 CC/CG vs renal symptoms|SLE patients|significant|positive|available|V4|corrected p reported
+F|F4|association|STAT4 CC/CG vs neurologic manifestations|SLE patients|significant|positive|available|V4|corrected p reported
+F|F5|association|STAT4 CC/CG vs anti-snRNP, anti-Scl-70|SLE patients|significant|positive|available|V5|anti-Scl-70 corrected p near 0.05

@@ -1,0 +1,18 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only.
+E|G1|gene|PIK3CA|PIK3CA|r||human||
+E|D1|disease|esophageal squamous cell carcinoma|esophageal squamous cell carcinoma;ESCC|r|||| 
+E|H1|phenotype|intratumoral heterogeneity|intratumoral heterogeneity|r||||
+X|E542K|b0002|variant identifier
+X|E545K|b0002|variant identifier
+X|E546K|b0002|variant identifier
+X|H1047R|b0002|variant identifier
+X|H1047L|b0002|variant identifier
+EV|V1|b0002.s1|bg|hyp|hyp|ho
+EV|V2|b0002.s3+b0002.s5|ts|co|na|do
+EV|V3|b0002.s6+b0002.s7|ts|res|na|rr
+EV|V4|b0002.s8|ts|int|hyp|ho
+P|G1|D1|unc|-|bg|unc:-:bg:V1|hedged_claim|V2|Therapeutic targeting is speculative; mutation detection lacks disease attribution.
+F|F1|descriptive|PIK3CA mutation frequency|181 patients with ESCC|not_applicable|not_applicable|available|V2|
+F|F2|descriptive|PIK3CA status and genotype specimen concordance|Paired biopsy and surgical ESCC specimens|not_applicable|not_applicable|available|V3|
+F|F3|hypothesis|PIK3CA discordance suggests intratumoral heterogeneity|Three patients with discordant specimens|unknown|unknown|not_reported|V4|Heterogeneity inferred, not demonstrated.

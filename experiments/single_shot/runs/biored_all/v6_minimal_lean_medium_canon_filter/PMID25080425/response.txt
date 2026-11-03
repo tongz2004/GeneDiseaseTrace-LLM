@@ -1,0 +1,16 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; full text unavailable
+E|G1|gene|STAT3|signal transducer and activator of transcription 3;STAT3|r||non-human||
+E|G2|gene|BCL2|Bcl-2|r||non-human||
+E|G3|gene|BAX|Bax|r||non-human||
+E|D1|disease|myocardial ischemia|acute myocardial injury;acute myocardial ischemia;Acute myocardial ischemic injury;myocardial damage;myocardial ischemia|r||||
+E|D2|phenotype|left ventricular remodeling|left ventricular remodeling|r||||
+EV|V1|b0002.s6|ts|res|aff|rr
+EV|V2|b0002.s7|ts|res|aff|rr,cmp
+EV|V3|b0002.s9|ts|int|aff|rr
+EV|V4|b0002.s1|ts|aim|na|none
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V3||V4|ISO-induced STAT3 phosphorylation; protective mechanism
+P|G2|D1|sup|a|ts|sup:a:ts:V2+V3|||Betaine raised Bcl-2 in ischemic myocardium
+P|G3|D1|sup|a|ts|sup:a:ts:V2+V3|||Betaine lowered Bax in ischemic myocardium
+F|F1|mechanism|STAT3 phosphorylation; isoproterenol; betaine|rat myocardium|unknown|positive|not_reported|V1|abstract only; western blot
+F|F2|group_comparison|Bcl-2, Bax, Bcl-2/Bax ratio by betaine|isoproterenol-injured rats|significant|positive|not_reported|V2|abstract only

@@ -1,0 +1,32 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|Dll4|Delta-like 4;Dll4|r|||||
+E|G2|gene|Notch|Notch|p|other||||
+E|G3|gene|Notch1|Notch1|r|||non-human||
+E|G4|gene|CD31|CD31|r|||non-human||
+E|G5|gene|VE-Cadherin|VE-Cadherin|r|||non-human||
+E|G6|gene|c-kit|c-kit|r|||non-human||
+E|G7|gene|CD105|CD105|r|||non-human||
+E|G8|gene|VEGFR3|VEGFR3|r|||non-human||
+E|G9|gene|SMA|SMA|p|ambiguous_mapping|non-human||
+E|G10|gene|IGFbp2|IGFbp2|r|||non-human||
+E|G11|gene|IGFbp3|IGFbp3|r|||non-human||
+E|G12|gene|Angpt2|Angpt2|r|||non-human||
+E|G13|gene|DHH|DHH|r|||non-human||
+E|G14|gene|VEGF-A|VEGF-A|r|||non-human||
+E|G15|gene|FGF1|FGF1|r|||non-human||
+E|G16|gene|CSF2|CSF2|r|||non-human||
+E|G17|gene|Akt|Akt|r|||||
+E|G18|gene|Erk 1/2|Erk 1/2|r|||||
+E|G19|gene|CD11b|CD11b|r|||non-human||
+E|G20|gene|B220|B220|r|||non-human||
+E|G21|gene|CD3|CD3|r|||non-human||
+E|D1|disease|tumor|tumor;tumors|r|||||
+X|lectin|b0002.s4|vessel stain reagent, not a specific gene
+X|CFU-M|b0002.s8|colony assay unit, not gene
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s2|bg|co|na|do
+P|G1|D1|sup|c|bg|sup:c:bg:V1||V2|Dll4 blockade halts tumor growth
+P|G2|D1|nf|-|||||V1+V2|Notch only named as pathway context
+F|F1|mechanism|anti-Dll4; angiocrine gene expression|irradiated mouse BM|unknown|mixed|unread|V3|abstract only
+EV|V3|b0002.s5|ts|res|na|rr

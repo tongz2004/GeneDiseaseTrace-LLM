@@ -1,0 +1,25 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|BSCL2|BSCL2|r||human||
+E|D1|disease|congenital generalized lipodystrophy|congenital generalized lipodystrophy;Congenital generalized lipodystrophy;CGL|r||||
+E|D2|disease|congenital generalized lipodystrophy type 2|CGL2|r|||D1|
+E|D3|disease|congenital generalized lipodystrophy type 1|CGL1|r|||D1|
+E|D4|disease|hypertriglyceridemia|hypertriglyceridemia|r||||
+E|D5|disease|eruptive xanthomas|eruptive xanthomas|r||||
+E|D6|disease|hepatic steatosis|hepatic steatosis|r||||
+E|D7|disease|cardiomyopathy|cardiomyopathy|r||||
+E|D8|disease|intellectual impairment|intellectual impairment|r||||
+E|D9|phenotype|hepatomegaly|Hepatomegaly|r||||
+EV|V1|b0002.s2|bg|bgr|aff|ebr,eda
+EV|V2|b0001.s1+b0002.s8|ts|res|aff|rr,eda
+EV|V3|b0002.s9|ts|int|aff|rr,eda
+EV|V4|b0002.s3+b0002.s5|ts|co|na|do
+EV|V5|b0002.s6|ts|res|neg|do
+P|G1|D1|sup|c|both|sup:c:bg:V1;sup:c:ts:V2+V3|||BSCL2 mutations cause CGL; case and review
+P|G1|D2|sup|c|bg|sup:c:bg:V1|||BSCL2 mutations result in CGL2
+P|G1|D7|unc|-|bg|unc:a:bg:V1|support_basis_unresolved|V5|Severe cardiomyopathy in CGL2; absent in patient
+P|G1|D8|unc|-|bg|unc:a:bg:V1|support_basis_unresolved|V5|Intellectual impairment in CGL2; absent in patient
+P|G1|D4|unc|-|ts|unc:a:ts:V4|support_basis_unresolved||Single-case CGL feature, not attributed to gene
+P|G1|D6|unc|-|ts|unc:a:ts:V4|support_basis_unresolved||Single-case CGL feature, not attributed to gene
+F|F1|descriptive|homozygous BSCL2 783insG; CGL|one Taiwanese boy|not_applicable|not_applicable|not_applicable|V2|single case report
+F|F2|descriptive|BSCL2 genotype frequency in CGL|Asian CGL cases (literature review)|unknown|positive|unread|V3|abstract only; counts not given

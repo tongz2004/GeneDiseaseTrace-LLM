@@ -1,0 +1,2 @@
+P|G2|D2|nf|-||||V1|Sentence concerns human NPHS2, not mouse gene
+P|G2|D4|nf|-||||V2|Human R138Q linked to ESRD, not mouse

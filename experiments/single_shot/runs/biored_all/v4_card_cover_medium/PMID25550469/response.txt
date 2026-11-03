@@ -1,0 +1,30 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|androgen receptor|androgen receptor;AR|r||non-human||
+E|G2|gene|apolipoprotein E|apolipoprotein E;apoE|r||non-human||
+E|D1|disease|atherosclerosis|atherosclerosis|r||||
+E|D2|disease|obesity|obesity|r||||
+E|D3|disease|dyslipidemia|dyslipidemia|r||||
+E|D4|disease|atherogenic dyslipidemia|atherogenic dyslipidemia|r|||D3|
+E|D5|disease|hepatoma|hepatoma|r||||
+E|S1|phenotype|reduced insulin sensitivity|insulin sensitivity|r||||
+E|S2|phenotype|hepatic triglyceride levels|hepatic triglyceride levels|r||||
+E|S3|phenotype|body fat percentage|body fat percentage|r||||
+X|ARKO|b0002|mouse strain name (AR knockout), not a separate gene
+EV|V1|b0002.s3|ts|res|aff|rr,cmp,mi
+EV|V2|b0002.s4|ts|res|aff|rr,cmp,mi
+EV|V3|b0002.s5|ts|res|aff|rr,cmp,mi
+EV|V4|b0002.s6|ts|res|aff|rr,mi
+EV|V5|b0002.s7|ts|res|aff|rr,mi
+EV|V6|b0001.s1|ts|res|aff|rr,mi
+EV|V7|b0002.s2|bg|bgr|aff|ebr
+P|G1|D1|sup|c|ts|sup:c:ts:V1+V3+V4+V5+V6||| |AR knockout increased atherosclerosis; agonist reduced it
+P|G1|D2|sup|c|ts|sup:c:ts:V6+V2|||ARKO showed increased body weight and fat
+P|G1|D3|sup|c|ts|sup:c:ts:V6+V3|||AR protects against dyslipidemia in knockout model
+P|G1|D4|sup|c|ts|sup:c:ts:V2|||ARKO females showed marked atherogenic dyslipidemia
+P|G1|D5|nf|-||||||Hepatoma only names the cell line used
+P|G2|D1|sup|a|bg|sup:a:bg:V7|||apoE-deficient background described as atherosclerosis-prone
+F|F1|group_comparison|atherosclerosis; AR genotype; diet|female apoE-deficient ARKO vs control|unknown|positive|partial|V1|abstract only; high-fat diet only
+F|F2|group_comparison|body weight, fat, serum cholesterol; AR genotype|female ARKO vs control, high-fat diet|unknown|positive|partial|V2|abstract only
+F|F3|group_comparison|AR genotype effects after ovariectomy|ovariectomized ARKO vs control mice|not_significant|null|partial|V3|abstract only
+F|F4|group_comparison|DHT vs control; atherosclerosis, fat, cholesterol|ovariectomized mice|unknown|negative|partial|V4|abstract only

@@ -1,0 +1,12 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|F5|F5|r||human||
+E|D1|disease|inherited coagulation factor V deficiency|inherited coagulation factor V deficiency;inherited factor V (FV) deficiency;inherited coagulation FV deficiency;congenital FV deficiency|p|other|||
+E|S1|phenotype|reduced plasma FV activity and antigen|severely reduced plasma levels of FV activity and antigen|r||||
+X|FV protein|b0002|gene product, not separate gene endpoint
+EV|V1|b0001.s1|ts|res|aff|rr,eda
+EV|V2|b0002.s5+b0002.s7+b0002.s8+b0002.s9|ts|res|aff|rr,do
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V2|||F5 mutations identified in FV-deficient pedigrees, attributed
+F|F1|descriptive|F5 mutations; FV deficiency|two Chinese pedigrees, two probands|not_applicable|not_applicable|not_applicable|V2|two pedigrees only; no segregation shown
+C|C1|IVS8 -2A>G called deletion|b0002.s5+b0002.s9|noncritical|unresolved|substitution notation labelled deletion; identity unaffected
+R|merging|D1|inherited vs congenital FV deficiency treated as synonyms without explicit statement|merged; marked provisional, other

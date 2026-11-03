@@ -1,0 +1,14 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text
+E|G1|gene|PAH|phenylalanine hydroxylase;PAH|r||human||
+E|D1|disease|phenylketonuria|phenylketonuria;Classical phenylketonuria;PKU|r||||
+E|D2|disease|PAH deficiency|PAH deficiencies|r||||
+X|BamHI|b0001|restriction enzyme, not a human gene
+X|RFLP haplotype 7|b0002|haplotype label, not a gene
+X|autosomal recessive disease|b0002|inheritance class of PKU, not a separate disease
+EV|V1|b0002.s1|bg|bgr|aff|ebr,eda
+EV|V2|b0002.s2+b0002.s3|ts|res|aff|rr
+EV|V3|b0002.s4|ts|int|aff|eda
+P|G1|D1|sup|c|both|sup:c:bg:V1;sup:c:ts:V2+V3|||PAH deficiency causes PKU; new mutations found
+P|G1|D2|sup|c|both|sup:c:bg:V1;sup:a:ts:V3|||Deficiency of the gene product itself
+F|F1|descriptive|PAH exon 7 codons 272 and 273 mutations|PKU patients from NE France or Belgium|not_applicable|not_applicable|not_reported|V2|abstract only, carrier counts not given

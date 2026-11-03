@@ -1,0 +1,19 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|SLC5A5 (sodium/iodide symporter)|sodium/iodide symporter;NIS|r||human||
+E|D1|disease|Iodide transport defect|Iodide transport defect;ITD|r||||
+E|D2|disease|Congenital hypothyroidism|Congenital hypothyroidism;congenital hypothyroidism|r||||D3
+E|D3|disease|Hypothyroidism|hypothyroidism|r||||
+E|D4|disease|Nodular goitre|nodular goitre|r||||
+X|TSH|b0002.s6|administered recombinant hormone, diagnostic agent
+X|COS-7|b0002.s11|cell line name, not gene
+EV|V1|b0002.s2|bg|bgr|aff|ebr,eda
+EV|V2|b0002.s8+b0002.s9|ts|res|aff|rr,cs
+EV|V3|b0002.s11|ts|int|aff|mi,eda
+EV|V4|b0002.s1+b0002.s12|ts|res|aff|eda
+EV|V5|b0002.s3+b0002.s4|ts|co|na|do
+P|G1|D1|sup|c|both|sup:c:bg:V1;sup:c:ts:V2+V3|||NIS deletion causes ITD; functional loss shown
+P|G1|D3|sup|c|ts|sup:c:ts:V4+V5|||Patient hypothyroidism attributed to NIS deletion
+P|G1|D4|unc|-|ts|unc:a:ts:V5|support_basis_unresolved||Goitre only co-occurs in mutation carrier
+F|F1|mechanism|del-(439-443) NIS; iodide concentration|COS-7 transfected cells|unknown|negative|not_reported|V3|in vitro only
+F|F2|descriptive|NIS deletion genotype; disease status|patient and consanguineous parents|not_applicable|not_applicable|not_applicable|V2|single family

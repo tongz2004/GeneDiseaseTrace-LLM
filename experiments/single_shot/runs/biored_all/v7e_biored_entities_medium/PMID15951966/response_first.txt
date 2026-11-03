@@ -1,0 +1,14 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|MSH2|MSH2|r||human||
+E|G2|gene|MLH1|MLH1|r||human||
+E|D1|disease|hereditary nonpolyposis colorectal cancer|HNPCC|r||||
+X|Alu elements|b0002|repeat elements, not a gene
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s4+b0002.s5|ts|res|aff|rr,eda
+EV|V3|b0002.s6|ts|int|aff|rr
+P|G1|D1|sup|c|both|sup:c:bg:V1;sup:a:ts:V2+V3|||MSH2 exonic deletions contribute; exon 3 deletion found
+P|G2|D1|sup|c|both|sup:c:bg:V1;sup:a:ts:V3|||MLH1 exonic deletions contribute; changes detected in patients
+F|F1|descriptive|exon copy number changes MLH1/MSH2|50 point-mutation-negative HNPCC patients|not_applicable|not_applicable|partial|V2|per-gene breakdown not in abstract
+F|F2|mechanism|MSH2 exon 3 ~1.4 kb deletion|HNPCC patient|not_applicable|not_applicable|not_applicable|V2|Alu-mediated unequal recombination
+R|source code meaning|claims field|ts evidence for MLH1 is not separable per gene|treated V3 as joint evidence for both genes

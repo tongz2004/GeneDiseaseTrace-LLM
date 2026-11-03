@@ -1,0 +1,23 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only; no full text or attachments.
+E|G1|gene|ADCY5|ADCY5;adenylate cyclase 5;Adenylate cyclase 5|r||human||
+E|G2|gene|Adcy5|Adcy5|r||non-human||
+E|G3|gene|Sec22a|Sec22a|r||non-human||
+E|D1|disease|type 2 diabetes|Type 2 Diabetes;type 2 diabetes|r||||
+E|H1|phenotype|fasting glucose levels|fasting glucose levels|r||||
+E|H2|phenotype|insulin secretion|insulin secretion|r||||
+X|rs11708067|b0002|variant identifier
+X|rs11708067-A|b0002|variant allele identifier
+X|rs11708067-G|b0002|variant allele identifier
+X|H3K27ac|b0002|histone modification mark
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s4|ts|res|aff|rr
+EV|V3|b0002.s5|ts|res|na|rr
+EV|V4|b0002.s6|ts|res|na|mi
+EV|V5|b0002.s7|ts|int|hyp|ho
+P|G1|D1|sup|a|both|sup:a:bg:V1;sup:a:ts:V2;unc:c:ts:V5|hedged_claim||Causal mechanism remains an interpretation.
+P|G2|D1|nf|-||||V4|Cell intervention lacks a disease outcome.
+P|G3|D1|nf|-||||V4|Unchanged adjacent gene expression supplies no disease association.
+F|F1|association|diabetes risk alleles; ADCY5 expression|human islets|unknown|negative|not_reported|V2|
+F|F2|group_comparison|risk allele; enhancer activity; protein binding|human islets and rodent b-cells|unknown|mixed|not_reported|V3|
+F|F3|mechanism|enhancer deletion; Adcy5; Sec22a; insulin secretion|832/13 cells|unknown|mixed|partial|V4|Adcy5 decreased 64%; secretion 39%; Sec22a unchanged.

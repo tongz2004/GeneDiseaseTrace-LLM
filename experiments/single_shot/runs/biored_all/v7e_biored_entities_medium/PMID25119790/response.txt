@@ -1,0 +1,26 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|lipocalin 2|neutrophil gelatinase-associated lipocalin;NGAL|r||non-human||
+E|G2|gene|N-acetyl-beta-D-glucosaminidase|N-acetyl b-D-glucosaminidase;NAG|p|ambiguous_mapping|non-human||
+E|G3|gene|HAVCR1|kidney injury molecule (KIM)-1|r||non-human||
+E|G4|gene|claudin-2|claudin-2|r||non-human||
+E|G5|gene|NFE2L2|Nrf2|r||non-human||
+E|G6|gene|mitochondrial respiratory complex I|complex I;respiratory complex I|p|ambiguous_mapping|non-human||
+E|G7|gene|aconitase|aconitase|p|ambiguous_mapping|non-human||
+E|D1|disease|nephrotoxicity|nephrotoxicity;renal injury;nephropathy|p|ambiguous_mapping||||
+E|D2|disease|tubular proteinuria|Tubular proteinuria|r||||
+E|D3|disease|necrosis|necrosis|r||||
+EV|V1|b0002.s3|ts|res|aff|rr
+EV|V2|b0002.s4|ts|res|aff|rr
+EV|V3|b0002.s7+b0002.s8|ts|res|aff|rr
+EV|V4|b0002.s10+b0002.s11|ts|int|aff|rr
+P|G1|D1|sup|a|ts|sup:a:ts:V1|||Urinary NGAL increased in maleate renal injury
+P|G2|D1|sup|a|ts|sup:a:ts:V1|||Urinary NAG increased in maleate renal injury
+P|G3|D1|sup|a|ts|sup:a:ts:V1|||KIM-1 upregulated in maleate renal injury
+P|G4|D1|sup|a|ts|sup:a:ts:V1|||Claudin-2 expression decreased in renal injury
+P|G5|D1|sup|a|ts|sup:a:ts:V2|||Renal Nrf2 decreased with maleate nephrotoxicity
+P|G6|D1|sup|a|ts|sup:a:ts:V3+V4|||Complex I activity reduced in maleate kidneys
+P|G7|D1|sup|a|ts|sup:a:ts:V3|||Aconitase activity reduced in maleate kidneys
+F|F1|group_comparison|NGAL, NAG, KIM-1, claudin-2 vs maleate|rats, maleate vs control|unknown|mixed|unread|V1|abstract only
+F|F2|group_comparison|Nrf2 levels, maleate oxidative stress|rat kidney|unknown|negative|unread|V2|abstract only
+F|F3|group_comparison|complex I, aconitase activities|isolated renal mitochondria|unknown|negative|unread|V3|abstract only

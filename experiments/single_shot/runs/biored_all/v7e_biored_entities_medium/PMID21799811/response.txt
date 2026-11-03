@@ -1,0 +1,8 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|MTHFR|MTHFR;Methylenetetrahydrofolate reductase|r||human||
+E|D1|disease|male infertility|male infertility|r||||
+EV|V1|b0001.s1+b0002.s12+b0002.s13+b0002.s14+b0002.s15|ts|res|aff|rr,cmp
+P|G1|D1|sup|a|ts|sup:a:ts:V1|||677C>T associated with male infertility, case-control and meta-analysis
+F|F1|group_comparison|677C>T T allele, CT+TT genotypes|North Indian infertile vs fertile men|significant|positive|partial|V1|
+F|F2|association|677C>T allele and genotype pooled OR|meta-analysis of published studies|significant|positive|partial|V1|number of studies not reported

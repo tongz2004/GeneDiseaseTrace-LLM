@@ -1,0 +1,31 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|FASLG|Fas ligand;FasL|p|species_unresolved|||
+E|G2|gene|FAS|Fas|r||non-human||
+E|G3|gene|CASP3|caspase 3|r||non-human||
+E|G4|gene|CAPN1|calpain 1|r||non-human||
+E|G5|gene|DMD|dystrophin|r||non-human||
+E|G6|gene|TNNI3|cardiac troponin I|r||non-human||
+E|D1|disease|Dilated cardiomyopathy|Dilated cardiomyopathy;DCM|r||||
+E|D2|disease|Cardiomyopathy|cardiomyopathy|r||||
+E|D3|disease|Myocarditis|myocarditis|r||||
+E|D4|disease|HIV infection|HIV|r||||
+E|D5|disease|Heart failure|heart failure|r||||
+E|D6|disease|AIDS|acquired immunodeficiency syndrome;AIDS|r||||
+E|D7|disease|Myopathy|myopathies|r||||
+E|D8|phenotype|Cardiac dilation|cardiac dilation|r||||
+EV|V1|b0001.s1+b0002.s6|ts|res|aff|rr,mi,cmp
+EV|V2|b0002.s9|both|int|hyp|ho,eda
+EV|V3|b0002.s3+b0002.s6|ts|res|aff|mi,cmp
+EV|V4|b0002.s7|ts|res|aff|rr
+EV|V5|b0002.s8|ts|res|aff|rr
+P|G1|D2|sup|c|ts|sup:c:ts:V1;unc:c:both:V2|||FasL Tg mice susceptible to AZT cardiomyopathy
+P|G1|D1|sup|a|ts|sup:a:ts:V3|||FasL Tg murine DCM model with dilation
+P|G1|D4|sup|a|bg|sup:a:bg:V2|||Myocardial FasL identified in HIV-positive patients
+P|G2|D2|sup|a|ts|sup:a:ts:V4|||Increased sarcolemmal Fas with cardiomyopathy
+P|G3|D2|sup|a|ts|sup:a:ts:V4|||Caspase 3 activation accompanies cardiomyopathy
+P|G4|D2|sup|a|ts|sup:a:ts:V4|||Calpain 1 translocation accompanies cardiomyopathy
+P|G5|D2|sup|a|ts|sup:a:ts:V5|||Dystrophin localization changes accompany cardiomyopathy
+P|G6|D2|sup|a|ts|sup:a:ts:V5|||Troponin I localization changes accompany cardiomyopathy
+F|F1|group_comparison|AZT dose; cardiac dilation, function|FasL Tg vs NTg mice|unknown|positive|unread|V3|abstract only
+F|F2|mechanism|Fas, FasL, caspase 3, calpain 1|AZT-treated FasL Tg mice|unknown|positive|unread|V4+V5|abstract only

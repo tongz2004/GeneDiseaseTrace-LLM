@@ -1,0 +1,20 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; single case report
+E|G1|gene|ACE|angiotensin-converting enzyme;ACE|r|||human||
+E|D1|disease|syncope|Syncope|r|||||
+E|D2|disease|hyperkalemia|hyperkalemia|r|||||
+E|D3|disease|myocardial infarction|myocardial infarction|r|||||
+E|D4|disease|electrolyte imbalance|electrolyte imbalance|r|||||
+E|D5|disease|renal disturbance|renal disturbance|p|other||||
+E|D6|clinical_event|acute life-threatening cardiac events|cardiac events|r|||||
+E|S1|symptom|loss of consciousness|loss of consciousness|r|||||
+E|S2|phenotype|bradycardia|bradycardia|r|||||
+X|coronary artery bypass grafting|b0002|procedure, not disease
+X|ARB|b0002|drug class abbreviation, not gene
+X|aldosterone antagonist|b0002|drug class, not gene
+EV|V1|b0001.s1+b0002.s3|ts|int|na|do
+EV|V2|b0002.s5|ts|int|na|do
+P|G1|D1|nf|-|||||Drug-induced syncope; gene itself not linked
+P|G1|D2|nf|-|||V1+V2||ACE inhibitor drug effect, not gene relation
+P|G1|D5|nf|-|||V2||Co-occurrence in clinical advice only
+R|gene vs drug class|b0002.s3|ACE named only as an inhibitor drug target|Treated drug-caused events as no gene-disease relation

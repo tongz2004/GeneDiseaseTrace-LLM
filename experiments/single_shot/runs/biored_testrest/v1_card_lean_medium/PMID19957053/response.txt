@@ -1,0 +1,4 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no gene mentions present
+E|E1|disease|anesthesia-induced hypotension|anesthesia-induced hypotension;hypotension|r||||
+E|E2|phenotype|frontal lobe oxygenation|frontal lobe oxygenation|r||||

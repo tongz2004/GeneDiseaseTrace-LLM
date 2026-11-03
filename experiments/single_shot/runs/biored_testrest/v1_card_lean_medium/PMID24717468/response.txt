@@ -1,0 +1,8 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no genes mentioned
+E|D1|clinical_event|severe hypotension|severe hypotension;hypotension|r||||
+E|D2|clinical_event|bradycardia|bradycardia|r||||
+EV|V1|b0002.s9+b0002.s10|ts|neg|neg|cmp
+EV|V2|b0002.s11+b0002.s12|ts|neg|neg|cmp
+F|F1|group_comparison|dexmedetomidine vs propofol; composite hypotension/bradycardia|neurocritical care, unmatched and matched|not_significant|null|available|V1|retrospective; abstract only
+F|F2|group_comparison|dexmedetomidine vs propofol; hypotension, bradycardia separately|neurocritical care, unmatched and matched|not_significant|null|not_reported|V2|abstract only; no separate statistics

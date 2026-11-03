@@ -1,0 +1,17 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|E1|gene|FASN|FASN;fatty acid synthase;Fatty Acid Synthase|r|||human||
+E|E2|gene|INS|insulin;C-peptide|r|||human||
+E|E3|gene|ADIPOQ|HMW-adiponectin|r|||human||
+E|E4|disease|hypertension|hypertension|r|||||
+E|E5|disease|metabolic dysfunction|metabolic dysfunction|p|other||||
+E|E6|phenotype|systolic blood pressure|systolic blood pressure|r|||||
+EV|V1|b0002.s1|bg|bgr|hyp|ebr,unc
+EV|V2|b0002.s7|ts|res|aff|rr
+EV|V3|b0002.s10|ts|hyp|hyp|ho
+P|E1|E4|sup|a|ts|unc:a:bg:V1;sup:a:ts:V2|||Higher FASN linked to lower SBP
+P|E1|E5|sup|a|ts|unc:a:bg:V1;sup:a:ts:V2|||Higher FASN linked to favourable metabolic phenotype
+F|F1|correlation|circulating FASN; SBP|115 healthy pregnant women|significant|negative|partial|V2|abstract only
+F|F2|correlation|circulating FASN; glucose, insulin, C-peptide, HOMA-IR|115 healthy pregnant women|significant|negative|partial|V2|abstract only
+F|F3|correlation|placental FASN; placental weight|80 placentas|significant|negative|partial|V2|abstract only
+F|F4|hypothesis|placental FASN; insulin sensitivity, blood pressure|pregnant women|not_applicable|positive|not_applicable|V3|future studies needed

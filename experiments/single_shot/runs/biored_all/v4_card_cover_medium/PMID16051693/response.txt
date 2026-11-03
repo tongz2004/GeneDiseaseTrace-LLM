@@ -1,0 +1,16 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|PEMT (human)|PEMT;Phosphatidylethanolamine N-methyltransferase|r||human||
+E|G2|gene|Pemt (mouse, knockout model)|PEMT|p|species_unresolved|non-human||
+E|D1|disease|nonalcoholic fatty liver disease|nonalcoholic fatty liver disease;NAFLD|r||||
+E|S1|phenotype|fatty liver|fatty liver|r||||
+X|V175M|b0002|variant identifier, not a gene
+X|McArdle-RH7777|b0002|cell line name, not a gene
+EV|V1|b0002.s2|bg|hyp|hyp|ho
+EV|V2|b0002.s3+b0002.s5|ts|res|aff|rr,cmp
+EV|V3|b0002.s6|ts|int|aff|rr,cmp
+EV|V4|b0002.s4|ts|res|na|rr
+P|G1|D1|sup|a|ts|sup:a:ts:V2+V3;unc:-:ts:V1|||Met/Met more frequent in NAFLD than controls
+P|G2|D1|nf|-|||||V1|knockout mice show fatty liver only; human hypothesis
+F|F1|group_comparison|PEMT Met/Met frequency vs NAFLD status|28 NAFLD vs 59 controls|significant|positive|partial|V2|small sample; abstract only
+F|F2|mechanism|V175M effect on PEMT activity|transfected McArdle-RH7777 cells|unknown|negative|not_reported|V4|loss of function; no statistics shown

@@ -1,0 +1,135 @@
+META|GPT-6|seen: no
+SCOPE|Provided text b0001–b0070; supplementary figures and antibody table unavailable.
+E|G1|gene|Lmnb1|Lmnb1;lamin B1;Lamin B1|r||non-human||
+E|G2|gene|Lmnb2|Lmnb2;lamin B2;Lamin B2|r||non-human||
+E|G3|gene|LMNA|LMNA;lamins A and C|r||human||
+E|G4|gene|Lmna|Lmna;lamin A/C;lamins A and C|r||non-human||
+E|G5|gene|LMNB1|LMNB1|r||human||
+E|G6|gene|LMNB2|LMNB2|r||human||
+E|G7|gene|LIS1|LIS1|r||human||
+E|G8|gene|NDE1|NDE1|r||human||
+E|G9|gene|NDEL1|NDEL1|r||human||
+E|G10|gene|SUN1|SUN1|r||non-human||
+E|G11|gene|SUN2|SUN2|r||non-human||
+E|G12|gene|Syne-1|Syne-1;Nesprin 1|r||non-human||
+E|G13|gene|Syne-2|Syne-2;Nesprin 2|r||non-human||
+E|G14|gene|NeuN|NeuN|r||non-human||
+E|G15|gene|TBR1|TBR1|r||non-human||
+E|G16|gene|Otx1|Otx1|r||non-human||
+E|G17|gene|Ctip2|Ctip2|r||non-human||
+E|G18|gene|Reelin|Reelin|r||non-human||
+E|G19|gene|Sox2|Sox2|r||non-human||
+E|G20|gene|Ki67|Ki67|r||non-human||
+E|G21|gene|TBR2|TBR2|r||non-human||
+E|G22|gene|caspase 3|caspase 3|r||non-human||
+E|G23|gene|Lap2β|Lap2β|r||non-human||
+E|G24|gene|Cux1|Cux1|r||non-human||
+E|G25|gene|cyclin-dependent kinase 5|cyclin-dependent kinase 5|r|||| 
+E|G26|gene|lacZ|lacZ|p|species_unresolved|||
+E|G27|gene|βgeo|βgeo|p|species_unresolved|||
+E|G28|gene|Cre|Cre;CRE|p|species_unresolved|||
+E|D1|disease|cardiomyopathy|cardiomyopathy|r|||| 
+E|D2|disease|muscular dystrophy|muscular dystrophy|r|||| 
+E|D3|disease|lipodystrophy|lipodystrophy|r|||| 
+E|D4|disease|peripheral neuropathy|peripheral neuropathy|r|||| 
+E|D5|disease|progeria|progeria|r|||| 
+E|D6|disease|CNS disease|CNS disease|p|undefined_abbreviation|||
+E|D7|disease|neurological diseases|neurological diseases;severe neurological diseases|r|||| 
+E|D8|disease|lissencephaly|lissencephaly|r|||| 
+E|D9|disease|epilepsy|epilepsy|r|||D7|
+E|D10|disease|schizophrenia|schizophrenia|r|||D7|
+E|D11|disease|autism|autism|r|||D7|
+E|H1|phenotype|neurodevelopmental abnormalities|neurodevelopmental abnormalities|r|||| 
+E|H2|phenotype|neuronal migration defects|Neuronal migration defects|r|||| 
+E|H3|phenotype|nuclear shape abnormalities|nuclear shape abnormalities|r|||| 
+E|H4|phenotype|nuclear blebbing|nuclear blebbing|r|||| 
+E|H5|phenotype|early senescence|early senescence|r|||| 
+E|H6|phenotype|atrophy of the cortex|atrophy of the cortex|r|||| 
+E|H7|phenotype|apoptosis|apoptosis|r|||| 
+E|H8|phenotype|elongated nuclei|elongated nuclei|r|||| 
+E|H9|phenotype|asymmetric distribution of lamin B2|asymmetric distribution of lamin B2|r|||| 
+E|H10|phenotype|abnormally shaped cranium|abnormally shaped cranium|r|||| 
+X|SUN proteins|b0006|gene family
+X|nesprins|b0006|gene family
+X|LINC complex|b0006|protein complex
+X|B-type lamins|b0044|gene family
+X|A-type lamins|b0044|gene family
+X|CS56|b0012|antibody designation
+X|L1|b0012|antibody designation
+X|Emx1-Cre|b0020|engineered transgene
+X|ROSA-lacZ|b0053|reporter construct
+X|Lmnb1Δ|b0053|allele identifier
+X|Lmnb2-|b0053|allele identifier
+X|Lmnb1fl|b0053|allele identifier
+X|Lmnb2fl|b0053|allele identifier
+EV|V1|b0007.s5|bg|bgr|aff|ebr
+EV|V2|b0007.s3|bg|bgr|aff|ebr
+EV|V3|b0007.s4|bg|neg|neg|ebr
+EV|V4|b0008.s4|bg|co|na|do
+EV|V5|b0050.s8+b0050.s9|ts|hyp|hyp|ho
+EV|V6|b0012.s8+b0012.s9+b0047.s1|ts|res|aff|rr,mi
+EV|V7|b0006.s6+b0006.s7|bg|bgr|aff|ebr
+EV|V8|b0012.s10+b0012.s11|ts|res|na|rr
+EV|V9|b0013.s6|ts|res|aff|rr,cmp
+EV|V10|b0014.s2|ts|res|aff|rr,cmp
+EV|V11|b0014.s3+b0014.s4|ts|res|aff|rr,cmp
+EV|V12|b0014.s7+b0014.s8|ts|res|aff|rr,cmp
+EV|V13|b0014.s9+b0014.s10|ts|res|aff|rr,cmp
+EV|V14|b0016.s5+b0016.s6|ts|res|aff|rr,cmp
+EV|V15|b0018.s2+b0018.s3|ts|res|aff|rr,cmp
+EV|V16|b0021.s3+b0021.s4|ts|res|aff|rr,cmp
+EV|V17|b0021.s5+b0021.s6+b0021.s7+b0021.s8+b0021.s9+b0021.s11|ts|res|aff|rr,cmp,mi
+EV|V18|b0023.s3+b0023.s4+b0023.s5|ts|res|aff|rr,cmp
+EV|V19|b0026.s4+b0026.s5+b0026.s6+b0027.s2+b0027.s3+b0047.s4+b0047.s7|ts|int|hyp|rr,ho
+EV|V20|b0006.s5|bg|bgr|aff|ebr,mi
+EV|V21|b0044.s4|bg|bgr|aff|ebr
+EV|V22|b0024.s4+b0024.s5+b0024.s6|ts|res|aff|rr
+EV|V23|b0039.s1|ts|res|aff|rr
+EV|V24|b0062.s1|ts|co|na|do
+EV|V25|b0005.s4+b0005.s5|bg|bgr|na|ebr
+P|G3|D1|sup|c|bg|sup:c:bg:V1|||| 
+P|G3|D2|sup|c|bg|sup:c:bg:V1|||| 
+P|G3|D3|sup|c|bg|sup:c:bg:V1|||| 
+P|G3|D4|sup|c|bg|sup:c:bg:V1|||| 
+P|G3|D5|sup|c|bg|sup:c:bg:V1|||| 
+P|G4|D1|sup|a|bg|sup:a:bg:V2|||Deficient mice develop cardiomyopathy.
+P|G4|D2|sup|a|bg|sup:a:bg:V2|||Deficient mice develop muscular dystrophy.
+P|G1|D6|nf|-||||V4|Disease possibility was not investigated.
+P|G5|D7|unc|-|ts|unc:a:ts:V5|hedged_claim||Predicted patient mutations; no observed disease association.
+P|G6|D7|unc|-|ts|unc:a:ts:V5|hedged_claim||Predicted patient mutations; no observed disease association.
+P|G5|D8|nf|-||||V5|Broad speculation does not establish this specific pair.
+P|G5|D9|nf|-||||V5|Broad speculation does not establish this specific pair.
+P|G5|D10|nf|-||||V5|Broad speculation does not establish this specific pair.
+P|G5|D11|nf|-||||V5|Broad speculation does not establish this specific pair.
+P|G6|D8|nf|-||||V5|Broad speculation does not establish this specific pair.
+P|G6|D9|nf|-||||V5|Broad speculation does not establish this specific pair.
+P|G6|D10|nf|-||||V5|Broad speculation does not establish this specific pair.
+P|G6|D11|nf|-||||V5|Broad speculation does not establish this specific pair.
+F|F1|other|LMNA mutations; neurodevelopmental abnormalities|humans|not_applicable|null|not_reported|V3|Phenotype endpoint; no disease-specific negative.
+F|F2|mechanism|Lmnb1 deficiency; neuronal migration|knockout mouse embryos|not_applicable|negative|not_reported|V6|Developmental phenotype, no named disease model.
+F|F3|mechanism|Lmnb2 deficiency; neuronal migration|previous knockout mouse study|not_applicable|negative|not_reported|V7|Background developmental phenotype.
+F|F4|group_comparison|Reelin expression; Lmnb1 genotype|mutant and control mouse embryos|unknown|null|not_reported|V8|Similar expression reported qualitatively.
+F|F5|group_comparison|Lmnb1 genotype; cortical thickness ratio|E15.5–E17.5 mouse embryos|significant|negative|partial|V9|E16.5 significance unreported.
+F|F6|group_comparison|Lmnb1 genotype; Sox2-positive progenitor counts|E15.5 mutant versus WT embryos|unknown|negative|available|V10|p=0.06; significance not explicitly characterized.
+F|F7|group_comparison|Lmnb1 genotype; Ki67-positive Sox2-positive proportion|mutant versus WT mouse embryos|significant|positive|available|V11|Cell-cycle explanation remains speculative.
+F|F8|group_comparison|Lmnb1 genotype; TBR2-positive progenitor counts|E15.5 mutant versus WT embryos|significant|negative|available|V12|
+F|F9|group_comparison|Lmnb1/Lmnb2 genotype; active caspase 3|E16.5 mutant versus WT cortex|unknown|positive|partial|V13|Qualitative apoptosis comparison.
+F|F10|group_comparison|Lmnb1 genotype; blebs; lamin B2 asymmetry|mutant versus WT cortical neurons|significant|positive|available|V14|
+F|F11|group_comparison|Lmnb2 genotype; nuclear length|mutant versus WT embryonic neurons|significant|positive|partial|V15|Supplementary measurements unavailable.
+F|F12|group_comparison|Lmnb1/Lmnb2 deletion; cortical length|adult conditional knockouts versus WT|mixed|negative|partial|V16|Lmnb2 significance unreported.
+F|F13|group_comparison|joint Lmnb1/Lmnb2 deletion; cortical atrophy|double-knockout versus control mice|significant|negative|available|V17|Joint intervention cannot establish individual gene causality.
+F|F14|group_comparison|Lmnb1 versus Lmnb2 deletion; cortical neurons|adult conditional knockout brains|significant|positive|not_reported|V18|More neurons with Lmnb2 deletion.
+F|F15|hypothesis|Lmna expression; protection from lamin deficiency|mouse skin and brain|not_applicable|positive|not_reported|V19|Mechanistic protection remains inferred.
+F|F16|mechanism|SUN1/SUN2; Syne-1; Syne-2; neuronal migration|previous mutant mouse studies|not_applicable|negative|not_reported|V20|SUN1/SUN2 tested jointly.
+F|F17|mechanism|LIS1; NDEL1; NDE1; cyclin-dependent kinase 5|previous loss-of-function studies|not_applicable|positive|not_reported|V21|Apoptosis and migration phenotypes.
+F|F18|descriptive|Lmnb1/Lmnb2 deletion; adult nuclear morphology|adult conditional knockout neurons|not_applicable|mixed|not_reported|V22|Dentate gyrus differs between models.
+F|F19|mechanism|LIS1; NDE1; NDEL1; neuronal migration|human neurodevelopmental investigations|not_applicable|not_applicable|not_reported|V25|No specific disease attribution.
+C|C1|Cux1-positive neurons after Lmnb1 deletion|b0023.s3+b0039.s1|noncritical|unresolved|Very few versus none; qualitative discrepancy.
+C|C2|Minimum embryos per group|b0021.s4+b0062.s1|noncritical|unresolved|Two reported despite stated minimum three.
+U|Supplemental Figure S1|b0012.s11|Images unavailable; expression comparison readable.
+U|Supplemental Figure S2|b0018.s2+b0019.s3|Nuclear measurements and images unavailable.
+U|Supplemental Figure S3|b0019.s2|Cultured neuron images unavailable.
+U|Supplemental Figure S4|b0020.s4+b0020.s6+b0020.s7+b0021.s10+b0021.s11+b0023.s4|Reporter, deletion, and neuronal images unavailable.
+U|Supplemental Figure S5|b0024.s2+b0024.s3|Conditional knockout nuclear images unavailable.
+U|Supplemental Figure S6|b0026.s5+b0026.s6+b0027.s1+b0027.s2+b0027.s3|Expression and localization images unavailable.
+U|Supplemental Table S1|b0056.s7+b0060.s5|Antibody identities and dilutions unavailable.

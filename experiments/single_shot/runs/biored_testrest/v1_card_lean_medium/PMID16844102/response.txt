@@ -1,0 +1,8 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no genes mentioned
+E|D1|disease|methamphetamine-induced neurotoxicity|methamphetamine-induced neurotoxicity;MA-induced neurotoxicity;dopaminergic neurotoxicity|r||||
+E|D2|symptom|hyperthermia|hyperthermia|r||||
+E|D3|phenotype|neuronal damage|neuronal damage|r||||
+X|glutathione|b0002|chemical, not a gene
+X|dopamine|b0002|chemical, not a gene
+X|serotonin|b0002|chemical, not a gene

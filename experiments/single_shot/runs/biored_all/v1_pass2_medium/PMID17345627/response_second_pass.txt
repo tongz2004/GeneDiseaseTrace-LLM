@@ -1,0 +1,3 @@
+P|G1|D2|nf|-|||||V4|Short ear mentioned only as a phenotypic comparison
+P|G2|D1|nf|-|||||V4|FOP mentioned only as a phenotypic comparison
+P|G2|D2|nf|-|||||V2+V4|The s3 link concerns murine bmp5 (G3), not human

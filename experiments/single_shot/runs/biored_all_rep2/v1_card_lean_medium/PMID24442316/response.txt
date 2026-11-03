@@ -1,0 +1,39 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text, tables or figures
+E|g1|gene|ICAM-1|intercellular adhesion molecule-1;ICAM-1|r||non-human||
+E|g2|gene|VCAM-1|vascular cell adhesion molecule-1;VCAM-1|r||non-human||
+E|g3|gene|vWF|von Willebrand factor;vWF|r||non-human||
+E|g4|gene|MMP-2|matrix metalloproteinase-2;MMP-2|r||non-human||
+E|g5|gene|MMP-9|MMP-2/9|p|other|non-human||
+E|g6|ambiguous_gene|SOD|superoxide dismutase;SOD|u|ambiguous_mapping|non-human||
+E|g7|ambiguous_gene|GST|glutathione S-transferase;GST|u|ambiguous_mapping|non-human||
+E|g8|ambiguous_gene|ALT|alanine aminotransferase;ALT|u|ambiguous_mapping|non-human||
+E|g9|ambiguous_gene|AST|aspartate aminotransferase;AST|u|ambiguous_mapping|non-human||
+E|d1|disease|liver injury|liver injury|r||||
+E|d2|disease|acute liver injury|acute liver injured;acute injury liver;acute injured liver|r|||d1|
+E|d3|disease|hepatic inflammation|liver inflammation;hepatic inflammation|r||||
+E|d4|disease|LSEC injury|LSEC injury|p|other|||
+E|s1|phenotype|hepatocyte apoptosis|hepatocyte apoptosis|r||||
+E|s2|phenotype|lipid peroxidation|hepatic lipid peroxidation|r||||
+X|malondialdehyde|b0002|Lipid peroxidation metabolite, not gene
+EV|V1|b0002.s11|ts|res|aff|rr,cmp
+EV|V2|b0002.s12|ts|res|na|rr,cmp
+EV|V3|b0002.s14|ts|int|hyp|ho
+P|g1|d2|sup|a|ts|sup:a:ts:V1|||Raised in LPS/D-GalN model vs normal mice
+P|g2|d2|sup|a|ts|sup:a:ts:V1|||Raised in LPS/D-GalN model vs normal mice
+P|g3|d2|sup|a|ts|sup:a:ts:V1|||Raised in LPS/D-GalN model vs normal mice
+P|g4|d2|sup|a|ts|sup:a:ts:V1|||Activity raised in model vs normal mice
+P|g5|d2|sup|a|ts|sup:a:ts:V1|||Activity raised in model vs normal mice
+P|g6|d2|unc|-|ts|unc:-:ts:V1|identity||Decreased in model; enzyme isoform unresolved
+P|g7|d2|unc|-|ts|unc:-:ts:V1|identity||Decreased in model; enzyme isoform unresolved
+P|g8|d2|unc|-|ts|unc:-:ts:V1|identity|V2|Serum marker raised; gene identity unresolved
+P|g9|d2|unc|-|ts|unc:-:ts:V1|identity|V2|Serum marker raised; gene identity unresolved
+P|g1|d4|unc|-|ts|unc:-:ts:V1|support_basis_unresolved||Expression read as indicating LSEC injury
+P|g2|d4|unc|-|ts|unc:-:ts:V1|support_basis_unresolved||Expression read as indicating LSEC injury
+P|g3|d4|unc|-|ts|unc:-:ts:V1|support_basis_unresolved||Expression read as indicating LSEC injury
+P|g4|d4|unc|-|ts|unc:-:ts:V1|support_basis_unresolved|V3|Activity read as indicating LSEC injury
+P|g5|d4|unc|-|ts|unc:-:ts:V1|support_basis_unresolved|V3|Activity read as indicating LSEC injury
+F|F1|group_comparison|ICAM-1, VCAM-1, vWF, MMP-2/9 levels|model vs normal control mice|unknown|positive|not_reported|V1|Abstract only; no p values
+F|F2|group_comparison|MMP-2/9 activity, VCAM-1, ICAM-1 expression|CMCS or phenanthroline vs model|significant|negative|not_reported|V2|Drug effect, not disease link
+F|F3|mechanism|MMP-2/9 down-regulation and CMCS protection|LPS/D-GalN injured mice|not_applicable|not_applicable|not_applicable|V3|Authors' interpretation
+R|surface form|b0002.s9|MMP-9 never written alone; only within combined MMP-2/9 notation|Used MMP-2/9 as MMP-9 surface form; marked provisional

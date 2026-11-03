@@ -1,0 +1,9 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no genes mentioned
+E|D1|disease|schizophrenia|schizophrenia|r||||
+E|S1|phenotype|hyper locomotion|hyper locomotion|r||||
+E|S2|phenotype|catalepsy|catalepsy|r||||
+X|dehydroepiandrosterone|b0001|chemical compound, not a gene
+X|DHEA|b0002|chemical abbreviation, not a gene
+F|F1|group_comparison|DHEA dose vs amphetamine-induced locomotion|female Swiss albino mice|significant|negative|partial||chemical only, no gene
+F|F2|group_comparison|DHEA vs apomorphine-induced climbing time|female Swiss albino mice|not_significant|null|partial||chemical only, no gene

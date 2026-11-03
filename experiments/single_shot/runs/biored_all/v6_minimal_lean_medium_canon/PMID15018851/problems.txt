@@ -1,0 +1,3 @@
+P G1-P1: endpoints must be a primary gene and a primary target in the same unit
+P G2-P2: endpoints must be a primary gene and a primary target in the same unit
+P G2-P3: endpoints must be a primary gene and a primary target in the same unit

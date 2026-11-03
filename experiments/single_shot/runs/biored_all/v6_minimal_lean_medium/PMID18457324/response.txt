@@ -1,0 +1,18 @@
+META|Opus 5.5|seen: yes, prior incomplete output in prompt
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|CBR3|CBR3;carbonyl reductase 3|r|||human||
+E|G2|gene|NQO1|NQO1;NAD(P)H:quinone oxidoreductase 1;nicotinamide adenine dinucleotide phosphate:quinone oxidoreductase 1|r|||human||
+E|D1|disease|congestive heart failure|congestive heart failure;CHF|r|||||
+E|D2|disease|cancer|cancer;childhood cancer|r|||||
+X|NQO1*2|b0002.s5|variant allele label, not separate gene
+X|V244M|b0002.s5|CBR3 variant label, not separate gene
+X|cardiotoxic|b0002.s10|adjective, not a disease entity
+EV|V1|b0002.s8|ts|neg|neg|rr
+EV|V2|b0002.s9|ts|res|q|rr,cmp
+EV|V3|b0002.s10|ts|res|na|rr,cmp
+EV|V4|b0002.s11|ts|int|hyp|ho
+P|G2|D1|neg|-|ts|neg:-:ts:V1|||NQO1*2 not associated with CHF, P=.97
+P|G1|D1|unc|a|ts|unc:a:ts:V2+V4|hedged_claim||V3|Nonsignificant trend; conclusion hedged with may
+F|F1|association|NQO1*2 genotype; CHF risk|childhood cancer survivors, anthracycline-treated|not_significant|null|available|V1|
+F|F2|association|CBR3 V244M genotype; CHF risk|childhood cancer survivors, anthracycline-treated|not_significant|positive|available|V2|trend only; 30 cases
+F|F3|mechanism|CBR3 V244 vs M244; doxorubicinol synthesis|recombinant enzyme isoforms|significant|positive|available|V3|in vitro only

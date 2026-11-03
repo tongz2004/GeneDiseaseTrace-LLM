@@ -1,0 +1,23 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|NMDA receptor|NMDA receptor;N-methyl-D-aspartate (NMDA) receptor|p|ambiguous_mapping|human|||
+E|G2|gene|GRIN1|Nr1|r||non-human|G1|
+E|G3|gene|SLC6A9|glycine transporter-1;GlyT1|r||||
+E|G4|gene|SLC6A3|dopamine transporter;DAT|r||non-human||
+E|D1|disease|schizophrenia|Schizophrenia;schizophrenic|r|||||
+E|D2|phenotype|hyperactivity|hyperactivity|r|||||
+E|D3|phenotype|catalepsy|catalepsy|r|||||
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s4+b0002.s10|both|int|aff|rr
+EV|V3|b0002.s6|ts|res|aff|mi,rr
+EV|V4|b0002.s7|ts|res|aff|mi,do
+EV|V5|b0002.s9|ts|res|neg|rr
+P|G1|D1|sup|a|bg|sup:a:bg:V1|||NMDA receptor dysfunction linked to schizophrenia
+P|G3|D1|sup|c|ts|sup:c:ts:V2|||GlyT1 inhibition gives antipsychotic-like effects
+P|G1|D2|sup|c|ts|sup:c:ts:V3|||NMDA antagonist MK-801 induces hyperactivity
+P|G2|D2|sup|c|ts|sup:c:ts:V3|||Nr1 mutant mice show spontaneous hyperactivity
+P|G4|D2|sup|c|ts|sup:c:ts:V4|||DAT knockout mice show hyperactivity
+P|G3|D2|sup|c|ts|sup:c:ts:V3|||GlyT1 inhibitor blocks NMDA-related hyperactivity
+P|G3|D3|nf|-||||V5|GlyT1 inhibitor produced no catalepsy
+F|F1|group_comparison|SSR103800; hyperactivity|MK-801 mice and Nr1(neo-/-) mice|unknown|negative|unread|V3|abstract only
+F|F2|group_comparison|SSR103800; hyperactivity|amphetamine and DAT(-/-) mice|unknown|null|unread|V4|abstract only

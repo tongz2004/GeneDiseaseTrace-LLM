@@ -1,0 +1,24 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or figures
+E|G1|gene|vascular endothelial growth factor|vascular endothelial growth factor|r|||||
+E|G2|gene|proliferating cell nuclear antigen|proliferating cell nuclear antigen|r||non-human||
+E|G3|gene|CD68 (ED-1)|ED-1|p|ambiguous_mapping|non-human||
+E|D1|disease|hypoxia|Hypoxia;hypoxia;hypoxic|r||||
+E|D2|disease|renal disease|renal disease|r||||
+E|D3|disease|proteinuria|proteinuria|r||||
+E|D4|disease|glomerular hypertension|glomerular hypertension|r||||
+E|D5|disease|nephrotic syndrome|nephrotic syndrome|r||||
+E|D6|disease|tubulointerstitial injury|tubulointerstitial injury|r||||
+E|D7|disease|glomerular diseases|glomerular diseases|r||||
+X|puromycin aminonucleoside|b0002.s4|inducing chemical, not a disease
+X|remnant kidney model|b0002.s4|experimental model, not a named disease
+X|terminal dUTP nick-end labeled|b0002.s7|assay label, not a gene
+EV|V1|b0002.s5|ts|res|aff|rr,cmp
+EV|V2|b0002.s7|ts|co|aff|do
+EV|V3|b0002.s2|ts|co|na|none
+P|G1|D5|sup|a|ts|sup:a:ts:V1||V3|VEGF expression mildly decreased in PAN nephrosis
+P|G1|D1|unc|-|ts|unc:-:ts:V1|support_basis_unresolved|V3|Hypoxia element from VEGF; VEGF diverges from hypoxia
+P|G2|D1|unc|-|ts|unc:-:ts:V2|support_basis_unresolved||PCNA-positive cells localized in hypoxic area only
+P|G3|D1|unc|-|ts|unc:-:ts:V2|support_basis_unresolved||ED-1-positive cells localized in hypoxic area only
+F|F1|group_comparison|VEGF expression; disease models|PAN and remnant kidney rats|unknown|negative|unread|V1|abstract only; magnitude not given
+F|F2|descriptive|PCNA, ED-1 cell localization; hypoxia|remnant kidney rats|not_applicable|not_applicable|unread|V2|localization only

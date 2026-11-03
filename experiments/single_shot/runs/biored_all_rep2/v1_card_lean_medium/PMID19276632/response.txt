@@ -1,0 +1,17 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|FOXF2|FOXF2|r||human||
+E|G2|gene|Foxf2|Foxf2|p|species_unresolved|non-human||
+E|D1|disease|disorders of sex development|disorders of sex development;DSD|r||||
+E|D2|disease|disorders of sexual differentiation|disorders of sexual differentiation|r||||
+E|D3|disease|cleft palate|cleft palate|r||||
+E|S1|phenotype|hypoplasia of the genital tubercle|hypoplasia of the genital tubercle|r||||
+EV|V1|b0002.s3|bg|bgr|aff|ebr,mi
+EV|V2|b0002.s4|ts|hyp|hyp|ho
+EV|V3|b0002.s7+b0002.s8+b0002.s9|ts|co|na|do
+EV|V4|b0002.s10+b0002.s11|ts|int|hyp|ho
+P|G2|D3|sup|c|bg|sup:c:bg:V1||V1|Knockout mice present cleft palate; non-human
+P|G1|D1|unc|-|ts|unc:-:ts:V4|hedged_claim|V2+V3|Unique variants only possibly contributing; mostly polymorphisms
+P|G1|D3|unc|-|ts|unc:-:ts:V4|hedged_claim|V2+V3|Unique variants only possibly contributing; mostly polymorphisms
+F|F1|descriptive|FOXF2 variants in patients vs controls|18 DSD+cleft palate patients; 20 controls|not_applicable|not_applicable|not_reported|V3|No statistical test; small sample
+F|F2|other|Foxf2 knockout phenotype|Foxf2 knockout mice|unknown|positive|not_reported|V1|Prior study, details not given

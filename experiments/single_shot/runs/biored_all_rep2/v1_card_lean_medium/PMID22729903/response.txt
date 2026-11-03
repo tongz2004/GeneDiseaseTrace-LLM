@@ -1,0 +1,22 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|STAT4|STAT4|r||human||
+E|D1|disease|systemic lupus erythematosus|systemic lupus erythematosus;SLE|r||||
+E|S1|symptom|renal symptoms|renal symptoms|r||||
+E|S2|symptom|neurologic manifestations|neurologic manifestations|r||||
+E|S3|phenotype|anti-snRNP Ab presence|anti-snRNP Ab|r||||
+E|S4|phenotype|anti-Scl-70 Ab presence|anti-Scl-70 Ab|r||||
+X|rs7582694|b0002|variant identifier
+X|anti-Scl-70|b0002|autoantibody lab finding, not gene
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s3|ts|res|aff|rr,cmp
+EV|V3|b0002.s4|ts|res|aff|rr,cmp
+EV|V4|b0002.s7|ts|int|aff|rr
+EV|V5|b0002.s5|ts|res|aff|rr,cmp
+EV|V6|b0002.s6|ts|res|aff|rr,cmp
+P|G1|D1|sup|a|both|sup:a:bg:V1;sup:a:ts:V2+V3+V4|||Background susceptibility plus case-control risk association
+F|F1|association|STAT4 C/G+CC genotypes vs SLE risk|253 SLE vs 521 Polish controls|significant|positive|available|V2|
+F|F2|association|STAT4 C allele vs SLE risk|253 SLE vs 521 Polish controls|significant|positive|available|V3|
+F|F3|association|STAT4 C/C+C/G vs renal symptoms|SLE patients|significant|positive|available|V5|within-disease subgroup comparison
+F|F4|association|STAT4 C/C+C/G vs neurologic manifestations|SLE patients|significant|positive|available|V5|within-disease subgroup comparison
+F|F5|association|STAT4 C/C+C/G vs anti-snRNP, anti-Scl-70|SLE patients|significant|positive|available|V6|within-disease autoantibody comparison

@@ -30,7 +30,7 @@
 
 \begin{frontmatter}
 
-\title{Evidence-Traceable, Status-Aware Gene--Disease Relation Extraction with a Large Language Model: A Multi-Benchmark Evaluation}
+\title{Zero-Shot, Evidence-Grounded Gene--Disease Relation Extraction from Full Text: A Controlled Multi-Benchmark Evaluation of Large Language Models}
 
 \author[a]{Zeqian Tong}
 \author[b]{\todo{co-authors}}
@@ -39,17 +39,17 @@
 
 \begin{abstract}
 \setlength{\parindent}{0pt}\setlength{\parskip}{6pt}%
-\textbf{Objective:} Current relation extractors return positive entity pairs, mostly from abstracts, without supporting text, certainty levels, or study-versus-background provenance. We developed and evaluated a zero-shot method that extracts gene--disease relations from abstracts and full texts together with sentence-level evidence, a four-way status (\st{supported}, \st{uncertain}, \st{explicit\_negative}, \st{not\_found}), and a source label (this study or background).
+\textbf{Objective:} Public gene--disease resources such as PubTator3 derive relations from abstracts and return pairs without evidence sentences, certainty grades, or study-versus-background provenance. We evaluated what a zero-shot large language model (LLM) pipeline that emits this curation schema can and cannot deliver on abstracts and full texts, and which prompt and input choices drive its performance.
 
-\textbf{Methods:} In a single request per paper, a large language model (Claude Opus 5.5) follows a frozen one-page decision card and cites supporting sentences by ID; a deterministic validator checks every cited span against source text. Without benchmark-specific tuning, we evaluated the method on BioRED (419 abstracts), EU-ADR (100 abstracts), and 40 RENET2 full-text articles using pair matching, bootstrap confidence intervals, and PubTator3 as comparator.
+\textbf{Methods:} Using one extraction request per paper (and at most one repair request on validation failure), an LLM follows a 108-word task prompt and cites sentences by ID; a deterministic validator checks that every entity mention occurs verbatim and that every cited sentence ID resolves. We compared this minimal prompt with a 1,045-word decision card, and compared both with PubTator3 on BioRED, EU-ADR, and RENET2. On BioTriplex, a manually annotated full-text corpus (30 articles locked before any run), we compared abstract and full-text input for the same system, a second LLM, and BioREx, the supervised model inside PubTator3, run locally over full-text paragraphs. All systems were scored with one-to-one matching and paired bootstrap intervals.
 
-\textbf{Results:} On BioRED, strict precision was 0.894 (95\% CI 0.855--0.931) and recall 0.430. On a 50-abstract test sample, in-domain PubTator3 scored higher (F1 0.726 vs 0.551), while both systems recovered 73\% of gold relations. On EU-ADR, F1 was comparable (0.506 vs 0.529) and all three negative gold pairs were labelled \st{explicit\_negative}. On RENET2 full texts, our recall exceeded PubTator3's (0.370 vs 0.254), and only 2 of 223 \st{supported} pairs contradicted a gold label. Re-querying 97 unjudged same-sentence BioRED pairs yielded no new \st{supported} relation, showing that misses were not overlooked; instead, routing \st{uncertain} pairs by reason code (chosen on Train+Dev) raised held-out Test F1 from 0.542 to 0.627 without precision loss (0.846 vs 0.853). GPT-6.1 Sol gave the same F1 (0.555), at USD 0.056 per abstract and USD 0.44 per full text.
+\textbf{Results:} The decision card lowered F1 on BioRED (0.551 vs 0.665 on Dev+Test) by lowering recall (0.418 vs 0.604). On BioRED Test and on BioTriplex abstracts, the minimal prompt and PubTator3 were not distinguishable (F1 0.614 vs 0.680; 0.395 vs 0.377). Reading the full text raised recall on BioTriplex for every system: from 0.366 to 0.813 for Claude Opus 5.5, from 0.302 to 0.884 for GPT-6.1 Sol, and from 0.291 to 0.722 for BioREx. On identical full-text input, both LLMs exceeded BioREx in F1 (0.525 vs 0.332; 0.433 vs 0.304) through higher precision, with similar recall. Blinded single-annotator checks indicated that most pairs absent from the sparse BioTriplex annotation had textual support and that the precision gap arose mainly from entity scope and entity merging. Full-text extraction cost about USD 0.40 per article; safety filters blocked 13\% of BioTriplex full texts for the primary model.
 
-\textbf{Conclusion:} A written decision card with deterministic validation turns a general-purpose LLM into a precise, auditable gene--disease extractor that complements supervised tools. Its recall gap mainly reflects a stricter evidence standard than benchmark annotators apply, and status labels let users adjust this trade-off.
+\textbf{Conclusion:} Input scope determined recall far more than prompt detail did. Zero-shot LLMs performed in the range of supervised abstract-level extraction and, on full text, produced fewer out-of-scope pairs than a supervised pipeline trained on abstracts, while attaching sentence-level citations. Detailed evidence rules can cost recall and should be validated before use.
 \end{abstract}
 
 \begin{keyword}
-Relation Extraction; Gene--Disease Association; Large Language Models; Biocuration; Evidence Traceability
+Relation Extraction; Gene--Disease Association; Large Language Models; Full-Text Mining; Biocuration; Evaluation Methodology
 \end{keyword}
 
 \end{frontmatter}
@@ -57,198 +57,287 @@ Relation Extraction; Gene--Disease Association; Large Language Models; Biocurati
 %% ===================================================================
 \section{Introduction}
 
-Gene--disease associations underpin variant interpretation, drug-target discovery, and curated knowledge bases such as DisGeNET~\cite{pinero2020disgenet} and CTD~\cite{davis2023ctd}. Because most of this knowledge is published as free text across more than a million new articles a year, manual curation alone cannot keep pace. Automatic relation extraction has therefore advanced steadily on benchmarks such as BioRED~\cite{luo2022biored}: supervised encoders~\cite{lee2020biobert,gu2021pubmedbert,lai2023biorex} and literature-scale systems such as PubTator3~\cite{wei2024pubtator3} now reach high F1 in their training domain.
+Curated gene--disease knowledge bases depend on continuous extraction from primary literature. Associations between genes and diseases underpin variant interpretation, drug-target discovery, and repositories such as DisGeNET~\cite{pinero2020disgenet} and CTD~\cite{davis2023ctd}. More than a million biomedical articles appear each year, so manual curation alone cannot keep pace. Supervised encoders~\cite{lee2020biobert,gu2021pubmedbert,lai2023biorex} and literature-scale systems such as PubTator3~\cite{wei2024pubtator3} achieve high F1 on benchmarks such as BioRED~\cite{luo2022biored} within their training domain.
 
-Yet a substantial gap remains between benchmark relation extraction and practical biocuration. Current tools return a flat list of positive pairs, mostly from abstracts, whereas curation requires richer, auditable records across the full text. First, curators must see supporting sentences to check each claim in seconds. Second, a paper may support a relation, hedge it, or report no association; collapsing these into ``related'' or ``not related'' discards negative and speculative findings. Third, curators distinguish a paper's own results from citations of prior work. Finally, abstract-only tools miss relations stated only in the body: in our 100-paper full-text corpus, 90\% of supported relations had evidence only outside the abstract.
+Benchmark extraction and practical curation differ in output structure and text scope. Widely used public resources such as PubTator3 return positive pairs derived from abstracts, whereas curators need auditable records across the paper: verbatim supporting sentences, a distinction between demonstrated, hedged, and null findings, and a separation of a study's own results from background citations. On BioTriplex~\cite{collins2026biotriplex}, a manually annotated full-text corpus, 115 of the 151 relations in our evaluation set are linked only outside the abstract.
 
-Large language models (LLMs) can read full papers and follow written instructions, making them natural candidates for this richer task. Applying LLMs to curation, however, faces both a reliability challenge and an evaluation challenge. Brief, free-form prompts leave boundary cases undefined and can produce unverified text spans or invalid schemas~\cite{chen2025benchmarking,wadhwa2023revisiting}, whereas multi-turn agent pipelines require multiple costly requests per paper. Meanwhile, benchmark evaluation is difficult when annotation standards differ or gold sets are incomplete, because apparent false positives may be valid relations left unlabelled~\cite{wadhwa2023revisiting,fan2024evaluating}.
+Large language models can read full papers and emit this schema, yet three questions remain open. First, it is unclear how much written guidance helps: curation-oriented prompting often relies on detailed rules, while guideline-conditioned extraction~\cite{sainz2024gollie} and template-based systems~\cite{caufield2024spires} seldom isolate the effect of rule content on recall. Second, comparisons between full-text LLM extractors and abstract-level resources confound the method with the input. Third, gold standards are often selective, so unannotated valid relations are scored as false positives alongside genuine errors~\cite{wadhwa2023revisiting,fan2024evaluating}, and position-based scoring can credit one gold relation several times.
 
-We address both challenges in a single-request pipeline: a frozen one-page decision card defines explicit boundary rules, four-way statuses, and source labels; a compact line-based output cites sentence IDs only; and a deterministic validator rejects any answer whose entity mentions or sentence IDs do not match the paper. We evaluate the frozen method across three benchmarks with distinct annotation protocols (BioRED~\cite{luo2022biored}, EU-ADR~\cite{vanmulligen2012euadr}, and RENET2~\cite{su2021renet2}), compare it with PubTator3~\cite{wei2024pubtator3} and GPT-6.1 Sol, and audit contradictions of explicit negative labels separately from unlabelled extra predictions. The method is consistently precise, rarely contradicts explicit negative labels, and owes its recall gap to a stricter evidence standard rather than overlooked text, a trade-off that users can adjust via the status reason codes.
+We address these questions with a controlled evaluation of one pipeline. The pipeline makes one extraction request per paper (with at most one repair request on validation failure), cites evidence by sentence ID, and passes a deterministic validator. Around it we compare a minimal task prompt with a detailed decision card and with guideline-derived rules; evaluate on BioRED, EU-ADR, RENET2, and a locked BioTriplex set; separate input scope from method by running each system on abstracts and on full texts, including BioREx~\cite{lai2023biorex} over full-text paragraphs; replicate with a second LLM; score all systems with one-to-one matching; and audit disagreements with blinded checks.
 
 %% ===================================================================
 \section{Related Work}
 
 \subsection{Supervised Biomedical Relation Extraction}
-Domain-pretrained encoders such as BioBERT~\cite{lee2020biobert} and PubMedBERT~\cite{gu2021pubmedbert}, fine-tuned on annotated corpora, remain the standard approach for biomedical relation extraction. BioREx~\cite{lai2023biorex} improved BioRED performance by pooling heterogeneous corpora during training, and subsequent work added relation directionality~\cite{lai2025directionality}. PubTator3~\cite{wei2024pubtator3} pairs a BioRED-trained relation extractor with entity recognition and normalization across PubMed and PMC, serving as the most widely used public resource and our main comparator. Although effective in their training domain, these supervised systems output only positive relation labels without supporting sentences, certainty levels, or study-versus-background provenance, and PubTator3 extracts relations from abstracts only. Our method addresses each of these curation needs across full texts while complementing supervised extractors.
+Supervised domain encoders remain the primary baseline for biomedical relation extraction. BioBERT~\cite{lee2020biobert} and PubMedBERT~\cite{gu2021pubmedbert} fine-tune pretrained representations on annotated corpora; BioREx~\cite{lai2023biorex} pools heterogeneous datasets, and later work adds relation directionality~\cite{lai2025directionality}. PubTator3~\cite{wei2024pubtator3} deploys BioREx with entity recognition and normalization across PubMed and PMC and is the standard public resource and our primary comparator. In our checks its relation predictions were the same with and without its full-text export, so the behaviour of this model family on full-text paragraphs has not been characterized. We run BioREx over full-text paragraphs to measure it directly.
 
 \subsection{Large Language Models for Relation Extraction and Biocuration}
-Recent benchmarks show that zero- and few-shot LLMs lag behind fine-tuned encoders on standard relation extraction metrics~\cite{chen2025benchmarking,islamaj2024biocreative,brokman2025benchmark,gade2025benchmarking}. In the BioCreative VIII BioRED track~\cite{islamaj2024biocreative} and subsequent zero-shot evaluations on BioRED~\cite{brokman2025benchmark} and across 61 biomedical triplet datasets~\cite{gade2025benchmarking}, direct LLM prompting struggled with schema adherence, unaligned entity spans, and ambiguous relation boundaries. Curation frameworks such as SPIRES (OntoGPT)~\cite{caufield2024spires} and DRAGON-AI~\cite{toro2024dragonai} enforce structured templates, but like prior zero-shot studies they use short task prompts and score only positive predictions without verifying cited sentences or grading uncertain and negative findings. Our approach addresses these limitations in three ways: a frozen 1,000-word decision card defines explicit boundary rules and reason codes instead of a brief prompt; line-based output citing sentence IDs is checked verbatim against source text by a deterministic validator; and four-way statuses with source labels capture uncertain, negative, and background assertions alongside supported findings.
+Direct prompting of LLMs has generally trailed supervised encoders on biomedical relation extraction~\cite{chen2025benchmarking,islamaj2024biocreative,brokman2025benchmark,gade2025benchmarking}. Three lines of work combine LLMs with structure. Guideline-conditioned models such as GoLLIE~\cite{sainz2024gollie} and curation frameworks such as SPIRES~\cite{caufield2024spires} and DRAGON-AI~\cite{toro2024dragonai} supply schemas or rules. Cascades such as CoRE~\cite{song2026core} route low-confidence predictions of a supervised model to an LLM with retrieved examples, improving BioRED F1 with entity pairs given. Statement validation against supplied text~\cite{adam2025traceable} verifies given claims and reported 0.88 precision and 0.44 recall on BioRED-derived statements with corrupted negatives. Full-text evaluations on human genetics articles~\cite{yin2026benchmarking} and on BioTriplex~\cite{collins2026biotriplex} extend the scope beyond abstracts. We do not propose a new extraction algorithm; we measure, under one scorer, how prompt content, input scope, and model family affect end-to-end extraction with deterministically resolved citations.
 
 \subsection{Gene--Disease Benchmarks and Incomplete Gold Standards}
-Gene--disease benchmarks differ substantially in text scope and annotation protocol. BioRED~\cite{luo2022biored} annotates eight relation types between concept pairs in 600 abstracts and marks whether each relation is a new finding (\emph{Novel}). EU-ADR~\cite{vanmulligen2012euadr} labels gene--disease pairs in abstracts as positive, speculative, or negative by annotator consensus. RENET2~\cite{su2021renet2} provides document-level labels on full texts, but only for tool-proposed candidate pairs, with negative labels assigned automatically. Evaluating generative extractors against such corpora is difficult because valid relations are often unannotated: Wadhwa et al.~\cite{wadhwa2023revisiting} showed through manual review that many apparent LLM false positives are valid relations missed by annotators, and Fan et al.~\cite{fan2024evaluating} separated unannotated valid extractions from factual errors. Crowdsourced re-annotation of EU-ADR likewise showed that single-annotator relations and guideline ambiguities account for many disagreements~\cite{li2015crowdsourcing}. To address these protocol differences and incomplete gold sets, we evaluate the same frozen pipeline across all three benchmarks without tuning, use reason codes and source labels to explain disagreements, and audit explicit negative contradictions separately from unlabelled extra predictions.
+Public gene--disease benchmarks encode different annotation protocols and completeness assumptions. BioRED~\cite{luo2022biored} labels relations between concept pairs in 600 abstracts and marks primary findings as \emph{Novel}. EU-ADR~\cite{vanmulligen2012euadr} assigns consensus positive, speculative, or negative labels, where re-annotation has shown that guideline boundaries drive disagreement~\cite{li2015crowdsourcing}. RENET2~\cite{su2021renet2} restricts human review to tool-proposed candidates and assigns negatives automatically. BioTriplex~\cite{collins2026biotriplex} annotates relation phrases with gene and disease links across 100 full texts; its released BERT training scripts classify relation types without negative samples, so those supervised results do not measure end-to-end detection as defined here. When generative extractors are scored against such corpora, benchmark precision mixes factual errors with valid unannotated relations~\cite{wadhwa2023revisiting,fan2024evaluating}. We therefore decompose apparent false positives by external annotation category and check samples of them blind.
 
 %% ===================================================================
 \section{Methods}
 
 \subsection{Datasets}
-We evaluated the method on three public benchmarks that span abstracts and full texts under different annotation protocols (Table~\ref{tab:benchmarks}), supplemented by an unlabelled 100-paper PMC corpus to assess full-text extraction behaviour.
+Four public benchmarks with distinct annotation protocols evaluate the pipeline on abstracts and full texts (Table~\ref{tab:benchmarks}).
 
 \subsubsection{BioRED}
-We used all 419 BioRED abstracts that contain at least one gene--disease relation (Train 275, Dev 71, Test 73), comprising 1,633 gold relations. A relation counts when one endpoint is a gene or gene product and the other is a disease or phenotypic feature, regardless of relation subtype. For the head-to-head comparison with PubTator3, we used a 50-abstract Test sample. Rules for routing \st{uncertain} pairs were selected on Train+Dev only, keeping Test strictly held out.
+A pair counts as a gold relation when one concept is a gene or gene product and the other a disease or phenotypic feature, pooled across relation subtypes. Prompt comparisons used the abstracts with at least one gene--disease relation in Dev (71) and Test (73). Test results additionally include the 27 Test abstracts without such a relation, where any \st{supported} pair counts as a false positive, giving all 100 Test abstracts. We selected the minimal prompt after inspecting Test results, so BioRED results are not a clean held-out estimate for it; BioTriplex serves that role.
 
 \subsubsection{EU-ADR}
-We used all 100 abstracts of the EU-ADR target--disorder subset, which contains 134 consensus pairs with graded labels: 122 positive (PA), 9 speculative (SA), and 3 negative (NA). Unless stated otherwise, PA pairs serve as gold positive relations, while SA and NA pairs test our status labels.
+We used all 100 abstracts of the EU-ADR target--disorder subset, comprising 134 consensus pairs: 122 positive (PA), 9 speculative (SA), and 3 negative (NA). Precision and recall treat PA pairs as gold positives; SA and NA pairs evaluate the non-binary statuses.
 
 \subsubsection{RENET2}
-We randomly sampled 40 full-text articles from RENET2 (seed 20261028), whose released texts cover the title, abstract, and early body. The sample contains 181 associated, 83 non-associated, and 1 ambiguous pair; non-associated labels were assigned automatically by tools rather than verified by hand. Three associated pairs involve an entity absent from the released text, which we keep in the recall denominator.
+We drew 40 full-text articles from RENET2 (seed 20261028), whose released texts cover the title, abstract, and early body. The sample contains 181 associated, 83 non-associated, and 1 ambiguous pair; non-associated labels were assigned by text-mining tools without manual verification.
 
-\subsubsection{Full-text corpus}
-To evaluate full-text extraction beyond abstract-level benchmarks, we ran the pipeline on 100 heterogeneous PMC articles (including research articles, case reports, reviews, and one conference-abstract collection) and compared its output against PubTator3.
+\subsubsection{BioTriplex}
+BioTriplex~\cite{collins2026biotriplex} contains 100 PMC open-access articles split by article into train (70), validation (15), and test (15), with gene and disease mentions, relation phrases, links, and a background or result location for each relation. None of the 100 articles occurs in BioRED, RENET2, EU-ADR, or our development papers (checked by PMID). Because our system is zero-shot, we locked validation plus test (30 articles) as the evaluation set before any run; five train articles were used only to check the adaptation. Entities carry no database identifiers, so we merged mentions of one type within an article by normalized text and by adjacent ``long form (short form)'' patterns. A gene--disease pair is a gold relation when at least one link carries a relation other than \emph{no relation}, collapsing the 21 types. The set contains 151 gold relations in 21 articles: 36 linked in the abstract and 115 linked only outside it. The corpus authors report 0.71 F1 agreement on relation annotation~\cite{collins2026biotriplex}.
 
 \begin{table}[!htbp]
 \centering\footnotesize
-\caption{Benchmarks used in this study.}
+\caption{\textbf{Public gene--disease benchmarks evaluated in this study.} The four corpora span PubMed abstracts and PMC full texts under different annotation scopes and negative-label protocols.}
 \label{tab:benchmarks}
-\begin{tabularx}{\linewidth}{@{}l>{\raggedright\arraybackslash}p{2.3cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{3.4cm}>{\raggedright\arraybackslash}p{2.6cm}@{}}
+\begin{tabularx}{\linewidth}{@{}l>{\raggedright\arraybackslash}p{2.2cm}>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}p{3.3cm}>{\raggedright\arraybackslash}p{2.5cm}@{}}
 \toprule
 Benchmark & Text & Documents used & Gold gene--disease relations & Labels beyond ``related''\\
 \midrule
-BioRED~\cite{luo2022biored} & PubMed abstracts & 419 abstracts with $\geq$1 gene--disease relation (Train 275 / Dev 71 / Test 73); 50-abstract Test sample & 1,633 & Novel / not novel\\
+BioRED~\cite{luo2022biored} & PubMed abstracts & Dev 71; Test 100 (73 with a relation) & 293 Dev; 295 Test & Novel / not novel\\
 EU-ADR~\cite{vanmulligen2012euadr} & PubMed abstracts & Target--disorder subset, 100 abstracts & 134 consensus pairs: 122 PA, 9 SA, 3 NA & Positive / speculative / negative\\
-RENET2~\cite{su2021renet2} & PMC full text (title, abstract, early body) & Random sample of 40 articles & 181 associated; 83 non-associated; 1 ambiguous & Non-associated labels tool-assigned\\
+RENET2~\cite{su2021renet2} & PMC text (title, abstract, early body) & Random sample of 40 articles & 181 associated; 83 non-associated; 1 ambiguous & Negatives tool-assigned\\
+BioTriplex~\cite{collins2026biotriplex} & PMC full text by subsection & Locked set of 30 articles (validation + test) & 151 relations; 115 only outside the abstract & Background / result; 21 types\\
 \bottomrule
 \end{tabularx}
 \end{table}
 
-\subsection{Relation Extraction}
+\subsection{Extraction Pipeline}
 
 \subsubsection{Task Definition}
-Given one paper as plain text, the extractor identifies primary gene and disease entities, links each entity to all surface forms that appear verbatim in the text, and assigns one of four statuses to every gene $\times$ disease pair (Table~\ref{tab:status}). Each \st{supported} pair also receives a relation type (causal, correlation, or association) and a source label indicating whether the relation comes from this study, background citations, both, or is unclear. To keep disease endpoints specific, general symptoms and phenotypes are recorded as auxiliary entities rather than primary disease endpoints; Section~\ref{sec:eval} evaluates the impact of this boundary on benchmark recall.
+Given one paper as plain text, the extractor identifies gene and disease entities, links each entity to its verbatim surface forms, and assigns one of four mutually exclusive statuses to every gene $\times$ disease pair (Table~\ref{tab:status}). Every \st{supported} pair also receives a relation type (causal, correlation, or association), a source label (this study, background, both, or unclear), and cited sentence IDs.
 
 \begin{table}[!htbp]
 \centering\footnotesize
-\caption{The four pair statuses.}
+\caption{\textbf{Four-way pair status schema assigned to every extracted gene $\times$ disease pair.} Only \st{supported} pairs count as positive predictions under the default strict view.}
 \label{tab:status}
 \begin{tabularx}{\linewidth}{@{}lX@{}}
 \toprule
-Status & Definition\\
+Status & Definition in the minimal prompt\\
 \midrule
-\textcolor{stsup}{\st{supported}} & The text reports a finding or an explicit attribution linking the pair (not an aim or a hypothesis), and the link is readable in the text.\\
-\textcolor{stunc}{\st{uncertain}} & There is potential evidence, but hedging, scope, identity, co-reference, presupposition or a conflict prevents a decision. A reason code is required.\\
-\textcolor{stneg}{\st{explicit\_negative}} & The text explicitly reports no association, or an opposite result, for this pair on a stated question.\\
-\textcolor{stnf}{\st{not\_found}} & Everything else, including co-occurrence only. It does not mean the pair is medically unrelated.\\
+\textcolor{stsup}{\st{supported}} & The paper gives evidence of a relationship.\\
+\textcolor{stunc}{\st{uncertain}} & There is some evidence, but it is not conclusive. A reason code is required.\\
+\textcolor{stneg}{\st{explicit\_negative}} & The paper reports that there is no relationship.\\
+\textcolor{ink}{\st{not\_found}} & No evidence; includes unlisted pairs. It does not mean the pair is medically unrelated.\\
 \bottomrule
 \end{tabularx}
 \end{table}
 
-\subsubsection{Decision Card}
-Our decision rules originated as a detailed annotation guideline refined on development papers prior to any benchmark evaluation. We distilled this guideline into a one-page decision card of about 1,000 words, paired with an output format specification of about 600 words. The card specifies entity typing and merging, the four pair statuses, relation types, source labels, and explicit rules for ambiguous cases: co-occurrence alone is never a relation; authors' speculative statements are labelled \st{uncertain} with reason code \st{hedged\_claim}; variants reported without disease attribution are excluded; and statistical tests support a pair only when they directly test that gene against that disease outcome. The card was frozen as variant V1 before running any benchmark and was never modified across datasets.
-
-Before freezing the card, we compared three prompt variants on a stratified development set of 12 full-text papers that were never used to draft the rules. Condensing the full guideline into the one-page card (V1 vs V2) preserved extraction quality, achieving 0.976 pair-status agreement while reducing first-request cost by about 12\%. Lowering reasoning effort from medium to low (V3) reduced cost by 24\% but missed about 10\% of genes, diseases, and supported relations; we therefore retained medium reasoning effort. \todo{add a minimal-prompt baseline without the card.}
-
-\subsubsection{Single-Request Pipeline}
-The extraction pipeline executes four sequential steps per paper (Fig.~\ref{fig:pipeline}). First, in \emph{Packing}, deterministic code splits the paper into numbered blocks and sentences with stable IDs (e.g.\ \texttt{b0012.s3}), removes the reference list, and places the frozen decision card and format specification into a cached system prompt. Second, in \emph{Generation}, a single request to Claude Opus 5.5 (with medium reasoning effort and all tools disabled) produces pipe-separated lines covering entities, evidence items, pair judgments, study findings, conflicts, and rule gaps. Rather than copying quotes, the model cites evidence by sentence ID only, which prevents altered quotations and reduces output tokens. Third, in \emph{Expansion}, a deterministic script matches every predicted surface form verbatim in the text, resolves sentence IDs to exact quotes and character offsets, and constructs the complete gene $\times$ disease matrix by setting unlisted pairs to \st{not\_found}. Fourth, in \emph{Validation}, a deterministic validator checks that every surface form occurs verbatim, every cited sentence ID exists, pair endpoints are primary entities, and all \st{uncertain} pairs carry legal reason codes. Any validation failure triggers a single repair request listing the exact errors. Across the 100-paper full-text corpus, 69 papers passed validation on the first request and 31 required one repair; all 100 passed after repair, and every repair corrected formatting rather than substantive judgments. Fig.~\ref{fig:example} illustrates the complete output for one full-text article.
+\subsubsection{Processing Steps}
+Every paper passes through four sequential steps: deterministic packing, language-model generation, deterministic expansion, and schema validation (Fig.~\ref{fig:pipeline}). \emph{Packing} splits the document into numbered blocks and sentences with stable IDs and strips references and administrative sections. \emph{Generation} makes one extraction request (medium reasoning effort, all tools disabled) that emits pipe-separated lines; the model cites evidence by sentence ID only, preventing altered quotations. \emph{Expansion} matches surface forms verbatim, resolves sentence IDs to quotes and offsets, and fills unlisted pairs as \st{not\_found}. \emph{Validation} checks these properties and the schema; any error triggers at most one repair request listing the violations. We use \emph{evidence-grounded} in this operational sense: the validator verifies that every entity surface form occurs verbatim and that every cited sentence ID resolves to a source sentence; semantic judgment of whether a sentence supports a relation remains with the model. Fig.~\ref{fig:example} illustrates the output.
 
 \begin{figure}[!htbp]
 \centering
 \resizebox{\linewidth}{!}{\input{figures/fig2_pipeline}}
-\caption{The single-request pipeline. Only step~2 calls the LLM; packing, expansion and validation are deterministic code. A paper that fails validation gets one repair request listing the errors.}
+\caption{\textbf{Architecture of the four-step extraction pipeline.} Steps~1, 3, and~4 execute deterministic code; Step~2 makes one extraction request to the language model. Any output that fails verbatim surface-form, sentence-ID, or schema checks in Step~4 triggers at most one repair request listing the validation errors.}
 \label{fig:pipeline}
 \end{figure}
 
 \begin{figure}[!htbp]
 \centering
 \resizebox{\linewidth}{!}{\input{figures/fig1_example}}
-\caption{Traceable extraction on one full-text article, PMC10014009~\cite{kim2023fccm}. (A)~Excerpts with stable sentence IDs; genes in blue, disease mentions in coral. (B)~The model's compact output cites sentence IDs only. (C)~Deterministically expanded pair records covering three statuses and both sources. (D)~The resulting per-paper bipartite graph. Quotes are reproduced from an open-access article (CC~BY-NC-ND~4.0) for illustration.}
+\caption{\textbf{Traceable output format on one full-text article, PMC10014009~\cite{kim2023fccm}.} (A)~Source excerpts with stable sentence IDs; gene mentions are highlighted in blue and disease mentions in coral. (B)~Compact pipe-separated model output citing sentence IDs only. (C)~Deterministically expanded pair records spanning three statuses and both provenance sources. (D)~Resulting document-level gene--disease graph. The example was produced with the decision card; all prompt variants share this output format. Excerpts are reproduced from an open-access article (CC~BY-NC-ND~4.0).}
 \label{fig:example}
 \end{figure}
 
-\subsubsection{Comparators}
-We compared our pipeline against two reference systems. First, we queried the public \emph{PubTator3} API~\cite{wei2024pubtator3} as a representative supervised literature system; because its relation extractor is trained on BioRED and operates on abstracts only (even for RENET2 full-text articles), it provides an in-domain supervised benchmark on BioRED and an abstract-only baseline on full texts. Second, to test whether extraction behaviour is tied to a single LLM family, we ran \emph{GPT-6.1 Sol} via the Codex CLI using the exact same frozen decision card, output format, packed text, and validator. \todo{add an open-weight LLM with the same card, and published supervised BioRED results as reference rows.}
+\subsubsection{Prompt Variants}
+All variants share the output format, packed text, validator, and model settings; they differ only in the task text. The \emph{minimal prompt} is a 108-word task statement that lists the four statuses and asks for relation type, source, and sentence IDs; it is the default system in this paper. The \emph{decision card} is a 1,045-word rule document distilled from a longer guideline written on pilot articles. It adds entity-scope rules (general symptoms and gene families are recorded as auxiliary entities) and strict evidence rules (for example, hedged statements receive \st{uncertain}). The \emph{guideline variants} add to the minimal prompt either entity rules (268 words) or relation rules (355 words) taken from the official BioRED annotation guideline; we ran them on Dev as single-factor diagnostics. A rule fixed in advance withheld a combined variant if neither factor changed F1.
+
+\subsubsection{Deterministic Pre-Processing}
+The minimal prompt often produced fixable format violations. We therefore replayed stored first answers offline through two deterministic steps that make no model calls: \emph{canonicalization} recomputes the main relation type and source from the listed claims and clears the type of non-supported pairs; \emph{filtering} drops pairs whose endpoints are not gene and disease entities. Results are reported separately from runs with the repair request.
+
+\subsection{Comparators}
+Three comparators separate supervised performance, model family, and input scope. \emph{PubTator3}~\cite{wei2024pubtator3} was queried through its public API and its annotations were aligned to our text; its relation model was trained on data including BioRED and its relation predictions derive from abstracts, so on BioRED it is in-domain and on full texts it is an abstract-level resource. \emph{BioREx}~\cite{lai2023biorex}, its relation model, was run locally with released BioLinkBERT weights on the same paragraphs the LLM reads, one paragraph per document, with PubTator3's gene and disease annotations as entities. A pair is positive when any paragraph yields a non-\emph{None} label. These rules were fixed before the run; the same procedure on abstracts alone checks the reproduction. \emph{GPT-6.1 Sol} replaced Claude Opus 5.5 under an identical prompt and validator.
 
 \subsection{Evaluation}\label{sec:eval}
-All systems and benchmarks were scored with the same script at the document-level (gene concept, disease concept) pair unit. A predicted entity aligns with a gold concept when any of its verbatim mentions overlaps a gold mention by character span within the same text block, allowing spelling variants to align without database normalization. We report precision, recall, and F1 with 95\% confidence intervals from a document-level bootstrap (2,000 resamples, seed 20261028)~\cite{efron1993bootstrap} because pairs within a document are not independent.
+One deterministic scorer evaluates all systems at the document-level gene--disease pair. A predicted entity aligns with a gold concept when any of its mentions overlaps a gold mention by character span in the same block, without normalization to database identifiers. Predicted pairs and gold relations are then matched one-to-one by maximum bipartite matching, so one gold relation credits at most one predicted pair and vice versa; surplus pairs count as false positives. An earlier version of the scorer allowed many-to-one credit, which overstated decision-card precision on BioRED Test (0.853 vs 0.760) and PubTator3's F1 (0.716 vs 0.680). Unit tests cover duplicates, shared pairs, and order invariance.
 
-Because our output assigns graded statuses and reason codes, a single run supports three operating points: \emph{strict} (the default, counting only \st{supported} pairs as predictions), \emph{supported + uncertain} (counting all \st{uncertain} pairs as well), and \emph{supported + hedged/scope} (counting \st{uncertain} pairs only when their reason codes are limited to \st{hedged\_claim} and/or \st{scope}, chosen on BioRED Train+Dev and evaluated once on held-out Test). To quantify how much of the recall gap stems from excluding symptoms and general phenotypes as primary diseases, we also report a \emph{scope-adjusted view} that removes such gold pairs from the recall denominator alongside the strict view.
+Confidence intervals come from a document-level bootstrap (2,000 resamples, seed 20261028)~\cite{efron1993bootstrap}; comparisons use paired resampling on documents that both systems completed. These intervals quantify sampling variation across documents, not run-to-run variance across repeated model calls. Each configuration was run once, except a repeat of BioRED Test for two prompts. A document that failed after repair, or was blocked by the provider's safety filter, was retried once and then counted as missing; tables report valid documents, and a deployment figure treats missing documents as empty answers. On BioTriplex, recall was predefined as the primary metric because the annotation is not exhaustive.
+
+Stored statuses permit additional operating points without model calls: \emph{strict} (\st{supported} only) and \emph{routed} (adding \st{uncertain} pairs whose reason codes are restricted to \st{hedged\_claim} and/or \st{scope}, a rule selected on BioRED Train+Dev with the decision card).
+
+\subsection{Blinded Checks of Apparent False Positives}\label{sec:checks}
+One author judged samples of pairs outside the gold sets, shown blind to source and mixed with positive and negative controls drawn from the gold annotation. Each item showed marked entities with the abstract (BioRED) or up to six paragraphs in which both entities occur (BioTriplex), without system output, cited evidence, or gold labels; paragraphs were selected by the same rule for all items, and disease names were shown as surface text so that naming style could not reveal the source. The annotator judged whether the marked text was the stated gene and a disease (a disorder or clinical phenotype) and whether the text states a relation, a hedged relation, no relation, or nothing. Four sheets were used: 16 BioRED Dev pairs supported only by the minimal prompt; 20 BioTriplex Claude pairs from the category where both entities are gold entities but no relation is linked; a mixed sheet of 15 Claude and 15 BioREx pairs from the same category; and a mixed sheet of 15 Claude and 15 BioREx pairs whose disease is not a BioTriplex disease. These checks are exploratory: there was one annotator, who knew the study hypotheses. Two LLM judges given the same materials agreed with each other at chance level ($\kappa \approx 0$) and were not used.
 
 %% ===================================================================
 \section{Results}
 
-\subsection{Performance Comparison}
-Table~\ref{tab:main} and Fig.~\ref{fig:pr} summarize extraction performance across all benchmarks. On the full set of 419 BioRED abstracts, 89\% of \st{supported} predictions matched gold relations, yielding strict precision of 0.894 and recall of 0.430 (F1 0.581). Performance was consistent across splits (F1 of 0.584 on Train, 0.608 on Dev, and 0.542 on Test), and the scope-adjusted view raised recall to 0.468 (F1 0.614).
+\subsection{Effect of Written Rules}
+The decision card lowered recall and F1 on BioRED (Table~\ref{tab:ablation}). Across 143 Dev+Test abstracts, the minimal prompt reached 0.739 precision, 0.604 recall, and 0.665 F1, against 0.809, 0.418, and 0.551 for the card. The F1 difference was 0.114; the card's precision advantage of 0.070 had an interval spanning zero ([$-0.022$, 0.165]). Pairs supported only by the card were rare: on Dev, 5 pairs against 114 supported only by the minimal prompt. Reason-code routing narrowed the gap (0.608 vs 0.663). The same direction held on EU-ADR, where the minimal prompt had higher recall by 0.143 [0.078, 0.215] and higher F1 by 0.060 [0.007, 0.113]; on RENET2 the F1 difference was $-0.018$ [$-0.061$, 0.037].
 
-Comparing our method with PubTator3 across the three benchmarks highlights their distinct operating characteristics. On the 50-abstract BioRED Test sample, where PubTator3 is evaluated in-domain, both systems reached similar precision (0.835 vs 0.827), while PubTator3 achieved higher recall (0.647 vs 0.412). Their predictions were complementary: among the 238 gold relations, 78 were found by both systems, 76 only by PubTator3, and 20 only by our method (with 64 missed by both), so their union recovered 174 relations (73\%). On out-of-domain EU-ADR abstracts, F1 was comparable (0.506 vs 0.529, overlapping intervals), reflecting higher precision for our method (0.469 vs 0.408) and higher recall for PubTator3 (0.754 vs 0.549). On the 40 RENET2 full texts, where PubTator3 is limited to abstracts, our method achieved higher recall (0.370 vs 0.254 in the strict view, rising to 0.464 when counting \st{uncertain} pairs).
+Adding BioRED's own guideline rules did not reproduce the recall loss. Relative to the minimal prompt on Dev, the relation rules changed F1 by $-0.005$ and the entity rules by $-0.015$, both with intervals spanning zero, and both raised recall slightly. Against the card, the relation-rule variant kept recall 0.229 [0.126, 0.330] higher. The recall loss therefore reflects the content of the card's evidence and scope rules, although card length was not controlled.
 
-Substituting GPT-6.1 Sol for Claude Opus 5.5 under the same frozen card yielded virtually identical results on the BioRED sample (F1 0.555 vs 0.551) and 0.986 pair-status agreement across 11 full texts.
+Deterministic pre-processing removed the format and cost differences between prompts. Without it, 67 of 143 minimal-prompt answers passed on the first request, against 132 of 143 for the card, and minimal-prompt runs cost more (USD 10.36 vs 8.04). After replaying first answers through canonicalization and filtering, 92\% and 93\% passed with no repair cost (USD 5.90 vs 6.28 on 123 abstracts), and the F1 difference remained (0.672 vs 0.572). Canonicalization alone reached 73\%; the remainder were mainly gene $\times$ symptom pairs.
+
+Repeat runs on BioRED Test indicated stable aggregate results. The minimal prompt scored F1 0.625 in both runs (Jaccard similarity of supported sets 0.868); the card scored 0.512 and 0.543 (0.792). Two runs show approximate repeatability and do not estimate variance.
 
 \begin{table}[!htbp]
 \centering\footnotesize
-\caption{Main results, strict view unless stated. Brackets: 95\% bootstrap confidence intervals over documents.}
-\label{tab:main}
+\caption{\textbf{The decision card lowered recall and F1; guideline rules did not.} BioRED, one-to-one scoring, strict view unless stated. Differences are paired with 95\% bootstrap intervals: minimal prompt minus card in the first three blocks, guideline variant minus minimal prompt in the last block (Dev only).}
+\label{tab:ablation}
 \resizebox{\linewidth}{!}{%
-\begin{tabular}{@{}llccc@{}}
+\begin{tabular}{@{}lccccll@{}}
 \toprule
-Benchmark (documents) & System / operating point & Precision & Recall & F1 [95\% CI]\\
+Prompt & Abstracts & Precision & Recall & F1 & $\Delta$ Recall & $\Delta$ F1\\
 \midrule
-\multirow{2}{*}{BioRED, all (419)} & Ours & 0.894 [0.855, 0.931] & 0.430 & 0.581 [0.538, 0.625]\\
- & Ours, supported + uncertain & 0.814 & 0.577 & 0.676 [0.636, 0.714]\\
+Decision card & 143 & 0.809 & 0.418 & 0.551 & & \\
+Minimal prompt & 143 & 0.739 & 0.604 & \textbf{0.665} & +0.186 [0.110, 0.265] & +0.114 [0.040, 0.197]\\
 \addlinespace
-\multirow{2}{*}{BioRED Test (73)} & Ours & 0.853 & 0.397 & 0.542 [0.444, 0.644]\\
- & Ours, supported + hedged/scope & 0.846 & 0.498 & 0.627\\
+Decision card, routed & 143 & 0.740 & 0.515 & 0.608 & & \\
+Minimal prompt, routed & 143 & 0.692 & 0.637 & 0.663 & +0.121 [0.045, 0.201] & +0.055 [$-$0.007, 0.125]\\
 \addlinespace
-\multirow{3}{*}{BioRED Test sample (50)} & Ours & 0.835 & 0.412 & 0.551 [0.440, 0.665]\\
- & Ours with GPT-6.1 Sol & 0.853 & 0.412 & 0.555 [0.465, 0.639]\\
- & PubTator3 & 0.827 & \textbf{0.647} & \textbf{0.726} [0.609, 0.825]\\
+Card, pre-processed & 123 & 0.861 & 0.428 & 0.572 & & \\
+Minimal, pre-processed & 123 & 0.770 & 0.596 & 0.672 & & +0.100 [0.022, 0.193]\\
 \addlinespace
-\multirow{2}{*}{EU-ADR, PA (100)} & Ours & \textbf{0.469} [0.350, 0.600] & 0.549 & 0.506 [0.403, 0.602]\\
- & PubTator3 & 0.408 [0.326, 0.498] & \textbf{0.754} & 0.529 [0.447, 0.612]\\
-\addlinespace
-\multirow{3}{*}{RENET2 full text (40)} & Ours & 0.318 [0.206, 0.470] & 0.370 & 0.342 [0.258, 0.421]\\
- & Ours, supported + uncertain & 0.312 & \textbf{0.464} & 0.373\\
- & PubTator3 & \textbf{0.623} [0.511, 0.750] & 0.254 & 0.361 [0.243, 0.475]\\
+Minimal prompt (Dev) & 71 & 0.769 & 0.648 & 0.704 & & \\
++ guideline relation rules & 71 & 0.723 & 0.676 & 0.698 & +0.027 [$-$0.003, 0.067] & $-$0.005 [$-$0.047, 0.029]\\
++ guideline entity rules & 70 & 0.690 & 0.685 & 0.687 & +0.038 [0.009, 0.074] & $-$0.015 [$-$0.055, 0.019]\\
 \bottomrule
 \end{tabular}}
 \end{table}
 
+\subsection{Comparison with PubTator3 on Abstract-Level Input}
+On abstracts, the minimal prompt and PubTator3 were not distinguishable (Table~\ref{tab:main}). On the 100 BioRED Test abstracts, F1 was 0.614 against 0.680 for PubTator3; the paired difference was $-0.064$ [$-0.151$, 0.033] on the 98 abstracts with results for both. The decision card was lower than PubTator3 ($-0.169$ [$-0.278$, $-0.069$]). On the 27 abstracts without a gene--disease relation, the minimal prompt supported 9 pairs, the card 1, and PubTator3 none. On EU-ADR, the difference from PubTator3 was +0.017 [$-0.065$, 0.099]; on BioTriplex abstracts it was +0.019 [$-0.093$, 0.150].
+
+\begin{table}[!htbp]
+\centering\footnotesize
+\caption{\textbf{Cross-benchmark performance under one-to-one scoring.} Strict view; brackets give 95\% document-level bootstrap intervals for F1. Valid is the number of documents with a valid result; Deploy.\ F1 counts missing documents as empty answers. Claude denotes Claude Opus 5.5 with the minimal prompt. On EU-ADR, RENET2, and BioTriplex, selective gold sets penalize valid unannotated predictions, so precision is a lower bound on textual correctness. GPT abstract input was not completed (13 of 30 articles) and is omitted. $^{\ddagger}$PubTator3 relations derive from abstracts.}
+\label{tab:main}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{@{}llccccc@{}}
+\toprule
+Benchmark & System & Valid & Precision & Recall & F1 [95\% CI] & Deploy.\ F1\\
+\midrule
+\multirow{3}{*}{BioRED Test (100)} & Claude & 98 & 0.680 & 0.560 & 0.614 [0.527, 0.693] & 0.612\\
+ & Decision card & 100 & 0.755 & 0.386 & 0.511 [0.406, 0.610] & 0.511\\
+ & PubTator3 & 100 & 0.758 & 0.617 & 0.680 [0.582, 0.766] & 0.680\\
+\addlinespace
+\multirow{3}{*}{EU-ADR, PA (100)} & Claude & 94 & 0.429 & 0.588 & 0.496 [0.421, 0.574] & 0.491\\
+ & Decision card & 100 & 0.430 & 0.451 & 0.440 [0.352, 0.524] & 0.440\\
+ & PubTator3 & 100 & 0.388 & 0.639 & 0.483 [0.407, 0.557] & 0.483\\
+\addlinespace
+\multirow{3}{*}{RENET2 (40)} & Claude & 33 & 0.217 & 0.403 & 0.282 [0.189, 0.376] & 0.255\\
+ & Decision card & 40 & 0.274 & 0.337 & 0.302 [0.227, 0.373] & 0.302\\
+ & PubTator3$^{\ddagger}$ & 40 & 0.607 & 0.204 & 0.306 [0.211, 0.403] & 0.306\\
+\addlinespace
+\multirow{6}{*}{BioTriplex (30)} & PubTator3$^{\ddagger}$ & 30 & 0.484 & 0.305 & 0.374 [0.279, 0.475] & 0.374\\
+ & BioREx, abstract & 30 & 0.393 & 0.291 & 0.335 [0.255, 0.424] & 0.335\\
+ & Claude, abstract & 28 & 0.472 & 0.340 & 0.395 [0.297, 0.495] & 0.389\\
+ & BioREx, full text & 30 & 0.184 & 0.722 & 0.293 [0.214, 0.383] & 0.293\\
+ & Claude, full text & 25 & 0.388 & 0.813 & 0.525 [0.415, 0.620] & 0.505\\
+ & GPT-6.1 Sol, full text & 27 & 0.290 & 0.858 & 0.433 [0.307, 0.549] & 0.414\\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\subsection{Full-Text Input on the Locked BioTriplex Set}
+Reading the full text raised recall for every system (Fig.~\ref{fig:pr}, Table~\ref{tab:pairs}). On the 25 articles with both inputs, Claude's recall rose from 0.366 to 0.813, and recall on relations linked only outside the abstract rose from 0.198 to 0.792. GPT-6.1 Sol showed the same pattern on the 12 articles with both inputs (0.302 to 0.884). BioREx rose from 0.291 to 0.722 on all 30 articles while its precision fell from 0.393 to 0.184, so its F1 did not improve. Run on abstracts, local BioREx did not differ detectably from PubTator3 (F1 difference $-0.039$ [$-0.135$, 0.029]), which supports the reproduction.
+
+With the same full-text input, both LLMs exceeded BioREx in F1. On articles shared with BioREx, Claude's F1 was 0.525 against 0.332 and GPT-6.1 Sol's was 0.433 against 0.304. These differences came from precision; recall differences had intervals spanning zero. Against PubTator3, recall differences were large for both LLMs, whereas F1 differences were +0.156 [0.003, 0.286] for Claude and +0.083 [$-0.094$, 0.233] for GPT-6.1 Sol and reflect input scope as well as method. Between the LLMs on 23 shared articles, recall was similar and Claude's precision was higher by 0.082 [0.016, 0.160].
+
+The source label agreed with BioTriplex's independent background/result annotation on most true positives. Of 109 Claude true positives, the stated source matched the annotated location exactly for 81 (74\%), overlapped for 20, and differed for 8.
+
 \begin{figure}[!htbp]
 \centering
 \resizebox{\linewidth}{!}{\input{figures/fig3_pr}}
-\caption{Precision and recall of each system and operating point, with 95\% bootstrap confidence intervals over documents. Dashed grey curves are F1 contours from 0.3 to 0.8 in steps of 0.1; panels A and B are zoomed to precision $\geq 0.5$. Connected points are operating points of one run: strict (supported only) and adding uncertain pairs; in panel A, the middle Test point is the hedged/scope operating point chosen on Train+Dev (no interval computed). On EU-ADR and RENET2, measured precision is a lower bound because the gold sets are incomplete.}
+\caption{\textbf{Full-text input raises recall for all systems, and LLMs keep higher precision than BioREx on the same input.} BioTriplex locked set, valid articles per system (Table~\ref{tab:main}). (A)~Precision and recall; arrows join abstract and full-text input for one system, and dashed curves are iso-F1 contours from 0.3 to 0.6. (B)~Recall on gold relations linked in the abstract and linked only outside it. PubTator3 relations derive from abstracts. Precision is computed against a non-exhaustive annotation.}
 \label{fig:pr}
 \end{figure}
 
-\subsection{Status Labels Against Graded Gold Labels}
-Benchmarks with graded, negative, or novelty annotations allow evaluation of our status and source labels beyond binary matching. On EU-ADR, our method labelled all 3 gold negative (NA) pairs as \st{explicit\_negative}, whereas PubTator3 misclassified one as positive. Across the 122 positive (PA) pairs, our method labelled 67 \st{supported}, 16 \st{uncertain}, 10 \st{not\_found}, and 4 \st{explicit\_negative}, while 25 involved an endpoint not recorded as a primary entity; counting \st{uncertain} pairs raised PA recall from 0.549 to 0.680 at 0.414 precision. On RENET2, only 2 of our 223 \st{supported} predictions conflicted with a silver non-associated label. On BioRED, our source label agreed with the gold \emph{Novel} label on 526 of 703 matched relations (75\%).
+\begin{table}[!htbp]
+\centering\footnotesize
+\caption{\textbf{Paired comparisons on BioTriplex separate input scope from method.} Differences (A minus B) on articles with valid results for both, with 95\% bootstrap intervals.}
+\label{tab:pairs}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{@{}lcccc@{}}
+\toprule
+Comparison (A $-$ B) & Articles & $\Delta$ Precision & $\Delta$ Recall & $\Delta$ F1\\
+\midrule
+\multicolumn{5}{@{}l}{\emph{Same input, different method}}\\
+Claude abstract $-$ PubTator3 & 28 & $-$0.017 [$-$0.178, 0.159] & +0.034 [$-$0.080, 0.173] & +0.019 [$-$0.093, 0.150]\\
+Claude full $-$ BioREx full & 25 & +0.173 [0.087, 0.267] & +0.082 [$-$0.124, 0.267] & +0.193 [0.088, 0.292]\\
+GPT full $-$ BioREx full & 27 & +0.097 [0.006, 0.199] & +0.134 [$-$0.054, 0.310] & +0.129 [0.012, 0.246]\\
+\addlinespace
+\multicolumn{5}{@{}l}{\emph{Same method, different input}}\\
+Claude full $-$ Claude abstract & 25 & $-$0.117 [$-$0.355, 0.058] & +0.448 [0.299, 0.588] & +0.101 [$-$0.052, 0.254]\\
+GPT full $-$ GPT abstract & 12 & $-$0.088 [$-$0.292, 0.061] & +0.581 [0.450, 0.689] & +0.141 [0.017, 0.251]\\
+BioREx full $-$ BioREx abstract & 30 & $-$0.209 [$-$0.346, $-$0.105] & +0.430 [0.290, 0.583] & $-$0.042 [$-$0.162, 0.083]\\
+\addlinespace
+\multicolumn{5}{@{}l}{\emph{Reproduction check}}\\
+BioREx abstract $-$ PubTator3 & 30 & $-$0.091 [$-$0.198, 0.005] & $-$0.013 [$-$0.110, 0.055] & $-$0.039 [$-$0.135, 0.029]\\
+\bottomrule
+\end{tabular}}
+\end{table}
 
-Within the \st{uncertain} status, the required reason codes separated pairs that benchmark annotators consider positive from those they do not (Fig.~\ref{fig:recall}B). On BioRED Train+Dev, the share of \st{uncertain} pairs matching a gold relation was 82\% for \st{hedged\_claim} alone ($n=99$), 75\% for \st{hedged\_claim} + \st{scope} ($n=32$), and 62\% for \st{scope} alone ($n=113$), versus 38\% for \st{presupposed\_only} and 6\% for \st{identity}. Counting only the first three groups as positive predictions raised held-out BioRED Test F1 from 0.542 to 0.627, lifting recall from 0.397 to 0.498 at unchanged precision (0.846 vs 0.853) with no extra model calls.
+\subsection{Decomposing Apparent False Positives}
+Sparse annotation dominated Claude's apparent false positives on full text, whereas entity scope dominated BioREx's (Fig.~\ref{fig:fp}A). On 25 shared articles, Claude reported 281 supported pairs and BioREx 456; 109 and 98 matched gold relations. Pairs with both entities in the gold set but no linked relation were similar in number (91 vs 89). BioREx had more pairs whose disease was not a BioTriplex disease (170 vs 44), whose gene or both entities were not gold entities (61 vs 26), and duplicates of a credited pair (38 vs 11).
 
-\subsection{Error Analysis}
-
-\subsubsection{Missed Relations}
-To understand the recall gap on BioRED, we audited all 930 gold relations missed under the strict view (Fig.~\ref{fig:recall}A). Nearly three-fifths (547 relations, 59\%) were pairs whose endpoints the model extracted and explicitly judged as non-supported: 295 were assigned \st{not\_found}, 240 \st{uncertain}, and 12 \st{explicit\_negative}. The remaining 383 misses (41\%) stemmed from entity-scope boundaries: 131 involved disease mentions recorded as auxiliary symptoms or phenotypes, while 159 diseases and 93 genes were not extracted as primary entities. On Train+Dev, these unrecorded mentions consisted mainly of gene families or protein complexes (e.g.\ NF-$\kappa$B, MAPK, Wnt, and NMDA receptors), which our decision card excludes as single-gene endpoints, alongside broad disease terms such as ``cancer'', ``tumor'', and ``inflammation''. Even if all such broad gene and disease mentions were extracted and judged \st{supported}, overall recall would increase by at most 4.0 and 6.6 percentage points, respectively.
-
-Because 117 of the 155 unjudged gold relations on Train+Dev (75\%) had both entities in the same sentence, we ran two targeted experiments on the Dev split (71 abstracts) to test whether the model was overlooking co-mentioned pairs. First, prompt variant V4 required the model to output an explicit judgment for every co-mentioned pair; instead of improving recall, this constraint lowered recall from 0.454 to 0.403, reduced \st{supported} predictions from 153 to 133, raised precision from 0.922 to 0.947, and increased API cost by 16\%. Second, we extracted all 97 unjudged same-sentence pairs across 18 Dev abstracts and prompted the model in a separate request to judge each pair directly: 92 remained \st{not\_found}, 4 became \st{uncertain}, 1 became \st{explicit\_negative}, and none became \st{supported}, leaving all evaluation metrics unchanged at an added cost of USD 0.64. Thus, even when directed to the exact sentence and entity pair, the model judged that the text did not satisfy the decision card's criteria for a supported relation, confirming that the recall gap reflects a stricter evidence threshold rather than missed text.
+Blinded checks found textual support for most pairs in the first category, at similar rates for both systems (Table~\ref{tab:checks}, Fig.~\ref{fig:fp}B). Claude's pairs had a stated relation in 33 of 35 cases across two sheets; in the mixed sheet both systems scored 13 of 15. In the out-of-scope disease category, 6 of 15 marked terms were not diseases for each system (for example \emph{mortality}, \emph{recurrence}, \emph{lung}, \emph{involvement}); a disease with a stated relation occurred in 9 of 15 Claude pairs and 6 of 15 BioREx pairs. If checked categories are credited at these rates and all other surplus pairs count as errors, precision is about 0.79 for Claude and 0.53 for BioREx, against 0.39 and 0.22 measured on these articles. These figures are exploratory. On BioRED Dev, all 16 checked pairs supported only by the minimal prompt had a stated relation.
 
 \begin{figure}[!htbp]
 \centering
 \resizebox{\linewidth}{!}{\input{figures/fig4_recall}}
-\caption{(A)~The 930 BioRED gold relations missed in the strict view (all 419 abstracts); most were read and judged by the model rather than overlooked. (B)~Share of \st{uncertain} pairs on Train+Dev that are gold relations, by reason code. Pairs with only \st{hedged\_claim} and/or \st{scope} reasons (blue) are counted at the hedged/scope operating point, which raised held-out Test F1 from 0.542 to 0.627.}
-\label{fig:recall}
+\caption{\textbf{The precision gap on full text comes mainly from entity scope and merging.} (A)~Supported pairs on the 25 BioTriplex articles valid for both systems, by external annotation category. (B)~Share of blindly checked pairs judged to involve a disease with a stated relation, by category, from one annotator; Claude's first bar pools two sheets.}
+\label{fig:fp}
 \end{figure}
 
-\subsubsection{Extra Predictions}
-We also examined the \st{supported} predictions counted as false positives across each benchmark. On BioRED, the 87 extra predictions fell into three categories: in 60 cases, BioRED annotated both concepts in the abstract but no relation between them; in 23 cases, our disease endpoint (such as a clinical outcome) was not annotated as a BioRED disease concept; and in 4 cases, our gene endpoint did not match a BioRED gene concept. On EU-ADR, 10 of our 37 extra predictions involving gold concepts had in fact been marked as positive by one annotator, falling just short of the multi-annotator consensus threshold. On RENET2, among our 152 \st{supported} predictions outside the gold positive set, 105 had never been evaluated because no baseline tool had proposed them, 45 involved an entity outside RENET2's concept vocabulary, and only 2 carried a silver non-associated label. Notably, 136 of these 152 extra predictions were relations our method tagged as \st{background}; measured precision on RENET2 was 0.53 for relations tagged \st{this study} versus 0.28 for \st{background} relations, matching RENET2's focus on curating main study findings rather than background literature.
+\begin{table}[!htbp]
+\centering\footnotesize
+\caption{\textbf{Blinded single-annotator checks of pairs outside the gold sets.} Stated counts relation or hedged relation. Controls come from the gold annotation and were mixed in blind; agreement counts positives judged stated and negatives judged not stated. One control on the first BioTriplex sheet was left unanswered.}
+\label{tab:checks}
+\begin{tabularx}{\linewidth}{@{}Xlcc@{}}
+\toprule
+Sheet and category & System & Stated / checked & Control agreement\\
+\midrule
+BioRED Dev, supported only by the minimal prompt & Claude & 16 / 16 & 9 / 10\\
+BioTriplex, entities gold, no relation (first sheet) & Claude & 20 / 20 & 6 / 9\\
+BioTriplex, entities gold, no relation (mixed sheet) & Claude & 13 / 15 & 9 / 10\\
+ & BioREx & 13 / 15 & \\
+BioTriplex, disease not gold (mixed sheet; valid disease and stated) & Claude & 9 / 15 & 9 / 10\\
+ & BioREx & 6 / 15 & \\
+\bottomrule
+\end{tabularx}
+\end{table}
 
-\subsection{Full-Text Extraction and Cost}
-On the 100-paper unlabelled PMC full-text corpus, our pipeline extracted 972 \st{supported} relations, 451 \st{uncertain} pairs, and 47 \st{explicit\_negative} pairs, compared with 198 relations reported by PubTator3. Among the 972 \st{supported} relations, 875 (90\%) were supported solely by sentences in the article body outside the abstract. Twenty-five papers yielded no \st{supported} relations: 8 contained no gene mentions, 8 contained no disease mentions, and 9 contained only co-occurrences, diagnostic gene-panel listings, or speculative statements. At list API prices, including validation repair calls, total extraction cost was USD 0.056 per BioRED abstract, USD 4.75 across the 100 EU-ADR abstracts, USD 6.36 across the 40 RENET2 articles, and USD 0.44 per full-text paper, with a mean generation time of 78\,s per full text. \todo{annotate 15--20 of these papers to measure full-text precision and recall.}
+\subsection{Status Labels and BioRED Error Profile}
+Non-binary statuses tracked graded gold labels on the small sets available. On EU-ADR, all 3 NA pairs were labelled \st{explicit\_negative} by both prompts, whereas PubTator3 predicted one as positive. On RENET2, 3 of the 202 minimal-prompt supported pairs outside the gold set contradicted a tool-assigned negative label; 131 had never been labelled. On BioRED Dev+Test, the minimal prompt missed 232 gold relations: 122 involved an endpoint outside its entities (65 diseases not recorded, 34 recorded as symptoms, 23 genes not recorded), 84 were judged non-supported (45 \st{not\_found}, 36 \st{uncertain}, 3 \st{explicit\_negative}), and 26 had a supported pair credited to another gold relation. Of its 125 extra pairs, 100 involved two gold concepts without a BioRED relation.
+
+\subsection{Failures and Cost}
+Failures of the minimal prompt were dominated by the provider's safety filter. After one retry, 2 of 100 BioRED Test abstracts, 6 of 100 EU-ADR abstracts, 7 of 40 RENET2 articles, and 5 of 30 BioTriplex full texts had no valid result. On BioTriplex, 4 articles were blocked in both attempts: two on pathogen challenge or infection, one on immune tolerance in arthritis-prone mice, and one on a muscular dystrophy model. GPT-6.1 Sol completed those 4. Blocking was not fixed to a document: one BioRED abstract was blocked in one run and completed in another. Decision-card runs on BioRED, EU-ADR, and RENET2, made earlier, had no such failures; we cannot attribute this to the prompt because provider filters may change over time. Including repair calls at list API prices, the minimal prompt cost USD 0.072 per BioRED abstract, USD 0.091 per EU-ADR abstract, USD 0.30 per RENET2 article, and USD 0.40 per BioTriplex full text (mean 66\,s). BioREx ran on CPU in about 10 minutes for the 30 articles with no API cost.
 
 %% ===================================================================
 \section{Discussion}
 
-\subsection{Why the Benchmarks Disagree}
-Although the exact same frozen pipeline was applied without modification across all datasets, strict F1 varied from 0.58 on BioRED to 0.51 on EU-ADR and 0.34 on RENET2. This spread directly reflects differences in how each benchmark defines and labels relations. BioRED annotates all relations stated in an abstract, including hedged statements, and groups symptoms, phenotypes, and broad terms such as ``cancer'' under its disease category. EU-ADR retains only relations endorsed by at least two annotators. RENET2 labels only candidate pairs proposed by its text-mining tools and assigns negative labels automatically without manual verification. A precision-oriented extractor governed by fixed rules is therefore penalized differently under each protocol, and on incomplete gold sets such as EU-ADR and RENET2 its measured precision represents a lower bound~\cite{wadhwa2023revisiting,fan2024evaluating}. Crucially, across the two corpora that include negative labels, our method rarely contradicted an explicit negative annotation, matching 0 of 3 negative pairs on EU-ADR and only 2 of 223 \st{supported} pairs on RENET2. Most apparent false positives are thus unannotated mentions or background citations rather than factual contradictions, which is the distinction that matters when a human curator audits the cited evidence sentences.
+\subsection{Input Scope Determines Coverage}
+On abstracts, a 108-word prompt performed in the range of a supervised system trained on annotations from the same corpus family, and paired differences spanned zero on three corpora. On full text, recall more than doubled for three systems from two model classes. The coverage gain thus follows from the input and is available to any extractor that reads the body. The practical consequence for resources built from abstracts is direct: about three quarters of BioTriplex relations are annotated only outside the abstract, and abstract-level extraction reached 0.15--0.18 recall on them.
+
+\subsection{Why LLMs Exceeded BioREx on Full Text}
+The advantage on identical input holds under the benchmark but is narrower than F1 alone suggests. The checks indicate similar relation judgment on pairs of gold entities, and most of the precision difference arises upstream: the PubTator3 entity layer marks many clinical outcomes, anatomical terms, and processes as diseases in body text, BioREx relates them paragraph by paragraph, and identifiers split entities into duplicates. BioREx was trained on abstracts and applied across domain, and we did not retrain it, so this comparison describes an off-the-shelf supervised pipeline. An LLM that selects its own entities reported far fewer out-of-scope pairs, although non-diseases appeared at a similar rate within that category. For curation pipelines built on full text, entity scope and merging may deserve as much attention as relation classification.
+
+\subsection{What Written Rules Do}
+The decision card was written to protect precision, and on our corpora it mainly removed relations that annotators accept. Rules taken from the benchmark's own guideline changed little, so written rules are not harmful in themselves; their content should be validated against the target annotation or task. Reason-code routing partly recovers the loss after the fact without model calls. Format reliability, often credited to detailed prompts, was obtained here with deterministic pre-processing.
+
+\subsection{Reading Benchmark Precision}
+Precision against selective gold sets should not be read as correctness. RENET2 and BioTriplex precision for the LLMs was 0.22--0.39, yet the blinded checks found textual support for most pairs of gold entities. These gold sets remain the common reference for comparing systems, so we report measured numbers as primary and exploratory adjustments separately. One-to-one matching also matters: many-to-one credit overstated precision substantially in our own earlier results.
 
 \subsection{Implications for Curation}
-Assigning four-way statuses and reason codes in a single pass allows one extraction run to serve different curation workflows. An automated knowledge-base pipeline can ingest \st{supported} pairs directly while routing \st{uncertain} pairs tagged \st{hedged\_claim} or \st{scope} to human review; on held-out BioRED Test abstracts, including this subset recovered 10 percentage points of recall at virtually no cost to precision. Standard binary classifiers, by contrast, cannot separate hedged scientific claims from entity-identity ambiguities without retraining.
+The results support a division of labour. An abstract-level resource remains inexpensive and precise within its scope; full-text LLM extraction adds coverage and citations at about USD 0.40 per article, with the expectation that curators review output. Stored statuses and source labels allow different thresholds from one run. We make no claim about curation quality or efficiency, which require a user study. Cascades that verify supervised candidates~\cite{song2026core,adam2025traceable} are a natural extension, and safety-filter blocking of ordinary biomedical papers is a deployment risk that argues for a fallback model.
 
-Our results also show that rule-guided LLM extraction complements supervised systems. PubTator3 achieves higher recall within its BioRED training domain, whereas our pipeline extracts evidence from the full text, separates study findings from background citations, and flags explicit negative findings. On the BioRED sample, combining both systems recovered 73\% of gold relations compared with 65\% for PubTator3 alone, pointing to a practical hybrid architecture in which a fast supervised extractor proposes candidate pairs and our decision-card pipeline verifies each candidate with sentence-level evidence. Moreover, because the decision card is human-readable and version-controlled, adapting the extractor to a new relation type (such as chemical--disease associations) requires editing a one-page specification rather than re-annotating a training corpus. The near-identical performance of GPT-6.1 Sol further indicates that extraction behaviour is governed by the written rules rather than a single proprietary model.
-
-\subsection{Limitations}
-Several limitations warrant consideration. First, we have not yet conducted dual-annotator adjudication of the extra predictions; our interpretation that many apparent false positives are valid unannotated relations relies on each benchmark's annotation structure (such as single-annotator labels in EU-ADR and background citations in RENET2) and spot checks rather than formal manual review. Second, the RENET2 evaluation (40 articles) and the BioRED head-to-head comparison with PubTator3 (50 abstracts) used moderate sample sizes, resulting in wide confidence intervals on some metrics, and we did not perform paired significance tests. Third, entities are aligned by verbatim character spans rather than normalized to NCBI Gene or MeSH identifiers, which currently prevents cross-document aggregation and direct database comparison with DisGeNET~\cite{pinero2020disgenet} or CTD~\cite{davis2023ctd}. Fourth, both Claude Opus 5.5 and GPT-6.1 Sol are proprietary models subject to version changes; to support reproducibility, we archive all prompts, raw model outputs, and evaluation scripts. Fifth, public benchmark abstracts may overlap with LLM pretraining corpora, just as BioRED was used to train PubTator3. Sixth, each benchmark configuration was executed once; although pair-status agreement of 0.976--0.985 across development runs indicates high stability, we did not quantify run-to-run variance across the full benchmarks. Finally, our 100-paper full-text corpus lacks gold-standard annotations, and the released RENET2 texts are truncated to the early body.
+\subsection{Limitations}\label{sec:limitations}
+Seven limitations bound these conclusions. First, all blinded checks used one annotator who knew the hypotheses, with 15--20 pairs per cell; control agreement was 6 of 9 on one sheet, the annotator's criterion was broader than BioTriplex's requirement for a typed relation phrase, and categories such as gene-not-gold pairs were not checked. Second, the validator verifies verbatim grounding and sentence-ID resolution, not that a cited sentence semantically supports a relation; only the source label has external validation. Third, the BioTriplex set is small (25--30 valid articles), its annotation comes mainly from one annotator, entity merging is our own rule, and the GPT abstract run stopped at 13 of 30 articles when API credits ran out. Fourth, BioREx was neither retrained nor tuned for full text, it uses PubTator3 entities while LLMs select their own, and our task collapses relation types, so results are not comparable with published BioTriplex or BioCreative numbers. Fifth, the minimal prompt was chosen after BioRED Test results were seen, and the decision card's length was not controlled. Sixth, missing documents may not be random: we could not determine what triggers safety-filter blocks, so valid-only metrics may not transfer to the blocked documents. Seventh, both LLMs are proprietary and subject to change, benchmark texts may occur in pretraining data, entities are not normalized to identifiers, and most configurations ran once; we archive prompts, outputs, and scripts to support reproduction.
 
 %% ===================================================================
 \section{Conclusions}
-By pairing a frozen, one-page decision card with sentence-ID citations and deterministic validation, a general-purpose LLM can extract gene--disease relations from full-text articles with verbatim sentence evidence, four-way certainty statuses, and source labels in a single request at USD 0.44 per paper. Evaluated without tuning across three benchmarks with distinct annotation protocols, the method achieved high precision on BioRED (0.894) and rarely contradicted explicit negative labels on EU-ADR or RENET2. Targeted re-querying of unjudged same-sentence pairs produced no additional supported relations, demonstrating that the recall gap stems from a stricter evidence standard rather than overlooked text, while routing \st{uncertain} pairs by reason code recovered 10 recall points on held-out data without precision loss. Future work will incorporate dual-annotator adjudication of extra predictions, concept normalization to NCBI Gene and MeSH, and hybrid pipelines that combine supervised candidate generation with decision-card verification.
+A zero-shot pipeline with a short task prompt, sentence-ID citations, and deterministic validation performed in the range of PubTator3 on abstract-level input (F1 0.614 vs 0.680 on BioRED Test; 0.395 vs 0.377 on BioTriplex abstracts) while attaching evidence and status labels. On a locked full-text set, reading the article raised recall from 0.366 to 0.813 for Claude Opus 5.5, and comparable gains for GPT-6.1 Sol and BioREx show that the gain follows from input scope. On identical full text, both LLMs exceeded a supervised BioREx pipeline in F1, and blinded checks attribute most of the difference to entity scope and merging. A detailed decision card reduced F1 by lowering recall. Future work should add independent dual annotation, retrain supervised models on full text, normalize entities, evaluate open-weight models, and test verification cascades and curator workflows.
 
 %% ===================================================================
 \section*{CRediT authorship contribution statement}
@@ -258,7 +347,7 @@ By pairing a frozen, one-page decision card with sentence-ID citations and deter
 \todo{to complete}
 
 \section*{Data and code availability}
-Code, the decision card, prompts, raw model outputs and scoring scripts will be released at \todo{repository URL}. EU-ADR and RENET2 texts are not redistributed; download scripts are provided.
+Code, prompts, raw model outputs and scoring scripts will be released at \todo{repository URL}. EU-ADR, RENET2, and BioTriplex texts are not redistributed; preparation scripts are provided.
 
 \section*{Declaration of generative AI use}
 \todo{Required by the publisher. Describe the use of AI tools in drafting this manuscript; check the current Elsevier wording.}

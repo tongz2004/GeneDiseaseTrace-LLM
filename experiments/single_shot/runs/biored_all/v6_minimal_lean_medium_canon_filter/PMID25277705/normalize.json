@@ -1,0 +1,14 @@
+[
+  [
+    "filter: dropped pair",
+    "P G1-D3 (gene x phenotype)"
+  ],
+  [
+    "canonicalize: type set to -",
+    "P G23-D1: a -> - (unc)"
+  ],
+  [
+    "canonicalize: type set to -",
+    "P G24-D1: a -> - (unc)"
+  ]
+]

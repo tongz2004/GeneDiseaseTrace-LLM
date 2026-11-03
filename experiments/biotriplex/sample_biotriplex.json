@@ -1,0 +1,236 @@
+{
+  "source": "BioTriplex, Preprocessed BioTriplex/splits.json",
+  "commit": "a92a43779be95e99249b7162666a186f99b32867",
+  "data_sha256": "97a1d2b29ac8282a4924647421d0c48e476d509babf44e9364f46932a2a575aa",
+  "seed": 20261103,
+  "evaluation": [
+    "BTX2913650",
+    "BTX3320601",
+    "BTX3660299",
+    "BTX3984243",
+    "BTX4016835",
+    "BTX4302655",
+    "BTX4463699",
+    "BTX4550874",
+    "BTX4636297",
+    "BTX4951690",
+    "BTX5302952",
+    "BTX5444857",
+    "BTX5996034",
+    "BTX6914845",
+    "BTX6995577",
+    "BTX7345849",
+    "BTX7578153",
+    "BTX7765946",
+    "BTX7953906",
+    "BTX8123883",
+    "BTX8247374",
+    "BTX8592735",
+    "BTX8791029",
+    "BTX9067626",
+    "BTX9288359",
+    "BTX9416477",
+    "BTX9489697",
+    "BTX9524383",
+    "BTX9886470",
+    "BTX9980199"
+  ],
+  "evaluation_abstract": [
+    "BTXA2913650",
+    "BTXA3320601",
+    "BTXA3660299",
+    "BTXA3984243",
+    "BTXA4016835",
+    "BTXA4302655",
+    "BTXA4463699",
+    "BTXA4550874",
+    "BTXA4636297",
+    "BTXA4951690",
+    "BTXA5302952",
+    "BTXA5444857",
+    "BTXA5996034",
+    "BTXA6914845",
+    "BTXA6995577",
+    "BTXA7345849",
+    "BTXA7578153",
+    "BTXA7765946",
+    "BTXA7953906",
+    "BTXA8123883",
+    "BTXA8247374",
+    "BTXA8592735",
+    "BTXA8791029",
+    "BTXA9067626",
+    "BTXA9288359",
+    "BTXA9416477",
+    "BTXA9489697",
+    "BTXA9524383",
+    "BTXA9886470",
+    "BTXA9980199"
+  ],
+  "tuning": [
+    "BTX4058662",
+    "BTX4844106",
+    "BTX5009375",
+    "BTX5147974",
+    "BTX8276170"
+  ],
+  "split": {
+    "BTX2913650": "val",
+    "BTX3320601": "test",
+    "BTX3660299": "test",
+    "BTX3984243": "test",
+    "BTX4016835": "test",
+    "BTX4302655": "test",
+    "BTX4463699": "val",
+    "BTX4550874": "val",
+    "BTX4636297": "val",
+    "BTX4951690": "test",
+    "BTX5302952": "test",
+    "BTX5444857": "val",
+    "BTX5996034": "test",
+    "BTX6914845": "val",
+    "BTX6995577": "val",
+    "BTX7345849": "val",
+    "BTX7578153": "test",
+    "BTX7765946": "test",
+    "BTX7953906": "val",
+    "BTX8123883": "val",
+    "BTX8247374": "val",
+    "BTX8592735": "val",
+    "BTX8791029": "val",
+    "BTX9067626": "val",
+    "BTX9288359": "test",
+    "BTX9416477": "test",
+    "BTX9489697": "test",
+    "BTX9524383": "test",
+    "BTX9886470": "test",
+    "BTX9980199": "val",
+    "BTX4058662": "train",
+    "BTX4844106": "train",
+    "BTX5009375": "train",
+    "BTX5147974": "train",
+    "BTX8276170": "train"
+  },
+  "papers": [
+    {
+      "paper_id": "BTX2913650",
+      "pmid": 20703421
+    },
+    {
+      "paper_id": "BTX3320601",
+      "pmid": 22496648
+    },
+    {
+      "paper_id": "BTX3660299",
+      "pmid": 23700477
+    },
+    {
+      "paper_id": "BTX3984243",
+      "pmid": 24728052
+    },
+    {
+      "paper_id": "BTX4016835",
+      "pmid": 24860821
+    },
+    {
+      "paper_id": "BTX4302655",
+      "pmid": 25211510
+    },
+    {
+      "paper_id": "BTX4463699",
+      "pmid": 25993294
+    },
+    {
+      "paper_id": "BTX4550874",
+      "pmid": 26311238
+    },
+    {
+      "paper_id": "BTX4636297",
+      "pmid": 26544726
+    },
+    {
+      "paper_id": "BTX4951690",
+      "pmid": 27435875
+    },
+    {
+      "paper_id": "BTX5302952",
+      "pmid": 27462923
+    },
+    {
+      "paper_id": "BTX5444857",
+      "pmid": 28505191
+    },
+    {
+      "paper_id": "BTX5996034",
+      "pmid": 29922289
+    },
+    {
+      "paper_id": "BTX6914845",
+      "pmid": 31921619
+    },
+    {
+      "paper_id": "BTX6995577",
+      "pmid": 31835306
+    },
+    {
+      "paper_id": "BTX7345849",
+      "pmid": 32599766
+    },
+    {
+      "paper_id": "BTX7578153",
+      "pmid": 32524199
+    },
+    {
+      "paper_id": "BTX7765946",
+      "pmid": 33348862
+    },
+    {
+      "paper_id": "BTX7953906",
+      "pmid": 33717172
+    },
+    {
+      "paper_id": "BTX8123883",
+      "pmid": 33925529
+    },
+    {
+      "paper_id": "BTX8247374",
+      "pmid": 34234856
+    },
+    {
+      "paper_id": "BTX8592735",
+      "pmid": 34790248
+    },
+    {
+      "paper_id": "BTX8791029",
+      "pmid": 35095393
+    },
+    {
+      "paper_id": "BTX9067626",
+      "pmid": 35529439
+    },
+    {
+      "paper_id": "BTX9288359",
+      "pmid": 35477812
+    },
+    {
+      "paper_id": "BTX9416477",
+      "pmid": 36013579
+    },
+    {
+      "paper_id": "BTX9489697",
+      "pmid": 36127339
+    },
+    {
+      "paper_id": "BTX9524383",
+      "pmid": 36186113
+    },
+    {
+      "paper_id": "BTX9886470",
+      "pmid": 36726488
+    },
+    {
+      "paper_id": "BTX9980199",
+      "pmid": 36865166
+    }
+  ]
+}

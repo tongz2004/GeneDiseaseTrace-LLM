@@ -1,0 +1,21 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|CFI|Complement factor I;CFI|r|||human||
+E|D1|disease|Vogt-Koyanagi-Harada syndrome|Vogt-Koyanagi-Harada syndrome;VKH syndrome;VKH|r||||
+E|D2|disease|uveitis|uveitis|r||||
+E|D3|disease|cataract|complicated cataract|r||||
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s8|ts|neg|neg|rr
+EV|V3|b0002.s9|ts|res|aff|rr,cmp
+EV|V4|b0002.s10|ts|res|aff|rr,cmp
+EV|V5|b0002.s11|ts|neg|neg|rr
+EV|V6|b0002.s12|ts|int|aff|rr
+EV|V7|b0001.s1|ts|int|aff|rr
+P|G1|D2|sup|c|bg|sup:c:bg:V1|||Background: CFI affects uveitis development
+P|G1|D1|sup|a|ts|sup:a:ts:V3+V4+V6+V7;neg:-:ts:V2+V5|conflict||Subgroup associations; overall null result
+P|G1|D3|unc|a|ts|unc:a:ts:V4|scope||Only VKH-with-cataract subgroup versus healthy controls
+F|F1|association|rs7356506 alleles/genotypes vs VKH|100 VKH vs 300 controls|not_significant|null|not_reported|V2|
+F|F2|group_comparison|rs7356506 G allele, GG genotype|recurrent VKH vs controls|significant|negative|available|V3|
+F|F3|group_comparison|rs7356506 G allele, GG genotype|VKH with complicated cataract vs controls|significant|negative|available|V4|
+F|F4|group_comparison|rs7356506 vs steroid-sensitive status|VKH steroid-sensitive subgroups|not_significant|null|not_reported|V5|
+C|C1|CFI-VKH association claim|b0001.s1+b0002.s8+b0002.s12|noncritical|resolved|Title claims association; overall null, subgroup-only

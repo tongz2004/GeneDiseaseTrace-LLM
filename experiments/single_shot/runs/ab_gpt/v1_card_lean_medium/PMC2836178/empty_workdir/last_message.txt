@@ -1,0 +1,129 @@
+META|GPT-6|seen: yes, supplied previous analysis
+SCOPE|Supplied review text and captions; references and figure images unavailable.
+E|G1|gene|ZO-1|ZO-1;zonula occludens-1|r||||
+E|G2|gene|ZO-2|ZO-2;-2|r||||
+E|G3|gene|ZO-3|ZO-3;-3|r||||
+E|G4|gene|occludin|occludin|r||||
+E|G5|gene|JAM|JAM;Junctional adhesion molecule;Junction adhesion molecule|r||||
+E|G6|gene|tricellulin|tricellulin|r||||
+E|G7|gene|CAR|CAR;coxsackievirus and adenovirus receptor|r||||
+E|G8|gene|alpha-catenin|alpha-catenin|r||||
+E|G9|gene|p120 catenin|p120 catenin|r||||
+E|G10|gene|AF-6/afadin|AF-6;ALL-1 fusion partner at chromosome 6;afadin;AF6;AF-6/afadin|r||||
+E|G11|gene|dlg|lethal(1)discs-large;dlg;discs large;Discs-large;DlgA;dlgA|r||non-human||
+E|G12|gene|PSD95/SAP90|PSD-95;post synaptic density protein;PSD95/SAP90;Psd95|r||||
+E|G13|gene|c-Crk|c-Crk|r||non-human||
+E|G14|ambiguous_gene|phospholipase|phospholipase|u|ambiguous_mapping|||
+E|G15|gene|Ras|Ras|r||||
+E|G16|gene|Src|Src|r||||
+E|G17|ambiguous_gene|guanylate kinase|guanylate kinase|u|ambiguous_mapping|||
+E|G18|ambiguous_gene|ATPase|ATPase|u|ambiguous_mapping|||
+E|G19|gene|MAP1A|MAP1A|r||||
+E|G20|gene|BEGAIN|brain-enriched guanylate kinase-associated protein;BEGAIN|r||||
+E|G21|gene|GAKIN|GAKIN|r||||
+E|G22|ambiguous_gene|actin|actin|u|ambiguous_mapping|||
+E|G23|ambiguous_gene|myosin|myosin|u|ambiguous_mapping|||
+E|G24|gene|cortactin|cortactin|r||||
+E|G25|gene|protein 4.1R|protein 4.1R|r||||
+E|G26|gene|cingulin|cingulin|r||||
+E|G27|gene|Shroom|Shroom|r||||
+E|G28|gene|ZAK|ZAK;ZO-1 associated kinase-1;ZO-1 associated kinase|r||||
+E|G29|gene|Gα12|Gα12;Ga12;G protein α 12 subunit|r||||
+E|G30|gene|Rho|Rho|r||||
+E|G31|gene|PATJ|PATJ;protein associated with tight junctions;Protein associated with tight junctions|r||||
+E|G32|gene|human Scribble|human Scribble;hScrib|r||human||
+E|G33|gene|Drosophila Scribble|Scribble|r||non-human||
+E|G34|gene|E6|E6|r||non-human||
+E|G35|gene|mouse ZO-1|ZO-1|r||non-human||
+E|G36|gene|mouse ZO-2|ZO-2|r||non-human||
+E|G37|gene|mouse ZO-3|ZO-3|r||non-human||
+E|G38|gene|E-cadherin|E-cadherin|r||||
+E|G39|gene|SC-35|SC-35;SC35;Splicing factor 35|r||||
+E|G40|gene|laminB1|laminB1|r||||
+E|G41|gene|SAF-B/HET|SAF-B;scaffold attachment factor-B;SAF-B/HET;Hsp27-ERE-TATA-binding protein;Scaffold attachment factor-B|r||||
+E|G42|gene|estrogen receptor alpha|estrogen receptor alpha|r||||
+E|G43|gene|hsp27|small heat shock protein 27;hsp27|r||||
+E|G44|gene|cyclin D1|cyclin D1;CD1;CD-1|r||||
+E|G45|gene|Myc|Myc|r||||
+E|G46|gene|ZONAB|ZONAB;ZO-1 associated nucleic acid binding protein;DbpA/Msy3;DNA binding proteinA/Mouse Y box protein3|r||||
+E|G47|gene|PCNA|PCNA;proliferating cell nuclear antigen|r||||
+E|G48|gene|Cdk4|cyclin-dependent kinase-4;Cdk4;Cdk-4;Cyclin-dependent kinase-4|r||||
+E|G49|gene|Apg-2|Apg-2;(ATP and peptide-binding protein in germ cells)-2|r||||
+E|G50|gene|symplekin|symplekin|r||||
+E|G51|gene|Jun|Jun|r||||
+E|G52|gene|Fos|Fos|r||||
+E|G53|ambiguous_gene|C/EBP|C/EBP;CCAAT/enhancer binding protein|u|ambiguous_mapping|||
+E|G54|gene|ARVCF|ARVCF;Armadillo repeat gene deleted in velo-cardio-facial syndrome|r||||
+E|G55|gene|Kaiso|Kaiso|r||||
+E|G56|gene|M2PK|pyruvate kinase M2;M2PK|r||||
+E|G57|gene|Oct-4|Oct-4|r||||
+E|G58|gene|Tamou/Polychaetoid|Tamou/Polychaetoid|r||non-human||
+E|G59|gene|emc|emc;extramacrochaetae|r||non-human||
+E|G60|gene|nectin|nectin|r||||
+E|G61|gene|Rap-1|Rap-1|r||||
+E|G62|gene|Dlg1|Dlg1|r||||
+E|D1|disease|breast cancer|breast cancer;breast carcinoma|r||||
+E|D3|disease|epithelial cancer|epithelial cancer;Epithelial cancers|r||||
+E|D4|disease|carcinoma|carcinomas;carcinoma|r||||
+E|D5|disease|estrogen-dependent mammary tumors|estrogen-dependent mammary tumors|r||||
+E|D7|disease|virus-induced cancer|virus-induced cancer|r||||
+E|D8|disease|mechanical injury|mechanical injury;wounding|r||||
+E|H1|phenotype|tumorous overgrowth|tumorous overgrowth|r||||
+E|H2|phenotype|neoplastic overgrowth|neoplastic overgrowth|r||||
+E|H3|phenotype|delayed embryonic growth|delayed embryonic growth|r||||
+E|H4|phenotype|Disturbed yolk sac angiogenesis|Disturbed yolk sac angiogenesis|r||||
+E|H5|phenotype|reduced fertility|reduced fertility|r||||
+E|H6|phenotype|extra mechanosensory organs|extra mechanosensory organs|r||||
+E|H7|phenotype|loss of cell polarity|loss of cell polarity|r||||
+X|ZO proteins|b0002|gene_family
+X|MAGUK|b0002|gene_family
+X|claudins|b0008|gene_family
+X|connexins|b0005|gene_family
+X|p120 catenin family|b0009|gene_family
+X|PDZ|b0013|protein_domain
+X|SH3|b0013|protein_domain
+X|GUK|b0013|protein_domain
+X|p55-like|b0020|gene_family
+X|Lin-2-like MAGUKs|b0020|gene_family
+X|JAMs|b0033|gene_family
+X|RNA polymerase II|b0043|protein_complex
+X|AP-1|b0048|protein_complex
+X|Dlg proteins|b0053|gene_family
+X|Ad9|b0056|virus_identifier
+X|Unc5-like netrin receptors|b0060|gene_family
+EV|V1|b0043.s6|bg|bgr|aff|ebr
+EV|V2|b0043.s7|bg|bgr|aff|ebr
+EV|V3|b0055.s1|bg|bgr|aff|ebr
+EV|V4|b0049.s1+b0061.s3|bg|co|na|do
+EV|V5|b0054.s1|bg|bgr|aff|ebr
+EV|V6|b0056.s4+b0056.s5|bg|bgr|aff|ebr
+EV|V7|b0054.s2+b0054.s3|bg|res|na|rr
+EV|V8|b0058.s6|bg|aim|q|none
+EV|V9|b0040.s1+b0040.s2|bg|res|aff|rr
+EV|V10|b0011.s2+b0011.s3+b0053.s3|bg|bgr|aff|ebr,mi
+EV|V11|b0033.s1+b0033.s2+b0033.s3+b0033.s4+b0033.s5|bg|res|aff|rr,mi
+EV|V12|b0034.s1+b0034.s2+b0034.s3+b0034.s4|bg|res|aff|rr,mi
+EV|V13|b0035.s1+b0035.s2+b0035.s3|bg|res|aff|rr,mi
+EV|V14|b0036.s1|bg|neg|neg|rr,mi
+EV|V15|b0053.s4+b0053.s5|bg|bgr|aff|ebr,mi
+P|G41|D1|sup|r|bg|sup:r:bg:V1||||Inverse correlation with breast cancer cell proliferation.
+P|G43|D1|sup|a|bg|sup:a:bg:V2||||Growth enhancement and adverse prognostic marker reported.
+P|G15|D3|sup|a|bg|sup:a:bg:V3||||Explicit background mutation association.
+P|G1|D4|nf|-||||V5|Family-level finding lacks individual attribution.
+P|G2|D4|nf|-||||V5|Family-level finding lacks individual attribution.
+P|G3|D4|nf|-||||V5|Family-level finding lacks individual attribution.
+P|G1|D3|nf|-||||V7|Cellular transformation phenotype lacks disease attribution.
+P|G3|D3|nf|-||||V7|Junctional phenotype lacks disease attribution.
+P|G2|D5|nf|-||||V6|Viral tumor causation does not establish host-gene causation.
+P|G31|D5|nf|-||||V6|Viral tumor causation does not establish host-gene causation.
+P|G62|D5|nf|-||||V6|Viral tumor causation does not establish host-gene causation.
+P|G1|D7|nf|-||||V8|Future research only; family-level scope.
+P|G2|D7|nf|-||||V8|Future research only; family-level scope.
+P|G3|D7|nf|-||||V8|Future research only; family-level scope.
+P|G2|D8|sup|a|bg|sup:a:bg:V9||||Cellular wounding induces nuclear localization.
+F|F1|mechanism|dlg mutations; imaginal disc overgrowth|Drosophila larvae|not_applicable|positive|not_reported|V10|Overgrowth phenotype; no named disease attribution.
+F|F2|mechanism|ZO-1 knockout; lethality; developmental defects|mouse embryos|not_applicable|mixed|not_reported|V11|Developmental phenotypes; no named disease attribution.
+F|F3|group_comparison|ZO-2 knockdown; tight junction function|Eph48 cells; MDCK cells|unknown|mixed|not_reported|V12|Effects differ between cellular contexts.
+F|F4|mechanism|ZO-2 deficiency; development; fertility|mouse embryos; chimeric mice|not_applicable|mixed|not_reported|V13|Phenotypes do not establish named disease links.
+F|F5|descriptive|ZO-3 deficiency; apparent phenotype|deficient cells; mouse embryos|not_applicable|null|not_reported|V14|No apparent phenotype; not disease-specific.
+F|F6|mechanism|Tamou/Polychaetoid mutations; emc; sensory organs|Drosophila|not_applicable|mixed|not_reported|V15|Developmental phenotype; no named disease attribution.

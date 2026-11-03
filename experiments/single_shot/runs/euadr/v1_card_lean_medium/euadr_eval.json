@@ -1,0 +1,221 @@
+{
+  "variant": "v1_card_lean_medium",
+  "run_set": "euadr",
+  "papers_scored": 100,
+  "papers_missing": [],
+  "PA | supported": {
+    "precision": 0.43,
+    "recall": 0.451,
+    "f1": 0.44,
+    "ci95": {
+      "precision": [
+        0.329,
+        0.539
+      ],
+      "recall": [
+        0.366,
+        0.543
+      ],
+      "f1": [
+        0.352,
+        0.524
+      ]
+    },
+    "counts": {
+      "tp_gold": 55,
+      "fn": 67,
+      "fn_symptom": 7,
+      "our_supported": 128,
+      "tp_ours": 55,
+      "tp_ours_many_to_one": 60,
+      "tp_gold_many_to_one": 67,
+      "uncertain_or_negative": 97,
+      "uncertain_or_negative_in_gold": 20
+    }
+  },
+  "PA | supported | scope_adjusted": {
+    "precision": 0.43,
+    "recall": 0.478,
+    "f1": 0.453,
+    "ci95": {
+      "precision": [
+        0.329,
+        0.545
+      ],
+      "recall": [
+        0.384,
+        0.573
+      ],
+      "f1": [
+        0.366,
+        0.539
+      ]
+    }
+  },
+  "PA | supported_or_uncertain": {
+    "precision": 0.372,
+    "recall": 0.582,
+    "f1": 0.454,
+    "ci95": {
+      "precision": [
+        0.298,
+        0.459
+      ],
+      "recall": [
+        0.484,
+        0.678
+      ],
+      "f1": [
+        0.379,
+        0.527
+      ]
+    },
+    "counts": {
+      "tp_gold": 71,
+      "fn": 51,
+      "fn_symptom": 7,
+      "our_supported": 191,
+      "tp_ours": 71,
+      "tp_ours_many_to_one": 79,
+      "tp_gold_many_to_one": 83,
+      "uncertain_or_negative": 34,
+      "uncertain_or_negative_in_gold": 4
+    }
+  },
+  "PA | supported_or_uncertain | scope_adjusted": {
+    "precision": 0.372,
+    "recall": 0.617,
+    "f1": 0.464,
+    "ci95": {
+      "precision": [
+        0.298,
+        0.451
+      ],
+      "recall": [
+        0.512,
+        0.723
+      ],
+      "f1": [
+        0.387,
+        0.534
+      ]
+    }
+  },
+  "PA+SA | supported": {
+    "precision": 0.438,
+    "recall": 0.427,
+    "f1": 0.432,
+    "ci95": {
+      "precision": [
+        0.333,
+        0.549
+      ],
+      "recall": [
+        0.342,
+        0.522
+      ],
+      "f1": [
+        0.35,
+        0.517
+      ]
+    },
+    "counts": {
+      "tp_gold": 56,
+      "fn": 75,
+      "fn_symptom": 10,
+      "our_supported": 128,
+      "tp_ours": 56,
+      "tp_ours_many_to_one": 61,
+      "tp_gold_many_to_one": 69,
+      "uncertain_or_negative": 97,
+      "uncertain_or_negative_in_gold": 24
+    }
+  },
+  "PA+SA | supported | scope_adjusted": {
+    "precision": 0.438,
+    "recall": 0.463,
+    "f1": 0.45,
+    "ci95": {
+      "precision": [
+        0.341,
+        0.548
+      ],
+      "recall": [
+        0.375,
+        0.563
+      ],
+      "f1": [
+        0.367,
+        0.537
+      ]
+    }
+  },
+  "PA+SA | supported_or_uncertain": {
+    "precision": 0.382,
+    "recall": 0.557,
+    "f1": 0.453,
+    "ci95": {
+      "precision": [
+        0.306,
+        0.462
+      ],
+      "recall": [
+        0.471,
+        0.647
+      ],
+      "f1": [
+        0.38,
+        0.521
+      ]
+    },
+    "counts": {
+      "tp_gold": 73,
+      "fn": 58,
+      "fn_symptom": 10,
+      "our_supported": 191,
+      "tp_ours": 73,
+      "tp_ours_many_to_one": 81,
+      "tp_gold_many_to_one": 86,
+      "uncertain_or_negative": 34,
+      "uncertain_or_negative_in_gold": 7
+    }
+  },
+  "PA+SA | supported_or_uncertain | scope_adjusted": {
+    "precision": 0.382,
+    "recall": 0.603,
+    "f1": 0.468,
+    "ci95": {
+      "precision": [
+        0.306,
+        0.47
+      ],
+      "recall": [
+        0.504,
+        0.701
+      ],
+      "f1": [
+        0.398,
+        0.543
+      ]
+    }
+  },
+  "status_by_gold_label": {
+    "NA": {
+      "explicit_negative": 3
+    },
+    "PA": {
+      "supported": 54,
+      "uncertain": 16,
+      "entity not recorded": 25,
+      "not_found": 10,
+      "explicit_negative": 4,
+      "supported, credited to another gold relation": 13
+    },
+    "SA": {
+      "uncertain": 1,
+      "explicit_negative": 3,
+      "entity not recorded": 3,
+      "supported": 2
+    }
+  }
+}

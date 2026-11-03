@@ -1,0 +1,14 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or methods
+E|G1|gene|D1 dopamine receptor|D1|p|species_unresolved,other|||
+E|G2|gene|D2 dopamine receptor|D2|p|species_unresolved,other|||
+E|D1|disease|amnesia|amnesia|r||||
+E|PH1|phenotype|learning and post-training consolidation deficits|post-training consolidation deficits|r||||
+X|[3H]SCH 23390|b0002|radioligand, not a gene
+X|[3H]spiperone|b0002|radioligand, not a gene
+EV|V1|b0002.s6|ts|res|na|rr,do
+EV|V2|b0002.s2|bg|bgr|na|do
+P|G1|D1|nf|-|||||Binding result is drug-receptor, not gene-disease
+P|G2|D1|nf|-|||||Binding result is drug-receptor, not gene-disease
+F|F1|mechanism|nefiracetam displacement of D1/D2 radioligand binding|receptor binding assay|unknown|null|not_reported|V1|species and statistics not stated
+R|species|b0002.s3|Animal paradigm is implied, but species is never stated|Receptor genes left provisional with gene species empty

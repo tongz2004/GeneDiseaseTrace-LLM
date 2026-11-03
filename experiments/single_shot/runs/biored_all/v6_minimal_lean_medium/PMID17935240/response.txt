@@ -1,0 +1,15 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|RPGR|RPGR|r||human||
+E|D1|disease|X-linked retinitis pigmentosa|X-linked retinitis pigmentosa;XLRP|r|||D2|
+E|D2|disease|retinitis pigmentosa|RP|r||||
+X|g.ORF15 + 652-653delAG|b0002|RPGR variant, not separate gene
+X|mosaicism|b0002|genetic mechanism, not disease
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s8|ts|res|aff|rr,cs
+EV|V3|b0002.s10|ts|res|aff|rr,eda
+EV|V4|b0002.s11|ts|hyp|hyp|ho
+P|G1|D1|sup|c|both|sup:c:bg:V1;sup:c:ts:V2+V3|||RPGR mutation causes XLRP in family
+P|G1|D2|unc|-|unk|unc:-:unk:V4|hedged_claim,scope||RP mention general; gene link indirect
+F|F1|descriptive|RPGR ORF15 delAG; XLRP|second/third generation patients and carriers|not_applicable|not_applicable|not_applicable|V2|abstract only
+F|F2|other|RPGR mutation mosaicism|asymptomatic first-generation female|not_applicable|not_applicable|not_applicable|V3|abstract only

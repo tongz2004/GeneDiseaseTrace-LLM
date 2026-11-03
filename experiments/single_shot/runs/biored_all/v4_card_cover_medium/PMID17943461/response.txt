@@ -1,0 +1,33 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text, tables or figures
+E|g1|gene|Fas ligand (murine transgene)|FasL;Fas ligand|p|species_unresolved||||
+E|g2|gene|Fas ligand (human)|Fas ligand|p|ambiguous_mapping|human|||
+E|g3|gene|Fas|Fas|p|species_unresolved||||
+E|g4|gene|caspase 3|caspase 3|p|species_unresolved||||
+E|g5|gene|calpain 1|calpain 1|p|species_unresolved||||
+E|g6|gene|dystrophin|dystrophin|p|species_unresolved||||
+E|g7|gene|cardiac troponin I|cardiac troponin I|p|species_unresolved||||
+E|d1|disease|dilated cardiomyopathy|Dilated cardiomyopathy;DCM|r||||
+E|d2|disease|myocarditis|myocarditis|r||||
+E|d3|disease|heart failure|heart failure|r||||
+E|d4|disease|HIV infection|HIV-infected;HIV-positive|r||||
+E|d5|disease|acquired immunodeficiency syndrome|acquired immunodeficiency syndrome;AIDS|r||||
+E|d6|disease|myopathies|myopathies|r||||
+E|d7|disease|AZT-induced cardiomyopathy|AZT-induced cardiomyopathy|r||||
+E|d8|disease|HAART-induced cardiomyopathy|HAART-induced cardiomyopathy|r||||
+E|s1|phenotype|cardiac dilation|cardiac dilation|r||||
+E|s2|phenotype|inflammatory infiltration|inflammatory infiltration|r||||
+E|s3|phenotype|apoptosis|apoptosis|r||||
+EV|V1|b0001.s1|ts|res|aff|mi,rr
+EV|V2|b0002.s3+b0002.s5+b0002.s6|ts|res|aff|mi,cmp
+EV|V3|b0002.s3|ts|co|q|unc
+EV|V4|b0002.s9|ts|hyp|hyp|ho
+EV|V5|b0002.s9|bg|bgr|aff|ebr
+EV|V6|b0002.s7+b0002.s8|ts|res|na|do
+P|g1|d7|sup|c|ts|sup:c:ts:V1+V2|||FasL Tg plus AZT induces cardiomyopathy in mice
+P|g1|d1|unc|-|unk|unc:-:unk:V3|scope||"Murine model of DCM" linkage to FasL unclear
+P|g2|d8|unc|-|ts|unc:-:ts:V4|hedged_claim||Authors speculate FasL "might increase" susceptibility
+P|g2|d4|sup|a|bg|sup:a:bg:V5|||Myocardial FasL expression identified in HIV-positive patients
+F|F1|group_comparison|cardiac dilation, function vs AZT dose|FasL Tg vs NTg mice|unknown|positive|not_reported|V2|abstract only; no statistics
+F|F2|mechanism|Fas, FasL, caspase 3, calpain 1, dystrophin, troponin I|AZT-treated FasL Tg mice|unknown|positive|not_reported|V6|abstract only
+R|species split|b0002.s9|"Fas ligand" in s9 refers to human patients, elsewhere mouse transgene|Created separate human and murine FasL nodes sharing surface form

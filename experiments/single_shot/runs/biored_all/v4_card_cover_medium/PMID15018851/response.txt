@@ -1,0 +1,18 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|UL97|UL97|r||non-human||
+E|G2|gene|DNA polymerase|DNA polymerase|p|ambiguous_mapping|non-human||
+E|G3|gene|glycoprotein B|glycoprotein B;gB|r||non-human||
+E|D1|disease|lymphoma|lymphoma|r||||
+E|D2|disease|non-Hodgkin's lymphoma|non-Hodgkin's lymphoma|r|||D1|
+E|PH1|phenotype|antiviral drug resistance|resistance to antiviral drugs|r||||
+X|cytomegalovirus|b0001|organism name, not disease endpoint
+X|CMV|b0002|organism abbreviation, not disease endpoint
+X|UL10-13|b0002|viral sequence region, not single-gene endpoint
+X|N495K|b0002|variant ID
+X|L501I|b0002|variant ID
+EV|V1|b0002.s8|ts|res|aff|rr
+EV|V2|b0002.s9|ts|res|aff|rr
+F|F1|mechanism|UL97 residue changes; ganciclovir resistance|single NHL patient CMV isolates|not_applicable|positive|not_reported|V1|single patient; drug phenotype only
+F|F2|mechanism|DNA polymerase N495K/L501I; drug resistance|single NHL patient CMV isolates|not_applicable|positive|not_reported|V2|single patient; drug phenotype only
+R|primary endpoints|b0002.s8|Viral gene findings concern drug resistance phenotypes, not primary diseases|Recorded as findings only; no gene-disease pairs share a sentence

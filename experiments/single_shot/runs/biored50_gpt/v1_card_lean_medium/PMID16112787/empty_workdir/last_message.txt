@@ -1,0 +1,22 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only; no full text or attachments.
+E|G1|gene|N-acetyl-beta-d-glucosaminidase|N-acetyl-beta-d-glucosaminidase;NAG|r||non-human||
+E|G2|gene|superoxide dismutase|superoxide dismutase;SOD|r||non-human||
+E|G3|gene|catalase|catalase;CAT|r||non-human||
+E|D1|disease|vancomycin-induced nephrotoxicity|vancomycin-induced nephrotoxicity;VCM-induced nephrotoxicity;VCM-induced renal impairment;VCM-induced kidney damage|r||||
+E|D2|disease|renal tubular injury|renal tubular injury;tubular damage;oxidative tubular damage|r||||
+E|H1|phenotype|oxidative stress|oxidative stress|r||||
+E|H2|phenotype|dilatation of tubular lumens|dilatation of tubular lumens|r||||
+E|H3|phenotype|epithelial cell vacuolization|epithelial cell vacuolization|r||||
+E|H4|phenotype|atrophy|atrophy|r||||
+E|H5|phenotype|desquamation|desquamation|r||||
+E|H6|phenotype|necrosis|necrosis|r||||
+EV|V1|b0002.s5|bg|bgr|aff|ebr
+EV|V2|b0002.s5|ts|res|na|rr,do
+EV|V3|b0002.s6|ts|res|na|rr,do
+P|G1|D2|sup|a|bg|sup:a:bg:V1||||Explicitly identified as renal tubular injury marker.
+P|G1|D1|nf|-||||V2+V3|Treatment-dependent excretion; no explicit gene–nephrotoxicity attribution.
+P|G2|D1|nf|-||||V2+V3|Treatment-dependent activity; no explicit gene–nephrotoxicity attribution.
+P|G3|D1|nf|-||||V2+V3|Treatment-dependent activity; no explicit gene–nephrotoxicity attribution.
+F|F1|group_comparison|NAG excretion; SOD and CAT activities|VCM-treated versus control rats|significant|mixed|partial|V2|NAG increased; SOD and CAT decreased.
+F|F2|group_comparison|NAG excretion; SOD and CAT activities|VCM plus erdosteine versus VCM alone|mixed|mixed|partial|V3|NAG decreased; SOD increased; CAT not significantly increased.

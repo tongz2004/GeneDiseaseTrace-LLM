@@ -1,0 +1,5 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no genes mentioned
+E|D1|disease|hypotension|hypotension;post-spinal block hypotension|r||||
+X|ASA|b0002.s3|American Society of Anesthesiologists classification, not the ASA gene
+X|epinephrine|b0002.s9|Drug treatment, not a gene

@@ -1,0 +1,14 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|RPGR|RPGR|r||human||
+E|D1|disease|X-linked retinitis pigmentosa|X-linked retinitis pigmentosa;XLRP|r||||
+E|D2|disease|RP|RP|p|undefined_abbreviation|||
+X|g.ORF15 + 652-653delAG|b0002|variant identifier, not gene
+X|gonadal mosaicism|b0002|genetic mechanism, not disease
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s8+b0002.s10|ts|res|aff|rr,cs
+EV|V3|b0002.s11|ts|int|hyp|ho
+P|G1|D1|sup|a|both|sup:a:bg:V1;sup:a:ts:V2|||Most frequent XLRP mutation; segregates in family
+P|G1|D2|nf|-|||||V3|Hedged mosaicism statement; no RPGR-RP link
+F|F1|descriptive|RPGR delAG mutation detection|XLRP family second/third generation|not_applicable|not_applicable|not_applicable|V2|single family
+F|F2|descriptive|RPGR mutation in somatic tissues|asymptomatic obligate carrier grandmother|not_applicable|not_applicable|not_applicable|V2|lymphocyte DNA normal

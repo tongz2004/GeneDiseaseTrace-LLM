@@ -1,0 +1,47 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only; no full text or attachments.
+E|G1|gene|SLURP-1|SLURP-1;secreted mammalian Ly-6/urokinase plasminogen activator receptor related protein-1;(r)SLURP-1;rSLURP-1|r||human||
+E|G2|gene|MYB|MYB|r||human||
+E|G3|gene|PIK3CA|PIK3CA|r||human||
+E|G4|gene|ETS1|ETS1|r||human||
+E|G5|gene|NRAS|NRAS|r||human||
+E|G6|gene|SRC|SRC|r||human||
+E|G7|gene|AKT1|AKT1|r||human||
+E|G8|gene|KIT|KIT|r||human||
+E|G9|gene|RB1|RB1|r||human||
+E|G10|gene|EGF|EGF|r||human||
+E|G11|gene|HGF|HGF|r||human||
+E|G12|gene|CDKN2A|CDKN2A|r||human||
+E|G13|gene|STAT3|STAT3|r||human||
+E|G14|gene|BCL2|BCL2|r||human||
+E|G15|gene|TNF|TNF|r||human||
+E|G16|gene|BAX|BAX|r||human||
+E|G17|gene|CASP8|CASP8|r||human||
+E|G18|gene|CTNNB1|CTNNB1;beta-catenin|r||human||
+E|G19|gene|CDKN3|CDKN3|r||human||
+E|G20|gene|FOXD3|FOXD3|r||human||
+E|G21|gene|SERPINB5|SERPINB5|r||human||
+E|G22|gene|RUNX3|RUNX3|r||human||
+E|D1|disease|cancer|cancer|r|||||
+E|H1|phenotype|carcinogenic transformation|carcinogenic transformation|r|||||
+E|H2|phenotype|tumorigenic transformation|tumorigenic transformation|r|||||
+X|nicotinic acetylcholine receptors|b0002|receptor family, not a single gene
+X|NNK|b0002|chemical, not a gene
+X|BEP2D|b0002|cell line, not a gene
+X|Het-1A|b0002|cell line, not a gene
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s3|ts|res|aff|rr
+EV|V3|b0002.s4|bg|bgr|aff|ebr
+EV|V4|b0002.s4|ts|res|aff|rr
+EV|V5|b0002.s5|ts|res|aff|rr
+EV|V6|b0002.s6+b0002.s7|ts|res|aff|rr
+P|G10|D1|sup|a|bg|sup:a:bg:V3||||Explicitly classified as cancer-related.
+P|G11|D1|sup|a|bg|sup:a:bg:V3||||Explicitly classified as cancer-related.
+P|G12|D1|sup|a|bg|sup:a:bg:V3||||Explicitly classified as cancer-related.
+P|G13|D1|sup|a|bg|sup:a:bg:V3||||Explicitly classified as cancer-related.
+P|G1|D1|nf|-||||V1+V2+V4+V5+V6|Cell transformation and expression findings lack disease attribution.
+F|F1|mechanism|SLURP-1; NNK-dependent transformation|human bronchial and oral epithelial cell lines|unknown|negative|not_reported|V1|
+F|F2|group_comparison|NNK; SLURP-1; MYB, PIK3CA, ETS1, NRAS, SRC, AKT1, KIT, RB1|BEP2D and Het-1A|unknown|mixed|not_reported|V2|Gene responses depend on cell type.
+F|F3|group_comparison|NNK; SLURP-1; EGF, HGF, CDKN2A, STAT3|BEP2D and Het-1A|unknown|mixed|not_reported|V4|Gene responses depend on cell type.
+F|F4|group_comparison|NNK; SLURP-1; BCL2, TNF, BAX, CASP8|BEP2D and Het-1A|unknown|mixed|not_reported|V5|SLURP-1 reversal reported as partial.
+F|F5|group_comparison|NNK; SLURP-1; CTNNB1, CDKN3, FOXD3, SERPINB5, RUNX3|BEP2D and Het-1A|unknown|mixed|not_reported|V6|RUNX3 cell-type scope unspecified.

@@ -1,0 +1,28 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|SLC12A3|SLC12A3|r||human||
+E|D1|disease|Gitelman syndrome|Gitelman syndrome;GS|r||||
+E|D2|disease|idiopathic intracranial hypertension|idiopathic intracranial hypertension;pseudotumor cerebri|r||||
+E|D3|disease|Bartter syndrome|Bartter syndrome|r||||
+E|D4|disease|cerebral cavernous malformations|cerebral cavernous malformations;familial cavernomatosis|r||||
+E|D5|phenotype|hypokalemia|hypokalemia|r||||
+E|D6|phenotype|hypomagnesemia|hypomagnesemia|r||||
+E|D7|phenotype|metabolic alkalosis|metabolic alkalosis|r||||
+E|D8|phenotype|growth delay|growth delay|r||||
+E|D9|phenotype|papilledema|papilledema|r||||
+E|D10|disease|secondary aldosteronism|secondary aldosteronism|r||||
+EV|V1|b0002.s4|ts|res|aff|rr,eda
+EV|V2|b0002.s5|ts|res|aff|cs
+EV|V3|b0001.s1|ts|res|aff|eda
+EV|V4|b0002.s10|ts|neg|neg|cs
+EV|V5|b0002.s1|ts|co|aff|do
+EV|V6|b0002.s8|unk|hyp|hyp|ho
+EV|V7|b0002.s6|ts|res|aff|rr
+EV|V8|b0002.s3|ts|co|na|do
+P|G1|D1|sup|c|ts|sup:c:ts:V1+V2+V7|||Compound heterozygous mutations cosegregate, molecular GS diagnosis
+P|G1|D2|sup|a|ts|sup:a:ts:V3+V5|hedged_claim|V6|Single case; title asserts association
+P|G1|D4|neg|-|ts|neg:-:ts:V4|||Cavernomatosis segregates independently of GS
+P|G1|D3|nf|-||||V8|Bartter was initial misdiagnosis only
+F|F1|association|SLC12A3 mutations; GS|proband family|not_applicable|positive|not_applicable|V1+V2|single family
+F|F2|mechanism|c.2633+1G>C; exon 22 skipping|proband cDNA|not_applicable|positive|not_applicable|V7|
+F|F3|association|SLC12A3 mutations; cavernomatosis|proband family|not_applicable|null|not_applicable|V4|single family

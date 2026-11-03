@@ -1,0 +1,20 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text
+E|G1|gene|COL1A2|COL1A2;collagen type I alpha 2 chain|r||human||
+E|D1|disease|osteogenesis imperfecta|Osteogenesis imperfecta;OI|r||||
+E|D2|disease|osteogenesis imperfecta type III|Osteogenesis imperfecta type III;OI type III|r|||D1|
+E|D3|disease|intracranial hemorrhage|intracranial hemorrhage;Intracranial hemorrhage;intracranial bleeding|p|other|||
+E|D4|disease|brachydactyly|brachydactyly|r||||
+E|S1|phenotype|nail hypoplasia|nail hypoplasia|r||||
+E|S2|phenotype|abnormal limb development|abnormal limb development|r||||
+E|S3|symptom|fractures|fractures|r||||
+EV|V1|b0002.s4|ts|res|aff|eda,rr
+EV|V2|b0001.s1|ts|res|aff|rr,eda
+EV|V3|b0002.s5|ts|int|hyp|ho
+EV|V4|b0002.s2|bg|bgr|na|do
+P|G1|D2|sup|a|ts|sup:a:ts:V1+V2|||Case authors attribute OI type III to exon 49 mutations
+P|G1|D1|sup|a|ts|sup:a:ts:V1|||Text states OI caused by COL1A2 mutations
+P|G1|D3|sup|a|ts|sup:a:ts:V2;unc:-:ts:V3|hedged_claim|V4|Title asserts association; risk statement hedged
+P|G1|D4|sup|a|ts|sup:a:ts:V2|||Title asserts brachydactyly associated with mutations
+F|F1|descriptive|COL1A2 exon 49 glycine mutations; OI III phenotype|three OI type III patients|not_applicable|not_applicable|not_applicable|V1+V2|case series n=3
+R|merge|b0002.s5|"intracranial bleeding" vs "intracranial hemorrhage" not explicitly defined as synonyms|Merged as same referent by context; marked provisional

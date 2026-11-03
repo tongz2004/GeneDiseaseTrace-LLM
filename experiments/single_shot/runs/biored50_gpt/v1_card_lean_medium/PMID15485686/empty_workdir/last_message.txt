@@ -1,0 +1,30 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only; no full text or attachments.
+E|G1|gene|SCN5A|SCN5A;Na(v)1.5;Na(v)1.5 cardiac sodium channel|r||human||
+E|D1|disease|long QT syndrome|long QT syndrome|r|||| 
+E|D2|disease|Congenital long QT syndrome|Congenital long QT syndrome;LQTS;congenital LQTS|r|||D1|
+E|D3|disease|LQTS-3|LQTS-3|r|||D2|
+E|D4|disease|tachycardia|tachycardia|r||||
+E|D5|disease|bradycardia|bradycardia;fetal bradycardia|r||||
+E|D6|disease|2:1 atrioventricular block|2:1 atrioventricular block|r||||
+E|D7|disease|ventricular tachycardia|ventricular tachycardia|r|||D4|
+E|D8|disease|arrhythmias|arrhythmias|r||||
+E|H1|phenotype|rhythm disturbances|rhythm disturbances|r||||
+E|H2|phenotype|persistent inward current|persistent inward current|r||||
+X|V1763M|b0002|variant identifier
+X|V1764M|b0002|variant identifier
+X|I1762A|b0002|variant identifier
+EV|V1|b0001.s1|ts|res|aff|eda
+EV|V2|b0002.s5+b0002.s6|ts|res|aff|eda,rr
+EV|V3|b0002.s10|ts|int|hyp|ho
+EV|V4|b0002.s2+b0002.s4|ts|co|na|do
+EV|V5|b0002.s7+b0002.s8+b0002.s9|ts|res|na|rr
+P|G1|D1|sup|c|ts|sup:c:ts:V1|||| 
+P|G1|D2|unc|-|ts|unc:-:ts:V3|hedged_claim|||Congenital disease contribution is hedged.
+P|G1|D3|sup|a|ts|sup:a:ts:V2|||| 
+P|G1|D4|nf|-||||V1|Onset accompanies the attributed syndrome.
+P|G1|D5|nf|-||||V1+V4|Clinical presentation lacks separate gene attribution.
+P|G1|D6|nf|-||||V4|Clinical presentation and treatment response only.
+P|G1|D7|nf|-||||V4|Clinical presentation and treatment response only.
+P|G1|D8|unc|-|ts|unc:-:ts:V3|hedged_claim|||Clinical contribution is hedged.
+F|F1|mechanism|SCN5A mutants and channel electrophysiology|tsA201 mammalian cells|not_applicable|mixed|not_reported|V5|Cell findings do not establish disease causality.

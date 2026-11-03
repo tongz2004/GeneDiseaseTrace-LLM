@@ -1,0 +1,39 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|CASR|calcium sensing receptor;CaSR|r||||
+E|G2|gene|AMFR (gp78)|gp78|r||||
+E|G3|gene|MFN1|Mfn1|r||||
+E|G4|gene|MFN2|Mfn2|r||||
+E|G5|gene|GJA1 (Cx43)|Cx43|r||||
+E|G6|gene|CTNNB1|beta-catenin|r||||
+E|G7|gene|CDH2|N-cadherin|r||||
+E|G8|gene|FIS1|Fis1|r||||
+E|G9|gene|DNM1L (Drp1)|Drp1|r||||
+E|G10|gene|ubiquitin|ubiquitin|p|other|||
+E|D1|disease|diabetic cardiomyopathy|Diabetic cardiomyopathy;DCM|r||||
+E|D2|disease|diabetes|diabetes|r||||
+E|D3|disease|myocardial energy metabolism disorder|energy metabolism disorder;abnormal myocardial energy metabolism|r||||
+X|G protein-coupled receptor|b0002.s2|functional grouping, not a gene
+X|high glucose|b0001.s1|experimental condition, not a disease
+X|apoptosis|b0002.s2|cellular process, not a disease
+EV|V1|b0002.s3|bg|bgr|aff|ebr
+EV|V2|b0002.s10|ts|int|hyp|ho
+EV|V3|b0002.s4+b0002.s8+b0002.s10|ts|res|aff|rr,mi
+EV|V4|b0002.s6+b0002.s7+b0002.s8|ts|res|aff|rr,mi
+EV|V5|b0002.s5+b0002.s6+b0002.s9|ts|res|aff|rr
+EV|V6|b0002.s8|ts|int|aff|rr
+P|G1|D1|sup|r|bg|sup:r:bg:V1;unc:-:ts:V2||V2|CaSR decreased in DCM rats; therapeutic target
+P|G1|D3|sup|c|ts|sup:c:ts:V3|||CaSR agonist attenuated HG-induced disorder
+P|G2|D3|sup|c|ts|sup:c:ts:V4|||gp78 siRNA reduced HG-induced changes
+P|G3|D3|sup|a|ts|sup:a:ts:V5|||Mfn1 decreased and ubiquitinated under HG
+P|G4|D3|sup|a|ts|sup:a:ts:V5|||Mfn2 decreased and ubiquitinated under HG
+P|G5|D3|sup|a|ts|sup:a:ts:V5|||Cx43 decreased and ubiquitinated under HG
+P|G6|D3|sup|a|ts|sup:a:ts:V5|||Expression decreased with HG-induced disorder
+P|G7|D3|sup|a|ts|sup:a:ts:V5|||Expression decreased with HG-induced disorder
+P|G8|D3|sup|a|ts|sup:a:ts:V5|||Expression increased with HG-induced disorder
+P|G9|D3|sup|a|ts|sup:a:ts:V5|||Expression increased with HG-induced disorder
+P|G10|D3|unc|-|ts|unc:-:ts:V6|identity||Only via gp78-ubiquitin proteasome pathway term
+F|F1|group_comparison|CaSR expression; DCM|DCM rats vs controls|significant|negative|unread|V1|prior study
+F|F2|mechanism|CaSR, gp78; energy metabolism disorder|HG-treated cardiomyocytes|significant|mixed|unread|V3;V4|abstract only
+F|F3|group_comparison|Mfn1/2, Cx43, Fis1, Drp1 expression|HG vs control|unknown|mixed|unread|V5|abstract only
+R|ubiquitin as gene|b0002.s8|Ubiquitin appears only within pathway name|Kept as provisional gene, pair uncertain

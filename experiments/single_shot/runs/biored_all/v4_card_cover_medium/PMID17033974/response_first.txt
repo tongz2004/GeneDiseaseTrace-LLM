@@ -1,0 +1,21 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|CACNA2D4|CACNA2D4|r||human||
+E|G2|gene|Cacna2d4|Cacna2d4|r||non-human||
+E|D1|disease|autosomal recessive cone dystrophy|autosomal recessive cone dystrophy|r|||D2|
+E|D2|disease|cone dystrophy|cone dystrophy|r||||
+E|D3|disease|night blindness|night blindness|r||||
+E|S1|phenotype|loss of retinal signaling|loss of retinal signaling|r||||
+E|S2|phenotype|abnormal morphology of ribbon synapses|abnormal morphology of ribbon synapses|r||||
+X|alpha (2) delta|b0002.s3|subunit type label, not a gene symbol
+X|c.2406C-->A|b0002.s5|variant ID, excluded
+EV|V1|b0001.s1|ts|res|aff|rr,eda
+EV|V2|b0002.s5+b0002.s6+b0002.s8|ts|res|aff|rr,eda
+EV|V3|b0002.s5+b0002.s7|ts|co|na|do
+EV|V4|b0002.s2|ts|res|aff|rr
+P|G1|D1|sup|c|ts|sup:c:ts:V1+V2||V3|Homozygous truncating mutation in affected siblings; explicit causation
+P|G1|D2|unc|-||unc:-:ts:V3|scope||Attribution targets recessive subtype; no propagation to parent
+P|G1|D3|nf|-||||V3|Night blindness only labels the screened cohort
+P|G2|S1|nf|-||||V4|Phenotype target, not a primary disease
+F|F1|descriptive|CACNA2D4 mutation screening|34 patients with initial night-blindness diagnosis|not_applicable|not_applicable|not_applicable|V2|Two affected siblings, homozygous
+F|F2|descriptive|Cacna2d4 frameshift and retinal phenotype|spontaneous mouse mutant|not_applicable|not_applicable|not_applicable|V4|Background from authors' prior study

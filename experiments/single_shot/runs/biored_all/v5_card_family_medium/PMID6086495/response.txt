@@ -1,0 +1,13 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|ambiguous_gene|Becker muscular dystrophy gene|Becker muscular dystrophy gene;BMD gene|u|other||||
+E|G2|ambiguous_gene|Duchenne dystrophy gene|Duchenne|u|other||||
+E|D1|disease|Becker muscular dystrophy|Becker muscular dystrophy;BMD;Becker|r|||||
+E|D2|disease|Duchenne dystrophy|Duchenne|p|other||||
+EV|V1|b0001.s1+b0002.s1|ts|res|aff|rr
+EV|V2|b0002.s2|ts|int|hyp|ho
+P|G1|D1|unc|-|ts|unc:-:ts:V1|identity,hedged_claim||Unnamed disease-defined locus; localisation only suggested
+P|G1|D2|unc|-|ts|unc:-:ts:V2|identity,hedged_claim||Inferred close linkage or allelism with Duchenne gene
+P|G2|D2|unc|-|ts|unc:-:ts:V2|identity,presupposed_only||Duchenne gene presupposed, not established
+F|F1|association|BMD locus vs Xp21 RFLP markers|30 BMD kindreds|unknown|positive|not_reported|V1|abstract only; LOD scores not given
+R|disease-named gene|b0002.s1|Gene is named only by its disease; no symbol given|Made it ambiguous_gene with unresolved identity

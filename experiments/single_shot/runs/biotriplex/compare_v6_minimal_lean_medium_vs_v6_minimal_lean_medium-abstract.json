@@ -1,0 +1,61 @@
+{
+  "a": "v6_minimal_lean_medium",
+  "b": "v6_minimal_lean_medium:abstract",
+  "articles_compared": 25,
+  "not_in_both": [
+    "3320601",
+    "4302655",
+    "4550874",
+    "5444857",
+    "9489697"
+  ],
+  "a_metrics": {
+    "precision": 0.388,
+    "recall": 0.813,
+    "f1": 0.525,
+    "recall_outside_abstract": 0.792
+  },
+  "b_metrics": {
+    "precision": 0.505,
+    "recall": 0.366,
+    "f1": 0.424,
+    "recall_outside_abstract": 0.198
+  },
+  "a_minus_b": {
+    "precision": {
+      "diff": -0.117,
+      "ci95": [
+        -0.355,
+        0.058
+      ]
+    },
+    "recall": {
+      "diff": 0.448,
+      "ci95": [
+        0.299,
+        0.588
+      ]
+    },
+    "f1": {
+      "diff": 0.101,
+      "ci95": [
+        -0.052,
+        0.254
+      ]
+    },
+    "recall_outside_abstract": {
+      "diff": 0.594,
+      "ci95": [
+        0.377,
+        0.8
+      ]
+    }
+  },
+  "a_supported_not_gold": {
+    "disease not a gold disease concept": 44,
+    "gold has both concepts but no relation": 91,
+    "gene not a gold gene concept": 19,
+    "neither entity is a gold concept": 7,
+    "duplicate: its gold relation is credited to another of our pairs": 11
+  }
+}

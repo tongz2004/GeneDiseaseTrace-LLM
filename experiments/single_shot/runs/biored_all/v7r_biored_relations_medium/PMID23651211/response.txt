@@ -1,0 +1,46 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|TCF7L2|T-cell factor-4;TCF-4;TCF-4J;TCF-4K|r||human||
+E|G2|gene|CTNNB1|beta-catenin|r||human||
+E|G3|gene|INS|insulin|p|ambiguous_mapping|human||
+E|G4|gene|IGF1|IGF-1|r||human||
+E|G5|gene|IRS1|IRS1|r||human||
+E|G6|gene|CLDN2|CLDN2|r||human||
+E|G7|gene|STK17B|STK17B|r||human||
+E|G8|gene|SPP1|SPP1|r||human||
+E|G9|gene|AXIN2|AXIN2|r||human||
+E|G10|gene|WISP2|WISP2|r||human||
+E|G11|gene|MMP7|MMP7|r||human||
+E|G12|gene|ANXA1|ANXA1|r||human||
+E|G13|gene|CAMK2N1|CAMK2N1|r||human||
+E|G14|gene|ASPH|ASPH|r||human||
+E|G15|gene|ADGRG1|GPR56|r||human||
+E|G16|gene|CD24|CD24|r||human||
+E|G17|gene|JAG1|JAG1|r||human||
+E|G18|ambiguous_gene|Wnt family|Wnt|u|ambiguous_mapping|human||
+E|G19|ambiguous_gene|Notch family|Notch|u|ambiguous_mapping|human||
+E|D1|disease|hepatocellular carcinoma|hepatocellular carcinoma;HCC;HCCs|r||||
+X|hepatic oncogenesis|b0002|process term, treated as HCC context
+EV|V1|b0002.s7+b0002.s8|ts|res|aff|rr,cmp
+EV|V2|b0002.s5+b0002.s8|ts|res|aff|rr
+EV|V3|b0002.s10|ts|int|aff|eda
+EV|V4|b0002.s2|bg|bgr|q|unc
+P|G1|D1|sup|a|ts|sup:a:ts:V2+V3|||TCF-4J correlates with targets in HCC tumours
+P|G6|D1|sup|r|ts|sup:r:ts:V1|||upregulated in HCC tumours
+P|G7|D1|sup|r|ts|sup:r:ts:V1|||upregulated in HCC tumours
+P|G8|D1|sup|r|ts|sup:r:ts:V1|||upregulated in HCC tumours
+P|G9|D1|sup|r|ts|sup:r:ts:V1|||upregulated in HCC tumours
+P|G10|D1|sup|r|ts|sup:r:ts:V1|||upregulated in HCC tumours
+P|G11|D1|sup|r|ts|sup:r:ts:V1|||upregulated in HCC tumours
+P|G5|D1|sup|r|ts|sup:r:ts:V1+V3|||upregulated in HCC tumours
+P|G12|D1|sup|r|ts|sup:r:ts:V1|||upregulated in HCC tumours
+P|G13|D1|sup|r|ts|sup:r:ts:V1|||upregulated in HCC tumours
+P|G14|D1|sup|r|ts|sup:r:ts:V1|||upregulated in HCC tumours
+P|G15|D1|sup|r|ts|sup:r:ts:V1|||upregulated in HCC tumours
+P|G16|D1|sup|r|ts|sup:r:ts:V1|||upregulated in HCC tumours
+P|G17|D1|sup|r|ts|sup:r:ts:V1|||upregulated in HCC tumours
+P|G2|D1|unc|-|ts|unc:-:ts:V3|scope||V3|pathway-level contribution only
+P|G4|D1|unc|-|ts|unc:-:ts:V3|scope||V3|pathway-level contribution only
+P|G3|D1|unc|-|ts|unc:-:ts:V3|scope,identity||V3|pathway-level contribution only
+F|F1|group_comparison|13 TCF-4J target genes expression|47 paired HCC vs peritumour|unknown|positive|unread|V1|abstract only
+F|F2|correlation|target genes vs TCF-4J expression|47 HCC tumours|significant|positive|unread|V2|10 genes unnamed

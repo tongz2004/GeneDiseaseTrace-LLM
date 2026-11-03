@@ -1,0 +1,13 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; plant study with no human disease
+E|G1|gene|MOL1|MOL1;mol1|r||non-human||
+E|G2|gene|CLE41|CLE41|r||non-human||
+E|G3|gene|PXY|PXY|r||non-human||
+E|G4|gene|CLV1|CLV1|r||non-human||
+E|PH1|phenotype|disturbed cambium organization|cambium organization|r||||
+X|CLE|b0002.s2|gene family, not a single gene
+X|LRR-RLK|b0002.s2|receptor kinase family, not a single gene
+X|CLV1 deficiency|b0002.s8|plant mutant condition, not a disease
+EV|V1|b0002.s4+b0002.s6|ts|res|aff|rr,mi
+F|F1|mechanism|MOL1 expression level/domain vs cambium organization|Arabidopsis thaliana|unknown|unknown|not_reported|V1|abstract only; phenotype, not disease
+R|no primary disease|b0002|Plant developmental study with genes only and no disease or clinical event|No gene-disease pairs listed; MOL1 phenotype recorded as finding only

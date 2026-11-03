@@ -1,0 +1,72 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text unavailable
+E|G1|gene|PAR1 (F2r)|PAR1;PAR-1|r||non-human||
+E|G2|gene|PAR2 (F2rl1)|PAR2|r||non-human||
+E|G3|gene|proteinase-activated receptor family|Protease-activated receptors;proteinase-activated receptors;PAR;PARs|p|ambiguous_mapping|non-human||
+E|G4|gene|B2m|b2m|r||non-human||
+E|G5|gene|Ccl7|ccl7|r||non-human||
+E|G6|gene|Cd200|cd200|r||non-human||
+E|G7|gene|Cd63|cd63|r||non-human||
+E|G8|ambiguous_gene|cdbpd|cdbpd|u|suspected_typo|non-human||
+E|G9|gene|Cfl1|cfl1|r||non-human||
+E|G10|gene|Dusp1|dusp1|r||non-human||
+E|G11|gene|Fkbp1a|fkbp1a|r||non-human||
+E|G12|gene|Fth1|fth1|r||non-human||
+E|G13|gene|Hspb1|hspb1|r||non-human||
+E|G14|gene|Marcksl1|marcksl1|r||non-human||
+E|G15|gene|Mmp2|mmp2|r||non-human||
+E|G16|gene|Myo5a|myo5a|r||non-human||
+E|G17|gene|Nfkbia|nfkbia|r||non-human||
+E|G18|gene|Pax1|pax1|r||non-human||
+E|G19|gene|Plaur|plaur|r||non-human||
+E|G20|gene|Ppia|ppia|r||non-human||
+E|G21|gene|Ptpn1|ptpn1|r||non-human||
+E|G22|gene|Ptprcap|ptprcap|r||non-human||
+E|G23|gene|S100a10|s100a10|r||non-human||
+E|G24|gene|Sim2|sim2|r||non-human||
+E|G25|gene|Tnfaip2|tnfaip2|r||non-human||
+E|G26|gene|Arf6|arf6|r||non-human||
+E|G27|gene|Dctn1|dcnt1|p|suspected_typo|non-human||
+E|G28|gene|p38 MAPK|p38 MAPK|p|ambiguous_mapping|non-human||
+E|D1|disease|inflammation|inflammation|r|||||
+E|D2|disease|cystitis|cystitis;bladder inflammation|r|||||
+E|S1|symptom|edema|edema|r|||||
+X|substance P|b0002|pro-inflammatory peptide stimulus, not studied as gene
+X|lipopolysaccharide|b0002|bacterial stimulus, not gene
+EV|V1|b0002.s5|bg|bgr|aff|ebr,mi
+EV|V2|b0002.s6+b0002.s7+b0002.s8|ts|res|aff|rr,mi
+EV|V3|b0002.s14|ts|int|aff|rr
+EV|V4|b0002.s10|bg|bgr|aff|ebr
+EV|V5|b0002.s12|ts|int|aff|rr
+EV|V6|b0002.s13|ts|hyp|hyp|ho
+EV|V7|b0002.s1+b0002.s4|bg|bgr|aff|ebr
+EV|V8|b0002.s15|ts|hyp|q|ho
+P|G1|D1|sup|c|both|sup:c:bg:V1;sup:c:ts:V2+V3|||PAR1 deficiency attenuates inflammation
+P|G1|D2|sup|c|ts|sup:c:ts:V3;unc:-:ts:V8|||PAR1 participates in bladder inflammation
+P|G2|D1|sup|c|bg|sup:c:bg:V1|||PAR2 deficiency weakly attenuates inflammation
+P|G3|D1|sup|a|bg|sup:a:bg:V7|||PAR activation induces inflammation
+P|G4|D1|sup|a|bg|sup:a:bg:V4|||implicated in inflammatory process
+P|G5|D1|sup|a|bg|sup:a:bg:V4|||implicated in inflammatory process
+P|G6|D1|sup|a|bg|sup:a:bg:V4|||implicated in inflammatory process
+P|G7|D1|sup|a|bg|sup:a:bg:V4|||implicated in inflammatory process
+P|G8|D1|sup|a|bg|sup:a:bg:V4|identity||implicated; identity unclear
+P|G9|D1|sup|a|bg|sup:a:bg:V4|||implicated in inflammatory process
+P|G10|D1|sup|a|both|sup:a:bg:V4;sup:a:ts:V5|||counter-balances inflammatory response
+P|G11|D1|sup|a|bg|sup:a:bg:V4|||implicated in inflammatory process
+P|G12|D1|sup|a|bg|sup:a:bg:V4|||implicated in inflammatory process
+P|G13|D1|sup|a|bg|sup:a:bg:V4|||implicated in inflammatory process
+P|G14|D1|sup|a|bg|sup:a:bg:V4|||implicated in inflammatory process
+P|G15|D1|sup|a|bg|sup:a:bg:V4|||implicated in inflammatory process
+P|G16|D1|sup|a|bg|sup:a:bg:V4|||implicated in inflammatory process
+P|G17|D1|sup|a|both|sup:a:bg:V4;sup:a:ts:V5|||counter-balances inflammatory response
+P|G18|D1|sup|a|bg|sup:a:bg:V4|||implicated in inflammatory process
+P|G19|D1|sup|a|bg|sup:a:bg:V4|||implicated in inflammatory process
+P|G20|D1|sup|a|bg|sup:a:bg:V4|||implicated in inflammatory process
+P|G21|D1|sup|a|bg|sup:a:bg:V4|||implicated in inflammatory process
+P|G22|D1|sup|a|bg|sup:a:bg:V4|||implicated in inflammatory process
+P|G23|D1|sup|a|bg|sup:a:bg:V4|||implicated in inflammatory process
+P|G24|D1|sup|a|bg|sup:a:bg:V4|||implicated in inflammatory process
+P|G25|D1|sup|a|bg|sup:a:bg:V4|||implicated in inflammatory process
+P|G26|D1|unc|-|ts|unc:-:ts:V6|hedged_claim||would tend to perpetuate inflammation
+P|G27|D1|unc|-|ts|unc:-:ts:V6|hedged_claim,identity||would tend to perpetuate inflammation
+F|F1|mechanism|PAR1-dependent inflammatory transcripts|wild type vs PAR1-/- mouse bladder|unknown|unknown|unread|V2|abstract only; 75 transcripts

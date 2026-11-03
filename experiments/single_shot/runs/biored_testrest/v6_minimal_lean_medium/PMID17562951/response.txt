@@ -1,0 +1,12 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no genes mentioned
+E|D1|disease|contrast-induced nephropathy|contrast-induced nephropathy|r||||
+E|D2|disease|chronic kidney disease|chronic kidney disease|r||||
+E|D3|disease|diabetes mellitus|diabetes mellitus;diabetes|r||||
+X|Serum creatinine|b0002.s3|laboratory analyte, not a gene
+X|SCr|b0002.s3|creatinine abbreviation, not a gene symbol
+X|N-acetylcysteine|b0002.s6|drug, not a gene
+EV|V1|b0002.s7+b0002.s10|ts|res|na|rr,cmp
+EV|V2|b0002.s8|ts|res|na|rr,cmp
+F|F1|group_comparison|CIN rate, iopamidol vs iodixanol|CKD patients undergoing angiography|not_significant|null|available|V1|no gene involved
+F|F2|group_comparison|CIN rate, iopamidol vs iodixanol|CKD patients with diabetes|not_significant|null|available|V2|no gene involved

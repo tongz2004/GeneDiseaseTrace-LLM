@@ -1,0 +1,18 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|acetylcholinesterase|acetylcholinesterases;AChEs;AChE|r||||
+E|G2|gene|butyrylcholinesterase|butyrylcholinesterases;BChEs|r||||
+E|G3|gene|adenosine A1 receptor|A(1)-adenosine receptor|p|ambiguous_mapping|non-human||
+E|G4|gene|NMDA receptor|NMDA-receptor|p|ambiguous_mapping|non-human||
+E|D1|disease|organophosphate poisoning|toxicity;poisoning;intoxication|r||||
+E|D2|disease|convulsions|convulsions|r||||
+E|D3|disease|neuropathological damage|neuropathological damages|p|other|||
+EV|V1|b0002.s1+b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s4+b0002.s8+b0002.s10|ts|res|aff|rr
+EV|V3|b0002.s9|ts|neg|neg|rr
+P|G1|D1|sup|c|bg|sup:c:bg:V1||V2|AChE inhibition by OPs causes acute toxicity
+P|G2|D1|nf|-|||||V1|BChE inhibited but not linked to toxicity
+P|G3|D1|nf|-|||||V2|Agonist drug effect only; receptor not tested
+P|G4|D1|nf|-|||||V3|Antagonist drug effect only; receptor not tested
+F|F1|mechanism|AChE reactivator 2PAM; DFP toxicity|DFP-intoxicated male rats|unknown|negative|unread|V2|abstract only; drug not gene
+R|drug-target pairs|P records|Drug effects imply receptor involvement only indirectly|Listed as nf context, not supported

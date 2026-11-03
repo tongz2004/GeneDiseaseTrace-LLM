@@ -1,0 +1,19 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|ENG|endoglin;Endoglin;ENG|r||human||
+E|G2|gene|TGFB1|transforming growth factor-beta;TGF-beta|p|ambiguous_mapping|human||
+E|D1|disease|pulmonary arterial hypertension|pulmonary arterial hypertension;PAH|r||||
+E|D2|disease|systemic sclerosis|Systemic sclerosis;systemic sclerosis;SSc|r||||
+E|D3|disease|microangiopathy|microangiopathy|r||||
+E|D4|phenotype|microvascular disturbance|microvascular disturbance|p||||
+E|D5|disease|osteoarthritis|osteoarthritis|r||||
+X|6bINS|b0002.s3|ENG intron 7 insertion variant, not separate gene
+X|connective tissue disorder|b0002.s1|disease class describing SSc
+EV|V2|b0002.s8+b0002.s9|ts|res|aff|rr,cmp
+EV|V3|b0002.s10|ts|int|aff|eda
+P|G1|D1|sup|a|ts|sup:a:ts:V2+V3|||6bINS less frequent in SSc-PAH
+P|G1|D2|unc|-|ts|unc:a:ts:V3|scope||Only PAH subgroup tested; no SSc-wide comparison
+F|F1|group_comparison|6bINS allele frequency|SSc-PAH vs osteoarthritis controls|significant|negative|available|V2|
+F|F2|group_comparison|6bINS allele frequency|SSc-PAH vs SSc without PAH|not_significant|negative|available|V2|trend only, P=0.05
+F|F3|group_comparison|6bINS carrier genotypes|SSc-PAH vs controls|significant|negative|available|V2|
+R|phenotype pair endpoint|b0002.s3|ENG-microvascular disturbance background link targets a phenotype, not primary target|dropped the pair; no P line

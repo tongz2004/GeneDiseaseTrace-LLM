@@ -1,0 +1,23 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text
+E|G1|gene|DGUOK|DGUOK;Deoxyguanosine kinase;dGK|r||human||
+E|D1|disease|hepatocerebral mitochondrial DNA depletion syndrome|hepatocerebral mitochondrial DNA depletion syndrome|r||||
+E|D2|disease|Deoxyguanosine kinase deficiency|Deoxyguanosine kinase (dGK) deficiency|r||||
+E|D3|disease|mitochondrial DNA depletion|mitochondrial DNA depletion|p|ambiguous_mapping|||
+E|D4|disease|combined respiratory chain deficiencies|combined respiratory chain deficiencies|r||||
+E|S1|phenotype|hepatocerebral phenotype|hepatocerebral phenotype|r||||
+E|S2|phenotype|subtentorial abnormal myelination|subtentorial abnormal myelination|r||||
+E|S3|phenotype|hyperintensity in the bilateral pallidi|hyperintensity in the bilateral pallidi|r||||
+EV|V1|b0001.s1|ts|res|aff|eda
+EV|V2|b0002.s1|bg|bgr|aff|ebr
+EV|V3|b0002.s3|ts|res|aff|rr,eda
+EV|V4|b0002.s8|ts|res|aff|cs
+EV|V5|b0002.s9|ts|res|aff|eda
+EV|V6|b0002.s6+b0002.s7|ts|int|hyp|ho
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V5;sup:a:ts:V4||V6|Founder mutation associated, co-segregating in families
+P|G1|D3|sup|c|bg|sup:c:bg:V2;sup:a:ts:V3|||dGK deficiency stated frequent cause; patients show depletion
+P|G1|D4|sup|a|ts|sup:a:ts:V3|||Homozygous mutation identified in affected patients
+P|G1|D2|unc|-||unc:-:bg:V2|other||Deficiency named after gene; no explicit attribution
+F|F1|association|common haplotype vs disease|two consanguineous North-African families|not_applicable|positive|not_reported|V4|segregation only, no statistics
+F|F2|mechanism|c.444-62C>A splicing and protein structure|in silico prediction|not_applicable|not_applicable|not_applicable|V6|predicted, not experimentally confirmed
+R|disease vs phenotype|b0002.s1;b0002.s3|mtDNA depletion is both a syndrome name and a liver lab finding|Kept as a provisional disease entity, distinct from D1

@@ -1,0 +1,7 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; single case report, no genes
+E|D1|disease|necrotising fasciitis|Necrotising fasciitis;necrotising fasciitis|r||||
+E|D2|disease|Waldenstrom macroglobulinaemia|Waldenstrom macroglobulinaemia|r||||
+E|D3|disease|B-cell malignancies|B-cell malignancies|r||||
+E|D4|disease|bacterial infections|bacterial infections|r||||
+E|S1|phenotype|neutropenia|neutropenia|r||||

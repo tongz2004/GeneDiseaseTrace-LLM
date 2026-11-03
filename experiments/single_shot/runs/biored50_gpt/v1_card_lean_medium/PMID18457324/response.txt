@@ -1,0 +1,22 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only.
+E|G1|gene|CBR3|carbonyl reductase 3;CBR3|r||human||
+E|G2|gene|NQO1|NAD(P)H:quinone oxidoreductase 1;NQO1;nicotinamide adenine dinucleotide phosphate:quinone oxidoreductase 1|r||human||
+E|D1|disease|cancer|cancer|r|||||
+E|D2|disease|childhood cancer|childhood cancer|r|||D1||
+E|D3|disease|congestive heart failure|congestive heart failure;CHF|r|||||
+E|D4|disease|anthracycline-related congestive heart failure|anthracycline-related congestive heart failure;anthracycline-related CHF|r|||D3||
+X|NQO1*2|b0002|variant identifier
+X|V244M|b0002|variant identifier
+X|CBR3 V244|b0002|protein isoform
+X|CBR3 M244|b0002|protein isoform
+EV|V1|b0002.s8|ts|neg|neg|rr,cmp
+EV|V2|b0002.s9|ts|res|hyp|rr,cmp
+EV|V3|b0002.s10|ts|res|na|rr,cmp
+EV|V4|b0002.s11|ts|int|hyp|ho
+P|G2|D4|neg|-|ts|neg:-:ts:V1||||No association for NQO1*2 in this study.
+P|G1|D3|unc|-|ts|unc:-:ts:V2|hedged_claim|||Reported trend does not establish association.
+P|G1|D4|unc|-|ts|unc:-:ts:V4|hedged_claim|V2+V3|Disease-risk interpretation remains speculative.
+F|F1|association|NQO1*2; anthracycline-related CHF|Childhood cancer survivors; matched cases and controls|not_significant|null|available|V1|OR 1.04; P=.97.
+F|F2|association|CBR3 V244M; CHF risk|Childhood cancer survivors; matched cases and controls|not_significant|positive|available|V2|G/G: OR 8.16, P=.056; G/A: 5.44, .092.
+F|F3|mechanism|CBR3 isoform; doxorubicinol synthesis|Recombinant CBR3 V244 versus CBR3 M244|significant|positive|available|V3|V244 produces 2.6-fold more; P=.01.

@@ -17,38 +17,37 @@
 \definecolor{disline}{HTML}{C2410C}
 % Statuses
 \definecolor{stsup}{HTML}{1B7F4B}
-\definecolor{stunc}{HTML}{C98A00}
+\definecolor{stunc}{HTML}{B45309}
 \definecolor{stneg}{HTML}{B4233C}
-\definecolor{stnf}{HTML}{8A8F98}
-% Neutrals
+\definecolor{stnf}{HTML}{475569}
+% Neutrals (all text uses dark ink; light tones are for borders/fills only)
 \definecolor{ink}{HTML}{1F2933}
-\definecolor{muted}{HTML}{6B7280}
-\definecolor{rule}{HTML}{D1D5DB}
-\definecolor{panel}{HTML}{F5F7FA}
+\definecolor{rule}{HTML}{CBD5E1}
+\definecolor{panel}{HTML}{F8FAFC}
 
 \tikzset{
   panel/.style={draw=rule, fill=panel, rounded corners=3pt, inner sep=6pt},
   paneltitle/.style={font=\sffamily\bfseries\small, text=ink, anchor=north west},
-  gene/.style={fill=genefill, draw=geneline, rounded corners=1.5pt, inner sep=1.6pt, font=\sffamily\scriptsize},
-  dis/.style={fill=disfill, draw=disline, rounded corners=1.5pt, inner sep=1.6pt, font=\sffamily\scriptsize},
+  gene/.style={fill=genefill, draw=geneline, text=ink, rounded corners=1.5pt, inner sep=1.6pt, font=\sffamily\scriptsize},
+  dis/.style={fill=disfill, draw=disline, text=ink, rounded corners=1.5pt, inner sep=1.6pt, font=\sffamily\scriptsize},
   badge/.style={rounded corners=2pt, inner sep=1.8pt, font=\sffamily\tiny\bfseries, text=white},
   flow/.style={-{Stealth[length=2.2mm]}, line width=0.9pt, draw=ink},
 }
 % Inline highlights inside text nodes
 \newcommand{\hlgene}[1]{\tikz[baseline=(g.base)]\node[fill=genefill, inner sep=0.6pt, rounded corners=1pt] (g) {\strut #1};}
 \newcommand{\hldis}[1]{\tikz[baseline=(d.base)]\node[fill=disfill, inner sep=0.6pt, rounded corners=1pt] (d) {\strut #1};}
-\newcommand{\sid}[1]{{\ttfamily\color{muted}\tiny[#1]}}
+\newcommand{\sid}[1]{{\ttfamily\color{ink}\tiny[#1]}}
 \newcommand{\badge}[2]{\tikz[baseline=(b.base)]\node[badge, fill=#1] (b) {#2};}
 
 \pgfplotsset{
   gdt/.style={
     font=\sffamily\scriptsize,
-    tick label style={font=\sffamily\tiny},
-    label style={font=\sffamily\scriptsize},
-    title style={font=\sffamily\bfseries\scriptsize, align=center},
-    axis line style={draw=muted},
-    tick style={draw=muted},
-    major grid style={draw=rule!70, line width=0.3pt},
+    tick label style={font=\sffamily\tiny, text=ink},
+    label style={font=\sffamily\scriptsize, text=ink},
+    title style={font=\sffamily\bfseries\scriptsize, text=ink, align=center},
+    axis line style={draw=ink},
+    tick style={draw=ink},
+    major grid style={draw=rule, line width=0.3pt},
     grid=major,
   },
 }

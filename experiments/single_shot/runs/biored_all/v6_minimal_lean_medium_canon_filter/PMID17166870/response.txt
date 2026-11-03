@@ -1,0 +1,21 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; full text unavailable
+E|G1|gene|ENG|endoglin;Endoglin;ENG|r||human||
+E|G2|gene|TGFB1|transforming growth factor-beta;TGF-beta|p|ambiguous_mapping|human||
+E|D1|disease|systemic sclerosis|Systemic sclerosis;systemic sclerosis;SSc|r||||
+E|D2|disease|pulmonary arterial hypertension|pulmonary arterial hypertension;PAH|r||||
+E|D3|disease|osteoarthritis|osteoarthritis|r||||
+E|D4|disease|connective tissue disorder|connective tissue disorder|r||||
+E|D5|disease|microangiopathy|microangiopathy|r||||
+E|PH1|phenotype|microvascular disturbance|microvascular disturbance|r||||
+X|6bINS|b0002.s3|ENG intron 7 insertion variant, not a gene
+EV|V1|b0002.s3|bg|bgr|aff|ebr
+EV|V2|b0002.s8|ts|res|aff|rr,cmp
+EV|V3|b0002.s9|ts|res|aff|rr,cmp
+EV|V4|b0002.s10|ts|int|aff|eda
+P|G1|D2|sup|a|ts|sup:a:ts:V2+V3+V4|||6bINS allele less frequent in SSc-PAH
+P|G1|D1|nf|-||||V4|Only the PAH subgroup within SSc was tested
+P|G1|D3|nf|-|||||Osteoarthritis patients served only as controls
+F|F1|group_comparison|6bINS allele frequency|SSc-PAH vs osteoarthritis controls|significant|negative|available|V2|
+F|F2|group_comparison|6bINS allele frequency|SSc-PAH vs SSc without PAH|not_significant|negative|available|V2|trend only, P=0.05
+F|F3|group_comparison|6bINS carrier genotypes|SSc-PAH vs controls|significant|negative|partial|V3|

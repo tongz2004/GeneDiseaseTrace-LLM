@@ -1,0 +1,18 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|MSH2|HMSH2;hMSH2|r||human||
+E|D1|disease|breast cancer|breast cancer|r||||
+E|D2|disease|colorectal cancer|colorectal cancer|r||||
+E|D3|disease|cancer|cancer|r||||
+X|mismatch repair (MMR) genes|b0002|gene group, not a single gene
+X|Gly322Asp|b0002|hMSH2 variant, not separate gene
+X|Asn127Ser|b0002|hMSH2 variant, not separate gene
+EV|V1|b0002.s4+b0002.s5+b0002.s7|ts|res|aff|rr,cmp
+EV|V2|b0002.s8|ts|int|aff|rr
+EV|V3|b0002.s6|ts|neg|neg|rr
+EV|V4|b0002.s3|bg|bgr|na|ebr
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V2||V3|Gly322Asp genotype associated with breast cancer occurrence
+P|G1|D2|nf|-|||||V4|MMR group, not hMSH2, in colorectal cancer
+F|F1|association|hMSH2 Gly322Asp Gly/Gly vs breast cancer|150 cases, 150 matched controls|significant|positive|partial|V1|Gly/Gly is the common genotype
+F|F2|association|hMSH2 polymorphisms vs breast cancer progression|150 breast cancer patients|not_significant|null|not_reported|V3|
+F|F3|group_comparison|hMSH2 Asn127Ser vs breast cancer risk|150 cases, 150 matched controls|unknown|unknown|not_reported|V1|result not stated in abstract

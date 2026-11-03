@@ -1,0 +1,17 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|ABCD1 (ALD gene)|ALD|r|ambiguous_mapping|human||
+E|D1|disease|X-linked adrenoleukodystrophy|X-linked adrenoleukodystrophy;adrenoleukodystrophy;ALD|r||||
+E|D2|disease|adolescent ALD|adolescent ALD|r|||D1|
+E|D3|disease|cerebral ALD|cerebral ALD|r|||D1|
+E|D4|disease|adrenomyeloneuropathy|adrenomyeloneuropathy|r||||
+E|D5|disease|Addison disease|Addison|r||||
+EV|V1|b0002.s1+b0002.s2|ts|res|aff|rr
+EV|V2|b0002.s3|ts|res|aff|rr,cs,cmp
+EV|V3|b0002.s4|ts|int|aff|eda
+P|G1|D1|sup|c|ts|sup:c:ts:V1+V2+V3|||Novel missense mutation co-segregates with ALD
+P|G1|D2|sup|c|ts|sup:c:ts:V1+V3|||Mutation found in adolescent ALD proband
+P|G1|D3|sup|c|ts|sup:c:ts:V2+V3|||Cerebral ALD siblings carry mutation
+P|G1|D4|sup|c|ts|sup:c:ts:V2+V3|||AMN sibling carries mutation
+P|G1|D5|sup|c|ts|sup:c:ts:V2+V3|||Addison-only sibling carries mutation
+F|F1|association|ALD P484R mutation vs phenotype|ALD family, unrelated patients, controls|not_applicable|positive|not_applicable|V2|single family; small sample

@@ -1,0 +1,18 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; single-patient case study
+E|G1|gene|UL97 protein kinase|UL97|p|ambiguous_mapping|non-human|||
+E|G2|gene|CMV DNA polymerase (UL54)|DNA polymerase|p|ambiguous_mapping|non-human|||
+E|G3|gene|glycoprotein B|glycoprotein B;gB|r||non-human|||
+E|G4|gene|CMV UL10-UL13 region|UL10-13|p|ambiguous_mapping|non-human|||
+E|D1|disease|non-Hodgkin's lymphoma|non-Hodgkin's lymphoma|r|||||
+E|D2|disease|lymphoma|lymphoma|r||||D1|
+E|D3|ambiguous_disease|cytomegalovirus infection|cytomegalovirus;CMV|p|ambiguous_mapping||||
+X|N495K|b0002.s9|DNA polymerase variant, not a separate gene
+X|L501I|b0002.s9|DNA polymerase variant, not a separate gene
+EV|V1|b0002.s8|ts|res|na|rr
+EV|V2|b0002.s9|ts|res|na|rr
+P|G1|D3|nf|-|||identity|V1|Linked to drug resistance, not to the disease
+P|G2|D3|nf|-|||identity|V2|Linked to drug resistance, not to the disease
+F|F1|association|UL97 residues 591/592/594; ganciclovir resistance|one NHL patient's CMV isolates|unknown|positive|not_reported|V1|single patient
+F|F2|association|DNA polymerase N495K/L501I; antiviral resistance|one NHL patient's CMV isolates|unknown|positive|not_reported|V2|single patient
+R|drug resistance as disease|b0002.s8|Antiviral resistance is a phenotype of the virus, not a disease|Not treated as a disease; resistance links listed as F only

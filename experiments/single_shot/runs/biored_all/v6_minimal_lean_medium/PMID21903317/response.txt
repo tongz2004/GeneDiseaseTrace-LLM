@@ -1,0 +1,36 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|REN|renin;REN|r||human||
+E|G2|gene|UMOD|UMOD;uromodulin|r||human||
+E|G3|gene|HNF1B|HNF1B;hepatocyte nuclear factor 1b|r||human||
+E|D1|disease|renal tubular dysgenesis|renal tubular dysgenesis|r||||
+E|D2|disease|kidney failure|kidney failure|r||||
+E|D3|disease|pulmonary hypoplasia|pulmonary hypoplasia|r||||
+E|D4|disease|fetopathy|fetopathy|r||||
+E|D5|disease|hyperuricemia|hyperuricemia|r||||
+E|D6|disease|anemia|anemia;Anemia|r||||
+E|D7|disease|chronic kidney disease|CKD;chronic kidney disease|r||||
+E|D8|clinical_event|death in utero|death in utero|r||||
+X|angiotensin-converting enzyme inhibitor|b0002|drug class, not gene mention
+X|angiotensin receptor blocker|b0002|drug class, not gene mention
+EV|V1|b0002.s1|bg|bgr|aff|ebr,eda
+EV|V2|b0002.s3|bg|bgr|aff|ebr
+EV|V3|b0002.s6+b0002.s8|ts|res|aff|rr,cs
+EV|V4|b0002.s5|ts|co|pre|do
+EV|V5|b0002.s2|bg|bgr|na|do
+EV|V6|b0002.s7|ts|int|aff|rr
+EV|V7|b0002.s9|ts|res|aff|rr
+P|G1|D1|sup|c|bg|sup:c:bg:V1|||Biallelic REN mutations cause RTD
+P|G1|D2|sup|a|bg|sup:a:bg:V1|||Kidney failure is feature of REN-caused RTD
+P|G1|D3|sup|a|bg|sup:a:bg:V1|||Pulmonary hypoplasia is feature of REN-caused RTD
+P|G1|D8|sup|a|bg|sup:a:bg:V1|||In utero death in REN-caused RTD
+P|G1|D4|nf|-|||||V5|Fetopathy linked to drugs, not REN
+P|G1|D5|sup|c|both|sup:c:bg:V2;sup:c:ts:V3|||Heterozygous REN mutation segregates with hyperuricemia
+P|G1|D6|sup|c|both|sup:c:bg:V2;sup:c:ts:V3+V7|||Heterozygous REN mutation segregates with anemia
+P|G1|D7|sup|c|both|sup:c:bg:V2;sup:c:ts:V3+V6|||Heterozygous REN mutation segregates with CKD
+P|G2|D5|unc|-|bg|unc:-:bg:V4|presupposed_only|||Screening presupposes UMOD link, not stated
+P|G2|D7|unc|-|bg|unc:-:bg:V4|presupposed_only|||Screening presupposes UMOD link, not stated
+P|G3|D5|unc|-|bg|unc:-:bg:V4|presupposed_only|||Screening presupposes HNF1B link, not stated
+P|G3|D7|unc|-|bg|unc:-:bg:V4|presupposed_only|||Screening presupposes HNF1B link, not stated
+F|F1|descriptive|REN mutation frequency|39 hyperuricemia/CKD kindreds, UMOD/HNF1B negative|not_applicable|not_applicable|partial|V3+V4+V6|1 of 39 kindreds positive
+F|F2|association|REN p.W10R vs anemia, hyperuricemia, CKD|one kindred, 4 generations|unknown|positive|unread|V3+V7|Single family; abstract only

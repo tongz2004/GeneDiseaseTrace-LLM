@@ -1,0 +1,22 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only.
+E|G1|gene|IL28B|IL28B;interleukin 28B|r||human||
+E|G2|gene|apolipoprotein B-100|apolipoprotein B-100;apoB-100|r||human||
+E|D1|disease|chronic hepatitis C|chronic hepatitis C|r||||
+E|D2|disease|chronic hepatitis|chronic hepatitis|r||||
+E|D3|disease|HCV genotype 1b infection|HCV genotype 1b infection|r||||
+E|D4|disease|chronic HCV G1b infection|chronic HCV G1b infection|p|undefined_abbreviation|||
+E|D5|disease|chronic HCV infection|chronic HCV infection|r||||
+X|rs8099917|b0002|variant identifier
+X|Arg70|b0002|amino acid residue designation
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0001.s1+b0002.s4+b0002.s6|ts|res|na|rr
+EV|V3|b0002.s5|ts|res|na|rr
+EV|V4|b0002.s7+b0002.s8|ts|int|hyp|ho
+P|G1|D1|nf|-||| |V2|Lipid concentration outcome within disease population.
+P|G2|D1|nf|-||||V2|Serum protein concentration does not establish disease association.
+P|G1|D2|sup|a|bg|sup:a:bg:V1|||Treatment efficacy association restricted to genotype 1b infection.
+P|G1|D3|sup|a|bg|sup:a:bg:V1|||Treatment efficacy association in chronic hepatitis.
+P|G2|D5|unc|-|ts|unc:-:ts:V4|hedged_claim||Proposed marker of altered metabolism during infection.
+F|F1|association|IL28B-proximal rs8099917; apoB-100; LDL cholesterol|148 subjects with chronic HCV G1b infection|significant|positive|available|V2|Lipid outcomes; disease association untested.
+F|F2|association|HCV core Arg70; apoB-100; LDL cholesterol|148 subjects with chronic HCV G1b infection|significant|positive|available|V3|Viral residue; no individual gene endpoint.

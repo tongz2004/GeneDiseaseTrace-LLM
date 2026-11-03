@@ -1,0 +1,28 @@
+META|GPT-6|seen: yes, previous output and checker feedback
+SCOPE|Provided title and abstract only.
+E|G1|gene|CHRNA1|CHRNA1|r||human||
+E|G2|gene|CHRNB1|CHRNB1|r||human||
+E|G3|gene|CHRND|CHRND|r||human||
+E|G4|gene|RAPSN|RAPSN;rapsyn|r||human||
+E|G5|gene|CHRNG|CHRNG;embryonal acetylcholine receptor g subunit|r||human||
+E|D1|disease|Multiple pterygium syndromes|Multiple pterygium syndromes;multiple pterygium syndrome;MPS|r||||
+E|D2|disease|lethal MPS|lethal MPS|r|||D1|
+E|D3|disease|nonlethal MPS|nonlethal MPS;Escobar|r|||D1|
+E|D4|disease|lethal fetal akinesia sequence|lethal fetal akinesia sequence;lethal fetal akinesia phenotype|r||||
+E|D5|disease|congenital myasthenia|congenital myasthenia|r||||
+E|A1|phenotype|fetal akinesia|fetal akinesia|r||||
+E|A2|phenotype|pterygia|pterygia|r||||
+E|A3|phenotype|arthrogryposis|arthrogryposis|r||||
+EV|V1|b0002.s3|bg|bgr|aff|ebr
+EV|V2|b0002.s4|ts|aim|q|none
+EV|V3|b0002.s5|ts|co|na|do
+EV|V4|b0002.s6|bg|bgr|aff|ebr
+EV|V5|b0002.s7|ts|int|hyp|ho
+P|G5|D2|sup|c|bg|sup:c:bg:V1|||
+P|G5|D3|sup|c|bg|sup:c:bg:V1|||
+P|G4|D5|sup|a|bg|sup:a:bg:V4;unc:-:ts:V5|hedged_claim||
+P|G4|D4|unc|-|ts|unc:-:ts:V5|hedged_claim|V3|Functional interpretation remains hypothetical.
+P|G1|D2|nf|-||||V2+V3|No detected mutations does not establish absent association.
+P|G2|D2|nf|-||||V2+V3|No detected mutations does not establish absent association.
+P|G3|D2|nf|-||||V2+V3|No detected mutations does not establish absent association.
+F|F1|descriptive|CHRNA1, CHRNB1, CHRND mutation detection|15 lethal MPS/fetal akinesia cases|not_applicable|null|not_applicable|V2+V3|Detection results do not test disease association.

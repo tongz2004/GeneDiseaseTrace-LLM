@@ -1,0 +1,16 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; single case report
+E|G1|gene|IFNA2|interferon alpha-2b;interferon|p|other|human||
+E|D1|disease|delusional parasitosis|delusional parasitosis;psychogenic parasitosis|r||||
+E|D2|disease|chronic hepatitis C|chronic hepatitis C|r||||
+E|D3|disease|depression|depression|r||||
+E|D4|disease|psychosis|psychosis|r||||
+EV|V1|b0002.s1+b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s1+b0002.s3|bg|bgr|aff|ebr
+EV|V3|b0002.s5+b0002.s8|ts|res|aff|rr,cmp
+P|G1|D1|unc|-|ts|unc:-:ts:V3|identity,scope|V3|Drug adverse effect, dechallenge-rechallenge; therapeutic protein
+P|G1|D3|unc|-|bg|unc:-:bg:V1|identity,scope|V1|Background drug side effect, combined with ribavirin
+P|G1|D4|unc|-|bg|unc:-:bg:V2|identity,scope|V2|Background drug side effect, combined with ribavirin
+F|F1|descriptive|peginterferon alpha-2b exposure; delusional parasitosis|one 49-year-old woman with hepatitis C|not_applicable|positive|not_applicable|V3|single case; ribavirin co-administered
+F|F2|descriptive|interferon-ribavirin treatment; depression incidence|chronic hepatitis C patients|unknown|positive|partial|V1|background figure, no source
+R|gene identity|b0002.s5|Interferon alpha-2b is a drug here, not gene variation or expression|Kept as provisional gene; drug-effect pairs marked uncertain

@@ -1,0 +1,29 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only; no full text or attachments.
+E|G1|gene|FGA|fibrinogen alpha;FGA|r||human||
+E|G2|gene|FGB|fibrinogen beta;FGB|r||human||
+E|G3|gene|FGG|fibrinogen gamma;FGG|r||human||
+E|D1|disease|peripheral arterial disease|Peripheral Arterial Disease;peripheral arterial disease;PAD|r||||
+E|D2|disease|deep venous thrombosis|deep venous thrombosis|r||||
+E|D3|disease|myocardial infarction|myocardial infarction|r||||
+E|D4|disease|diabetes|diabetes|r||||
+E|D5|disease|arterial hypertension|arterial hypertension|r||||
+E|D6|disease|hypercholesterolemia|hypercholesterolemia|r||||
+X|10034C>T|b0001|variant identifier
+X|FGG 10034C>T|b0002|variant designation
+X|rs2066865|b0002|variant identifier
+X|FGG 10034 T|b0002|variant designation
+EV|V1|b0002.s3|bg|bgr|aff|ebr
+EV|V2|b0002.s7|ts|neg|neg|cmp
+EV|V3|b0002.s8|ts|neg|neg|cmp
+EV|V4|b0002.s9|ts|neg|neg|rr
+EV|V5|b0002.s10|ts|int|neg|rr
+P|G3|D1|neg|-|ts|neg:a:ts:V2+V3+V4+V5|||Tested variant: susceptibility and onset; tested_relation_type=a.
+P|G3|D2|sup|a|bg|sup:a:bg:V1|||Explicit background variant association.
+P|G3|D3|sup|a|bg|sup:a:bg:V1|||Explicit background variant association.
+P|G3|D4|nf|-||||V3|Adjustment covariate; no gene–diabetes association tested.
+P|G3|D5|nf|-||||V3|Adjustment covariate; no gene–hypertension association tested.
+P|G3|D6|nf|-||||V3|Adjustment covariate; no gene–hypercholesterolemia association tested.
+F|F1|group_comparison|FGG genotype frequencies; PAD status|891 PAD patients; 777 controls|not_significant|null|available|V2|Overall genotype comparison.
+F|F2|association|FGG 10034 T; PAD presence|PAD patients and controls|not_significant|null|available|V3|Adjusted analysis.
+F|F3|association|FGG 10034C>T; PAD onset age|PAD patients|not_significant|null|not_reported|V4|Comparator unspecified.

@@ -1,0 +1,13 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|MSH2|MSH2|r||human||
+E|G2|gene|MLH1|MLH1|r||human||
+E|D1|disease|hereditary nonpolyposis colorectal cancer|HNPCC|r||||
+X|Alu elements|b0002|repetitive DNA elements, not a gene
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s4+b0002.s5|ts|res|aff|rr
+EV|V3|b0002.s6|ts|int|aff|rr
+P|G1|D1|sup|a|both|sup:a:bg:V1;sup:a:ts:V2+V3|||Exonic deletions found in HNPCC patients
+P|G2|D1|sup|a|both|sup:a:bg:V1;sup:a:ts:V3|||Exonic copy changes detected in HNPCC patients
+F|F1|descriptive|MLH1/MSH2 exon copy number changes|50 point-mutation-negative HNPCC patients|not_applicable|not_applicable|partial|V2+V3|per-gene breakdown not given
+R|gene-level attribution|b0002.s4|10 copy number changes not assigned to MLH1 or MSH2|Linked MLH1 through the conclusion in s6

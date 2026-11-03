@@ -1,0 +1,15 @@
+﻿paper_id,outcome,detail,gold_gene,gold_disease,gold_type,gold_novel,our_pair,our_gene,our_disease,our_status,our_relation,our_source,our_reason
+PMID1671881,TP,,PAH (5053),phenylketonuria (D010661),Association,No,G1-D1,PAH,phenylketonuria,supported,association,both,PAH mutations in PKU; supported by background and study
+PMID1671881,TP,,PAH (5053),deficiency of hepatic phenylalanine hydroxylase (OMIM:261600),Negative_Correlation,No,G1-D3,PAH,PAH deficiency,supported,association,both,Mutant PAH genotypes associated with PAH deficiencies
+PMID1671881,FP,duplicate: its gold relation is credited to another of our pairs,,,,,G1-D2,PAH,classical phenylketonuria,supported,causal,background,Background states classical PKU caused by PAH deficiency
+PMID6086495,FN,gene not recorded by us,Becker muscular dystrophy gene (1756),Becker muscular dystrophy (D020388),Association,Novel,,,,,,,
+PMID7811247,FN,our pair: uncertain,ALD (215),Addison (D000224),Association,No,G1-D5,ALD gene,Addison only,uncertain,none,this study,Carrier only; phenotype attributed to other factors
+PMID7811247,TP,,ALD (215),X-linked adrenoleukodystrophy (D000326),Association,No,G1-D1,ALD gene,X-linked adrenoleukodystrophy,supported,association,this study,Mutation co-segregates with ALD; causality only proposed
+PMID14510914,TP,,sodium/iodide symporter (6528),Iodide transport defect (C564766),Negative_Correlation,No,G1-D1,sodium/iodide symporter,iodide transport defect,supported,causal,background,Background states ITD arises from NIS abnormalities
+PMID14510914,TP,,sodium/iodide symporter (6528),Congenital hypothyroidism (D003409),Association,Novel,G1-D2,sodium/iodide symporter,congenital hypothyroidism,supported,association,this study,Case authors attribute congenital hypothyroidism to NIS deletion
+PMID15018851,FN,disease not recorded by us,glycoprotein B (2813),Long-term anti-cytomegalovirus (D003586),Association,No,,,,,,,
+PMID15041272,TP,,von Willebrand factor (7450),type 2B von Willebrand disease (D056728),Association,Novel,G1-D1,VWF,type 2B von Willebrand disease,supported,association,this study,All affected family members carry R1306W; authors attribute
+PMID15041272,FN,our pair: not_found,glycoprotein Ib (2811),thrombocytopenia (D013921),Association,Novel,,,,,,,
+PMID15041272,TP,,von Willebrand factor (7450),thrombocytopenia (D013921),Association,Novel,G1-D3,VWF,thrombocytopenia,supported,causal,background,Mutation stated to cause thrombocytopenia often
+PMID15069170,TP,,Na-Cl co-transporter (6559),Gitelman's syndrome (D053579),Association,No,G1-D1,NCCT,Gitelman's syndrome,supported,causal,background,Background causal statement; mutations found in GS patients
+PMID15086325,TP,,F5 (2153),inherited coagulation factor V deficiency (D005166),Association,No,G1-D1,F5,inherited coagulation factor V deficiency,supported,association,this study,"F5 mutations in FV-deficient probands, explicitly associated"

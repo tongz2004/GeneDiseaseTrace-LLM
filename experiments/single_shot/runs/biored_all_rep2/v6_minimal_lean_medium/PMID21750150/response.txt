@@ -1,0 +1,21 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text, tables or figures
+E|G1|gene|DACH1|DACH1|r|||human||
+E|G2|gene|FGF2|fibroblast growth factor 2;FGF2;bFGF|r|||human||
+E|G3|gene|PROM1|CD133|r|||human||
+E|G4|gene|NES|Nestin|r|||human||
+E|D1|disease|glioblastoma multiforme|glioblastoma multiformes|r||||
+E|D2|disease|glioma|glioma|r||||
+EV|V1|b0002.s2|ts|res|aff|rr,eda
+EV|V2|b0002.s3+b0002.s5|ts|res|aff|rr,mi
+EV|V3|b0002.s7+b0002.s10|ts|int|aff|rr,mi
+EV|V4|b0002.s8+b0002.s9|ts|res|aff|rr,mi
+EV|V5|b0002.s6|ts|co|na|do
+P|G1|D1|sup|a|ts|sup:a:ts:V1||||Homozygous deletion found in glioblastoma samples
+P|G1|D2|sup|c|ts|sup:c:ts:V2+V3||||DACH1 expression suppresses glioma growth and tumorigenicity
+P|G2|D2|sup|c|ts|sup:c:ts:V4||||bFGF rescues DACH1-suppressed glioma tumorigenicity
+P|G3|D2|nf|-||||V5|Stem-cell marker on spheroids only
+P|G4|D2|nf|-||||V5|Stem-cell marker on spheroids only
+F|F1|descriptive|DACH1 copy number at 13q21|glioblastoma multiforme samples|unknown|negative|unread|V1|Abstract only
+F|F2|mechanism|DACH1 expression; proliferation and tumorigenicity|U87TR-Da glioma cells and xenografts|unknown|negative|unread|V2+V3|Cell line and mouse model
+F|F3|mechanism|DACH1 represses FGF2 transcription|U87 glioma cells|unknown|negative|unread|V4|Cell line only

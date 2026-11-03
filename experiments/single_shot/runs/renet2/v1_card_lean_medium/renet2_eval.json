@@ -1,0 +1,129 @@
+{
+  "variant": "v1_card_lean_medium",
+  "run_set": "renet2",
+  "papers_scored": 40,
+  "papers_missing": [],
+  "associated_pairs_not_in_text": 3,
+  "supported": {
+    "precision": 0.274,
+    "recall": 0.337,
+    "f1": 0.302,
+    "ci95": {
+      "precision": [
+        0.18,
+        0.403
+      ],
+      "recall": [
+        0.26,
+        0.417
+      ],
+      "f1": [
+        0.227,
+        0.373
+      ]
+    },
+    "counts": {
+      "tp_gold": 61,
+      "fn": 120,
+      "fn_symptom": 9,
+      "our_supported": 223,
+      "tp_ours": 61,
+      "tp_ours_many_to_one": 71,
+      "tp_gold_many_to_one": 67,
+      "uncertain_or_negative": 105,
+      "uncertain_or_negative_in_gold": 17
+    }
+  },
+  "supported | scope_adjusted": {
+    "precision": 0.274,
+    "recall": 0.355,
+    "f1": 0.309,
+    "ci95": {
+      "precision": [
+        0.175,
+        0.406
+      ],
+      "recall": [
+        0.276,
+        0.439
+      ],
+      "f1": [
+        0.226,
+        0.385
+      ]
+    }
+  },
+  "supported_or_uncertain": {
+    "precision": 0.247,
+    "recall": 0.436,
+    "f1": 0.315,
+    "ci95": {
+      "precision": [
+        0.16,
+        0.363
+      ],
+      "recall": [
+        0.357,
+        0.525
+      ],
+      "f1": [
+        0.233,
+        0.4
+      ]
+    },
+    "counts": {
+      "tp_gold": 79,
+      "fn": 102,
+      "fn_symptom": 9,
+      "our_supported": 320,
+      "tp_ours": 79,
+      "tp_ours_many_to_one": 100,
+      "tp_gold_many_to_one": 84,
+      "uncertain_or_negative": 8,
+      "uncertain_or_negative_in_gold": 0
+    }
+  },
+  "supported_or_uncertain | scope_adjusted": {
+    "precision": 0.247,
+    "recall": 0.459,
+    "f1": 0.321,
+    "ci95": {
+      "precision": [
+        0.167,
+        0.366
+      ],
+      "recall": [
+        0.379,
+        0.554
+      ],
+      "f1": [
+        0.239,
+        0.408
+      ]
+    }
+  },
+  "supported_not_in_gold": {
+    "duplicate of a credited pair": 10,
+    "entity not a RENET2 concept": 45,
+    "never labelled": 105,
+    "non-associated": 2
+  },
+  "status_by_gold_label": {
+    "ambiguous": {
+      "not_found": 1
+    },
+    "associated": {
+      "not_found": 54,
+      "entity not recorded": 43,
+      "supported": 61,
+      "supported, credited to another gold relation": 6,
+      "uncertain": 17
+    },
+    "non-associated": {
+      "entity not recorded": 37,
+      "uncertain": 6,
+      "not_found": 36,
+      "supported": 4
+    }
+  }
+}

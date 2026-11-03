@@ -1,0 +1,647 @@
+{
+  "source": "bigbio/euadr (euadr_source), Hugging Face dataset server; EU-ADR corpus, van Mulligen et al. 2012",
+  "data_sha256": {
+    "src_0.json": "4bad087111fccb543023a82240711c0571f269a464041f489ed572c7f805a553",
+    "src_100.json": "d58654d9a4b6099c4828b2340269755045c494f5741345288a5757723a286117",
+    "src_200.json": "53fc44e97a69b824b483a54c08233a641e1a73afca540b8c92170cbd726a6e93"
+  },
+  "criteria": "all 100 Target-Disorder abstracts; consensus annotations; gene–disease pairs scored",
+  "papers": [
+    {
+      "paper_id": "EUADR17096334",
+      "gold_pairs": 1,
+      "labels": {
+        "PA": 1
+      }
+    },
+    {
+      "paper_id": "EUADR17123723",
+      "gold_pairs": 1,
+      "labels": {
+        "PA": 1
+      }
+    },
+    {
+      "paper_id": "EUADR17186014",
+      "gold_pairs": 1,
+      "labels": {
+        "PA": 1
+      }
+    },
+    {
+      "paper_id": "EUADR17186018",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR17241106",
+      "gold_pairs": 2,
+      "labels": {
+        "PA": 1,
+        "SA": 1
+      }
+    },
+    {
+      "paper_id": "EUADR17258816",
+      "gold_pairs": 4,
+      "labels": {
+        "PA": 4
+      }
+    },
+    {
+      "paper_id": "EUADR17270229",
+      "gold_pairs": 2,
+      "labels": {
+        "PA": 2
+      }
+    },
+    {
+      "paper_id": "EUADR17292625",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR17312392",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR17314225",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR17403050",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR17430902",
+      "gold_pairs": 1,
+      "labels": {
+        "PA": 1
+      }
+    },
+    {
+      "paper_id": "EUADR17433748",
+      "gold_pairs": 1,
+      "labels": {
+        "PA": 1
+      }
+    },
+    {
+      "paper_id": "EUADR17460184",
+      "gold_pairs": 1,
+      "labels": {
+        "PA": 1
+      }
+    },
+    {
+      "paper_id": "EUADR17475446",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR17548585",
+      "gold_pairs": 1,
+      "labels": {
+        "PA": 1
+      }
+    },
+    {
+      "paper_id": "EUADR17567887",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR17582399",
+      "gold_pairs": 1,
+      "labels": {
+        "PA": 1
+      }
+    },
+    {
+      "paper_id": "EUADR17589947",
+      "gold_pairs": 4,
+      "labels": {
+        "PA": 4
+      }
+    },
+    {
+      "paper_id": "EUADR17592645",
+      "gold_pairs": 1,
+      "labels": {
+        "PA": 1
+      }
+    },
+    {
+      "paper_id": "EUADR17593927",
+      "gold_pairs": 1,
+      "labels": {
+        "PA": 1
+      }
+    },
+    {
+      "paper_id": "EUADR17618837",
+      "gold_pairs": 3,
+      "labels": {
+        "PA": 3
+      }
+    },
+    {
+      "paper_id": "EUADR17631643",
+      "gold_pairs": 1,
+      "labels": {
+        "PA": 1
+      }
+    },
+    {
+      "paper_id": "EUADR17650215",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR17659994",
+      "gold_pairs": 1,
+      "labels": {
+        "PA": 1
+      }
+    },
+    {
+      "paper_id": "EUADR17870041",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR17898177",
+      "gold_pairs": 2,
+      "labels": {
+        "PA": 2
+      }
+    },
+    {
+      "paper_id": "EUADR17906500",
+      "gold_pairs": 4,
+      "labels": {
+        "PA": 4
+      }
+    },
+    {
+      "paper_id": "EUADR17953962",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR18028909",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR18071766",
+      "gold_pairs": 3,
+      "labels": {
+        "PA": 3
+      }
+    },
+    {
+      "paper_id": "EUADR18202791",
+      "gold_pairs": 2,
+      "labels": {
+        "PA": 2
+      }
+    },
+    {
+      "paper_id": "EUADR18297189",
+      "gold_pairs": 3,
+      "labels": {
+        "SA": 1,
+        "NA": 1,
+        "PA": 1
+      }
+    },
+    {
+      "paper_id": "EUADR18322311",
+      "gold_pairs": 2,
+      "labels": {
+        "PA": 2
+      }
+    },
+    {
+      "paper_id": "EUADR18347176",
+      "gold_pairs": 2,
+      "labels": {
+        "PA": 2
+      }
+    },
+    {
+      "paper_id": "EUADR18362449",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR18381438",
+      "gold_pairs": 1,
+      "labels": {
+        "PA": 1
+      }
+    },
+    {
+      "paper_id": "EUADR18419050",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR18470928",
+      "gold_pairs": 4,
+      "labels": {
+        "PA": 4
+      }
+    },
+    {
+      "paper_id": "EUADR18471088",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR18479189",
+      "gold_pairs": 6,
+      "labels": {
+        "PA": 5,
+        "SA": 1
+      }
+    },
+    {
+      "paper_id": "EUADR18508791",
+      "gold_pairs": 2,
+      "labels": {
+        "PA": 2
+      }
+    },
+    {
+      "paper_id": "EUADR18524569",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR18528812",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR18602297",
+      "gold_pairs": 2,
+      "labels": {
+        "PA": 2
+      }
+    },
+    {
+      "paper_id": "EUADR18612136",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR18630531",
+      "gold_pairs": 2,
+      "labels": {
+        "PA": 2
+      }
+    },
+    {
+      "paper_id": "EUADR18638373",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR18697826",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR18705322",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR18708184",
+      "gold_pairs": 1,
+      "labels": {
+        "PA": 1
+      }
+    },
+    {
+      "paper_id": "EUADR18793745",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR18799188",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR18804983",
+      "gold_pairs": 3,
+      "labels": {
+        "NA": 1,
+        "PA": 2
+      }
+    },
+    {
+      "paper_id": "EUADR18846214",
+      "gold_pairs": 1,
+      "labels": {
+        "PA": 1
+      }
+    },
+    {
+      "paper_id": "EUADR18930278",
+      "gold_pairs": 1,
+      "labels": {
+        "PA": 1
+      }
+    },
+    {
+      "paper_id": "EUADR18954321",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR18973865",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR18997770",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR19029774",
+      "gold_pairs": 1,
+      "labels": {
+        "PA": 1
+      }
+    },
+    {
+      "paper_id": "EUADR19035720",
+      "gold_pairs": 2,
+      "labels": {
+        "PA": 2
+      }
+    },
+    {
+      "paper_id": "EUADR19039095",
+      "gold_pairs": 1,
+      "labels": {
+        "PA": 1
+      }
+    },
+    {
+      "paper_id": "EUADR19092295",
+      "gold_pairs": 2,
+      "labels": {
+        "PA": 2
+      }
+    },
+    {
+      "paper_id": "EUADR19092840",
+      "gold_pairs": 2,
+      "labels": {
+        "PA": 2
+      }
+    },
+    {
+      "paper_id": "EUADR19092998",
+      "gold_pairs": 2,
+      "labels": {
+        "PA": 2
+      }
+    },
+    {
+      "paper_id": "EUADR19093297",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR19094116",
+      "gold_pairs": 7,
+      "labels": {
+        "PA": 7
+      }
+    },
+    {
+      "paper_id": "EUADR19094236",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR19095725",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR19096231",
+      "gold_pairs": 2,
+      "labels": {
+        "PA": 1,
+        "NA": 1
+      }
+    },
+    {
+      "paper_id": "EUADR19097922",
+      "gold_pairs": 1,
+      "labels": {
+        "PA": 1
+      }
+    },
+    {
+      "paper_id": "EUADR19098314",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR19098911",
+      "gold_pairs": 2,
+      "labels": {
+        "PA": 2
+      }
+    },
+    {
+      "paper_id": "EUADR19098994",
+      "gold_pairs": 1,
+      "labels": {
+        "PA": 1
+      }
+    },
+    {
+      "paper_id": "EUADR19099048",
+      "gold_pairs": 2,
+      "labels": {
+        "PA": 2
+      }
+    },
+    {
+      "paper_id": "EUADR19099557",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR19100387",
+      "gold_pairs": 2,
+      "labels": {
+        "PA": 2
+      }
+    },
+    {
+      "paper_id": "EUADR19101508",
+      "gold_pairs": 4,
+      "labels": {
+        "PA": 4
+      }
+    },
+    {
+      "paper_id": "EUADR19101572",
+      "gold_pairs": 2,
+      "labels": {
+        "PA": 2
+      }
+    },
+    {
+      "paper_id": "EUADR19103668",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR19104434",
+      "gold_pairs": 1,
+      "labels": {
+        "SA": 1
+      }
+    },
+    {
+      "paper_id": "EUADR19104501",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR19104506",
+      "gold_pairs": 4,
+      "labels": {
+        "SA": 2,
+        "PA": 2
+      }
+    },
+    {
+      "paper_id": "EUADR19105801",
+      "gold_pairs": 5,
+      "labels": {
+        "SA": 3,
+        "PA": 2
+      }
+    },
+    {
+      "paper_id": "EUADR19105843",
+      "gold_pairs": 1,
+      "labels": {
+        "PA": 1
+      }
+    },
+    {
+      "paper_id": "EUADR19106270",
+      "gold_pairs": 1,
+      "labels": {
+        "PA": 1
+      }
+    },
+    {
+      "paper_id": "EUADR19106306",
+      "gold_pairs": 4,
+      "labels": {
+        "PA": 4
+      }
+    },
+    {
+      "paper_id": "EUADR19107206",
+      "gold_pairs": 3,
+      "labels": {
+        "PA": 3
+      }
+    },
+    {
+      "paper_id": "EUADR19107338",
+      "gold_pairs": 2,
+      "labels": {
+        "PA": 2
+      }
+    },
+    {
+      "paper_id": "EUADR19109227",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR19110009",
+      "gold_pairs": 3,
+      "labels": {
+        "PA": 3
+      }
+    },
+    {
+      "paper_id": "EUADR19110417",
+      "gold_pairs": 1,
+      "labels": {
+        "PA": 1
+      }
+    },
+    {
+      "paper_id": "EUADR19110537",
+      "gold_pairs": 2,
+      "labels": {
+        "PA": 2
+      }
+    },
+    {
+      "paper_id": "EUADR19110611",
+      "gold_pairs": 2,
+      "labels": {
+        "PA": 2
+      }
+    },
+    {
+      "paper_id": "EUADR19111066",
+      "gold_pairs": 2,
+      "labels": {
+        "PA": 2
+      }
+    },
+    {
+      "paper_id": "EUADR19113055",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR19114657",
+      "gold_pairs": 1,
+      "labels": {
+        "PA": 1
+      }
+    },
+    {
+      "paper_id": "EUADR19115152",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR19244915",
+      "gold_pairs": 0,
+      "labels": {}
+    },
+    {
+      "paper_id": "EUADR19366086",
+      "gold_pairs": 1,
+      "labels": {
+        "PA": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no genes mentioned
+E|D1|clinical_event|hypotension|hypotension;post-spinal block hypotension|r||||
+F|F1|group_comparison|hypotension incidence by spinal anaesthesia type|74 lower limb surgery patients|not_significant|null|partial|b0002.s8|abstract only; no gene involved
+F|F2|group_comparison|epinephrine for hypotension by block type|74 lower limb surgery patients|not_significant|null|partial|b0002.s9|abstract only; no gene involved

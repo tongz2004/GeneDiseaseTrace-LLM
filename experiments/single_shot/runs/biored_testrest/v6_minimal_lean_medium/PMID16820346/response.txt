@@ -1,0 +1,5 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|D1|disease|hypertension|hypertension|r||||
+X|superoxide|b0002|chemical analyte, not a gene
+X|NOx|b0002|nitrate/nitrite metabolite abbreviation, not a gene

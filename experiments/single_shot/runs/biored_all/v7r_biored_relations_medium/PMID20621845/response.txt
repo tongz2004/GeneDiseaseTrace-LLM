@@ -1,0 +1,25 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; rat model study
+E|G1|gene|ADAM10|ADAM10;ADAM-10|r||non-human||
+E|G2|gene|ADAM17|ADAM17;ADAM-17|r||non-human||
+E|G3|gene|MMP2|MMP-2|r||non-human||
+E|G4|gene|MMP9|MMP-9|r||non-human||
+E|G5|gene|TIMP family|TIMPs;TIMP|p|ambiguous_mapping|non-human||
+E|D1|disease|thoracic aortic aneurysm|thoracic aortic aneurysm;TAA|r||||
+E|S1|phenotype|media degeneration|media degeneration|r|||D1|
+X|MMPs|b0002.s1|gene family label, not single gene
+X|ADAM|b0002.s1|gene family label, not single gene
+X|vascular remodeling|b0002.s9|process, not distinct disease entity
+EV|V1|b0002.s6|ts|res|aff|rr,cmp
+EV|V2|b0002.s7|ts|res|aff|rr,cmp
+EV|V3|b0002.s9+b0001.s1|ts|int|aff|rr
+EV|V4|b0002.s8|ts|neg|neg|cmp
+P|G1|D1|sup|r|ts|sup:r:ts:V1+V2+V3|||Elevated expression in CaCl2-induced TAA segments
+P|G2|D1|sup|r|ts|sup:r:ts:V1+V2+V3|||Elevated expression in CaCl2-induced TAA segments
+P|G3|D1|sup|r|ts|sup:r:ts:V1+V2+V3|||Elevated expression in CaCl2-induced TAA segments
+P|G4|D1|sup|r|ts|sup:r:ts:V1+V2+V3|||Elevated expression in CaCl2-induced TAA segments
+P|G5|D1|neg|-|ts|neg:-:ts:V4|identity||TIMP levels did not differ among segments
+F|F1|group_comparison|MMP-2, MMP-9, ADAM10, ADAM17 mRNA|CaCl2-treated vs NaCl rat aorta|significant|positive|partial|V1|abstract only; rat model
+F|F2|group_comparison|MMP-2, MMP-9, ADAM10, ADAM17 protein IHC|CaCl2-treated vs NaCl rat aorta|significant|positive|partial|V2|abstract only; rat model
+F|F3|group_comparison|TIMP mRNA and tissue levels|three aortic segment groups|not_significant|null|not_reported|V4|TIMP members unspecified
+R|gene family negative result|b0002.s8|TIMP family members not specified|Listed family entity as provisional; neg with identity flag

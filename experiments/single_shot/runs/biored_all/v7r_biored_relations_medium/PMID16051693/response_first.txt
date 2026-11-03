@@ -1,0 +1,15 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|PEMT|Phosphatidylethanolamine N-methyltransferase;PEMT|r||human||
+E|D1|disease|nonalcoholic fatty liver disease|nonalcoholic fatty liver disease;NAFLD|r||||
+E|D2|disease|fatty liver|fatty liver;fatty livers|r|||D1|
+X|V175M|b0002.s3|variant of PEMT, not a separate gene
+X|McArdle-RH7777|b0002.s4|cell line, not a gene
+EV|V1|b0002.s2|bg|bgr|aff|ebr,mi
+EV|V2|b0002.s2|bg|hyp|hyp|ho
+EV|V3|b0002.s3+b0002.s5|ts|res|aff|rr,cmp
+EV|V4|b0002.s4+b0002.s6|ts|int|aff|rr,eda
+P|G1|D1|sup|a|both|sup:a:ts:V3+V4;unc:a:bg:V2|||Met/Met loss-of-function genotype enriched in NAFLD
+P|G1|D2|sup|c|bg|sup:c:bg:V1|||PEMT knockout mice develop fatty livers
+F|F1|group_comparison|PEMT V175M Met/Met genotype frequency|28 NAFLD vs 59 controls|significant|positive|partial|V3|small sample; only P threshold given
+F|F2|mechanism|V175M effect on PEMT activity|McArdle-RH7777 transfected cells|unknown|negative|unread|V4|in vitro only

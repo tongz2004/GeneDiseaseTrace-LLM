@@ -1,0 +1,25 @@
+META|Opus 5.5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|SOX2|SOX2|r|||human|
+E|G2|gene|CHX10|CHX10|r|||human|
+E|D1|disease|anophthalmia|anophthalmia;anophthalmic|r||||
+E|D2|disease|microphthalmia|microphthalmia;microphthalmic|r||||
+E|D3|phenotype|eye malformation|eye malformation|r||||
+X|high mobility group (HMG)|b0002.s8|protein domain, not gene
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s6+b0002.s7+b0002.s8|ts|res|aff|rr
+EV|V3|b0002.s9+b0002.s10+b0002.s11|ts|res|aff|rr
+EV|V4|b0002.s19+b0002.s20|ts|int|aff|eda
+EV|V5|b0002.s21|ts|neg|neg|rr
+EV|V6|b0002.s15+b0002.s16+b0002.s17+b0002.s18|ts|neg|neg|cmp
+EV|V7|b0002.s12+b0002.s13|ts|res|q|unc
+EV|V8|b0002.s14|ts|co|na|do
+P|G1|D1|sup|c|both|sup:c:bg:V1;sup:c:ts:V2+V3+V4|||Novel truncating SOX2 mutations in affected patients
+P|G1|D2|sup|c|both|sup:c:bg:V1;sup:c:ts:V2+V3+V4|||Novel truncating SOX2 mutations in affected patients
+P|G2|D1|sup|c|bg|sup:c:bg:V1;neg:-:ts:V5+V6|scope||Background support; not implicated in this cohort
+P|G2|D2|sup|c|bg|sup:c:bg:V1;neg:-:ts:V5+V6|scope||Background support; not implicated in this cohort
+F|F1|descriptive|SOX2 truncating mutations c.310G>T, c.549delC|A/M patients, two siblings|not_applicable|not_applicable|not_reported|V2+V3|no segregation or functional data
+F|F2|descriptive|SOX2 3'UTR c.*557G>A|one A/M patient|not_applicable|unknown|not_reported|V7|functional relevance indeterminate
+F|F3|descriptive|SOX2 rs11915160|2 of 34 patients|not_applicable|not_applicable|not_reported|V8|known SNP
+F|F4|group_comparison|CHX10 c.871G>A Asp291Asn|patients vs 80 healthy controls|not_applicable|null|not_reported|V6|control frequency not given
+C|C1|CHX10 role in anophthalmia/microphthalmia|b0002.s1+b0002.s21|noncritical|resolved|Negative finding limited to this cohort

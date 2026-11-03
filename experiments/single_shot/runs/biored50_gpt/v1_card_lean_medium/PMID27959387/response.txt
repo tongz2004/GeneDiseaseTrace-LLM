@@ -1,0 +1,48 @@
+META|GPT-6|seen: no
+SCOPE|Supplied title and abstract only.
+E|G1|gene|Oct4|Oct4|r||human||
+E|G2|gene|Nanog|Nanog|r||human||
+E|G3|gene|Ceacam6|Ceacam6|r||human||
+E|G4|gene|MT1X|MT1X|r||human||
+E|G5|gene|STEAP4|STEAP4|r||human||
+E|G6|gene|SERPINA3|SERPINA3|r||human||
+E|G7|gene|SAMD9|SAMD9|r||human||
+E|G8|gene|GDF15|GDF15|r||human||
+E|G9|gene|KRT15|KRT15|r||human||
+E|G10|gene|ITGB6|ITGB6|r||human||
+E|G11|gene|TP63|TP63|r||human||
+E|G12|gene|PGR|PGR|r||human||
+E|D1|disease|breast cancer|breast cancer|r||||
+E|H1|phenotype|epithelial mesenchymal transition|epithelial mesenchymal transition|r||||
+E|H2|phenotype|oncogenic transformation|oncogenic transformation|r||||
+E|H3|phenotype|malignant progression|malignant progression|r||||
+E|H4|phenotype|anchorage-independent growth|anchorage-independent growth|r||||
+E|H5|phenotype|malignant-like features|malignant-like features|r||||
+X|MCF-7|b0001|cell_line
+X|MCF-12A|b0002|cell_line
+X|metallothionein genes|b0002|gene_family
+X|CEACAM|b0002|gene_family
+X|interferon related|b0002|gene_group
+X|HLA|b0002|gene_family
+EV|V1|b0002.s4+b0002.s5|ts|res|na|do
+EV|V2|b0002.s4+b0002.s6|ts|res|na|do
+EV|V3|b0002.s4+b0002.s7|ts|res|na|do
+EV|V4|b0002.s4+b0002.s8|ts|res|na|do
+EV|V5|b0002.s4+b0002.s10|ts|res|na|do
+P|G1|D1|nf|-||||V1+V2+V5|Cell-line expression changes lack disease-specific attribution.
+P|G2|D1|nf|-||||V1+V2|Cell-line expression changes lack disease-specific attribution.
+P|G3|D1|nf|-||||V2|Malignancy marker description lacks breast-cancer-specific attribution.
+P|G4|D1|nf|-||||V3|Cell-line expression changes lack disease-specific attribution.
+P|G5|D1|nf|-||||V4|Malignancy-related description lacks breast-cancer-specific attribution.
+P|G6|D1|nf|-||||V4|Malignancy-related description lacks breast-cancer-specific attribution.
+P|G7|D1|nf|-||||V4|Malignancy-related description lacks breast-cancer-specific attribution.
+P|G8|D1|nf|-||||V4|Malignancy-related description lacks breast-cancer-specific attribution.
+P|G9|D1|nf|-||||V4|Malignancy-related description lacks breast-cancer-specific attribution.
+P|G10|D1|nf|-||||V4|Malignancy-related description lacks breast-cancer-specific attribution.
+P|G11|D1|nf|-||||V4|Malignancy-related description lacks breast-cancer-specific attribution.
+P|G12|D1|nf|-||||V4|Malignancy-related description lacks breast-cancer-specific attribution.
+F|F1|descriptive|Ethanol concentration; Oct4 and Nanog proteins|MCF-7; one-week exposure|unknown|mixed|partial|V1|Significance and reduction comparator unspecified.
+F|F2|descriptive|Oct4, Nanog, Ceacam6 proteins|MCF-7; four-week 25 mM ethanol|unknown|positive|not_reported|V2|
+F|F3|descriptive|Metallothionein expression; particularly MT1X|MCF-7; one-week ethanol exposure|unknown|positive|not_reported|V3|
+F|F4|descriptive|Listed malignancy-related genes and gene families|MCF-7; long-term ethanol exposure|unknown|positive|not_reported|V4|
+F|F5|descriptive|MicroRNAs; Oct4 regulator included|MCF-7; similar ethanol treatment|unknown|unknown|not_reported|V5|Individual microRNAs unnamed.

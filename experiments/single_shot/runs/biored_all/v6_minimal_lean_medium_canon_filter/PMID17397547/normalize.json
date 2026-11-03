@@ -1,0 +1,30 @@
+[
+  [
+    "canonicalize: main type/scope recomputed",
+    "P G1-D1: c/both -> c/ts"
+  ],
+  [
+    "filter: dropped pair",
+    "P G1-D3 (gene x phenotype)"
+  ],
+  [
+    "filter: dropped pair",
+    "P G1-D4 (gene x phenotype)"
+  ],
+  [
+    "canonicalize: type set to -",
+    "P G9-D1: a -> - (unc)"
+  ],
+  [
+    "canonicalize: type set to -",
+    "P G27-D1: c -> - (unc)"
+  ],
+  [
+    "canonicalize: type set to -",
+    "P G28-D1: c -> - (unc)"
+  ],
+  [
+    "canonicalize: type set to -",
+    "P G29-D1: a -> - (unc)"
+  ]
+]

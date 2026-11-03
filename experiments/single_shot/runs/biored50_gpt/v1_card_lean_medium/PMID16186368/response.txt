@@ -1,0 +1,19 @@
+META|GPT-6|seen: no
+SCOPE|Provided title and abstract only; full paper unavailable.
+E|G1|gene|CYP4V2|CYP4V2|r||human||
+E|D1|disease|Bietti crystalline dystrophy|Bietti crystalline dystrophy;BCD|r||||
+E|H1|phenotype|Clinical heterogeneity|Clinical heterogeneity|r||||
+E|H2|phenotype|ERG changes|ERG changes|r||||
+X|cytochrome P450 genes|b0002|gene_family
+X|S482X|b0002|variant_identifier
+X|K386T|b0002|variant_identifier
+EV|V1|b0002.s1|bg|bgr|aff|ebr
+EV|V2|b0002.s6+b0002.s7+b0002.s12|ts|res|aff|rr,eda
+EV|V3|b0002.s10|ts|int|hyp|ho
+EV|V4|b0002.s8|ts|res|na|rr,cmp
+EV|V5|b0002.s11|ts|res|na|rr
+P|G1|D1|sup|c|ts|sup:c:ts:V2;sup:a:bg:V1;unc:-:ts:V3|hedged_claim||Causal attribution supported; genotype severity comparison remains tentative.
+F|F1|group_comparison|CYP4V2 deletion genotype; BCD severity|Compound heterozygotes versus deletion homozygotes|unknown|positive|not_reported|V3|Tentative comparison; no statistical test supplied.
+F|F2|other|CYP4V2 deletion haplotypes; founder effect|Patients and controls|unknown|not_applicable|not_reported|V4|
+F|F3|correlation|BCD clinical stage; ERG changes|BCD patients|unknown|unknown|not_reported|V5|Correlation direction unspecified.
+F|F4|correlation|Age; BCD severity|BCD patients|not_significant|null|not_reported|V5|No statistical details supplied.

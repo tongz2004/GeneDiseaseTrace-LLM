@@ -1,0 +1,22 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|E1|gene|ACE|Angiotensin converting enzyme;angiotensin converting enzyme;ACE|r||human||
+E|E2|disease|asthma|Asthma;asthma;asthmatic;asthmatics|r||||
+E|E3|disease|drug allergies|drug allergies|r||||
+E|E4|clinical_event|asthmatic episode exacerbations|asthmatic episode exacerbations|r||||
+E|E5|disease|viral infections|viral infections|r||||
+E|E6|phenotype|atopism|atopism|r||||
+EV|V1|b0002.s2|bg|hyp|hyp|ho
+EV|V2|b0002.s7+b0002.s8+b0002.s9|ts|res|aff|rr,cmp
+EV|V3|b0002.s13|ts|int|aff|rr,cmp
+EV|V4|b0002.s10|ts|neg|neg|rr,cmp
+EV|V5|b0002.s11|ts|neg|neg|rr,cmp
+EV|V6|b0002.s12|ts|neg|neg|rr
+P|E1|E2|sup|a|ts|sup:a:ts:V2+V3;unc:-:bg:V1|||DD genotype more frequent in asthmatics vs controls
+P|E1|E3|neg|-|ts|neg:-:ts:V4|||ID genotype vs drug allergies not significant
+P|E1|E4|neg|-|ts|neg:-:ts:V5|||DD genotype vs viral exacerbations not significant
+F|F1|group_comparison|ACE DD genotype frequency vs asthma status|97 asthmatics vs 96 healthy controls|significant|positive|partial|V2|
+F|F2|group_comparison|ACE ID genotype vs drug allergies|Asthmatic patients|not_significant|positive|partial|V4|comparator genotype not stated
+F|F3|group_comparison|ACE DD genotype vs viral exacerbations|Asthmatic patients|not_significant|positive|partial|V5|comparator genotype not stated
+F|F4|group_comparison|ACE genotype frequency vs asthma severity|Mild vs moderate-severe asthmatics|not_significant|null|not_reported|V6|no statistics given
+C|C1|II genotype count in asthmatics|b0002.s7|noncritical|unresolved|n given as 14.4, likely 14

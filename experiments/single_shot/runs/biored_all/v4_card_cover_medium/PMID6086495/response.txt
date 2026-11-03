@@ -1,0 +1,13 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|D1|disease|Becker muscular dystrophy|Becker muscular dystrophy;BMD;Becker|r||||
+E|D2|disease|Duchenne dystrophy|Duchenne|p|other|||
+E|G1|ambiguous_gene|BMD gene|BMD gene|u|ambiguous_mapping|human||
+X|p21|b0002|chromosomal band Xp21, not the p21 gene
+X|RFLPs|b0002|polymorphism marker type, not a gene
+EV|V1|b0001.s1+b0002.s1|ts|res|aff|rr
+EV|V2|b0002.s2|ts|int|hyp|ho
+P|G1|D1|unc|-|ts|unc:a:ts:V1|identity||Unnamed locus mapped by linkage; no gene identity
+P|G1|D2|unc|-|ts|unc:a:ts:V2|identity,hedged_claim||Linked or allelic stated as inference only
+F|F1|association|BMD locus vs Xp21 RFLP markers|30 BMD kindreds|unknown|positive|not_reported|V1|abstract only; LOD scores not shown
+R|unnamed disease-defined gene locus|b0002.s1|No gene symbol; locus named only by disease|Recorded as ambiguous_gene with identity unresolved

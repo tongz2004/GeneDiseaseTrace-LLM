@@ -1,0 +1,25 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|SCN5A|SCN5A;Na(v)1.5|r||human||
+E|D1|disease|long QT syndrome|long QT syndrome;LQTS;LQTS-3;Congenital long QT syndrome|r||||
+E|D2|disease|bradycardia|bradycardia;fetal bradycardia|r||||
+E|D3|disease|tachycardia|tachycardia|r||||
+E|D4|disease|ventricular tachycardia|ventricular tachycardia|r|||D3|
+E|D5|disease|atrioventricular block|atrioventricular block|r||||
+E|D6|disease|arrhythmias|arrhythmias;rhythm disturbances|r||||
+X|V1763M|b0002.s10|variant notation, not a gene
+X|I1762A|b0002.s9|variant notation, not a gene
+X|tsA201|b0002.s7|cell line, not a gene
+EV|V1|b0001.s1|ts|res|aff|eda
+EV|V2|b0002.s5+b0002.s6|ts|res|aff|rr
+EV|V3|b0002.s10|ts|int|aff|rr,mi
+EV|V4|b0002.s2|ts|co|na|do
+EV|V5|b0002.s7+b0002.s8|ts|res|na|mi
+P|G1|D1|sup|c|ts|sup:c:ts:V1+V2+V3|||De novo LQTS-3 mutation with functional defect
+P|G1|D6|sup|c|ts|sup:c:ts:V3|||Conclusion links channel dysfunction to perinatal arrhythmias
+P|G1|D2|sup|a|ts|sup:a:ts:V1||V4|Title attributes perinatal bradycardia to mutation phenotype
+P|G1|D3|sup|a|ts|sup:a:ts:V1||V4|Title attributes perinatal tachycardia to mutation phenotype
+P|G1|D4|unc|-|ts||support_basis_unresolved|V4|Single proband feature; descriptive only
+P|G1|D5|unc|-|ts||support_basis_unresolved|V4|Single proband feature; descriptive only
+F|F1|mechanism|V1763M; persistent lidocaine-resistant Na current|tsA201 cells expressing mutant|unknown|positive|unread|V5|abstract only
+F|F2|mechanism|I1762A; no persistent current|tsA201 cells expressing mutant|unknown|null|unread|V5|abstract only

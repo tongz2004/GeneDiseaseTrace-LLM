@@ -1,0 +1,100 @@
+META|GPT-6|seen: no
+SCOPE|Supplied paper text, tables, and captions; references and images unavailable.
+E|G1|gene|myelin protein zero|myelin protein zero;Myelin protein zero;MPZ;P0|r||human||
+E|G2|gene|SPTLC-1|serine palmitoyltransferase, long-chain base subunit-1;SPTLC-1|r||human||
+E|G3|gene|RAB7|RAB7|r||human||
+E|G4|gene|periaxin|periaxin|r||human||
+E|G5|gene|PMP22|PMP22|r||human||
+E|G6|gene|GJB1|GJB1|r||human||
+E|G7|gene|PGP 9.5|PGP (protein gene product) 9.5;PGP 9.5;protein gene product (PGP) 9.5|r||human||
+E|G8|gene|myelin basic protein|myelin basic protein;MBP|r||human||
+E|G9|gene|periaxin|periaxin|r||non-human||
+E|D1|disease|neuropathy|neuropathy;neuropathies|r||||
+E|D2|disease|hereditary neuropathy|Inherited neuropathies;hereditary neuropathy;hereditary neuropathies|r|||D1|
+E|D3|disease|Charcot-Marie-Tooth disease|Charcot-Marie-Tooth disease;Charcot-Marie-Tooth Disease;CMT;CMT disease|r|||D1|
+E|D4|disease|intermediate Charcot-Marie-Tooth disease|Intermediate Charcot-Marie-Tooth disease;intermediate form of CMT;intermediate forms of CMT|r|||D3|
+E|D5|disease|axonal Charcot-Marie-Tooth disease|axonal|r|||D3|
+E|D6|disease|demyelinating Charcot-Marie-Tooth disease|demyelinating forms of CMT|r|||D3|
+E|D7|disease|CMT4F|CMT4F|r|||D3|
+E|D8|disease|Fabry disease|Fabry disease|r||||
+E|D9|disease|familial amyloid neuropathy|familial amyloid neuropathy|r|||D1|
+E|D10|disease|demyelinating neuropathy|demyelinating neuropathies;demyelinating neuropathy|r|||D1|
+E|D11|disease|early-onset demyelinating neuropathy|early-onset demyelinating neuropathy|r|||D10|
+E|D12|disease|late-onset neuropathy|late-onset neuropathy|r|||D1|
+E|D13|disease|acute neuropathy|acute neuropathy|r|||D1|
+E|D14|disease|axonal neuropathies|axonal neuropathies|r|||D1|
+E|D15|disease|traumatic nerve injury|traumatic nerve injury|r||||
+E|S1|symptom|neuropathic pain|neuropathic pain|r||||
+E|S2|symptom|pain|pain|r||||
+E|S3|symptom|Chronic pain|Chronic pain|r||||
+E|S4|symptom|sensory loss|sensory loss|r||||
+E|S5|phenotype|motor dysfunction|motor dysfunction|r||||
+E|S6|phenotype|demyelination|demyelination|r||||
+E|S7|phenotype|axonal loss|axonal loss|r||||
+E|S8|symptom|numbness|numbness|r||||
+E|S9|symptom|paraesthesia|paraesthesia|r||||
+E|S10|symptom|weakness|weakness|r||||
+E|S11|phenotype|pes cavus|pes cavus|r||||
+E|S12|symptom|touch-evoked allodynia|touch-evoked allodynia|r||||
+E|S13|phenotype|sensory hypofunction|sensory hypofunction|r||||
+E|S14|symptom|burning sensations|burning sensations|r||||
+E|S15|symptom|muscle cramps|muscle cramps|r||||
+E|S16|phenotype|pain-related hypersensitivity|pain-related hypersensitivity|r||||
+E|S17|phenotype|ectopic activity|ectopic activity|r||||
+E|S18|symptom|Paradoxical heat sensations|Paradoxical heat sensations|r||||
+E|S19|symptom|dynamic mechanical allodynia|dynamic mechanical allodynia|r||||
+E|S20|phenotype|sensory impairment|sensory impairment|r||||
+E|S21|phenotype|hypersensitivity|hypersensitivity|r||||
+X|type IV collagen|b0012|Collagen family; no individual gene identified.
+X|collagen type 4|b0038|Collagen family; no individual gene identified.
+X|Trp101Stop|b0001|Variant, not gene.
+X|Trp101X|b0003|Variant, not gene.
+X|Trp101x|b0029|Variant, not gene.
+X|Val102 frame shift|b0027|Variant, not gene.
+X|Arg36Trp|b0028|Variant, not gene.
+X|Asp234Tyr|b0028|Variant, not gene.
+X|Glu71stop|b0029|Variant, not gene.
+EV|V1|b0005.s3|bg|bgr|aff|ebr
+EV|V2|b0005.s4|bg|bgr|aff|ebr
+EV|V3|b0003.s6|bg|bgr|aff|ebr
+EV|V4|b0005.s7+b0027.s3+b0027.s4|bg|bgr|aff|ebr
+EV|V5|b0001.s1+b0005.s9|ts|res|aff|eda
+EV|V6|b0026.s1|ts|res|aff|eda
+EV|V7|b0003.s1+b0003.s4+b0020.s2+b0020.s5|ts|res|aff|rr,cs
+EV|V8|b0020.s1|ts|co|na|do
+EV|V9|b0027.s5+b0027.s6|bg|bgr|aff|ebr
+EV|V10|b0027.s9+b0027.s10|bg|bgr|aff|ebr
+EV|V11|b0028.s4|bg|bgr|aff|ebr
+EV|V12|b0028.s5|bg|bgr|aff|ebr
+EV|V13|b0029.s1+b0029.s2|bg|bgr|aff|ebr
+EV|V14|b0029.s3|bg|bgr|na|ebr
+EV|V15|b0020.s3+b0020.s4+b0027.s7+b0027.s8|ts|int|hyp|ho
+EV|V16|b0028.s2+b0028.s3+b0032.s1|both|res|aff|rr,ebr
+EV|V17|b0030.s4|bg|bgr|aff|ebr,mi
+EV|V18|b0030.s6|bg|int|hyp|ho
+EV|V19|b0024.s2+b0024.s3+b0024.s5+b0031.s9+b0031.s10|ts|res|na|rr
+EV|V20|b0031.s11|ts|int|hyp|ho
+P|G1|D1|sup|c|bg|sup:c:bg:V3+V13;sup:a:bg:V10+V12||||Explicit mutation causation and background neuropathy reports.
+P|G1|D2|sup|a|ts|sup:a:ts:V7||||Mutation segregated with hereditary neuropathy.
+P|G1|D3|sup|c|ts|sup:c:ts:V6;sup:a:bg:V4||||Authors explicitly attribute CMT to the mutation.
+P|G1|D4|sup|c|ts|sup:c:ts:V5;sup:a:bg:V4||||Explicit attribution of intermediate CMT.
+P|G1|D5|sup|a|bg|sup:a:bg:V4||||Listed CMT subtype associated with MPZ mutations.
+P|G1|D6|sup|a|bg|sup:a:bg:V4||||Listed CMT subtype associated with MPZ mutations.
+P|G1|D11|sup|a|bg|sup:a:bg:V9||||Mutation groups explicitly associated with this subtype.
+P|G1|D12|sup|a|bg|sup:a:bg:V9||||Mutation groups explicitly associated with this subtype.
+P|G1|D13|sup|a|bg|sup:a:bg:V11||||Cited patient mutation reported as disease evidence.
+P|G2|D2|sup|c|bg|sup:c:bg:V1||||Hereditary neuropathies explicitly attributed to mutations.
+P|G3|D2|sup|c|bg|sup:c:bg:V1||||Hereditary neuropathies explicitly attributed to mutations.
+P|G4|D7|sup|c|bg|sup:c:bg:V2||||CMT4F explicitly caused by periaxin mutations.
+P|G5|D4|nf|-||||V8|Negative variant screen does not exclude a gene-disease relationship.
+P|G6|D4|nf|-||||V8|Negative variant screen does not exclude a gene-disease relationship.
+P|G9|D10|nf|-||||V17|Mouse demyelination phenotype lacks explicit disease-model attribution.
+F|F1|descriptive|MPZ mutation; affected status|Assessed affected family members|not_applicable|positive|not_reported|V7|Unaffected relatives' genotypes not reported.
+F|F2|hypothesis|MPZ truncation; membrane insertion|Trp101X mutation|not_applicable|negative|not_applicable|V15|Predicted molecular consequences.
+F|F3|descriptive|MPZ levels within myelin|Heterozygous Val102 frame shift mutation|not_applicable|null|not_reported|V10|Background report; compensatory mechanism speculative.
+F|F4|descriptive|MPZ mutations; absent symptoms|Previously reported mutation carriers|not_applicable|not_applicable|not_reported|V14|Does not negate neuropathy causation.
+F|F5|descriptive|MPZ mutations; neuropathic pain|Current kindred and background reports|not_applicable|positive|not_reported|V16|Pain is an auxiliary symptom.
+F|F6|mechanism|Periaxin loss; hypersensitivity; ectopic activity|Mice lacking periaxin|not_applicable|positive|not_reported|V17|No named disease model established.
+F|F7|hypothesis|MPZ-associated pain; immune aetiology|Two cited mutation reports|unknown|unknown|not_reported|V18|Authors report a proposed mechanism.
+F|F8|descriptive|MPZ mutation; dermal myelination; IENFD|Patient 5 and controls|not_applicable|mixed|partial|V19|Sampling issue could explain absent internodes.
+F|F9|hypothesis|Sensory axon dysfunction; neuropathic pain|Current MPZ kindred|not_applicable|positive|not_applicable|V20|Hedged mechanistic interpretation.

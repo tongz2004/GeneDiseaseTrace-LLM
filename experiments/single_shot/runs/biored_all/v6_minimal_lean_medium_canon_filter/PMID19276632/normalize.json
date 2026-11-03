@@ -1,0 +1,14 @@
+[
+  [
+    "canonicalize: type set to -",
+    "P E1-E3: a -> - (unc)"
+  ],
+  [
+    "canonicalize: type set to -",
+    "P E1-E4: a -> - (unc)"
+  ],
+  [
+    "filter: dropped pair",
+    "P E2-E5 (gene x phenotype)"
+  ]
+]

@@ -1,0 +1,19 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; single family report
+E|G1|gene|VWF|von Willebrand factor;VWF;von Willerand factor|p|suspected_typo|human||
+E|G2|gene|GPIb|glycoprotein Ib;GPIb|r||human||
+E|D1|disease|type 2B von Willebrand disease|type 2B von Willebrand disease;type 2B VWD|r|||D2|
+E|D2|disease|von Willebrand disease|von Willebrand disease;VWD|r||||
+E|D3|disease|thrombocytopenia|thrombocytopenia|r||||
+E|S1|symptom|mucocutaneous bleedings|mucocutaneous bleedings|r||||
+X|VIII:C|b0002|lab assay measurement, not gene entity
+X|VWF:Ag|b0002|lab assay of VWF antigen
+X|VWF:RCo|b0002|lab assay of VWF ristocetin-cofactor activity
+X|R1306W|b0002|variant ID
+EV|V1|b0002.s1+b0002.s9+b0002.s11|ts|res|aff|rr,eda,cs
+EV|V2|b0002.s10|bg|bgr|aff|ebr
+P|G1|D1|sup|a|ts|sup:a:ts:V1|||All affected family members carry R1306W; authors attribute
+P|G1|D3|sup|c|bg|sup:c:bg:V2|||Mutation stated to cause thrombocytopenia often
+P|G2|D3|nf|-||||||GPIb only named as binding site
+F|F1|descriptive|VWF R1306W heterozygosity|proband and three affected children|not_applicable|not_applicable|not_applicable|V1|single family, no controls
+C|C1|VWF name spelling|b0002.s4|noncritical|resolved|Willerand typo merged into VWF

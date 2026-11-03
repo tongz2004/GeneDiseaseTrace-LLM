@@ -1,0 +1,17 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; single case report
+E|G1|gene|ACE|angiotensin-converting enzyme;ACE|r||human||
+E|D1|disease|hyperkalemia|hyperkalemia|r|||||
+E|D2|disease|syncope|Syncope|r|||||
+E|D3|disease|myocardial infarction|myocardial infarction|r|||||
+E|D4|disease|bradycardia|bradycardia|r|||||
+E|D5|disease|electrolyte imbalance|electrolyte imbalance|r|||||
+E|D6|disease|renal disturbance|renal disturbance|r|||||
+E|S1|symptom|loss of consciousness|loss of consciousness|r|||||
+X|ACE/ARB|b0002.s5|drug classes, not gene mentions
+X|aldosterone antagonist|b0002.s3|drug class; aldosterone is a hormone
+X|coronary artery bypass grafting|b0002.s1|surgical procedure, not disease
+EV|V1|b0001.s1+b0002.s3|ts|int|hyp|unc
+P|G1|D1|unc|-|ts|unc:-:ts:V1||identity,other||ACE inhibitor drug effect, not gene evidence
+P|G1|D2|nf|-||||V1|syncope linked to drug therapy only
+R|drug-class gene names|b0002.s3|ACE inhibitor causes hyperkalemia; drug effect, not gene variant|Marked ACE–hyperkalemia uncertain

@@ -1,0 +1,14 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|angiotensinogen|angiotensinogen|r||non-human||
+E|G2|gene|beta-adrenoceptor|beta-adrenoceptor;beta-AR|p|ambiguous_mapping|non-human||
+E|G3|gene|beta-adrenergic receptor kinase 1|beta-AR kinase-1|r||non-human||
+E|D1|disease|cardiac hypertrophy|cardiac hypertrophy;LV hypertrophy;hypertrophy|r||||
+X|renin-angiotensin system|b0002|physiological system name, not a specific gene
+EV|V1|b0001.s1+b0002.s3+b0002.s5|ts|res|aff|rr,cmp,mi
+EV|V2|b0002.s6|ts|res|aff|rr,cmp
+P|G1|D1|sup|a|ts|sup:a:ts:V1||| Low brain angiotensinogen rats show enhanced hypertrophy
+P|G2|D1|sup|a|ts|sup:a:ts:V2|||beta-AR downregulation tracks greater LV hypertrophy
+P|G3|D1|sup|a|ts|sup:a:ts:V2|||BARK1 mRNA upregulation tracks greater LV hypertrophy
+F|F1|group_comparison|LV hypertrophy; brain angiotensinogen deficiency|TGR vs SD rats, Iso-treated|significant|positive|available|V1|
+F|F2|association|beta-AR, BARK1 mRNA; LV hypertrophy|TGR vs SD rats, Iso-treated|unknown|mixed|not_reported|V2|abstract only

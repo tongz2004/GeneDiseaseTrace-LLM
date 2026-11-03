@@ -1,0 +1,2 @@
+E E3: duplicate id, bad type/identity or unknown unit
+P E1-E3: endpoints must be a primary gene and a primary target in the same unit

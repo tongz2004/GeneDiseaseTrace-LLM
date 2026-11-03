@@ -1,0 +1,34 @@
+META|Claude Opus 5.5|seen: no
+SCOPE|Title and abstract only; full text unavailable
+E|G1|gene|neuronal pentraxin 1 (NPTX1)|neuronal pentraxin 1;NP1|r||non-human||
+E|G2|gene|PTEN|PTEN|r||non-human||
+E|G3|gene|AKT|Akt|p|ambiguous_mapping|non-human||
+E|G4|gene|GSK3B|GSK-3b|r||non-human||
+E|G5|gene|BAD|Bad|r||non-human||
+E|G6|gene|BAX|Bax|r||non-human||
+E|G7|gene|cytochrome c (CYCS)|Cyt C;cytochrome C|r||non-human||
+E|G8|gene|caspase-3 (CASP3)|caspase-3|r||non-human||
+E|D1|disease|hypoxic-ischemic brain injury|hypoxic-ischemic neuronal injury;HI brain injury;HI neuronal injury|r||||
+E|D2|disease|neurological disabilities|neurological disabilities|p|other|||
+E|D3|phenotype|neuronal death|neuronal death|r||||
+X|OGD|b0002.s4|oxygen glucose deprivation; HI in vitro model, not a disease
+X|NP1-KO|b0002.s4|knockout genotype label for NP1
+EV|V1|b0002.s2|bg|bgr|aff|ebr
+EV|V2|b0002.s5|ts|res|aff|rr
+EV|V3|b0002.s11|ts|res|aff|cmp,mi
+EV|V4|b0002.s13|ts|int|aff|rr
+EV|V5|b0002.s6|ts|res|aff|rr
+EV|V6|b0002.s7+b0002.s8|ts|res|aff|rr
+EV|V7|b0002.s9+b0002.s10+b0002.s12|ts|res|aff|rr
+P|G1|D1|sup|c|both|sup:a:bg:V1;sup:a:ts:V2;sup:c:ts:V3+V4||V7|NP1 knockout prevents OGD/HI neuronal death
+P|G2|D1|sup|a|ts|sup:a:ts:V5||||PTEN activity increased after OGD
+P|G3|D1|sup|a|ts|sup:a:ts:V5||||Akt dephosphorylation after OGD
+P|G4|D1|sup|a|ts|sup:a:ts:V5||||GSK-3b dephosphorylation after OGD
+P|G5|D1|sup|a|ts|sup:a:ts:V6+V7||||Bad mitochondrial translocation after OGD
+P|G6|D1|sup|a|ts|sup:a:ts:V6+V7||||Bax mitochondrial translocation after OGD
+P|G7|D1|sup|a|ts|sup:a:ts:V6+V7||||Cyt C release after OGD
+P|G8|D1|sup|a|ts|sup:a:ts:V6+V7||||caspase-3 activation after OGD
+F|F1|descriptive|NP1 induction|mouse neurons OGD; neonatal HI hippocampus|unknown|positive|not_reported|V2|abstract only
+F|F2|group_comparison|NP1 genotype vs neuronal death|WT vs NP1-KO hippocampal neurons, OGD|significant|negative|not_reported|V3|in vitro OGD model
+F|F3|mechanism|NP1 binding Bad/Bax; mitochondrial translocation|WT hippocampal neurons, OGD|unknown|positive|not_reported|V7|
+R|disease proxy|b0002.s6|OGD in vitro findings stand in for HI injury|treated OGD results as evidence for HI brain injury

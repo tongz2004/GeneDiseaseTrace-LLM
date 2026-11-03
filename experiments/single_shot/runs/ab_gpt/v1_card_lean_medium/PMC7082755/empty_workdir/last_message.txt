@@ -1,0 +1,165 @@
+META|GPT-6|seen: no
+SCOPE|Supplied review text, including captions; references removed.
+E|G1|gene|NOTCH3|NOTCH 3;NOTCH3;Notch 3;Notch3|r||human||
+E|G2|gene|NOTCH3|NOTCH3|p|species_unresolved|||
+E|G3|gene|calnexin|calnexin|r||human||
+E|G4|gene|tissue inhibitor of metalloproteinases 3|tissue inhibitor of metalloproteinases 3;TIMP-3|r||human||
+E|G5|gene|vitronectin|vitronectin;VTN|r||human||
+E|G6|gene|latent TGF-β binding protein 1|latent TGF-β binding protein 1;LTBP-1|r||human||
+E|G7|gene|amyloid P|amyloid P;Amyloid P|r||human||
+E|G8|gene|annexin 2|annexin 2|r||human||
+E|G9|gene|periostin|periostin|r||human||
+E|G10|gene|stem cell factor|stem cell factor;SCF|p|species_unresolved|||
+E|G11|gene|granulocyte colony-stimulating factor|granulocyte colony-stimulating factor;G-CSF|p|species_unresolved|||
+E|G12|gene|caspase-3|caspase-3|p|species_unresolved|||
+E|G13|gene|tissue plasminogen activator|tissue plasminogen activator;tPA|r||human||
+E|G14|ambiguous_gene|amyloid β peptides|amyloid β peptides;β amyloid|u|ambiguous_mapping,species_unresolved|||
+E|G15|ambiguous_gene|acetylcholinesterase|acetylcholinesterase|u|ambiguous_mapping|||
+E|D1|disease|CADASIL|Cerebral Autosomal Dominant Arteriopathy With Subcortical Infarcts and Leukoencephalopathy;Cerebral autosomal dominant arteriopathy with subcortical infarcts and leukoencephalopathy;CADASIL|r|||D3|
+E|D2|disease|sporadic cerebral small-vessel disease|sporadic cerebral small vessel disease;sporadic cerebral small-vessel disease;sporadic small-vessel disease;sporadic SVD;sporadic cerebral SVD;Sporadic Small-Vessel Disease;SVD|r|||D3|
+E|D3|disease|small vessel disease|small vessel disease;small vessel diseases;small-vessel disease;cerebral small vessel disease;SVD|r|||||
+E|D4|disease|migraine|migraine;Migraine|r|||||
+E|D5|disease|migraine with aura|migraine with aura;Migraine with aura|r|||D4|
+E|D6|disease|stroke|stroke;strokes|r|||||
+E|D7|disease|ischemic stroke|ischemic stroke;ischemic strokes|r|||D6|
+E|D8|disease|acute stroke|acute stroke;Acute stroke|r|||D6|
+E|D9|disease|lacunar strokes|lacunar strokes|r|||D6|
+E|D10|disease|hemorrhagic stroke|hemorrhagic stroke|r|||D6|
+E|D11|clinical_event|Cerebral transient ischemic attacks|Cerebral transient ischemic attacks|r|||||
+E|D12|disease|infarcts|infarcts;infarctions|r|||||
+E|D13|disease|lacunar infarcts|lacunar infarcts|r|||D12|
+E|D14|disease|subcortical lacunar infarcts|subcortical lacunar infarcts;Subcortical lacunar infarcts|r|||D13|
+E|D15|disease|intracerebral hemorrhages|intracerebral hemorrhages|r|||||
+E|D16|disease|myocardial infarction|myocardial infarction|r|||||
+E|D17|disease|dementia|dementia|r|||||
+E|D18|disease|vascular dementia|vascular dementia|r|||D17|
+E|D19|disease|mood disorders|mood disorders|r|||||
+E|D20|disease|moderate/major depression|moderate/major depression|r|||||
+E|D21|disease|bipolar disorders|bipolar disorders|r|||||
+E|D22|disease|panic disorders|panic disorders|r|||||
+E|D23|disease|schizophrenia|schizophrenia|r|||||
+E|D24|disease|parkinsonism|parkinsonism|r|||||
+E|D25|disease|hypertension|hypertension;Hypertension|r|||||
+E|D26|disease|Diabetes|Diabetes|r|||||
+E|D27|disease|Hyper-homocysteinemia|Hyper-homocysteinemia|r|||||
+E|D28|disease|hypercholesterolemia|hypercholesterolemia|r|||||
+E|D29|disease|Alzheimer disease|Alzheimer disease;Alzheimer's|r|||||
+E|D30|disease|leukoencephalopathy|leukoencephalopathy|r|||||
+E|D31|disease|neurological disorders|neurological disorders|r|||||
+E|D32|disease|intracranial bleeding|intracranial bleeding|r|||||
+E|D33|disease|petechial hemorrhages|petechial hemorrhages|r|||||
+E|D34|ambiguous_disease|NOTCH3 disease|NOTCH3 disease|p|ambiguous_mapping|||
+E|D35|disease|lacunar syndrome|lacunar syndrome|r|||||
+E|D36|disease|small-vessels angiopathy|small-vessels angiopathy|r|||||
+E|D37|disease|systemic microangiopathy|systemic microangiopathy|r|||||
+E|D38|disease|pseudobulbar palsy|pseudobulbar palsy|r|||||
+E|A1|phenotype|cognitive impairment|cognitive impairment|r|||||
+E|A2|phenotype|disability|disability|r|||||
+E|A3|symptom|aura|aura|r|||||
+E|A4|symptom|psychiatric disturbances|psychiatric disturbances|r|||||
+E|A5|phenotype|cognitive decline|cognitive decline|r|||||
+E|A6|symptom|gait disturbances|gait disturbances|r|||||
+E|A7|symptom|urinary incontinence|urinary incontinence|r|||||
+E|A8|symptom|apathy|apathy|r|||||
+E|A9|symptom|seizures|seizures|r|||||
+E|A10|symptom|spinal cord signs|spinal cord signs|r|||||
+E|A11|phenotype|cognitive disorders|cognitive disorders|r|||||
+E|A12|phenotype|White-matters hyperintensities|White-matters hyperintensities|r|||||
+E|A13|phenotype|hypoperfusion|hypoperfusion|r|||||
+E|A14|phenotype|edema|edema|r|||||
+E|A15|phenotype|dilated perivascular spaces|dilated perivascular spaces|r|||||
+E|A16|phenotype|microbleeds|microbleeds|r|||||
+E|A17|phenotype|brain atrophy|brain atrophy|r|||||
+E|A18|phenotype|hypoxia|hypoxia|r|||||
+E|A19|phenotype|oxidative stress|oxidative stress|r|||||
+E|A20|phenotype|cognitive deficits|cognitive deficits|r|||||
+E|A21|phenotype|fibrosis|fibrosis|r|||||
+E|A22|phenotype|intimal hyperplasia|intimal hyperplasia|r|||||
+E|A23|phenotype|cortical atrophy|cortical atrophy|r|||||
+E|A24|symptom|urge incontinence|urge incontinence|r|||||
+E|A25|phenotype|Hemoglobin A1c|Hemoglobin A1c|r|||||
+E|A26|phenotype|vascular cognitive impairment|vascular cognitive impairment|r|||||
+X|EGFR|b0018|Defined protein repeats, not a gene.
+X|Notch/Lin repeats|b0018|Protein domains, not single genes.
+X|Lin12 repeats|b0019|Protein domains, not single genes.
+X|Delta/Jagged|b0024|Unresolved ligand families, not individual genes.
+X|EGR2|b0024|Context identifies a repeat-domain typo, not a gene.
+X|RNase|b0040|Enzyme class, no individual gene identified.
+X|5E1|b0041|Antibody clone identifier.
+EV|V1|b0002.s1+b0004.s3+b0018.s1+b0039.s2+b0052.s3|bg|bgr|aff|ebr,eda
+EV|V2|b0014.s1+b0024.s2+b0027.s1+b0027.s7|bg|bgr|aff|ebr,eda
+EV|V3|b0021.s8+b0021.s9|bg|hyp|hyp|ho
+EV|V4|b0024.s3+b0024.s8+b0025.s1|bg|hyp|hyp|ho
+EV|V5|b0024.s5|bg|neg|neg|rr,mi
+EV|V6|b0024.s4+b0024.s6|bg|res|na|rr
+EV|V7|b0024.s7|bg|res|aff|rr,cmp
+EV|V8|b0027.s9+b0027.s10|bg|res|aff|rr,cmp
+EV|V9|b0027.s11|bg|hyp|hyp|ho
+EV|V10|b0028.s1|bg|neg|neg|rr
+EV|V11|b0027.s8|bg|bgr|q|unc
+EV|V12|b0028.s7+b0028.s8|bg|hyp|hyp|ho
+EV|V13|b0034.s1+b0034.s3+b0034.s4|bg|co|na|do
+EV|V14|b0034.s5|bg|bgr|aff|ebr
+EV|V15|b0034.s5|bg|hyp|hyp|ho
+EV|V16|b0040.s2+b0040.s3+b0040.s4+b0040.s5+b0040.s8|bg|res|na|rr,mi
+EV|V17|b0040.s9+b0040.s10+b0040.s11|bg|aim|q|none
+EV|V18|b0041.s3|bg|res|na|rr,mi
+EV|V19|b0041.s5+b0041.s6|bg|res|na|rr,mi
+EV|V20|b0042.s1|bg|res|aff|rr,mi
+EV|V21|b0042.s3+b0042.s4|bg|hyp|hyp|ho
+EV|V22|b0044.s2|bg|bgr|aff|ebr
+EV|V23|b0047.s3|bg|res|na|rr
+EV|V24|b0050.s9+b0050.s10|bg|int|hyp|ho
+EV|V25|b0050.s10|bg|res|aff|rr,cmp
+EV|V26|b0021.s4|bg|res|na|rr,cmp
+EV|V27|b0033.s5|bg|res|aff|rr
+EV|V28|b0033.s6|bg|res|aff|rr
+EV|V29|b0033.s7|bg|res|aff|rr,cmp
+EV|V30|b0042.s2|bg|res|aff|rr,cmp
+EV|V31|b0031.s3+b0031.s4|bg|neg|neg|rr,cmp
+EV|V32|b0032.s3|bg|res|aff|rr,cmp
+EV|V33|b0028.s3+b0028.s4+b0028.s5|bg|res|aff|rr
+EV|V34|b0028.s6|bg|res|aff|rr,cmp
+EV|V35|b0044.s6|bg|res|aff|rr
+EV|V36|b0044.s8|bg|res|aff|rr
+EV|V37|b0046.s5|bg|res|aff|rr
+P|G1|D1|sup|c|bg|sup:c:bg:V1;sup:a:bg:V2;unc:c:bg:V4;unc:a:bg:V9;unc:a:bg:V11||V17|Established causation; specific mechanisms and variant classes remain uncertain.
+P|G1|D2|unc|-|bg|unc:a:bg:V24|hedged_claim|V25|White-matter findings support only hypothesized sporadic disease involvement.
+P|G1|D6|sup|a|bg|sup:a:bg:V8|||Mutation-position groups differ in stroke onset.
+P|G1|D13|sup|a|bg|sup:a:bg:V7|||Mutation groups differ in lacunar infarct volume.
+P|G1|D34|unc|-|bg|unc:a:bg:V12|identity,hedged_claim||Proposed spectrum has unresolved boundaries.
+P|G2|D1|neg|-|bg|neg:c:bg:V5||V6+V19|Total gene loss did not produce CADASIL pathology.
+P|G3|D1|unc|-|bg|unc:a:bg:V3|hedged_claim||Proposed aggregate interaction contribution.
+P|G4|D1|nf|-||| |V13|GOM composition alone does not establish disease attribution.
+P|G5|D1|nf|-||||V13|GOM composition alone does not establish disease attribution.
+P|G6|D1|nf|-||||V13|GOM composition alone does not establish disease attribution.
+P|G7|D1|unc|-|bg|unc:a:bg:V15|hedged_claim|V13|Proposed GOM stabilization role.
+P|G7|D29|sup|a|bg|sup:a:bg:V14|||Explicit background plaque-stabilization role in Alzheimer disease.
+P|G8|D1|nf|-||||V13|GOM composition alone does not establish disease attribution.
+P|G9|D1|nf|-||||V13|GOM composition alone does not establish disease attribution.
+P|G10|D1|nf|-||||V20+V21|Combined treatment does not establish an individual gene effect.
+P|G11|D1|nf|-||||V20+V21|Combined treatment does not establish an individual gene effect.
+P|G12|D1|unc|-|bg|unc:a:bg:V21|hedged_claim||Hypothesized pathway mediation of combined treatment effects.
+P|G13|D8|sup|a|bg|sup:a:bg:V22|||Explicit therapeutic use when eligibility criteria are met.
+P|G14|D29|nf|-||||V18|Antibody effect concerns plaques; gene identity remains unresolved.
+P|G15|D1|nf|-||||V23|Inhibitor treatment does not establish an individual gene relation.
+F|F1|group_comparison|NOTCH3 turnover, mutant versus wild-type|Cell models|unknown|negative|available|V26|Half-lives: mutant six days; wild-type 0.7 days.
+F|F2|group_comparison|NOTCH3 mutation position, cognition, infarcts, hyperintensities|EGFR10–11 versus EGFR2–5 mutation carriers|unknown|mixed|not_reported|V7|Milder cognition; fewer infarcts; greater hyperintensity volume.
+F|F3|group_comparison|NOTCH3 mutation position, stroke onset, lesions, survival|EGFR1–6 versus EGFR7–34 variant carriers|unknown|mixed|partial|V8|Stroke onset twelve years earlier.
+F|F4|association|Mutation site, clinical phenotype|CADASIL|not_significant|null|not_reported|V10|Distinct cited study.
+F|F5|mechanism|NOTCH3 exon skipping, signaling, expression|Patient-derived VSMCs|unknown|positive|not_reported|V16|In vitro; clinical efficacy untested.
+F|F6|mechanism|Anti-NOTCH3 antibody, deposits, cerebrovascular function|Transgenic mice|unknown|mixed|not_reported|V19|Deposits persisted; vascular responses improved.
+F|F7|mechanism|SCF plus G-CSF, cognition, vascular damage|CADASIL mouse model|unknown|positive|not_reported|V20|Joint intervention; individual contributions unresolved.
+F|F8|association|NOTCH3-region SNPs, white-matter hyperintensities|Hypertensive subjects|unknown|positive|not_reported|V25|Imaging outcome; sporadic disease involvement remains hypothetical.
+F|F9|correlation|Microbleed number, age|CADASIL cohort|unknown|positive|not_reported|V27|
+F|F10|association|Microbleeds, hemorrhagic stroke, dementia, urge incontinence|CADASIL; location-specific analyses|significant|positive|not_reported|V28|Deep/infratentorial associations exclude hemorrhagic stroke.
+F|F11|association|Microbleeds, ischemic stroke risk|CADASIL with versus without microbleeds|significant|positive|partial|V29|Twofold risk; adjusted analysis.
+F|F12|group_comparison|Endothelial progenitor cell blood levels|CADASIL versus controls|significant|negative|not_reported|V30|
+F|F13|group_comparison|Arterial lumen caliber|CADASIL versus controls; pathological samples|not_significant|null|not_reported|V31|Angiographic and pathological evidence.
+F|F14|group_comparison|Cerebral blood flow, dementia|CADASIL with versus without cognitive impairment|unknown|negative|not_reported|V32|
+F|F15|association|Hypertension, smoking, BMI, cholesterol, homocysteine, stroke|CADASIL|mixed|mixed|not_reported|V33|Hypertension/smoking linked; remaining associations not demonstrated.
+F|F16|group_comparison|Gut microbiota taxonomy|CADASIL versus controls|significant|unknown|not_reported|V34|Causal contribution hypothesized.
+F|F17|association|Low blood pressure, dementia incidence|CADASIL|unknown|positive|not_reported|V35|
+F|F18|correlation|HbA1c, cerebral micro-hemorrhages|Clinical prevention discussion|unknown|unknown|not_reported|V36|Glycated hemoglobin measurement, not individual gene status.
+F|F19|association|Homocysteine, migraine; supplementation, migraine burden|CADASIL with migraine|unknown|mixed|not_reported|V37|Higher homocysteine; supplementation reduced migraine burden.
+C|C1|NOTCH3 mutation-position phenotype associations|b0024.s7+b0027.s9+b0027.s10+b0028.s1|noncritical|unresolved|Different cited studies; retain positive and null results.

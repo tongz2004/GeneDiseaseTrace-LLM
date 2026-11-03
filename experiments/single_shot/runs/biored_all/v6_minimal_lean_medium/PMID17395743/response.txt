@@ -1,0 +1,17 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|PVT1|PVT1|r||human||
+E|D1|disease|end-stage renal disease|end-stage renal disease;ESRD|r||||
+E|D2|disease|type 2 diabetes|type 2 diabetes;diabetes|r||||
+E|S1|phenotype|macroalbuminuria|macroalbuminuria|r||||
+X|plasmacytoma variant translocation gene|b0002.s3|gene name expansion, not a disease mention
+EV|V1|b0002.s2+b0002.s3|ts|res|aff|rr,cmp
+EV|V2|b0002.s5+b0002.s6|ts|res|aff|rr,cmp
+EV|V3|b0002.s7|ts|int|aff|rr
+EV|V4|b0001.s1|ts|int|aff|rr
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V2+V3+V4|||PVT1 SNPs associated with ESRD in T2D
+P|G1|D2|nf|-|||||V3|T2D is study background, not the tested outcome
+F|F1|association|8q24 pooled SNP allele frequencies; ESRD|T2D ESRD cases vs non-macroalbuminuric controls|unknown|unknown|not_reported|V1|pooling screen; no statistics given
+F|F2|association|PVT1 rs2720709; ESRD|105 cases vs 102 T2D controls|significant|positive|available|V1|
+F|F3|association|23 of 98 markers near rs2720709; ESRD|same cases and controls|significant|positive|partial|V2|only P<0.01 threshold reported
+F|F4|association|PVT1 intron 8 rs2648875; ESRD|same cases and controls|significant|positive|available|V2|small sample; no replication

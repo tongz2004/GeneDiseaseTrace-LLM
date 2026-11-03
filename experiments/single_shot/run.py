@@ -52,7 +52,8 @@ def call(model, effort, prompt, workdir, fixed=""):
         command = [str(exe), "exec", "-m", model_id, "-c", f'model_reasoning_effort="{effort}"', "-s", "read-only",
                    "--ignore-user-config", "--skip-git-repo-check", "--ephemeral", "--color", "never", "--json",
                    "-o", str(workdir / "last_message.txt"), "-"]
-        prompt = (fixed + "\n\n" + prompt) if fixed else prompt
+        # Same instructions as Claude's system prompt, so both models receive identical text.
+        prompt = SYSTEM + "\n\n" + ((fixed + "\n\n" + prompt) if fixed else prompt)
     started = datetime.now(timezone.utc)
     result = subprocess.run(command, cwd=workdir, input=prompt.encode("utf-8"), capture_output=True)
     seconds = (datetime.now(timezone.utc) - started).total_seconds()
@@ -64,9 +65,20 @@ def call(model, effort, prompt, workdir, fixed=""):
         text = data.get("result", "")
     else:
         events = [json.loads(l) for l in raw.splitlines() if l.strip().startswith("{")]
-        usage = {"usage_events": [e for e in events if "usage" in json.dumps(e)][-3:], "cost_usd": None}
+        # Codex reports tokens per turn (cached input included in input_tokens) and no price; map them onto the
+        # fields the batch summary reads for Claude.
+        turns = [e["usage"] for e in events if isinstance(e.get("usage"), dict)]
+        total = lambda k: sum(t.get(k, 0) or 0 for t in turns)
+        usage = {"usage": {"input_tokens": total("input_tokens") - total("cached_input_tokens"),
+                           "cache_read_input_tokens": total("cached_input_tokens"), "output_tokens": total("output_tokens"),
+                           "reasoning_output_tokens": total("reasoning_output_tokens")},
+                 "usage_events": turns[-3:], "cost_usd": None}
         last = workdir / "last_message.txt"
         text = last.read_text(encoding="utf-8") if last.exists() else ""
+        # Codex reports account errors (e.g. "out of credits") as JSON events on stdout, not on stderr.
+        errors = [e["message"] for e in events if e.get("type") == "error" and e.get("message")]
+        if errors and not text:
+            usage["error"] = errors[-1]
     return text, {"seconds": round(seconds, 1), "exit_code": result.returncode, **usage,
                   "stderr": result.stderr.decode("utf-8", errors="replace")[-2000:]}
 

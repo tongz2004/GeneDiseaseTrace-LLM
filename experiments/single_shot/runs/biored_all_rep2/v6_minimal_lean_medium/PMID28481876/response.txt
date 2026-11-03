@@ -1,0 +1,28 @@
+META|Opus 5.5 (claude-opus-5-5)|seen: no
+SCOPE|Title and abstract only; no full text or tables
+E|G1|gene|MCM8|MCM8;miniature chromosome maintenance 8|r||human|G2|
+E|G2|gene|MCM protein family|Miniature chromosome maintenance;MCM|p|ambiguous_mapping|human||
+E|G3|gene|CCND1|cyclin D1|r||human||
+E|G4|gene|RB1|Rb|r||human||
+E|G5|gene|CDK4|cyclin-dependent kinase 4|r||human||
+E|D1|disease|cancer|human malignancies;malignancies;cancers;cancer;tumour|r||||
+E|D2|disease|prostate cancer|prostate cancer|r|||D1|
+E|D3|clinical_event|cancer recurrence|cancer recurrence|r||||
+X|severe combined immunodeficiency|b0002|mouse strain descriptor, not disease studied
+X|PC3|b0002|cell line name, gene-like identifier
+X|DU145|b0002|cell line name, gene-like identifier
+EV|V1|b0002.s2|ts|res|aff|rr,do
+EV|V2|b0002.s3|ts|res|aff|rr
+EV|V3|b0002.s4|ts|res|aff|rr
+EV|V4|b0002.s5|ts|res|aff|mi
+EV|V5|b0002.s8|ts|int|hyp|ho
+EV|V6|b0002.s7|ts|res|aff|mi
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V2;unc:c:ts:V5|||Overexpression, copy gain linked to aggressive cancers
+P|G1|D2|sup|c|ts|sup:a:ts:V3;sup:c:ts:V4|||Knockdown/overexpression alters prostate tumour growth
+P|G1|D3|sup|a|ts|sup:a:ts:V3|||Expression associated with prostate cancer recurrence
+P|G3|D1|unc|-|ts|unc:a:ts:V6|support_basis_unresolved||Mechanistic role in cancer cells only
+F|F1|descriptive|MCM8 expression and copy number|various human malignancies|unknown|positive|unread|V1|abstract only
+F|F2|association|MCM8 gain vs aggressive clinical features|several human cancers|unknown|positive|unread|V2|abstract only
+F|F3|association|MCM8 expression vs recurrence|prostate cancer patients|unknown|positive|unread|V3|abstract only
+F|F4|mechanism|MCM8 overexpression/knockdown vs growth, xenografts|prostate cell lines, SCID mice|unknown|positive|unread|V4|
+F|F5|mechanism|cyclin D1/MCM8 interaction, Rb phosphorylation|cancer cells|unknown|positive|unread|V6|

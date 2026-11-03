@@ -1,0 +1,75 @@
+{
+  "v1_card_lean_medium": {
+    "papers_compared": 73,
+    "failed_or_missing": {
+      "biored_all": [],
+      "biored_all_rep2": []
+    },
+    "per_run": {
+      "biored_all": {
+        "precision": 0.76,
+        "recall": 0.386,
+        "f1": 0.512
+      },
+      "biored_all_rep2": {
+        "precision": 0.801,
+        "recall": 0.41,
+        "f1": 0.543
+      }
+    },
+    "supported_jaccard": 0.792,
+    "agreement_on_relation_pairs": 0.728,
+    "relation_pairs": 283,
+    "transitions": {
+      "supported -> supported": 133,
+      "uncertain -> uncertain": 50,
+      "absent -> uncertain": 24,
+      "explicit_negative -> explicit_negative": 23,
+      "uncertain -> supported": 11,
+      "supported -> absent": 10,
+      "uncertain -> absent": 10,
+      "supported -> uncertain": 7,
+      "absent -> supported": 6,
+      "explicit_negative -> absent": 5,
+      "absent -> explicit_negative": 2,
+      "explicit_negative -> supported": 1,
+      "uncertain -> explicit_negative": 1
+    }
+  },
+  "v6_minimal_lean_medium": {
+    "papers_compared": 72,
+    "failed_or_missing": {
+      "biored_all": [
+        "PMID18457324"
+      ],
+      "biored_all_rep2": []
+    },
+    "per_run": {
+      "biored_all": {
+        "precision": 0.707,
+        "recall": 0.56,
+        "f1": 0.625
+      },
+      "biored_all_rep2": {
+        "precision": 0.681,
+        "recall": 0.577,
+        "f1": 0.625
+      }
+    },
+    "supported_jaccard": 0.868,
+    "agreement_on_relation_pairs": 0.774,
+    "relation_pairs": 359,
+    "transitions": {
+      "supported -> supported": 223,
+      "uncertain -> uncertain": 40,
+      "absent -> uncertain": 37,
+      "explicit_negative -> explicit_negative": 15,
+      "uncertain -> supported": 13,
+      "absent -> supported": 12,
+      "uncertain -> absent": 8,
+      "supported -> uncertain": 7,
+      "supported -> absent": 2,
+      "uncertain -> explicit_negative": 2
+    }
+  }
+}

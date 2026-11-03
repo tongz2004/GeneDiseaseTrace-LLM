@@ -1,0 +1,17 @@
+META|claude-opus-5-5|seen: no
+SCOPE|Title and abstract only; full text not provided
+E|G1|gene|PVT1|PVT1;plasmacytoma variant translocation|r||human||
+E|D1|disease|end-stage renal disease|end-stage renal disease;ESRD|r||||
+E|D2|disease|type 2 diabetes|type 2 diabetes|r||||
+E|D3|disease|diabetes|diabetes|r||||
+E|D4|disease|macroalbuminuria|macroalbuminuria|r||||
+X|plasmacytoma|b0002.s3|part of gene name, not disease mention
+X|rs2720709|b0002.s3|SNP identifier, not a gene
+X|rs2648875|b0002.s6|SNP identifier, not a gene
+EV|V1|b0002.s2+b0002.s3|ts|res|aff|rr,cmp
+EV|V2|b0002.s5+b0002.s6|ts|res|aff|rr,cmp
+EV|V3|b0001.s1+b0002.s7|ts|int|hyp|rr
+P|G1|D1|sup|a|ts|sup:a:ts:V1+V2;unc:c:ts:V3|hedged_claim||PVT1 SNPs associated with ESRD; causality hedged
+P|G1|D2|nf|-|||||D2 is study population context, not outcome
+F|F1|association|rs2720709 genotype vs ESRD|T2D ESRD cases vs controls|significant|positive|available|V1|small sample, no replication shown
+F|F2|association|PVT1 region SNPs, rs2648875 vs ESRD|T2D ESRD cases vs controls|significant|positive|partial|V2|abstract only
