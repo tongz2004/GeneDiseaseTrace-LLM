@@ -67,7 +67,7 @@ footer{border-top:1px solid var(--grid);margin-top:40px;padding:20px 0;color:var
  <div class="bar">
   <a class="brand" href="#top">GeneDiseaseTrace-LLM</a>
   <div class="links-row">
-   <a href="#latest">[[Latest results||最新结果]]</a><a href="#deliverable">[[Task results||任务结果]]</a><a href="#compare">[[Comparison||对比]]</a><a href="#task">[[Task||任务]]</a><a href="#workflow">[[Workflow||流程]]</a><a href="#method">[[Method||方法]]</a>
+   <a href="#overview">[[Overview||概览]]</a><a href="#latest">[[Latest results||最新结果]]</a><a href="#deliverable">[[Task results||任务结果]]</a><a href="#compare">[[Comparison||对比]]</a><a href="#task">[[Task||任务]]</a><a href="#workflow">[[Workflow||流程]]</a><a href="#method">[[Method||方法]]</a>
    <a href="#cost">[[Cost||成本]]</a><a href="#pipeline">[[Pipeline||单次请求]]</a><a href="#ab">A/B</a>
    <a href="#pubtator">vs PubTator3</a><a href="#full100">[[100 papers||100 篇结果]]</a><a href="#biored">BioRED</a>
    <a href="#graphs">[[Graphs||二部图]]</a><a href="#next">[[Next||下一步]]</a><a href="#pages">[[Result pages||结果页]]</a>
@@ -81,13 +81,44 @@ footer{border-top:1px solid var(--grid);margin-top:40px;padding:20px 0;color:var
  <h1>GeneDiseaseTrace-LLM</h1>
  <p class="tag">[[Extracting gene–disease relations from full papers with an LLM. Each reported relation includes the source sentences used as evidence.||用 LLM 从论文全文中抽取基因–疾病关系，并为每条关系保留作为证据的原文句子。]]</p>
  <div class="by">[[Updated November 4, 2026 · Manuscript in preparation · First presented by Zeqian Tong on October 28, 2026||更新于 2026 年 11 月 4 日 · 论文准备中 · Zeqian Tong 于 2026 年 10 月 28 日首次汇报]]</div>
+</header>
+
+<section id="overview">
+ <h2>[[Four questions at a glance||四个方面的回答]]</h2>
+ <div class="grid2">
+  <div class="panel"><h3>[[State-of-the-art methods||现有最佳方法]]</h3><ul>
+   <li>[[Gene and disease extraction: supervised biomedical language models such as BioBERT and PubMedBERT, and AIONER, the recognizer in PubTator3. AIONER reports about 92% F1 for genes and 83–84% for diseases on the BioRED test set.||基因和疾病抽取：主要是有监督的生物医学语言模型，如 BioBERT、PubMedBERT，以及 PubTator3 使用的 AIONER。AIONER 报告的 BioRED 测试集 F1 为基因约 92%、疾病 83–84%。]]</li>
+   <li>[[Relation extraction: BioREx, the relation model in PubTator3, reports 79.6% F1 on the BioRED test set, with gold entities and all relation types. RENET2 is the main supervised full-text model for gene–disease relations.||关系抽取：PubTator3 使用的 BioREx 报告的 BioRED 测试集 F1 为 79.6%，该结果使用金标实体，覆盖所有关系类型。RENET2 是基因–疾病关系的主要全文有监督模型。]]</li>
+   <li>[[PubTator3 is the standard public resource and a strong baseline on abstracts, but it is not the best system in every setting: its relations come from abstracts.||PubTator3 是标准的公开资源，在摘要上是很强的基线，但并非所有场景下的最佳系统：它的关系来自摘要。]]</li>
+   <li>[[Direct LLM prompting has generally trailed supervised models. These published scores use different settings and are not directly comparable with ours.||直接提示 LLM 的效果总体上一直落后于有监督模型。这些公开分数的评测设定各不相同，不能和我们的结果直接比较。]]</li>
+  </ul></div>
+  <div class="panel"><h3>[[Evaluation||评测方式]]</h3><ul>
+   <li>[[Both tasks are usually scored with precision, recall and F1. Common entity benchmarks are NLM-Gene, NCBI Disease, BC5CDR and BioRED; common relation benchmarks are BioRED, EU-ADR, RENET2 and BioTriplex.||这两项任务通常用精确率、召回率和 F1 评价。常用的实体基准有 NLM-Gene、NCBI Disease、BC5CDR 和 BioRED，常用的关系基准有 BioRED、EU-ADR、RENET2 和 BioTriplex。]]</li>
+   <li>[[We used BioRED, EU-ADR, RENET2 and BioTriplex. BioTriplex is manually annotated on full text, and its 30 evaluation articles were locked before any run.||我们使用 BioRED、EU-ADR、RENET2 和 BioTriplex。BioTriplex 是人工标注的全文语料，其中 30 篇评测文章在所有运行之前就已锁定。]]</li>
+   <li>[[All systems share one scorer with one-to-one matching, and we report failed documents.||所有系统使用同一个评分程序，采用一对一匹配，并报告失败的文档。]]</li>
+   <li>[[Gold sets are selective, so measured precision can understate correctness. One annotator also checked samples blind, including whether cited sentences support each relation.||金标并不完整，所以实测精确率可能偏低。一位标注者还做了盲法抽查，包括所引句子是否支持关系。]]</li>
+  </ul></div>
+  <div class="panel"><h3>[[Methodology||方法]]</h3><ul>
+   <li>[[A script numbers each paper's sentences. The LLM receives a 108-word task prompt and an output format in one request and cites sentence IDs. Local code rebuilds the quotes and checks the output, with at most one repair request.||脚本先给论文的句子编号。LLM 在一次请求中收到 108 词的任务提示词和输出格式，并引用句子编号。本地代码再还原原文并检查输出，最多发起一次修复请求。]]</li>
+   <li>[[Around it we compared detailed rules, abstract and full-text input, a second LLM, PubTator3, BioREx and RENET2.||围绕这个流程，我们比较了详细规则、摘要和全文输入、第二个 LLM，以及 PubTator3、BioREx 和 RENET2。]]</li>
+   <li>[[Do we expect to outperform existing methods? Not on abstracts. On full text we expect higher recall than abstract-level tools and RENET2, but not BioREx run on the same paragraphs.||我们预期它会超过现有方法吗？在摘要上不会。在全文上，我们预期召回率高于摘要级工具和 RENET2，但不会超过在相同段落上运行的 BioREx。]]</li>
+   <li>[[Similar approaches exist: SPIRES, DRAGON-AI, GoLLIE and CoRE. We do not claim a new algorithm; our contribution is a controlled evaluation.||类似的方法已有 SPIRES、DRAGON-AI、GoLLIE 和 CoRE。我们不主张提出了新算法，贡献在于一项受控评测。]]</li>
+  </ul></div>
+  <div class="panel"><h3>[[Preliminary findings||初步发现]]</h3><ul>
+   <li>[[Reading the full text raises recall: from 0.37 to 0.81 for Claude on the locked set. On 49 further articles the gain was 0.322 [0.133, 0.477]. BioREx gained too; RENET2 did not.||读全文能提高召回率：在锁定集上，Claude 从 0.37 升到 0.81；在另外 49 篇文章上提高 0.322 [0.133, 0.477]。BioREx 也有提升，RENET2 没有。]]</li>
+   <li>[[A short prompt beat our detailed rule set on BioRED recall (0.604 vs 0.418). This concerns one rule set, not detailed rules in general.||在 BioRED 上，短提示词的召回率高于我们的详细规则集（0.604 对 0.418）。这只说明这一份规则集，不代表所有详细规则。]]</li>
+   <li>[[On BioRED Test, relation F1 was close to PubTator3's (0.614 vs 0.680). Gene extraction was stronger (0.968 vs 0.917) and disease extraction weaker (0.874 vs 0.958).||在 BioRED Test 上，关系 F1 与 PubTator3 接近（0.614 对 0.680）。基因抽取更好（0.968 对 0.917），疾病抽取较弱（0.874 对 0.958）。]]</li>
+   <li>[[Cited sentences alone were sufficient for 59–75% of supported relations, so citations guide review and do not replace it.||所引句子单独足以支持的关系占 59–75%，所以引用可以引导复核，但不能代替复核。]]</li>
+   <li>[[Safety filters stopped 21% of full texts with Claude Opus 5.5 and none with Opus 4.8 on the 100 papers, so a hosted model can limit coverage.||Claude Opus 5.5 的安全机制中止了 21% 的全文，而 Opus 4.8 在 100 篇上没有中止，所以托管模型可能限制覆盖范围。]]</li>
+  </ul></div>
+ </div>
  <div class="tiles">
   <div class="tile"><div class="k">[[Full-text recall||全文召回率]]</div><div class="v">0.81 / 0.83</div><div class="s">[[BioTriplex locked set / further articles, valid articles only; abstract input 0.37 / 0.31||BioTriplex 锁定集 / 新增文章，只算有结果的文章；只读摘要时为 0.37 / 0.31]]</div></div>
   <div class="tile"><div class="k">[[BioRED Test F1||BioRED Test F1]]</div><div class="v">0.61</div><div class="s">[[PubTator3 0.68; no clear difference||PubTator3 为 0.68，两者没有明显差异]]</div></div>
   <div class="tile"><div class="k">[[Citations sufficient alone||所引句子足以支持关系]]</div><div class="v">59–75%</div><div class="s">[[of supported pairs, BioRED–BioTriplex; one annotator||占 supported 关系的比例（BioRED–BioTriplex），由一位标注者判断]]</div></div>
   <div class="tile"><div class="k">[[Full texts lost to safety filters||被安全机制拦截的全文]]</div><div class="v">13–29%</div><div class="s">[[Claude Opus 5.5, two BioTriplex batches; about $0.40 per completed article||Claude Opus 5.5，两批 BioTriplex；每完成一篇约 $0.40]]</div></div>
  </div>
-</header>
+</section>
 
 <section id="latest">
  <h2>[[Latest results||最新结果]]</h2>
