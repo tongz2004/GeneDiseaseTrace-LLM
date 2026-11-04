@@ -89,11 +89,15 @@ def build(paper, abstract_ids, only_abstract):
 def main():
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--abstract", action="store_true")
+    parser.add_argument("--batch2", action="store_true", help="second validation batch (run set biotriplex2)")
     args = parser.parse_args()
-    sample = json.loads((BIOTRIPLEX / "sample_biotriplex.json").read_text(encoding="utf-8"))
-    gold = json.loads((BIOTRIPLEX / "gold_biotriplex.json").read_text(encoding="utf-8"))
+    global RUNS
+    suffix = "2" if args.batch2 else ""
+    RUNS = RUNS.with_name(f"biotriplex{suffix}")
+    sample = json.loads((BIOTRIPLEX / f"sample_biotriplex{suffix}.json").read_text(encoding="utf-8"))
+    gold = json.loads((BIOTRIPLEX / f"gold_biotriplex{suffix}.json").read_text(encoding="utf-8"))
     name = "renet2_abstract" if args.abstract else "renet2_fulltext"
-    work = HERE / "work" / name
+    work = HERE / "work" / f"{name}{suffix}"
     work.mkdir(parents=True, exist_ok=True)
     docs, sents, anns_out, id_of, stats = [], [], [], {}, []
     for paper in sample["evaluation"]:

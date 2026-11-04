@@ -32,8 +32,9 @@ EMPTY = {"tp_gold": 0, "fn": 0, "fn_symptom": 0, "our_supported": 0, "tp_ours": 
 
 
 def main(variant="v6_minimal_lean_medium", run_set="biotriplex", abstract=False):
-    gold = json.loads((HERE / "gold_biotriplex.json").read_text(encoding="utf-8"))
-    sample = json.loads((HERE / "sample_biotriplex.json").read_text(encoding="utf-8"))
+    suffix = "2" if run_set == "biotriplex2" else ""  # second validation batch, see batch2_protocol.md
+    gold = json.loads((HERE / f"gold_biotriplex{suffix}.json").read_text(encoding="utf-8"))
+    sample = json.loads((HERE / f"sample_biotriplex{suffix}.json").read_text(encoding="utf-8"))
     papers = sample["evaluation_abstract" if abstract else "evaluation"]
     base = RUNS / run_set / variant
     out = lambda p: base / p / "outputs"

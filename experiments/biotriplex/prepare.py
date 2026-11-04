@@ -1,6 +1,7 @@
 """BioTriplex full-text articles as input for the frozen single-shot method, plus a pair-level gold standard.
 
-Usage: python experiments/biotriplex/prepare.py
+Usage: python experiments/biotriplex/prepare.py            (locked evaluation set and tuning set)
+       python experiments/biotriplex/prepare.py --batch2   (second validation batch, see batch2_protocol.md)
 
 Input: data/splits.json from https://github.com/PanagiotisFytas/BioTriplex ("Preprocessed BioTriplex"; commit in
 data/SOURCE_COMMIT). Fytas et al., Bioinformatics 2026 (doi:10.1093/bioinformatics/btag037). 100 PMC open-access
@@ -27,6 +28,8 @@ Sample: evaluation set = val + test (30 articles), fixed before any run; tuning 
 (random.Random(20261103)), used only to check these rules. Written to sample_biotriplex.json, with each evaluation
 article's PMID (NCBI ID converter, cached in data/pmids.json) for the PubTator3 baseline.
 Output: papers/BTX<pmcid>.xml, papers/BTXA<pmcid>.xml, gold_biotriplex.json (same gold under both IDs).
+--batch2 applies the same rules to every train article with relation links outside the tuning set and writes
+sample_biotriplex2.json and gold_biotriplex2.json; the locked files are not touched.
 """
 import hashlib
 import importlib.util
@@ -243,6 +246,30 @@ def build(pmcid, record):
     return gold, stats, sum(len(x["text"]) for x in data.values())
 
 
+def batch2():
+    records = json.loads(DATA.read_text(encoding="utf-8"))
+    frozen = json.loads(SAMPLE.read_text(encoding="utf-8"))
+    if frozen["data_sha256"] != hashlib.sha256(DATA.read_bytes()).hexdigest():
+        raise SystemExit("data no longer match sample_biotriplex.json")
+    used = {p.removeprefix("BTX") for p in frozen["evaluation"] + frozen["tuning"]}
+    articles = sorted(p for p, r in records.items() if r["split"] == "train" and p not in used
+                      and any(x["entity_linkings"] for x in r["section_data"].values()))
+    pmids = pmid_map(articles)
+    sample = {"source": frozen["source"], "commit": frozen["commit"], "data_sha256": frozen["data_sha256"],
+              "evaluation": [f"BTX{p}" for p in articles], "evaluation_abstract": [f"BTXA{p}" for p in articles],
+              "papers": [{"paper_id": f"BTX{p}", "pmid": pmids[p]} for p in articles]}
+    (HERE / "sample_biotriplex2.json").write_text(json.dumps(sample, indent=2), encoding="utf-8")
+    gold, rows = {}, []
+    for p in articles:
+        g, _, chars = build(p, records[p])
+        gold[f"BTX{p}"] = gold[f"BTXA{p}"] = g
+        rows.append((len(g["relations"]), sum(r["body_only"] for r in g["relations"]), chars))
+    (HERE / "gold_biotriplex2.json").write_text(json.dumps(gold, ensure_ascii=False, indent=1), encoding="utf-8")
+    print(f"batch 2: {len(rows)} articles, {sum(r[0] > 0 for r in rows)} with gene-disease relations; relations "
+          f"{sum(r[0] for r in rows)} (only outside the abstract {sum(r[1] for r in rows)}); "
+          f"characters median {sorted(r[2] for r in rows)[len(rows) // 2]}")
+
+
 def main():
     records = json.loads(DATA.read_text(encoding="utf-8"))
     split = {p: r["split"] for p, r in records.items()}
@@ -280,4 +307,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    batch2() if "--batch2" in sys.argv else main()

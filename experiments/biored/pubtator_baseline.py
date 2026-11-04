@@ -37,7 +37,8 @@ DATASETS = {"biored50": (HERE / "sample_50.json", HERE / "papers", False),
             "biored_testrest": (HERE / "sample_test_rest.json", HERE / "papers", False),
             "euadr": (HERE.parent / "euadr" / "sample_euadr.json", HERE.parent / "euadr" / "papers", False),
             "renet2": (HERE.parent / "renet2" / "sample_renet2_40.json", HERE.parent / "renet2" / "papers", True),
-            "biotriplex": (HERE.parent / "biotriplex" / "sample_biotriplex.json", HERE.parent / "biotriplex" / "papers", True)}
+            "biotriplex": (HERE.parent / "biotriplex" / "sample_biotriplex.json", HERE.parent / "biotriplex" / "papers", True),
+            "biotriplex2": (HERE.parent / "biotriplex" / "sample_biotriplex2.json", HERE.parent / "biotriplex" / "papers", True)}
 
 
 def fetch_abstract(pmid, full=False):

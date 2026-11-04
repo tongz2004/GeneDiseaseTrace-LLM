@@ -50,10 +50,14 @@ def write(path, rows, fields):
 def main():
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--abstract", action="store_true")
+    parser.add_argument("--batch2", action="store_true", help="second validation batch (run set biotriplex2)")
     args = parser.parse_args()
-    sample = json.loads((PROJECT / "experiments" / "biotriplex" / "sample_biotriplex.json").read_text(encoding="utf-8"))
+    global RUNS
+    suffix = "2" if args.batch2 else ""
+    RUNS = RUNS.with_name(f"biotriplex{suffix}")
+    sample = json.loads((PROJECT / "experiments" / "biotriplex" / f"sample_biotriplex{suffix}.json").read_text(encoding="utf-8"))
     name = "biorex_abstract" if args.abstract else "biorex_fulltext"
-    work = HERE / "work" / name
+    work = HERE / "work" / f"{name}{suffix}"
     work.mkdir(parents=True, exist_ok=True)
     docs, doc_of = [], {}
     for paper in sample["evaluation"]:
@@ -61,7 +65,7 @@ def main():
         article, kept, _, _ = load(paper)
         blocks = [b for b in kept if b["content_type"] != "section_heading"]
         if args.abstract:
-            abstract_ids = set(json.loads((PROJECT / "experiments" / "biotriplex" / "gold_biotriplex.json")
+            abstract_ids = set(json.loads((PROJECT / "experiments" / "biotriplex" / f"gold_biotriplex{suffix}.json")
                                           .read_text(encoding="utf-8"))[paper]["abstract_blocks"])
             blocks = [b for b in kept if b["block_id"] in abstract_ids]
         pt = RUNS / "pubtator3" / paper / "outputs"

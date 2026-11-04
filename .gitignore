@@ -41,6 +41,7 @@ experiments/renet2/gold_renet2.json
 experiments/biotriplex/data/
 experiments/biotriplex/papers/
 experiments/biotriplex/gold_biotriplex.json
+experiments/biotriplex/gold_biotriplex2.json
 # article paragraphs shown to the annotator
 experiments/biotriplex/precision_check/
 # BioREx: vendored code, downloaded weights, its Python 3.12 environment and working files stay local
@@ -55,11 +56,13 @@ experiments/biotriplex/scope_check/
 experiments/single_shot/runs/renet2/*/*/
 experiments/single_shot/runs/euadr/*/*/
 experiments/single_shot/runs/biotriplex/*/*/
+experiments/single_shot/runs/biotriplex2/*/*/
 experiments/single_shot/runs/biotriplex_gpt/*/*/
 experiments/single_shot/runs/biotriplex_tune/*/*/
 experiments/single_shot/runs/renet2/*/*rows*.csv
 experiments/single_shot/runs/euadr/*/*rows*.csv
 experiments/single_shot/runs/biotriplex/*/*rows*.csv
+experiments/single_shot/runs/biotriplex2/*/*rows*.csv
 experiments/single_shot/runs/biotriplex_gpt/*/*rows*.csv
 # Adjudication sheets carry abstract text, the answer key and annotator labels; only the README is kept
 experiments/biored/adjudication/*/*
