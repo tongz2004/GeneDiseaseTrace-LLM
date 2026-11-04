@@ -2,9 +2,10 @@
 
 # GeneDiseaseTrace-LLM
 
-Evidence-traceable extraction of gene–disease relations from full-text biomedical papers with an LLM.
-Every reported relation points to the sentence(s) that support it and is labeled as the paper's own finding or as
-background knowledge; pairs the text only hints at are flagged *uncertain* instead of being reported.
+Gene–disease relation extraction from biomedical papers with an LLM, with sentence citations and a full evaluation
+on abstracts and full texts. Each reported relation cites the sentences behind it and is labeled as the paper's own
+finding or as background knowledge; pairs with weak evidence are flagged *uncertain*. A deterministic check confirms that
+every citation resolves; whether a citation supports the relation still needs human review.
 
 **Project page (results, method and interactive graphs):** https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/
 
@@ -13,30 +14,42 @@ For each of 100 PMC full-text papers (JATS XML): extract all genes and diseases,
 pair whether the paper gives evidence of an association, correlation or causal relationship, and build one
 gene–disease bipartite graph per paper.
 
+> **Branch note.** The results below are current. This branch still holds the October pipeline (decision card V1); the minimal prompt and the BioTriplex, comparator and citation-check code are not in it yet, so the layout and commands below cover the October pipeline only.
+
 ## Method
-1. **Rules first.** Decision rules (R1–R16) and 35 boundary cases were developed on pilot papers and kept as a
-   versioned skill (`skill_snapshot/`, version 1.3.0).
-2. **Compressed into a decision card.** The full rules (about 20k tokens) were condensed into a short card that
-   makes the same decisions on 110 of 112 boundary-case checks, stable over 3 runs.
-3. **One request per paper.** A script packs the card, a compact output format and the paper's numbered sentences
-   into a single tool-less request to Claude Opus 5.5. The model answers with short lines that cite sentence IDs
-   instead of copying text.
-4. **Deterministic post-processing.** A script rebuilds quotes and character offsets from the source, completes
-   the gene × disease matrix and writes entity, mention, evidence and pair tables plus GraphML. A contract validator
-   checks every quote and offset; only if it finds problems is the error list sent back once for repair.
+1. **Packing.** A script splits the paper into numbered blocks and sentences with stable IDs.
+2. **One request per paper.** A 108-word task prompt and a 595-word output format go to the LLM in a single tool-less
+   request. The model answers with short lines that cite sentence IDs instead of copying text. This minimal prompt
+   (V6) is the default system.
+3. **Deterministic post-processing.** A script rebuilds quotes and character offsets, completes the gene × disease
+   matrix and writes entity, mention, evidence and pair tables plus GraphML. A validator checks the surface forms and
+   citations; only if it finds problems is the error list sent back once for repair.
+
+**Earlier design.** The project began with decision rules (R1–R16) and 35 boundary cases (`skill_snapshot/`), condensed
+into a 1,045-word decision card (V1). The evaluation below replaced V1 with V6 as the default, because the card lowered
+recall on BioRED.
 
 ## Results
-| Evaluation | Result | Details |
-|---|---|---|
-| A/B test on 12 frozen papers | The card agrees with the full rules on 97.6% of pairs and is 11% cheaper; low reasoning effort is 2.4× faster but finds fewer relations. V1 (card, medium effort) was chosen. | [A/B summary](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/results/ab/ab_summary.html) |
-| All 100 papers | 100/100 valid; 972 supported relations (plus 451 uncertain, 47 explicitly negative); $0.44 and 78 s per paper. PubTator3 reports 198 relations; 90% of ours rest on text beyond the abstract. | [vs PubTator3](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/results/full100/vs_pubtator.html) |
-| BioRED, all 419 abstracts with a gene–disease relation | Zero-shot: precision 0.89, recall 0.43, F1 0.58 (0.81 / 0.58 / 0.68 counting *uncertain*); stable across Train / Dev / Test. On 50 test abstracts: precision on par with PubTator3 (0.84 vs 0.83), recall lower (0.41 vs 0.65). | [BioRED page](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/results/biored/biored_results.html) |
-| Bipartite graphs | One graph per paper, BioRED graphs overlaid on the gold relations, and all 100 papers merged into one network | [Graphs](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/graphs/) |
+All systems use one-to-one matching, so one gold relation can credit only one prediction. Brackets are 95% document-level
+bootstrap intervals. The [project page](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/) has the full tables.
 
-**Limitations.** Full-text precision has not been checked by hand (BioRED measures abstracts). Recall on BioRED is
-lower than PubTator3's, mostly because hedged statements are kept as *uncertain* and symptoms are kept apart from
-diseases. Entities are not mapped to database IDs (NCBI Gene / MeSH). Agreement with BioRED's novel/background
-label is 75%. Pretraining exposure of the model to these texts cannot be ruled out.
+| Evaluation | Result |
+|---|---|
+| BioRED Test, 100 abstracts | Minimal prompt: precision 0.680, recall 0.560, F1 0.614. PubTator3: F1 0.680; paired difference −0.064 [−0.151, 0.033]. PubTator3's relation model was trained on data including BioRED. |
+| Decision card ablation, BioRED Dev+Test | The card lowered recall (0.418 vs 0.604) and F1 (0.551 vs 0.665). This describes one card, which changed many rules and the length at once. |
+| BioTriplex, locked set of 30 full texts | Claude Opus 5.5 recall rose from 0.366 on abstracts to 0.813 on full text (25 valid articles); F1 0.525 against 0.293 for BioREx and 0.361 for RENET2 on all 30. GPT-6.1 Sol: recall 0.858, F1 0.433 (27 valid). |
+| BioTriplex, 49 further full texts | The prespecified comparison, with failures counted as empty, gave a recall gain of +0.322 [0.133, 0.477]. On the 35 valid articles: recall 0.829, F1 0.474; F1 exceeded RENET2's by 0.262 [0.148, 0.365]. These articles were chosen after the locked results were known, so they are further validation and not a held-out test. |
+| Citation check, 30 pairs per corpus | Cited sentences alone were judged sufficient for 58.5% [45.8, 70.9] of supported pairs on BioRED and 75.4% [58.0, 89.1] on BioTriplex; 5.6% on each were judged unsupported. One annotator. |
+| Cost | About $0.40 per full text and $0.07 per abstract at list prices, including repair requests. |
+
+**Limitations.**
+- Safety filters left 4 of 30 and 14 of 49 BioTriplex full texts without a Claude result. Valid-article results apply only to articles that were not blocked. With failures counted as empty, recall on the 49 articles is 0.632, against 0.848 for BioREx, which runs locally.
+- All blinded checks used one annotator who knew the hypotheses; there is no second annotator.
+- BioTriplex annotation is not exhaustive, so measured precision can understate textual correctness.
+- F1 comparisons depend on entity scope and training text, so they should not be read as better relation judgment.
+- Entities are not mapped to database IDs (NCBI Gene / MeSH), and the model may have seen these texts in pretraining.
+
+The original task's 100 papers have no gold labels, so they give output counts only ([V1 outputs against PubTator3](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/results/full100/vs_pubtator.html), [bipartite graphs](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/graphs/)). The [October result pages](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/results/ab/ab_summary.html) used the card and an earlier scorer.
 
 ## Repository layout
 | Path | Contents |
@@ -72,5 +85,6 @@ The PubTator3 comparison reads the baseline's aligned annotations in `outputs/`;
 `.\baseline\run.ps1 -Command run` (see `baseline/README.md`).
 
 ## Data and credits
-BioRED: Luo et al., *Briefings in Bioinformatics* 2022 (public domain, NCBI). PubTator3: NCBI. The 100 input
-papers and full-text prompts are not redistributed here.
+BioRED: Luo et al., *Briefings in Bioinformatics* 2022 (public domain, NCBI). BioTriplex: Collins et al.,
+*Bioinformatics* 2026. PubTator3: NCBI. BioREx: Lai et al. 2023. RENET2: Su et al. 2021. Input papers, benchmark texts and
+full-text prompts are not redistributed here.
