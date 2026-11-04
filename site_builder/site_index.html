@@ -67,7 +67,7 @@ footer{border-top:1px solid var(--grid);margin-top:40px;padding:20px 0;color:var
  <div class="bar">
   <a class="brand" href="#top">GeneDiseaseTrace-LLM</a>
   <div class="links-row">
-   <a href="#latest">[[Latest results||最新结果]]</a><a href="#task">[[Task||任务]]</a><a href="#workflow">[[Workflow||流程]]</a><a href="#method">[[Method||方法]]</a>
+   <a href="#latest">[[Latest results||最新结果]]</a><a href="#deliverable">[[Task results||任务结果]]</a><a href="#v1v6">V1 / V6</a><a href="#task">[[Task||任务]]</a><a href="#workflow">[[Workflow||流程]]</a><a href="#method">[[Method||方法]]</a>
    <a href="#cost">[[Cost||成本]]</a><a href="#pipeline">[[Pipeline||单次请求]]</a><a href="#ab">A/B</a>
    <a href="#pubtator">vs PubTator3</a><a href="#full100">[[100 papers||100 篇结果]]</a><a href="#biored">BioRED</a>
    <a href="#graphs">[[Graphs||二部图]]</a><a href="#next">[[Next||下一步]]</a><a href="#pages">[[Result pages||结果页]]</a>
@@ -130,6 +130,62 @@ footer{border-top:1px solid var(--grid);margin-top:40px;padding:20px 0;color:var
   <p class="note">[[Citations point curators to evidence and do not replace review. Of 12 false-citation controls, 9 were judged unsupported. These checks are exploratory: there was one annotator, who knew the study hypotheses.||引用可以引导复核，不能代替复核。12 条假引用对照中，9 条被判为不支持。这些检查是探索性的：只有一位标注者，且了解研究假设。]]</p>
  </div>
  <div class="callout"><b>[[About the sections below||关于下面的内容]]</b><p>[[They record the October 28 task presentation, which used the decision card (V1) and an earlier scorer that could credit one gold relation several times. The workflow, cost and 100-paper descriptions remain as a record; for evaluation results, use this section and the BioRED section.||下面记录的是 10 月 28 日的任务汇报，当时用的是判定卡（V1）和较早的评分方式，一个金标关系可能被多次计分。流程、成本和 100 篇论文的内容作为记录保留；评测结果请以本节和 BioRED 一节为准。]]</p></div>
+</section>
+
+<section id="deliverable">
+ <h2>[[The original task, redone||重新完成的原任务]]</h2>
+ <p class="kicker">[[The task asked for genes, diseases and a gene–disease graph for each of 100 papers. We reran it with the current system (V6) and scored entity extraction separately for the first time.||原任务要求为 100 篇论文抽取基因和疾病，并为每篇构建基因–疾病图。我们用当前系统（V6）重新完成了任务，并第一次单独评测了实体抽取。]]</p>
+ <div class="grid2">
+  <div class="panel scroll"><h3>[[Task 1: gene and disease extraction||任务 1：基因和疾病抽取]]</h3><table>
+   <tr><th>[[BioRED Test, F1 by document concept||BioRED Test，文档概念层 F1]]</th><th class="num">[[Genes||基因]]</th><th class="num">[[Diseases||疾病]]</th></tr>
+   <tr><td>[[V6 (98 abstracts)||V6（98 篇摘要）]]</td><td class="num"><b>0.968</b></td><td class="num">0.874</td></tr>
+   <tr><td>[[V1 (100 abstracts)||V1（100 篇摘要）]]</td><td class="num">0.936</td><td class="num">0.855</td></tr>
+   <tr><td>[[PubTator3 (100 abstracts)||PubTator3（100 篇摘要）]]</td><td class="num">0.917</td><td class="num"><b>0.958</b></td></tr>
+  </table><p class="note">[[Diseases include phenotypic features, as in BioRED. PubTator3's recognizer was trained on data including BioRED, and its annotations passed through our text alignment.||疾病包含表型特征，与 BioRED 一致。PubTator3 的实体模型训练数据包含 BioRED，其标注经过了我们的文本对齐。]]</p></div>
+  <div class="panel"><h3>[[Task 2: relations on the 100 papers||任务 2：100 篇论文上的关系]]</h3><ul>
+   <li>[[V6 completed 81 of 100 papers and reported 1,180 supported relations, plus 325 uncertain and 31 explicitly negative. V1 reported 881 on the same 81 papers.||V6 完成了 100 篇中的 81 篇，报告 1,180 条 supported 关系，另有 325 对 uncertain、31 对 explicit_negative。V1 在同样 81 篇上报告了 881 条。]]</li>
+   <li>[[The other 19 papers were stopped by the provider's safety filter. Their graphs keep the October V1 result, marked [V1, October].||另外 19 篇被服务商的安全机制中止。它们的图保留十月的 V1 结果，并标为 [V1, October]。]]</li>
+   <li>[[These papers have no gold labels, so more relations does not mean more correct relations.||这些论文没有金标，所以关系更多不等于正确的关系更多。]]</li>
+  </ul></div>
+ </div>
+</section>
+
+<section id="v1v6">
+ <h2>[[V1 and V6 compared||V1 与 V6 对比]]</h2>
+ <p class="kicker">[[V1 is the 1,045-word decision card from October. V6 is the 108-word task prompt that replaced it. Both share the same output format, model and validator. Both sets of results stay on this site.||V1 是十月的 1,045 词判定卡，V6 是取代它的 108 词任务提示词。两者的输出格式、模型和校验器相同。两版结果都保留在本站。]]</p>
+ <div class="panel scroll"><table>
+  <tr><th>[[Benchmark, one-to-one scoring||基准，一对一匹配]]</th><th class="num">[[V1: P / R / F1||V1：精确率 / 召回率 / F1]]</th><th class="num">[[V6: P / R / F1||V6：精确率 / 召回率 / F1]]</th><th class="num">[[V6 − V1, F1||V6 − V1，F1]]</th></tr>
+  <tr><td>[[BioRED Dev+Test (143 abstracts)||BioRED Dev+Test（143 篇摘要）]]</td><td class="num">0.809 / 0.418 / 0.551</td><td class="num">0.739 / 0.604 / <b>0.665</b></td><td class="num">+0.114 [0.040, 0.197]</td></tr>
+  <tr><td>[[BioRED Test (100 abstracts)||BioRED Test（100 篇摘要）]]</td><td class="num">0.755 / 0.386 / 0.511</td><td class="num">0.680 / 0.560 / <b>0.614</b></td><td class="num">[[not paired here||此处未配对]]</td></tr>
+  <tr><td>[[EU-ADR abstracts||EU-ADR 摘要]]</td><td class="num">0.430 / 0.451 / 0.440</td><td class="num">0.429 / 0.588 / <b>0.496</b></td><td class="num">+0.060 [0.007, 0.113]</td></tr>
+  <tr><td>[[RENET2 full texts||RENET2 全文]]</td><td class="num">0.274 / 0.337 / <b>0.302</b></td><td class="num">0.217 / 0.403 / 0.282</td><td class="num">−0.018 [−0.061, 0.037]</td></tr>
+  <tr><td>[[Genes, BioRED Test (F1)||基因，BioRED Test（F1）]]</td><td class="num">0.936</td><td class="num"><b>0.968</b></td><td class="num">[[not paired||未配对]]</td></tr>
+  <tr><td>[[Diseases, BioRED Test (F1)||疾病，BioRED Test（F1）]]</td><td class="num">0.855</td><td class="num"><b>0.874</b></td><td class="num">[[not paired||未配对]]</td></tr>
+ </table></div>
+ <p class="note">[[V6 had 94 of 100 valid EU-ADR abstracts and 33 of 40 RENET2 articles, against all of them for V1. Paired differences use documents valid for both. V6 was selected after BioRED Test results were seen, and V1 was not run on BioTriplex.||V6 在 EU-ADR 上有效 94/100，在 RENET2 上有效 33/40，V1 都是全部有效。配对差只用双方都有效的文档。V6 是看过 BioRED Test 结果后才选定的，V1 没有在 BioTriplex 上运行。]]</p>
+ <div class="grid2">
+  <div class="panel scroll"><h3>[[The same 81 papers from the original task||原任务中相同的 81 篇论文]]</h3><table>
+   <tr><th></th><th class="num">V1</th><th class="num">V6</th></tr>
+   <tr><td>[[Supported relations||Supported 关系]]</td><td class="num">881</td><td class="num">1,180</td></tr>
+   <tr><td>[[Uncertain / explicitly negative||Uncertain / 明确否定]]</td><td class="num">390 / 46</td><td class="num">325 / 31</td></tr>
+   <tr><td>[[Supported by both||两版都判 supported]]</td><td class="num" colspan="2">759</td></tr>
+   <tr><td>[[Supported only by this version||只有这一版判 supported]]</td><td class="num">122</td><td class="num">421</td></tr>
+   <tr><td>[[Cost per paper||每篇费用]]</td><td class="num">$0.41</td><td class="num">$0.64</td></tr>
+   <tr><td>[[Papers needing a repair request||需要修复请求的论文]]</td><td class="num">23 / 81</td><td class="num">62 / 81</td></tr>
+  </table><p class="note">[[Of the 421 V6-only pairs, V1 labeled 193 uncertain, 153 not found and 3 negative; 72 had no matching V1 pair. These papers have no gold labels, so this shows disagreement, not which version is right.||在 421 对只有 V6 判 supported 的配对中，V1 判 193 对 uncertain、153 对 not_found、3 对否定，72 对没有对应配对。这些论文没有金标，所以这里只说明差异，不说明谁对。]]</p></div>
+  <div class="panel"><h3>[[What the comparison shows||这个对比说明了什么]]</h3><ul>
+   <li>[[V6 has higher recall on all three relation benchmarks. Its F1 is higher on BioRED and EU-ADR, and not distinguishable on RENET2.||V6 在三个关系基准上的召回率都更高。F1 在 BioRED 和 EU-ADR 上更高，在 RENET2 上无法区分。]]</li>
+   <li>[[V1 is not worse on everything: its precision is equal or higher, it is cheaper per paper, and it produced far fewer format errors.||V1 并非样样更差：精确率相同或更高，每篇更便宜，格式错误也少得多。]]</li>
+   <li>[[V1's October runs had almost no safety-filter failures, while V6 runs from November 3 had many. All V1 full-text runs came first, so time and prompt cannot be separated.||V1 在十月的运行几乎没有安全机制失败，V6 从 11 月 3 日起的运行失败很多。V1 的全文运行都在更早的时间，所以时间和提示词无法区分。]]</li>
+   <li>[[This describes these two prompts. V1 changed many rules and its length at once, so the comparison does not say which rule matters.||这只说明这两个提示词。V1 同时改变了很多规则和长度，所以这个对比不能说明是哪条规则起作用。]]</li>
+  </ul></div>
+ </div>
+ <div class="links" style="margin-top:16px">
+  <a href="graphs/index.html">[[V6 graphs (current)||V6 二部图（当前）]]<span>[[81 V6 papers, plus 19 labeled V1 results||81 篇 V6，另有 19 篇标注的 V1 结果]]</span></a>
+  <a href="graphs/index.html?set=full100_v1">[[V1 graphs (October)||V1 二部图（十月）]]<span>[[All 100 papers, 972 supported links||全部 100 篇，972 条 supported 连边]]</span></a>
+  <a href="graphs/merged.html">[[Merged network, V6||合并网络，V6]]<span>[[All 100 papers in one graph||100 篇合并成一张图]]</span></a>
+  <a href="graphs/merged.html?v=v1">[[Merged network, V1||合并网络，V1]]<span>[[All 100 papers in one graph||100 篇合并成一张图]]</span></a>
+ </div>
 </section>
 
 <section id="task">
@@ -241,7 +297,7 @@ footer{border-top:1px solid var(--grid);margin-top:40px;padding:20px 0;color:var
 </section>
 
 <section id="full100">
- <h2>[[Evaluation across all 100 papers||全部 100 篇论文的评估结果]]</h2>
+ <h2>[[October run across all 100 papers (V1)||全部 100 篇论文的评估结果]]</h2>
  <div class="tiles">
   <div class="tile"><div class="k">[[Total cost||总成本]]</div><div class="v">$43.67</div><div class="s">[[2.2 model hours · $0.44 and 78 s per paper||模型总耗时 2.2 小时 · 平均每篇 $0.44、78 秒]]</div></div>
   <div class="tile"><div class="k">[[Passed validation||通过格式校验]]</div><div class="v">100 / 100</div><div class="s">[[69 on the first request, 31 after one repair||69 篇首轮通过，31 篇经单次修正后通过]]</div></div>
@@ -281,7 +337,7 @@ footer{border-top:1px solid var(--grid);margin-top:40px;padding:20px 0;color:var
  <h2>[[Gene–disease bipartite graphs||基因–疾病二部图]]</h2>
  <p class="kicker">[[Each paper has a bipartite graph with genes on one side and diseases on the other. Edges represent supported relations and retain the source sentences and study-finding/background labels.||每篇论文对应一张二部图，两侧分别为基因和疾病。连边表示 supported 关系，保留原文句子及本文发现/背景知识标签。]]</p>
  <div class="links">
-  <a href="graphs/index.html">[[100 full-text papers||100 篇全文论文]]<span>[[972 supported links, with optional toggles for uncertain and negative pairs||包含 972 条 supported 连边，可按需切换显示 uncertain 与 negative 配对]]</span></a>
+  <a href="graphs/index.html">[[100 full-text papers||100 篇全文论文]]<span>[[1,271 supported links (V6, with V1 for 19 papers), with optional toggles for uncertain and negative pairs||包含 972 条 supported 连边，可按需切换显示 uncertain 与 negative 配对]]</span></a>
   <a href="graphs/merged.html">[[All 100 papers in one graph||100 篇文献全局合并网络]]<span>[[Every supported link aggregated into one network, with edge thickness proportional to supporting paper count||将全部 supported 连边聚合为一张全局网络，连边粗细反映支持该关系的论文数量]]</span></a>
   <a href="graphs/index.html#biored">[[BioRED · 419 abstracts||BioRED · 419 篇摘要]]<span>[[Predicted graphs overlaid against expert gold relations: confirmed, unannotated in gold, and missed||模型预测图与专家金标准标注叠加对比：已确认、金标准未收录及未召回关系]]</span></a>
  </div>

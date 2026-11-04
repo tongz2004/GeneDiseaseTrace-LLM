@@ -1,0 +1,100 @@
+{
+  "by_set": {
+    "locked": {
+      "completed": 25,
+      "blocked": 4,
+      "format failure": 1
+    },
+    "further": {
+      "completed": 35,
+      "blocked": 14
+    },
+    "original100": {
+      "completed": 81,
+      "blocked": 19
+    }
+  },
+  "groups": {
+    "infection": {
+      "blocked_median": 0.4,
+      "completed_median": 0.55,
+      "auc": 0.467,
+      "auc_ci95": [
+        0.372,
+        0.563
+      ]
+    },
+    "toxin_or_poison": {
+      "blocked_median": 0.0,
+      "completed_median": 0.0,
+      "auc": 0.578,
+      "auc_ci95": [
+        0.483,
+        0.673
+      ]
+    },
+    "vaccine_or_immunity": {
+      "blocked_median": 1.53,
+      "completed_median": 0.65,
+      "auc": 0.669,
+      "auc_ci95": [
+        0.578,
+        0.758
+      ]
+    },
+    "animal_experiment": {
+      "blocked_median": 2.45,
+      "completed_median": 0.0,
+      "auc": 0.828,
+      "auc_ci95": [
+        0.75,
+        0.892
+      ]
+    },
+    "gene_editing": {
+      "blocked_median": 3.35,
+      "completed_median": 0.0,
+      "auc": 0.798,
+      "auc_ci95": [
+        0.712,
+        0.881
+      ]
+    },
+    "dosing_or_drug": {
+      "blocked_median": 1.09,
+      "completed_median": 0.33,
+      "auc": 0.687,
+      "auc_ci95": [
+        0.588,
+        0.775
+      ]
+    },
+    "cancer": {
+      "blocked_median": 0.35,
+      "completed_median": 0.21,
+      "auc": 0.513,
+      "auc_ci95": [
+        0.423,
+        0.612
+      ]
+    },
+    "words": {
+      "blocked_median": 6278,
+      "completed_median": 4615,
+      "auc": 0.692,
+      "auc_ci95": [
+        0.607,
+        0.77
+      ]
+    }
+  },
+  "all": {
+    "completed": 141,
+    "blocked": 37,
+    "format failure": 1
+  },
+  "words_median": {
+    "blocked": 6278,
+    "completed": 4615
+  }
+}

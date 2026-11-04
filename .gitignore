@@ -57,6 +57,7 @@ experiments/single_shot/runs/renet2/*/*/
 experiments/single_shot/runs/euadr/*/*/
 experiments/single_shot/runs/biotriplex/*/*/
 experiments/single_shot/runs/biotriplex2/*/*/
+experiments/single_shot/runs/full100/v6_minimal_lean_medium/*/
 experiments/single_shot/runs/biotriplex_gpt/*/*/
 experiments/single_shot/runs/biotriplex_tune/*/*/
 experiments/single_shot/runs/renet2/*/*rows*.csv
@@ -78,3 +79,5 @@ experiments/renet2_model/weights/
 experiments/citation_check/*.html
 experiments/citation_check/key.csv
 experiments/citation_check/*answers*.csv
+# Draft for the provider, kept out of the public repository
+experiments/safety_blocks/feedback_draft.md

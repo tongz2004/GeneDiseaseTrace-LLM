@@ -53,10 +53,26 @@ def full100():
         inventory = {r["paper_id"]: r for r in csv.DictReader(stream)}
     papers = []
     for folder in sorted((RUNS / "full100" / "v1_card_lean_medium").glob("PMC*")):
+        # The minimal prompt (V6) is the current system; a paper it could not complete keeps its labelled October V1 result.
+        current = RUNS / "full100" / "v6_minimal_lean_medium" / folder.name / "outputs"
+        has_current = (current / "validation.json").exists()
+        nodes, edges = paper_graph(current if has_current else folder / "outputs")
+        info = inventory[folder.name]
+        title = info["title"] if has_current else f"[V1, October] {info['title']}"
+        papers.append({"id": folder.name, "title": title, "type": info["article_type"], "nodes": nodes, "edges": edges})
+    return {"dataset": "full100", "papers": papers}
+
+
+def full100_v1():
+    """The October V1 result for all 100 papers, kept for comparison."""
+    with (PROJECT / "outputs" / "inventory.csv").open(encoding="utf-8-sig") as stream:
+        inventory = {r["paper_id"]: r for r in csv.DictReader(stream)}
+    papers = []
+    for folder in sorted((RUNS / "full100" / "v1_card_lean_medium").glob("PMC*")):
         nodes, edges = paper_graph(folder / "outputs")
         info = inventory[folder.name]
         papers.append({"id": folder.name, "title": info["title"], "type": info["article_type"], "nodes": nodes, "edges": edges})
-    return {"dataset": "full100", "papers": papers}
+    return {"dataset": "full100_v1", "papers": papers}
 
 
 def biored():
@@ -139,8 +155,9 @@ def merged(per_paper):
 def build(site):
     folder = site / "graphs"
     folder.mkdir(parents=True, exist_ok=True)
-    papers = full100()
-    for name, data in (("full100", papers), ("biored", biored()), ("merged100", merged(papers))):
+    papers, october = full100(), full100_v1()
+    for name, data in (("full100", papers), ("full100_v1", october), ("biored", biored()),
+                       ("merged100", merged(papers)), ("merged100_v1", merged(october))):
         (folder / f"{name}.json").write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     for page, template in (("index.html", "graph_viewer.html"), ("merged.html", "merged_viewer.html")):
         (folder / page).write_text((Path(__file__).with_name(template)).read_text(encoding="utf-8"), encoding="utf-8")

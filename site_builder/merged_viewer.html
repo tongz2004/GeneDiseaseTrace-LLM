@@ -101,7 +101,7 @@ function moveTip(e) { let x = e.clientX + 14, y = e.clientY + 14; if (x + tip.of
 const hideTip = () => tip.style.display = "none";
 const paperLink = id => `index.html#${id}`;
 
-fetch("merged100.json").then(r => r.json()).then(D => {
+fetch(new URLSearchParams(location.search).get("v") === "v1" ? "merged100_v1.json" : "merged100.json").then(r => r.json()).then(D => {
   const byId = Object.fromEntries(D.nodes.map(n => [n.id, n]));
   const w = e => e.papers.length;
   const radius = n => 3 + 2.6 * Math.sqrt(n.papers.length);

@@ -53,7 +53,8 @@ html.zh [data-l="en"],html:not(.zh) [data-l="zh"]{display:none!important}
 <h1><span data-l="en">Gene–disease bipartite graphs</span><span data-l="zh">基因–疾病二部图</span></h1>
 <p class="sub"><span data-l="en">One bipartite graph per paper: genes on the left, diseases on the right, and an edge wherever the paper supports a relation. Hover over an edge to inspect its evidence; click any gene or disease to highlight its connected links. All edges are also listed in the table below.</span><span data-l="zh">按任务要求为每篇论文构建一张二部图：左侧为基因节点，右侧为疾病节点，论文支持的关系以连边表示。悬停连边可查看原文证据；点击基因或疾病可高亮其关联连边。所有连边亦汇总于下方表格。</span></p>
 <div class="tabs" role="group" aria-label="Dataset">
- <button data-set="full100" aria-pressed="true"><span data-l="en">100 full-text papers</span><span data-l="zh">100 篇全文论文</span></button>
+ <button data-set="full100" aria-pressed="true"><span data-l="en">100 papers · V6 (current)</span><span data-l="zh">100 篇 · V6（当前）</span></button>
+ <button data-set="full100_v1" aria-pressed="false"><span data-l="en">100 papers · V1 (October)</span><span data-l="zh">100 篇 · V1（十月）</span></button>
  <button data-set="biored" aria-pressed="false"><span data-l="en">BioRED · 419 abstracts vs gold</span><span data-l="zh">BioRED · 419 篇摘要 vs 金标准</span></button>
 </div>
 <div class="controls">
@@ -81,11 +82,12 @@ const ZH = {
   "Article type": "文献类型", "BioRED split": "BioRED 数据子集",
   "No gene or disease entities in this paper's matrix.": "该论文的主矩阵中未包含基因或疾病实体。",
   "No links in this paper. Turn on \"show unlinked entities\" to see its genes and diseases.": "该论文无受支持连边。勾选“显示未连线的独立实体”可查看文中识别出的基因与疾病。",
+  "Claude Opus 5.5, decision card V1, October run, one request per paper. Kept for comparison; the default system is now V6.": "Claude Opus 5.5，判定卡 V1，十月运行，单篇单次请求。保留用于对比；默认系统现在是 V6。",
   "Gene": "基因", "Disease": "疾病", "Kind": "判定类别", "Relation": "关系类型", "BioRED type": "BioRED 关系类型", "Reason": "判定依据",
   "Evidence (first sentence)": "原文证据（首句）", "Evidence": "原文证据", "No links.": "暂无连边。", "links": "条连边", "link": "条连边",
   "BioRED entity": "仅 BioRED 标注实体", "Loading…": "加载中…", "Filter papers (id, title)": "筛选论文（编号、标题）",
-  "Claude Opus 5.5, frozen variant V1, one request per paper. Entities are those in each paper's gene × disease matrix; symptoms and phenotypes are kept in a separate table and not drawn.":
-    "Claude Opus 5.5，冻结配置 V1，单篇单次请求。图中节点来自每篇论文的基因 × 疾病主矩阵；临床症状与表型单独记录，未在图中绘制。",
+  "Claude Opus 5.5, minimal prompt V6, one request per paper; the 19 papers it could not complete keep their October V1 result, marked [V1, October]. Entities are those in each paper's gene × disease matrix; symptoms and phenotypes are kept in a separate table and not drawn.":
+    "Claude Opus 5.5，最小提示词 V6，单篇单次请求；未能完成的 19 篇保留十月的 V1 结果，并标为 [V1, October]。图中节点来自每篇论文的基因 × 疾病主矩阵；临床症状与表型单独记录，未在图中绘制。",
   "BioRED (Luo et al. 2022) gold gene–disease relations vs our V1 output on the same abstract. Italic gray names are entities only BioRED tagged, named as BioRED wrote them. The reason for each missed relation comes from the scorer (e.g., our pair judged uncertain, or a symptom we keep apart from diseases).":
     "BioRED（Luo et al. 2022）专家金标准基因–疾病关系与冻结版 V1 在同一摘要上的输出对比。灰色斜体名称表示仅由 BioRED 标注的实体（保留 BioRED 原文命名）。未召回关系的归因来自评估脚本（例如被本方法判为 uncertain 的配对，或按规则与疾病区分记录的临床症状）。判定依据与证据句保留英文原文。",
 };
@@ -106,8 +108,10 @@ const STYLE = {
     fn: ["--mid", "6 4", "BioRED gold relation we did not report"],
   },
 };
+STYLE.full100_v1 = STYLE.full100;
 const FOOT = {
-  full100: "Claude Opus 5.5, frozen variant V1, one request per paper. Entities are those in each paper's gene × disease matrix; symptoms and phenotypes are kept in a separate table and not drawn.",
+  full100_v1: "Claude Opus 5.5, decision card V1, October run, one request per paper. Kept for comparison; the default system is now V6.",
+  full100: "Claude Opus 5.5, minimal prompt V6, one request per paper; the 19 papers it could not complete keep their October V1 result, marked [V1, October]. Entities are those in each paper's gene × disease matrix; symptoms and phenotypes are kept in a separate table and not drawn.",
   biored: "BioRED (Luo et al. 2022) gold gene–disease relations vs our V1 output on the same abstract. Italic gray names are entities only BioRED tagged, named as BioRED wrote them. The reason for each missed relation comes from the scorer (e.g., our pair judged uncertain, or a symptom we keep apart from diseases).",
 };
 const cache = {}, tip = document.getElementById("tip");
@@ -117,7 +121,7 @@ const svgEl = (tag, attrs = {}) => { const n = document.createElementNS("http://
 function showTip(e, html) { tip.innerHTML = html; tip.style.display = "block"; moveTip(e); }
 function moveTip(e) { let x = e.clientX + 14, y = e.clientY + 14; if (x + tip.offsetWidth > innerWidth - 8) x = e.clientX - tip.offsetWidth - 14; if (y + tip.offsetHeight > innerHeight - 8) y = e.clientY - tip.offsetHeight - 14; tip.style.left = x + "px"; tip.style.top = y + "px"; }
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
-const styleKey = e => set === "full100" ? (e.status === "supported" ? "supported_" + (e.src === "this study" ? "this" : e.src) : e.status) : e.status;
+const styleKey = e => set !== "biored" ? (e.status === "supported" ? "supported_" + (e.src === "this study" ? "this" : e.src) : e.status) : e.status;
 
 function legend() {
   const box = document.getElementById("legend"); box.innerHTML = "";
@@ -126,7 +130,7 @@ function legend() {
     g.append(svgEl("line", {x1: 1, y1: 5, x2: 25, y2: 5, stroke: `var(${c})`, "stroke-width": 2, "stroke-dasharray": dash}));
     s.append(g, T(label)); box.append(s);
   });
-  document.getElementById("optWeak").style.display = set === "full100" ? "" : "none";
+  document.getElementById("optWeak").style.display = set !== "biored" ? "" : "none";
   document.getElementById("foot").textContent = T(FOOT[set]);
 }
 
@@ -162,11 +166,11 @@ function render() {
 
   // Meta and counts
   const meta = document.getElementById("meta"); meta.innerHTML = "";
-  const link = set === "full100" ? `https://pmc.ncbi.nlm.nih.gov/articles/${p.id}/` : `https://pubmed.ncbi.nlm.nih.gov/${p.id.slice(4)}/`;
+  const link = set !== "biored" ? `https://pmc.ncbi.nlm.nih.gov/articles/${p.id}/` : `https://pubmed.ncbi.nlm.nih.gov/${p.id.slice(4)}/`;
   const h = el("h2"); const a = el("a", {href: link, target: "_blank", rel: "noopener"}, p.id); h.append(a, document.createTextNode(" · " + p.title)); meta.append(h);
-  meta.append(el("div", {class: "m"}, set === "full100" ? `${T("Article type")}: ${p.type}` : `${T("BioRED split")}: ${p.type}`));
+  meta.append(el("div", {class: "m"}, set !== "biored" ? `${T("Article type")}: ${p.type}` : `${T("BioRED split")}: ${p.type}`));
   const counts = el("div", {class: "counts"}); const c = k => p.edges.filter(e => e.status === k).length;
-  const items = set === "full100"
+  const items = set !== "biored"
     ? [["Genes", p.nodes.filter(n => n.side === "g").length], ["Diseases", p.nodes.filter(n => n.side === "d").length], ["Supported", c("supported")], ["Uncertain", c("uncertain")], ["Negative", c("explicit_negative")]]
     : [["Confirmed by BioRED", c("tp")], ["Not in gold", c("fp")], ["Gold relations missed", new Set(p.edges.filter(e => e.status === "fn").map(e => e.g + "|" + e.d)).size]];
   items.forEach(([k, v]) => { const s = el("span"); s.append(T(k) + ": ", el("b", {}, String(v))); counts.append(s); }); meta.append(counts);
@@ -220,7 +224,7 @@ function table(edges, p) {
   const box = document.getElementById("tableBox"); box.innerHTML = "";
   if (!edges.length) { box.append(el("p", {class: "note"}, T("No links."))); return; }
   const t = el("table"); const hr = el("tr");
-  ["Gene", "Disease", "Kind", set === "full100" ? "Relation" : "BioRED type", "Reason", set === "full100" ? "Evidence (first sentence)" : "Evidence"].forEach(h => hr.append(el("th", {}, T(h)))); t.append(hr);
+  ["Gene", "Disease", "Kind", set !== "biored" ? "Relation" : "BioRED type", "Reason", set !== "biored" ? "Evidence (first sentence)" : "Evidence"].forEach(h => hr.append(el("th", {}, T(h)))); t.append(hr);
   const name = id => p.nodes.find(n => n.id === id).name;
   edges.forEach(e => { const tr = el("tr"); const [c, dash, label] = STYLE[set][styleKey(e)];
     const k = el("td"); const sw = el("span", {class: "sw"}); sw.style.borderTopColor = `var(${c})`; sw.style.borderTopStyle = dash ? "dashed" : "solid"; k.append(sw, T(label));
@@ -250,8 +254,8 @@ let startLang = new URLSearchParams(location.search).get("lang");
 if (startLang !== "zh" && startLang !== "en") { try { startLang = localStorage.getItem("gdt-lang"); } catch (e) { startLang = null; } }
 setLang(startLang === "zh" ? "zh" : "en", false);
 langBtn.addEventListener("click", () => setLang(LANG === "zh" ? "en" : "zh", true));
-const want = location.hash.slice(1);
+const want = new URLSearchParams(location.search).get("set") === "full100_v1" ? "full100_v1" : location.hash.slice(1);
 addEventListener("hashchange", () => { const h = location.hash.slice(1); if (h) load(h === "biored" || h.startsWith("PMID") ? "biored" : "full100", h); });
-load(want === "biored" || want.startsWith("PMID") ? "biored" : "full100", want).catch(err => { document.getElementById("graphBox").textContent = "Could not load the graph data (" + err + "). Open this page through a web server, not as a local file."; });
+load(want === "full100_v1" ? want : want === "biored" || want.startsWith("PMID") ? "biored" : "full100", want === "full100_v1" ? "" : want).catch(err => { document.getElementById("graphBox").textContent = "Could not load the graph data (" + err + "). Open this page through a web server, not as a local file."; });
 </script>
 </body></html>

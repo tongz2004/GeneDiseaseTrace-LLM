@@ -1,0 +1,363 @@
+{
+  "BioRED Test": {
+    "v6_minimal_lean_medium": {
+      "documents": 98,
+      "gene": {
+        "precision": 0.995,
+        "recall": 0.942,
+        "f1": 0.968,
+        "precision_ci": [
+          0.987,
+          1.0
+        ],
+        "recall_ci": [
+          0.911,
+          0.968
+        ],
+        "f1_ci": [
+          0.951,
+          0.981
+        ],
+        "gold": 433
+      },
+      "gene_mentions": {
+        "precision": 0.987,
+        "recall": 0.932,
+        "f1": 0.959,
+        "precision_ci": [
+          0.975,
+          0.996
+        ],
+        "recall_ci": [
+          0.909,
+          0.953
+        ],
+        "f1_ci": [
+          0.945,
+          0.971
+        ],
+        "gold": 1152
+      },
+      "disease": {
+        "precision": 0.902,
+        "recall": 0.847,
+        "f1": 0.874,
+        "precision_ci": [
+          0.866,
+          0.934
+        ],
+        "recall_ci": [
+          0.808,
+          0.883
+        ],
+        "f1_ci": [
+          0.843,
+          0.9
+        ],
+        "gold": 340
+      },
+      "disease_mentions": {
+        "precision": 0.924,
+        "recall": 0.891,
+        "f1": 0.907,
+        "precision_ci": [
+          0.895,
+          0.949
+        ],
+        "recall_ci": [
+          0.859,
+          0.92
+        ],
+        "f1_ci": [
+          0.883,
+          0.928
+        ],
+        "gold": 901
+      },
+      "disease_strict": {
+        "precision": 0.96,
+        "recall": 0.706,
+        "f1": 0.814,
+        "precision_ci": [
+          0.935,
+          0.983
+        ],
+        "recall_ci": [
+          0.658,
+          0.756
+        ],
+        "f1_ci": [
+          0.779,
+          0.849
+        ],
+        "gold": 340
+      }
+    },
+    "v1_card_lean_medium": {
+      "documents": 100,
+      "gene": {
+        "precision": 0.995,
+        "recall": 0.883,
+        "f1": 0.936,
+        "precision_ci": [
+          0.985,
+          1.0
+        ],
+        "recall_ci": [
+          0.835,
+          0.925
+        ],
+        "f1_ci": [
+          0.907,
+          0.959
+        ],
+        "gold": 437
+      },
+      "gene_mentions": {
+        "precision": 0.989,
+        "recall": 0.892,
+        "f1": 0.938,
+        "precision_ci": [
+          0.976,
+          0.998
+        ],
+        "recall_ci": [
+          0.86,
+          0.924
+        ],
+        "f1_ci": [
+          0.919,
+          0.956
+        ],
+        "gold": 1180
+      },
+      "disease": {
+        "precision": 0.847,
+        "recall": 0.863,
+        "f1": 0.855,
+        "precision_ci": [
+          0.807,
+          0.886
+        ],
+        "recall_ci": [
+          0.824,
+          0.903
+        ],
+        "f1_ci": [
+          0.824,
+          0.887
+        ],
+        "gold": 344
+      },
+      "disease_mentions": {
+        "precision": 0.877,
+        "recall": 0.881,
+        "f1": 0.879,
+        "precision_ci": [
+          0.839,
+          0.912
+        ],
+        "recall_ci": [
+          0.843,
+          0.915
+        ],
+        "f1_ci": [
+          0.852,
+          0.905
+        ],
+        "gold": 917
+      },
+      "disease_strict": {
+        "precision": 0.96,
+        "recall": 0.648,
+        "f1": 0.774,
+        "precision_ci": [
+          0.932,
+          0.985
+        ],
+        "recall_ci": [
+          0.588,
+          0.71
+        ],
+        "f1_ci": [
+          0.726,
+          0.82
+        ],
+        "gold": 344
+      }
+    },
+    "pubtator3": {
+      "documents": 100,
+      "gene": {
+        "precision": 0.987,
+        "recall": 0.856,
+        "f1": 0.917,
+        "precision_ci": [
+          0.967,
+          1.0
+        ],
+        "recall_ci": [
+          0.808,
+          0.893
+        ],
+        "f1_ci": [
+          0.885,
+          0.939
+        ],
+        "gold": 437
+      },
+      "gene_mentions": {
+        "precision": 0.981,
+        "recall": 0.793,
+        "f1": 0.877,
+        "precision_ci": [
+          0.964,
+          0.994
+        ],
+        "recall_ci": [
+          0.737,
+          0.848
+        ],
+        "f1_ci": [
+          0.84,
+          0.909
+        ],
+        "gold": 1180
+      },
+      "disease": {
+        "precision": 0.937,
+        "recall": 0.98,
+        "f1": 0.958,
+        "precision_ci": [
+          0.911,
+          0.962
+        ],
+        "recall_ci": [
+          0.964,
+          0.994
+        ],
+        "f1_ci": [
+          0.943,
+          0.973
+        ],
+        "gold": 344
+      },
+      "disease_mentions": {
+        "precision": 0.937,
+        "recall": 0.976,
+        "f1": 0.956,
+        "precision_ci": [
+          0.909,
+          0.961
+        ],
+        "recall_ci": [
+          0.961,
+          0.989
+        ],
+        "f1_ci": [
+          0.94,
+          0.969
+        ],
+        "gold": 917
+      },
+      "disease_strict": {
+        "precision": 0.937,
+        "recall": 0.98,
+        "f1": 0.958,
+        "precision_ci": [
+          0.911,
+          0.962
+        ],
+        "recall_ci": [
+          0.964,
+          0.994
+        ],
+        "f1_ci": [
+          0.943,
+          0.973
+        ],
+        "gold": 344
+      }
+    }
+  },
+  "BioTriplex locked": {
+    "v6_minimal_lean_medium": {
+      "documents": 25,
+      "gene": {
+        "recall": 0.567,
+        "recall_ci": [
+          0.374,
+          0.826
+        ],
+        "gold": 556
+      },
+      "disease": {
+        "recall": 0.802,
+        "recall_ci": [
+          0.687,
+          0.9
+        ],
+        "gold": 212
+      }
+    },
+    "pubtator3": {
+      "documents": 30,
+      "gene": {
+        "recall": 0.702,
+        "recall_ci": [
+          0.628,
+          0.778
+        ],
+        "gold": 648
+      },
+      "disease": {
+        "recall": 0.942,
+        "recall_ci": [
+          0.872,
+          0.993
+        ],
+        "gold": 243
+      }
+    }
+  },
+  "BioTriplex further": {
+    "v6_minimal_lean_medium": {
+      "documents": 35,
+      "gene": {
+        "recall": 0.829,
+        "recall_ci": [
+          0.725,
+          0.921
+        ],
+        "gold": 794
+      },
+      "disease": {
+        "recall": 0.888,
+        "recall_ci": [
+          0.807,
+          0.946
+        ],
+        "gold": 303
+      }
+    },
+    "pubtator3": {
+      "documents": 49,
+      "gene": {
+        "recall": 0.814,
+        "recall_ci": [
+          0.754,
+          0.86
+        ],
+        "gold": 1098
+      },
+      "disease": {
+        "recall": 0.976,
+        "recall_ci": [
+          0.948,
+          0.995
+        ],
+        "gold": 410
+      }
+    }
+  }
+}
