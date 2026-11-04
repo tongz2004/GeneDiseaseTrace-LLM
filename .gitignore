@@ -66,3 +66,12 @@ experiments/biored/adjudication/*/*
 !experiments/biored/adjudication/*/README.md
 # Third-party papers kept for reference
 paper/shangao_li_papers/
+experiments/renet2_model/vendor/
+experiments/renet2_model/download/
+experiments/renet2_model/.venv/
+experiments/renet2_model/work/
+experiments/renet2_model/weights/
+# Citation check sheets carry article text; the key and answers stay with them
+experiments/citation_check/*.html
+experiments/citation_check/key.csv
+experiments/citation_check/*answers*.csv

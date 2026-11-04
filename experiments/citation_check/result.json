@@ -1,0 +1,103 @@
+{
+  "BioRED": {
+    "items": 30,
+    "answers": {
+      "needs context": 11,
+      "not supported": 2,
+      "hedged": 1,
+      "sufficient": 16
+    },
+    "sufficient_weighted": 0.585,
+    "ci95": [
+      0.458,
+      0.709
+    ],
+    "weighted_answers": {
+      "sufficient": 0.585,
+      "needs context": 0.32,
+      "hedged": 0.038,
+      "not supported": 0.056
+    },
+    "by_automatic_class": {
+      "entity absent": {
+        "needs context": 9,
+        "not supported": 2,
+        "sufficient": 2
+      },
+      "jointly": {
+        "sufficient": 1,
+        "needs context": 1
+      },
+      "one sentence": {
+        "hedged": 1,
+        "sufficient": 13,
+        "needs context": 1
+      }
+    },
+    "by_gold_match": {
+      "True": {
+        "hedged": 1,
+        "sufficient": 14,
+        "needs context": 4
+      },
+      "False": {
+        "needs context": 7,
+        "not supported": 2,
+        "sufficient": 2
+      }
+    },
+    "false_citations": {
+      "not supported": 4,
+      "sufficient": 1,
+      "needs context": 1
+    }
+  },
+  "BioTriplex": {
+    "items": 30,
+    "answers": {
+      "not supported": 3,
+      "sufficient": 20,
+      "needs context": 7
+    },
+    "sufficient_weighted": 0.754,
+    "ci95": [
+      0.58,
+      0.891
+    ],
+    "weighted_answers": {
+      "sufficient": 0.754,
+      "needs context": 0.19,
+      "hedged": 0.0,
+      "not supported": 0.056
+    },
+    "by_automatic_class": {
+      "entity absent": {
+        "not supported": 3,
+        "needs context": 5,
+        "sufficient": 6
+      },
+      "jointly": {
+        "sufficient": 1
+      },
+      "one sentence": {
+        "sufficient": 13,
+        "needs context": 2
+      }
+    },
+    "by_gold_match": {
+      "True": {
+        "sufficient": 11,
+        "needs context": 2
+      },
+      "False": {
+        "not supported": 3,
+        "sufficient": 9,
+        "needs context": 5
+      }
+    },
+    "false_citations": {
+      "not supported": 5,
+      "hedged": 1
+    }
+  }
+}

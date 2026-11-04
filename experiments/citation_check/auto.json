@@ -1,0 +1,51 @@
+{
+  "BioRED": {
+    "articles": 98,
+    "articles_with_pairs": 68,
+    "supported_pairs": 241,
+    "classes": {
+      "entity absent": 83,
+      "one sentence": 139,
+      "jointly": 19
+    },
+    "share_one_sentence": 0.577,
+    "cited_sentences_median": 2,
+    "cited_sentences_max": 8,
+    "by_gold_match": {
+      "True": {
+        "entity absent": 35,
+        "one sentence": 130,
+        "jointly": 2
+      },
+      "False": {
+        "one sentence": 9,
+        "entity absent": 48,
+        "jointly": 17
+      }
+    }
+  },
+  "BioTriplex": {
+    "articles": 25,
+    "articles_with_pairs": 23,
+    "supported_pairs": 281,
+    "classes": {
+      "one sentence": 202,
+      "entity absent": 71,
+      "jointly": 8
+    },
+    "share_one_sentence": 0.719,
+    "cited_sentences_median": 2,
+    "cited_sentences_max": 17,
+    "by_gold_match": {
+      "True": {
+        "one sentence": 109,
+        "entity absent": 11
+      },
+      "False": {
+        "one sentence": 93,
+        "entity absent": 60,
+        "jointly": 8
+      }
+    }
+  }
+}
