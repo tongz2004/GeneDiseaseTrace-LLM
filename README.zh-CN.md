@@ -2,8 +2,8 @@
 
 # GeneDiseaseTrace-LLM
 
-用 LLM 从生物医学全文论文中抽取基因–疾病关系，并且每条关系都可追溯。
-每条报告的关系都指向支撑它的原文句子，并标明是论文自身的发现还是背景知识；原文只是暗示的配对标为 *uncertain*，不作为关系报告。
+用 LLM 从生物医学论文中抽取基因–疾病关系，附句子引用，并在摘要和全文上做了完整评测。
+每条报告的关系都引用支撑它的句子，并标明是论文自身的发现还是背景知识；证据不足的配对标为 *uncertain*。确定性检查可以确认每条引用都能解析，但引用是否真的支持这条关系，仍需要人工复核。
 
 **项目主页（结果、方法和交互图）：** https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/?lang=zh
 
@@ -11,26 +11,43 @@
 对 100 篇 PMC 全文论文（JATS XML）逐篇处理：抽取所有基因和疾病；对每一个基因 × 疾病配对，判断论文是否提供了关联、相关或因果关系的证据；最后为每篇论文构建一张基因–疾病二部图。
 
 ## 方法
-1. **先定规则。** 在试点论文上制定判定规则（R1–R16）和 35 个边界案例，作为一个有版本管理的 skill 保存（`skill_snapshot/`，1.3.0 版）。
-2. **压缩成判定卡。** 把完整规则（约 20k tokens）压缩成一张简短的判定卡：在 112 次边界案例判定中有 110 次与完整规则一致，3 次运行结果稳定。
-3. **每篇论文一次请求。** 脚本把判定卡、精简的输出格式和论文的编号句子打包成一次不调用任何工具的请求，发给 Claude Opus 5.5。模型用简短的行作答，引用句子编号而不复制原文。
-4. **确定性的后处理。** 脚本从原文重建引文和字符位置，补全基因 × 疾病矩阵，并写出实体、提及、证据和配对表以及 GraphML。契约校验器核对每条引文和位置；只有发现问题时，才把错误清单发回模型修正一次。
+1. **打包。** 脚本把论文切分成带固定编号的段落和句子。
+2. **每篇论文一次请求。** 108 词的任务提示词和 595 词的输出格式一起发给 LLM，不调用任何工具。模型用简短的行作答，引用句子编号而不复制原文。这个最小提示词（V6）是默认系统。
+3. **确定性的后处理。** 脚本重建引文和字符位置，补全基因 × 疾病矩阵，并写出实体、提及、证据和配对表以及 GraphML。校验器核对实体文字和引用；只有发现问题时，才把错误清单发回模型修正一次。
+
+**早期设计。** 项目最初制定了判定规则（R1–R16）和 35 个边界案例（`skill_snapshot/`），并压缩成 1,045 词的判定卡（V1）。下面的评测把默认系统换成了 V6，因为判定卡在 BioRED 上降低了召回率。
 
 ## 结果
-| 评测 | 结果 | 详情 |
-|---|---|---|
-| 12 篇冻结论文上的 A/B 测试 | 判定卡与完整规则在 97.6% 的配对上一致，成本低 11%；低推理强度快 2.4 倍，但找到的关系更少。最终选用 V1（判定卡 + 中等推理强度）。 | [A/B 汇总](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/results/ab/ab_summary.html) |
-| 全部 100 篇论文 | 100/100 通过校验；972 条 supported 关系（另有 451 对 uncertain、47 对 explicit_negative）；每篇 $0.44、78 秒。PubTator3 报告 198 条关系；我们的关系 90% 依据摘要以外的文本。 | [与 PubTator3 对比](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/results/full100/vs_pubtator.html) |
-| BioRED：全部 419 篇含基因–疾病关系的摘要 | 零样本：精确率 0.89、召回率 0.43、F1 0.58（把 *uncertain* 也算作预测时为 0.81 / 0.58 / 0.68）；在 Train / Dev / Test 三部分上结果一致。在 50 篇测试摘要上：精确率与 PubTator3 持平（0.84 对 0.83），召回率较低（0.41 对 0.65）。 | [BioRED 页面](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/results/biored/biored_results.html) |
-| 二部图 | 每篇论文一张图；BioRED 的图叠加在标准答案上；以及把 100 篇合并成一个网络的大图 | [二部图](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/graphs/?lang=zh) |
+所有系统都用一对一匹配，一个金标关系只能给一个预测计分。方括号是文章层 bootstrap 的 95% 区间。完整表格见[项目主页](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/?lang=zh)。
 
-**局限性。** 全文结果的精确率没有经过人工核对（BioRED 只覆盖摘要）。在 BioRED 上召回率低于 PubTator3，主要因为保守表述被单独标为 *uncertain*，以及症状与疾病分开记录。实体没有映射到数据库 ID（NCBI Gene / MeSH）。与 BioRED 的"新发现/背景"标签一致率为 75%。无法排除模型在预训练时见过这些文本。
+| 评测 | 结果 |
+|---|---|
+| BioRED Test，100 篇摘要 | 最小提示词：精确率 0.680、召回率 0.560、F1 0.614。PubTator3 的 F1 是 0.680；配对差 −0.064 [−0.151, 0.033]。PubTator3 的关系模型训练数据包含 BioRED。 |
+| 判定卡消融，BioRED Dev+Test | 判定卡降低了召回率（0.418 对 0.604）和 F1（0.551 对 0.665）。这只说明这一张卡，它同时改变了很多规则和长度。 |
+| BioTriplex 锁定集，30 篇全文 | Claude Opus 5.5 的召回率从摘要的 0.366 升到全文的 0.813（25 篇有效）；F1 0.525，全部 30 篇上 BioREx 是 0.293，RENET2 是 0.361。GPT-6.1 Sol：召回率 0.858，F1 0.433（27 篇有效）。 |
+| BioTriplex 新增 49 篇全文 | 事先定好的比较（失败记为空答案）显示召回率提高 +0.322 [0.133, 0.477]。35 篇有效文章上：召回率 0.829，F1 0.474，F1 比 RENET2 高 0.262 [0.148, 0.365]。这批文章是看过锁定集结果后才确定的，只算进一步验证，不算独立测试。 |
+| 引用检查，每个语料 30 条 | 引用句单独足以支持的比例，BioRED 是 58.5% [45.8, 70.9]，BioTriplex 是 75.4% [58.0, 89.1]；两者都有 5.6% 被判为不支持。只有一位标注者。 |
+| 费用 | 按标价，含修复请求，全文每篇约 $0.40，摘要每篇约 $0.07。 |
+
+**局限性。**
+- 安全机制让 30 篇中的 4 篇和 49 篇中的 14 篇 BioTriplex 全文没有 Claude 结果。有效文章上的结果只适用于没被拦截的文章。失败记为空答案时，49 篇的召回率是 0.632，本地运行的 BioREx 是 0.848。
+- 所有盲法检查都只有一位标注者，且了解研究假设；没有第二位标注者。
+- BioTriplex 的标注不完整，测得的精确率可能低估文本上的正确性。
+- F1 比较受实体范围和训练文本影响，不能理解为关系判断能力更强。
+- 实体没有映射到数据库 ID（NCBI Gene / MeSH），也无法排除模型在预训练时见过这些文本。
+
+最初任务的 100 篇论文没有金标，只能给出输出数量（[V1 输出与 PubTator3 对比](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/results/full100/vs_pubtator.html)、[二部图](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/graphs/?lang=zh)）。[十月的结果页](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/results/ab/ab_summary.html)用的是判定卡和较早的评分方式。
 
 ## 仓库结构
 | 路径 | 内容 |
 |---|---|
 | `experiments/single_shot/` | **方法本体。** 判定卡、输出格式、打包、运行、展开脚本、批量运行、冻结的 A/B 变体、与 PubTator3 的对比和页面生成；`runs/` 保存每次运行的输出。说明见 `README.md` |
 | `experiments/biored/` | **基准评测。** BioRED 适配（`prepare.py`）、冻结的样本和标准答案、评分脚本（`evaluate.py`）、PubTator3 基线、结果页。说明见 `README.md` |
+| `experiments/biotriplex/` | 全文基准：适配、锁定集、第二批规格、评分、配对比较、盲法检查 |
+| `experiments/citation_check/` | 引用充分性：自动统计、盲标表单、评分 |
+| `experiments/biorex/`、`experiments/renet2_model/` | 有监督对照的本地运行（第三方代码和权重需下载，不存放在仓库） |
+| `experiments/euadr/`、`experiments/renet2/` | EU-ADR 和 RENET2 基准适配 |
+| `paper/` | 准备中的论文（LaTeX）和决策备忘 |
 | `skill_snapshot/` | 判定规则：skill 1.3.0，含数据契约和边界案例（从另一个独立仓库导出） |
 | `toolkit/` | 契约校验器和共用工具（也是早期 agent 模式的工具包） |
 | `biomed/` | 各部分共用的 JATS 解析器和 PubTator3 客户端 |
@@ -40,23 +57,30 @@
 | `archive/` | 开发过程记录：第一篇论文的人工标注、盲测、规则修订提案、一次性脚本 |
 
 ## 复现
-需要 Python 3.12；跑模型需要先安装并登录 Claude CLI。
+需要 Python 3.12；跑模型需要先安装并登录 Claude CLI。仓库不包含基准文本和金标。
 
 ```bash
-# 输入论文不包含在仓库中（PMC 各篇许可证不同），放在 .Input/100papers/
-python experiments/single_shot/batch.py --variant v1_card_lean_medium --all --run-set full100
-
 # BioRED：从 https://ftp.ncbi.nlm.nih.gov/pub/lu/BioRED/ 下载 BIORED.zip，放到 experiments/biored/data/ 并解压
 python experiments/biored/prepare.py --all
-python experiments/single_shot/batch.py --variant v1_card_lean_medium --run-set biored_all --papers <sample_all.json 中的编号>
-python experiments/biored/evaluate.py v1_card_lean_medium biored_all
+python experiments/single_shot/batch.py --variant v6_minimal_lean_medium --run-set biored_all --papers <sample_all.json 中的编号>
+python experiments/biored/evaluate.py v6_minimal_lean_medium biored_all
+
+# BioTriplex：把 splits.json 放到 experiments/biotriplex/data/（见 experiments/biotriplex/README.md）
+python experiments/biotriplex/prepare.py
+python experiments/single_shot/batch.py --variant v6_minimal_lean_medium --run-set biotriplex --papers <sample_biotriplex.json 中的编号>
+python experiments/biotriplex/evaluate.py v6_minimal_lean_medium biotriplex
+python experiments/biotriplex/compare.py v6_minimal_lean_medium v6_minimal_lean_medium:abstract
+
+# 第二批：规格见 experiments/biotriplex/batch2_protocol.md
+python experiments/biotriplex/prepare.py --batch2
 
 # 单元测试和公开主页
 python -m unittest discover -s tests
 python site_builder/build_site.py
 ```
 
+十月的 100 篇运行用的是 `--variant v1_card_lean_medium --all --run-set full100`，输入放在 `.Input/100papers/`。
 与 PubTator3 的对比读取基线在 `outputs/` 中对齐好的标注；用 `.\baseline\run.ps1 -Command run` 生成（见 `baseline/README.md`）。
 
 ## 数据与致谢
-BioRED：Luo et al., *Briefings in Bioinformatics* 2022（公有领域，NCBI）。PubTator3：NCBI。本仓库不转载 100 篇输入论文和含全文的提示词。
+BioRED：Luo et al., *Briefings in Bioinformatics* 2022（公有领域，NCBI）。BioTriplex：Collins et al., *Bioinformatics* 2026。PubTator3：NCBI。BioREx：Lai et al. 2023。RENET2：Su et al. 2021。本仓库不转载输入论文、基准文本和含全文的提示词。

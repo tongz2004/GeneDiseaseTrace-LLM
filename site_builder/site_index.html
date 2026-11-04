@@ -67,7 +67,7 @@ footer{border-top:1px solid var(--grid);margin-top:40px;padding:20px 0;color:var
  <div class="bar">
   <a class="brand" href="#top">GeneDiseaseTrace-LLM</a>
   <div class="links-row">
-   <a href="#task">[[Task||任务]]</a><a href="#workflow">[[Workflow||流程]]</a><a href="#method">[[Method||方法]]</a>
+   <a href="#latest">[[Latest results||最新结果]]</a><a href="#task">[[Task||任务]]</a><a href="#workflow">[[Workflow||流程]]</a><a href="#method">[[Method||方法]]</a>
    <a href="#cost">[[Cost||成本]]</a><a href="#pipeline">[[Pipeline||单次请求]]</a><a href="#ab">A/B</a>
    <a href="#pubtator">vs PubTator3</a><a href="#full100">[[100 papers||100 篇结果]]</a><a href="#biored">BioRED</a>
    <a href="#graphs">[[Graphs||二部图]]</a><a href="#next">[[Next||下一步]]</a><a href="#pages">[[Result pages||结果页]]</a>
@@ -80,13 +80,57 @@ footer{border-top:1px solid var(--grid);margin-top:40px;padding:20px 0;color:var
 <header class="hero">
  <h1>GeneDiseaseTrace-LLM</h1>
  <p class="tag">[[Extracting gene–disease relations from full papers with an LLM. Each reported relation includes the source sentences used as evidence.||用 LLM 从论文全文中抽取基因–疾病关系，并为每条关系保留作为证据的原文句子。]]</p>
- <div class="by">[[Task presentation · Zeqian Tong · October 28, 2026||任务汇报 · Zeqian Tong · 2026 年 10 月 28 日]]</div>
+ <div class="by">[[Updated November 4, 2026 · Manuscript in preparation · First presented by Zeqian Tong on October 28, 2026||更新于 2026 年 11 月 4 日 · 论文准备中 · Zeqian Tong 于 2026 年 10 月 28 日首次汇报]]</div>
  <div class="tiles">
-  <div class="tile"><div class="k">[[Supported relations||Supported 关系]]</div><div class="v">972</div><div class="s">[[with source sentences; PubTator3 reports 198||附原文证据句；PubTator3 报告 198 条]]</div></div>
-  <div class="tile"><div class="k">[[Precision on BioRED||BioRED 精确率]]</div><div class="v">0.89</div><div class="s">[[pair detection on 419 relation-positive abstracts; recall 0.43||419 篇关系阳性摘要上的实体对检测；召回率 0.43]]</div></div>
-  <div class="tile"><div class="k">[[Cost per paper||单篇成本]]</div><div class="v">$0.44</div><div class="s">[[78 s, including repairs; 100-paper average||耗时 78 秒，含修复请求；100 篇平均]]</div></div>
+  <div class="tile"><div class="k">[[Full-text recall||全文召回率]]</div><div class="v">0.81 / 0.83</div><div class="s">[[BioTriplex locked set / further articles, valid articles only; abstract input 0.37 / 0.31||BioTriplex 锁定集 / 新增文章，仅有效文章；只读摘要时为 0.37 / 0.31]]</div></div>
+  <div class="tile"><div class="k">[[BioRED Test F1||BioRED Test F1]]</div><div class="v">0.61</div><div class="s">[[PubTator3 0.68; paired difference not distinguishable from zero||PubTator3 为 0.68；配对差与 0 无法区分]]</div></div>
+  <div class="tile"><div class="k">[[Citations sufficient alone||引用句单独足够]]</div><div class="v">59–75%</div><div class="s">[[of supported pairs, BioRED–BioTriplex; one annotator||占 supported 关系，BioRED–BioTriplex；一位标注者]]</div></div>
+  <div class="tile"><div class="k">[[Full texts lost to safety filters||被安全机制挡住的全文]]</div><div class="v">13–29%</div><div class="s">[[Claude Opus 5.5, two BioTriplex batches; about $0.40 per completed article||Claude Opus 5.5，两批 BioTriplex；完成一篇约 $0.40]]</div></div>
  </div>
 </header>
+
+<section id="latest">
+ <h2>[[Latest results||最新结果]]</h2>
+ <p class="kicker">[[We reworked the evaluation after the October presentation. All systems now use one-to-one matching, so one gold relation can credit only one prediction. The default system is a 108-word task prompt that shares a 595-word output format with every variant. Intervals are 95% document-level bootstrap intervals.||十月汇报后，我们重做了评测。现在所有系统都用一对一匹配，一个金标关系只能给一个预测计分。默认系统是 108 词的任务提示词，所有版本共用 595 词的输出格式说明。区间都是文章层 bootstrap 的 95% 区间。]]</p>
+ <div class="panel scroll"><table>
+  <tr><th>[[BioTriplex, precision / recall / F1||BioTriplex，精确率 / 召回率 / F1]]</th><th class="num">[[Locked set (30 articles)||锁定集（30 篇）]]</th><th class="num">[[Further articles (49)||新增文章（49 篇）]]</th></tr>
+  <tr><td>PubTator3</td><td class="num">0.484 / 0.305 / 0.374</td><td class="num">0.495 / 0.304 / 0.377</td></tr>
+  <tr><td>[[BioREx, abstract||BioREx，摘要]]</td><td class="num">0.393 / 0.291 / 0.335</td><td class="num">0.423 / 0.340 / 0.377</td></tr>
+  <tr><td>[[RENET2, abstract||RENET2，摘要]]</td><td class="num">0.552 / 0.245 / 0.339</td><td class="num">0.471 / 0.195 / 0.275</td></tr>
+  <tr><td>[[Claude Opus 5.5, abstract||Claude Opus 5.5，摘要]]</td><td class="num">0.472 / 0.340 / 0.395 [[(28 valid)||（28 篇有效）]]</td><td class="num">0.583 / 0.319 / 0.412 [[(48 valid)||（48 篇有效）]]</td></tr>
+  <tr><td>[[BioREx, full text||BioREx，全文]]</td><td class="num">0.184 / 0.722 / 0.293</td><td class="num">0.197 / 0.848 / 0.320</td></tr>
+  <tr><td>[[RENET2, full text||RENET2，全文]]</td><td class="num">0.380 / 0.344 / 0.361</td><td class="num">0.272 / 0.210 / 0.237</td></tr>
+  <tr><td>[[Claude Opus 5.5, full text||Claude Opus 5.5，全文]]</td><td class="num"><b>0.388 / 0.813 / 0.525</b> [[(25 valid)||（25 篇有效）]]</td><td class="num"><b>0.332 / 0.829 / 0.474</b> [[(35 valid)||（35 篇有效）]]</td></tr>
+  <tr><td>[[GPT-6.1 Sol, full text||GPT-6.1 Sol，全文]]</td><td class="num">0.290 / 0.858 / 0.433 [[(27 valid)||（27 篇有效）]]</td><td class="num">[[not run||未运行]]</td></tr>
+ </table></div>
+ <p class="note">[[The locked set was fixed before any run. The 49 further articles were chosen after its results were known, under a protocol written before their run, so they are further validation and not a held-out test. BioTriplex annotation is not exhaustive, so measured precision can understate textual correctness.||锁定集在任何运行之前就已固定。新增的 49 篇是看过锁定集结果后才确定的，运行前写好了规格，所以只算进一步验证，不算独立测试。BioTriplex 的标注不完整，测得的精确率可能低估文本上的正确性。]]</p>
+ <div class="grid2">
+  <div class="panel"><h3>[[What held up||站得住的结果]]</h3><ul class="pros">
+   <li>[[Reading the full text raised recall on both batches. Claude gained 0.448 [0.299, 0.588] on the locked set; on the further articles it gained 0.518 [0.374, 0.626] on valid articles and 0.322 [0.133, 0.477] with failures counted as empty.||读全文在两批文章上都提高了召回率。Claude 在锁定集上提高 0.448 [0.299, 0.588]；在新增文章上，有效文章提高 0.518 [0.374, 0.626]，失败记为空答案时提高 0.322 [0.133, 0.477]。]]</li>
+   <li>[[The gain is not specific to LLMs: BioREx also rose by 0.430 and 0.508. It is not automatic either: RENET2 showed no clear gain on either batch.||这种提升不是 LLM 独有的：BioREx 也提高了 0.430 和 0.508。它也不是必然的：RENET2 在两批上都没有明显提升。]]</li>
+   <li>[[On valid articles of the further batch, Claude's F1 exceeded RENET2's by 0.262 [0.148, 0.365] and BioREx's by 0.150 [0.104, 0.194]. On the locked set the F1 difference from RENET2 spanned zero (+0.145 [−0.013, 0.291]).||在新增文章的有效文章上，Claude 的 F1 比 RENET2 高 0.262 [0.148, 0.365]，比 BioREx 高 0.150 [0.104, 0.194]。在锁定集上，与 RENET2 的 F1 差区间跨 0（+0.145 [−0.013, 0.291]）。]]</li>
+   <li>[[On BioRED Test (100 abstracts), F1 was 0.614 against 0.680 for PubTator3; the paired difference was −0.064 [−0.151, 0.033]. PubTator3's relation model was trained on data including BioRED.||在 BioRED Test（100 篇摘要）上，F1 是 0.614，PubTator3 是 0.680；配对差是 −0.064 [−0.151, 0.033]。PubTator3 的关系模型训练数据包含 BioRED。]]</li>
+  </ul></div>
+  <div class="panel"><h3>[[What limits these results||这些结果的局限]]</h3><ul class="cons">
+   <li>[[Safety filters left 4 of 30 and 14 of 49 BioTriplex full texts without a Claude result. A blocked article says nothing about extraction ability, but users still lose it: with failures counted as empty, recall on the further articles is 0.632, against 0.848 for BioREx, which runs locally.||安全机制让 30 篇中的 4 篇和 49 篇中的 14 篇全文没有 Claude 结果。被拦截的文章不能说明提取能力，但用户确实拿不到结果：失败记为空答案时，新增文章的召回率是 0.632，本地运行的 BioREx 是 0.848。]]</li>
+   <li>[[Valid-article results apply only to articles that were not blocked; we do not know what triggers the filters.||有效文章上的结果只适用于没被拦截的文章；我们不清楚触发拦截的原因。]]</li>
+   <li>[[The October decision card lowered recall on BioRED (0.418 vs 0.604 on Dev+Test). This describes that one card; it changed many rules and the length at once, so it is not a general result about detailed prompts.||十月的判定卡在 BioRED 上降低了召回率（Dev+Test 上 0.418 对 0.604）。这只说明这一张卡；它同时改变了很多规则和长度，不能推广到详细提示词。]]</li>
+   <li>[[F1 comparisons also depend on entity scope and training text, so they should not be read as better relation judgment.||F1 比较还受实体范围和训练文本影响，不能理解为关系判断能力更强。]]</li>
+  </ul></div>
+ </div>
+ <div class="panel" style="margin-top:16px"><h3>[[Do the cited sentences support the relation?||引用句能支持关系吗？]]</h3>
+  <p>[[Every cited sentence ID resolves, but that does not show support. One annotator judged a stratified sample of 30 pairs per corpus, seeing only the cited sentences, with results weighted to all supported pairs.||所有引用句 ID 都能解析，但这不等于真的支持。一位标注者在每个语料上判断了 30 条分层抽样的关系，只看引用句，结果按全部 supported 关系加权。]]</p>
+  <div class="scroll"><table>
+   <tr><th></th><th class="num">BioRED Test</th><th class="num">[[BioTriplex full text||BioTriplex 全文]]</th></tr>
+   <tr><td>[[Sufficient on their own||单独足够]]</td><td class="num"><b>58.5%</b> [45.8, 70.9]</td><td class="num"><b>75.4%</b> [58.0, 89.1]</td></tr>
+   <tr><td>[[Need surrounding text||需要上下文]]</td><td class="num">32.0%</td><td class="num">19.0%</td></tr>
+   <tr><td>[[Hedged only||只有推测性措辞]]</td><td class="num">3.8%</td><td class="num">0%</td></tr>
+   <tr><td>[[Not supported||不支持]]</td><td class="num">5.6%</td><td class="num">5.6%</td></tr>
+  </table></div>
+  <p class="note">[[Citations point curators to evidence and do not replace review. Of 12 false-citation controls, 9 were judged unsupported. These checks are exploratory: there was one annotator, who knew the study hypotheses.||引用可以引导复核，不能代替复核。12 条假引用对照中，9 条被判为不支持。这些检查是探索性的：只有一位标注者，且了解研究假设。]]</p>
+ </div>
+ <div class="callout"><b>[[About the sections below||关于下面的内容]]</b><p>[[They record the October 28 task presentation, which used the decision card (V1) and an earlier scorer that could credit one gold relation several times. The workflow, cost and 100-paper descriptions remain as a record; for evaluation results, use this section and the BioRED section.||下面记录的是 10 月 28 日的任务汇报，当时用的是判定卡（V1）和较早的评分方式，一个金标关系可能被多次计分。流程、成本和 100 篇论文的内容作为记录保留；评测结果请以本节和 BioRED 一节为准。]]</p></div>
+</section>
 
 <section id="task">
  <h2>[[The task||任务定义]]</h2>
@@ -216,20 +260,19 @@ footer{border-top:1px solid var(--grid);margin-top:40px;padding:20px 0;color:var
 </section>
 
 <section id="biored">
- <h2>[[Evaluation on BioRED||BioRED 评估]]</h2>
- <p class="kicker">[[BioRED has 600 abstracts. We used the 419 with at least one gold gene–disease relation (1,633 relations in total). We ran the frozen V1 configuration without BioRED-specific training or prompt tuning, at $0.056 per abstract. The other 181 abstracts were excluded.||BioRED 共 600 篇摘要。我们使用其中至少有一条金标准基因–疾病关系的 419 篇，共 1,633 条关系。运行时使用冻结的 V1 配置，未针对 BioRED 训练或调整提示词，平均成本为 $0.056/篇。其余 181 篇未纳入评估。]]</p>
- <p class="note">[[We scored gene–disease pairs within each abstract by matching overlapping mention spans, without requiring the relation type to agree. These are scores for the relation-positive subset, not official full-task BioRED scores. Quote and offset checks confirm the cited source spans; semantic support still needs review.||我们按摘要内的基因–疾病对评分，通过提及跨度重叠匹配，不要求关系类型相同。这些分数适用于关系阳性子集，不是 BioRED 官方全任务分数。引文和偏移检查能确认引用位置，句子是否支持关系仍需复核。]]</p>
+ <h2>[[Evaluation on BioRED||BioRED 评测]]</h2>
+ <p class="kicker">[[All 100 Test abstracts, including the 27 without a gene–disease relation, where any supported pair counts as a false positive. Gene–disease pairs are matched one-to-one by overlapping mention spans, without requiring the relation type to agree. These are not official BioRED task scores.||全部 100 篇 Test 摘要，包括 27 篇没有基因–疾病关系的摘要，其中任何 supported 配对都算误报。基因–疾病配对按提及位置重叠一对一匹配，不要求关系类型一致。这些不是 BioRED 官方任务分数。]]</p>
  <div class="grid2">
   <div class="panel scroll"><table>
    <tr><th></th><th class="num">[[Precision||精确率]]</th><th class="num">[[Recall||召回率]]</th><th class="num">F1</th></tr>
-   <tr><td>[[Strict (supported only)||严格口径（仅计 supported）]]</td><td class="num"><b>0.89</b></td><td class="num">0.43</td><td class="num">0.58</td></tr>
-   <tr><td>[[Supported + uncertain||宽口径（supported + uncertain）]]</td><td class="num">0.81</td><td class="num">0.58</td><td class="num">0.68</td></tr>
+   <tr><td>[[Minimal prompt (V6)||最小提示词（V6）]]</td><td class="num">0.680</td><td class="num">0.560</td><td class="num"><b>0.614</b></td></tr>
+   <tr><td>[[Decision card (V1)||判定卡（V1）]]</td><td class="num">0.755</td><td class="num">0.386</td><td class="num">0.511</td></tr>
+   <tr><td>PubTator3</td><td class="num">0.758</td><td class="num">0.617</td><td class="num">0.680</td></tr>
   </table></div>
   <div class="panel"><ul>
-   <li>[[Train / Dev / Test F1 scores were 0.58 / 0.61 / 0.54. The 95% confidence intervals overlap, so we have not established equivalent performance across splits.||Train / Dev / Test 的 F1 分别为 0.58 / 0.61 / 0.54，95% 置信区间重叠，目前还不能认定各子集表现等价。]]</li>
-   <li>[[On the same 50 abstracts, our precision was 0.84 vs PubTator3’s 0.83, recall 0.41 vs 0.65, and F1 0.55 vs 0.73. The precision estimates are close; equivalence was not established. PubTator3 uses BioRED in training, although we did not verify the deployed models’ exact training split.||在同一批 50 篇摘要上，本方法与 PubTator3 的精确率为 0.84 vs 0.83，召回率为 0.41 vs 0.65，F1 为 0.55 vs 0.73。精确率估计相近，但尚未证明等价。PubTator3 训练使用了 BioRED，我们未核实部署模型的具体训练划分。]]</li>
-   <li>[[Of 930 missed gold relations, 547 (59%) had both entities captured: 295 were labeled not_found, 240 uncertain and 12 explicit_negative. Another 131 involved symptom/phenotype classification, 159 an uncaptured disease and 93 an uncaptured gene. Manual review is needed to distinguish rule differences from extraction errors.||930 条漏检金标准关系中，547 条（59%）已捕获两侧实体：295 条标为 not_found，240 条 uncertain，12 条 explicit_negative。另有 131 条涉及症状/表型分类，159 条未捕获疾病，93 条未捕获基因。规则差异和抽取错误各占多少，还需要人工复核。]]</li>
-   <li>[[Source labels agreed with BioRED on 526/703 matched relations (75%), with "both" mapped to Novel. This measures agreement among matched relations, not end-to-end novelty detection.||在匹配的 703 条关系中，526 条来源标签与 BioRED 一致（75%）；“两者兼有”映射为 Novel。这衡量的是匹配关系上的一致性，不是端到端的新颖性识别表现。]]</li>
+   <li>[[The minimal prompt and PubTator3 were not distinguishable: F1 difference −0.064 [−0.151, 0.033]. The card was lower than PubTator3: −0.169 [−0.278, −0.069].||最小提示词和 PubTator3 无法区分：F1 差 −0.064 [−0.151, 0.033]。判定卡低于 PubTator3：−0.169 [−0.278, −0.069]。]]</li>
+   <li>[[The minimal prompt was selected after Test results were seen, so these are not clean held-out estimates for it.||最小提示词是看过 Test 结果后才选定的，所以这些不是它的干净留出估计。]]</li>
+   <li>[[The October figures (precision 0.89, recall 0.43 on 419 relation-positive abstracts) are superseded: they came from the card, excluded relation-negative abstracts and allowed many-to-one credit.||十月的数字（419 篇含关系摘要上精确率 0.89、召回率 0.43）已被取代：它们来自判定卡，排除了不含关系的摘要，并且允许多对一计分。]]</li>
   </ul></div>
  </div>
 </section>
@@ -245,11 +288,10 @@ footer{border-top:1px solid var(--grid);margin-top:40px;padding:20px 0;color:var
 </section>
 
 <section id="next">
- <h2>[[Next experiments||接下来做什么]]</h2>
- <p>[[First, review full-text relations and missed pairs independently. Then test how much the rules, evidence requirements and repair requests each contribute. Broader evaluation should include relation-negative abstracts, one-to-one matching and relation-type scoring.||先独立复核全文关系和漏检配对，再分别测试规则、证据要求和修复请求的作用。后续评估还需要纳入关系阴性摘要，采用一对一匹配，并对关系类型评分。]]</p>
+ <h2>[[Next steps||下一步]]</h2>
  <div class="grid2">
-  <div class="panel"><h3>[[Compare models||比较不同模型]]</h3><p>[[Run GPT-6.1 Sol, GPT-6 Astra and other models on the same benchmark to compare accuracy and cost.||在同一基准上运行 GPT-6.1 Sol、GPT-6 Astra 和其他模型，比较准确性和成本。]]</p></div>
-  <div class="panel"><h3>[[Try a local model||尝试本地模型]]</h3><p>[[Test a local open-weight model for initial extraction, with a commercial model checking selected results.||测试用本地开放权重模型初步抽取，再由商业模型复核部分结果的方案。]]</p></div>
+  <div class="panel"><h3>[[Stronger annotation||更可靠的标注]]</h3><p>[[Repeat the citation check after a delay, add an independent second annotator, and judge the status labels on larger samples.||隔一段时间重复引用检查，加入独立的第二位标注者，并在更大样本上评估状态标签。]]</p></div>
+  <div class="panel"><h3>[[A fallback for blocked articles||被拦截文章的备选方案]]</h3><p>[[Test whether another model can complete the articles a safety filter blocks, and compare systems with entity scope held fixed.||测试另一个模型能否完成被安全机制拦截的文章，并在固定实体范围后比较各系统。]]</p></div>
  </div>
 </section>
 
@@ -260,13 +302,13 @@ footer{border-top:1px solid var(--grid);margin-top:40px;padding:20px 0;color:var
   <a href="results/ab/ab_summary.html">[[A/B test summary||A/B 测试汇总]]<span>[[V1 vs V2 vs V3 on the 12 frozen papers||12 篇冻结测试集上的 V1、V2、V3 详细对比]]</span></a>
   <a href="results/ab/v1_card_lean_medium/vs_pubtator.html">[[12 papers vs PubTator3||12 篇与 PubTator3 对比]]<span>[[Pair-by-pair comparison of relation disagreements, with supporting quotes||逐对展示关系判定分歧及原文证据句]]</span></a>
   <a href="results/full100/vs_pubtator.html">[[100 papers vs PubTator3||100 篇与 PubTator3 对比]]<span>[[Full-corpus comparison (about 1 MB; may take a moment to load)||全量语料对比详情（约 1 MB，加载需片刻）]]</span></a>
-  <a href="results/biored/biored_results.html">[[BioRED results||BioRED 评估详情]]<span>[[419 abstracts by split, plus the 50-abstract PubTator3 comparison||419 篇摘要的分集统计，以及 50 篇摘要上的 PubTator3 对比]]</span></a>
+  <a href="results/biored/biored_results.html">[[BioRED results (October scorer, superseded)||BioRED 结果（十月评分方式，已被取代）]]<span>[[419 abstracts by split, plus the 50-abstract PubTator3 comparison||419 篇摘要的分集统计，以及 50 篇摘要上的 PubTator3 对比]]</span></a>
   <a href="graphs/index.html">[[Bipartite graphs||交互式二部图]]<span>[[One gene–disease graph per paper across the 100 papers and BioRED||涵盖 100 篇全文与 BioRED 语料的逐篇基因–疾病二部图]]</span></a>
  </div>
 </section>
 
 <footer>
- [[Code repository: github.com/Suzuka2788/GeneDiseaseTrace-LLM (private; access on request). Input papers are not redistributed here. BioRED: Luo et al., <i>Briefings in Bioinformatics</i> 2022 (public domain, NCBI). PubTator3: NCBI.||代码仓库：github.com/Suzuka2788/GeneDiseaseTrace-LLM（私有，可申请访问）。本站不转载输入论文。BioRED：Luo et al., <i>Briefings in Bioinformatics</i> 2022（公有领域，NCBI）。PubTator3：NCBI。]]
+ [[Code repository: github.com/Suzuka2788/GeneDiseaseTrace-LLM. Input papers and benchmark texts are not redistributed here. BioRED: Luo et al., <i>Briefings in Bioinformatics</i> 2022. BioTriplex: Collins et al., <i>Bioinformatics</i> 2026. PubTator3: NCBI.||代码仓库：github.com/Suzuka2788/GeneDiseaseTrace-LLM。这里不重新分发输入论文和基准文本。BioRED：Luo et al., <i>Briefings in Bioinformatics</i> 2022。BioTriplex：Collins et al., <i>Bioinformatics</i> 2026。PubTator3：NCBI。]]
 </footer>
 </main>
 <script>
