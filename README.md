@@ -14,19 +14,18 @@ For each of 100 PMC full-text papers (JATS XML): extract all genes and diseases,
 pair whether the paper gives evidence of an association, correlation or causal relationship, and build one
 gene–disease bipartite graph per paper.
 
-> **Branch note.** The results below are current. This branch still holds the October pipeline (decision card V1); the minimal prompt and the BioTriplex, comparator and citation-check code are not in it yet, so the layout and commands below cover the October pipeline only.
+> **Branch note.** The results below are current. This branch still holds the October pipeline (the condensed rule set, folder `v1_card_lean_medium`); the minimal prompt and the BioTriplex, comparator, citation-check and entity-evaluation code are not in it yet, so the layout and commands below cover the October pipeline only.
 
 ## Method
 1. **Packing.** A script splits the paper into numbered blocks and sentences with stable IDs.
 2. **One request per paper.** A 108-word task prompt and a 595-word output format go to the LLM in a single tool-less
-   request. The model answers with short lines that cite sentence IDs instead of copying text. This minimal prompt
-   (V6) is the default system.
+   request. The model answers with short lines that cite sentence IDs instead of copying text. This minimal prompt is the default system.
 3. **Deterministic post-processing.** A script rebuilds quotes and character offsets, completes the gene × disease
    matrix and writes entity, mention, evidence and pair tables plus GraphML. A validator checks the surface forms and
    citations; only if it finds problems is the error list sent back once for repair.
 
 **Earlier design.** The project began with decision rules (R1–R16) and 35 boundary cases (`skill_snapshot/`), condensed
-into a 1,045-word decision card (V1). The evaluation below replaced V1 with V6 as the default, because the card lowered
+into a 1,045-word condensed rule set. The evaluation below replaced it with the minimal prompt as the default, because it lowered
 recall on BioRED.
 
 ## Results
@@ -36,20 +35,23 @@ bootstrap intervals. The [project page](https://suzuka2788.github.io/GeneDisease
 | Evaluation | Result |
 |---|---|
 | BioRED Test, 100 abstracts | Minimal prompt: precision 0.680, recall 0.560, F1 0.614. PubTator3: F1 0.680; paired difference −0.064 [−0.151, 0.033]. PubTator3's relation model was trained on data including BioRED. |
-| Decision card ablation, BioRED Dev+Test | The card lowered recall (0.418 vs 0.604) and F1 (0.551 vs 0.665). This describes one card, which changed many rules and the length at once. |
+| Condensed rule set ablation, BioRED Dev+Test | The rule set lowered recall (0.418 vs 0.604) and F1 (0.551 vs 0.665). This describes one rule set, which changed many rules and the length at once. |
 | BioTriplex, locked set of 30 full texts | Claude Opus 5.5 recall rose from 0.366 on abstracts to 0.813 on full text (25 valid articles); F1 0.525 against 0.293 for BioREx and 0.361 for RENET2 on all 30. GPT-6.1 Sol: recall 0.858, F1 0.433 (27 valid). |
 | BioTriplex, 49 further full texts | The prespecified comparison, with failures counted as empty, gave a recall gain of +0.322 [0.133, 0.477]. On the 35 valid articles: recall 0.829, F1 0.474; F1 exceeded RENET2's by 0.262 [0.148, 0.365]. These articles were chosen after the locked results were known, so they are further validation and not a held-out test. |
 | Citation check, 30 pairs per corpus | Cited sentences alone were judged sufficient for 58.5% [45.8, 70.9] of supported pairs on BioRED and 75.4% [58.0, 89.1] on BioTriplex; 5.6% on each were judged unsupported. One annotator. |
-| Cost | About $0.40 per full text and $0.07 per abstract at list prices, including repair requests. |
+| Task 1: gene and disease extraction, BioRED Test | Document-concept F1: genes 0.968 (PubTator3 0.917), diseases 0.874 (PubTator3 0.958). PubTator3's recognizer was trained on data including BioRED. |
+| Task 2: the 100 original papers | The minimal prompt completed 81 papers with 1,180 supported relations; the condensed rules reported 881 on the same papers. The other 19 were stopped by the safety filter and keep their labeled condensed-rules result. No gold labels, so these are output counts only. |
+| Prompts and models, 100 papers | Format rules cut repairs from 62 to 9 papers and cost from $0.64 to $0.43 per paper, with 6% fewer supported relations; their recall is not yet measured. Opus 4.8 had no safety stops but 42% fewer supported relations than Opus 5.5. See the [comparison](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/#compare). |
+| Cost | At list prices, including repair requests: about $0.40 per BioTriplex full text, $0.64 per original paper and $0.07 per abstract. |
 
 **Limitations.**
-- Safety filters left 4 of 30 and 14 of 49 BioTriplex full texts without a Claude result. Valid-article results apply only to articles that were not blocked. With failures counted as empty, recall on the 49 articles is 0.632, against 0.848 for BioREx, which runs locally.
+- Safety filters left 37 of 179 full texts without a Claude result (4 of 30, 14 of 49 and 19 of 100). We do not know what triggers them. Valid-article results apply only to articles that were not blocked. With failures counted as empty, recall on the 49 articles is 0.632, against 0.848 for BioREx, which runs locally.
 - All blinded checks used one annotator who knew the hypotheses; there is no second annotator.
 - BioTriplex annotation is not exhaustive, so measured precision can understate textual correctness.
 - F1 comparisons depend on entity scope and training text, so they should not be read as better relation judgment.
 - Entities are not mapped to database IDs (NCBI Gene / MeSH), and the model may have seen these texts in pretraining.
 
-The original task's 100 papers have no gold labels, so they give output counts only ([V1 outputs against PubTator3](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/results/full100/vs_pubtator.html), [bipartite graphs](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/graphs/)). The [October result pages](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/results/ab/ab_summary.html) used the card and an earlier scorer.
+Graphs for the 100 papers, for both the minimal prompt and the condensed rules, are [here](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/graphs/). The [October result pages](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/results/ab/ab_summary.html) used the condensed rules and an earlier scorer.
 
 ## Repository layout
 | Path | Contents |
