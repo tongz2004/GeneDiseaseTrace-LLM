@@ -1,0 +1,5 @@
+{
+  "name": "v6f_format_rules_medium",
+  "effort": "medium",
+  "description": "V6 plus output consistency rules taken from the V1 card and format codes; no evidence or entity-scope rules"
+}

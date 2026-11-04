@@ -34,7 +34,7 @@
 % Inputs and output, centred on the step row
 \path (pack.west) ++(-0.45,0) coordinate (inmid);
 \node[io, anchor=south east] (paper) at ($(inmid)+(0,0.08)$) {\textbf{Paper}\\Full text or abstract};
-\node[io, anchor=north east] (card) at ($(inmid)+(0,-0.08)$) {\textbf{Decision card}\\Frozen rules + schema};
+\node[io, anchor=north east] (card) at ($(inmid)+(0,-0.08)$) {\textbf{Task prompt}\\Frozen text + schema};
 \node[io, anchor=west] (out) at ($(val.east)+(0.6,0)$) {\textbf{Output}\\Entities \& mentions\\Evidence quotes\\4-status pair matrix};
 % Arrows
 \draw[flow] (paper.east) -- ++(0.2,0) |- ([yshift=3pt]pack.west);

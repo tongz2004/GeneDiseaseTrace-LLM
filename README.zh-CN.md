@@ -12,10 +12,19 @@
 
 ## 方法
 1. **打包。** 脚本把论文切分成带固定编号的段落和句子。
-2. **每篇论文一次请求。** 108 词的任务提示词和 595 词的输出格式一起发给 LLM，不调用任何工具。模型用简短的行作答，引用句子编号而不复制原文。这个最小提示词（V6）是默认系统。
+2. **每篇论文一次请求。** 108 词的任务提示词和 595 词的输出格式一起发给 LLM，不调用任何工具。模型用简短的行作答，引用句子编号而不复制原文。这个最小提示词是默认系统。
 3. **确定性的后处理。** 脚本重建引文和字符位置，补全基因 × 疾病矩阵，并写出实体、提及、证据和配对表以及 GraphML。校验器核对实体文字和引用；只有发现问题时，才把错误清单发回模型修正一次。
 
-**早期设计。** 项目最初制定了判定规则（R1–R16）和 35 个边界案例（`skill_snapshot/`），并压缩成 1,045 词的判定卡（V1）。下面的评测把默认系统换成了 V6，因为判定卡在 BioRED 上降低了召回率。
+**早期设计。** 项目最初制定了判定规则（R1–R16）和 35 个边界案例（`skill_snapshot/`），并压缩成 1,045 词的精简规则集。下面的评测把默认系统换成了最小提示词，因为精简规则集在 BioRED 上降低了召回率。
+
+**名称。** 这些是并列的实验条件，不是逐代升级的版本。`experiments/single_shot/variants/` 下的文件夹沿用原编号，以保持运行记录有效：
+
+| 名称 | 文件夹 |
+|---|---|
+| 最小提示词 | `v6_minimal_lean_medium` |
+| 最小提示词 + 格式规则 | `v6f_format_rules_medium` |
+| 精简规则集 | `v1_card_lean_medium` |
+| 完整规则集 | `v2_full_lean_medium` |
 
 ## 结果
 所有系统都用一对一匹配，一个金标关系只能给一个预测计分。方括号是文章层 bootstrap 的 95% 区间。完整表格见[项目主页](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/?lang=zh)。
@@ -23,13 +32,13 @@
 | 评测 | 结果 |
 |---|---|
 | BioRED Test，100 篇摘要 | 最小提示词：精确率 0.680、召回率 0.560、F1 0.614。PubTator3 的 F1 是 0.680；配对差 −0.064 [−0.151, 0.033]。PubTator3 的关系模型训练数据包含 BioRED。 |
-| 判定卡消融，BioRED Dev+Test | 判定卡降低了召回率（0.418 对 0.604）和 F1（0.551 对 0.665）。这只说明这一张卡，它同时改变了很多规则和长度。 |
+| 精简规则集消融，BioRED Dev+Test | 精简规则集降低了召回率（0.418 对 0.604）和 F1（0.551 对 0.665）。这只说明这一份规则集，它同时改变了很多规则和长度。 |
 | BioTriplex 锁定集，30 篇全文 | Claude Opus 5.5 的召回率从摘要的 0.366 升到全文的 0.813（25 篇有效）；F1 0.525，全部 30 篇上 BioREx 是 0.293，RENET2 是 0.361。GPT-6.1 Sol：召回率 0.858，F1 0.433（27 篇有效）。 |
 | BioTriplex 新增 49 篇全文 | 事先定好的比较（失败记为空答案）显示召回率提高 +0.322 [0.133, 0.477]。35 篇有效文章上：召回率 0.829，F1 0.474，F1 比 RENET2 高 0.262 [0.148, 0.365]。这批文章是看过锁定集结果后才确定的，只算进一步验证，不算独立测试。 |
 | 引用检查，每个语料 30 条 | 引用句单独足以支持的比例，BioRED 是 58.5% [45.8, 70.9]，BioTriplex 是 75.4% [58.0, 89.1]；两者都有 5.6% 被判为不支持。只有一位标注者。 |
 | 任务 1：基因和疾病抽取，BioRED Test | 文档概念层 F1：基因 0.968（PubTator3 0.917），疾病 0.874（PubTator3 0.958）。PubTator3 的实体模型训练数据包含 BioRED。 |
-| 任务 2：最初的 100 篇论文 | V6 完成 81 篇，报告 1,180 条 supported 关系；V1 在同样论文上是 881 条。另外 19 篇被安全机制中止，保留标注过的 V1 结果。这些论文没有金标，所以只是输出数量。 |
-| V1 与 V6 | V6 在三个关系基准上召回率都更高，F1 在 BioRED 和 EU-ADR 上更高。V1 精确率相同或更高，费用更低，格式错误更少。见[对比](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/?lang=zh#v1v6)。 |
+| 任务 2：最初的 100 篇论文 | 最小提示词完成 81 篇，报告 1,180 条 supported 关系；精简规则集在同样论文上是 881 条。另外 19 篇被安全机制中止，保留标注过的精简规则集结果。这些论文没有金标，所以只是输出数量。 |
+| 提示词和模型对比，100 篇 | 格式规则把需要修复的论文从 62 篇降到 9 篇，每篇费用从 $0.64 降到 $0.43，supported 关系少 6%；召回率还没有测。Opus 4.8 没有安全中止，但 supported 关系比 Opus 5.5 少 42%。见[对比](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/?lang=zh#compare)。 |
 | 费用 | 按标价，含修复请求：BioTriplex 全文每篇约 $0.40，原始论文每篇约 $0.64，摘要每篇约 $0.07。 |
 
 **局限性。**
@@ -39,12 +48,12 @@
 - F1 比较受实体范围和训练文本影响，不能理解为关系判断能力更强。
 - 实体没有映射到数据库 ID（NCBI Gene / MeSH），也无法排除模型在预训练时见过这些文本。
 
-100 篇论文的 V6 和 V1 二部图都在[这里](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/graphs/?lang=zh)。[十月的结果页](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/results/ab/ab_summary.html)用的是判定卡和较早的评分方式。
+100 篇论文的最小提示词和精简规则集二部图都在[这里](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/graphs/?lang=zh)。[十月的结果页](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/results/ab/ab_summary.html)用的是精简规则集和较早的评分方式。
 
 ## 仓库结构
 | 路径 | 内容 |
 |---|---|
-| `experiments/single_shot/` | **方法本体。** 判定卡、输出格式、打包、运行、展开脚本、批量运行、冻结的 A/B 变体、与 PubTator3 的对比和页面生成；`runs/` 保存每次运行的输出。说明见 `README.md` |
+| `experiments/single_shot/` | **方法本体。** 规则和提示词、输出格式、打包、运行、展开脚本、批量运行、冻结的 A/B 变体、与 PubTator3 的对比和页面生成；`runs/` 保存每次运行的输出。说明见 `README.md` |
 | `experiments/biored/` | **基准评测。** BioRED 适配（`prepare.py`）、冻结的样本和标准答案、评分脚本（`evaluate.py`）、PubTator3 基线、结果页。说明见 `README.md` |
 | `experiments/biotriplex/` | 全文基准：适配、锁定集、第二批规格、评分、配对比较、盲法检查 |
 | `experiments/citation_check/` | 引用充分性：自动统计、盲标表单、评分 |
@@ -84,7 +93,7 @@ python -m unittest discover -s tests
 python site_builder/build_site.py
 ```
 
-100 篇运行用 `--variant v6_minimal_lean_medium --all --run-set full100`（十月用 `v1_card_lean_medium`），输入放在 `.Input/100papers/`。
+100 篇运行用 `--variant v6_minimal_lean_medium --all --run-set full100`（十月用 `v1_card_lean_medium`；Opus 4.8 加 `--model Claude_Opus_4.8 --run-set full100_opus48`），输入放在 `.Input/100papers/`。
 与 PubTator3 的对比读取基线在 `outputs/` 中对齐好的标注；用 `.\baseline\run.ps1 -Command run` 生成（见 `baseline/README.md`）。
 
 ## 数据与致谢

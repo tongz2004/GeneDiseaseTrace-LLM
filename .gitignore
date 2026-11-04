@@ -81,3 +81,5 @@ experiments/citation_check/key.csv
 experiments/citation_check/*answers*.csv
 # Draft for the provider, kept out of the public repository
 experiments/safety_blocks/feedback_draft.md
+experiments/single_shot/runs/full100_opus48/*/*/
+experiments/single_shot/runs/full100/v6f_format_rules_medium/*/

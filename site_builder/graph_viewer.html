@@ -53,8 +53,8 @@ html.zh [data-l="en"],html:not(.zh) [data-l="zh"]{display:none!important}
 <h1><span data-l="en">Gene–disease bipartite graphs</span><span data-l="zh">基因–疾病二部图</span></h1>
 <p class="sub"><span data-l="en">One bipartite graph per paper: genes on the left, diseases on the right, and an edge wherever the paper supports a relation. Hover over an edge to inspect its evidence; click any gene or disease to highlight its connected links. All edges are also listed in the table below.</span><span data-l="zh">按任务要求为每篇论文构建一张二部图：左侧为基因节点，右侧为疾病节点，论文支持的关系以连边表示。悬停连边可查看原文证据；点击基因或疾病可高亮其关联连边。所有连边亦汇总于下方表格。</span></p>
 <div class="tabs" role="group" aria-label="Dataset">
- <button data-set="full100" aria-pressed="true"><span data-l="en">100 papers · V6 (current)</span><span data-l="zh">100 篇 · V6（当前）</span></button>
- <button data-set="full100_v1" aria-pressed="false"><span data-l="en">100 papers · V1 (October)</span><span data-l="zh">100 篇 · V1（十月）</span></button>
+ <button data-set="full100" aria-pressed="true"><span data-l="en">100 papers · minimal prompt (current)</span><span data-l="zh">100 篇 · 最小提示词（当前）</span></button>
+ <button data-set="full100_v1" aria-pressed="false"><span data-l="en">100 papers · condensed rules (October)</span><span data-l="zh">100 篇 · 精简规则集（十月）</span></button>
  <button data-set="biored" aria-pressed="false"><span data-l="en">BioRED · 419 abstracts vs gold</span><span data-l="zh">BioRED · 419 篇摘要 vs 金标准</span></button>
 </div>
 <div class="controls">
@@ -82,14 +82,14 @@ const ZH = {
   "Article type": "文献类型", "BioRED split": "BioRED 数据子集",
   "No gene or disease entities in this paper's matrix.": "该论文的主矩阵中未包含基因或疾病实体。",
   "No links in this paper. Turn on \"show unlinked entities\" to see its genes and diseases.": "该论文无受支持连边。勾选“显示未连线的独立实体”可查看文中识别出的基因与疾病。",
-  "Claude Opus 5.5, decision card V1, October run, one request per paper. Kept for comparison; the default system is now V6.": "Claude Opus 5.5，判定卡 V1，十月运行，单篇单次请求。保留用于对比；默认系统现在是 V6。",
+  "Claude Opus 5.5, condensed rule set, October run, one request per paper. Kept for comparison; the default system is now the minimal prompt.": "Claude Opus 5.5，精简规则集，十月运行，单篇单次请求。保留用于对比；默认系统现在是最小提示词。",
   "Gene": "基因", "Disease": "疾病", "Kind": "判定类别", "Relation": "关系类型", "BioRED type": "BioRED 关系类型", "Reason": "判定依据",
   "Evidence (first sentence)": "原文证据（首句）", "Evidence": "原文证据", "No links.": "暂无连边。", "links": "条连边", "link": "条连边",
   "BioRED entity": "仅 BioRED 标注实体", "Loading…": "加载中…", "Filter papers (id, title)": "筛选论文（编号、标题）",
-  "Claude Opus 5.5, minimal prompt V6, one request per paper; the 19 papers it could not complete keep their October V1 result, marked [V1, October]. Entities are those in each paper's gene × disease matrix; symptoms and phenotypes are kept in a separate table and not drawn.":
-    "Claude Opus 5.5，最小提示词 V6，单篇单次请求；未能完成的 19 篇保留十月的 V1 结果，并标为 [V1, October]。图中节点来自每篇论文的基因 × 疾病主矩阵；临床症状与表型单独记录，未在图中绘制。",
-  "BioRED (Luo et al. 2022) gold gene–disease relations vs our V1 output on the same abstract. Italic gray names are entities only BioRED tagged, named as BioRED wrote them. The reason for each missed relation comes from the scorer (e.g., our pair judged uncertain, or a symptom we keep apart from diseases).":
-    "BioRED（Luo et al. 2022）专家金标准基因–疾病关系与冻结版 V1 在同一摘要上的输出对比。灰色斜体名称表示仅由 BioRED 标注的实体（保留 BioRED 原文命名）。未召回关系的归因来自评估脚本（例如被本方法判为 uncertain 的配对，或按规则与疾病区分记录的临床症状）。判定依据与证据句保留英文原文。",
+  "Claude Opus 5.5, minimal prompt, one request per paper; the 19 papers it could not complete keep their October condensed-rules result, marked [Condensed rules, October]. Entities are those in each paper's gene × disease matrix; symptoms and phenotypes are kept in a separate table and not drawn.":
+    "Claude Opus 5.5，最小提示词，单篇单次请求；未能完成的 19 篇保留十月的精简规则集结果，并标为 [Condensed rules, October]。图中节点来自每篇论文的基因 × 疾病主矩阵；临床症状与表型单独记录，未在图中绘制。",
+  "BioRED (Luo et al. 2022) gold gene–disease relations vs our condensed-rules output on the same abstract. Italic gray names are entities only BioRED tagged, named as BioRED wrote them. The reason for each missed relation comes from the scorer (e.g., our pair judged uncertain, or a symptom we keep apart from diseases).":
+    "BioRED（Luo et al. 2022）专家金标准基因–疾病关系与精简规则集在同一摘要上的输出对比。灰色斜体名称表示仅由 BioRED 标注的实体（保留 BioRED 原文命名）。未召回关系的归因来自评估脚本（例如被本方法判为 uncertain 的配对，或按规则与疾病区分记录的临床症状）。判定依据与证据句保留英文原文。",
 };
 let LANG = "en";
 const T = s => (LANG === "zh" && ZH[s]) || s;
@@ -110,9 +110,9 @@ const STYLE = {
 };
 STYLE.full100_v1 = STYLE.full100;
 const FOOT = {
-  full100_v1: "Claude Opus 5.5, decision card V1, October run, one request per paper. Kept for comparison; the default system is now V6.",
-  full100: "Claude Opus 5.5, minimal prompt V6, one request per paper; the 19 papers it could not complete keep their October V1 result, marked [V1, October]. Entities are those in each paper's gene × disease matrix; symptoms and phenotypes are kept in a separate table and not drawn.",
-  biored: "BioRED (Luo et al. 2022) gold gene–disease relations vs our V1 output on the same abstract. Italic gray names are entities only BioRED tagged, named as BioRED wrote them. The reason for each missed relation comes from the scorer (e.g., our pair judged uncertain, or a symptom we keep apart from diseases).",
+  full100_v1: "Claude Opus 5.5, condensed rule set, October run, one request per paper. Kept for comparison; the default system is now the minimal prompt.",
+  full100: "Claude Opus 5.5, minimal prompt, one request per paper; the 19 papers it could not complete keep their October condensed-rules result, marked [Condensed rules, October]. Entities are those in each paper's gene × disease matrix; symptoms and phenotypes are kept in a separate table and not drawn.",
+  biored: "BioRED (Luo et al. 2022) gold gene–disease relations vs our condensed-rules output on the same abstract. Italic gray names are entities only BioRED tagged, named as BioRED wrote them. The reason for each missed relation comes from the scorer (e.g., our pair judged uncertain, or a symptom we keep apart from diseases).",
 };
 const cache = {}, tip = document.getElementById("tip");
 let set = "full100", data = null, current = 0, focus = null;

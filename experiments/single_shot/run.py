@@ -18,6 +18,7 @@ from pack import fixed_part, paper_part
 
 MODELS = {
     "Claude_Opus_5.5": ("claude", "claude-opus-5-5"),
+    "Claude_Opus_4.8": ("claude", "claude-opus-4-8"),
     "GPT-6_Astra": ("codex", "gpt-6-astra"),
     "GPT-6.1_sol": ("codex", "gpt-6.1-sol"),
 }

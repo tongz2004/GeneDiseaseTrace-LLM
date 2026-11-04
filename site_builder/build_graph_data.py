@@ -58,7 +58,7 @@ def full100():
         has_current = (current / "validation.json").exists()
         nodes, edges = paper_graph(current if has_current else folder / "outputs")
         info = inventory[folder.name]
-        title = info["title"] if has_current else f"[V1, October] {info['title']}"
+        title = info["title"] if has_current else f"[Condensed rules, October] {info['title']}"
         papers.append({"id": folder.name, "title": title, "type": info["article_type"], "nodes": nodes, "edges": edges})
     return {"dataset": "full100", "papers": papers}
 
