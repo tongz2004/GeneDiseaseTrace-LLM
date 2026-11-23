@@ -7,7 +7,7 @@ on abstracts and full texts. Each reported relation cites the sentences behind i
 finding or as background knowledge; pairs with weak evidence are flagged *uncertain*. A deterministic check confirms that
 every citation resolves; whether a citation supports the relation still needs human review.
 
-**Project page (results, method and interactive graphs):** https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/
+**Project page (results, method and interactive graphs):** https://tongz2004.github.io/GeneDiseaseTrace-LLM-site/
 
 ## The task
 For each of 100 PMC full-text papers (JATS XML): extract all genes and diseases, decide for every gene × disease
@@ -37,7 +37,7 @@ recall on BioRED.
 
 ## Results
 All systems use one-to-one matching, so one gold relation can credit only one prediction. Brackets are 95% document-level
-bootstrap intervals. The [project page](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/) has the full tables.
+bootstrap intervals. The [project page](https://tongz2004.github.io/GeneDiseaseTrace-LLM-site/) has the full tables.
 
 | Evaluation | Result |
 |---|---|
@@ -48,7 +48,7 @@ bootstrap intervals. The [project page](https://suzuka2788.github.io/GeneDisease
 | Citation check, 30 pairs per corpus | Cited sentences alone were judged sufficient for 58.5% [45.8, 70.9] of supported pairs on BioRED and 75.4% [58.0, 89.1] on BioTriplex; 5.6% on each were judged unsupported. One annotator. |
 | Task 1: gene and disease extraction, BioRED Test | Document-concept F1: genes 0.968 (PubTator3 0.917), diseases 0.874 (PubTator3 0.958). PubTator3's recognizer was trained on data including BioRED. |
 | Task 2: the 100 original papers | The minimal prompt completed 81 papers with 1,180 supported relations; the condensed rules reported 881 on the same papers. The other 19 were stopped by the safety filter and keep their labeled condensed-rules result. No gold labels, so these are output counts only. |
-| Prompts and models, 100 papers | Format rules cut repairs from 62 to 9 papers and cost from $0.64 to $0.43 per paper, with 6% fewer supported relations; their recall is not yet measured. Opus 4.8 had no safety stops but 42% fewer supported relations than Opus 5.5. See the [comparison](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/#compare). |
+| Prompts and models, 100 papers | Format rules cut repairs from 62 to 9 papers and cost from $0.64 to $0.43 per paper, with 6% fewer supported relations; their recall is not yet measured. Opus 4.8 had no safety stops but 42% fewer supported relations than Opus 5.5. See the [comparison](https://tongz2004.github.io/GeneDiseaseTrace-LLM-site/#compare). |
 | Cost | At list prices, including repair requests: about $0.40 per BioTriplex full text, $0.64 per original paper and $0.07 per abstract. |
 
 **Limitations.**
@@ -58,7 +58,7 @@ bootstrap intervals. The [project page](https://suzuka2788.github.io/GeneDisease
 - F1 comparisons depend on entity scope and training text, so they should not be read as better relation judgment.
 - Entities are not mapped to database IDs (NCBI Gene / MeSH), and the model may have seen these texts in pretraining.
 
-Graphs for the 100 papers, for both the minimal prompt and the condensed rules, are [here](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/graphs/). The [October result pages](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/results/ab/ab_summary.html) used the condensed rules and an earlier scorer.
+Graphs for the 100 papers, for both the minimal prompt and the condensed rules, are [here](https://tongz2004.github.io/GeneDiseaseTrace-LLM-site/graphs/). The [October result pages](https://tongz2004.github.io/GeneDiseaseTrace-LLM-site/results/ab/ab_summary.html) used the condensed rules and an earlier scorer.
 
 ## Repository layout
 | Path | Contents |
