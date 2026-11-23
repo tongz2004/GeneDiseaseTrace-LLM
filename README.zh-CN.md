@@ -5,7 +5,7 @@
 用 LLM 从生物医学论文中抽取基因–疾病关系，附句子引用，并在摘要和全文上做了完整评测。
 每条报告的关系都引用支撑它的句子，并标明是论文自身的发现还是背景知识；证据不足的配对标为 *uncertain*。确定性检查可以确认每条引用都能解析，但引用是否真的支持这条关系，仍需要人工复核。
 
-**项目主页（结果、方法和交互图）：** https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/?lang=zh
+**项目主页（结果、方法和交互图）：** https://tongz2004.github.io/GeneDiseaseTrace-LLM-site/?lang=zh
 
 ## 任务
 对 100 篇 PMC 全文论文（JATS XML）逐篇处理：抽取所有基因和疾病；对每一个基因 × 疾病配对，判断论文是否提供了关联、相关或因果关系的证据；最后为每篇论文构建一张基因–疾病二部图。
@@ -20,7 +20,7 @@
 **早期设计。** 项目最初制定了判定规则（R1–R16）和 35 个边界案例（`skill_snapshot/`），并压缩成 1,045 词的精简规则集。下面的评测把默认系统换成了最小提示词，因为精简规则集在 BioRED 上降低了召回率。
 
 ## 结果
-所有系统都用一对一匹配，一个金标关系只能给一个预测计分。方括号是文章层 bootstrap 的 95% 区间。完整表格见[项目主页](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/?lang=zh)。
+所有系统都用一对一匹配，一个金标关系只能给一个预测计分。方括号是文章层 bootstrap 的 95% 区间。完整表格见[项目主页](https://tongz2004.github.io/GeneDiseaseTrace-LLM-site/?lang=zh)。
 
 | 评测 | 结果 |
 |---|---|
@@ -31,7 +31,7 @@
 | 引用检查，每个语料 30 条 | 引用句单独足以支持的比例，BioRED 是 58.5% [45.8, 70.9]，BioTriplex 是 75.4% [58.0, 89.1]；两者都有 5.6% 被判为不支持。只有一位标注者。 |
 | 任务 1：基因和疾病抽取，BioRED Test | 文档概念层 F1：基因 0.968（PubTator3 0.917），疾病 0.874（PubTator3 0.958）。PubTator3 的实体模型训练数据包含 BioRED。 |
 | 任务 2：最初的 100 篇论文 | 最小提示词完成 81 篇，报告 1,180 条 supported 关系；精简规则集在同样论文上是 881 条。另外 19 篇被安全机制中止，保留标注过的精简规则集结果。这些论文没有金标，所以只是输出数量。 |
-| 提示词和模型对比，100 篇 | 格式规则把需要修复的论文从 62 篇降到 9 篇，每篇费用从 $0.64 降到 $0.43，supported 关系少 6%；召回率还没有测。Opus 4.8 没有安全中止，但 supported 关系比 Opus 5.5 少 42%。见[对比](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/?lang=zh#compare)。 |
+| 提示词和模型对比，100 篇 | 格式规则把需要修复的论文从 62 篇降到 9 篇，每篇费用从 $0.64 降到 $0.43，supported 关系少 6%；召回率还没有测。Opus 4.8 没有安全中止，但 supported 关系比 Opus 5.5 少 42%。见[对比](https://tongz2004.github.io/GeneDiseaseTrace-LLM-site/?lang=zh#compare)。 |
 | 费用 | 按标价，含修复请求：BioTriplex 全文每篇约 $0.40，原始论文每篇约 $0.64，摘要每篇约 $0.07。 |
 
 **局限性。**
@@ -41,7 +41,7 @@
 - F1 比较受实体范围和训练文本影响，不能理解为关系判断能力更强。
 - 实体没有映射到数据库 ID（NCBI Gene / MeSH），也无法排除模型在预训练时见过这些文本。
 
-100 篇论文的最小提示词和精简规则集二部图都在[这里](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/graphs/?lang=zh)。[十月的结果页](https://suzuka2788.github.io/GeneDiseaseTrace-LLM-site/results/ab/ab_summary.html)用的是精简规则集和较早的评分方式。
+100 篇论文的最小提示词和精简规则集二部图都在[这里](https://tongz2004.github.io/GeneDiseaseTrace-LLM-site/graphs/?lang=zh)。[十月的结果页](https://tongz2004.github.io/GeneDiseaseTrace-LLM-site/results/ab/ab_summary.html)用的是精简规则集和较早的评分方式。
 
 ## 仓库结构
 | 路径 | 内容 |
